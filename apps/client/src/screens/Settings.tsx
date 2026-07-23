@@ -83,6 +83,19 @@ export function Settings(): JSX.Element {
 
       <fieldset>
         <legend>Learning</legend>
+        <label htmlFor="daily-goal">Daily goal (questions per day)</label>
+        <input
+          id="daily-goal"
+          type="number"
+          min={1}
+          max={100}
+          value={prefs.daily_goal_questions}
+          onChange={(e) =>
+            updateSettings({
+              preferences: { daily_goal_questions: Math.max(1, Number(e.target.value) || 1) },
+            })
+          }
+        />
         <label>
           <input
             type="checkbox"

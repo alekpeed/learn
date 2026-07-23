@@ -5,3 +5,5 @@ export * from './state.js';
 export * from './difficulty.js';
 export * from './gating.js';
 export * from './progress.js';
+export * from './activity.js';
+export * from './session.js';

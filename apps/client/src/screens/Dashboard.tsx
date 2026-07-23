@@ -3,6 +3,7 @@ import { isReviewDue } from '@learn/learning-engine';
 import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
 import { useCurriculum } from '../state/CurriculumContext.js';
+import { TodayPanel } from '../components/TodayPanel.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 export function Dashboard(): JSX.Element {
@@ -31,6 +32,7 @@ export function Dashboard(): JSX.Element {
       {learner && (
         <>
           <p>Hello, {learner.display_name}.</p>
+          <TodayPanel />
           <ul>
             <li>
               <Link to="/map">Continue learning</Link>

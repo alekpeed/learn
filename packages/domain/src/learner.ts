@@ -25,6 +25,8 @@ export interface LearnerPreferences {
   ai_provider: AiProvider;
   /** Optional model override for the selected provider. */
   ai_model?: string;
+  /** Daily goal: number of questions to answer per day (Version 1 study plans). */
+  daily_goal_questions: number;
 }
 
 export interface Learner {
@@ -47,4 +49,5 @@ export const DEFAULT_PREFERENCES: LearnerPreferences = {
   session_duration: 15,
   ai_tutor_enabled: false,
   ai_provider: 'stub',
+  daily_goal_questions: 10,
 };
