@@ -62,6 +62,9 @@ importers:
       '@learn/domain':
         specifier: workspace:*
         version: link:../../packages/domain
+      '@learn/learning-engine':
+        specifier: workspace:*
+        version: link:../../packages/learning-engine
       '@learn/persistence':
         specifier: workspace:*
         version: link:../../packages/persistence
@@ -88,6 +91,15 @@ importers:
         version: link:../schemas
 
   packages/domain: {}
+
+  packages/learning-engine:
+    dependencies:
+      '@learn/curriculum':
+        specifier: workspace:*
+        version: link:../curriculum
+      '@learn/domain':
+        specifier: workspace:*
+        version: link:../domain
 
   packages/persistence:
     dependencies:

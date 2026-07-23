@@ -47,6 +47,21 @@ export interface AnswerSubmittedPayload extends Record<string, unknown> {
   hints_used: number;
   difficulty: number;
   response_time_ms: number;
+  /** Mastery dimensions this item feeds (DEC-009) — needed to score from events alone. */
+  dimensions: string[];
+  is_transfer: boolean;
+}
+
+export interface ReviewCompletedPayload extends Record<string, unknown> {
+  skill_id: string;
+  success: boolean;
+  /** Per-event quality in [0,1] from the review answer (see MASTERY_SCORING §3). */
+  quality: number;
+  difficulty: number;
+  /** The scheduled interval (days) the learner just recalled across. */
+  interval_days_at_review: number;
+  /** Days late the review was completed (0 if on time or early). */
+  overdue_days: number;
 }
 
 export interface SkillStateChangedPayload extends Record<string, unknown> {

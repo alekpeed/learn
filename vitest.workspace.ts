@@ -17,6 +17,9 @@ export default defineWorkspace([
     test: { name: 'validation', root: 'packages/validation-engine', environment: 'node' },
   },
   {
+    test: { name: 'learning', root: 'packages/learning-engine', environment: 'node' },
+  },
+  {
     test: {
       name: 'client',
       root: 'apps/client',

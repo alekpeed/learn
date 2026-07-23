@@ -242,3 +242,40 @@ button {
   color: var(--muted);
   font-size: 0.95em;
 }
+
+/* Progress + scores */
+.skill-state-label {
+  color: var(--muted);
+}
+.progress-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.progress-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--muted);
+}
+.progress-item h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+}
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.4rem 1rem;
+  margin: 0;
+}
+.score-cell dt {
+  font-weight: 600;
+  font-size: 0.85em;
+}
+.score-cell dd {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.score-cell meter {
+  width: 5rem;
+}

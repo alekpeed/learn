@@ -78,7 +78,7 @@ on delayed failure:  Retention ← Retention − α · (25 + 0.3 · overdue_days
 
 The scores drive the state machine (implemented alongside, spec here for reference):
 
-- All five scores ≥ thresholds **and** no confirmed delayed review yet → `provisionally_mastered`.
+- The four **immediate** dimensions (Understanding, Accuracy, Independence, Transfer) ≥ thresholds → `provisionally_mastered`. Retention is **excluded** from this gate: it can only be earned through later delayed review, so requiring it here would be circular (review scheduling begins at provisional mastery).
 - `provisionally_mastered` **and** ≥ 1 successful delayed review at interval ≥ 7 days with Retention ≥ threshold → `mastered`.
 - Retention decays with time since last practice; when Retention < threshold and past due → `decayed` / `review_due`.
 - Any review failure can demote `mastered`/`provisionally_mastered` back to `practicing` and shortens the interval (§ REVIEW_SCHEDULING).

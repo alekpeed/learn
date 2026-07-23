@@ -1,5 +1,29 @@
 [
   {
+    "lesson_id": "math.number_foundations.counting_and_quantity.lesson",
+    "skill_id": "math.number_foundations.counting_and_quantity",
+    "title": "Counting and Quantity",
+    "components": [
+      {
+        "type": "learning_objective",
+        "body": "Understand that numbers tell you how many things are in a group."
+      },
+      {
+        "type": "intuitive_explanation",
+        "body": "Counting matches each thing to one number in order. The last number you say is how many there are in total."
+      },
+      {
+        "type": "worked_example",
+        "body": "Count three apples: point to each and say one, two, three. There are 3 apples."
+      },
+      {
+        "type": "summary",
+        "body": "The last number counted is the total quantity of the group."
+      }
+    ],
+    "content_version": "0.1.0"
+  },
+  {
     "lesson_id": "math.number_foundations.comparing_numbers.lesson",
     "skill_id": "math.number_foundations.comparing_numbers",
     "title": "Comparing Numbers",

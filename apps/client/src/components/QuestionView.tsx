@@ -15,11 +15,13 @@ export function QuestionView({
   learnerId,
   repository,
   onSolved,
+  nextLabel,
 }: {
   question: Question;
   learnerId: string | null;
   repository?: PracticeRepository;
-  onSolved?: () => void;
+  onSolved?: (snapshot: { hintsUsed: number; attempts: number }) => void;
+  nextLabel?: string;
 }): JSX.Element {
   const practice = usePractice({ question, learnerId, repository });
   const [value, setValue] = useState('');
@@ -103,8 +105,13 @@ export function QuestionView({
           <p>Correct!</p>
           <p className="explanation">{question.explanation}</p>
           {onSolved && (
-            <button type="button" onClick={onSolved}>
-              Next
+            <button
+              type="button"
+              onClick={() =>
+                onSolved({ hintsUsed: practice.revealedHints, attempts: practice.attemptNumber })
+              }
+            >
+              {nextLabel ?? 'Next'}
             </button>
           )}
         </div>

@@ -19,6 +19,8 @@ function attempt(over: Partial<Parameters<PracticeRepository['submitAttempt']>[1
     hints_used: 0,
     difficulty: 2,
     response_time_ms: 1000,
+    dimensions: ['accuracy'],
+    is_transfer: false,
     ...over,
   };
 }

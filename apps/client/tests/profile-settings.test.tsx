@@ -4,6 +4,8 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { InMemoryEventStore, LearnerRepository } from '@learn/persistence';
 import { LearnerProvider, applyAccessibility } from '../src/state/LearnerContext.js';
+import { CurriculumProvider } from '../src/state/CurriculumContext.js';
+import { ProgressProvider } from '../src/state/ProgressContext.js';
 import { Welcome } from '../src/screens/Welcome.js';
 import { Settings } from '../src/screens/Settings.js';
 import { Dashboard } from '../src/screens/Dashboard.js';
@@ -11,13 +13,17 @@ import { Dashboard } from '../src/screens/Dashboard.js';
 function renderApp(repo: LearnerRepository, path = '/') {
   return render(
     <LearnerProvider repository={repo}>
-      <MemoryRouter initialEntries={[path]}>
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </MemoryRouter>
+      <CurriculumProvider>
+        <ProgressProvider progressOverride={new Map()}>
+          <MemoryRouter initialEntries={[path]}>
+            <Routes>
+              <Route path="/" element={<Welcome />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </MemoryRouter>
+        </ProgressProvider>
+      </CurriculumProvider>
     </LearnerProvider>,
   );
 }

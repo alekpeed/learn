@@ -1,9 +1,23 @@
 import { Link } from 'react-router-dom';
+import { isReviewDue } from '@learn/learning-engine';
 import { useLearner } from '../state/LearnerContext.js';
+import { useProgress } from '../state/ProgressContext.js';
+import { useCurriculum } from '../state/CurriculumContext.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 export function Dashboard(): JSX.Element {
   const { status, learner } = useLearner();
+  const { progress } = useProgress();
+  const { package: pkg } = useCurriculum();
+
+  const now = new Date().toISOString();
+  const dueCount = [...progress.values()].filter((p) => isReviewDue(p, now)).length;
+  const inProgress = [...progress.values()].filter(
+    (p) => p.state === 'learning' || p.state === 'practicing',
+  );
+  const currentTitle = inProgress[0]
+    ? (pkg?.graph.skills.get(inProgress[0].skill_id)?.title ?? inProgress[0].skill_id)
+    : null;
 
   return (
     <section>
@@ -16,16 +30,14 @@ export function Dashboard(): JSX.Element {
       )}
       {learner && (
         <>
-          <p>Hello, {learner.display_name}. Curriculum and progress arrive in later phases.</p>
+          <p>Hello, {learner.display_name}.</p>
           <ul>
             <li>
-              <Link to="/lesson">Continue learning</Link>
+              <Link to="/map">Continue learning</Link>
+              {currentTitle ? ` — current: ${currentTitle}` : ''}
             </li>
             <li>
-              <Link to="/review">Reviews due</Link>
-            </li>
-            <li>
-              <Link to="/map">Curriculum map</Link>
+              <Link to="/review">Reviews due</Link>: {dueCount}
             </li>
             <li>
               <Link to="/progress">Your progress</Link>

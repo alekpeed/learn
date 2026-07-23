@@ -14,6 +14,7 @@ export default defineConfig({
       '@learn/persistence',
       '@learn/curriculum',
       '@learn/validation-engine',
+      '@learn/learning-engine',
     ],
   },
 });

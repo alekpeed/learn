@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { useLearner } from '../state/LearnerContext.js';
+import { useProgress } from '../state/ProgressContext.js';
 import { QuestionView } from '../components/QuestionView.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 export function PracticeScreen(): JSX.Element {
   const { package: pkg, errors } = useCurriculum();
   const { learner } = useLearner();
+  const { refresh } = useProgress();
   const [params] = useSearchParams();
   const skillId = params.get('skill');
   const [index, setIndex] = useState(0);
@@ -47,7 +49,11 @@ export function PracticeScreen(): JSX.Element {
         key={question.question_id}
         question={question}
         learnerId={learner?.learner_id ?? null}
-        onSolved={hasNext ? () => setIndex((i) => i + 1) : undefined}
+        onSolved={() => {
+          void refresh();
+          if (hasNext) setIndex((i) => i + 1);
+        }}
+        nextLabel={hasNext ? 'Next question' : 'Finish'}
       />
       {!hasNext && <p className="progress-note">That is the last question in this set.</p>}
     </section>

@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 3 (Practice and Validation) complete.** On top of the curriculum platform, the repository now has a deterministic validation engine (numeric, fraction, decimal, percentage, unit, and choice validators with equivalence), deterministic error diagnosis, attempt + hint persistence, and a question renderer with a progressive hint ladder and specific feedback. The learning engine, the diagnostic, and the AI tutor arrive in Phase 4+.
+> **Status: Phase 4 (Learning Engine) complete.** On top of practice and validation, the repository now has the learning engine: deterministic mastery scoring (five dimensions), spaced-review scheduling, the skill-state machine, prerequisite gating + remediation routing, and adaptive difficulty — all folded from the event log into per-skill progress. The UI now has real prerequisite locks, a skill-level progress screen, and a working review queue. The diagnostic and the AI tutor arrive in Phase 5+.
 
 ## Documentation
 
@@ -24,8 +24,9 @@ packages/
   persistence/   Append-only event store (in-memory + IndexedDB), projections, learner repo
   curriculum/    Course-package loader: schema validation, graph (cycles, topo order)
   validation-engine/  Deterministic validators + rational arithmetic + error diagnosis
+  learning-engine/    Mastery scoring, review scheduler, state machine, gating, progress
 apps/
-  client/        Vite + React app: shell, screens, lesson renderer, practice + hints
+  client/        Vite + React app: shell, lessons, practice, progress, review queue
 content/         Curriculum content ONLY (data) — sample package now; full slice in Phase 6/7
 tests/e2e/       Playwright smoke + accessibility (axe-core) + curriculum flow
 docs/            Specification and planning

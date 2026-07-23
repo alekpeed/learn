@@ -79,6 +79,8 @@ export function usePractice({
           hints_used: state.revealedHints,
           difficulty: question.difficulty,
           response_time_ms: Math.max(0, now() - startedAt.current),
+          dimensions: question.dimensions,
+          is_transfer: question.transfer_flag ?? false,
         });
       }
 

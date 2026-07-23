@@ -4,3 +4,4 @@ export * from './events.js';
 export * from './learner.js';
 export * from './errors.js';
 export * from './diagnosis.js';
+export * from './progress.js';

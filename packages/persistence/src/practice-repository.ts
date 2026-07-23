@@ -18,11 +18,22 @@ export interface AttemptInput {
   hints_used: number;
   difficulty: number;
   response_time_ms: number;
+  dimensions: string[];
+  is_transfer: boolean;
 }
 
 export interface AttemptRecord extends AttemptInput {
   event_id: string;
   created_at: string;
+}
+
+export interface ReviewInput {
+  skill_id: string;
+  success: boolean;
+  quality: number;
+  difficulty: number;
+  interval_days_at_review: number;
+  overdue_days: number;
 }
 
 export class PracticeRepository {
@@ -65,6 +76,10 @@ export class PracticeRepository {
 
   submitAttempt(learnerId: string, attempt: AttemptInput): Promise<LearningEvent> {
     return this.record(learnerId, 'answer_submitted', { ...attempt });
+  }
+
+  submitReview(learnerId: string, review: ReviewInput): Promise<LearningEvent> {
+    return this.record(learnerId, 'review_completed', { ...review });
   }
 
   /** Project all recorded attempts for a learner (optionally one question), in order. */
