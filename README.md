@@ -8,6 +8,7 @@ A local-first, mastery-based learning application that teaches mathematics (arit
 
 | Document                                                                         | Purpose                                                                     |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [`docs/HANDOFF.md`](docs/HANDOFF.md)                                             | **Start here for a new session:** current status, how to run, conventions.  |
 | [`docs/spec/`](docs/spec/)                                                       | The 17 authoritative specification documents (source of truth).             |
 | [`docs/reviews/00_SPEC_REVIEW.md`](docs/reviews/00_SPEC_REVIEW.md)               | Architecture + MVP scope summary; contradictions, missing decisions, risks. |
 | [`docs/decisions/DECISION_LOG.md`](docs/decisions/DECISION_LOG.md)               | Decisions DEC-006 … DEC-014 (stack, scope, event-sourcing, ID grammar, …).  |
