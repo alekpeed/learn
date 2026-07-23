@@ -60,7 +60,8 @@ Related: 02, 04, 06, 10.
 
 ## DEC-010: MVP ships AI tutor off-by-default behind an optional thin gateway
 
-Status: Proposed
+Status: Accepted (2026-07-23) — implemented in Phase 8 with a local stub provider; a real provider drops into the same TutorProvider interface later
+
 Context: MVP lists a basic tutor, but credentials must stay server-side and MVP is local-first (C-5).
 Decision: All non-AI flows require **zero backend**. The tutor is **optional, off by default**, and — when enabled — routed through a minimal stateless AI-gateway service that holds provider credentials. No AI availability never blocks learning (doc 10 §7).
 Reasons: Honors local-first + server-side-secrets + lowest-operational-priority for AI.

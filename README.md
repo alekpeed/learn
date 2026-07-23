@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 7 (Scientific Reasoning Content) complete.** Both MVP subjects are now authored and validated: **41 skills** total — mathematics (31 skills, number foundations → one-step equations) plus scientific reasoning & measurement (10 skills, observation → accuracy/precision). Cross-thread prerequisites (science depends on math number-line, multiplication, estimation) resolve; metric unit-conversion questions grade via the unit validator. The AI tutor (Phase 8) and quality/release (Phase 9) remain.
+> **Status: Phase 8 (AI Tutor) complete.** An isolated, provider-neutral tutor gateway is wired in behind a local stub provider — off by default (DEC-010). It produces display text only from approved, verified context; it cannot alter answers, mastery, review dates, or curriculum, and the app is fully functional without it (verified fallback). Only Phase 9 (quality & release) remains.
 
 ## Documentation
 
@@ -26,6 +26,7 @@ packages/
   validation-engine/  Deterministic validators + rational arithmetic + error diagnosis
   learning-engine/    Mastery scoring, review scheduler, state machine, gating, progress
   diagnostic/         Adaptive placement (binary-search boundary detection)
+  ai-gateway/         Isolated tutor gateway + provider interface + stub (text only)
 apps/
   client/        Vite + React app: shell, lessons, practice, progress, review queue
 content/mvp/     Curriculum content ONLY (data): manifest, courses, one file per unit

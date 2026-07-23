@@ -16,6 +16,7 @@ export default defineConfig({
       '@learn/validation-engine',
       '@learn/learning-engine',
       '@learn/diagnostic',
+      '@learn/ai-gateway',
     ],
   },
 });

@@ -279,3 +279,24 @@ button {
 .score-cell meter {
   width: 5rem;
 }
+
+/* AI tutor panel */
+.tutor-panel {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+}
+.tutor-panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+.tutor-response {
+  margin-top: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+.tutor-response[data-status='unavailable'],
+.tutor-response[data-status='fallback'] {
+  border-left-color: var(--muted);
+}

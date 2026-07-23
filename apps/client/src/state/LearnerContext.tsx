@@ -97,3 +97,8 @@ export function useLearner(): LearnerContextValue {
   if (!ctx) throw new Error('useLearner must be used within a LearnerProvider');
   return ctx;
 }
+
+/** Like useLearner but returns null instead of throwing when no provider is present. */
+export function useOptionalLearner(): LearnerContextValue | null {
+  return useContext(LearnerContext);
+}

@@ -56,6 +56,9 @@ importers:
 
   apps/client:
     dependencies:
+      '@learn/ai-gateway':
+        specifier: workspace:*
+        version: link:../../packages/ai-gateway
       '@learn/curriculum':
         specifier: workspace:*
         version: link:../../packages/curriculum
@@ -83,6 +86,12 @@ importers:
       react-router-dom:
         specifier: ^6.26.2
         version: 6.30.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  packages/ai-gateway:
+    dependencies:
+      '@learn/domain':
+        specifier: workspace:*
+        version: link:../domain
 
   packages/curriculum:
     dependencies:

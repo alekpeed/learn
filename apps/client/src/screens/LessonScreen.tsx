@@ -1,6 +1,7 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { LessonView } from '../components/LessonView.js';
+import { TutorPanel } from '../components/TutorPanel.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 export function LessonScreen(): JSX.Element {
@@ -30,9 +31,22 @@ export function LessonScreen(): JSX.Element {
     );
   }
 
+  const skill = pkg.graph.skills.get(lesson.skill_id);
+  const objective = lesson.components.find((c) => c.type === 'learning_objective')?.body;
+  const excerpt = lesson.components.find((c) => c.type === 'intuitive_explanation')?.body;
+
   return (
     <section>
       <LessonView lesson={lesson} />
+      <TutorPanel
+        context={{
+          skill_id: lesson.skill_id,
+          skill_title: skill?.title ?? lesson.title,
+          objective,
+          lesson_excerpt: excerpt,
+        }}
+        modes={['explain', 'compare', 'extend']}
+      />
       <nav aria-label="Lesson actions" className="lesson-actions">
         <Link to="/map">Back to curriculum map</Link>
       </nav>

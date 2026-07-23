@@ -23,6 +23,9 @@ export default defineWorkspace([
     test: { name: 'diagnostic', root: 'packages/diagnostic', environment: 'node' },
   },
   {
+    test: { name: 'ai-gateway', root: 'packages/ai-gateway', environment: 'node' },
+  },
+  {
     test: {
       name: 'client',
       root: 'apps/client',

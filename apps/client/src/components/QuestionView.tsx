@@ -6,6 +6,7 @@
 import { useState, type FormEvent } from 'react';
 import type { Question } from '@learn/curriculum';
 import { usePractice } from '../practice/usePractice.js';
+import { TutorPanel } from './TutorPanel.js';
 import { PracticeRepository } from '@learn/persistence';
 
 const CHOICE_TYPES = new Set(['multiple_choice', 'exact_choice', 'structured']);
@@ -116,6 +117,24 @@ export function QuestionView({
           )}
         </div>
       )}
+
+      <TutorPanel
+        context={{
+          skill_id: question.skill_id,
+          skill_title: question.skill_id,
+          problem_prompt: question.prompt,
+          correct_answer: String(question.answer_spec.correct_answer),
+          lesson_excerpt: question.explanation,
+          detected_misconception: practice.diagnosis?.message,
+        }}
+        modes={
+          practice.solved
+            ? ['explain', 'extend']
+            : practice.diagnosis
+              ? ['guide', 'diagnose']
+              : ['guide']
+        }
+      />
     </div>
   );
 }

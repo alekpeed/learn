@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@learn/ai-gateway": "workspace:*",
     "@learn/curriculum": "workspace:*",
     "@learn/diagnostic": "workspace:*",
     "@learn/domain": "workspace:*",
