@@ -64,25 +64,25 @@ Consequences: `apps/service` is optional in MVP; client degrades gracefully with
 Related: 08, 10, 15.
 
 ## DEC-011: Authoritative MVP skill inventory (fully-connected slice)
-Status: Proposed — REQUIRES USER SIGN-OFF
+Status: Accepted (2026-07-23) — approach approved; concrete list in `docs/planning/MVP_SKILL_INVENTORY.md` pending final review at the P0 gate
 Context: Doc 03 (~36 topics) vs. doc 05 (~135 skills); completion rule demands full traversal (C-1, R-1).
-Decision (proposed): MVP authors a **single fully-connected vertical slice** that still satisfies the completion rule end-to-end, then extends unit-by-unit. A concrete slice inventory is produced and signed off before Phase 6 content work; the exact list is the deliverable of Phase 0 task P0-3.
+Decision: MVP authors a **single fully-connected vertical slice** that still satisfies the completion rule end-to-end, then extends unit-by-unit. The concrete slice inventory is `docs/planning/MVP_SKILL_INVENTORY.md`.
 Reasons: Bounds the dominant schedule risk while preserving the "no disconnected demos" rule.
 Alternatives: Author all ~135 skills for MVP (accepted only if the user approves the larger scope/timeline).
 Consequences: Directly sizes Phases 6–7; must be pinned before content authoring.
 Related: 03, 05, 12, 13.
 
 ## DEC-012: Technology stack — TypeScript monorepo
-Status: Proposed
+Status: Accepted (2026-07-23)
 Context: Stack is intentionally unspecified (docs 08, 14).
-Decision (recommended): **TypeScript** across a single **monorepo** (workspaces). Client via React (or a comparable accessible component model); tests via Vitest (unit/integration) + Playwright (e2e/accessibility). Content validated by JSON Schema.
+Decision: **TypeScript** across a single **monorepo** (workspaces). Client via React (or a comparable accessible component model); tests via Vitest (unit/integration) + Playwright (e2e/accessibility). Content validated by JSON Schema.
 Reasons: One language for shared schemas + validators + client; strong typing suits deterministic logic; mature accessibility + testing ecosystem; easy provider-interface boundaries.
 Alternatives: Python/other backend + JS client (rejected for MVP — two languages, no backend needed yet); multi-repo (rejected — harder shared-schema discipline).
 Consequences: Sets tooling for Phase 1; all `packages/*` are TS libraries with no framework leakage into `domain`.
 Related: 08, 14; PROPOSED_REPOSITORY_STRUCTURE.md.
 
 ## DEC-013: Local persistence via IndexedDB behind a store interface
-Status: Proposed
+Status: Accepted (2026-07-23) — follows from DEC-012 (TypeScript web client) + DEC-004
 Context: Local-first MVP needs durable browser storage (DEC-004).
 Decision: Persistence exposes a store interface; the MVP adapter uses **IndexedDB** with an append-only event table + projection tables. A cloud adapter is added later without changing callers.
 Reasons: IndexedDB is the durable, offline-capable browser store; interface keeps it replaceable (doc 08 §9).
