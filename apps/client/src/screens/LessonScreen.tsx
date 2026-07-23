@@ -2,6 +2,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { LessonView } from '../components/LessonView.js';
 import { TutorPanel } from '../components/TutorPanel.js';
+import { NotesPanel } from '../components/NotesPanel.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 export function LessonScreen(): JSX.Element {
@@ -47,6 +48,7 @@ export function LessonScreen(): JSX.Element {
         }}
         modes={['explain', 'compare', 'extend']}
       />
+      <NotesPanel skillId={lesson.skill_id} />
       <nav aria-label="Lesson actions" className="lesson-actions">
         <Link to="/map">Back to curriculum map</Link>
       </nav>

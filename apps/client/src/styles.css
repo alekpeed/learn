@@ -321,3 +321,20 @@ button {
   max-width: 22rem;
   width: 100%;
 }
+
+/* Notes panel */
+.notes-panel {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+}
+.notes-panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+.notes-panel textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.4rem;
+}

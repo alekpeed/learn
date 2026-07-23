@@ -21,6 +21,7 @@ export const LEARNING_EVENT_TYPES = [
   'diagnostic_answered',
   'profile_created',
   'settings_changed',
+  'note_saved',
 ] as const;
 
 export type LearningEventType = (typeof LEARNING_EVENT_TYPES)[number];

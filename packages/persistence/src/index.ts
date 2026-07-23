@@ -4,4 +4,5 @@ export * from './indexeddb-store.js';
 export * from './projections.js';
 export * from './learner-repository.js';
 export * from './practice-repository.js';
+export * from './notes-repository.js';
 export * from './id.js';
