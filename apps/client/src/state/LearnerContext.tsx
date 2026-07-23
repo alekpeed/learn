@@ -21,6 +21,8 @@ interface LearnerContextValue {
     accessibility_settings?: Partial<AccessibilitySettings>;
   }) => Promise<void>;
   resetAll: () => Promise<void>;
+  /** Re-read the learner from storage (e.g. after importing progress). */
+  reload: () => Promise<void>;
 }
 
 const LearnerContext = createContext<LearnerContextValue | null>(null);
@@ -84,6 +86,12 @@ export function LearnerProvider({
         await repository.resetAll();
         setLearner(null);
         applyAccessibility(undefined);
+      },
+      async reload() {
+        const l = await repository.loadCurrent();
+        setLearner(l);
+        applyAccessibility(l?.accessibility_settings);
+        setStatus('ready');
       },
     }),
     [status, learner, error, repository],

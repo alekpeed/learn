@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 8 (AI Tutor) complete.** An isolated, provider-neutral tutor gateway is wired in behind a local stub provider — off by default (DEC-010). It produces display text only from approved, verified context; it cannot alter answers, mastery, review dates, or curriculum, and the app is fully functional without it (verified fallback). Only Phase 9 (quality & release) remains.
+> **Status: MVP complete (Phases 0–9).** The full mastery-based learning engine, both subjects' content (41 skills), the adaptive diagnostic, and an isolated AI tutor are built, wired, and tested. Phase 9 added progress export/import, offline handling, an accessibility audit across all screens, a split (cacheable) bundle, and deployment config. Every acceptance criterion in `docs/spec/11_TESTING_AND_ACCEPTANCE.md` maps to a passing test in [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md).
 
 ## Documentation
 
@@ -12,7 +12,8 @@ A local-first, mastery-based learning application that teaches mathematics (arit
 | [`docs/reviews/00_SPEC_REVIEW.md`](docs/reviews/00_SPEC_REVIEW.md)               | Architecture + MVP scope summary; contradictions, missing decisions, risks. |
 | [`docs/decisions/DECISION_LOG.md`](docs/decisions/DECISION_LOG.md)               | Decisions DEC-006 … DEC-014 (stack, scope, event-sourcing, ID grammar, …).  |
 | [`docs/planning/`](docs/planning/)                                               | Phase 0/1 task plan and the authoritative MVP skill inventory.              |
-| [`docs/spec-derived/`](docs/spec-derived/)                                       | Deterministic mastery-scoring and review-scheduling algorithm specs.        |
+| [`docs/spec-derived/`](docs/spec-derived/)                                       | Mastery-scoring, review-scheduling, and deployment specs.                   |
+| [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)                         | Every acceptance criterion mapped to its passing test.                      |
 | [`docs/PROPOSED_REPOSITORY_STRUCTURE.md`](docs/PROPOSED_REPOSITORY_STRUCTURE.md) | Target repository layout.                                                   |
 
 ## Repository layout

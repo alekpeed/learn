@@ -6,21 +6,24 @@ test.describe('diagnostic (Phase 5)', () => {
     await expect(page.getByRole('heading', { name: /^diagnostic$/i })).toBeVisible();
     await expect(page.getByRole('button', { name: /skip/i })).toBeVisible();
 
-    // Answer probes until results appear (binary search over the skill graph).
-    for (let i = 0; i < 10; i++) {
-      if (
-        await page
-          .getByRole('heading', { name: /diagnostic results/i })
-          .isVisible()
-          .catch(() => false)
-      ) {
-        break;
-      }
+    // Answer probes until results appear (binary search over the full graph).
+    for (let i = 0; i < 12; i++) {
+      const done = await page
+        .getByRole('heading', { name: /diagnostic results/i })
+        .isVisible()
+        .catch(() => false);
+      if (done) break;
+
       const textInput = page.getByLabel(/your answer/i);
       if (await textInput.isVisible().catch(() => false)) {
         await textInput.fill('40');
       } else {
-        await page.getByRole('radio').first().check();
+        const radio = page.getByRole('radio').first();
+        if (await radio.isVisible().catch(() => false)) {
+          await radio.check();
+        } else {
+          break;
+        }
       }
       await page.getByRole('button', { name: /submit/i }).click();
     }

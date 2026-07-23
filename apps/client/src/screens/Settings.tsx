@@ -2,17 +2,29 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { TextSize, Contrast } from '@learn/domain';
 import { useLearner } from '../state/LearnerContext.js';
+import { useProgress } from '../state/ProgressContext.js';
+import { DataSettings } from '../components/DataSettings.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large', 'x-large'];
 
 export function Settings(): JSX.Element {
-  const { status, learner, updateSettings, resetAll } = useLearner();
+  const { status, learner, updateSettings, resetAll, reload } = useLearner();
+  const { refresh } = useProgress();
   const navigate = useNavigate();
   const [confirmingReset, setConfirmingReset] = useState(false);
 
-  if (status === 'loading') return <ScreenState status="loading" />;
-  if (!learner) return <ScreenState status="empty" message="Create a profile first." />;
+  if (status === 'loading' || !learner) {
+    return (
+      <section>
+        <h1>Settings</h1>
+        <ScreenState
+          status={status === 'loading' ? 'loading' : 'empty'}
+          message={status === 'loading' ? undefined : 'Create a profile first.'}
+        />
+      </section>
+    );
+  }
 
   const a11y = learner.accessibility_settings;
   const prefs = learner.preferences;
@@ -92,6 +104,12 @@ export function Settings(): JSX.Element {
 
       <fieldset>
         <legend>Data</legend>
+        <DataSettings
+          onImported={async () => {
+            await reload();
+            await refresh();
+          }}
+        />
         {!confirmingReset ? (
           <button type="button" onClick={() => setConfirmingReset(true)}>
             Reset local data…

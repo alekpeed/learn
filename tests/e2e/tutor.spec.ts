@@ -18,14 +18,42 @@ test.describe('AI tutor (Phase 8)', () => {
     await page.goto('/');
     await page.getByLabel(/your name/i).fill('Grace');
     await page.getByRole('button', { name: /start learning/i }).click();
+    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
 
     await page.goto('/settings');
-    await page.getByLabel(/ai tutor/i).check();
+    // The checkbox is async-controlled; click once (check() would auto-retry).
+    await page.getByLabel(/ai tutor/i).click();
 
     await page.goto('/lesson?skill=math.number_foundations.counting_and_quantity');
     await page.getByRole('button', { name: /explain differently/i }).click();
     await expect(page.getByRole('region', { name: /tutor response/i })).toContainText(
       /Counting and Quantity/i,
     );
+  });
+});
+
+test.describe('offline + data (Phase 9)', () => {
+  test('offline banner appears and in-app navigation still works', async ({ page, context }) => {
+    await page.goto('/dashboard');
+    await context.setOffline(true);
+    // Trigger the offline event and verify the banner.
+    await page.evaluate(() => window.dispatchEvent(new Event('offline')));
+    await expect(page.getByText(/you are offline/i)).toBeVisible();
+    // Client-side navigation of the already-loaded app works offline (bundled
+    // content, no network needed). A full page reload would need a service
+    // worker, which is a post-MVP enhancement.
+    await page.getByRole('link', { name: 'Curriculum map' }).click();
+    await expect(page.getByRole('heading', { name: /curriculum map/i })).toBeVisible();
+    await context.setOffline(false);
+  });
+
+  test('settings exposes progress export and import', async ({ page }) => {
+    await page.goto('/');
+    await page.getByLabel(/your name/i).fill('Ada');
+    await page.getByRole('button', { name: /start learning/i }).click();
+    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await page.goto('/settings');
+    await expect(page.getByRole('button', { name: /export progress/i })).toBeVisible();
+    await expect(page.getByLabel(/import progress from a file/i)).toBeVisible();
   });
 });

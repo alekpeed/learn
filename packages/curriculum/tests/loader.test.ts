@@ -55,6 +55,21 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     expect(result.package.skills.length).toBeGreaterThanOrEqual(40);
   });
 
+  it('every skill has lesson and practice content (doc 11 curriculum acceptance)', () => {
+    const result = loadCoursePackage(loadMvp());
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    for (const skill of result.package.skills) {
+      expect(result.package.lessonBySkill.has(skill.skill_id), `${skill.skill_id} lesson`).toBe(
+        true,
+      );
+      expect(
+        (result.package.questionsBySkill.get(skill.skill_id) ?? []).length,
+        `${skill.skill_id} questions`,
+      ).toBeGreaterThan(0);
+    }
+  });
+
   it('unit-validator questions in the measurement course work', () => {
     const result = loadCoursePackage(loadMvp());
     expect(result.ok).toBe(true);

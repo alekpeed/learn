@@ -300,3 +300,12 @@ button {
 .tutor-response[data-status='fallback'] {
   border-left-color: var(--muted);
 }
+
+/* Offline banner */
+.offline-banner {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: var(--bg);
+  border-bottom: 2px solid var(--muted);
+  font-weight: 600;
+}
