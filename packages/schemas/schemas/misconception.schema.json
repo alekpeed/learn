@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learn.local/schemas/misconception.schema.json",
+  "title": "Misconception",
+  "description": "Misconception record (doc 06 §8).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "misconception_id",
+    "description",
+    "detection_rule",
+    "corrective_explanation",
+    "content_version"
+  ],
+  "properties": {
+    "misconception_id": { "$ref": "common.schema.json#/$defs/misconceptionId" },
+    "description": { "type": "string", "minLength": 1 },
+    "detection_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["equals_value", "matches_pattern", "sign_flip", "off_by_place_value", "custom"]
+        },
+        "value": {},
+        "pattern": { "type": "string" }
+      }
+    },
+    "example_wrong_answer": {},
+    "corrective_explanation": { "type": "string", "minLength": 1 },
+    "recommended_prerequisite_check": { "$ref": "common.schema.json#/$defs/skillId" },
+    "follow_up_question_id": { "$ref": "common.schema.json#/$defs/questionId" },
+    "content_version": { "$ref": "common.schema.json#/$defs/semver" }
+  }
+}

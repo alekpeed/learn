@@ -2,11 +2,11 @@
 
 Status: Proposal for approval (Phase 0 deliverable)
 
-The specification is deliberately coder-agnostic (docs 08, 14). The layout below is framework-independent in shape; the concrete tooling assumes the **recommended** stack in DEC-012 (TypeScript monorepo). If a different stack is chosen, the *areas* stay the same and only the manifests/tooling change.
+The specification is deliberately coder-agnostic (docs 08, 14). The layout below is framework-independent in shape; the concrete tooling assumes the **recommended** stack in DEC-012 (TypeScript monorepo). If a different stack is chosen, the _areas_ stay the same and only the manifests/tooling change.
 
 ## Design goals mapped to the spec
 
-- **Curriculum content separate from application logic** (docs 02 §2, 14 §1) → a top-level `content/` tree that holds *only data*, plus a `curriculum` code package that *loads and validates* it but contains no content.
+- **Curriculum content separate from application logic** (docs 02 §2, 14 §1) → a top-level `content/` tree that holds _only data_, plus a `curriculum` code package that _loads and validates_ it but contains no content.
 - **Providers behind interfaces** (docs 08 §9, 14 §1) → `ai-gateway` and `persistence` expose interfaces with swappable adapters.
 - **Deterministic grading isolated** (DEC-003) → `validation-engine` and `learning-engine` are standalone, AI-free, heavily-tested packages.
 - **Testable services** (doc 08 §1) → domain logic lives in framework-agnostic packages, not in the client.

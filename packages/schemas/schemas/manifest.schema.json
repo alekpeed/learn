@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learn.local/schemas/manifest.schema.json",
+  "title": "Content Package Manifest",
+  "description": "Course package manifest (doc 08 §6, doc 15 §5). schema_version is required (CUR-001).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "content_version", "courses", "generated_at"],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/semver",
+      "description": "Version of the content schemas this package validates against. REQUIRED."
+    },
+    "content_version": { "$ref": "common.schema.json#/$defs/semver" },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$" }
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "change_summary": { "type": "string" },
+    "validation_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "checked_skills": { "type": "integer", "minimum": 0 },
+        "checked_questions": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min_app_version": { "$ref": "common.schema.json#/$defs/semver" }
+      }
+    }
+  }
+}

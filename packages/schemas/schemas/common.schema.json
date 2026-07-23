@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learn.local/schemas/common.schema.json",
+  "title": "Common definitions",
+  "description": "Reusable ID grammar (DEC-007) and shared types. subject.unit.skill lower_snake_case.",
+  "$defs": {
+    "subjectId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "e.g. 'math', 'science'"
+    },
+    "unitId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$",
+      "description": "subject.unit, e.g. 'math.fractions'"
+    },
+    "skillId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$",
+      "description": "subject.unit.skill, e.g. 'math.fractions.add_like_denominators'"
+    },
+    "questionId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*\\.[a-z0-9_]+$",
+      "description": "skillId + '.' + slug, e.g. 'math.fractions.add_like_denominators.q1'"
+    },
+    "misconceptionId": {
+      "type": "string",
+      "pattern": "^mc\\.[a-z][a-z0-9_]*(\\.[a-z0-9_]+)+$",
+      "description": "e.g. 'mc.math.fractions.add_numerators_and_denominators'"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "content_version / package version"
+    },
+    "masteryDimension": {
+      "type": "string",
+      "enum": ["understanding", "accuracy", "independence", "retention", "transfer"]
+    },
+    "masteryThresholds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["understanding", "accuracy", "independence", "retention", "transfer"],
+      "properties": {
+        "understanding": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "accuracy": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "independence": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "retention": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "transfer": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Difficulty band 1-5 (doc 06 §6)"
+    },
+    "accessibleText": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Text alternative for any notation/media (doc 06 §9)"
+    }
+  }
+}

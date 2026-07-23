@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "courses": ["math.core", "science.core"],
+  "generated_at": "2026-07-23T00:00:00Z",
+  "change_summary": "Initial MVP slice package.",
+  "validation_result": { "passed": true, "checked_skills": 40, "checked_questions": 0 },
+  "compatibility": { "min_app_version": "0.1.0" }
+}

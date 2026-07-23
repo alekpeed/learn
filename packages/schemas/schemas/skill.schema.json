@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learn.local/schemas/skill.schema.json",
+  "title": "Skill",
+  "description": "A node in the prerequisite graph (docs 05 §4, 09). ID is stable and never reused (doc 09 §4).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "skill_id",
+    "unit_id",
+    "title",
+    "summary",
+    "objectives",
+    "prerequisites",
+    "mastery_thresholds",
+    "content_version"
+  ],
+  "properties": {
+    "skill_id": { "$ref": "common.schema.json#/$defs/skillId" },
+    "unit_id": { "$ref": "common.schema.json#/$defs/unitId" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["term", "definition"],
+        "properties": {
+          "term": { "type": "string", "minLength": 1 },
+          "definition": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "description": "Edges into this skill. Each must reference an existing skill (checked by the loader, not the schema).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prerequisite_skill_id"],
+        "properties": {
+          "prerequisite_skill_id": { "$ref": "common.schema.json#/$defs/skillId" },
+          "minimum_threshold": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "relationship_type": {
+            "type": "string",
+            "enum": ["required", "recommended"],
+            "default": "required"
+          }
+        }
+      }
+    },
+    "successors": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/skillId" }
+    },
+    "difficulty_band": { "$ref": "common.schema.json#/$defs/difficulty" },
+    "mastery_thresholds": { "$ref": "common.schema.json#/$defs/masteryThresholds" },
+    "content_version": { "$ref": "common.schema.json#/$defs/semver" }
+  }
+}

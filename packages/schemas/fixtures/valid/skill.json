@@ -1,0 +1,43 @@
+{
+  "skill_id": "math.fractions.add_like_denominators",
+  "unit_id": "math.fractions",
+  "title": "Add Fractions With Like Denominators",
+  "summary": "Add fractions that share the same denominator by adding numerators.",
+  "objectives": [
+    "Explain why the denominator remains unchanged",
+    "Add fractions with matching denominators",
+    "Simplify the result"
+  ],
+  "vocabulary": [
+    { "term": "numerator", "definition": "The number above the line; how many parts you have." },
+    {
+      "term": "denominator",
+      "definition": "The number below the line; how many equal parts make a whole."
+    }
+  ],
+  "prerequisites": [
+    {
+      "prerequisite_skill_id": "math.fractions.fraction_meaning",
+      "minimum_threshold": 75,
+      "relationship_type": "required"
+    },
+    {
+      "prerequisite_skill_id": "math.add_sub.addition_facts",
+      "minimum_threshold": 80,
+      "relationship_type": "required"
+    }
+  ],
+  "successors": [
+    "math.fractions.subtract_like_denominators",
+    "math.fractions.add_unlike_denominators"
+  ],
+  "difficulty_band": 2,
+  "mastery_thresholds": {
+    "understanding": 80,
+    "accuracy": 85,
+    "independence": 80,
+    "retention": 75,
+    "transfer": 70
+  },
+  "content_version": "1.0.0"
+}

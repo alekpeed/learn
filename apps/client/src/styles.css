@@ -1,0 +1,150 @@
+/*
+ * Baseline styles with accessibility support (doc 02 §12, doc 11 §4).
+ * Text size, contrast, and reduced motion are driven by data-* attributes on
+ * <html>, set from the learner's settings in LearnerContext.
+ */
+:root {
+  --font-scale: 1;
+  --fg: #10151c;
+  --bg: #ffffff;
+  --muted: #4a5566;
+  --accent: #1a5fb4;
+  --focus: #0b5cad;
+  --error: #b3261e;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: calc(100% * var(--font-scale));
+  color: var(--fg);
+  background: var(--bg);
+}
+
+:root[data-text-size='small'] {
+  --font-scale: 0.9;
+}
+:root[data-text-size='medium'] {
+  --font-scale: 1;
+}
+:root[data-text-size='large'] {
+  --font-scale: 1.2;
+}
+:root[data-text-size='x-large'] {
+  --font-scale: 1.4;
+}
+
+:root[data-contrast='high'] {
+  --fg: #000000;
+  --bg: #ffffff;
+  --muted: #1a1a1a;
+  --accent: #0033aa;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Visible focus for keyboard users (doc 02 §12, doc 07 §3). */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--muted);
+}
+.app-title {
+  font-weight: 700;
+}
+.app-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.app-header nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.25rem;
+}
+.app-header nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.app-header nav a[aria-current='page'] {
+  font-weight: 700;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+fieldset {
+  margin: 1rem 0;
+  border: 1px solid var(--muted);
+}
+label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+input,
+select,
+button {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.screen-state[data-status='error'] p,
+.screen-state[data-status='permission_denied'] p {
+  color: var(--error);
+  font-weight: 600;
+}
+
+/* Honor reduced-motion via setting OR OS preference (doc 11 §4). */
+:root[data-reduced-motion='true'] *,
+:root[data-reduced-motion='true'] *::before {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

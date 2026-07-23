@@ -1,0 +1,30 @@
+{
+  "question_id": "math.fractions.add_like_denominators.q1",
+  "skill_id": "math.fractions.add_like_denominators",
+  "type": "fraction",
+  "difficulty": 2,
+  "prompt": "What is 1/5 + 2/5?",
+  "parameters": { "a_num": 1, "b_num": 2, "den": 5 },
+  "answer_spec": {
+    "correct_answer": "3/5",
+    "accepted_equivalents": ["6/10", "0.6"]
+  },
+  "validator": "fraction",
+  "hints": [
+    { "level": 1, "text": "You are combining parts of the same-size whole." },
+    { "level": 2, "text": "When denominators match, what stays the same?" },
+    { "level": 3, "text": "Rule: add the numerators, keep the denominator." },
+    { "level": 4, "text": "First step: 1 + 2 = 3 in the numerator." },
+    { "level": 5, "text": "So the numerator is 3 and the denominator is 5." },
+    { "level": 6, "text": "The answer is 3/5." }
+  ],
+  "common_wrong_answers": [
+    { "value": "3/10", "misconception_id": "mc.math.fractions.add_numerators_and_denominators" }
+  ],
+  "dimensions": ["accuracy", "independence"],
+  "explanation": "The denominator counts the size of each part, which does not change when you add same-size parts. Add only the numerators: 1 + 2 = 3, over 5.",
+  "estimated_time_seconds": 30,
+  "transfer_flag": false,
+  "accessible_text": "One fifth plus two fifths",
+  "content_version": "1.0.0"
+}

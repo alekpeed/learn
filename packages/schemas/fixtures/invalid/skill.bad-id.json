@@ -1,0 +1,16 @@
+{
+  "skill_id": "Math.Fractions.AddLike",
+  "unit_id": "math.fractions",
+  "title": "Add Fractions",
+  "summary": "Adds fractions.",
+  "objectives": ["Add fractions"],
+  "prerequisites": [],
+  "mastery_thresholds": {
+    "understanding": 80,
+    "accuracy": 85,
+    "independence": 80,
+    "retention": 75,
+    "transfer": 70
+  },
+  "content_version": "1.0.0"
+}

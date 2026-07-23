@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learn.local/schemas/question.schema.json",
+  "title": "Question",
+  "description": "Question metadata (doc 06 §5, doc 09). Every question has a deterministic validator (doc 11).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "question_id",
+    "skill_id",
+    "type",
+    "difficulty",
+    "prompt",
+    "answer_spec",
+    "validator",
+    "hints",
+    "explanation",
+    "dimensions",
+    "content_version"
+  ],
+  "properties": {
+    "question_id": { "$ref": "common.schema.json#/$defs/questionId" },
+    "skill_id": { "$ref": "common.schema.json#/$defs/skillId" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "numeric",
+        "fraction",
+        "decimal",
+        "percentage",
+        "unit",
+        "multiple_choice",
+        "structured_reasoning",
+        "self_explanation_select"
+      ],
+      "description": "structured_reasoning / self_explanation_select feed Understanding (DEC-009)"
+    },
+    "difficulty": { "$ref": "common.schema.json#/$defs/difficulty" },
+    "prompt": { "type": "string", "minLength": 1 },
+    "parameters": {
+      "type": "object",
+      "description": "Structured parameters for question variation (doc 06 §5)."
+    },
+    "answer_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["correct_answer"],
+      "properties": {
+        "correct_answer": {},
+        "accepted_equivalents": { "type": "array", "items": {} },
+        "tolerance": { "type": "number", "minimum": 0 },
+        "unit": { "type": "string" },
+        "rounding": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decimals": { "type": "integer", "minimum": 0 },
+            "significant_figures": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+    "validator": {
+      "type": "string",
+      "enum": [
+        "numeric",
+        "fraction",
+        "decimal",
+        "percentage",
+        "unit",
+        "exact_choice",
+        "structured"
+      ],
+      "description": "Which deterministic validator grades this item (doc 08 §2)."
+    },
+    "hints": {
+      "type": "array",
+      "description": "Progressive hint ladder, least to most revealing (doc 04 §7, doc 06 §7).",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["level", "text"],
+        "properties": {
+          "level": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "text": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "common_wrong_answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["value", "misconception_id"],
+        "properties": {
+          "value": {},
+          "misconception_id": { "$ref": "common.schema.json#/$defs/misconceptionId" }
+        }
+      }
+    },
+    "dimensions": {
+      "type": "array",
+      "description": "Which mastery dimensions this item feeds (DEC-009).",
+      "minItems": 1,
+      "items": { "$ref": "common.schema.json#/$defs/masteryDimension" }
+    },
+    "explanation": { "type": "string", "minLength": 1 },
+    "estimated_time_seconds": { "type": "integer", "minimum": 1 },
+    "transfer_flag": { "type": "boolean", "default": false },
+    "accessible_text": { "$ref": "common.schema.json#/$defs/accessibleText" },
+    "content_version": { "$ref": "common.schema.json#/$defs/semver" }
+  }
+}

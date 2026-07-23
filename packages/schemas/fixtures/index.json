@@ -1,0 +1,25 @@
+{
+  "description": "Maps each fixture to the schema it should validate against and the expected result. Consumed by packages/schemas tests (CUR-001 acceptance).",
+  "valid": [
+    { "file": "valid/skill.json", "schema": "skill" },
+    { "file": "valid/question.json", "schema": "question" },
+    { "file": "valid/manifest.json", "schema": "manifest" }
+  ],
+  "invalid": [
+    {
+      "file": "invalid/skill.bad-id.json",
+      "schema": "skill",
+      "reason": "skill_id violates DEC-007 ID grammar"
+    },
+    {
+      "file": "invalid/question.no-validator.json",
+      "schema": "question",
+      "reason": "missing required 'validator'"
+    },
+    {
+      "file": "invalid/manifest.no-schema-version.json",
+      "schema": "manifest",
+      "reason": "missing required 'schema_version'"
+    }
+  ]
+}
