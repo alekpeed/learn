@@ -11,6 +11,7 @@ import numberFoundations from '../../../../content/mvp/units/number_foundations.
 import addSub from '../../../../content/mvp/units/add_sub.json';
 import multDiv from '../../../../content/mvp/units/mult_div.json';
 import fractions from '../../../../content/mvp/units/fractions.json';
+import decimalsPercents from '../../../../content/mvp/units/decimals_percents.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
 import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
 import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
@@ -26,6 +27,7 @@ const units: UnitFile[] = [
   addSub,
   multDiv,
   fractions,
+  decimalsPercents,
   algebra,
   scienceThinking,
   scienceMeasurement,

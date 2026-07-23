@@ -17,6 +17,7 @@ const UNIT_FILES = [
   'units/add_sub.json',
   'units/mult_div.json',
   'units/fractions.json',
+  'units/decimals_percents.json',
   'units/algebra.json',
   'units/science_thinking.json',
   'units/science_measurement.json',
@@ -85,6 +86,14 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     const pos = (id: string) => result.package.order.indexOf(id);
     // A capstone comes after one of its prerequisites.
     expect(pos('math.algebra.equality')).toBeLessThan(pos('math.algebra.one_step_equations'));
+    // Decimals & Percentages unit: percent-of-a-number follows the meaning of percent,
+    // which itself follows fraction/decimal equivalence.
+    expect(pos('math.decimals_percents.fraction_decimal_equivalence')).toBeLessThan(
+      pos('math.decimals_percents.percent_meaning'),
+    );
+    expect(pos('math.decimals_percents.percent_meaning')).toBeLessThan(
+      pos('math.decimals_percents.percent_of_number'),
+    );
   });
 
   it('every skill with questions has a validator on each question', () => {

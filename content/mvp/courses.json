@@ -11,7 +11,8 @@
       { "unit_id": "math.add_sub", "title": "Addition and Subtraction", "order": 2 },
       { "unit_id": "math.mult_div", "title": "Multiplication and Division", "order": 3 },
       { "unit_id": "math.fractions", "title": "Fractions", "order": 4 },
-      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 5 }
+      { "unit_id": "math.decimals_percents", "title": "Decimals and Percentages", "order": 5 },
+      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 6 }
     ]
   },
   {

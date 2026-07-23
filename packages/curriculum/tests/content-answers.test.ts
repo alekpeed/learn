@@ -12,6 +12,7 @@ const UNITS = [
   'add_sub',
   'mult_div',
   'fractions',
+  'decimals_percents',
   'algebra',
   'science_thinking',
   'science_measurement',

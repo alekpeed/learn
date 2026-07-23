@@ -1,0 +1,2967 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "unit_id": "math.decimals_percents",
+      "title": "Decimal Place Value",
+      "summary": "A decimal point separates whole ones from parts of one. The first place after the point is tenths, the next is hundredths, then thousandths. Each place is one tenth the size of the place to its left, just like the whole-number places but going the other way.",
+      "objectives": [
+        "Name the place of a digit after the decimal point (tenths, hundredths, thousandths).",
+        "State the value of a digit based on its decimal place.",
+        "Write a decimal as a fraction over 10, 100, or 1000, and back."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.fraction_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "unit_id": "math.decimals_percents",
+      "title": "Reading and Comparing Decimals",
+      "summary": "To compare decimals, compare the digits place by place from the left, just like whole numbers. Extra zeros on the right do not change a decimal's value, so 0.7 and 0.70 are equal. A longer decimal is not automatically larger.",
+      "objectives": [
+        "Read a decimal aloud using place-value names.",
+        "Compare two decimals by aligning place values.",
+        "Explain why trailing zeros do not change a decimal's value."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.decimal_place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.comparing_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "unit_id": "math.decimals_percents",
+      "title": "Fractions and Decimals",
+      "summary": "A fraction and a decimal can name the same amount. Tenths and hundredths convert directly (0.7 = 7/10), and other fractions convert by making an equivalent fraction over 10 or 100, or by dividing the numerator by the denominator.",
+      "objectives": [
+        "Convert a fraction with denominator 10 or 100 to a decimal and back.",
+        "Convert common fractions such as 1/2, 1/4, 3/4, 1/5, and 1/8 to decimals.",
+        "Write a terminating decimal as a fraction in simplest form."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.decimal_place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.equivalent_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "unit_id": "math.decimals_percents",
+      "title": "Adding and Subtracting Decimals",
+      "summary": "To add or subtract decimals, line up the decimal points so that tenths add to tenths and hundredths to hundredths, then add or subtract as with whole numbers and bring the decimal point straight down.",
+      "objectives": [
+        "Add two decimals by aligning place values.",
+        "Subtract one decimal from another by aligning place values.",
+        "Explain why the decimal points must be lined up before adding or subtracting."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.reading_comparing_decimals",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.multi_digit_addition",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "unit_id": "math.decimals_percents",
+      "title": "Multiplying and Dividing Decimals",
+      "summary": "To multiply decimals, multiply as with whole numbers, then place the decimal point so the answer has as many decimal places as the two factors combined. To divide a decimal by a whole number, divide as usual and bring the decimal point straight up.",
+      "objectives": [
+        "Multiply a decimal by a whole number.",
+        "Multiply two decimals and place the decimal point using the total number of decimal places.",
+        "Divide a decimal by a whole number."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.add_subtract_decimals",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.multi_digit_multiplication",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "unit_id": "math.decimals_percents",
+      "title": "The Meaning of Percent",
+      "summary": "Percent means per hundred. A percent is a fraction with denominator 100, so 25% means 25 out of 100, which is the fraction 25/100 and the decimal 0.25. This lets you switch freely among percents, fractions, and decimals.",
+      "objectives": [
+        "Explain that percent means per hundred.",
+        "Write a percent as a fraction over 100 and as a decimal.",
+        "Write a decimal or a fraction over 100 as a percent."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "unit_id": "math.decimals_percents",
+      "title": "Finding a Percent of a Number",
+      "summary": "To find a percent of a number, write the percent as a decimal (or a fraction) and multiply. For example, 25% of 80 is 0.25 times 80, which is 20. This is how discounts, tips, and shares of a total are calculated.",
+      "objectives": [
+        "Write a percent as a decimal to prepare for multiplication.",
+        "Find a percent of a whole number.",
+        "Apply percent-of-a-number to a real situation such as a discount."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.multiply_divide_decimals",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "unit_id": "math.decimals_percents",
+      "title": "Converting Fractions, Decimals, and Percents",
+      "summary": "Fractions, decimals, and percents are three ways to write the same amount. A decimal times 100 is a percent, a percent over 100 is a fraction, and a fraction can become a decimal by division. Being able to move among all three makes comparing and reasoning easier.",
+      "objectives": [
+        "Convert between any two of fraction, decimal, and percent forms.",
+        "Compare numbers written in different forms by converting to a common form.",
+        "Choose a convenient form for a given situation."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.decimals_percents.decimal_place_value.lesson",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "title": "Decimal Place Value",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to name decimal places, give the value of a digit after the decimal point, and connect decimals to fractions of ten and a hundred."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that in a whole number, each place is ten times the place to its right: ones, tens, hundreds. A fraction names equal parts of one whole. Decimals extend place value to parts of one."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Imagine one whole split into 10 equal strips. Each strip is one tenth, written 0.1. Split one of those strips into 10 again and each tiny piece is one hundredth, written 0.01. The decimal point marks where whole ones end and parts of a whole begin."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The places after the decimal point are, in order, tenths, hundredths, and thousandths. A digit's value is the digit times its place. In 0.36, the 3 means 3 tenths and the 6 means 6 hundredths."
+        },
+        {
+          "type": "representation",
+          "body": "Picture a hundred-square (a 10 by 10 grid) that stands for one whole. One column of 10 shaded is one tenth, 0.1. One small cell shaded is one hundredth, 0.01. So 0.36 shades 3 full columns and 6 extra cells."
+        },
+        {
+          "type": "worked_example",
+          "body": "What is the value of the 5 in 0.257? The first place after the point is tenths (2), the second is hundredths (5), the third is thousandths (7). So the 5 is in the hundredths place and means 5 hundredths, or 5/100."
+        },
+        {
+          "type": "guided_practice",
+          "body": "In 0.8, how many tenths are there? The digit 8 sits in the tenths place, so there are 8 tenths, and 0.8 equals 8/10."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking the first place after the point is hundredths. It is tenths. Another is reading 0.5 as five hundredths; it is five tenths, the same as 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "The places after the decimal point are tenths, hundredths, and thousandths, each one tenth of the place before it. A digit's value is the digit times its place, and any decimal can be written as a fraction over 10, 100, or 1000."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In the number 0.47, what is the value of the 4 and the value of the 7?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.reading_comparing_decimals.lesson",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "title": "Reading and Comparing Decimals",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read decimals correctly and compare them by looking at place values, without being fooled by how many digits they have."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the decimal places: tenths, hundredths, thousandths. Recall that with whole numbers you compare starting from the largest place on the left."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think of money. $0.7 of a dollar is 70 cents, and $0.70 is also 70 cents, so they are equal; the extra 0 just fills the empty hundredths place. When comparing, 0.5 (fifty cents) is more than 0.45 (forty-five cents), even though 0.45 has more digits."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To compare decimals, line up the decimal points and compare digits from left to right, one place at a time. The first place where the digits differ decides which decimal is larger. Adding zeros to the right of the last digit does not change the value."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line from 0 to 1 split into tenths, 0.5 sits halfway. The value 0.45 sits just before it, between 0.4 and 0.5, so 0.5 is clearly farther right and therefore greater."
+        },
+        {
+          "type": "worked_example",
+          "body": "Which is greater, 0.5 or 0.45? Compare the tenths place first: 0.5 has 5 tenths, 0.45 has 4 tenths. Since 5 tenths is more than 4 tenths, 0.5 is greater, even though 0.45 has more digits."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compare 0.6 and 0.60. Write 0.6 as 0.60 by adding a zero in the hundredths place. Now both are 60 hundredths, so they are equal."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The most common mistake is thinking a decimal with more digits is larger (the 'longer is larger' error), such as saying 0.45 is greater than 0.5. Compare place by place from the left instead."
+        },
+        {
+          "type": "summary",
+          "body": "Read decimals with place-value names and compare them digit by digit from the left. Trailing zeros do not change value, so 0.7 equals 0.70, and more digits does not mean a larger number."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is 0.5 greater than 0.45 even though 0.45 has more digits?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.fraction_decimal_equivalence.lesson",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "title": "Fractions and Decimals",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to move between fractions and decimals for common values and explain why they name the same amount."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that decimals are fractions over 10, 100, or 1000, and that you make an equivalent fraction by multiplying the numerator and denominator by the same number."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Half of a whole can be written as 1/2 or as 0.5, and both mean the same amount: five tenths. A decimal is just a fraction whose denominator is 10, 100, or 1000, so converting is about rewriting the fraction with one of those denominators."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To convert a fraction to a decimal, rewrite it as an equivalent fraction with denominator 10, 100, or 1000, then read off the digits; or divide the numerator by the denominator. To convert a decimal to a fraction, write it over its place value and simplify."
+        },
+        {
+          "type": "representation",
+          "body": "A hundred-square shows this well: 1/4 shades 25 of the 100 cells, which is 25 hundredths, or 0.25. The same square shows 1/2 as 50 cells, or 0.50."
+        },
+        {
+          "type": "worked_example",
+          "body": "Write 3/4 as a decimal. Make an equivalent fraction with denominator 100: multiply top and bottom by 25 to get 75/100. Seventy-five hundredths is 0.75. (You could also divide 3 by 4 to get 0.75.)"
+        },
+        {
+          "type": "guided_practice",
+          "body": "Write 1/5 as a decimal. Multiply top and bottom by 2 to get 2/10, which is two tenths, or 0.2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is writing 1/4 as 0.4 by just copying the digits. Instead, convert to hundredths: 1/4 = 25/100 = 0.25. Another is forgetting to simplify, such as leaving 0.5 as 5/10 instead of 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "Fractions and decimals can name the same amount. Convert a fraction by rewriting it over 10, 100, or 1000 (or by dividing), and convert a decimal by writing it over its place value and simplifying."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How can you turn 3/4 into a decimal, and what decimal do you get?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.add_subtract_decimals.lesson",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "title": "Adding and Subtracting Decimals",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to add and subtract decimals by lining up the decimal points, and say why that step matters."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that you can only combine amounts of the same size, and that decimal places are tenths, hundredths, and thousandths. You will also use multi-digit addition and subtraction."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Money makes this natural: to add $1.20 and $0.35 you add the cents to the cents and the dollars to the dollars. Lining up the decimal points keeps tenths with tenths and hundredths with hundredths, so you are combining pieces of the same size."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To add or subtract decimals, write the numbers so the decimal points are directly above each other, filling empty places with zeros. Add or subtract place by place, then bring the decimal point straight down into the answer."
+        },
+        {
+          "type": "representation",
+          "body": "Stack the numbers vertically with the decimal points aligned. For 1.2 + 0.35, write 1.20 above 0.35 so both have two decimal places, then add columns from the right: 1.20 + 0.35 = 1.55."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 3.46 + 2.7. Line up the points and write 2.7 as 2.70. Add hundredths: 6 + 0 = 6. Add tenths: 4 + 7 = 11, write 1 and carry 1. Add ones: 3 + 2 + 1 = 6. The result is 6.16."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Subtract 0.9 - 0.3. The points are aligned and both are tenths. Subtract the tenths: 9 - 3 = 6, giving 0.6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The most common mistake is lining up the last digits instead of the decimal points, which mixes tenths with hundredths. Always align the decimal points first, using zeros to fill empty places."
+        },
+        {
+          "type": "summary",
+          "body": "To add or subtract decimals, align the decimal points, fill empty places with zeros, combine place by place, and bring the decimal point straight down."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When adding 4.5 + 0.35, what must you line up, and why?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.multiply_divide_decimals.lesson",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "title": "Multiplying and Dividing Decimals",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to multiply and divide decimals and place the decimal point correctly in the answer."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your multiplication and division facts and that decimal places are tenths, hundredths, and thousandths. You will also use adding and subtracting decimals to check answers."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Multiplying 0.3 by 0.2 means taking 3 tenths of 2 tenths. Tenths times tenths gives hundredths, so the answer is in hundredths: 6 hundredths, or 0.06. Counting decimal places keeps track of how small the pieces get."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To multiply decimals, ignore the points and multiply the whole numbers, then give the answer the same total number of decimal places as the two factors together. To divide a decimal by a whole number, divide normally and bring the decimal point straight up into the quotient."
+        },
+        {
+          "type": "representation",
+          "body": "For 0.3 times 0.2, a hundred-square shows a rectangle 3 tenths wide and 2 tenths tall, covering 6 of the 100 small cells, which is 0.06."
+        },
+        {
+          "type": "worked_example",
+          "body": "Multiply 0.4 times 0.7. Multiply 4 times 7 to get 28. Each factor has 1 decimal place, so the answer has 2 decimal places: 0.28."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Divide 0.6 by 2. Think 6 tenths shared into 2 equal groups is 3 tenths, so 0.6 divided by 2 is 0.3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is forgetting to count decimal places when multiplying, writing 0.3 times 0.2 as 0.6 instead of 0.06. Count the decimal places in both factors and give the answer that many."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply decimals as whole numbers, then place the point using the total decimal places of the factors. To divide by a whole number, divide as usual and bring the decimal point straight up."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In 0.4 times 0.7, how many decimal places should the answer have, and why?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.percent_meaning.lesson",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "title": "The Meaning of Percent",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to explain what percent means and convert between percents, fractions over 100, and decimals."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a decimal is a fraction over 10, 100, or 1000, and that 0.25 means 25 hundredths. Percent builds directly on hundredths."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Percent is just a special name for hundredths. If a test is scored out of 100 and you get 80 right, you scored 80 per hundred, or 80%. Because a percent is always out of 100, 80% is the same as 80/100 and the decimal 0.80."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Percent means per hundred; the symbol is %. To write a percent as a decimal, divide by 100 (move the point two places left): 25% = 0.25. To write a decimal as a percent, multiply by 100: 0.5 = 50%."
+        },
+        {
+          "type": "representation",
+          "body": "A hundred-square is a percent picture: each small cell is 1%. Shading 25 cells shows 25%, which is 25/100 of the square, or 0.25."
+        },
+        {
+          "type": "worked_example",
+          "body": "Write 7% as a decimal. Percent means out of 100, so 7% is 7/100. Seven hundredths is 0.07 (a zero is needed in the tenths place)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Write 0.5 as a percent. Multiply by 100: 0.5 times 100 is 50, so 0.5 is 50%."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is writing 7% as 0.7 by moving the point only one place. Percent is out of 100, so move two places: 7% = 0.07. Another is thinking 100% is more than the whole; 100% is exactly the whole."
+        },
+        {
+          "type": "summary",
+          "body": "Percent means per hundred. A percent equals a fraction over 100 and a decimal found by dividing by 100. To turn a decimal into a percent, multiply by 100."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is 7% equal to 0.07 rather than 0.7?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.percent_of_number.lesson",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "title": "Finding a Percent of a Number",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find a percent of a number by converting the percent to a decimal and multiplying, including in real situations."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a percent is out of 100, so 25% = 0.25, and that you can multiply a decimal by a whole number. Both ideas combine here."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Finding 25% of 80 means finding a quarter of 80, because 25% is 1/4. A quarter of 80 is 20. Turning the percent into a decimal or fraction lets you multiply to find any percent of any number."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To find a percent of a number, convert the percent to a decimal by dividing by 100, then multiply by the number. In symbols, percent of a number = (percent / 100) times the number."
+        },
+        {
+          "type": "representation",
+          "body": "Think of the number as a bar. Finding 20% means taking 20 of every 100 parts of the bar. For 45, that is 0.20 times 45, which is 9."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 25% of 80. Write 25% as 0.25. Multiply: 0.25 times 80 is 20. So 25% of 80 is 20. (Check: 25% is 1/4, and a quarter of 80 is 20.)"
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find 10% of 50. Write 10% as 0.1 and multiply: 0.1 times 50 is 5. So 10% of 50 is 5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying by the percent number itself, such as 25 times 80, instead of by its decimal form 0.25. Always convert the percent to a decimal (divide by 100) first."
+        },
+        {
+          "type": "summary",
+          "body": "To find a percent of a number, change the percent to a decimal by dividing by 100, then multiply by the number. This calculates discounts, tips, and shares of a total."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you find 30% of a number, and by what decimal do you multiply?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.convert_fraction_decimal_percent.lesson",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "title": "Converting Fractions, Decimals, and Percents",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to convert freely among fractions, decimals, and percents and use that to compare values."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a percent is out of 100, that a decimal is a fraction over 10 or 100, and how to convert common fractions to decimals. This lesson ties all three together."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "One half can be written as 1/2, 0.5, or 50%. They are the same amount dressed in different clothes. Percent connects to decimals through hundredths, and decimals connect to fractions through place value, so all three link up."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Decimal to percent: multiply by 100 and add %. Percent to decimal: divide by 100. Percent to fraction: write over 100 and simplify. Fraction to decimal: rewrite over 10 or 100, or divide the numerator by the denominator."
+        },
+        {
+          "type": "representation",
+          "body": "A hundred-square ties them together: 50 shaded cells is 50/100 of the square, which is 50%, which is 0.50. The single picture shows all three forms at once."
+        },
+        {
+          "type": "worked_example",
+          "body": "Write 3/5 as a percent. First convert to a decimal: 3/5 = 6/10 = 0.6. Then convert the decimal to a percent by multiplying by 100: 0.6 times 100 is 60, so 3/5 is 60%."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Write 0.75 as a percent. Multiply by 100: 0.75 times 100 is 75, so 0.75 is 75%."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is converting only part way, such as writing 3/5 as 0.6 but forgetting to multiply by 100 for the percent. Another is mixing up the direction: multiply by 100 to make a percent, divide by 100 to undo one."
+        },
+        {
+          "type": "summary",
+          "body": "Fractions, decimals, and percents are interchangeable. Multiply a decimal by 100 for a percent, divide a percent by 100 for a decimal, write a percent over 100 for a fraction, and divide a fraction for a decimal."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Starting from the fraction 3/5, what steps turn it into a percent, and what percent do you get?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q1",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "In the number 3.4, which place is the digit 4 in?",
+      "answer_spec": {
+        "correct_answer": "tenths"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The first place to the right of the decimal point."
+        },
+        {
+          "level": 2,
+          "text": "That place is called tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The first place after the decimal point is the tenths place, so the 4 in 3.4 means 4 tenths.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["tenths", "hundredths", "ones", "tens"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q2",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "How many tenths are in 0.6?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The digit after the decimal point counts tenths."
+        },
+        {
+          "level": 2,
+          "text": "The digit is 6, so there are 6 tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.6 means 6 tenths, so there are 6 tenths and 0.6 equals 6/10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q3",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 0.9 as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "9/10"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "0.9 means 9 tenths."
+        },
+        {
+          "level": 2,
+          "text": "Nine tenths is written 9 over 10."
+        },
+        {
+          "level": 3,
+          "text": "9 and 10 share no common factor, so it is already simplest."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.9 is 9 tenths, written 9/10, which is already in simplest form.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q4",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the value of the digit 5 in 0.25?",
+      "answer_spec": {
+        "correct_answer": "5 hundredths"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the place of the 5."
+        },
+        {
+          "level": 2,
+          "text": "The second place after the point is hundredths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 0.25 the 2 is in the tenths place and the 5 is in the hundredths place, so the 5 means 5 hundredths.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["5 hundredths", "5 tenths", "5 ones", "5 thousandths"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q5",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 0.07 as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "7/100"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 7 is in the hundredths place."
+        },
+        {
+          "level": 2,
+          "text": "Seven hundredths is 7 over 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.07 has a 0 in the tenths place and a 7 in the hundredths place, so it is 7 hundredths, or 7/100.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q6",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the number 0.583, which digit is in the hundredths place?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Tenths is first, hundredths is second."
+        },
+        {
+          "level": 2,
+          "text": "The second digit after the point is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "After the point the places are tenths (5), hundredths (8), thousandths (3), so the hundredths digit is 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q7",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write the decimal that means 4 tenths and 3 hundredths.",
+      "answer_spec": {
+        "correct_answer": 0.43
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Put the tenths digit first, then the hundredths digit."
+        },
+        {
+          "level": 2,
+          "text": "4 tenths and 3 hundredths is 0.43."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 tenths goes in the first place and 3 hundredths in the second place, giving 0.43.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q8",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Write 6 hundredths as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.06
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Hundredths is the second place after the point."
+        },
+        {
+          "level": 2,
+          "text": "There are no tenths, so put a 0 in the tenths place: 0.06."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Six hundredths needs the hundredths (second) place, with a 0 in the tenths place to hold it: 0.06.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "common_wrong_answers": [
+        {
+          "value": 0.6,
+          "misconception_id": "mc.math.decimals_percents.place_holder_ignored"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q9",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which fraction is equal to 0.5?",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "0.5 means 5 tenths."
+        },
+        {
+          "level": 2,
+          "text": "5/10 simplifies by dividing top and bottom by 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.5 is 5 tenths, or 5/10, which simplifies to 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["1/2", "1/5", "5", "1/50"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.decimal_place_value.q10",
+      "skill_id": "math.decimals_percents.decimal_place_value",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Order these decimal places from largest to smallest. Arrange: tenths, thousandths, hundredths.",
+      "answer_spec": {
+        "correct_answer": ["tenths", "hundredths", "thousandths"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each place is one tenth the size of the place to its left."
+        },
+        {
+          "level": 2,
+          "text": "Tenths are biggest, then hundredths, then thousandths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Moving right, each place is ten times smaller, so tenths are largest, then hundredths, then thousandths.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["tenths", "hundredths", "thousandths"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q1",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which statement about 0.7 and 0.70 is true?",
+      "answer_spec": {
+        "correct_answer": "They are equal"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add a zero to 0.7 in the hundredths place."
+        },
+        {
+          "level": 2,
+          "text": "0.70 is 70 hundredths and 0.7 is 7 tenths, which is also 70 hundredths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.7 equals 0.70 because a trailing zero fills the empty hundredths place without changing the value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["They are equal", "0.7 is greater", "0.70 is greater", "You cannot tell"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q2",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which decimal is greater, 0.5 or 0.45?",
+      "answer_spec": {
+        "correct_answer": "0.5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the tenths place first."
+        },
+        {
+          "level": 2,
+          "text": "0.5 has 5 tenths; 0.45 has 4 tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The tenths digit decides it: 5 tenths is more than 4 tenths, so 0.5 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["0.5", "0.45"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "0.45",
+          "misconception_id": "mc.math.decimals_percents.longer_is_larger"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q3",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which decimal is smaller, 0.3 or 0.29?",
+      "answer_spec": {
+        "correct_answer": "0.29"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare tenths: 3 tenths versus 2 tenths."
+        },
+        {
+          "level": 2,
+          "text": "0.29 has fewer tenths, so it is smaller."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.3 has 3 tenths and 0.29 has 2 tenths, so 0.29 is smaller despite having more digits.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0.29", "0.3"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "0.3",
+          "misconception_id": "mc.math.decimals_percents.longer_is_larger"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q4",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Order these from least to greatest. Arrange: 0.4, 0.04, 0.44.",
+      "answer_spec": {
+        "correct_answer": ["0.04", "0.4", "0.44"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the tenths place first."
+        },
+        {
+          "level": 2,
+          "text": "0.04 has 0 tenths, 0.4 and 0.44 have 4 tenths; then compare hundredths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.04 has 0 tenths so it is least; 0.4 and 0.44 both have 4 tenths, and 0.44 has extra hundredths, so 0.44 is greatest.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0.4", "0.04", "0.44"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q5",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which symbol makes this true: 0.6 __ 0.60 ?",
+      "answer_spec": {
+        "correct_answer": "="
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 0.6 with a hundredths digit."
+        },
+        {
+          "level": 2,
+          "text": "0.6 is 0.60, so they are equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.6 and 0.60 are both 60 hundredths, so the correct symbol is the equals sign.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["=", "<", ">"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q6",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which decimal is the greatest: 0.812, 0.9, 0.85, or 0.088?",
+      "answer_spec": {
+        "correct_answer": "0.9"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the tenths place across all four."
+        },
+        {
+          "level": 2,
+          "text": "0.9 has 9 tenths, the most of any option."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Comparing tenths first, 0.9 has 9 tenths while the others have 8 or 0 tenths, so 0.9 is greatest.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0.812", "0.9", "0.85", "0.088"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "0.812",
+          "misconception_id": "mc.math.decimals_percents.longer_is_larger"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q7",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Order these from least to greatest. Arrange: 0.5, 0.55, 0.505, 0.05.",
+      "answer_spec": {
+        "correct_answer": ["0.05", "0.5", "0.505", "0.55"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare tenths first, then hundredths, then thousandths."
+        },
+        {
+          "level": 2,
+          "text": "0.05 has 0 tenths; among the 5-tenths values compare the next places."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.05 has 0 tenths so it is least; the rest have 5 tenths, then 0.5 (=0.500) < 0.505 < 0.55 by the later places.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["0.5", "0.55", "0.505", "0.05"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q8",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "How do you read 0.25 using place-value names?",
+      "answer_spec": {
+        "correct_answer": "twenty-five hundredths"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last digit is in the hundredths place."
+        },
+        {
+          "level": 2,
+          "text": "So 0.25 is twenty-five hundredths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.25 has its last digit in the hundredths place, so it is read as twenty-five hundredths (which equals 1/4).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "twenty-five hundredths",
+          "twenty-five tenths",
+          "two point twenty-five",
+          "twenty-five"
+        ]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q9",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every value that is equal to 0.3. Enter your choices separated by | (for example: A|B).",
+      "answer_spec": {
+        "correct_answer": ["0.30", "0.300", "3/10"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Trailing zeros do not change value."
+        },
+        {
+          "level": 2,
+          "text": "0.3 = 0.30 = 0.300, and 0.3 = 3 tenths = 3/10."
+        },
+        {
+          "level": 3,
+          "text": "0.03 is only 3 hundredths, which is different."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.30, 0.300, and 3/10 all equal 3 tenths; 0.03 is 3 hundredths, which is ten times smaller.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["0.30", "0.300", "0.03", "3/10"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.reading_comparing_decimals.q10",
+      "skill_id": "math.decimals_percents.reading_comparing_decimals",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "One runner ran 0.400 km and another ran 0.4 km. Who ran farther?",
+      "answer_spec": {
+        "correct_answer": "They ran the same distance"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare 0.400 and 0.4."
+        },
+        {
+          "level": 2,
+          "text": "Trailing zeros do not change the value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "0.400 and 0.4 are equal because the extra zeros do not change the value, so both ran the same distance.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["They ran the same distance", "The first runner", "The second runner"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q1",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "Write 1/2 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 1/2 with denominator 10."
+        },
+        {
+          "level": 2,
+          "text": "1/2 = 5/10 = 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 equals 5/10, which is five tenths, written 0.5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q2",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "Write 1/4 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.25
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 1/4 with denominator 100."
+        },
+        {
+          "level": 2,
+          "text": "1/4 = 25/100 = 0.25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/4 equals 25/100, which is twenty-five hundredths, written 0.25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "common_wrong_answers": [
+        {
+          "value": 0.4,
+          "misconception_id": "mc.math.decimals_percents.copy_fraction_digits"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q3",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 3/4 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.75
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 3/4 with denominator 100."
+        },
+        {
+          "level": 2,
+          "text": "Multiply top and bottom by 25 to get 75/100."
+        },
+        {
+          "level": 3,
+          "text": "75 hundredths is 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/4 equals 75/100, which is seventy-five hundredths, written 0.75.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q4",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 0.5 as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "0.5 is 5 tenths, or 5/10."
+        },
+        {
+          "level": 2,
+          "text": "Divide top and bottom by 5 to simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.5 is 5/10, which simplifies to 1/2 by dividing numerator and denominator by 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q5",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 1/5 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.2
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 1/5 with denominator 10."
+        },
+        {
+          "level": 2,
+          "text": "Multiply top and bottom by 2 to get 2/10 = 0.2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/5 equals 2/10, which is two tenths, written 0.2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q6",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 1/8 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.125
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 1 by 8."
+        },
+        {
+          "level": 2,
+          "text": "1 divided by 8 is 0.125 (which is 125 thousandths)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dividing 1 by 8 gives 0.125, which is one hundred twenty-five thousandths, or 125/1000.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q7",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 0.25 as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "0.25 is 25 hundredths, or 25/100."
+        },
+        {
+          "level": 2,
+          "text": "Divide top and bottom by 25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.25 is 25/100, which simplifies to 1/4 by dividing numerator and denominator by 25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q8",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Write 7/10 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.7
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is already 10."
+        },
+        {
+          "level": 2,
+          "text": "Seven tenths is 0.7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7/10 is seven tenths, which is written directly as 0.7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q9",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Write 3/5 as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 3/5 with denominator 10."
+        },
+        {
+          "level": 2,
+          "text": "Multiply top and bottom by 2 to get 6/10 = 0.6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/5 equals 6/10, which is six tenths, written 0.6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q10",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which fraction is equal to 0.2?",
+      "answer_spec": {
+        "correct_answer": "1/5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "0.2 is 2 tenths, or 2/10."
+        },
+        {
+          "level": 2,
+          "text": "Simplify 2/10 by dividing top and bottom by 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.2 is 2/10, which simplifies to 1/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["1/5", "1/2", "2/5", "1/20"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.fraction_decimal_equivalence.q11",
+      "skill_id": "math.decimals_percents.fraction_decimal_equivalence",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A recipe needs 3/4 of a cup of milk. Your measuring cup is marked in decimals. What decimal amount is 3/4?",
+      "answer_spec": {
+        "correct_answer": 0.75
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 3/4 to hundredths."
+        },
+        {
+          "level": 2,
+          "text": "3/4 = 75/100 = 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3/4 of a cup equals 0.75 of a cup, since 3/4 = 75/100.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q1",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "What is 0.3 + 0.4?",
+      "answer_spec": {
+        "correct_answer": 0.7
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both are tenths."
+        },
+        {
+          "level": 2,
+          "text": "Add the tenths: 3 + 4 = 7, giving 0.7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.3 and 0.4 are both tenths, so 3 tenths plus 4 tenths is 7 tenths, or 0.7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q2",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "What is 0.5 + 0.5?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the tenths: 5 + 5."
+        },
+        {
+          "level": 2,
+          "text": "Ten tenths make one whole, so the answer is 1.0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 tenths plus 5 tenths is 10 tenths, which is one whole, written 1 (or 1.0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q3",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 0.25 + 0.5?",
+      "answer_spec": {
+        "correct_answer": 0.75
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 0.5 as 0.50 so both have hundredths."
+        },
+        {
+          "level": 2,
+          "text": "Add: 0.25 + 0.50 = 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Writing 0.5 as 0.50 and adding gives 0.25 + 0.50 = 0.75.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q4",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 1.2 + 0.35?",
+      "answer_spec": {
+        "correct_answer": 1.55
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 1.2 as 1.20 so both have two decimal places."
+        },
+        {
+          "level": 2,
+          "text": "Add: 1.20 + 0.35 = 1.55."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Aligning the points, 1.20 + 0.35 = 1.55.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q5",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 0.9 - 0.3?",
+      "answer_spec": {
+        "correct_answer": 0.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both are tenths."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the tenths: 9 - 3 = 6, giving 0.6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 tenths minus 3 tenths is 6 tenths, or 0.6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q6",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 1.0 - 0.4?",
+      "answer_spec": {
+        "correct_answer": 0.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 1.0 as 1.0 and subtract 0.4."
+        },
+        {
+          "level": 2,
+          "text": "Ten tenths minus 4 tenths is 6 tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One whole is 10 tenths; 10 tenths minus 4 tenths is 6 tenths, or 0.6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q7",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 2.5 - 1.75?",
+      "answer_spec": {
+        "correct_answer": 0.75
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 2.5 as 2.50 so both have hundredths."
+        },
+        {
+          "level": 2,
+          "text": "Subtract: 2.50 - 1.75 = 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Aligning the points, 2.50 - 1.75 = 0.75.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q8",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 3.46 + 2.7?",
+      "answer_spec": {
+        "correct_answer": 6.16
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 2.7 as 2.70."
+        },
+        {
+          "level": 2,
+          "text": "Add place by place: 3.46 + 2.70 = 6.16."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Writing 2.7 as 2.70 and adding gives 3.46 + 2.70 = 6.16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q9",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To add 4.5 + 0.35, what should you line up?",
+      "answer_spec": {
+        "correct_answer": "the decimal points"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You must combine pieces of the same size."
+        },
+        {
+          "level": 2,
+          "text": "Lining up the decimal points keeps tenths with tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You line up the decimal points so that each place value adds to the same place value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the decimal points",
+          "the last digits",
+          "the first digits",
+          "nothing in particular"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "the last digits",
+          "misconception_id": "mc.math.decimals_percents.align_right_ends"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q10",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "You buy one item for $2.75 and another for $1.20. What is the total cost in dollars?",
+      "answer_spec": {
+        "correct_answer": 3.95
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the two prices, lining up the decimal points."
+        },
+        {
+          "level": 2,
+          "text": "2.75 + 1.20 = 3.95."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Adding the aligned prices, 2.75 + 1.20 = 3.95, so the total is $3.95.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.add_subtract_decimals.q11",
+      "skill_id": "math.decimals_percents.add_subtract_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 5 - 0.5?",
+      "answer_spec": {
+        "correct_answer": 4.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 5 as 5.0."
+        },
+        {
+          "level": 2,
+          "text": "5.0 - 0.5 = 4.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Writing 5 as 5.0 and subtracting gives 5.0 - 0.5 = 4.5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q1",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "What is 0.2 times 3?",
+      "answer_spec": {
+        "correct_answer": 0.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 2 times 3 to get 6."
+        },
+        {
+          "level": 2,
+          "text": "One decimal place in the factors, so the answer is 0.6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 times 3 is 6, and with one decimal place the answer is 0.6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q2",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 0.5 times 4?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 5 times 4 to get 20."
+        },
+        {
+          "level": 2,
+          "text": "One decimal place gives 2.0, which is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 times 4 is 20; with one decimal place that is 2.0, or 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q3",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 0.3 times 0.2?",
+      "answer_spec": {
+        "correct_answer": 0.06
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 3 times 2 to get 6."
+        },
+        {
+          "level": 2,
+          "text": "Each factor has one decimal place, so the answer has two: 0.06."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 2 is 6, and with two decimal places (one from each factor) the answer is 0.06.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "common_wrong_answers": [
+        {
+          "value": 0.6,
+          "misconception_id": "mc.math.decimals_percents.decimal_places_not_counted"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q4",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 1.5 times 2?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 15 times 2 to get 30."
+        },
+        {
+          "level": 2,
+          "text": "One decimal place gives 3.0, which is 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 times 2 is 30; with one decimal place that is 3.0, or 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q5",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 0.25 times 4?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 25 times 4 to get 100."
+        },
+        {
+          "level": 2,
+          "text": "Two decimal places give 1.00, which is 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "25 times 4 is 100; with two decimal places that is 1.00, or 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q6",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "What is 0.6 divided by 2?",
+      "answer_spec": {
+        "correct_answer": 0.3
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of 6 tenths shared into 2 groups."
+        },
+        {
+          "level": 2,
+          "text": "6 tenths divided by 2 is 3 tenths, or 0.3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 tenths shared into 2 equal groups is 3 tenths, so 0.6 divided by 2 is 0.3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q7",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 4.8 divided by 2?",
+      "answer_spec": {
+        "correct_answer": 2.4
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the whole part and the decimal part."
+        },
+        {
+          "level": 2,
+          "text": "4.8 divided by 2 is 2.4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dividing 4.8 by 2 gives 2.4, bringing the decimal point straight up.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q8",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 0.9 divided by 3?",
+      "answer_spec": {
+        "correct_answer": 0.3
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of 9 tenths shared into 3 groups."
+        },
+        {
+          "level": 2,
+          "text": "9 tenths divided by 3 is 3 tenths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 tenths shared into 3 equal groups is 3 tenths, so 0.9 divided by 3 is 0.3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q9",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In the product 0.4 times 0.7, how many decimal places should the answer have?",
+      "answer_spec": {
+        "correct_answer": "2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the decimal places in each factor."
+        },
+        {
+          "level": 2,
+          "text": "Each has one decimal place, so add them: 1 + 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each factor has one decimal place, so the product has 1 + 1 = 2 decimal places (0.28).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["2", "1", "0", "3"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q10",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "What is 0.4 times 0.7?",
+      "answer_spec": {
+        "correct_answer": 0.28
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 4 times 7 to get 28."
+        },
+        {
+          "level": 2,
+          "text": "Two decimal places give 0.28."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 times 7 is 28, and with two decimal places the answer is 0.28.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q11",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "One liter of juice costs $1.20. How much do 3 liters cost, in dollars?",
+      "answer_spec": {
+        "correct_answer": 3.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 1.20 by 3."
+        },
+        {
+          "level": 2,
+          "text": "1.20 times 3 is 3.60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "1.20 times 3 is 3.60, so 3 liters cost $3.60.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.multiply_divide_decimals.q12",
+      "skill_id": "math.decimals_percents.multiply_divide_decimals",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "What is 2.5 divided by 5?",
+      "answer_spec": {
+        "correct_answer": 0.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of 25 tenths shared into 5 groups."
+        },
+        {
+          "level": 2,
+          "text": "2.5 divided by 5 is 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dividing 2.5 by 5 gives 0.5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q1",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "What does the word 'percent' mean?",
+      "answer_spec": {
+        "correct_answer": "per hundred"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the ending 'cent'."
+        },
+        {
+          "level": 2,
+          "text": "It is connected to one hundred."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Percent means per hundred, so a percent is a number of parts out of 100.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["per hundred", "per ten", "per thousand", "a whole amount"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q2",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "fraction",
+      "difficulty": 1,
+      "prompt": "Write 50% as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2",
+        "accepted_equivalents": ["50/100"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "50% means 50 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "Simplify 50/100 by dividing top and bottom by 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "50% is 50/100, which simplifies to 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q3",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 25% as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.25
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Percent is out of 100, so divide by 100."
+        },
+        {
+          "level": 2,
+          "text": "25 divided by 100 is 0.25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "25% means 25/100, which is 0.25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q4",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 7% as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.07
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide by 100, moving the point two places left."
+        },
+        {
+          "level": 2,
+          "text": "7% = 7/100 = 0.07, with a 0 in the tenths place."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7% is 7/100, which is 0.07; a zero holds the empty tenths place.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "common_wrong_answers": [
+        {
+          "value": 0.7,
+          "misconception_id": "mc.math.decimals_percents.percent_moved_one_place"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q5",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "Write 0.5 as a percent.",
+      "answer_spec": {
+        "correct_answer": "50%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the decimal by 100."
+        },
+        {
+          "level": 2,
+          "text": "0.5 times 100 is 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.5 times 100 is 50, so 0.5 equals 50%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q6",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 30% as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/10",
+        "accepted_equivalents": ["30/100"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "30% is 30 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "Simplify 30/100 by dividing top and bottom by 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "30% is 30/100, which simplifies to 3/10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q7",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which of these is the same as 100%?",
+      "answer_spec": {
+        "correct_answer": "the whole amount"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "100% means 100 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "100 out of 100 is all of it."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "100% means 100 out of 100, which is the whole amount.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the whole amount",
+          "half of the amount",
+          "none of the amount",
+          "ten times the amount"
+        ]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q8",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "Write 3/100 as a percent.",
+      "answer_spec": {
+        "correct_answer": "3%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A fraction over 100 is already a percent."
+        },
+        {
+          "level": 2,
+          "text": "3/100 is 3 per hundred."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/100 means 3 per hundred, which is 3%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q9",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Write 125% as a decimal.",
+      "answer_spec": {
+        "correct_answer": 1.25
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide by 100."
+        },
+        {
+          "level": 2,
+          "text": "125 divided by 100 is 1.25, which is more than one whole."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "125% is 125/100, which is 1.25 (more than one whole).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_meaning.q10",
+      "skill_id": "math.decimals_percents.percent_meaning",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A phone battery is at 100%. What fraction of a full charge is that?",
+      "answer_spec": {
+        "correct_answer": "1 (all of it)"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "100% means 100 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "That is the whole charge."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "100% is 100/100, which equals 1, the whole charge.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["1 (all of it)", "1/2", "1/100", "10"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q1",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 50% of 10?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "50% is one half."
+        },
+        {
+          "level": 2,
+          "text": "Half of 10 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "50% is 1/2, and half of 10 is 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q2",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 10% of 50?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "10% is 0.1."
+        },
+        {
+          "level": 2,
+          "text": "0.1 times 50 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10% is 0.1, and 0.1 times 50 is 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q3",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 25% of 80?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 25% as 0.25, or think 1/4."
+        },
+        {
+          "level": 2,
+          "text": "0.25 times 80 is 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "25% is 0.25 (or 1/4), and 0.25 times 80 is 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q4",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 20% of 45?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 20% as 0.2."
+        },
+        {
+          "level": 2,
+          "text": "0.2 times 45 is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20% is 0.2, and 0.2 times 45 is 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q5",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 75% of 40?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 75% as 0.75, or think 3/4."
+        },
+        {
+          "level": 2,
+          "text": "0.75 times 40 is 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "75% is 0.75 (or 3/4), and 0.75 times 40 is 30.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q6",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 5% of 200?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 5% as 0.05."
+        },
+        {
+          "level": 2,
+          "text": "0.05 times 200 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5% is 0.05, and 0.05 times 200 is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q7",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 15% of 60?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 15% as 0.15."
+        },
+        {
+          "level": 2,
+          "text": "0.15 times 60 is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15% is 0.15, and 0.15 times 60 is 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q8",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To find 30% of a number, you can multiply the number by which decimal?",
+      "answer_spec": {
+        "correct_answer": "0.3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "30% means 30 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "30 divided by 100 is 0.3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "30% equals 0.3, so you multiply the number by 0.3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0.3", "3", "30", "0.03"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "30",
+          "misconception_id": "mc.math.decimals_percents.multiply_by_percent_number"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q9",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 100% of 37?",
+      "answer_spec": {
+        "correct_answer": 37
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "100% is the whole amount."
+        },
+        {
+          "level": 2,
+          "text": "All of 37 is 37."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "100% means the whole amount, so 100% of 37 is 37.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q10",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A jacket costs $50 and is marked 20% off. How many dollars is the discount?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find 20% of 50."
+        },
+        {
+          "level": 2,
+          "text": "0.2 times 50 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The discount is 20% of $50, which is 0.2 times 50 = $10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_of_number.q11",
+      "skill_id": "math.decimals_percents.percent_of_number",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A class has 30 students, and 40% of them wear glasses. How many students wear glasses?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find 40% of 30."
+        },
+        {
+          "level": 2,
+          "text": "0.4 times 30 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "40% of 30 is 0.4 times 30 = 12 students.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q1",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "percentage",
+      "difficulty": 1,
+      "prompt": "Write 0.5 as a percent.",
+      "answer_spec": {
+        "correct_answer": "50%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the decimal by 100."
+        },
+        {
+          "level": 2,
+          "text": "0.5 times 100 is 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.5 times 100 is 50, so 0.5 equals 50%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q2",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Write 40% as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.4
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the percent by 100."
+        },
+        {
+          "level": 2,
+          "text": "40 divided by 100 is 0.4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "40% is 40/100, which is 0.4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q3",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "Write 1/4 as a percent.",
+      "answer_spec": {
+        "correct_answer": "25%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 1/4 to a decimal first: 0.25."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply by 100: 0.25 times 100 is 25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/4 is 0.25, and 0.25 times 100 is 25%, so 1/4 equals 25%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q4",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "Write 0.75 as a percent.",
+      "answer_spec": {
+        "correct_answer": "75%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 100."
+        },
+        {
+          "level": 2,
+          "text": "0.75 times 100 is 75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.75 times 100 is 75, so 0.75 equals 75%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q5",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write 20% as a fraction in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/5",
+        "accepted_equivalents": ["20/100"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "20% is 20 out of 100."
+        },
+        {
+          "level": 2,
+          "text": "Simplify 20/100 by dividing top and bottom by 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20% is 20/100, which simplifies to 1/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q6",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "Write 3/5 as a percent.",
+      "answer_spec": {
+        "correct_answer": "60%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 3/5 to a decimal: 6/10 = 0.6."
+        },
+        {
+          "level": 2,
+          "text": "Multiply by 100: 0.6 times 100 is 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/5 is 0.6, and 0.6 times 100 is 60%, so 3/5 equals 60%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q7",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which pair of values are both equal to 1/2?",
+      "answer_spec": {
+        "correct_answer": "50% and 0.5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 1/2 to a decimal and a percent."
+        },
+        {
+          "level": 2,
+          "text": "1/2 = 0.5 = 50%."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 equals the decimal 0.5 and the percent 50%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["50% and 0.5", "25% and 0.25", "5% and 0.05", "2% and 0.2"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q8",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Order these from least to greatest. Arrange: 0.3, 25%, 1/2.",
+      "answer_spec": {
+        "correct_answer": ["25%", "0.3", "1/2"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert all three to decimals."
+        },
+        {
+          "level": 2,
+          "text": "25% = 0.25, 1/2 = 0.5, and 0.3 stays 0.3."
+        },
+        {
+          "level": 3,
+          "text": "Then order 0.25, 0.3, 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "As decimals these are 0.25, 0.3, and 0.5, so least to greatest is 25%, 0.3, 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["0.3", "25%", "1/2"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q9",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Write 90% as a decimal.",
+      "answer_spec": {
+        "correct_answer": 0.9
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide by 100."
+        },
+        {
+          "level": 2,
+          "text": "90 divided by 100 is 0.9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "90% is 90/100, which is 0.9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q10",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every value that is equal to 3/4. Enter your choices separated by | (for example: A|B).",
+      "answer_spec": {
+        "correct_answer": ["0.75", "75%"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 3/4 to a decimal and a percent."
+        },
+        {
+          "level": 2,
+          "text": "3/4 = 0.75 = 75%."
+        },
+        {
+          "level": 3,
+          "text": "0.34 and 34% are different amounts."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3/4 equals 0.75 and 75%; 0.34 and 34% are unrelated values.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["0.75", "75%", "0.34", "34%"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.convert_fraction_decimal_percent.q11",
+      "skill_id": "math.decimals_percents.convert_fraction_decimal_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "A student's score on a test is 0.8 of the total. Write this score as a percent.",
+      "answer_spec": {
+        "correct_answer": "80%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the decimal by 100."
+        },
+        {
+          "level": 2,
+          "text": "0.8 times 100 is 80."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "0.8 times 100 is 80, so a score of 0.8 is 80%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    }
+  ]
+}

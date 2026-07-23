@@ -27,7 +27,7 @@ Engine capabilities (all built and tested):
 
 - Knowledge model: curriculum as a directed prerequisite graph. Eight skill states:
   `unknown -> diagnosed_weak -> learning -> practicing -> provisionally_mastered ->
-  mastered -> review_due -> decayed`.
+mastered -> review_due -> decayed`.
 - Five mastery dimensions (0-100): Understanding, Accuracy, Independence, Retention,
   Transfer. A single correct answer can never produce mastery.
 - Spaced review: same-day, 1, 3, 7, 14, 30, 90 days; lengthens on success, shortens on
@@ -53,38 +53,42 @@ The authoritative curriculum architecture defines a hierarchy of
 `Subject -> Course -> Unit -> Skill -> Lesson Component -> Question`, with **12 mathematics
 units** and **4 science units** (~138 topics total). This is the complete arithmetic ->
 introductory-algebra + scientific-reasoning course. It is the full "initial subject scope"
+
 - it does NOT by itself reach trigonometry (see section 4).
 
-Current authored coverage: **~41 of ~138 documented topics (~30%)**. One unit is complete,
-six are partial, nine are entirely missing.
+Current authored coverage: **~51 of ~138 documented topics (~37%)** across **49 skills**.
+One unit is complete, eight are partial, seven are entirely missing. (Phase 10 authored the
+Decimals & Percentages content as one combined unit, `math.decimals_percents`, covering the
+core of documented units 7 and 8.)
 
 ### Mathematics course (`math.core`)
 
-| # | Unit | Topics | Status | Notes |
-|---|------|:---:|---|---|
-| 1 | Number Foundations | 6 | built | complete |
-| 2 | Addition & Subtraction | 8 | partial (7) | missing word problems |
-| 3 | Multiplication & Division | 9 | partial (6) | missing arrays/groups, remainders, word problems |
-| 4 | Numerical Structure | 7 | missing | even/odd, factors, multiples, primes, GCF, LCM, order of operations |
-| 5 | Integers | 7 | missing | negatives, comparing, +-x/ integers, absolute value |
-| 6 | Fractions | 14 | partial (7) | missing comparing, subtract-unlike, multiply, divide, mixed numbers, word problems |
-| 7 | Decimals | 8 | missing | place value, fraction-decimal, compare, +- x/, rounding |
-| 8 | Percentages | 7 | missing | meaning, F-D-P conversion, percent of / whole / percent, increase-decrease, word problems |
-| 9 | Ratios & Proportions | 8 | missing | ratio, equivalent ratios, rates, unit rate, proportions, scale, direct proportionality, word problems |
-| 10 | Measurement Foundations | 8 | missing | length, mass, time, temperature, area, volume, unit conversion, estimation |
-| 11 | Algebra Foundations | 12 | partial (5) | missing constants, terms, coefficients, combining like terms, distributive, two-step, word problems |
-| 12 | Coordinate Plane & Graphs | 9 | missing | axes/origin, ordered pairs, plotting, tables, reading graphs, rate of change, input/output, function machines, intro linear |
+| #   | Unit                      | Topics | Status      | Notes                                                                                                                       |
+| --- | ------------------------- | :----: | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Number Foundations        |   6    | built       | complete                                                                                                                    |
+| 2   | Addition & Subtraction    |   8    | partial (7) | missing word problems                                                                                                       |
+| 3   | Multiplication & Division |   9    | partial (6) | missing arrays/groups, remainders, word problems                                                                            |
+| 4   | Numerical Structure       |   7    | missing     | even/odd, factors, multiples, primes, GCF, LCM, order of operations                                                         |
+| 5   | Integers                  |   7    | missing     | negatives, comparing, +-x/ integers, absolute value                                                                         |
+| 6   | Fractions                 |   14   | partial (7) | missing comparing, subtract-unlike, multiply, divide, mixed numbers, word problems                                          |
+| 7   | Decimals                  |   8    | partial (7) | Phase 10 (`math.decimals_percents`): place value, fraction-decimal, compare, +- x/; missing rounding                        |
+| 8   | Percentages               |   7    | partial (3) | Phase 10: meaning, F-D-P conversion, percent of a quantity; missing finding whole/percent, increase-decrease, word problems |
+| 9   | Ratios & Proportions      |   8    | missing     | ratio, equivalent ratios, rates, unit rate, proportions, scale, direct proportionality, word problems                       |
+| 10  | Measurement Foundations   |   8    | missing     | length, mass, time, temperature, area, volume, unit conversion, estimation                                                  |
+| 11  | Algebra Foundations       |   12   | partial (5) | missing constants, terms, coefficients, combining like terms, distributive, two-step, word problems                         |
+| 12  | Coordinate Plane & Graphs |   9    | missing     | axes/origin, ordered pairs, plotting, tables, reading graphs, rate of change, input/output, function machines, intro linear |
 
-Math authored: 31 of 103 documented topics.
+Math authored: ~41 of 103 documented topics (39 skills, including the 8-skill Decimals &
+Percentages unit).
 
 ### Scientific Reasoning course (`science.core`)
 
-| # | Unit | Topics | Status | Notes |
-|---|------|:---:|---|---|
-| 1 | Scientific Thinking | 7 | partial (5) | missing models, scientific explanations |
-| 2 | Experiments | 7 | missing | independent/dependent/controlled variables, control groups, repeated trials, fair tests, sources of error |
-| 3 | Measurement | 11 | partial (5) | missing mass, time, temperature, volume, significant figures |
-| 4 | Data | 10 | missing | tables, categorical/numerical, bar/line/scatter, reading axes, trends, outliers, proportional relationships, drawing conclusions |
+| #   | Unit                | Topics | Status      | Notes                                                                                                                            |
+| --- | ------------------- | :----: | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Scientific Thinking |   7    | partial (5) | missing models, scientific explanations                                                                                          |
+| 2   | Experiments         |   7    | missing     | independent/dependent/controlled variables, control groups, repeated trials, fair tests, sources of error                        |
+| 3   | Measurement         |   11   | partial (5) | missing mass, time, temperature, volume, significant figures                                                                     |
+| 4   | Data                |   10   | missing     | tables, categorical/numerical, bar/line/scatter, reading axes, trends, outliers, proportional relationships, drawing conclusions |
 
 Science authored: 10 of 35 documented topics.
 
@@ -96,9 +100,9 @@ The documentation defines scope as four widening rings. Only the innermost is pa
 
 1. **Initial subject scope** (docs 01, 03, 05): the full ~138-topic curriculum in section 2
    - arithmetic through introductory algebra + coordinate plane/graphs, plus scientific
-   reasoning / measurement / data. ~30% built. Completing this ring satisfies the spec's
-   Completion Rule (the entire scoped curriculum traversable through prerequisites,
-   lessons, practice, mastery, and review).
+     reasoning / measurement / data. ~37% built. Completing this ring satisfies the spec's
+     Completion Rule (the entire scoped curriculum traversable through prerequisites,
+     lessons, practice, mastery, and review).
 
 2. **Version 1 features** (doc 03): MVP plus cloud account & synchronization, cross-device
    resume, expanded question types, improved misconception diagnosis, content
@@ -142,21 +146,25 @@ as an optional extended track.
 ## 5. Depth vs. breadth (a second dimension of scope)
 
 Coverage (how many topics) is only one axis. **Depth** (how many practice items per skill)
-is the other. Today each authored skill ships with one lesson and about two practice
-questions - enough to demonstrate the engine, thinner than mastery-grade. The mastery model
-(retention + transfer across difficulty bands) wants a larger item pool per skill (roughly
-8-15 items across difficulties, with worked examples and misconception coverage). Any plan
-to make the existing units genuinely learnable, not just present, must budget a
-content-depth pass in addition to new-topic breadth. See the ROADMAP for how this is
-sequenced.
+is the other. Most pre-Phase-10 skills ship with one lesson and about two practice questions
+
+- enough to demonstrate the engine, thinner than mastery-grade. (The Phase 10 Decimals &
+  Percentages unit is the exception, authored at ~10 items/skill; new units now target that
+  depth.) The mastery model
+  (retention + transfer across difficulty bands) wants a larger item pool per skill (roughly
+  8-15 items across difficulties, with worked examples and misconception coverage). Any plan
+  to make the existing units genuinely learnable, not just present, must budget a
+  content-depth pass in addition to new-topic breadth. See the ROADMAP for how this is
+  sequenced.
 
 ---
 
 ## 6. Summary for a new session
 
 - The **engine is done**; the work is **curriculum content** (breadth) and **item depth**.
-- The documented course is **16 units / ~138 topics**; about **30% is authored** (1 unit
-  complete, 6 partial, 9 missing).
+- The documented course is **16 units / ~138 topics**; about **37% is authored** across
+  **49 skills** (1 unit complete, 8 partial, 7 missing). Phase 10 (Decimals & Percentages)
+  is the most recent addition, built at mastery-grade depth.
 - Scope widens in four rings: initial curriculum -> Version 1 features -> Later Features
   -> long-term subjects (trig, calculus, sciences, and more).
 - The docs' authored curriculum stops at introductory algebra; **trig/calc are vision, not
