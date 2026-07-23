@@ -1,0 +1,100 @@
+# Decision Log
+
+This log extends the template and initial decisions in `docs/spec/16_DECISION_LOG.md`.
+DEC-001 … DEC-005 are **Accepted** in the source spec and carried forward unchanged.
+DEC-006 … DEC-014 below are **Proposed** by the Phase 0 spec review and await sign-off before Phase 1 build begins.
+
+Format: Title / Status / Context / Decision / Reasons / Alternatives / Consequences / Related.
+
+---
+
+## Carried forward (Accepted in spec)
+
+- **DEC-001** Initial curriculum scope: math (arithmetic → intro algebra) + scientific reasoning & measurement.
+- **DEC-002** Curriculum as a directed prerequisite graph.
+- **DEC-003** Deterministic grading first; AI does not control verified mastery.
+- **DEC-004** Local-first progress; cloud sync deferred.
+- **DEC-005** AI as tutor, not authority.
+
+---
+
+## DEC-006: Event log is the source of truth; SkillProgress is a projection
+Status: Proposed
+Context: Doc 09 defines a `SkillProgress` entity with scores, while doc 08 §4 and doc 11 require progress to be reproducible from validated events with no duplicate credit (C-6).
+Decision: The append-only **learning-event log is authoritative**. `SkillProgress` and all other progress state are **materialized projections**, rebuildable from events; projections are idempotent and keyed by event ID.
+Reasons: Satisfies "reproducible from validated events," idempotent sync, and safe resume/recovery.
+Alternatives: Mutable `SkillProgress` as source of truth (rejected — hard to reconcile/replay/sync).
+Consequences: Persistence layer must implement an event store + projection rebuild; tests assert duplicate events do not double-count.
+Related: 08, 09, 11.
+
+## DEC-007: Skill ID grammar and unit-segment registry
+Status: Proposed
+Context: IDs appear as `subject.unit.skill` but the unit→segment mapping is not fixed and IDs must be stable and never reused (C-2, doc 09 §4).
+Decision: Canonical ID = `subject.unit.skill`, lower_snake_case, ASCII. A fixed **unit-segment registry** lives in `packages/schemas`. Retired IDs are tombstoned, never reused.
+Reasons: Stable, human-readable, greppable; prevents drift across authors/AI.
+Alternatives: Opaque UUIDs (rejected — unreadable, harder to author/debug); free-form dotted paths (rejected — drift).
+Consequences: Content-validation CLI enforces the grammar and registry; a linter rejects unknown unit segments.
+Related: 05, 09, 14.
+
+## DEC-008: Constrain MVP algebra answer forms to deterministically-checkable ones
+Status: Proposed
+Context: Deterministic grading vs. algebraic equivalence complexity (C-3).
+Decision: MVP question authoring is restricted to answer forms a deterministic normalizer / lightweight equivalence check can verify (canonical simplified expressions, integer/fraction solutions, structured responses). No free-form proof grading in MVP.
+Reasons: Preserves "every question has a validator" and "no AI-only grading" without a full CAS.
+Alternatives: Integrate a general CAS now (rejected — scope/reliability); allow AI grading (rejected — DEC-003/005).
+Consequences: Authoring standard gains an "allowed answer forms" section; validation-engine ships a normalizer with a documented supported set.
+Related: 06, 08, 11.
+
+## DEC-009: Mastery dimensions are driven by deterministically-gradable question types
+Status: Proposed
+Context: Understanding and Transfer must be scored without AI grading free text (C-4).
+Decision: Define a **question-type → mastery-dimension mapping**. Understanding/Transfer are evidenced by structured reasoning, self-explanation-selection, and novel-context items — never free-text AI grading.
+Reasons: Every dimension becomes deterministically measurable.
+Alternatives: AI-graded explanations (rejected — DEC-003/005).
+Consequences: Content authoring standard and question schema tag each item with the dimension(s) it feeds.
+Related: 02, 04, 06, 10.
+
+## DEC-010: MVP ships AI tutor off-by-default behind an optional thin gateway
+Status: Proposed
+Context: MVP lists a basic tutor, but credentials must stay server-side and MVP is local-first (C-5).
+Decision: All non-AI flows require **zero backend**. The tutor is **optional, off by default**, and — when enabled — routed through a minimal stateless AI-gateway service that holds provider credentials. No AI availability never blocks learning (doc 10 §7).
+Reasons: Honors local-first + server-side-secrets + lowest-operational-priority for AI.
+Alternatives: Browser-embedded key (rejected — leaks secrets); mandatory backend (rejected — breaks local-first MVP).
+Consequences: `apps/service` is optional in MVP; client degrades gracefully with a clear "AI unavailable" status.
+Related: 08, 10, 15.
+
+## DEC-011: Authoritative MVP skill inventory (fully-connected slice)
+Status: Proposed — REQUIRES USER SIGN-OFF
+Context: Doc 03 (~36 topics) vs. doc 05 (~135 skills); completion rule demands full traversal (C-1, R-1).
+Decision (proposed): MVP authors a **single fully-connected vertical slice** that still satisfies the completion rule end-to-end, then extends unit-by-unit. A concrete slice inventory is produced and signed off before Phase 6 content work; the exact list is the deliverable of Phase 0 task P0-3.
+Reasons: Bounds the dominant schedule risk while preserving the "no disconnected demos" rule.
+Alternatives: Author all ~135 skills for MVP (accepted only if the user approves the larger scope/timeline).
+Consequences: Directly sizes Phases 6–7; must be pinned before content authoring.
+Related: 03, 05, 12, 13.
+
+## DEC-012: Technology stack — TypeScript monorepo
+Status: Proposed
+Context: Stack is intentionally unspecified (docs 08, 14).
+Decision (recommended): **TypeScript** across a single **monorepo** (workspaces). Client via React (or a comparable accessible component model); tests via Vitest (unit/integration) + Playwright (e2e/accessibility). Content validated by JSON Schema.
+Reasons: One language for shared schemas + validators + client; strong typing suits deterministic logic; mature accessibility + testing ecosystem; easy provider-interface boundaries.
+Alternatives: Python/other backend + JS client (rejected for MVP — two languages, no backend needed yet); multi-repo (rejected — harder shared-schema discipline).
+Consequences: Sets tooling for Phase 1; all `packages/*` are TS libraries with no framework leakage into `domain`.
+Related: 08, 14; PROPOSED_REPOSITORY_STRUCTURE.md.
+
+## DEC-013: Local persistence via IndexedDB behind a store interface
+Status: Proposed
+Context: Local-first MVP needs durable browser storage (DEC-004).
+Decision: Persistence exposes a store interface; the MVP adapter uses **IndexedDB** with an append-only event table + projection tables. A cloud adapter is added later without changing callers.
+Reasons: IndexedDB is the durable, offline-capable browser store; interface keeps it replaceable (doc 08 §9).
+Alternatives: localStorage (rejected — size/structure limits); SQLite-wasm (viable later; heavier for MVP).
+Consequences: Persistence package owns migrations + export/import; export required for local-only MVP (doc 15 §6).
+Related: 08, 09, 15.
+
+## DEC-014: Mastery-scoring and review-scheduling algorithms are explicit, testable specs
+Status: Proposed
+Context: Thresholds/intervals are given, but the score-update and interval promote/demote functions are not (R-3).
+Decision: Draft both as documented, deterministic algorithms in Phase 0 (spec only), implement in Phase 4. Inputs per the spec (difficulty, hints, attempts, time-since-exposure, transfer vs. routine, review outcome). A single correct answer can never yield full mastery (doc 04 §9).
+Reasons: Makes Phase 4 testable and prevents ad-hoc scoring.
+Alternatives: Leave to implementation (rejected — untestable, drift-prone).
+Consequences: Two new spec docs feed learning-engine tests.
+Related: 02, 04, 12.
