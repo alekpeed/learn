@@ -1,0 +1,789 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "unit_id": "math.number_foundations",
+      "title": "Counting and Quantity",
+      "summary": "Counting tells you how many things are in a group; the last number you say is the total quantity.",
+      "objectives": [
+        "Count a group of objects to find how many there are",
+        "Understand that the last number counted names the size of the whole group"
+      ],
+      "prerequisites": [],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "quantity",
+          "definition": "How many objects are in a group."
+        },
+        {
+          "term": "count",
+          "definition": "To name numbers in order, one for each object, to find how many there are."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "unit_id": "math.number_foundations",
+      "title": "Comparing Numbers",
+      "summary": "Two numbers can be compared to see which is greater, which is less, or whether they are equal.",
+      "objectives": [
+        "Decide whether one number is greater than, less than, or equal to another",
+        "Use the symbols >, <, and = to record a comparison"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.counting_and_quantity",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "greater than",
+          "definition": "A number that is more than another number; written with the symbol >."
+        },
+        {
+          "term": "less than",
+          "definition": "A number that is fewer than another number; written with the symbol <."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.number_foundations.place_value",
+      "unit_id": "math.number_foundations",
+      "title": "Place Value",
+      "summary": "A digit's position in a number gives it a value of ones, tens, hundreds, and so on.",
+      "objectives": [
+        "Identify the place of each digit in a number",
+        "Write a multi-digit number as a sum of its place values"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.comparing_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "digit",
+          "definition": "One of the symbols 0 through 9 used to write numbers."
+        },
+        {
+          "term": "place value",
+          "definition": "The value a digit has because of its position in a number."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.number_foundations.number_line",
+      "unit_id": "math.number_foundations",
+      "title": "The Number Line",
+      "summary": "A number line places numbers in order along a straight line so distance and order can be seen.",
+      "objectives": [
+        "Locate a whole number at its correct point on a number line",
+        "Use the number line to tell which of two numbers is greater"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.comparing_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "number line",
+          "definition": "A straight line with numbers marked at equal spaces in order."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.number_foundations.rounding",
+      "unit_id": "math.number_foundations",
+      "title": "Rounding",
+      "summary": "Rounding replaces a number with a nearby, simpler number that ends in zeros.",
+      "objectives": [
+        "Round a whole number to the nearest ten or hundred",
+        "Explain why a rounded number is chosen using the nearest place"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "round",
+          "definition": "To replace a number with the nearest simpler number, such as the nearest ten or hundred."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.number_foundations.estimation",
+      "unit_id": "math.number_foundations",
+      "title": "Estimation",
+      "summary": "Estimation uses rounded numbers to find an answer that is close enough without exact calculation.",
+      "objectives": [
+        "Estimate a sum by rounding each number first",
+        "Judge whether an estimate is reasonable for a situation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.rounding",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "estimate",
+          "definition": "An answer that is close to the exact value, found quickly using rounded numbers."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.number_foundations.counting_and_quantity.lesson",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "title": "Counting and Quantity",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will count a group of objects and understand that the last number you say tells how many there are in all."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "When you count, you point to each object once and say the numbers in order: one, two, three. Each object gets exactly one number. The very last number you say is special: it names the size of the whole group. This works because you gave one number to each object, so the final number has counted every one."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The number of objects in a group is called its quantity. The act of naming numbers in order, one per object, is called counting."
+        },
+        {
+          "type": "worked_example",
+          "body": "Count the stars: * * * * . Touch each star and say one, two, three, four. The last number is four, so the quantity is 4 stars."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Count these circles: o o o o o . Say a number for each one. What was the last number you said? That is how many circles there are."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is counting one object twice or skipping one. Point to each object once, in order, so every object gets exactly one number."
+        },
+        {
+          "type": "summary",
+          "body": "To find how many objects are in a group, count them one by one. The last number you say is the quantity of the whole group."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.number_foundations.comparing_numbers.lesson",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "title": "Comparing Numbers",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will decide whether one number is greater than, less than, or equal to another, and write the comparison using >, <, or =."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Remember that counting tells how many are in a group. Comparing means deciding which group has more."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If you count two groups, the group with the larger count has more. A number is greater than another when it comes later as you count up. For example, 7 is greater than 4 because you say 7 after 4 when counting. If both counts are the same, the numbers are equal."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The symbol > means greater than, the symbol < means less than, and = means equal. The open side of > or < always faces the larger number."
+        },
+        {
+          "type": "worked_example",
+          "body": "Compare 6 and 9. Counting up, you reach 6 before 9, so 6 is less than 9. Write 6 < 9. The open side faces the 9 because 9 is larger."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compare 8 and 5. Which comes later when counting up? Choose the correct symbol so the open side faces the larger number."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is pointing the symbol the wrong way. The wide open side must face the bigger number; the point faces the smaller number."
+        },
+        {
+          "type": "summary",
+          "body": "To compare two numbers, decide which is larger. Use > for greater than, < for less than, and = for equal, with the open side facing the larger number."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.number_foundations.place_value.lesson",
+      "skill_id": "math.number_foundations.place_value",
+      "title": "Place Value",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will identify the place of each digit in a number and write the number as a sum of its place values."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know how to compare numbers. Place value explains why a number like 40 is larger than 4 even though both use the digit 4."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A digit's value depends on where it sits. In 42, the 4 is not just four; it sits in the tens place, so it means 4 tens, which is 40. The 2 sits in the ones place, so it means 2. This lets us write large numbers using only ten digits: the position does the extra work."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The symbols 0 through 9 are digits. The value a digit has because of its position is its place value. From the right, the places are ones, tens, hundreds."
+        },
+        {
+          "type": "worked_example",
+          "body": "Take the number 356. The 6 is in the ones place (6). The 5 is in the tens place (50). The 3 is in the hundreds place (300). So 356 = 300 + 50 + 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Break apart 74. Which digit is in the tens place, and what is its value? Which digit is in the ones place? Write 74 as tens plus ones."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is reading the tens digit as its face value only. In 42, the 4 means 40, not 4, because it sits in the tens place."
+        },
+        {
+          "type": "summary",
+          "body": "Each place in a number gives its digit a value: ones, tens, hundreds. A number equals the sum of its place values."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.number_foundations.number_line.lesson",
+      "skill_id": "math.number_foundations.number_line",
+      "title": "The Number Line",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will locate a whole number on a number line and use the line to tell which of two numbers is greater."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You know how to compare numbers. A number line shows those comparisons as positions along a line."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A number line is a straight line with numbers marked at equal spaces, in order from left to right. Because the spaces are equal, a number farther to the right is larger. This turns comparing into looking: whichever number is farther right is the greater one."
+        },
+        {
+          "type": "representation",
+          "body": "Picture a line: 0 --- 1 --- 2 --- 3 --- 4 --- 5. Each mark is one step farther right than the one before it.",
+          "accessible_text": "A horizontal line labeled with the numbers 0, 1, 2, 3, 4, 5 at equal spaces from left to right."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A number line is a straight line with numbers placed at equal intervals in increasing order."
+        },
+        {
+          "type": "worked_example",
+          "body": "To place 3 on the line 0 to 5, start at 0 and move right three equal steps. You land on the mark labeled 3. Since 3 is left of 5, we know 3 is less than 5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "On a line from 0 to 10, which is farther right, 6 or 9? Use that to say which number is greater."
+        },
+        {
+          "type": "summary",
+          "body": "A number line orders numbers along equal spaces. Numbers farther to the right are greater, so the line shows comparisons at a glance."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.number_foundations.rounding.lesson",
+      "skill_id": "math.number_foundations.rounding",
+      "title": "Rounding",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will round a whole number to the nearest ten or hundred and explain your choice."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You know place value and the number line. Rounding uses both: it looks at a place value and finds the nearest simpler number on the line."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Rounding replaces a number with a nearby number that ends in zero, so it is easier to work with. Think of the number line: a number like 47 sits between 40 and 50. It is closer to 50, so it rounds to 50. The rule that decides is the next digit: if it is 5 or more, round up; if it is less than 5, round down."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To round to a place means to replace a number with the nearest multiple of that place value, such as the nearest ten (a number ending in one zero)."
+        },
+        {
+          "type": "worked_example",
+          "body": "Round 63 to the nearest ten. The tens are 60 and 70. Look at the ones digit, 3. Since 3 is less than 5, keep the ten and round down to 60."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Round 28 to the nearest ten. Which two tens is it between? Look at the ones digit. Is it 5 or more, or less than 5? Choose the nearer ten."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is changing the wrong digit. To round to the nearest ten, decide using the ones digit and then set the ones digit to 0."
+        },
+        {
+          "type": "summary",
+          "body": "To round, find the two nearby multiples and choose the closer one. If the deciding digit is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.number_foundations.estimation.lesson",
+      "skill_id": "math.number_foundations.estimation",
+      "title": "Estimation",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "You will estimate a sum by rounding each number first, and judge whether an estimate is reasonable."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You know how to round numbers. Estimation uses rounding to make a calculation quick and simple."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An estimate is an answer that is close enough, found without exact work. Rounded numbers end in zeros, so they are easy to add in your head. If you round each number first, then add, you get a quick answer near the true total. This is useful when an exact answer is not needed, like checking whether you have enough money."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An estimate is an approximate value that is close to the exact answer, usually found by rounding before calculating."
+        },
+        {
+          "type": "worked_example",
+          "body": "Estimate 41 + 38. Round each to the nearest ten: 41 rounds to 40, and 38 rounds to 40. Add the rounded numbers: 40 + 40 = 80. So the sum is about 80."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Estimate 52 + 29. Round each number to the nearest ten first, then add the two rounded numbers to get your estimate."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is expecting the estimate to match the exact answer. An estimate is close, not exact; that is what makes it fast."
+        },
+        {
+          "type": "summary",
+          "body": "To estimate a sum, round each number first, then add. The result is close to the true total and quick to find."
+        }
+      ],
+      "content_version": "0.1.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q1",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You count a row of apples and say: one, two, three, four, five. How many apples are there in all?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last number you say when counting tells how many there are."
+        },
+        {
+          "level": 2,
+          "text": "The last number said was five, so there are 5 apples."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Each apple gets one number in order, so the last number counted, five, names the total quantity: 5 apples.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 30
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q2",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When you count a group of objects one by one, which number tells you how many objects there are in all?",
+      "parameters": {
+        "options": [
+          "The first number you say",
+          "The last number you say",
+          "The number you say the loudest",
+          "The smallest object's number"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "The last number you say"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what happens after you have given a number to every single object."
+        },
+        {
+          "level": 2,
+          "text": "Once every object has one number, the final number you said has counted them all."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting gives each object one number in order, so the last number said has accounted for every object and names the whole quantity.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q1",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which symbol correctly completes the comparison: 6 __ 9 ?",
+      "parameters": {
+        "options": ["<", ">", "="]
+      },
+      "answer_spec": {
+        "correct_answer": "<"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "When counting up, do you reach 6 before or after 9?"
+        },
+        {
+          "level": 2,
+          "text": "6 comes before 9, so 6 is less than 9. Use the < symbol with its open side facing 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 is less than 9 because 6 comes first when counting up, so 6 < 9 with the open side facing the larger number.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q2",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Of the two numbers 13 and 8, what is the greater number?",
+      "answer_spec": {
+        "correct_answer": 13
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The greater number is the one you reach later when counting up."
+        },
+        {
+          "level": 2,
+          "text": "You count 8 before 13, so 13 is the greater number."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Counting up, 13 comes after 8, so 13 is the greater of the two numbers.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q1",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the number 356, what is the value of the digit 5?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which place does the 5 sit in: ones, tens, or hundreds?"
+        },
+        {
+          "level": 2,
+          "text": "The 5 is in the tens place, so its value is 5 tens, which is 50."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The 5 sits in the tens place, so its place value is 5 tens = 50.",
+      "content_version": "0.1.0",
+      "common_wrong_answers": [
+        {
+          "value": 5,
+          "misconception_id": "mc.math.place_value.face_value"
+        }
+      ]
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q2",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "structured_reasoning",
+      "difficulty": 3,
+      "prompt": "Why does the digit 4 stand for 40 in the number 42, even though 4 by itself means four?",
+      "parameters": {
+        "options": [
+          "Because the 4 is written first",
+          "Because the 4 sits in the tens place, so it means 4 tens",
+          "Because 42 is an even number",
+          "Because the 2 makes the 4 bigger"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Because the 4 sits in the tens place, so it means 4 tens"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A digit's value depends on its position, not just the digit itself."
+        },
+        {
+          "level": 2,
+          "text": "In 42, the 4 is in the tens place, so it counts 4 tens, which is 40."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Place value means a digit's position sets its value. In 42 the 4 is in the tens place, so it represents 4 tens = 40.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q1",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "On a number line from 0 to 10, you start at 0 and move 7 equal steps to the right. Which number do you land on?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each step to the right moves you to the next number."
+        },
+        {
+          "level": 2,
+          "text": "Seven steps right from 0 lands on the mark labeled 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The marks are equally spaced, so 7 steps right of 0 lands exactly on 7.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q2",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a number line, why is a number placed farther to the right always the greater number?",
+      "parameters": {
+        "options": [
+          "Because right is a bigger direction",
+          "Because the marks increase in order as you move right",
+          "Because the line is longer on the right",
+          "Because the first number is always largest"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Because the marks increase in order as you move right"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about how the numbers are arranged along the line."
+        },
+        {
+          "level": 2,
+          "text": "The numbers are placed in increasing order left to right, so farther right means a larger number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A number line lists numbers in increasing order from left to right at equal spaces, so a point farther right is always the greater number.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q1",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Round 63 to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which two tens is 63 between?"
+        },
+        {
+          "level": 2,
+          "text": "63 is between 60 and 70. The ones digit is 3, which is less than 5, so round down to 60."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "63 lies between 60 and 70. The ones digit 3 is less than 5, so it rounds down to 60.",
+      "content_version": "0.1.0",
+      "common_wrong_answers": [
+        {
+          "value": 70,
+          "misconception_id": "mc.math.rounding.always_round_up"
+        }
+      ]
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q2",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "structured_reasoning",
+      "difficulty": 3,
+      "prompt": "When rounding 47 to the nearest ten, which reason explains why the answer is 50?",
+      "parameters": {
+        "options": [
+          "47 is closer to 50 than to 40, because the ones digit 7 is 5 or more",
+          "47 always rounds up because it is odd",
+          "47 rounds to 50 because 5 is a big number",
+          "47 is closer to 40 than to 50"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "47 is closer to 50 than to 40, because the ones digit 7 is 5 or more"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the ones digit to decide which ten is nearer."
+        },
+        {
+          "level": 2,
+          "text": "The ones digit is 7, which is 5 or more, so 47 is nearer to 50 and rounds up."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "47 sits between 40 and 50. Because the ones digit 7 is 5 or more, 47 is closer to 50, so it rounds up to 50.",
+      "content_version": "0.1.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q1",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Estimate 41 + 38 by rounding each number to the nearest ten first. What is the estimated sum?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round 41 and 38 to the nearest ten before adding."
+        },
+        {
+          "level": 2,
+          "text": "41 rounds to 40 and 38 rounds to 40, so 40 + 40 = 80."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Rounding first: 41 becomes 40 and 38 becomes 40. Adding the rounded numbers gives 40 + 40 = 80.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q2",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You want a quick, close answer for 52 + 29 without exact work. Which estimate is most reasonable?",
+      "parameters": {
+        "options": ["About 80", "Exactly 81", "About 200", "About 30"]
+      },
+      "answer_spec": {
+        "correct_answer": "About 80"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round each number to the nearest ten, then add."
+        },
+        {
+          "level": 2,
+          "text": "52 rounds to 50 and 29 rounds to 30, so the estimate is 50 + 30 = 80."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Rounding gives 50 + 30 = 80, so 'about 80' is the reasonable estimate. An estimate is close, not exact, so 'exactly 81' is not an estimate.",
+      "content_version": "0.1.0",
+      "transfer_flag": true
+    }
+  ]
+}

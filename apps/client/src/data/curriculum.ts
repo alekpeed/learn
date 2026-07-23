@@ -1,16 +1,32 @@
 /**
- * Loads the bundled sample curriculum package (offline-first: content ships
- * with the app, doc 02 §11). The content lives as data under /content and is
- * validated by the curriculum loader at startup.
+ * Loads the bundled MVP curriculum package (offline-first: content ships with
+ * the app, doc 02 §11). Content lives as data under /content/mvp, authored one
+ * file per unit, and is validated by the curriculum loader at startup.
  */
 import { loadCoursePackage, type LoadResult } from '@learn/curriculum';
 
-import manifest from '../../../../content/sample/manifest.json';
-import courses from '../../../../content/sample/courses.json';
-import skills from '../../../../content/sample/skills.json';
-import lessons from '../../../../content/sample/lessons.json';
-import questions from '../../../../content/sample/questions.json';
+import manifest from '../../../../content/mvp/manifest.json';
+import courses from '../../../../content/mvp/courses.json';
+import numberFoundations from '../../../../content/mvp/units/number_foundations.json';
+import addSub from '../../../../content/mvp/units/add_sub.json';
+import multDiv from '../../../../content/mvp/units/mult_div.json';
+import fractions from '../../../../content/mvp/units/fractions.json';
+import algebra from '../../../../content/mvp/units/algebra.json';
+
+interface UnitFile {
+  skills: unknown[];
+  lessons: unknown[];
+  questions: unknown[];
+}
+
+const units: UnitFile[] = [numberFoundations, addSub, multDiv, fractions, algebra];
 
 export function loadSampleCurriculum(): LoadResult {
-  return loadCoursePackage({ manifest, courses, skills, lessons, questions });
+  return loadCoursePackage({
+    manifest,
+    courses,
+    skills: units.flatMap((u) => u.skills),
+    lessons: units.flatMap((u) => u.lessons),
+    questions: units.flatMap((u) => u.questions),
+  });
 }

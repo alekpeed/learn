@@ -92,6 +92,10 @@ importers:
       '@learn/schemas':
         specifier: workspace:*
         version: link:../schemas
+    devDependencies:
+      '@learn/validation-engine':
+        specifier: workspace:*
+        version: link:../validation-engine
 
   packages/diagnostic:
     dependencies:

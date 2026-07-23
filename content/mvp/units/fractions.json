@@ -1,0 +1,988 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.fractions.fraction_meaning",
+      "unit_id": "math.fractions",
+      "title": "The Meaning of a Fraction",
+      "summary": "A fraction names equal parts of one whole. The bottom number tells how many equal parts the whole is split into, and the top number tells how many of those parts you have.",
+      "objectives": [
+        "Explain that a fraction represents equal parts of a whole.",
+        "Identify the numerator (top number) and denominator (bottom number) and state what each one means.",
+        "Locate a simple fraction on a number line between 0 and 1."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.division_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.fractions.equivalent_fractions",
+      "unit_id": "math.fractions",
+      "title": "Equivalent Fractions",
+      "summary": "Two fractions are equivalent when they name the same amount, even though the numbers look different. Multiplying the numerator and denominator by the same number makes an equivalent fraction because you are only cutting the same whole into more equal parts.",
+      "objectives": [
+        "Explain that equivalent fractions name the same amount of a whole.",
+        "Create an equivalent fraction by multiplying the numerator and denominator by the same number.",
+        "Decide whether two fractions are equivalent."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.fraction_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.fractions.simplifying_fractions",
+      "unit_id": "math.fractions",
+      "title": "Simplifying Fractions",
+      "summary": "Simplifying a fraction means writing it with the smallest possible numbers while keeping the same value. You do this by dividing the numerator and denominator by the same number, which groups the equal parts into fewer, larger parts.",
+      "objectives": [
+        "Explain that a simplified fraction has the same value as the original.",
+        "Divide the numerator and denominator by a common factor to simplify.",
+        "Recognize when a fraction is already in simplest form."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.equivalent_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.division_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.fractions.add_like_denominators",
+      "unit_id": "math.fractions",
+      "title": "Adding Fractions with Like Denominators",
+      "summary": "When two fractions have the same denominator, the parts are the same size, so you just add the numerators and keep the denominator the same. The denominator stays the same because the size of each part has not changed.",
+      "objectives": [
+        "Add two fractions that share the same denominator.",
+        "Explain why the denominator stays the same when adding like denominators.",
+        "Interpret the sum as a count of equal parts."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.fraction_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "unit_id": "math.fractions",
+      "title": "Subtracting Fractions with Like Denominators",
+      "summary": "When two fractions have the same denominator, you subtract the numerators and keep the denominator the same. The denominator does not change because you are taking away parts that are all the same size.",
+      "objectives": [
+        "Subtract two fractions that share the same denominator.",
+        "Explain why the denominator stays the same when subtracting like denominators.",
+        "Interpret the difference as a count of remaining equal parts."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.add_like_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.subtraction_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.fractions.common_denominators",
+      "unit_id": "math.fractions",
+      "title": "Common Denominators",
+      "summary": "A common denominator is a shared denominator that two fractions can both be rewritten with, using equivalent fractions. It lets you compare or combine fractions because it cuts both wholes into parts of the same size.",
+      "objectives": [
+        "Explain why fractions need a common denominator to be compared or combined.",
+        "Find a common denominator for two fractions.",
+        "Rewrite each fraction as an equivalent fraction with the common denominator."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.equivalent_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "unit_id": "math.fractions",
+      "title": "Adding Fractions with Unlike Denominators",
+      "summary": "To add fractions with different denominators, first rewrite them with a common denominator so the parts are the same size, then add the numerators and keep the shared denominator. You cannot add the parts directly until they are the same size.",
+      "objectives": [
+        "Explain why fractions must have a common denominator before they can be added.",
+        "Rewrite two fractions with a common denominator and add them.",
+        "Simplify the resulting sum when possible."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.add_like_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.common_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.fractions.fraction_meaning.lesson",
+      "skill_id": "math.fractions.fraction_meaning",
+      "title": "The Meaning of a Fraction",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to explain what a fraction means, name its two parts, and place a simple fraction on a number line."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Remember that dividing means splitting something into equal groups. A number line is a straight line where numbers are spaced evenly, with 0 on the left and larger numbers to the right."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Imagine cutting a pizza into equal slices. A fraction is a way to describe how much of that pizza you have. If the pizza is cut into 4 equal slices and you take 3, you have 3 out of 4 slices, written as 3/4. The key word is equal: every part must be the same size for a fraction to make sense."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A fraction is written with two numbers, one above the other. The bottom number is the denominator. It tells how many equal parts the whole is split into. The top number is the numerator. It tells how many of those equal parts you have. In 3/4, the denominator is 4 and the numerator is 3."
+        },
+        {
+          "type": "representation",
+          "body": "Picture a rectangle split into 4 equal columns, with 3 of them shaded. The shaded amount is 3/4. On a number line from 0 to 1, split the distance into 4 equal jumps; the fraction 3/4 sits at the third jump."
+        },
+        {
+          "type": "worked_example",
+          "body": "A chocolate bar is broken into 5 equal pieces. You eat 2 of them. What fraction did you eat? The whole is split into 5 equal parts, so the denominator is 5. You have 2 parts, so the numerator is 2. The answer is 2/5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A circle is split into 6 equal parts and 1 part is shaded. What fraction is shaded? The denominator is 6 (six equal parts) and the numerator is 1 (one shaded part), so the answer is 1/6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is counting parts that are not equal. If a shape is split into pieces of different sizes, you cannot name a simple fraction. Another mistake is swapping the numerator and denominator; always remember the denominator is the total number of equal parts."
+        },
+        {
+          "type": "summary",
+          "body": "A fraction names equal parts of one whole. The denominator (bottom) is how many equal parts the whole is split into. The numerator (top) is how many parts you have. Fractions between 0 and 1 sit between those points on a number line."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In the fraction 2/7, which number is the numerator and which is the denominator, and what does each one tell you?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.equivalent_fractions.lesson",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "title": "Equivalent Fractions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to explain what equivalent fractions are, make one by multiplying, and check whether two fractions are equivalent."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that the numerator is the top number (parts you have) and the denominator is the bottom number (total equal parts). You will also use your multiplication facts."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think about half of a pizza. If you cut that same pizza into more slices, half is still half. 1/2 of a pizza is the same amount as 2/4 or 3/6. Equivalent fractions look different but name the exact same amount because you have just cut the same whole into more, smaller equal parts."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Equivalent fractions are two or more fractions that represent the same value. You can make an equivalent fraction by multiplying the numerator and the denominator by the same nonzero number."
+        },
+        {
+          "type": "representation",
+          "body": "Draw two identical bars. Shade half of the first bar as one big piece: that is 1/2. Split the second bar into 4 equal parts and shade 2 of them: that is 2/4. The shaded lengths match, showing 1/2 equals 2/4."
+        },
+        {
+          "type": "worked_example",
+          "body": "Write a fraction equivalent to 2/3 with a denominator of 6. Ask what times 3 gives 6: that is 2. Multiply both the numerator and denominator by 2: 2 times 2 is 4, and 3 times 2 is 6. So 2/3 equals 4/6. We multiply both numbers by the same amount so the value does not change."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Make a fraction equivalent to 1/4 with denominator 8. Since 4 times 2 is 8, multiply the numerator by 2 as well: 1 times 2 is 2. The answer is 2/8."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying only the denominator (or only the numerator). You must multiply both by the same number, or the value changes. Adding the same number to top and bottom does not work either; you must multiply."
+        },
+        {
+          "type": "summary",
+          "body": "Equivalent fractions name the same amount. Multiply the numerator and denominator by the same number to create one. Two fractions are equivalent when they can be rewritten as the same fraction."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What must you do to both the numerator and denominator to make an equivalent fraction, and why does the value stay the same?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.simplifying_fractions.lesson",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "title": "Simplifying Fractions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to simplify a fraction by dividing, and recognize when a fraction is already in simplest form."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know that equivalent fractions name the same amount. Simplifying uses that idea in reverse. You will also use your division facts to divide the numerator and denominator."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Simplifying is like grouping small pieces into bigger ones. If a pizza is cut into 6 slices and you have 4, those 4 slices can be grouped into larger pieces. 4/6 is the same amount as 2/3. Simplifying makes the numbers smaller and easier to read without changing the value."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To simplify a fraction, divide the numerator and the denominator by the same number, called a common factor. A fraction is in simplest form when the only number that divides both the numerator and denominator is 1."
+        },
+        {
+          "type": "worked_example",
+          "body": "Simplify 4/6. Find a number that divides both 4 and 6. Both can be divided by 2. Divide: 4 divided by 2 is 2, and 6 divided by 2 is 3. So 4/6 simplifies to 2/3. Since only 1 divides both 2 and 3, it is now in simplest form."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Simplify 3/9. Both 3 and 9 can be divided by 3. Divide: 3 divided by 3 is 1, and 9 divided by 3 is 3. The answer is 1/3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is dividing the numerator and denominator by different numbers; they must be divided by the same number. Another is stopping too early, leaving a fraction like 2/4 that can still be simplified to 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "Simplifying writes a fraction with the smallest numbers while keeping the same value. Divide the numerator and denominator by a common factor. It is in simplest form when only 1 divides both."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you know when a fraction is fully simplified?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.add_like_denominators.lesson",
+      "skill_id": "math.fractions.add_like_denominators",
+      "title": "Adding Fractions with Like Denominators",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to add two fractions that have the same denominator and explain why the denominator stays the same."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that the denominator tells the size of each equal part and the numerator counts how many parts you have. You will also use your addition facts."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If a pizza is cut into 5 equal slices, each slice is one fifth. Having 1 slice plus 2 more slices gives 3 slices out of 5. You are just counting slices of the same size. The size of a slice does not change when you add more, so the denominator stays 5."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Fractions have like denominators when their bottom numbers are the same. To add them, add the numerators and keep the denominator the same. The sum is the total number of equal parts."
+        },
+        {
+          "type": "representation",
+          "body": "Picture a bar split into 5 equal parts. Shade 1 part, then shade 2 more. Now 3 parts are shaded out of 5, which is 3/5. The parts stayed the same size, so only the count of shaded parts grew."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 2/7 and 3/7. The denominators match, so each part is one seventh. Add the numerators: 2 plus 3 is 5. Keep the denominator 7. The answer is 5/7. We do not add the denominators because the parts did not change size."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Add 1/4 and 1/4. The denominators are both 4, so add the numerators: 1 plus 1 is 2, over 4. The answer is 2/4, which simplifies to 1/2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The most common mistake is adding both the numerators and the denominators, such as writing 1/5 plus 2/5 as 3/10. That is wrong because the denominator shows the size of each part, and that size does not change when you add. Keep the denominator the same."
+        },
+        {
+          "type": "summary",
+          "body": "To add fractions with like denominators, add the numerators and keep the denominator. The denominator stays the same because the size of each part does not change."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When you add 3/8 and 2/8, why does the answer keep a denominator of 8 instead of 16?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.subtract_like_denominators.lesson",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "title": "Subtracting Fractions with Like Denominators",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to subtract two fractions that have the same denominator and explain why the denominator stays the same."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know how to add fractions with like denominators by adding the numerators and keeping the denominator. Subtraction works the same way. You will also use your subtraction facts."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If a pie is cut into 8 equal slices and you have 5 of them, then eat 2, you have 3 slices left out of 8. You are taking away slices that are all the same size, so the size of each slice, the denominator, stays 8."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To subtract fractions with like denominators, subtract the numerators and keep the denominator the same. The difference is the number of equal parts that remain."
+        },
+        {
+          "type": "worked_example",
+          "body": "Subtract 2/6 from 5/6. The denominators match, so each part is one sixth. Subtract the numerators: 5 minus 2 is 3. Keep the denominator 6. The answer is 3/6, which simplifies to 1/2. The denominator stays 6 because the parts are still sixths."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Subtract 1/4 from 3/4. Both denominators are 4, so subtract the numerators: 3 minus 1 is 2, over 4. The answer is 2/4, which simplifies to 1/2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is subtracting the denominators too, such as writing 3/5 minus 1/5 as 2/0 or 2 over something else. Only the numerators are subtracted; the denominator stays the same because the part size does not change."
+        },
+        {
+          "type": "summary",
+          "body": "To subtract fractions with like denominators, subtract the numerators and keep the denominator. The denominator stays the same because you are removing parts that are all the same size."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When you compute 7/9 minus 4/9, why does the denominator stay 9?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.common_denominators.lesson",
+      "skill_id": "math.fractions.common_denominators",
+      "title": "Common Denominators",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to explain why a common denominator is needed and rewrite two fractions so they share the same denominator."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that equivalent fractions name the same amount, and you make one by multiplying the numerator and denominator by the same number. You will use that skill here."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Comparing 1/2 and 1/3 is like comparing slices from two differently cut pizzas. The slices are different sizes, so it is hard to compare. If you cut both pizzas into 6 equal slices, every slice is the same size and comparing becomes easy. A common denominator gives both fractions the same size parts."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A common denominator is a single denominator that two or more fractions can share. You find it by choosing a number that each denominator divides into, often the product of the denominators, and then rewrite each fraction as an equivalent fraction with that denominator."
+        },
+        {
+          "type": "worked_example",
+          "body": "Give 1/2 and 1/3 a common denominator. A number both 2 and 3 divide into is 6. Rewrite 1/2: multiply top and bottom by 3 to get 3/6. Rewrite 1/3: multiply top and bottom by 2 to get 2/6. Now both fractions use sixths and can be compared or combined."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find a common denominator for 1/4 and 1/2. The number 4 works because 2 divides into 4. Rewrite 1/2 as 2/4 by multiplying top and bottom by 2. Now both fractions use fourths: 1/4 and 2/4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is changing the denominator without changing the numerator, which changes the value. When you rewrite a fraction with a new denominator, you must multiply the numerator by the same number to keep the value the same."
+        },
+        {
+          "type": "summary",
+          "body": "A common denominator gives two fractions the same size parts so they can be compared or combined. Find a shared denominator and rewrite each fraction as an equivalent fraction using it."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why can you not directly compare or add 1/2 and 1/3 until they share a denominator?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.add_unlike_denominators.lesson",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "title": "Adding Fractions with Unlike Denominators",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to add two fractions with different denominators by first giving them a common denominator, then simplify the result when possible."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know how to add fractions with like denominators and how to find a common denominator. This lesson combines those two skills."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "You cannot add halves and thirds directly because the parts are different sizes, just like you cannot count 1 slice from one pizza and 1 slice from a differently cut pizza as 2 equal slices. First make the parts the same size with a common denominator, then you can count them together."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To add fractions with unlike denominators, rewrite each as an equivalent fraction with a common denominator, then add the numerators and keep the shared denominator. Simplify the sum if you can."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 1/2 and 1/3. They have unlike denominators, so find a common denominator: 6. Rewrite 1/2 as 3/6 and 1/3 as 2/6. Now the parts are the same size, so add the numerators: 3 plus 2 is 5, over 6. The answer is 5/6, which is already in simplest form."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Add 1/4 and 1/2. Use a common denominator of 4. Rewrite 1/2 as 2/4. Now add: 1/4 plus 2/4 is 3/4. The answer is 3/4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding the numerators and denominators straight across without a common denominator, such as writing 1/2 plus 1/3 as 2/5. That is wrong because the parts are different sizes. Always give the fractions a common denominator first."
+        },
+        {
+          "type": "summary",
+          "body": "To add fractions with unlike denominators, rewrite them with a common denominator so the parts match, add the numerators, keep the denominator, and simplify if possible."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the first step before you can add 1/2 and 1/3, and why is it necessary?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.fractions.fraction_meaning.q1",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "fraction",
+      "difficulty": 1,
+      "prompt": "A rectangle is split into 5 equal parts. 3 of the parts are shaded. What fraction of the rectangle is shaded?",
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is the total number of equal parts the whole is split into."
+        },
+        {
+          "level": 2,
+          "text": "There are 5 equal parts in all, so the denominator is 5."
+        },
+        {
+          "level": 3,
+          "text": "3 parts are shaded, so the numerator is 3. Write it as numerator over denominator."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The whole is split into 5 equal parts, so the denominator is 5. Three parts are shaded, so the numerator is 3. The shaded fraction is 3/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q2",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In the fraction 4/7, what does the denominator 7 tell you?",
+      "parameters": {
+        "options": [
+          "How many equal parts the whole is split into",
+          "How many parts are shaded or taken",
+          "How much larger the fraction is than 1",
+          "The total of the top and bottom numbers"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "How many equal parts the whole is split into"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is the bottom number of a fraction."
+        },
+        {
+          "level": 2,
+          "text": "Think about cutting a whole into equal parts. Which number tells how many parts you cut it into?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The denominator (bottom number) tells how many equal parts the whole is divided into. The numerator (top) tells how many of those parts you have.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q1",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write a fraction equivalent to 2/3 that has a denominator of 6.",
+      "answer_spec": {
+        "correct_answer": "4/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask what number times 3 gives 6."
+        },
+        {
+          "level": 2,
+          "text": "3 times 2 is 6, so multiply both the numerator and denominator by 2."
+        },
+        {
+          "level": 3,
+          "text": "2 times 2 is 4, and 3 times 2 is 6, giving 4/6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "To keep the same value, multiply the numerator and denominator by the same number. Since 3 times 2 is 6, multiply the top by 2 as well: 2/3 equals 4/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q2",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why is 1/2 equivalent to 2/4?",
+      "parameters": {
+        "options": [
+          "The same whole is cut into more, smaller equal parts, so the amount stays the same",
+          "2/4 is a larger amount than 1/2",
+          "You added 1 to the top and 2 to the bottom",
+          "Any two fractions with a 2 in them are equivalent"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "The same whole is cut into more, smaller equal parts, so the amount stays the same"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Equivalent fractions name the same amount of the whole."
+        },
+        {
+          "level": 2,
+          "text": "Multiplying the top and bottom by 2 cuts the whole into more parts but does not change how much you have."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying the numerator and denominator of 1/2 by 2 gives 2/4. This just cuts the same whole into more, smaller equal parts, so the amount is unchanged.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q1",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Simplify the fraction 4/6 to its simplest form.",
+      "answer_spec": {
+        "correct_answer": "2/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a number that divides both 4 and 6."
+        },
+        {
+          "level": 2,
+          "text": "Both 4 and 6 can be divided by 2."
+        },
+        {
+          "level": 3,
+          "text": "4 divided by 2 is 2, and 6 divided by 2 is 3, giving 2/3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Divide the numerator and denominator by the common factor 2: 4 divided by 2 is 2, and 6 divided by 2 is 3. The simplest form is 2/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q2",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which fraction is already in simplest form?",
+      "parameters": {
+        "options": ["3/5", "4/8", "6/9", "2/6"]
+      },
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A fraction is in simplest form when only 1 divides both the top and bottom numbers."
+        },
+        {
+          "level": 2,
+          "text": "Check each option: can both numbers be divided by the same number bigger than 1? 3 and 5 share no common factor except 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/5 is in simplest form because the only number dividing both 3 and 5 is 1. The others can be simplified: 4/8 to 1/2, 6/9 to 2/3, and 2/6 to 1/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q1",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 1/5 + 2/5?",
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the size of each part does not change."
+        },
+        {
+          "level": 2,
+          "text": "Add the numerators: 1 + 2 = 3, over 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Add the numerators and keep the denominator the same, because the parts are the same size: 1/5 + 2/5 = 3/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 40,
+      "common_wrong_answers": [
+        {
+          "value": "3/10",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q2",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When you add 3/8 + 2/8, why does the denominator stay 8 instead of becoming 16?",
+      "parameters": {
+        "options": [
+          "Because the parts are all eighths, and their size does not change when you add them",
+          "Because you always keep the smaller denominator",
+          "Because 8 plus 8 is too large to use",
+          "Because you should add the denominators only when the numerators match"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Because the parts are all eighths, and their size does not change when you add them"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator tells the size of each part."
+        },
+        {
+          "level": 2,
+          "text": "Adding more parts does not make each part a different size, so the denominator stays the same."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The denominator shows the size of each equal part. Adding parts changes only how many you have (the numerator), not their size, so 3/8 + 2/8 = 5/8, keeping the denominator 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50,
+      "common_wrong_answers": [
+        {
+          "value": "Because you always keep the smaller denominator",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q1",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 5/6 - 2/6?",
+      "answer_spec": {
+        "correct_answer": "3/6",
+        "accepted_equivalents": ["1/2"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the size of each part does not change."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 5 - 2 = 3, over 6."
+        },
+        {
+          "level": 3,
+          "text": "3/6 can also be written in simplest form as 1/2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtract the numerators and keep the denominator: 5/6 - 2/6 = 3/6, which simplifies to 1/2. The denominator stays 6 because the parts are still sixths.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q2",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When computing 7/9 - 4/9, which step is correct?",
+      "parameters": {
+        "options": [
+          "Subtract the numerators and keep the denominator 9",
+          "Subtract both the numerators and the denominators",
+          "Subtract the denominators and keep the numerator",
+          "Add the numerators and keep the denominator 9"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Subtract the numerators and keep the denominator 9"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The parts are all ninths, so their size does not change."
+        },
+        {
+          "level": 2,
+          "text": "You only change how many parts you have, so subtract the top numbers and keep the bottom."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With like denominators you subtract the numerators and keep the denominator the same, because you are removing parts of the same size: 7/9 - 4/9 = 3/9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q1",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the smallest common denominator you can use for the fractions 1/2 and 1/3?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A common denominator is a number that both 2 and 3 divide into evenly."
+        },
+        {
+          "level": 2,
+          "text": "List multiples of 2 (2, 4, 6, ...) and of 3 (3, 6, ...) and find the smallest they share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 2 and 3 divide into evenly is 6, so 6 is the smallest common denominator for 1/2 and 1/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q2",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why do two fractions need a common denominator before you can compare or combine them?",
+      "parameters": {
+        "options": [
+          "So the parts of each fraction are the same size and can be counted together",
+          "So the numerators become equal",
+          "So the fractions both become whole numbers",
+          "So you can add the denominators together"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "So the parts of each fraction are the same size and can be counted together"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about slices from two differently cut pizzas."
+        },
+        {
+          "level": 2,
+          "text": "A common denominator makes every part the same size, which makes comparing and combining possible."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Fractions with different denominators have different size parts. A common denominator rewrites both so the parts are the same size, which is what lets you compare or combine them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q1",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/2 + 1/3?",
+      "answer_spec": {
+        "correct_answer": "5/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators are different, so first find a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Use 6: rewrite 1/2 as 3/6 and 1/3 as 2/6."
+        },
+        {
+          "level": 3,
+          "text": "Add the numerators: 3 + 2 = 5, over 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Rewrite both fractions with the common denominator 6: 1/2 becomes 3/6 and 1/3 becomes 2/6. Then add the numerators: 3/6 + 2/6 = 5/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 60,
+      "transfer_flag": true,
+      "common_wrong_answers": [
+        {
+          "value": "2/5",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q2",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the first step to add 1/4 + 1/2, and why?",
+      "parameters": {
+        "options": [
+          "Rewrite the fractions with a common denominator so the parts are the same size",
+          "Add the numerators 1 and 1 right away",
+          "Add the denominators 4 and 2 to get 6",
+          "Flip the second fraction upside down"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Rewrite the fractions with a common denominator so the parts are the same size"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You cannot add parts of different sizes directly."
+        },
+        {
+          "level": 2,
+          "text": "Make the parts the same size first, then add the numerators."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because 1/4 and 1/2 have different size parts, the first step is to give them a common denominator (4): 1/2 becomes 2/4. Then 1/4 + 2/4 = 3/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 55
+    }
+  ]
+}

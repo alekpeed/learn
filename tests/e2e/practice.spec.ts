@@ -11,8 +11,8 @@ test.describe('practice and validation (Phase 3)', () => {
     await page.goto('/practice?skill=math.number_foundations.place_value');
     await expect(page.getByRole('heading', { name: /^practice$/i })).toBeVisible();
 
-    // 40 is correct for "value of the 4 in 42".
-    await page.getByLabel(/your answer/i).fill('40');
+    // 50 is correct for "value of the 5 in 356".
+    await page.getByLabel(/your answer/i).fill('50');
     await page.getByRole('button', { name: /submit/i }).click();
     await expect(page.getByText(/correct/i)).toBeVisible();
   });
@@ -20,11 +20,12 @@ test.describe('practice and validation (Phase 3)', () => {
   test('shows a hint and specific feedback on a wrong answer', async ({ page }) => {
     await page.goto('/practice?skill=math.number_foundations.place_value');
     await page.getByRole('button', { name: /show a hint/i }).click();
-    await expect(page.getByText(/which place is the 4 in/i)).toBeVisible();
+    // A hint is revealed (content-agnostic: the hints list appears).
+    await expect(page.getByRole('region', { name: /hints/i })).toBeVisible();
 
-    await page.getByLabel(/your answer/i).fill('4');
+    // Answering "5" (the digit) instead of 50 is a place-value error.
+    await page.getByLabel(/your answer/i).fill('5');
     await page.getByRole('button', { name: /submit/i }).click();
-    // 4 vs 40 is a place-value error.
     await expect(page.getByRole('alert')).toContainText(/place value/i);
   });
 });

@@ -1,0 +1,956 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.add_sub.addition_meaning",
+      "unit_id": "math.add_sub",
+      "title": "The Meaning of Addition",
+      "summary": "Addition combines two or more quantities into a total. It answers the question 'how many in all?' when groups are put together.",
+      "objectives": [
+        "Explain that addition means joining groups to find a total.",
+        "Model a joining situation on a number line as counting on.",
+        "Recognize that the order of the parts does not change the total."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.counting_and_quantity",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "addend",
+          "definition": "A number that is being added to another number."
+        },
+        {
+          "term": "sum",
+          "definition": "The total you get when you add numbers together."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.addition_facts",
+      "unit_id": "math.add_sub",
+      "title": "Addition Facts",
+      "summary": "Addition facts are the single-digit sums from 0 to 9 that can be recalled quickly. Knowing them by memory makes larger calculations faster and more reliable.",
+      "objectives": [
+        "Recall single-digit addition facts fluently.",
+        "Use strategies such as counting on and making ten to find sums.",
+        "Apply the fact that order does not change the sum to learn fewer facts."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "fact family",
+          "definition": "A group of related addition and subtraction facts that use the same numbers."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "unit_id": "math.add_sub",
+      "title": "Multi-Digit Addition",
+      "summary": "Multi-digit addition adds numbers with two or more digits by combining ones, tens, and hundreds separately, carrying to the next place when a column reaches ten.",
+      "objectives": [
+        "Add multi-digit numbers by lining up place values.",
+        "Regroup (carry) when the digits in a column sum to ten or more.",
+        "Explain why regrouping moves ten ones into one ten."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "regroup",
+          "definition": "To exchange ten of one place value for one of the next higher place value, such as ten ones for one ten."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "unit_id": "math.add_sub",
+      "title": "The Meaning of Subtraction",
+      "summary": "Subtraction finds how much is left when part of a group is taken away, or how much more one amount is than another. It answers 'how many remain?' or 'what is the difference?'",
+      "objectives": [
+        "Explain that subtraction means taking away or finding a difference.",
+        "Model a take-away situation on a number line as counting back.",
+        "Identify the whole and the part in a subtraction situation."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "difference",
+          "definition": "The result you get when you subtract one number from another."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.subtraction_facts",
+      "unit_id": "math.add_sub",
+      "title": "Subtraction Facts",
+      "summary": "Subtraction facts are the single-digit differences that can be recalled quickly. They are closely tied to addition facts through fact families.",
+      "objectives": [
+        "Recall single-digit subtraction facts fluently.",
+        "Use a known addition fact to find a related subtraction fact.",
+        "Use counting back and counting up as subtraction strategies."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.subtraction_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "minuend",
+          "definition": "The number you start with and subtract from."
+        },
+        {
+          "term": "subtrahend",
+          "definition": "The number you subtract away from the minuend."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "unit_id": "math.add_sub",
+      "title": "Multi-Digit Subtraction",
+      "summary": "Multi-digit subtraction subtracts numbers with two or more digits place by place, borrowing from the next higher place when a column is too small to subtract.",
+      "objectives": [
+        "Subtract multi-digit numbers by lining up place values.",
+        "Regroup (borrow) when the top digit in a column is smaller than the bottom digit.",
+        "Explain why borrowing exchanges one ten for ten ones."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.subtraction_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "borrow",
+          "definition": "To exchange one unit of a higher place value for ten of the next lower place, such as one ten for ten ones."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.add_sub.inverse_relationship",
+      "unit_id": "math.add_sub",
+      "title": "Addition and Subtraction as Inverses",
+      "summary": "Addition and subtraction undo each other. If you add a number and then subtract the same number, you return to where you started, which lets you check answers and solve for missing parts.",
+      "objectives": [
+        "Explain that subtraction undoes addition and addition undoes subtraction.",
+        "Use a fact family to write related addition and subtraction equations.",
+        "Find a missing addend by subtracting."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.subtraction_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "inverse operation",
+          "definition": "An operation that undoes another operation, such as subtraction undoing addition."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.add_sub.addition_meaning.lesson",
+      "skill_id": "math.add_sub.addition_meaning",
+      "title": "The Meaning of Addition",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to explain that addition means joining groups to find a total, and show it on a number line."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You should already be able to count objects and read a number line. Addition builds directly on counting."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Addition is what you do when you put groups together and ask 'how many in all?'. If you have 3 apples and someone gives you 2 more, you now have 5 apples. You did not create new apples out of nothing; you combined two groups into one bigger group. The numbers you combine are called addends, and the total is called the sum."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line, start at the first number and move to the right by the second number. To add 3 + 2, start at 3 and take 2 steps right, landing on 5. Moving right always makes numbers larger, which is why adding makes the total bigger (unless you add zero)."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In the equation 3 + 2 = 5, the numbers 3 and 2 are addends, the plus sign means 'combine', and 5 is the sum. The equals sign means both sides name the same amount."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 4 + 3. Start with a group of 4 counters. Bring in a group of 3 more counters. Count them all together: 1, 2, 3, 4, 5, 6, 7. There are 7 counters, so 4 + 3 = 7."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 5 + 2. Start at 5 on the number line and step right twice: 6, then 7. So 5 + 2 = 7. Notice you could also start at 2 and step right five times and still land on 7."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is to start counting from the first number instead of after it. When counting on 2 from 5, the next numbers are 6 and 7, not 5 and 6. The starting number is where you already are, not your first step."
+        },
+        {
+          "type": "summary",
+          "body": "Addition joins groups to find a total. The parts are addends and the total is the sum. On a number line you count on to the right, and the order of the addends does not change the sum."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.addition_facts.lesson",
+      "skill_id": "math.add_sub.addition_facts",
+      "title": "Addition Facts",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will recall single-digit addition facts quickly and use strategies like counting on and making ten."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Remember that addition means joining groups to find a total. Facts are just the small sums you have practiced enough to remember."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An addition fact is a small sum you know by heart, like 6 + 4 = 10. Knowing facts saves time because you do not have to count every time. Two helpful strategies are counting on from the larger number and making ten by breaking a number apart to reach a friendly 10 first."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 8 + 5 using 'make ten'. Take 2 from the 5 to turn 8 into 10, which leaves 3. Now add: 10 + 3 = 13. So 8 + 5 = 13."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The commutative property of addition says the order of addends does not change the sum: 8 + 5 equals 5 + 8. This means you only have to memorize each fact once."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 7 + 6. Take 3 from the 6 to make 7 into 10, leaving 3. Then 10 + 3 = 13. Check by counting on from 7: 8, 9, 10, 11, 12, 13."
+        },
+        {
+          "type": "independent_practice",
+          "body": "Practice these until they feel automatic: 9 + 4, 6 + 7, 8 + 8, 3 + 9. Use make-ten or counting on whenever you are unsure."
+        },
+        {
+          "type": "summary",
+          "body": "Addition facts are single-digit sums you recall quickly. Counting on and making ten help you find and remember them, and order does not change the sum."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.multi_digit_addition.lesson",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "title": "Multi-Digit Addition",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will add multi-digit numbers by place value and regroup correctly when a column reaches ten."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need your addition facts and an understanding of place value: the position of a digit tells you whether it means ones, tens, or hundreds."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "To add large numbers, add each place value separately: ones with ones, tens with tens. If a column of ones adds up to ten or more, you cannot write two digits in one spot, so you carry the extra ten into the tens column. This is called regrouping, and it works because ten ones equal exactly one ten."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 47 + 25. Ones: 7 + 5 = 12. Write the 2 in the ones place and carry the 1 ten. Tens: 4 + 2 + 1 carried = 7. Write 7 in the tens place. The sum is 72."
+        },
+        {
+          "type": "representation",
+          "body": "Picture 47 as 4 tens and 7 ones, and 25 as 2 tens and 5 ones. Combining ones gives 12 ones, which is 1 ten and 2 ones. Move that 1 ten over, and you have 7 tens and 2 ones, which is 72."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 38 + 26. Ones: 8 + 6 = 14, write 4 and carry 1. Tens: 3 + 2 + 1 = 6. The sum is 64."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A frequent error is forgetting to add the carried digit, or writing the whole two-digit column total in one place. Always carry the extra ten and add it into the next column."
+        },
+        {
+          "type": "summary",
+          "body": "Add multi-digit numbers place by place from the ones. When a column reaches ten or more, regroup by carrying one to the next place. Regrouping works because ten ones make one ten."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.subtraction_meaning.lesson",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "title": "The Meaning of Subtraction",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will explain that subtraction means taking away or finding a difference, and show it on a number line."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know addition joins groups. Subtraction is the reverse: instead of putting groups together, you separate part of a group."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Subtraction answers two related questions. One is 'how many are left?' when you take some away: if you have 7 grapes and eat 3, you have 4 left. The other is 'how many more?' when you compare two amounts: if one shelf has 7 books and another has 3, the first has 4 more. Both give the difference."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line, start at the first number and move to the left by the second number. To find 7 - 3, start at 7 and take 3 steps left, landing on 4. Moving left makes numbers smaller, which is why subtracting makes the result smaller (unless you subtract zero)."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In the equation 7 - 3 = 4, the 7 is the minuend (what you start with), the 3 is the subtrahend (what you take away), and 4 is the difference."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 9 - 4. Start with 9 counters and remove 4 of them. Count what remains: 1, 2, 3, 4, 5. There are 5 counters left, so 9 - 4 = 5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 8 - 5. Start at 8 on the number line and step left five times: 7, 6, 5, 4, 3. So 8 - 5 = 3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking subtraction can be done in any order like addition. It cannot: 7 - 3 is 4, but 3 - 7 is not the same. The order matters because you start from the first number."
+        },
+        {
+          "type": "summary",
+          "body": "Subtraction takes away or compares to find a difference. Start with the minuend, remove the subtrahend, and what remains is the difference. On a number line you count back to the left."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.subtraction_facts.lesson",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "title": "Subtraction Facts",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will recall single-digit subtraction facts and use related addition facts to find them."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You should know your addition facts and understand that subtraction means taking away or finding a difference."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Every subtraction fact has a matching addition fact. If you know 6 + 7 = 13, then you also know 13 - 7 = 6 and 13 - 6 = 7. Instead of counting back each time, you can ask 'what do I add to the smaller number to get the larger one?' This turns a hard subtraction into an easy addition you already know."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 13 - 8. Think: 8 plus what makes 13? Since 8 + 5 = 13, the answer is 13 - 8 = 5. You used a known addition fact instead of counting back eight times."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The numbers 6, 7, and 13 form a fact family. From them you can write 6 + 7 = 13, 7 + 6 = 13, 13 - 6 = 7, and 13 - 7 = 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 15 - 9. Ask: 9 plus what makes 15? Since 9 + 6 = 15, the answer is 6. Check by counting up from 9 to 15: that is 6 steps."
+        },
+        {
+          "type": "independent_practice",
+          "body": "Practice using addition to help: 12 - 5, 14 - 6, 11 - 8, 16 - 9. For each, find the missing addend."
+        },
+        {
+          "type": "summary",
+          "body": "Subtraction facts are single-digit differences. The fastest way to recall them is to use the matching addition fact from the same fact family."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.multi_digit_subtraction.lesson",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "title": "Multi-Digit Subtraction",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will subtract multi-digit numbers by place value and borrow correctly when a column is too small."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need your subtraction facts and place value: knowing that a digit's position tells you whether it means ones, tens, or hundreds."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "To subtract large numbers, subtract each place value separately. Sometimes the top digit in a column is smaller than the bottom digit, so you cannot subtract yet. You then borrow: take one ten from the next column and turn it into ten ones. This does not change the total value, it just rewrites the number so subtraction is possible."
+        },
+        {
+          "type": "worked_example",
+          "body": "Subtract 52 - 27. Ones: 2 - 7 cannot be done, so borrow one ten. The 5 tens become 4 tens, and the 2 ones become 12 ones. Now 12 - 7 = 5. Tens: 4 - 2 = 2. The difference is 25."
+        },
+        {
+          "type": "representation",
+          "body": "Think of 52 as 5 tens and 2 ones. Borrowing changes it to 4 tens and 12 ones, which is still 52. Now you can take 7 ones from 12 ones, and 2 tens from 4 tens, leaving 2 tens and 5 ones, which is 25."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try 64 - 38. Ones: 4 - 8 cannot be done, so borrow: 6 tens become 5 tens, 4 ones become 14 ones. Now 14 - 8 = 6. Tens: 5 - 3 = 2. The difference is 26."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common error is subtracting the smaller digit from the larger one in each column regardless of position, for example doing 7 - 2 instead of borrowing. Always subtract the bottom number from the top; if the top is smaller, borrow first."
+        },
+        {
+          "type": "summary",
+          "body": "Subtract multi-digit numbers place by place from the ones. When the top digit is smaller than the bottom, borrow one from the next column, which becomes ten ones. Borrowing keeps the value the same while making subtraction possible."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.inverse_relationship.lesson",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "title": "Addition and Subtraction as Inverses",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will explain that addition and subtraction undo each other and use this to find missing numbers and check answers."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You should know your addition and subtraction facts. This lesson connects them into a single relationship."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Addition and subtraction are inverse operations, which means each one undoes the other. If you start with 5, add 3 to get 8, then subtract 3, you are back to 5. Because of this, any addition equation can be rewritten as a subtraction equation using the same three numbers, and you can find a missing part by subtracting."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve the missing addend: 6 + ? = 14. Because subtraction undoes addition, subtract the known part: 14 - 6 = 8. So the missing number is 8. Check: 6 + 8 = 14."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A fact family shows the inverse relationship. From 6, 8, and 14 you can write 6 + 8 = 14, 8 + 6 = 14, 14 - 6 = 8, and 14 - 8 = 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Try the missing addend 9 + ? = 15. Subtract to undo the addition: 15 - 9 = 6. Check: 9 + 6 = 15."
+        },
+        {
+          "type": "transfer_problem",
+          "body": "You checked out 12 library books and returned some. Now you have 5. Because addition and subtraction are inverses, you can find how many you returned: 12 - 5 = 7 books returned."
+        },
+        {
+          "type": "summary",
+          "body": "Addition and subtraction undo each other. This lets you rewrite equations as fact families, find missing addends by subtracting, and check subtraction by adding."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.add_sub.addition_meaning.q1",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A basket has 4 oranges. You put in 3 more oranges. How many oranges are in the basket now?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Adding means joining the two groups together to find the total."
+        },
+        {
+          "level": 2,
+          "text": "Start at 4 and count on 3 more: 5, 6, 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Joining a group of 4 with a group of 3 gives a total of 7, because addition combines the two amounts.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 30
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q2",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which situation is best described by addition?",
+      "parameters": {
+        "options": [
+          "Putting a group of 3 books together with a group of 5 books",
+          "Eating 2 of your 6 crackers",
+          "Sharing 8 stickers equally among 4 friends",
+          "Removing 4 marbles from a jar of 10"
+        ]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "Putting a group of 3 books together with a group of 5 books"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Addition is about joining groups to find a total, not taking away or sharing."
+        },
+        {
+          "level": 2,
+          "text": "Look for the option where two groups are combined into one larger group."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Addition means combining groups to find a total. Putting 3 books together with 5 books joins two groups, while the other options take away or share.",
+      "content_version": "0.1.0",
+      "common_wrong_answers": [
+        {
+          "value": "Eating 2 of your 6 crackers",
+          "misconception_id": "mc.math.add_sub.confuses_join_with_takeaway"
+        }
+      ]
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q1",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 8 + 6?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try making a ten first."
+        },
+        {
+          "level": 2,
+          "text": "Take 2 from the 6 to make 8 into 10, leaving 4. Then 10 + 4 = 14."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Using make-ten, 8 + 2 = 10 and 4 remain, so 10 + 4 = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 20
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q2",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You already know that 7 + 5 = 12. Which fact do you also know for free because of this?",
+      "parameters": {
+        "options": ["5 + 7 = 12", "7 + 6 = 12", "12 + 5 = 7", "7 + 5 = 13"]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "5 + 7 = 12"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "The order of the addends does not change the sum."
+        },
+        {
+          "level": 2,
+          "text": "Swapping 7 and 5 still gives 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because addition is commutative, the order of the addends does not change the sum, so 7 + 5 = 12 also tells you 5 + 7 = 12.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q1",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 47 + 25?",
+      "answer_spec": {
+        "correct_answer": 72
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the ones first, then the tens. Watch for a column that reaches ten."
+        },
+        {
+          "level": 2,
+          "text": "Ones: 7 + 5 = 12, so write 2 and carry 1. Tens: 4 + 2 + 1 = 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The ones column 7 + 5 = 12 needs regrouping: write 2, carry 1 ten. The tens column 4 + 2 + 1 = 7 gives 72.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 45
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q2",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When adding 38 + 26, the ones column is 8 + 6 = 14. Why do you write 4 and carry a 1?",
+      "parameters": {
+        "options": [
+          "Because 14 ones equal 1 ten and 4 ones, and the ten belongs in the tens column",
+          "Because you always write the smaller digit and move the larger one",
+          "Because 4 is closer to 6 than to 8",
+          "Because carrying makes the answer larger"
+        ]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "Because 14 ones equal 1 ten and 4 ones, and the ten belongs in the tens column"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what 14 ones can be exchanged for."
+        },
+        {
+          "level": 2,
+          "text": "Ten ones make exactly one ten, which must move to the tens place."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "14 ones regroup into 1 ten and 4 ones. The 4 ones stay in the ones column and the 1 ten is carried into the tens column, which is why we carry.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q1",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You have 9 stickers and you give 4 of them to a friend. How many stickers do you have left?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtraction means taking away part of the group to see how much is left."
+        },
+        {
+          "level": 2,
+          "text": "Start at 9 and count back 4: 8, 7, 6, 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Taking 4 away from 9 leaves 5, because subtraction removes part of a group to find what remains.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 30
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q2",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why is 7 - 3 different from 3 - 7?",
+      "parameters": {
+        "options": [
+          "Because in subtraction the order matters: you start from the first number and take the second away",
+          "Because they are actually the same and both equal 4",
+          "Because subtraction can be done in any order like addition",
+          "Because the larger number is always written second"
+        ]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "Because in subtraction the order matters: you start from the first number and take the second away"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about which number you start with and which you remove."
+        },
+        {
+          "level": 2,
+          "text": "Starting at 7 and removing 3 is not the same as starting at 3 and removing 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtraction is not commutative. You begin with the minuend and remove the subtrahend, so switching the order changes the situation and the result.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q1",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 13 - 8?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use a related addition fact: 8 plus what makes 13?"
+        },
+        {
+          "level": 2,
+          "text": "Since 8 + 5 = 13, the answer is 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Using the fact family, 8 + 5 = 13, so 13 - 8 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 25
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q2",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which addition fact helps you find 15 - 9 most directly?",
+      "parameters": {
+        "options": ["9 + 6 = 15", "15 + 9 = 24", "9 + 9 = 18", "5 + 9 = 14"]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "9 + 6 = 15"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask what you add to 9 to reach 15."
+        },
+        {
+          "level": 2,
+          "text": "The fact 9 + 6 = 15 comes from the same fact family as 15 - 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 - 9 asks what adds to 9 to make 15. The matching addition fact 9 + 6 = 15 gives the answer 6 directly.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q1",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 52 - 27?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the ones column first. Can you take 7 from 2?"
+        },
+        {
+          "level": 2,
+          "text": "Borrow one ten: 12 - 7 = 5 in the ones, then 4 - 2 = 2 in the tens."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Since 2 - 7 is not possible, borrow one ten to make 12 - 7 = 5. The tens become 4 - 2 = 2, giving 25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 50
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q2",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When subtracting 64 - 38, you borrow from the tens. What does borrowing actually do to the value of the number 64?",
+      "parameters": {
+        "options": [
+          "Nothing changes the total value; 5 tens and 14 ones is still 64",
+          "It makes 64 smaller before you subtract",
+          "It adds ten to the final answer",
+          "It changes 64 into 74"
+        ]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "Nothing changes the total value; 5 tens and 14 ones is still 64"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Borrowing only rewrites the number in a different way."
+        },
+        {
+          "level": 2,
+          "text": "5 tens and 14 ones equals 50 + 14 = 64, the same as before."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Borrowing exchanges one ten for ten ones. 64 becomes 5 tens and 14 ones, which still equals 64, so the value is unchanged; it is only rewritten to make subtraction possible.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q1",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Find the missing number: 6 + ? = 14.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtraction undoes addition, so subtract the part you know."
+        },
+        {
+          "level": 2,
+          "text": "14 - 6 = 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Because subtraction undoes addition, subtract the known addend: 14 - 6 = 8. Check: 6 + 8 = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 35
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q2",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You start with a number, add 5, and then subtract 5. What do you end up with, and why?",
+      "parameters": {
+        "options": [
+          "The number you started with, because subtracting undoes the adding",
+          "Zero, because the 5s cancel the whole number",
+          "Ten more than you started with, because you used 5 twice",
+          "You cannot tell without knowing the starting number's neighbors"
+        ]
+      },
+      "validator": "exact_choice",
+      "answer_spec": {
+        "correct_answer": "The number you started with, because subtracting undoes the adding"
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Addition and subtraction are inverse operations."
+        },
+        {
+          "level": 2,
+          "text": "Adding 5 and then removing 5 returns you exactly to where you began."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Addition and subtraction are inverses, so adding 5 and then subtracting the same 5 cancels out and returns you to the original number.",
+      "content_version": "0.1.0",
+      "transfer_flag": true
+    }
+  ]
+}

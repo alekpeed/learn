@@ -9,7 +9,7 @@ test.describe('learning engine (Phase 4)', () => {
     await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
 
     await page.goto('/practice?skill=math.number_foundations.place_value');
-    await page.getByLabel(/your answer/i).fill('40');
+    await page.getByLabel(/your answer/i).fill('50');
     await page.getByRole('button', { name: /submit/i }).click();
     await expect(page.getByText(/correct/i)).toBeVisible();
     await page.getByRole('button', { name: /finish|next/i }).click();

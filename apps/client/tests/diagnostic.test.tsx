@@ -31,7 +31,7 @@ describe('Diagnostic flow (Phase 5)', () => {
 
     // Answer probes until the diagnostic completes and routes to results.
     // The sample has few probeable skills, so a couple of submits suffice.
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 10; i++) {
       const results = screen.queryByRole('heading', { name: /diagnostic results/i });
       if (results) break;
       const text = screen.queryByLabelText(/your answer/i);

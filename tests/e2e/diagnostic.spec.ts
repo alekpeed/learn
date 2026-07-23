@@ -6,8 +6,8 @@ test.describe('diagnostic (Phase 5)', () => {
     await expect(page.getByRole('heading', { name: /^diagnostic$/i })).toBeVisible();
     await expect(page.getByRole('button', { name: /skip/i })).toBeVisible();
 
-    // Answer probes until results appear (few probeable skills in the sample).
-    for (let i = 0; i < 4; i++) {
+    // Answer probes until results appear (binary search over the skill graph).
+    for (let i = 0; i < 10; i++) {
       if (
         await page
           .getByRole('heading', { name: /diagnostic results/i })

@@ -11,5 +11,8 @@
   "dependencies": {
     "@learn/domain": "workspace:*",
     "@learn/schemas": "workspace:*"
+  },
+  "devDependencies": {
+    "@learn/validation-engine": "workspace:*"
   }
 }

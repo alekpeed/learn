@@ -1,0 +1,757 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.mult_div.repeated_addition",
+      "unit_id": "math.mult_div",
+      "title": "Multiplication as Repeated Addition",
+      "summary": "Understand multiplication as adding the same number several times.",
+      "objectives": [
+        "Rewrite equal groups as a multiplication expression",
+        "Explain why 4 x 3 means four groups of three"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.multiplication_facts",
+      "unit_id": "math.mult_div",
+      "title": "Multiplication Facts",
+      "summary": "Recall single-digit multiplication facts quickly and accurately.",
+      "objectives": [
+        "Recall products of factors from 0 to 10",
+        "Use skip counting to find a product when unsure"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.repeated_addition",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "unit_id": "math.mult_div",
+      "title": "Multi-Digit Multiplication",
+      "summary": "Multiply numbers with more than one digit by breaking them into place-value parts.",
+      "objectives": [
+        "Multiply a two-digit number by a one-digit number",
+        "Add partial products to find the final answer"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.multi_digit_addition",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.division_meaning",
+      "unit_id": "math.mult_div",
+      "title": "The Meaning of Division",
+      "summary": "Understand division as sharing a total into equal groups or finding how many groups fit.",
+      "objectives": [
+        "Model division as splitting a total into equal groups",
+        "Identify the total, the number of groups, and the size of each group"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.division_facts",
+      "unit_id": "math.mult_div",
+      "title": "Division Facts",
+      "summary": "Recall single-digit division facts by connecting them to known multiplication facts.",
+      "objectives": [
+        "Recall quotients for basic division facts",
+        "Use a related multiplication fact to find a quotient"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.division_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "unit_id": "math.mult_div",
+      "title": "Multiplication and Division as Inverses",
+      "summary": "Understand that multiplication and division undo each other and form fact families.",
+      "objectives": [
+        "Write the four facts in a multiplication and division fact family",
+        "Use a multiplication fact to solve a related division problem"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.division_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.mult_div.repeated_addition.lesson",
+      "skill_id": "math.mult_div.repeated_addition",
+      "title": "Multiplication as Repeated Addition",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Understand that multiplying two numbers is a fast way to add the same number several times."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You already know how to add numbers together to find a total."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "When you have several equal groups, adding them one by one is slow. Multiplication is a shortcut: the first number tells how many groups you have, and the second tells how many are in each group."
+        },
+        {
+          "type": "representation",
+          "body": "Draw 4 baskets with 3 apples in each.",
+          "accessible_text": "Four baskets in a row. Each basket holds three apples, so there are twelve apples in all."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The two numbers being multiplied are called factors. The answer is called the product. In 4 x 3 = 12, the factors are 4 and 3 and the product is 12."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 4 x 3. This means four groups of 3: 3 + 3 + 3 + 3 = 12. So 4 x 3 = 12."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Write 5 x 2 as repeated addition, then find the total together."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Do not add the two factors. 4 x 3 is not 4 + 3 = 7. It is four groups of 3, which is 12."
+        },
+        {
+          "type": "summary",
+          "body": "Multiplication means adding equal groups. The first factor is how many groups, the second is how many in each group."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.multiplication_facts.lesson",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "title": "Multiplication Facts",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Recall single-digit multiplication facts quickly, and find any you forget by skip counting."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You know that multiplication is repeated addition of equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A multiplication fact is just a product you have practiced enough to remember. Until a fact is memorized, you can rebuild it by skip counting: for 6 x 4, count by 6 four times."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 6 x 4 by skip counting by 6: 6, 12, 18, 24. Four counts land on 24, so 6 x 4 = 24."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find 7 x 3 by skip counting by 7 three times."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Any number times 0 is 0, not the number itself. 5 x 0 = 0 because zero groups of 5 is nothing."
+        },
+        {
+          "type": "summary",
+          "body": "Practice facts until you recall them. When unsure, skip count to rebuild the product."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.multi_digit_multiplication.lesson",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "title": "Multi-Digit Multiplication",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Multiply a two-digit number by a one-digit number by breaking it into place-value parts."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You can recall multiplication facts and add multi-digit numbers together."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A two-digit number is made of tens and ones. Multiply each part separately, then add the parts. These smaller answers are called partial products."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 23 x 4. Split 23 into 20 and 3. Then 20 x 4 = 80 and 3 x 4 = 12. Add the partial products: 80 + 12 = 92. So 23 x 4 = 92."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find 15 x 3 by splitting 15 into 10 and 5, multiplying each by 3, and adding."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Do not forget the tens part. When multiplying 23 x 4, the 2 stands for 20, so that part is 80, not 8."
+        },
+        {
+          "type": "summary",
+          "body": "Break the number into tens and ones, multiply each part, then add the partial products."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.division_meaning.lesson",
+      "skill_id": "math.mult_div.division_meaning",
+      "title": "The Meaning of Division",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Understand division as splitting a total into equal groups."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You know your multiplication facts, which describe equal groups joined together."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Division is the opposite of making equal groups. You start with a total and split it fairly. Division answers either how many are in each group or how many groups you can make."
+        },
+        {
+          "type": "representation",
+          "body": "Share 12 cookies equally among 3 plates.",
+          "accessible_text": "Twelve cookies shared onto three plates. Each plate ends up with four cookies."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In 12 divided by 3 = 4, the total 12 is the dividend, the 3 is the divisor, and the answer 4 is the quotient."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 12 divided by 3. Share 12 into 3 equal groups. Each group gets 4. So 12 divided by 3 = 4."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Share 15 counters into 5 equal groups. How many are in each group?"
+        },
+        {
+          "type": "summary",
+          "body": "Division splits a total into equal groups. The answer is the size of each group."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.division_facts.lesson",
+      "skill_id": "math.mult_div.division_facts",
+      "title": "Division Facts",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Recall basic division facts by connecting each to a multiplication fact you already know."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You understand that division splits a total into equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Every division fact hides a multiplication fact. To find 24 divided by 6, ask: what times 6 gives 24? Because 4 x 6 = 24, the answer is 4."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find 24 divided by 6. Ask what number times 6 equals 24. Since 4 x 6 = 24, the answer is 4. So 24 divided by 6 = 4."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find 35 divided by 7 by asking what number times 7 gives 35."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Dividing by 1 leaves the number unchanged, and any number divided by itself is 1. For example, 8 divided by 1 = 8 and 8 divided by 8 = 1."
+        },
+        {
+          "type": "summary",
+          "body": "Turn a division fact into a missing-factor question and use the matching multiplication fact."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.mult_div_relationship.lesson",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "title": "Multiplication and Division as Inverses",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Understand that multiplication and division undo each other and form fact families."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You can recall multiplication facts and division facts."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Multiplication and division are inverses: one undoes the other. If you multiply to get a product, you can divide that product to get back a factor. The same three numbers make a fact family of four related equations."
+        },
+        {
+          "type": "representation",
+          "body": "The numbers 3, 4, and 12 form one fact family.",
+          "accessible_text": "Three numbers, three, four, and twelve, connected. Three times four is twelve, four times three is twelve, twelve divided by four is three, and twelve divided by three is four."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A fact family is the set of related multiplication and division equations built from the same numbers. Multiplication joins equal groups; division separates them."
+        },
+        {
+          "type": "worked_example",
+          "body": "Use 3, 4, and 12. The fact family is 3 x 4 = 12, 4 x 3 = 12, 12 divided by 3 = 4, and 12 divided by 4 = 3. To solve 12 divided by 4, recall 4 x 3 = 12, so the answer is 3."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Write all four facts in the family for 5, 6, and 30."
+        },
+        {
+          "type": "transfer_problem",
+          "body": "A number times 8 gives 56. Use the inverse relationship to find the number by computing 56 divided by 8."
+        },
+        {
+          "type": "summary",
+          "body": "Multiplication and division undo each other. Use a known multiplication fact to solve a related division problem."
+        }
+      ],
+      "content_version": "0.1.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.mult_div.repeated_addition.q1",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Write 5 x 3 as repeated addition and find the total. What is the answer?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "5 x 3 means five groups of 3."
+        },
+        {
+          "level": 2,
+          "text": "Add 3 five times: 3 + 3 + 3 + 3 + 3."
+        },
+        {
+          "level": 3,
+          "text": "3 + 3 + 3 + 3 + 3 = 15."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 3 means five groups of 3, which is 3 + 3 + 3 + 3 + 3 = 15.",
+      "estimated_time_seconds": 25,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q2",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which addition means the same as 4 x 2?",
+      "parameters": {
+        "options": ["4 + 2", "2 + 2 + 2 + 2", "4 + 4 + 4 + 4", "2 + 4 + 2"]
+      },
+      "answer_spec": {
+        "correct_answer": "2 + 2 + 2 + 2",
+        "accepted_equivalents": []
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "4 x 2 means four groups, with 2 in each group."
+        },
+        {
+          "level": 2,
+          "text": "Add 2 four times, not 4 and 2 together."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 x 2 means four groups of 2, so it equals 2 + 2 + 2 + 2. Adding 4 + 2 would be wrong because that joins the factors instead of the groups.",
+      "estimated_time_seconds": 20,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q1",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 7 x 6?",
+      "answer_spec": {
+        "correct_answer": 42
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Skip count by 7 six times, or by 6 seven times."
+        },
+        {
+          "level": 2,
+          "text": "6, 12, 18, 24, 30, 36, 42."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Skip counting by 6 seven times gives 42, so 7 x 6 = 42.",
+      "estimated_time_seconds": 15,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q2",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 9 x 0?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This means nine groups of 0."
+        },
+        {
+          "level": 2,
+          "text": "Nine groups that each hold nothing is still nothing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 x 0 means nine groups of 0. Zero in every group adds up to 0, so any number times zero is 0.",
+      "estimated_time_seconds": 15,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q1",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 23 x 4?",
+      "answer_spec": {
+        "correct_answer": 92
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Split 23 into 20 and 3."
+        },
+        {
+          "level": 2,
+          "text": "20 x 4 = 80 and 3 x 4 = 12."
+        },
+        {
+          "level": 3,
+          "text": "Add the partial products: 80 + 12 = 92."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Break 23 into 20 + 3. Then 20 x 4 = 80 and 3 x 4 = 12. Adding the partial products gives 80 + 12 = 92.",
+      "estimated_time_seconds": 40,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q2",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To find 34 x 5, which two partial products should you add?",
+      "parameters": {
+        "options": ["30 x 5 and 4 x 5", "3 x 5 and 4 x 5", "34 x 5 and 0", "30 x 4 and 5 x 5"]
+      },
+      "answer_spec": {
+        "correct_answer": "30 x 5 and 4 x 5",
+        "accepted_equivalents": []
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Split 34 by place value into tens and ones."
+        },
+        {
+          "level": 2,
+          "text": "34 is 30 + 4, and each part is multiplied by 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "34 splits into 30 and 4 by place value. Each part is multiplied by 5, giving the partial products 30 x 5 and 4 x 5, which are then added.",
+      "estimated_time_seconds": 30,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q1",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You share 12 cookies equally among 3 plates. How many cookies are on each plate?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Split 12 into 3 equal groups."
+        },
+        {
+          "level": 2,
+          "text": "Deal them out: each plate gets the same amount."
+        },
+        {
+          "level": 3,
+          "text": "12 divided by 3 = 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Sharing 12 cookies into 3 equal groups puts 4 on each plate, so 12 divided by 3 = 4.",
+      "estimated_time_seconds": 25,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q2",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In 20 divided by 4 = 5, which number is the total being shared?",
+      "parameters": {
+        "options": ["20", "4", "5", "0"]
+      },
+      "answer_spec": {
+        "correct_answer": "20",
+        "accepted_equivalents": []
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The total is the amount you start with before sharing."
+        },
+        {
+          "level": 2,
+          "text": "It is the largest number, the one being split up."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The total being shared is called the dividend. Here 20 is split into 4 groups of 5, so 20 is the total.",
+      "estimated_time_seconds": 20,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q1",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 24 divided by 6?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask: what number times 6 gives 24?"
+        },
+        {
+          "level": 2,
+          "text": "Because 4 x 6 = 24, the answer is 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "24 divided by 6 asks what times 6 equals 24. Since 4 x 6 = 24, the answer is 4.",
+      "estimated_time_seconds": 20,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q2",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which multiplication fact helps you find 35 divided by 7?",
+      "parameters": {
+        "options": ["5 x 7 = 35", "7 x 7 = 49", "35 x 7 = 245", "7 + 5 = 12"]
+      },
+      "answer_spec": {
+        "correct_answer": "5 x 7 = 35",
+        "accepted_equivalents": []
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the multiplication fact that gives 35."
+        },
+        {
+          "level": 2,
+          "text": "What number times 7 equals 35?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "35 divided by 7 asks what times 7 equals 35. Because 5 x 7 = 35, that fact gives the quotient 5.",
+      "estimated_time_seconds": 25,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q1",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "You know that 8 x 7 = 56. Use this to find 56 divided by 8.",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division undoes multiplication using the same three numbers."
+        },
+        {
+          "level": 2,
+          "text": "If 8 x 7 = 56, then 56 divided by 8 gives back the other factor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplication and division are inverses. Since 8 x 7 = 56, dividing 56 by 8 returns the other factor, 7.",
+      "estimated_time_seconds": 25,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q2",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which equation is NOT in the fact family for 4, 5, and 20?",
+      "parameters": {
+        "options": ["4 x 5 = 20", "20 divided by 5 = 4", "20 divided by 4 = 5", "20 x 4 = 5"]
+      },
+      "answer_spec": {
+        "correct_answer": "20 x 4 = 5",
+        "accepted_equivalents": []
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A fact family uses the same three numbers in true equations."
+        },
+        {
+          "level": 2,
+          "text": "Check which equation gives a false result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The fact family for 4, 5, and 20 is 4 x 5 = 20, 5 x 4 = 20, 20 divided by 5 = 4, and 20 divided by 4 = 5. The equation 20 x 4 = 5 is false, so it does not belong.",
+      "estimated_time_seconds": 30,
+      "transfer_flag": false,
+      "content_version": "0.1.0"
+    }
+  ]
+}

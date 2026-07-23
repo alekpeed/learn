@@ -1,0 +1,17 @@
+[
+  {
+    "course_id": "math.core",
+    "subject_id": "math",
+    "title": "Core Mathematics",
+    "description": "Mathematics from the ground up: number foundations through introductory algebra.",
+    "version": "0.1.0",
+    "status": "draft",
+    "units": [
+      { "unit_id": "math.number_foundations", "title": "Number Foundations", "order": 1 },
+      { "unit_id": "math.add_sub", "title": "Addition and Subtraction", "order": 2 },
+      { "unit_id": "math.mult_div", "title": "Multiplication and Division", "order": 3 },
+      { "unit_id": "math.fractions", "title": "Fractions", "order": 4 },
+      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 5 }
+    ]
+  }
+]

@@ -1,0 +1,570 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.algebra.variables",
+      "unit_id": "math.algebra",
+      "title": "Variables",
+      "summary": "A variable is a letter that stands for a number we do not know yet. This skill introduces what variables mean and how they are used.",
+      "objectives": [
+        "Explain that a variable is a symbol standing in for an unknown number.",
+        "Identify the variable in a simple statement or expression.",
+        "Match a variable to the quantity it represents in a short situation."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.mult_div_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.algebra.expressions",
+      "unit_id": "math.algebra",
+      "title": "Expressions",
+      "summary": "An expression combines numbers, variables, and operations to describe a quantity. This skill teaches how to read and build simple expressions.",
+      "objectives": [
+        "Define an expression as a combination of numbers, variables, and operations with no equals sign.",
+        "Identify the coefficient of a variable in an expression.",
+        "Translate a short phrase into a simple expression."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.variables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.algebra.evaluating_expressions",
+      "unit_id": "math.algebra",
+      "title": "Evaluating Expressions",
+      "summary": "Evaluating an expression means replacing each variable with a given number and computing the result. This skill builds fluency in substitution and arithmetic.",
+      "objectives": [
+        "Substitute a given value for a variable in an expression.",
+        "Compute the numeric value of a simple expression after substitution.",
+        "Use inverse operations to check that an evaluation is reasonable."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.expressions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.inverse_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.algebra.equality",
+      "unit_id": "math.algebra",
+      "title": "Equality and Balance",
+      "summary": "An equation says two expressions have the same value. This skill teaches the idea of balance and why doing the same thing to both sides keeps an equation true.",
+      "objectives": [
+        "Define an equation as a statement that two expressions are equal.",
+        "Explain that an equation is like a balanced scale with equal sides.",
+        "Recognize that performing the same operation on both sides keeps the equation balanced."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.evaluating_expressions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.algebra.one_step_equations",
+      "unit_id": "math.algebra",
+      "title": "One-Step Equations",
+      "summary": "A one-step equation can be solved with a single inverse operation. This skill teaches how to isolate a variable using addition, subtraction, multiplication, or division.",
+      "objectives": [
+        "Choose the inverse operation that isolates the variable in a one-step equation.",
+        "Solve one-step equations and find the value of the variable.",
+        "Apply one-step equations to solve a simple word problem."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.equality",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.inverse_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.mult_div_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.algebra.variables.lesson",
+      "skill_id": "math.algebra.variables",
+      "title": "Variables",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to explain what a variable is and point out the variable in a simple statement."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Sometimes we know a number and sometimes we do not. A variable is a letter, like x or n, that stands in for a number we do not know yet. Think of it as an empty box waiting for a number to be placed inside. If a bag holds some marbles and we do not know how many, we can call that unknown amount n. The letter is just a short, tidy name for the mystery number."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A variable is a symbol, usually a letter, that represents an unknown or changeable number. The number it represents is called its value."
+        },
+        {
+          "type": "worked_example",
+          "body": "Sara has some stickers. We do not know how many, so we call that amount s. Here s is the variable. If we later learn Sara has 6 stickers, then the value of s is 6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A variable is not a fixed secret answer that never changes. The same letter can stand for different numbers in different problems. The letter itself has no special value until the problem tells us what it stands for."
+        },
+        {
+          "type": "summary",
+          "body": "A variable is a letter that stands for an unknown number. Its value is the actual number it represents once we know it."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.expressions.lesson",
+      "skill_id": "math.algebra.expressions",
+      "title": "Expressions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to read a simple expression and identify the coefficient of a variable."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Remember that a variable is a letter that stands for an unknown number, such as x or n."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An expression is a way to describe a quantity using numbers, variables, and operations like plus, minus, times, and divide. An expression does not have an equals sign; it just describes an amount. For example, x + 3 means whatever number x is, plus three more."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An expression is a combination of numbers, variables, and operations that represents a value. A coefficient is the number multiplied by a variable. In the expression 4x, the coefficient is 4, meaning four times x."
+        },
+        {
+          "type": "worked_example",
+          "body": "The phrase 'five more than a number n' becomes the expression n + 5. The phrase 'three times a number x' becomes 3x, where 3 is the coefficient of x."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "An expression is not the same as an equation. An expression has no equals sign, so it is not something you solve. It only describes a quantity."
+        },
+        {
+          "type": "summary",
+          "body": "An expression combines numbers, variables, and operations to describe a value. The coefficient is the number multiplied by a variable."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.evaluating_expressions.lesson",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "title": "Evaluating Expressions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to substitute a number for a variable and compute the value of a simple expression."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an expression combines numbers and variables, and that a coefficient like the 2 in 2x means multiply."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "To evaluate an expression means to find its value once we know what the variable stands for. We replace the variable with its number and then do the arithmetic. If x stands for 5, then the expression x + 2 becomes 5 + 2, which is 7."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To evaluate an expression, substitute the given value for each variable, then compute using the order of operations. Substitute means to replace the variable with a number."
+        },
+        {
+          "type": "worked_example",
+          "body": "Evaluate 3x + 1 when x = 4. Substitute 4 for x to get 3 times 4 plus 1. That is 12 + 1 = 13. To check, notice that 13 minus 1 is 12, and 12 divided by 3 is 4, our original value, so the answer is reasonable."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Evaluate n - 3 when n = 10. Replace n with 10 to get 10 - 3, which equals 7."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Do not forget that a coefficient means multiply. In 3x with x = 4, the value is 3 times 4 = 12, not 34. Writing the number next to the variable does not mean gluing the digits together."
+        },
+        {
+          "type": "summary",
+          "body": "Evaluating an expression means replacing each variable with its value and computing the result."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.equality.lesson",
+      "skill_id": "math.algebra.equality",
+      "title": "Equality and Balance",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to explain what an equation means and why doing the same thing to both sides keeps it balanced."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that evaluating an expression gives it a single value. An equation compares two such values."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An equation is a statement that two expressions have the same value, shown with an equals sign. Picture a balance scale with equal weight on each side. The equals sign is the middle of the scale. As long as both sides weigh the same, the scale stays level."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An equation is a statement that two expressions are equal. The left side and the right side represent the same value."
+        },
+        {
+          "type": "representation",
+          "body": "Imagine x + 2 = 5 as a scale. On the left pan sits an unknown amount x plus 2 units. On the right pan sit 5 units. The pans are level because both sides equal the same amount."
+        },
+        {
+          "type": "worked_example",
+          "body": "Consider 4 = 4. If we add 3 to the left side we must add 3 to the right side to keep it true: 4 + 3 = 4 + 3, which is 7 = 7. Because we changed both sides by the same amount, the balance is preserved. If we changed only one side, the scale would tip and the equation would no longer be true."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Changing only one side breaks the balance. Whatever operation you do, you must do it to both sides so the two sides stay equal."
+        },
+        {
+          "type": "summary",
+          "body": "An equation says two sides are equal, like a balanced scale. Doing the same operation to both sides keeps it balanced and true."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.one_step_equations.lesson",
+      "skill_id": "math.algebra.one_step_equations",
+      "title": "One-Step Equations",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson you will be able to solve a one-step equation by using the inverse operation to isolate the variable."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an equation is balanced like a scale, and that inverse operations undo each other: addition undoes subtraction, and multiplication undoes division."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "To solve an equation means to find the value of the variable that makes the equation true. We want the variable alone on one side. To get it alone, we undo whatever is done to it using the inverse, or opposite, operation. Because the equation is balanced, we do that same operation to both sides so it stays true."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To isolate the variable means to get it by itself on one side of the equation. An inverse operation is the operation that undoes another: subtraction is the inverse of addition, and division is the inverse of multiplication."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve x + 4 = 11. The variable x has 4 added to it. The inverse of adding 4 is subtracting 4. Subtract 4 from both sides to keep the balance: x + 4 - 4 = 11 - 4, which gives x = 7. Check by substituting: 7 + 4 = 11, which is true."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve 3x = 12. Here x is multiplied by 3. The inverse of multiplying by 3 is dividing by 3. Divide both sides by 3: 3x divided by 3 equals 12 divided by 3, so x = 4. Check: 3 times 4 = 12, which is true."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Solve n - 5 = 2. The inverse of subtracting 5 is adding 5. Add 5 to both sides: n = 2 + 5 = 7."
+        },
+        {
+          "type": "transfer_problem",
+          "body": "A word problem can hide a one-step equation. If a number plus 6 equals 15, write x + 6 = 15 and subtract 6 from both sides to find x = 9."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Do not use the same operation that is already in the equation; use its inverse. To undo adding 4 you subtract 4, not add 4. And always apply the operation to both sides so the equation stays balanced."
+        },
+        {
+          "type": "summary",
+          "body": "Solve a one-step equation by applying the inverse operation to both sides, which isolates the variable while keeping the equation balanced."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.algebra.variables.q1",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which statement best describes what a variable is?",
+      "parameters": {
+        "options": [
+          "A letter that stands for a number we do not know yet",
+          "A number that can never change",
+          "A symbol that always means to add",
+          "A word that means the answer is zero"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "A letter that stands for a number we do not know yet"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about the empty box idea from the lesson."
+        },
+        {
+          "level": 2,
+          "text": "A variable holds a number we have not been told yet."
+        },
+        {
+          "level": 3,
+          "text": "It is a letter that stands for an unknown number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A variable is a letter, such as x or n, that stands for an unknown number. Its value can be filled in later.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.expressions.q1",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In the expression 4x, what is the coefficient?",
+      "parameters": {
+        "options": ["4", "x", "4x", "1"]
+      },
+      "answer_spec": {
+        "correct_answer": "4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient is the number multiplied by the variable."
+        },
+        {
+          "level": 2,
+          "text": "In 4x, which part is the number and which part is the variable?"
+        },
+        {
+          "level": 3,
+          "text": "The 4 multiplies x, so 4 is the coefficient."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A coefficient is the number multiplied by a variable. In 4x, the 4 is the coefficient because it multiplies x.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q1",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate the expression x + 2 when x = 5.",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with the number 5."
+        },
+        {
+          "level": 2,
+          "text": "The expression becomes 5 + 2."
+        },
+        {
+          "level": 3,
+          "text": "5 + 2 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "independence"],
+      "explanation": "Substitute 5 for x to get 5 + 2, which equals 7.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q2",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate the expression 3x when x = 4.",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 3 in front of x means multiply."
+        },
+        {
+          "level": 2,
+          "text": "Replace x with 4 to get 3 times 4."
+        },
+        {
+          "level": 3,
+          "text": "3 times 4 = 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The coefficient 3 means multiply. Substitute 4 for x to get 3 times 4, which equals 12.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.equality.q1",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You have the true equation 6 = 6. Which action keeps the equation balanced and still true?",
+      "parameters": {
+        "options": [
+          "Add 3 to both sides",
+          "Add 3 to only the left side",
+          "Subtract 2 from only the right side",
+          "Double only the left side"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "Add 3 to both sides"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the equation as a balanced scale."
+        },
+        {
+          "level": 2,
+          "text": "To keep the scale level, both sides must change the same way."
+        },
+        {
+          "level": 3,
+          "text": "Adding 3 to both sides gives 9 = 9, which is still true."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An equation is like a balanced scale. Doing the same operation to both sides keeps it balanced, so adding 3 to both sides gives 9 = 9, still true. Changing only one side tips the balance.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q1",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: x + 4 = 11",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What operation undoes adding 4?"
+        },
+        {
+          "level": 2,
+          "text": "Subtract 4 from both sides to keep the equation balanced."
+        },
+        {
+          "level": 3,
+          "text": "x = 11 - 4 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The inverse of adding 4 is subtracting 4. Subtract 4 from both sides: x = 11 - 4 = 7.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q2",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A number plus 6 equals 15. What is the number?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "transfer_flag": true,
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the situation as an equation: x + 6 = 15."
+        },
+        {
+          "level": 2,
+          "text": "The inverse of adding 6 is subtracting 6 from both sides."
+        },
+        {
+          "level": 3,
+          "text": "x = 15 - 6 = 9."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "Translate the words into x + 6 = 15, then subtract 6 from both sides: x = 15 - 6 = 9.",
+      "content_version": "0.1.0"
+    }
+  ]
+}
