@@ -3,3 +3,4 @@ export * from './mastery.js';
 export * from './events.js';
 export * from './learner.js';
 export * from './errors.js';
+export * from './diagnosis.js';

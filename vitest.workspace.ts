@@ -14,6 +14,9 @@ export default defineWorkspace([
     test: { name: 'curriculum', root: 'packages/curriculum', environment: 'node' },
   },
   {
+    test: { name: 'validation', root: 'packages/validation-engine', environment: 'node' },
+  },
+  {
     test: {
       name: 'client',
       root: 'apps/client',

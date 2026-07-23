@@ -53,6 +53,7 @@ export function CurriculumMap(): JSX.Element {
               );
               const locked = prereqTitles.length > 0;
               const hasLesson = pkg.lessonBySkill.has(skillId);
+              const hasQuestions = (pkg.questionsBySkill.get(skillId) ?? []).length > 0;
               return (
                 <li key={skillId} className="skill-node" data-locked={locked}>
                   <span className="skill-status" aria-hidden="true">
@@ -73,6 +74,13 @@ export function CurriculumMap(): JSX.Element {
                     </span>
                     {prereqTitles.length > 0 && (
                       <p className="prereqs">Builds on: {prereqTitles.join(', ')}</p>
+                    )}
+                    {hasQuestions && (
+                      <p className="skill-actions">
+                        <Link to={`/practice?skill=${encodeURIComponent(skillId)}`}>
+                          Practice {skill.title}
+                        </Link>
+                      </p>
                     )}
                   </div>
                 </li>

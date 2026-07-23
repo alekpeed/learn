@@ -204,3 +204,41 @@ button {
 .lesson-actions {
   margin-top: 1.5rem;
 }
+
+/* Practice / questions */
+.question-prompt {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.choice {
+  display: block;
+  margin: 0.25rem 0;
+}
+.question-actions {
+  margin: 0.75rem 0;
+}
+.hints ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+.feedback {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 4px solid var(--muted);
+}
+.feedback[data-status='error'] {
+  border-color: var(--error);
+}
+.feedback[data-status='success'] {
+  border-color: #1a7f37;
+}
+.feedback[data-status='success'] p:first-child {
+  font-weight: 700;
+}
+.explanation {
+  color: var(--muted);
+}
+.progress-note {
+  color: var(--muted);
+  font-size: 0.95em;
+}

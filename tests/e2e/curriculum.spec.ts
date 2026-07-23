@@ -10,7 +10,7 @@ test.describe('curriculum platform (Phase 2)', () => {
 
   test('opening a skill shows its lesson', async ({ page }) => {
     await page.goto('/map');
-    await page.getByRole('link', { name: /comparing numbers/i }).click();
+    await page.getByRole('link', { name: 'Comparing Numbers', exact: true }).click();
     await expect(page.getByRole('article', { name: /lesson: comparing numbers/i })).toBeVisible();
     await expect(page.getByRole('heading', { name: /worked example/i })).toBeVisible();
   });

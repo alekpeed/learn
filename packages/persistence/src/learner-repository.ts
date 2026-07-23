@@ -12,10 +12,7 @@ import type {
 import type { EventStore } from './event-store.js';
 import { projectLearner } from './projections.js';
 import { newId } from './id.js';
-
-/** Injectable clock so projections/tests stay deterministic (no hidden wall-clock). */
-export type Clock = () => string;
-const systemClock: Clock = () => new Date().toISOString();
+import { systemClock, type Clock } from './clock.js';
 
 export class LearnerRepository {
   constructor(

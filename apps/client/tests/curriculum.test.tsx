@@ -42,7 +42,7 @@ describe('curriculum map (Phase 2 exit: relationships display)', () => {
 
   it('links skills that have a lesson', () => {
     renderWithCurriculum(<CurriculumMap />, '/x');
-    const link = screen.getByRole('link', { name: /comparing numbers/i });
+    const link = screen.getByRole('link', { name: 'Comparing Numbers' });
     expect(link).toHaveAttribute(
       'href',
       expect.stringContaining('skill=math.number_foundations.comparing_numbers'),

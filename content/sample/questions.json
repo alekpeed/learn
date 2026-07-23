@@ -25,6 +25,7 @@
     "type": "multiple_choice",
     "difficulty": 1,
     "prompt": "Which symbol makes this true: 8 __ 6 ?",
+    "parameters": { "options": ["<", ">", "="] },
     "answer_spec": { "correct_answer": ">", "accepted_equivalents": [] },
     "validator": "exact_choice",
     "hints": [
