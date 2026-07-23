@@ -1,29 +1,29 @@
 # Forward Roadmap - Ground-Up Learning App
 
-_Where to continue logically from the current state, in order, until the product
-vision is fully realized._
+_Where to continue logically from the current state, in order, until the product vision is
+fully realized._
 
-This roadmap is grounded in the project's own scope tiers
-(`docs/spec/03_VERSION_AND_SCOPE_PLAN.md`) and development phases
-(`docs/spec/12_DEVELOPMENT_ROADMAP.md`), sequenced against the real skill graph in
-`content/mvp/`. It picks up exactly where the shipped work ends.
+Read `docs/planning/PROJECT_SCOPE.md` first - it is the single source of truth for the full
+scope (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
+how far the vision reaches, including trigonometry). This roadmap is the sequenced
+execution plan built on top of that scope. Both are grounded in `docs/spec/` and the real
+skill graph in `content/mvp/`.
 
 ## Current position
 
-- MVP engine complete (dev-roadmap Phases 0-9): event-sourced foundation, curriculum
-  platform, deterministic practice/grading, learning engine, adaptive diagnostic,
-  isolated AI tutor, release hardening.
-- Curriculum shipped so far: a 41-skill slice across 7 units (math: number foundations,
-  add/sub, mult/div, fractions, one-step algebra; science: thinking, measurement).
-- Version 1 features shipped (4 of ~10): BYOK AI providers, learner notes, extra question
-  types (multi-select, ordering), study plans & daily goals, richer progress dashboard.
+- Engine complete (dev-roadmap Phases 0-9): event-sourced foundation, curriculum platform,
+  deterministic practice/grading, learning engine, adaptive diagnostic, isolated AI tutor,
+  release hardening. Tests green.
+- Curriculum authored: ~41 of ~138 documented topics (~30%). One unit complete
+  (Number Foundations), six partial (Add/Sub, Mult/Div, Fractions, Algebra, Science
+  Thinking, Science Measurement), nine missing.
+- Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
+  study plans, richer dashboard).
 
-The scoped MVP curriculum in `03_VERSION_AND_SCOPE_PLAN.md` (21 math + 15 science topics)
-is therefore only partly built. Dev-roadmap Phases 6 (all scoped math content) and 7 (all
-scoped science content) are still open. Completing them is the immediate, lowest-risk
-continuation because it is content-only and uses validators that already exist.
+The immediate, lowest-risk continuation is finishing the documented curriculum, because it
+is content-only and mostly uses validators that already exist.
 
-## Guiding constraints (carried through every phase below)
+## Guiding constraints (carried through every phase)
 
 - Curriculum content stays separate from application logic.
 - Grading stays deterministic; the AI never writes verified state (DEC-003/005/010).
@@ -34,142 +34,164 @@ continuation because it is content-only and uses validators that already exist.
 - Every phase ends green on: `pnpm validate:content`, `pnpm test`, `pnpm typecheck`,
   `pnpm lint`, `pnpm build`, `pnpm test:e2e`.
 
-Legend: **[content]** = content-only, no engine/UI change. **[engine]** / **[ui]** = new
-application code required. Sizes are rough skill/feature counts, not estimates of effort.
+Legend: **[content]** content-only, no engine/UI change. **[engine]** / **[ui]** new
+application code required. Topic counts reference the documented units in
+`PROJECT_SCOPE.md`.
 
 ---
 
-## Track A - Complete the scoped MVP curriculum
+## Track A - Complete the documented curriculum
 
-Finishes the curriculum the MVP was always scoped to cover. All content-only until noted.
-Completing Track A satisfies the spec Completion Rule: the entire scoped curriculum is
-traversable through prerequisites, lessons, practice, mastery, and review.
+Finishes the full 16-unit course the product was scoped to cover. Completing Track A
+satisfies the spec Completion Rule (entire scoped curriculum traversable). Two kinds of
+work run here: **new units** (breadth) and, where flagged, **backfilling partial units**
+(the missing topics in units that are only half-authored). Content-only unless noted.
 
 ### Phase 10 - Decimals & Percentages  [content]
-New math unit `math.decimals_percents`, slotted between Fractions and Algebra. 8 skills:
-decimal place value -> reading & comparing decimals -> fraction/decimal equivalence ->
-add & subtract decimals -> multiply & divide decimals -> meaning of percent -> percent of
-a number -> converting among fractions/decimals/percents. Uses existing `decimal`,
-`percentage`, `numeric`, `fraction`, `multiple_choice` validators. No engine change.
-_This is the next phase and is already scoped skill-by-skill._
+New unit `math.decimals_percents` (doc units 7 + 8, ~15 topics), slotted between Fractions
+and Algebra. Decimal place value -> reading/comparing decimals -> fraction/decimal
+equivalence -> add & subtract decimals -> multiply & divide decimals -> meaning of percent
+-> percent of a number -> converting among fractions/decimals/percents (plus finding the
+whole / the percent, increase & decrease). Uses existing `decimal`, `percentage`,
+`numeric`, `fraction`, `multiple_choice` validators. _Next phase; scoped skill-by-skill._
 
-### Phase 11 - Ratios & Proportional Reasoning  [content]
-New math unit `math.ratios`. ~5 skills: ratio meaning -> equivalent ratios / rates ->
-unit rate -> proportions (solving for a missing term) -> scaling and simple word problems.
-Prerequisites draw on Phase 10 (percent, decimals) and fractions. Uses `numeric`,
-`fraction`, `percentage`, `multiple_choice`. No engine change. Bridges naturally into the
-science proportional-reasoning skill in Phase 14.
+### Phase 11 - Integers & Numerical Structure  [content]
+New units `math.numerical_structure` (doc unit 4: even/odd, factors, multiples, primes,
+GCF, LCM, order of operations) and `math.integers` (doc unit 5: negatives, comparing,
++-x/ integers, absolute value). ~14 topics. These are true prerequisites for algebra and
+were skipped in the initial slice; authoring them repairs a real gap in the dependency
+graph. Uses `numeric`, `multiple_choice`.
 
-### Phase 12 - Algebra: Two-Step Equations & Inequalities  [content]
-Extend the existing `math.algebra` unit. ~5 skills: two-step expressions ->
-two-step equations -> equations with variables introduced via word problems ->
-introduction to inequalities -> checking solutions. Uses `numeric`, `multiple_choice`.
-No engine change (inequality answers grade as a chosen relation via multiple_choice, or a
-boundary value via numeric).
+### Phase 12 - Ratios & Proportional Reasoning + Measurement Foundations  [content]
+New units `math.ratios` (doc unit 9) and `math.measurement` (doc unit 10: length, mass,
+time, temperature, area, volume, unit conversion, estimation). ~16 topics. Uses `numeric`,
+`fraction`, `percentage`, `unit`, `multiple_choice`. Bridges into the science measurement
+and proportional-reasoning skills.
 
-### Phase 13 - Coordinate Plane, Graphs & Introductory Functions  [content + engine]
-New math unit `math.functions`. ~6 skills: coordinate plane & plotting points -> reading
-points -> tables of values -> linear relationships / basic graphs -> input-output rule
-(function idea) -> interpreting a simple graph. **First phase that needs new application
-code:** a coordinate/point question type and a small non-interactive graph renderer for
-prompts. Add one new deterministic validator (`point` / `coordinate`) plus its renderer;
-everything else stays multiple_choice/numeric. Completes math topics 19-21 of the scope.
-
-### Phase 14 - Scientific Reasoning & Measurement completion  [content, small engine]
-Extend the science course to cover the remaining scoped science topics not yet built:
-significant figures (intro), data tables, graph selection, graph interpretation,
-proportional reasoning in science, experimental error, and drawing evidence-based
-conclusions. ~8-9 skills across the existing `science.measurement` and `science.thinking`
-units (plus a possible `science.data` unit). Reuses the graph renderer from Phase 13 for
-graph-interpretation items; otherwise `unit`, `numeric`, `multi_select`, `ordering`,
+### Phase 13 - Algebra completion  [content]
+Backfill `math.algebra` to the full doc unit 11: constants, terms, coefficients, combining
+like terms, distributive property, two-step equations, equation word problems (adds ~7
+topics to the existing 5). Also backfill the missing Add/Sub, Mult/Div, and Fractions
+topics (word problems, arrays/remainders, comparing/multiplying/dividing fractions, mixed
+numbers) so those partial units become complete. Uses `numeric`, `fraction`,
 `multiple_choice`.
 
-**Track A milestone:** the full scoped MVP curriculum (~36 topics) is complete and
-traversable end to end. Dev-roadmap Phases 6 and 7 are closed. Update
-`MVP_SKILL_INVENTORY.md` and the acceptance mapping.
+### Phase 14 - Coordinate Plane, Graphs & Introductory Functions  [content + engine]
+New unit `math.functions` (doc unit 12, ~9 topics): coordinate plane & plotting, reading
+points, tables of values, reading graphs, rate-of-change intuition, input/output, function
+machines, introductory linear relationships. **First phase that needs new application
+code:** a coordinate/point question type and a small non-interactive graph renderer for
+prompts. Add one new deterministic validator (`point`/`coordinate`) plus its renderer.
+
+### Phase 15 - Scientific Reasoning & Data completion  [content, small engine]
+Backfill Science Thinking (models, scientific explanations) and Measurement (mass, time,
+temperature, volume, significant figures), and author the two missing science units:
+Experiments (doc unit 2: variables, controls, control groups, repeated trials, fair tests,
+sources of error) and Data (doc unit 4: tables, bar/line/scatter graphs, reading axes,
+trends, outliers, proportional relationships, drawing conclusions). ~25 topics. Reuses the
+Phase 14 graph renderer for graph-reading items; otherwise `unit`, `numeric`,
+`multi_select`, `ordering`, `multiple_choice`.
+
+**Track A milestone:** the full documented curriculum (16 units, ~138 topics) is complete
+and traversable end to end. Dev-roadmap Phases 6 and 7 are closed.
 
 ---
 
-## Track B - Remaining Version 1 features
+## Track B - Content depth pass (make it learnable, not just present)
 
-`03_VERSION_AND_SCOPE_PLAN.md` defines Version 1 as the MVP plus a feature set; four are
+Coverage is not the same as mastery. Today each skill has ~1 lesson + ~2 practice items;
+the mastery model wants a larger pool per skill.
+
+### Phase 16 - Item-pool depth  [content]
+Raise every authored skill to mastery-grade depth: roughly 8-15 practice items across
+difficulty bands 1-5, additional worked examples, transfer items, and misconception-tagged
+distractors. This can run per unit and interleave with Track A (deepen a unit right after
+authoring it). No engine change - it is more of the same content the validators already
+grade.
+
+---
+
+## Track C - Remaining Version 1 features
+
+`03_VERSION_AND_SCOPE_PLAN.md` defines Version 1 as MVP plus a feature set; four are
 shipped. These are the rest, ordered from least to most architectural risk.
 
-### Phase 15 - Deeper misconception diagnosis & remediation  [engine + ui]
-Content already tags `misconception_id` / `common_wrong_answers`. Build the diagnosis
-layer on top: detect recurring misconceptions from the event log, surface targeted
-remediation and a "why this was wrong" explanation, and feed misconceptions into review
-selection. Pure projection over existing events; grading stays deterministic.
+### Phase 17 - Deeper misconception diagnosis & remediation  [engine + ui]
+Content already tags `misconception_id` / `common_wrong_answers`. Build the diagnosis layer:
+detect recurring misconceptions from the event log, surface targeted remediation, feed them
+into review selection. Pure projection over existing events.
 
-### Phase 16 - Content administration & downloadable course modules  [ui + engine]
-An in-app authoring/administration interface to create, validate (against the existing
-JSON Schemas), and preview course packages, plus import/export of downloadable course
-modules (a course pack is already just data). Pairs the "content administration interface"
-and "downloadable course modules" V1 items. No change to how content is graded.
+### Phase 18 - Content administration & downloadable course modules  [ui + engine]
+In-app authoring/administration to create, validate (against existing JSON Schemas), and
+preview course packages, plus import/export of downloadable course modules (a course pack
+is already just data).
 
-### Phase 17 - AI-assisted practice drafts (author-gated)  [ai-gateway + ui]
-Let the isolated tutor propose *draft* practice questions that must pass deterministic
-schema + answer validation and explicit human approval before entering the pool. Stays
-within DEC-005/010: the AI never writes verified state; a draft is inert until validated.
+### Phase 19 - AI-assisted practice drafts (author-gated)  [ai-gateway + ui]
+Let the isolated tutor propose draft practice questions that must pass deterministic schema
++ answer validation and explicit human approval before entering the pool. Stays within
+DEC-005/010.
 
-### Phase 18 - Optional cloud account, sync & cross-device resume  [engine + service]
-The largest V1 item and the first optional server dependency (Supabase is available). An
-opt-in sync layer over the append-only event log enables cross-device resume while the app
-stays fully functional offline and local-first. Must preserve DEC-006 (event log is truth),
-DEC-013 (store interface), and DEC-015 (BYOK keys never leave the client / never sync).
-Sync is additive and disabled by default.
+### Phase 20 - Optional cloud account, sync & cross-device resume  [engine + service]
+The largest V1 item and the first optional server dependency (Supabase available). An
+opt-in sync layer over the append-only event log; app stays fully functional offline and
+local-first. Preserves DEC-006/013/015. Disabled by default.
 
-**Track B milestone:** Version 1 feature set complete.
+**Track C milestone:** Version 1 feature set complete.
 
 ---
 
-## Track C - Later Features (post-V1 expansion)
+## Track D - Later subjects, including the path to trigonometry
 
-Explicitly beyond the MVP per the scope plan's "Later Features". Each is its own project;
-sequence by demand. Content courses reuse the existing content-as-data pipeline and the
-graph/chart machinery from Phases 13-14.
+Beyond the MVP per the scope plan's "Later Features" and the vision's "Long-Term
+Direction". These are the courses that do NOT yet exist in the documentation and that a
+genuine arithmetic -> trigonometry path requires. Author them on top of the existing
+engine, reusing the Phase 14-15 graph/figure machinery. Sequence by demand.
 
-### Phase 19 - Geometry  [content]
-New subject/course: angles, shapes, perimeter/area/volume, the Pythagorean relationship.
-May add a geometry-figure renderer (reuses the Phase 13 rendering approach).
+### Phase 21 - Geometry  [content + engine]
+Angles, shapes, perimeter/area/volume, the Pythagorean relationship. Adds a geometry-figure
+renderer (reuses the Phase 14 approach). Foundational for trigonometry.
 
-### Phase 20 - Statistics & Probability  [content + engine]
-Data sets, center/spread, simple probability, reading statistical charts. Reuses and
-extends the chart renderer.
+### Phase 22 - Algebra II  [content]
+Systems of equations, quadratics, functions in depth, exponents/radicals. Builds on
+Phases 13-14.
 
-### Phase 21 - Algebra II  [content]
-Systems, quadratics-intro, functions in more depth. Builds on Phases 12-13.
+### Phase 23 - Precalculus & Trigonometry  [content + engine]
+The unit circle, sine/cosine/tangent, right-triangle trig, radians, trig graphs and
+identities. Requires Geometry (21) and Algebra II (22) as prerequisites and likely new
+angle/graph question types. **This is the phase that finally delivers an
+arithmetic-to-trig path.** Calculus would follow as a further course beyond this.
 
-### Phase 22 - Science courses: Physics, Chemistry, Biology  [content, later interactive]
-Introductory units per subject using the existing pipeline. Fully interactive simulations
-are a separate, later capability, not required to ship the courses.
+### Phase 24 - Sciences: Physics, Chemistry, Biology  [content, later interactive]
+Introductory units per subject using the existing pipeline. Interactive simulations are a
+separate, later capability.
 
-### Phase 23 - Platform & social tier  [large, multi-project]
-Multi-user support, teacher dashboards, classrooms, social features, gamification systems,
-voice tutoring, handwriting recognition, interactive simulations, and a community/course
-marketplace. Each is a standalone initiative gated on real demand and on multi-user
-infrastructure from Phase 18. Several were explicitly excluded from the MVP.
+### Phase 25 - Platform & social tier  [large, multi-project]
+Multi-user support, teacher dashboards, classrooms, social features, gamification, voice
+tutoring, handwriting recognition, interactive simulations, community/course marketplace.
+Each is a standalone initiative gated on real demand and on multi-user infrastructure from
+Phase 20. Several were explicitly excluded from the MVP.
 
 ---
 
-## Track D - Final packaging (the literal end)
+## Track E - Final packaging (the literal end)
 
 ### Phase F - Desktop wrap (Tauri/Windows)  [packaging]
 Per DEC-016, deferred until the final build and kept a drop-in: the app is a static
 local-first SPA, so a Tauri (or Electron) wrap adds a native window and installer without
 changing application logic. The user's standing note: "all I want is for it to be possible
-on final build." This is the last step, done once the desired curriculum and features are
-in place.
+on final build." Done once the desired curriculum and features are in place.
 
 ---
 
 ## Recommended path to done (one line)
 
-Phase 10 (Decimals & Percentages) -> 11 (Ratios) -> 12 (Two-step Algebra) -> 13 (Graphs &
-Functions) -> 14 (Science completion) [MVP curriculum done] -> 15 (Misconceptions) -> 16
-(Authoring/modules) -> 17 (AI drafts) -> 18 (Optional cloud sync) [Version 1 done] -> 19-23
-(Later content & platform, by demand) -> Phase F (desktop wrap).
+Curriculum: 10 (Decimals/Percents) -> 11 (Integers/Structure) -> 12 (Ratios/Measurement)
+-> 13 (Algebra + backfills) -> 14 (Graphs/Functions) -> 15 (Science/Data) [documented
+curriculum done] -> 16 (Depth pass). Then features: 17 (Misconceptions) -> 18
+(Authoring/modules) -> 19 (AI drafts) -> 20 (Cloud sync) [Version 1 done]. Then reach for
+trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) -> 24 (Sciences) -> 25
+(Platform). Finally: Phase F (desktop wrap).
 
-Track A is content-only through Phase 12 and can proceed immediately with no engine risk.
-Phase 13 is the first point that requires new application code (a coordinate/graph question
-type). Confirm direction before starting any new phase, per the standing approval rule.
+Track A is content-only through Phase 13. Phase 14 is the first point requiring new
+application code. A true arithmetic-to-trigonometry experience is not reached until
+Phase 23. Confirm direction before starting any new phase, per the standing approval rule.

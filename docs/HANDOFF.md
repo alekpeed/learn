@@ -5,6 +5,16 @@ _Last updated: 2026-07-23 · HEAD `f18df9b` on branch `claude/project-spec-revie
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
 
+> **Read `docs/planning/PROJECT_SCOPE.md` for the full scope of the project, beginning to
+> end** (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
+> how far the vision reaches - including trigonometry and calculus). Its companion
+> `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
+> surprised a prior session and are easy to get wrong: (1) only about **30% of the
+> documented curriculum is authored** - the "41 skills" below are a slice, not the whole
+> course; and (2) **trigonometry and calculus are named in the vision but have no authored
+> curriculum** - completing 100% of the documented spec lands a learner at introductory
+> algebra + linear graphs, not trig.
+
 ---
 
 ## 1. Current status — what is built
@@ -179,17 +189,26 @@ commit.** It is an engineering-logbook HTML page driven by a `COMMITS` array and
 
 ---
 
-## 8. Suggested next work (nothing outstanding is broken)
+## 8. Suggested next work
 
-All requested scope is complete. Candidate next steps, roughly in priority order:
+The **engine** is complete; the outstanding work is almost entirely **curriculum content**.
+The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
+`docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
-1. **Tauri/Windows packaging (DEC-016).** Everything is already a static local-first SPA,
-   so this is the drop-in wrap the decision anticipated. Was explicitly deferred by the
-   user ("all I want is for it to be possible on final build").
-2. **More curriculum content** — extend beyond the 41-skill MVP slice (more algebra, more
-   science units) using the existing content-as-data pipeline.
-3. **Dashboard/UX polish** — trends over time, per-unit drill-in, richer review analytics.
-4. **Additional question types or richer lessons** if the spec's later phases are pursued.
+1. **Track A - complete the documented curriculum** (content-only through Phase 13). Nine
+   units are missing and six are partial. Next up is **Phase 10: Decimals & Percentages**,
+   then Integers/Numerical-Structure, Ratios/Measurement, Algebra completion, Graphs &
+   Functions (first phase needing new app code), and Science/Data completion.
+2. **Track B - content depth pass**: raise each authored skill from ~2 items to
+   mastery-grade item pools (~8-15 across difficulties).
+3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content
+   authoring UI + downloadable modules, AI-assisted (author-gated) practice drafts, and
+   optional cloud sync / cross-device resume.
+4. **Track D - later subjects incl. the path to trigonometry**: Geometry -> Algebra II ->
+   Precalculus/Trigonometry (Phase 23 is where an arithmetic-to-trig path is finally
+   delivered) -> Physics/Chemistry/Biology -> platform & social tier.
+5. **Track E - Phase F: Tauri/Windows desktop wrap (DEC-016)**, the deferred final build
+   step; a drop-in since the app stays a static local-first SPA.
 
-Confirm direction with the user before expanding scope — the standing rule is to plan and
-get approval before starting a new phase or growing scope.
+Confirm direction with the user before starting a new phase — the standing rule is to plan
+and get approval before starting a new phase or growing scope.

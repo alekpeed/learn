@@ -2,13 +2,15 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: MVP complete (Phases 0–9).** The full mastery-based learning engine, both subjects' content (41 skills), the adaptive diagnostic, and an isolated AI tutor are built, wired, and tested. Phase 9 added progress export/import, offline handling, an accessibility audit across all screens, a split (cacheable) bundle, and deployment config. Every acceptance criterion in `docs/spec/11_TESTING_AND_ACCEPTANCE.md` maps to a passing test in [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md).
+> **Status: engine complete; curriculum ~30% authored.** The full mastery-based learning engine (Phases 0–9), the adaptive diagnostic, and an isolated AI tutor are built, wired, and tested, and four Version 1 features have shipped on top. The **content** is a slice: ~41 of the ~138 documented curriculum topics are authored (1 unit complete, 6 partial, 9 missing). See [`docs/planning/PROJECT_SCOPE.md`](docs/planning/PROJECT_SCOPE.md) for the full scope beginning to end and [`docs/planning/ROADMAP.md`](docs/planning/ROADMAP.md) for the remaining phases. Every acceptance criterion in `docs/spec/11_TESTING_AND_ACCEPTANCE.md` maps to a passing test in [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md).
 
 ## Documentation
 
 | Document                                                                         | Purpose                                                                     |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | [`docs/HANDOFF.md`](docs/HANDOFF.md)                                             | **Start here for a new session:** current status, how to run, conventions.  |
+| [`docs/planning/PROJECT_SCOPE.md`](docs/planning/PROJECT_SCOPE.md)               | **Full scope, beginning to end:** engine, 16-unit curriculum, tiers, trig.  |
+| [`docs/planning/ROADMAP.md`](docs/planning/ROADMAP.md)                           | Sequenced execution plan for all remaining phases (through desktop wrap).    |
 | [`docs/spec/`](docs/spec/)                                                       | The 17 authoritative specification documents (source of truth).             |
 | [`docs/reviews/00_SPEC_REVIEW.md`](docs/reviews/00_SPEC_REVIEW.md)               | Architecture + MVP scope summary; contradictions, missing decisions, risks. |
 | [`docs/decisions/DECISION_LOG.md`](docs/decisions/DECISION_LOG.md)               | Decisions DEC-006 … DEC-014 (stack, scope, event-sourcing, ID grammar, …).  |
