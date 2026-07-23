@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 10 shipped)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 11 shipped)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -9,8 +9,8 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 > end** (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
 > how far the vision reaches - including trigonometry and calculus). Its companion
 > `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
-> surprised a prior session and are easy to get wrong: (1) only about **a third of the
-> documented curriculum is authored** - the **49 skills** below are a slice, not the whole
+> surprised a prior session and are easy to get wrong: (1) only about **half of the
+> documented curriculum is authored** - the **63 skills** below are a slice, not the whole
 > course; and (2) **trigonometry and calculus are named in the vision but have no authored
 > curriculum** - completing 100% of the documented spec lands a learner at introductory
 > algebra + linear graphs, not trig.
@@ -34,8 +34,9 @@ shipped on top of it. Everything is committed and pushed.
 - Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
   machine, prerequisite gating + remediation, progress projection.
 - Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **49 skills** across 8 units (math number-sense → decimals/percentages →
-  one-step algebra; scientific reasoning → measurement/accuracy).
+- Content: **63 skills** across 10 units (math number-sense → numerical structure →
+  integers → fractions → decimals/percentages → one-step algebra; scientific reasoning →
+  measurement/accuracy).
 - Isolated AI tutor: provider-neutral gateway that depends **only** on `@learn/domain`;
   off by default; can never write verified state (DEC-005/010); verified fallback.
 - Release: progress export/import, offline handling, accessibility audit (axe) across all
@@ -61,13 +62,22 @@ shipped on top of it. Everything is committed and pushed.
   **mastery-grade depth (~10 practice items per skill, 86 total)** across difficulty bands,
   each with progressive hints, an explanation, and misconception-tagged distractors where
   apt. Content-only; no engine change; every answer grades through the real validators.
+- **Phase 11 — Numerical Structure & Integers** (`numerical_structure.json`,
+  `integers.json`): two **complete** units slotted after Multiplication and Division (course
+  orders 4-5; later math units shifted down). **14 skills** — even/odd, factors, multiples,
+  primes, GCF, LCM, order of operations; and negative numbers, comparing integers, absolute
+  value, and adding/subtracting/multiplying/dividing integers. Mastery-grade depth (135
+  questions), using `numeric`, `multiple_choice`, `multi_select`, and `ordering`. Content
+  only; every answer verified through the validators. (These repair a real dependency gap;
+  a later backfill can wire them as prerequisites into Fractions and Algebra.)
 
 **Test status (all green):**
 
 - `pnpm test` → **162** vitest tests across all packages (includes the 18
   content-validation tests reachable via `pnpm validate:content`). The
-  `content-answers.test.ts` guard now grades every Decimals & Percentages answer through the
-  deterministic validators, and `loader.test.ts` covers the new unit's prerequisite order.
+  `content-answers.test.ts` guard grades every new-unit answer (Decimals & Percentages plus
+  the Phase 11 units) through the deterministic validators, and `loader.test.ts` covers each
+  new unit's prerequisite order.
 - `pnpm test:e2e` → **24** Playwright tests, including axe-core accessibility checks.
 - `pnpm typecheck`, `pnpm lint` (prettier), and `pnpm build` all clean.
 
@@ -209,10 +219,11 @@ The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
 `docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
 1. **Track A - complete the documented curriculum** (content-only through Phase 13).
-   **Phase 10 (Decimals & Percentages) is done.** Next up is **Phase 11:
-   Integers & Numerical Structure**, then Ratios/Measurement, Algebra completion, Graphs &
-   Functions (first phase needing new app code), and Science/Data completion. Build new
-   units at the same mastery-grade depth as Phase 10 (~8-15 items/skill).
+   **Phases 10 (Decimals & Percentages) and 11 (Numerical Structure, Integers) are done.**
+   Next up is **Phase 12: Ratios & Proportional Reasoning + Measurement Foundations**, then
+   Algebra completion, Graphs & Functions (first phase needing new app code), and
+   Science/Data completion. Build new units at the same mastery-grade depth (~8-15
+   items/skill).
 2. **Track B - content depth pass**: raise each authored skill from ~2 items to
    mastery-grade item pools (~8-15 across difficulties).
 3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content

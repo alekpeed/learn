@@ -1,0 +1,2377 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.integers.negative_numbers",
+      "unit_id": "math.integers",
+      "title": "Negative Numbers",
+      "summary": "Negative numbers are less than zero and sit to the left of zero on the number line. They describe things like temperatures below zero, debts, and depths below sea level. Every positive number has a negative opposite the same distance from zero.",
+      "objectives": [
+        "Place negative numbers on a number line.",
+        "Interpret a negative number in a real context.",
+        "State the opposite of a given integer."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.integers.comparing_integers",
+      "unit_id": "math.integers",
+      "title": "Comparing Integers",
+      "summary": "To compare integers, picture the number line: the number farther to the right is greater. So any positive is greater than any negative, and among negatives the one closer to zero is greater.",
+      "objectives": [
+        "Compare two integers using the number line.",
+        "Order a set of integers.",
+        "Explain why -2 is greater than -8."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.negative_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.comparing_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.integers.absolute_value",
+      "unit_id": "math.integers",
+      "title": "Absolute Value",
+      "summary": "The absolute value of a number is its distance from zero on the number line, so it is never negative. The absolute value of -5 and of 5 are both 5, because both are five units from zero. It is written with vertical bars, as in |-5| = 5.",
+      "objectives": [
+        "State the absolute value of an integer.",
+        "Explain that absolute value is a distance from zero.",
+        "Compare absolute values."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.negative_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.integers.adding_integers",
+      "unit_id": "math.integers",
+      "title": "Adding Integers",
+      "summary": "To add integers, use the number line or think of positives and negatives canceling. Same signs: add the distances and keep the sign. Different signs: subtract the smaller distance from the larger and keep the sign of the number farther from zero.",
+      "objectives": [
+        "Add two integers with the same sign.",
+        "Add two integers with different signs.",
+        "Interpret integer addition on a number line."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.negative_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.integers.subtracting_integers",
+      "unit_id": "math.integers",
+      "title": "Subtracting Integers",
+      "summary": "Subtracting an integer is the same as adding its opposite. So a - b becomes a + (the opposite of b). This turns every subtraction into an addition you already know how to do, and it explains why subtracting a negative increases the value.",
+      "objectives": [
+        "Rewrite a subtraction as adding the opposite.",
+        "Subtract integers with any signs.",
+        "Explain why subtracting a negative is like adding."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.adding_integers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.inverse_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.integers.multiplying_integers",
+      "unit_id": "math.integers",
+      "title": "Multiplying Integers",
+      "summary": "When multiplying two integers, multiply their absolute values and then apply the sign rule: same signs give a positive result, different signs give a negative result. Multiplying by zero always gives zero.",
+      "objectives": [
+        "Multiply two integers and give the correct sign.",
+        "State the sign rules for multiplication.",
+        "Apply the rules to products of several integers."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.adding_integers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.integers.dividing_integers",
+      "unit_id": "math.integers",
+      "title": "Dividing Integers",
+      "summary": "Dividing integers uses the same sign rules as multiplication: same signs give a positive quotient, different signs give a negative quotient. Divide the absolute values, then apply the sign. Zero divided by any nonzero integer is zero.",
+      "objectives": [
+        "Divide two integers and give the correct sign.",
+        "State the sign rules for division.",
+        "Connect the sign rules for division and multiplication."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.multiplying_integers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.division_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.integers.negative_numbers.lesson",
+      "skill_id": "math.integers.negative_numbers",
+      "title": "Negative Numbers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read and interpret negative numbers and find the opposite of an integer."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the number line, with numbers increasing to the right. Negative numbers extend it to the left of zero."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A thermometer shows negatives naturally: 5 degrees below zero is -5. Money does too: owing $10 is like having -10 dollars. The number line runs both ways from zero, with negatives on the left and positives on the right."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An integer is a whole number that can be positive, negative, or zero. A negative number is written with a minus sign and is less than zero. The opposite of a number is the same distance from zero on the other side: the opposite of 4 is -4, and the opposite of -7 is 7."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line, mark 0 in the middle. To the right are 1, 2, 3; to the left are -1, -2, -3. A number and its opposite sit the same distance from 0 on opposite sides."
+        },
+        {
+          "type": "worked_example",
+          "body": "What is the opposite of 4? The opposite is the same distance from zero on the other side, so it is -4. Together, 4 and -4 balance around 0."
+        },
+        {
+          "type": "guided_practice",
+          "body": "What integer is 3 units to the left of 0 on the number line? Moving left from 0 gives negatives, so 3 units left is -3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking a bigger-looking negative is larger; -8 is actually less than -2 because it is farther left. Also, the opposite of a negative is positive."
+        },
+        {
+          "type": "summary",
+          "body": "Negative numbers are less than zero and lie left of zero on the number line. Each number has an opposite the same distance from zero on the other side."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Where do negative numbers sit on the number line, and what is the opposite of -7?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.comparing_integers.lesson",
+      "skill_id": "math.integers.comparing_integers",
+      "title": "Comparing Integers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to compare and order integers, including negatives."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the number line and that negative numbers sit to the left of zero."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "On a number line, greater always means farther right. That is why 3 is greater than -5, and why -2 is greater than -8: even though 8 looks bigger, -8 is farther left, so it is the smaller number."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "For any two integers, the one farther right on the number line is greater. Every positive integer is greater than every negative integer, and 0 is greater than every negative. Among negatives, the number closer to zero is greater."
+        },
+        {
+          "type": "representation",
+          "body": "Draw a number line with -8, -5, -2, 0, 3. Reading left to right gives least to greatest, so -8 < -5 < -2 < 0 < 3."
+        },
+        {
+          "type": "worked_example",
+          "body": "Which is greater, -3 or -5? On the number line, -3 is to the right of -5, so -3 is greater."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Order -2, 0, -5, 3 from least to greatest. Left to right on the line: -5, -2, 0, 3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is treating -8 as greater than -2 because 8 is greater than 2. For negatives, the number closer to zero is larger, so -2 is greater than -8."
+        },
+        {
+          "type": "summary",
+          "body": "The integer farther right on the number line is greater. Positives beat negatives, and among negatives, closer to zero wins."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is -2 greater than -8?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.absolute_value.lesson",
+      "skill_id": "math.integers.absolute_value",
+      "title": "Absolute Value",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the absolute value of an integer and explain what it means."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a number and its opposite are the same distance from zero on the number line."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Absolute value asks 'how far from zero?', ignoring direction. Whether you walk 5 steps left or 5 steps right, you are 5 steps from where you started. So both -5 and 5 have absolute value 5."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The absolute value of a number is its distance from zero, written with vertical bars: |-5| = 5 and |5| = 5. Because distance is never negative, an absolute value is always zero or positive. |0| = 0."
+        },
+        {
+          "type": "worked_example",
+          "body": "What is |-12|? The number -12 is 12 units from zero, so its absolute value is 12. The sign is dropped because we only measure distance."
+        },
+        {
+          "type": "guided_practice",
+          "body": "What is |8|? The number 8 is 8 units from zero, so |8| = 8."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking absolute value can be negative, such as writing |-5| = -5. Absolute value is a distance, so it is never negative; |-5| = 5."
+        },
+        {
+          "type": "summary",
+          "body": "Absolute value is distance from zero and is never negative. A number and its opposite share the same absolute value, and |0| = 0."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why do -5 and 5 have the same absolute value?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.adding_integers.lesson",
+      "skill_id": "math.integers.adding_integers",
+      "title": "Adding Integers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to add integers with the same or different signs."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall negative numbers and absolute value (distance from zero). Addition can be seen as movement on the number line."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think of positives as steps right and negatives as steps left. -3 + 5 means 3 steps left then 5 steps right, ending 2 steps right of zero, so the answer is 2. When signs are the same, the steps pile up in one direction."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To add integers with the same sign, add their absolute values and keep the common sign. To add integers with different signs, subtract the smaller absolute value from the larger and keep the sign of the number with the larger absolute value."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line, start at the first number and move right for a positive second number or left for a negative one. -4 + (-6) starts at -4 and moves 6 left to -10."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 7 + (-2). The signs differ, so subtract absolute values: 7 - 2 = 5. The number farther from zero is 7 (positive), so the answer is positive: 5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Add -8 + 3. Signs differ: subtract 8 - 3 = 5. The larger distance belongs to -8 (negative), so the answer is -5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is always keeping the sign of the first number. Instead, when signs differ, keep the sign of the number with the larger absolute value."
+        },
+        {
+          "type": "summary",
+          "body": "Same signs: add distances, keep the sign. Different signs: subtract distances, keep the sign of the number farther from zero."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When you add 7 + (-2), how do you decide the sign of the answer?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.subtracting_integers.lesson",
+      "skill_id": "math.integers.subtracting_integers",
+      "title": "Subtracting Integers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to subtract integers by adding the opposite."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to add integers and that every number has an opposite. Subtraction and addition are inverse operations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Taking away a debt makes you richer. Subtracting a negative, like 5 - (-3), is the same as adding 3, giving 8. The rule 'subtract by adding the opposite' turns any subtraction into an addition."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To subtract an integer, add its opposite: a - b = a + (opposite of b). So 5 - (-3) = 5 + 3 = 8, and 3 - 5 = 3 + (-5) = -2."
+        },
+        {
+          "type": "representation",
+          "body": "On a number line, 5 - (-3) flips the subtraction of a negative into moving 3 to the right from 5, landing on 8."
+        },
+        {
+          "type": "worked_example",
+          "body": "Compute -1 - (-4). Add the opposite of -4, which is 4: -1 + 4 = 3."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compute 3 - 5. Add the opposite of 5, which is -5: 3 + (-5) = -2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is forgetting to change both the operation and the sign. Change subtraction to addition and flip the sign of the number being subtracted, then follow the addition rules."
+        },
+        {
+          "type": "summary",
+          "body": "Subtracting an integer means adding its opposite. Rewrite a - b as a + (opposite of b), then add. Subtracting a negative increases the value."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why does 5 - (-3) equal 8?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.multiplying_integers.lesson",
+      "skill_id": "math.integers.multiplying_integers",
+      "title": "Multiplying Integers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to multiply integers and determine the sign of the product."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall multiplication as repeated addition and your multiplication facts. Here we add the rules for signs."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Multiplying by a negative reverses direction. Two reversals bring you back, which is why a negative times a negative is positive. A negative times a positive stays reversed, so it is negative."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To multiply integers, multiply the absolute values, then apply the sign rule: same signs (both positive or both negative) give a positive product; different signs give a negative product. Any integer times 0 is 0."
+        },
+        {
+          "type": "worked_example",
+          "body": "Compute -2 x -5. Multiply the absolute values: 2 x 5 = 10. The signs are the same (both negative), so the product is positive: 10."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compute 6 x -3. Multiply 6 x 3 = 18. The signs differ, so the product is negative: -18."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is making a negative times a negative negative. Same signs give a positive result, so -4 x -4 = 16, not -16."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply the absolute values, then apply the sign rule: same signs give positive, different signs give negative, and times zero gives zero."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is a negative number times a negative number positive?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.integers.dividing_integers.lesson",
+      "skill_id": "math.integers.dividing_integers",
+      "title": "Dividing Integers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to divide integers and determine the sign of the quotient."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that multiplication and division are opposites, and the sign rules you learned for multiplying integers."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Division undoes multiplication, so it follows the same sign rules. Since -3 x 4 = -12, it makes sense that -12 divided by 4 is -3: different signs give a negative result."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To divide integers, divide the absolute values and apply the sign rule: same signs give a positive quotient, different signs give a negative quotient. Zero divided by any nonzero integer is 0."
+        },
+        {
+          "type": "worked_example",
+          "body": "Compute -20 / -4. Divide absolute values: 20 / 4 = 5. The signs are the same (both negative), so the quotient is positive: 5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compute 15 / -3. Divide 15 / 3 = 5. The signs differ, so the quotient is negative: -5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is mishandling signs, such as making a negative divided by a negative negative. Same signs give a positive result, so -18 / -6 = 3."
+        },
+        {
+          "type": "summary",
+          "body": "Divide the absolute values, then apply the sign rule: same signs give positive, different signs give negative. Zero divided by a nonzero integer is zero."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What sign does a negative divided by a negative have, and why?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.integers.negative_numbers.q1",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which is colder: -5 degrees or 3 degrees?",
+      "answer_spec": {
+        "correct_answer": "-5 degrees"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Negative temperatures are below zero."
+        },
+        {
+          "level": 2,
+          "text": "-5 is below zero, colder than 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-5 degrees is below zero and therefore colder than 3 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["-5 degrees", "3 degrees"]
+      }
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q2",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "On a number line, where are the negative numbers?",
+      "answer_spec": {
+        "correct_answer": "left of 0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Numbers increase to the right."
+        },
+        {
+          "level": 2,
+          "text": "Negatives are less than 0, so they are to the left."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Negative numbers are less than zero, so they lie to the left of 0 on the number line.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["left of 0", "right of 0", "above 0", "at 0"]
+      }
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q3",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the opposite of 4?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The opposite is the same distance from 0 on the other side."
+        },
+        {
+          "level": 2,
+          "text": "The opposite of 4 is -4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The opposite of 4 is -4, the same distance from zero but negative.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q4",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the opposite of -7?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The opposite of a negative is positive."
+        },
+        {
+          "level": 2,
+          "text": "The opposite of -7 is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The opposite of -7 is 7, the same distance from zero but positive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q5",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which number is greater: -2 or -8?",
+      "answer_spec": {
+        "correct_answer": "-2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The number farther right on the line is greater."
+        },
+        {
+          "level": 2,
+          "text": "-2 is to the right of -8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 is closer to zero (farther right) than -8, so -2 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-2", "-8"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "-8",
+          "misconception_id": "mc.math.integers.larger_digits_means_larger"
+        }
+      ]
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q6",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A debt of $10 can be written as which integer?",
+      "answer_spec": {
+        "correct_answer": "-10"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A debt is money you do not have."
+        },
+        {
+          "level": 2,
+          "text": "It is written as a negative number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A debt of $10 is represented by the negative integer -10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-10", "10", "0", "1"]
+      }
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q7",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What integer is 3 units to the left of 0 on the number line?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Moving left of 0 gives negative numbers."
+        },
+        {
+          "level": 2,
+          "text": "3 units left is -3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Three units to the left of zero is -3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q8",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is -1 greater than, less than, or equal to 0?",
+      "answer_spec": {
+        "correct_answer": "less than 0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Negative numbers are below zero."
+        },
+        {
+          "level": 2,
+          "text": "So -1 is less than 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-1 is a negative number, so it is less than 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["less than 0", "greater than 0", "equal to 0"]
+      }
+    },
+    {
+      "question_id": "math.integers.negative_numbers.q9",
+      "skill_id": "math.integers.negative_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the opposite of 9?",
+      "answer_spec": {
+        "correct_answer": -9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same distance from 0, other side."
+        },
+        {
+          "level": 2,
+          "text": "The opposite of 9 is -9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The opposite of 9 is -9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q1",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which is greater: -3 or -5?",
+      "answer_spec": {
+        "correct_answer": "-3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Farther right on the number line is greater."
+        },
+        {
+          "level": 2,
+          "text": "-3 is to the right of -5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-3 is closer to zero than -5, so -3 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["-3", "-5"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "-5",
+          "misconception_id": "mc.math.integers.larger_digits_means_larger"
+        }
+      ]
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q2",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which is smaller: -1 or 2?",
+      "answer_spec": {
+        "correct_answer": "-1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A negative is always less than a positive."
+        },
+        {
+          "level": 2,
+          "text": "-1 is less than 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-1 is negative and 2 is positive, so -1 is smaller.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["-1", "2"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q3",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Order these from least to greatest. Arrange: -2, 0, -5, 3.",
+      "answer_spec": {
+        "correct_answer": ["-5", "-2", "0", "3"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Read the number line from left to right."
+        },
+        {
+          "level": 2,
+          "text": "The farthest left is least."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Left to right on the number line gives -5, -2, 0, 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-2", "0", "-5", "3"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q4",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which symbol makes this true: -4 __ -2 ?",
+      "answer_spec": {
+        "correct_answer": "<"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "-4 is farther left than -2."
+        },
+        {
+          "level": 2,
+          "text": "Farther left means smaller."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-4 is less than -2, so the correct symbol is the less-than sign.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q5",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is the greatest: -10, -1, or -7?",
+      "answer_spec": {
+        "correct_answer": "-1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Closer to zero is greater among negatives."
+        },
+        {
+          "level": 2,
+          "text": "-1 is closest to zero."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Among -10, -1, -7, the one closest to zero is -1, so it is greatest.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-10", "-1", "-7"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q6",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Order these from greatest to least. Arrange: 1, -1, 0, -3.",
+      "answer_spec": {
+        "correct_answer": ["1", "0", "-1", "-3"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Greatest is farthest right on the number line."
+        },
+        {
+          "level": 2,
+          "text": "Go from right to left."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "From greatest to least: 1, 0, -1, -3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["-1", "1", "-3", "0"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q7",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a number line, the number farther to the right is always what?",
+      "answer_spec": {
+        "correct_answer": "greater"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rightward means increasing."
+        },
+        {
+          "level": 2,
+          "text": "So farther right is greater."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On a number line, values increase to the right, so the number farther right is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["greater", "smaller", "negative", "zero"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q8",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is less: 0 or -2?",
+      "answer_spec": {
+        "correct_answer": "-2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Negatives are less than zero."
+        },
+        {
+          "level": 2,
+          "text": "-2 is below 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 is negative, so it is less than 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0", "-2"]
+      }
+    },
+    {
+      "question_id": "math.integers.comparing_integers.q9",
+      "skill_id": "math.integers.comparing_integers",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Order these from least to greatest. Arrange: -4, -8, -1.",
+      "answer_spec": {
+        "correct_answer": ["-8", "-4", "-1"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Among negatives, farther from zero is smaller."
+        },
+        {
+          "level": 2,
+          "text": "-8 is smallest, -1 is largest."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "From least to greatest: -8, -4, -1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-4", "-8", "-1"]
+      }
+    },
+    {
+      "question_id": "math.integers.absolute_value.q1",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the absolute value of -5, written |-5|?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Absolute value is distance from zero."
+        },
+        {
+          "level": 2,
+          "text": "-5 is 5 units from zero."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The distance from -5 to zero is 5, so |-5| = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.integers.absolute_value.q2",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is |8|?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "8 is how far from zero?"
+        },
+        {
+          "level": 2,
+          "text": "It is 8 units away."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 is 8 units from zero, so |8| = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.integers.absolute_value.q3",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is |-12|?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Distance from zero, ignoring sign."
+        },
+        {
+          "level": 2,
+          "text": "-12 is 12 units from zero."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "|-12| = 12, the distance from -12 to zero.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.absolute_value.q4",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is |0|?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "How far is 0 from itself?"
+        },
+        {
+          "level": 2,
+          "text": "It is 0 units away."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0 is zero units from zero, so |0| = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.absolute_value.q5",
+      "skill_id": "math.integers.absolute_value",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Absolute value measures what?",
+      "answer_spec": {
+        "correct_answer": "distance from 0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about how far, not which way."
+        },
+        {
+          "level": 2,
+          "text": "It is a distance on the number line."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Absolute value is the distance of a number from zero, ignoring direction.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["distance from 0", "the sign of the number", "the opposite", "the double"]
+      }
+    },
+    {
+      "question_id": "math.integers.absolute_value.q6",
+      "skill_id": "math.integers.absolute_value",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is larger: |-7| or |3|?",
+      "answer_spec": {
+        "correct_answer": "|-7|"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evaluate each absolute value first."
+        },
+        {
+          "level": 2,
+          "text": "|-7| = 7 and |3| = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "|-7| = 7 and |3| = 3, so |-7| is larger.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["|-7|", "|3|"]
+      }
+    },
+    {
+      "question_id": "math.integers.absolute_value.q7",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is |-3| + |4|?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find each absolute value, then add."
+        },
+        {
+          "level": 2,
+          "text": "|-3| = 3 and |4| = 4, so 3 + 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "|-3| = 3 and |4| = 4, and 3 + 4 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.absolute_value.q8",
+      "skill_id": "math.integers.absolute_value",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Can an absolute value be negative?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Absolute value is a distance."
+        },
+        {
+          "level": 2,
+          "text": "Distances are never negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Absolute value is a distance from zero, so it is never negative.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["No", "Yes", "Sometimes"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes",
+          "misconception_id": "mc.math.integers.absolute_value_can_be_negative"
+        }
+      ]
+    },
+    {
+      "question_id": "math.integers.absolute_value.q9",
+      "skill_id": "math.integers.absolute_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "The opposite of -6 is 6. What is |-6|?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Absolute value is distance from zero."
+        },
+        {
+          "level": 2,
+          "text": "-6 is 6 units from zero."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "|-6| = 6, the distance from -6 to zero.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.adding_integers.q1",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -3 + 5?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-3 + 5 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.adding_integers.q2",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -4 + (-6)?",
+      "answer_spec": {
+        "correct_answer": -10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-4 + (-6) = -10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.adding_integers.q3",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 7 + (-2)?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 + (-2) = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.adding_integers.q4",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -8 + 3?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-8 + 3 = -5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.adding_integers.q5",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 5 + (-5)?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 + (-5) = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.adding_integers.q6",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -2 + (-3)?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 + (-3) = -5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.adding_integers.q7",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -10 + 4?",
+      "answer_spec": {
+        "correct_answer": -6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-10 + 4 = -6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.adding_integers.q8",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 6 + (-9)?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 + (-9) = -3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.adding_integers.q9",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -7 + 7?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same signs: add distances and keep the sign. Different signs: subtract and keep the sign of the larger."
+        },
+        {
+          "level": 2,
+          "text": "Use a number line if it helps: right for positive, left for negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-7 + 7 = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.adding_integers.q10",
+      "skill_id": "math.integers.adding_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Adding two negative numbers gives what kind of result?",
+      "answer_spec": {
+        "correct_answer": "negative"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both move in the same (left) direction."
+        },
+        {
+          "level": 2,
+          "text": "So the total is negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Two negatives add to a negative, since both steps go left of zero.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["negative", "positive", "zero", "cannot tell"]
+      }
+    },
+    {
+      "question_id": "math.integers.adding_integers.q11",
+      "skill_id": "math.integers.adding_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A diver is at -5 meters (5 m below the surface) and rises 3 meters. What is the new depth as an integer?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rising adds a positive: -5 + 3."
+        },
+        {
+          "level": 2,
+          "text": "-5 + 3 = -2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Starting at -5 and rising 3 gives -5 + 3 = -2 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q1",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 3 - 5?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 - 5 = -2 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q2",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -2 - 4?",
+      "answer_spec": {
+        "correct_answer": -6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 - 4 = -6 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q3",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 5 - (-3)?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 - (-3) = 8 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q4",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -1 - (-4)?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-1 - (-4) = 3 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q5",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 0 - 6?",
+      "answer_spec": {
+        "correct_answer": -6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0 - 6 = -6 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q6",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -3 - (-3)?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-3 - (-3) = 0 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q7",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 2 - 7?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 - 7 = -5 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q8",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -5 - 2?",
+      "answer_spec": {
+        "correct_answer": -7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-5 - 2 = -7 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q9",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 4 - (-6)?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite as adding the opposite of the second number."
+        },
+        {
+          "level": 2,
+          "text": "Then follow the rules for adding integers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 - (-6) = 10 (subtract by adding the opposite).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q10",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Subtracting a negative number is the same as doing what?",
+      "answer_spec": {
+        "correct_answer": "adding its opposite"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "a - b becomes a + (opposite of b)."
+        },
+        {
+          "level": 2,
+          "text": "The opposite of a negative is positive."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting a number means adding its opposite, so subtracting a negative adds a positive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "adding its opposite",
+          "subtracting twice",
+          "making it negative",
+          "nothing changes"
+        ]
+      }
+    },
+    {
+      "question_id": "math.integers.subtracting_integers.q11",
+      "skill_id": "math.integers.subtracting_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The temperature falls from 3 degrees to -4 degrees. How many degrees did it fall?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the difference: 3 - (-4)."
+        },
+        {
+          "level": 2,
+          "text": "3 - (-4) = 3 + 4 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The drop is 3 - (-4) = 3 + 4 = 7 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q1",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -3 x 4?",
+      "answer_spec": {
+        "correct_answer": -12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-3 x 4 = -12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q2",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -2 x -5?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 x -5 = 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q3",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 6 x -3?",
+      "answer_spec": {
+        "correct_answer": -18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 x -3 = -18.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q4",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -4 x -4?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-4 x -4 = 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q5",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -1 x 9?",
+      "answer_spec": {
+        "correct_answer": -9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-1 x 9 = -9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q6",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -5 x 0?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-5 x 0 = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q7",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is -2 x 3 x -1?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 x 3 x -1 = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q8",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 7 x -2?",
+      "answer_spec": {
+        "correct_answer": -14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 x -2 = -14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q9",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A negative number times a negative number gives what?",
+      "answer_spec": {
+        "correct_answer": "positive"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two sign reversals cancel."
+        },
+        {
+          "level": 2,
+          "text": "So the result is positive."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Same signs multiply to a positive, so a negative times a negative is positive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["positive", "negative", "zero", "cannot tell"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "negative",
+          "misconception_id": "mc.math.integers.neg_times_neg_is_negative"
+        }
+      ]
+    },
+    {
+      "question_id": "math.integers.multiplying_integers.q10",
+      "skill_id": "math.integers.multiplying_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A negative number times a positive number gives what?",
+      "answer_spec": {
+        "correct_answer": "negative"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The signs are different."
+        },
+        {
+          "level": 2,
+          "text": "Different signs give a negative product."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Different signs multiply to a negative result.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["negative", "positive", "zero"]
+      }
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q1",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -12 / 3?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-12 / 3 = -4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q2",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -20 / -4?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-20 / -4 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q3",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 15 / -3?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 / -3 = -5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q4",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -18 / -6?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-18 / -6 = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q5",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 0 / -5?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0 / -5 = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q6",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -24 / 6?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-24 / 6 = -4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q7",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is -9 / -9?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-9 / -9 = 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q8",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is -14 / 2?",
+      "answer_spec": {
+        "correct_answer": -7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the absolute values first."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give positive; different signs give negative."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-14 / 2 = -7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q9",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A negative number divided by a negative number gives what?",
+      "answer_spec": {
+        "correct_answer": "positive"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division follows the same sign rules as multiplication."
+        },
+        {
+          "level": 2,
+          "text": "Same signs give a positive result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Same signs divide to a positive quotient.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["positive", "negative", "zero"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "negative",
+          "misconception_id": "mc.math.integers.neg_div_neg_is_negative"
+        }
+      ]
+    },
+    {
+      "question_id": "math.integers.dividing_integers.q10",
+      "skill_id": "math.integers.dividing_integers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A positive number divided by a negative number gives what?",
+      "answer_spec": {
+        "correct_answer": "negative"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The signs are different."
+        },
+        {
+          "level": 2,
+          "text": "Different signs give a negative quotient."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Different signs divide to a negative result.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["negative", "positive", "zero"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2277 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.numerical_structure.even_odd",
+      "unit_id": "math.numerical_structure",
+      "title": "Even and Odd Numbers",
+      "summary": "A whole number is even if it can be split into two equal whole-number groups, which means it is divisible by 2; otherwise it is odd. Even numbers end in 0, 2, 4, 6, or 8; odd numbers end in 1, 3, 5, 7, or 9.",
+      "objectives": [
+        "Decide whether a whole number is even or odd.",
+        "State that even numbers are divisible by 2.",
+        "Use the ones digit to classify a number as even or odd."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.division_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.numerical_structure.factors",
+      "unit_id": "math.numerical_structure",
+      "title": "Factors",
+      "summary": "A factor of a number is a whole number that divides it evenly, with no remainder. Every number has 1 and itself as factors, and factors always come in pairs that multiply to the number.",
+      "objectives": [
+        "Decide whether one number is a factor of another.",
+        "List the factors of a small number.",
+        "Explain that a factor divides a number with no remainder."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.division_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.mult_div_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.numerical_structure.multiples",
+      "unit_id": "math.numerical_structure",
+      "title": "Multiples",
+      "summary": "A multiple of a number is what you get by multiplying it by a whole number. The multiples of 5 are 5, 10, 15, 20, and so on. A number's multiples go on forever, and every number is a multiple of itself and of 1.",
+      "objectives": [
+        "Find multiples of a whole number.",
+        "Decide whether one number is a multiple of another.",
+        "Explain how factors and multiples are related."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.numerical_structure.prime_composite",
+      "unit_id": "math.numerical_structure",
+      "title": "Prime and Composite Numbers",
+      "summary": "A prime number has exactly two factors: 1 and itself. A composite number has more than two factors. The number 1 is neither prime nor composite because it has only one factor.",
+      "objectives": [
+        "Classify a number as prime, composite, or neither.",
+        "State that a prime has exactly two factors.",
+        "Identify small prime numbers."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.numerical_structure.factors",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.numerical_structure.gcf",
+      "unit_id": "math.numerical_structure",
+      "title": "Greatest Common Factor",
+      "summary": "The greatest common factor (GCF) of two numbers is the largest number that is a factor of both. You find it by listing the factors of each number and choosing the largest they share. The GCF is used to simplify fractions.",
+      "objectives": [
+        "Find the common factors of two numbers.",
+        "Identify the greatest common factor.",
+        "Explain what the GCF represents."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.numerical_structure.factors",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.numerical_structure.lcm",
+      "unit_id": "math.numerical_structure",
+      "title": "Least Common Multiple",
+      "summary": "The least common multiple (LCM) of two numbers is the smallest number that is a multiple of both. You find it by listing multiples of each number and choosing the smallest they share. The LCM is used to find common denominators.",
+      "objectives": [
+        "List common multiples of two numbers.",
+        "Identify the least common multiple.",
+        "Connect the LCM to finding common denominators."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.numerical_structure.multiples",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "unit_id": "math.numerical_structure",
+      "title": "Order of Operations",
+      "summary": "When an expression has more than one operation, do them in a set order: first anything in parentheses, then multiplication and division from left to right, then addition and subtraction from left to right. This makes every expression have one correct value.",
+      "objectives": [
+        "State the order of operations.",
+        "Evaluate an expression with multiple operations.",
+        "Explain why an agreed order is needed."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.addition_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.numerical_structure.even_odd.lesson",
+      "skill_id": "math.numerical_structure.even_odd",
+      "title": "Even and Odd Numbers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to tell whether a whole number is even or odd and explain what makes it so."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that dividing means splitting into equal groups. Even and odd are about whether a number can be split into two equal whole-number groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Imagine pairing up objects two at a time. If every object finds a partner with none left over, the number is even. If one is left without a partner, the number is odd. Six socks make three pairs, so 6 is even; seven socks leave one alone, so 7 is odd."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A number is even if it is divisible by 2 (no remainder) and odd if it is not. You can tell from the ones digit: even numbers end in 0, 2, 4, 6, or 8, and odd numbers end in 1, 3, 5, 7, or 9."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 34 even or odd? Look at the ones digit, 4. Since 4 is one of 0, 2, 4, 6, 8, the number 34 is even. Check: 34 splits into 17 pairs with none left over."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Is 51 even or odd? The ones digit is 1, which is odd, so 51 is odd. Splitting 51 into pairs leaves one left over."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is judging by the first digit instead of the last. Only the ones digit decides: 128 ends in 8, so it is even, even though it starts with an odd 1."
+        },
+        {
+          "type": "summary",
+          "body": "Even numbers divide evenly by 2 and end in 0, 2, 4, 6, or 8. Odd numbers do not and end in 1, 3, 5, 7, or 9. Only the ones digit matters."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How can you tell whether 470 is even or odd without dividing?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.factors.lesson",
+      "skill_id": "math.numerical_structure.factors",
+      "title": "Factors",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the factors of a number and check whether one number is a factor of another."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your division facts and that multiplication and division are opposites: if 3 times 4 is 12, then 12 divided by 3 is 4."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A factor is a number that fits evenly into another. Think of arranging 12 chairs into equal rows: you can make rows of 1, 2, 3, 4, 6, or 12, so those are the factors of 12. A row of 5 would not work because 12 does not split evenly into 5s."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A factor of a number divides it with a remainder of 0. Factors come in pairs whose product is the number: for 12, the pairs are 1 and 12, 2 and 6, 3 and 4. Every whole number has 1 and itself as factors."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 4 a factor of 20? Divide: 20 divided by 4 is 5 with no remainder, so yes, 4 is a factor of 20. Its partner factor is 5, since 4 times 5 is 20."
+        },
+        {
+          "type": "guided_practice",
+          "body": "List the factors of 10. Try each number: 1 and 10, 2 and 5. So the factors of 10 are 1, 2, 5, and 10."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is forgetting 1 and the number itself, or stopping too early. Work in pairs and check each small number to be sure you find them all."
+        },
+        {
+          "type": "summary",
+          "body": "A factor divides a number evenly, with no remainder. Factors come in pairs that multiply to the number, and every number has 1 and itself as factors."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you know whether 6 is a factor of 30?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.multiples.lesson",
+      "skill_id": "math.numerical_structure.multiples",
+      "title": "Multiples",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to list multiples of a number and check whether a number is a multiple of another."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your multiplication facts. A multiple is just a product of the number with 1, 2, 3, and so on."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Skip-counting gives multiples. Counting by 5s, you say 5, 10, 15, 20, and every number you land on is a multiple of 5. Because you can keep counting forever, the multiples never end."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A multiple of a number is the product of that number and a whole number. The multiples of 4 are 4, 8, 12, 16, and so on. If a is a factor of b, then b is a multiple of a."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 20 a multiple of 4? Count by 4s: 4, 8, 12, 16, 20. You land on 20, so yes, 20 is a multiple of 4 (it is 4 times 5)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "What is the third multiple of 5? Multiply 5 by 3: 5 times 3 is 15, so the third multiple of 5 is 15."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is mixing up factors and multiples. Factors are smaller numbers that divide into a number; multiples are larger numbers you build by multiplying it."
+        },
+        {
+          "type": "summary",
+          "body": "A multiple is the product of a number with a whole number. Multiples go on forever, and a number is a multiple of each of its factors."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What are the first four multiples of 6, and how did you find them?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.prime_composite.lesson",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "title": "Prime and Composite Numbers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to decide whether a number is prime, composite, or neither, using its factors."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a factor divides a number evenly and that every number has at least 1 and itself as factors."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think about building rectangles from square tiles. With 7 tiles you can only make a 1 by 7 rectangle, so 7 is prime. With 12 tiles you can make several rectangles (1 by 12, 2 by 6, 3 by 4), so 12 has many factors and is composite."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A prime number has exactly two factors: 1 and itself. A composite number has more than two factors. The number 1 has only one factor, so it is neither prime nor composite. The smallest prime is 2, the only even prime."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 9 prime or composite? Its factors are 1, 3, and 9. Because it has more than two factors, 9 is composite."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Is 7 prime or composite? Its only factors are 1 and 7, exactly two, so 7 is prime."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is calling 1 prime. It is not, because it has only one factor. Another is assuming all odd numbers are prime; 9 and 15 are odd but composite."
+        },
+        {
+          "type": "summary",
+          "body": "A prime has exactly two factors; a composite has more than two; 1 is neither. The number 2 is the smallest prime and the only even one."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is 1 neither prime nor composite?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.gcf.lesson",
+      "skill_id": "math.numerical_structure.gcf",
+      "title": "Greatest Common Factor",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the greatest common factor of two numbers."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to list the factors of a number: the whole numbers that divide it evenly."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Imagine you have 12 red tiles and 18 blue tiles and want to make equal groups using the same group size for both colors. The largest group size that works for both is the greatest common factor, here 6."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The greatest common factor (GCF) of two numbers is the largest number that divides both without a remainder. Find it by listing the factors of each and choosing the largest they share."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find the GCF of 12 and 18. Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. The common factors are 1, 2, 3, 6, and the greatest is 6. So the GCF is 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find the GCF of 8 and 12. Factors of 8: 1, 2, 4, 8. Factors of 12: 1, 2, 3, 4, 6, 12. The greatest shared factor is 4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is picking a common factor that is not the greatest, or confusing the GCF with a multiple. List all common factors and choose the largest."
+        },
+        {
+          "type": "summary",
+          "body": "The GCF is the largest factor two numbers share. Find it by listing factors of each and taking the biggest common one; it is used to simplify fractions."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you find the greatest common factor of 12 and 18?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.lcm.lesson",
+      "skill_id": "math.numerical_structure.lcm",
+      "title": "Least Common Multiple",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the least common multiple of two numbers."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that multiples of a number are its products with 1, 2, 3, and so on."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Two runners start together on a track. One returns to the start every 4 minutes, the other every 6 minutes. They meet at the start again after the least common multiple of 4 and 6, which is 12 minutes."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The least common multiple (LCM) of two numbers is the smallest number that both divide into evenly. Find it by listing the multiples of each and choosing the smallest they share."
+        },
+        {
+          "type": "worked_example",
+          "body": "Find the LCM of 4 and 6. Multiples of 4: 4, 8, 12, 16. Multiples of 6: 6, 12, 18. The smallest they share is 12, so the LCM is 12."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Find the LCM of 3 and 5. Multiples of 3: 3, 6, 9, 12, 15. Multiples of 5: 5, 10, 15. The smallest shared multiple is 15."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying the two numbers when a smaller common multiple exists, or confusing the LCM with the GCF. List multiples and take the smallest shared one."
+        },
+        {
+          "type": "summary",
+          "body": "The LCM is the smallest multiple two numbers share. Find it by listing multiples of each; it is used to find common denominators for fractions."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you find the least common multiple of 4 and 6?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.numerical_structure.order_of_operations.lesson",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "title": "Order of Operations",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to evaluate expressions with several operations by following the correct order."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your addition, subtraction, multiplication, and division facts. This lesson is about the order in which to use them."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If two people evaluate 2 + 3 x 4 differently, one gets 20 and the other 14. To make sure everyone gets the same answer, we agree on an order: multiplication before addition. So 2 + 3 x 4 is 2 + 12 = 14."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The order of operations is: first parentheses, then multiplication and division from left to right, then addition and subtraction from left to right. Multiplication and division rank equally, as do addition and subtraction."
+        },
+        {
+          "type": "worked_example",
+          "body": "Evaluate 8 + 2 x (5 - 1). First do the parentheses: 5 - 1 = 4. Then multiply: 2 x 4 = 8. Then add: 8 + 8 = 16."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Evaluate 20 - 4 x 3. Multiplication first: 4 x 3 = 12. Then subtract: 20 - 12 = 8."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The most common mistake is working strictly left to right, giving 2 + 3 x 4 = 20. Multiplication comes before addition, so the answer is 14. Do operations in the agreed order, not the order they appear."
+        },
+        {
+          "type": "summary",
+          "body": "Do parentheses first, then multiplication and division left to right, then addition and subtraction left to right. The agreed order gives every expression a single correct value."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In 2 + 3 x 4, which operation do you perform first, and what is the value?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.numerical_structure.even_odd.q1",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Is 8 even or odd?",
+      "answer_spec": {
+        "correct_answer": "even"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Can 8 be split into two equal whole groups?"
+        },
+        {
+          "level": 2,
+          "text": "8 is 4 and 4, so it is even."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 divides evenly by 2 (into 4 and 4), so it is even.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["even", "odd"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q2",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Is 15 even or odd?",
+      "answer_spec": {
+        "correct_answer": "odd"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the ones digit."
+        },
+        {
+          "level": 2,
+          "text": "15 ends in 5, which is odd."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 ends in 5 and cannot be split into two equal whole groups, so it is odd.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["even", "odd"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q3",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "An even number can always be divided evenly by which number?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Even means it splits into two equal groups."
+        },
+        {
+          "level": 2,
+          "text": "That number is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A number is even exactly when it is divisible by 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q4",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The number 128 ends in 8. Is it even or odd?",
+      "answer_spec": {
+        "correct_answer": "even"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Only the ones digit decides."
+        },
+        {
+          "level": 2,
+          "text": "8 is even, so 128 is even."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Only the ones digit matters; 128 ends in 8, so it is even.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["even", "odd"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "odd",
+          "misconception_id": "mc.math.numerical_structure.judged_by_first_digit"
+        }
+      ]
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q5",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the next even number after 8?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Even numbers go up by 2."
+        },
+        {
+          "level": 2,
+          "text": "8 plus 2 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Even numbers increase by 2, so after 8 comes 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q6",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the even numbers.",
+      "answer_spec": {
+        "correct_answer": ["6", "10", "12"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Even numbers end in 0, 2, 4, 6, or 8."
+        },
+        {
+          "level": 2,
+          "text": "Check the ones digit of each."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6, 10, and 12 end in even digits; 3, 9, and 15 end in odd digits.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3", "6", "9", "10", "12", "15"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q7",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the odd numbers.",
+      "answer_spec": {
+        "correct_answer": ["5", "7", "11"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Odd numbers end in 1, 3, 5, 7, or 9."
+        },
+        {
+          "level": 2,
+          "text": "Check the ones digit of each."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5, 7, and 11 end in odd digits; 2 and 8 end in even digits.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2", "5", "7", "8", "11"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q8",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 0 even or odd?",
+      "answer_spec": {
+        "correct_answer": "even"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Can 0 be divided by 2 with no remainder?"
+        },
+        {
+          "level": 2,
+          "text": "0 divided by 2 is 0, with nothing left over."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0 is divisible by 2 with no remainder, so 0 is even.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["even", "odd"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.even_odd.q9",
+      "skill_id": "math.numerical_structure.even_odd",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is the sum 3 + 5 even or odd?",
+      "answer_spec": {
+        "correct_answer": "even"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First add: 3 + 5 = 8."
+        },
+        {
+          "level": 2,
+          "text": "8 is even."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 + 5 = 8, and 8 is even, so the sum is even.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["even", "odd"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q1",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Is 3 a factor of 12?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 12 by 3."
+        },
+        {
+          "level": 2,
+          "text": "12 divided by 3 is 4 with no remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12 divided by 3 is 4 with no remainder, so 3 is a factor of 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q2",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 5 a factor of 12?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 12 by 5."
+        },
+        {
+          "level": 2,
+          "text": "12 divided by 5 leaves a remainder of 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12 divided by 5 is 2 with a remainder of 2, so 5 is not a factor of 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q3",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the factors of 12.",
+      "answer_spec": {
+        "correct_answer": ["2", "3", "4", "6"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A factor divides 12 with no remainder."
+        },
+        {
+          "level": 2,
+          "text": "Test each: does it divide 12 evenly?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2, 3, 4, and 6 all divide 12 evenly; 5 and 8 do not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2", "3", "4", "5", "6", "8"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q4",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the largest factor of 20 other than 20 itself?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the factor paired with the smallest factor above 1."
+        },
+        {
+          "level": 2,
+          "text": "20 = 2 times 10, and 10 is the largest factor below 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The factors of 20 are 1, 2, 4, 5, 10, 20; the largest below 20 is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q5",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a factor of 18?",
+      "answer_spec": {
+        "correct_answer": "6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Test each option by dividing 18 by it."
+        },
+        {
+          "level": 2,
+          "text": "18 divided by 6 is 3 with no remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "18 divided by 6 is 3 with no remainder, so 6 is a factor of 18; 4, 5, and 7 are not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["4", "5", "6", "7"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q6",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many factors does 6 have in total?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List them: 1, 2, 3, 6."
+        },
+        {
+          "level": 2,
+          "text": "Count the factors you listed."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The factors of 6 are 1, 2, 3, and 6, which is 4 factors.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q7",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the factors of 15.",
+      "answer_spec": {
+        "correct_answer": ["1", "3", "5", "15"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A factor divides 15 evenly."
+        },
+        {
+          "level": 2,
+          "text": "Remember 1 and 15 are always factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1, 3, 5, and 15 divide 15 evenly; 2 and 6 do not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1", "2", "3", "5", "6", "15"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q8",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the smallest factor of every whole number greater than 0?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 divides every number evenly."
+        },
+        {
+          "level": 2,
+          "text": "So the smallest factor is 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 is a factor of every whole number, and it is the smallest factor.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q9",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A factor divides a number leaving a remainder of what?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A factor fits evenly."
+        },
+        {
+          "level": 2,
+          "text": "Fitting evenly means nothing is left over."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A factor divides a number exactly, so the remainder is 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0", "1", "2", "any number"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.factors.q10",
+      "skill_id": "math.numerical_structure.factors",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "24 divided by 6 has no remainder. What is 24 divided by 6?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "6 times what is 24?"
+        },
+        {
+          "level": 2,
+          "text": "6 times 4 is 24."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "24 divided by 6 is 4, so 6 is a factor of 24.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q1",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the third multiple of 5?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 5 by 3."
+        },
+        {
+          "level": 2,
+          "text": "5 times 3 is 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The third multiple of 5 is 5 times 3, which is 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q2",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 20 a multiple of 4?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Is 20 in the list 4, 8, 12, 16, 20?"
+        },
+        {
+          "level": 2,
+          "text": "20 is 4 times 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20 equals 4 times 5, so 20 is a multiple of 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q3",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 18 a multiple of 5?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count by 5s: 5, 10, 15, 20."
+        },
+        {
+          "level": 2,
+          "text": "18 is skipped, so it is not a multiple of 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The multiples of 5 are 5, 10, 15, 20; 18 is not among them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q4",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the multiples of 3.",
+      "answer_spec": {
+        "correct_answer": ["3", "6", "9"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count by 3s: 3, 6, 9, 12."
+        },
+        {
+          "level": 2,
+          "text": "Which options appear in that count?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3, 6, and 9 are multiples of 3; 5, 8, and 10 are not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3", "5", "6", "8", "9", "10"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q5",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the next multiple of 6 after 12?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiples of 6 go up by 6."
+        },
+        {
+          "level": 2,
+          "text": "12 plus 6 is 18."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "After 12, the next multiple of 6 is 12 + 6 = 18.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q6",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the first multiple of 7 (that is, 7 times 1)?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 7 by 1."
+        },
+        {
+          "level": 2,
+          "text": "7 times 1 is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The first multiple of 7 is 7 times 1, which is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q7",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the multiples of 10.",
+      "answer_spec": {
+        "correct_answer": ["10", "20", "30"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiples of 10 end in 0."
+        },
+        {
+          "level": 2,
+          "text": "Which options end in 0?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10, 20, and 30 are multiples of 10; 15 and 25 are not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["10", "15", "20", "25", "30"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q8",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The multiples of a number go on forever. Is this true or false?",
+      "answer_spec": {
+        "correct_answer": "True"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You can always multiply by a larger whole number."
+        },
+        {
+          "level": 2,
+          "text": "So there is no last multiple."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You can keep multiplying by larger whole numbers, so the multiples never end.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["True", "False"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.multiples.q9",
+      "skill_id": "math.numerical_structure.multiples",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the fifth multiple of 2?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 2 by 5."
+        },
+        {
+          "level": 2,
+          "text": "2 times 5 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The fifth multiple of 2 is 2 times 5, which is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q1",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Is 7 prime or composite?",
+      "answer_spec": {
+        "correct_answer": "prime"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 7."
+        },
+        {
+          "level": 2,
+          "text": "Only 1 and 7 divide it, which is exactly two factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 has exactly two factors, 1 and 7, so it is prime.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["prime", "composite"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q2",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 9 prime or composite?",
+      "answer_spec": {
+        "correct_answer": "composite"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 9."
+        },
+        {
+          "level": 2,
+          "text": "1, 3, and 9 divide it, which is more than two factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 has factors 1, 3, and 9, more than two, so it is composite.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["prime", "composite"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q3",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "How many factors does a prime number have?",
+      "answer_spec": {
+        "correct_answer": "exactly 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what makes a number prime."
+        },
+        {
+          "level": 2,
+          "text": "A prime has only 1 and itself as factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A prime number has exactly two factors: 1 and itself.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["exactly 2", "exactly 1", "more than 2", "0"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q4",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the prime numbers.",
+      "answer_spec": {
+        "correct_answer": ["2", "5", "11"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A prime has exactly two factors."
+        },
+        {
+          "level": 2,
+          "text": "Check each: does it have only 1 and itself?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2, 5, and 11 each have exactly two factors; 4, 9, and 6 have more than two.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2", "4", "5", "6", "9", "11"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q5",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 1 prime, composite, or neither?",
+      "answer_spec": {
+        "correct_answer": "neither"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "How many factors does 1 have?"
+        },
+        {
+          "level": 2,
+          "text": "1 has only one factor, itself, so it is neither."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 has only a single factor, so it is neither prime nor composite.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["prime", "composite", "neither"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "prime",
+          "misconception_id": "mc.math.numerical_structure.one_is_prime"
+        }
+      ]
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q6",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 2 a prime number?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 2."
+        },
+        {
+          "level": 2,
+          "text": "Only 1 and 2 divide it."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 has exactly two factors, 1 and 2, so it is prime; it is the only even prime.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q7",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the smallest prime number?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 is not prime."
+        },
+        {
+          "level": 2,
+          "text": "The next number, 2, has exactly two factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 is not prime, so the smallest prime is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q8",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the composite numbers.",
+      "answer_spec": {
+        "correct_answer": ["4", "6", "8"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A composite has more than two factors."
+        },
+        {
+          "level": 2,
+          "text": "Check which numbers can be divided by something besides 1 and itself."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4, 6, and 8 each have more than two factors; 7 and 13 are prime.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["4", "6", "7", "8", "13"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.prime_composite.q9",
+      "skill_id": "math.numerical_structure.prime_composite",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A composite number has how many factors?",
+      "answer_spec": {
+        "correct_answer": "more than 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare with a prime, which has exactly 2."
+        },
+        {
+          "level": 2,
+          "text": "Composite means it has extra factors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A composite number has more than two factors, unlike a prime.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["more than 2", "exactly 2", "exactly 1", "none"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q1",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the greatest common factor (GCF) of 12 and 18?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 12 and of 18."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 12 and 18 is 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q2",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the greatest common factor (GCF) of 8 and 12?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 8 and of 12."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 8 and 12 is 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q3",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the greatest common factor (GCF) of 15 and 25?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 15 and of 25."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 15 and 25 is 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q4",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the greatest common factor (GCF) of 6 and 9?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 6 and of 9."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 6 and 9 is 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q5",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the greatest common factor (GCF) of 7 and 14?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 7 and of 14."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 7 and 14 is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q6",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the greatest common factor (GCF) of 10 and 20?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 10 and of 20."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 10 and 20 is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q7",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the greatest common factor (GCF) of 24 and 36?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the factors of 24 and of 36."
+        },
+        {
+          "level": 2,
+          "text": "Find the largest factor they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The largest number that divides both 24 and 36 is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q8",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The GCF of two numbers is the largest number that does what?",
+      "answer_spec": {
+        "correct_answer": "divides both"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "GCF stands for greatest common factor."
+        },
+        {
+          "level": 2,
+          "text": "A factor divides a number evenly."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The GCF is the largest number that divides both numbers with no remainder.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["divides both", "is a multiple of both", "adds to both", "is prime"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.gcf.q9",
+      "skill_id": "math.numerical_structure.gcf",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two numbers share only the factor 1. What is their GCF?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The only common factor is 1."
+        },
+        {
+          "level": 2,
+          "text": "So the greatest common factor is 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "If the only shared factor is 1, then the GCF is 1 (such numbers are called relatively prime).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q1",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the least common multiple (LCM) of 4 and 6?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 4 and of 6."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 4 and 6 divide into is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q2",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the least common multiple (LCM) of 3 and 5?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 3 and of 5."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 3 and 5 divide into is 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q3",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the least common multiple (LCM) of 2 and 8?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 2 and of 8."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 2 and 8 divide into is 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q4",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the least common multiple (LCM) of 6 and 9?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 6 and of 9."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 6 and 9 divide into is 18.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q5",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the least common multiple (LCM) of 4 and 5?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 4 and of 5."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 4 and 5 divide into is 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q6",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the least common multiple (LCM) of 10 and 15?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 10 and of 15."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 10 and 15 divide into is 30.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q7",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the least common multiple (LCM) of 3 and 4?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the multiples of 3 and of 4."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest multiple they both share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The smallest number that both 3 and 4 divide into is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q8",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The LCM of two numbers is the smallest number that does what?",
+      "answer_spec": {
+        "correct_answer": "both divide into"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "LCM stands for least common multiple."
+        },
+        {
+          "level": 2,
+          "text": "A multiple is divisible by the number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The LCM is the smallest number that both numbers divide into evenly.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["both divide into", "divides both", "is a factor of both", "is prime"]
+      }
+    },
+    {
+      "question_id": "math.numerical_structure.lcm.q9",
+      "skill_id": "math.numerical_structure.lcm",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "To add 1/2 and 1/3 you need a common denominator. What is the LCM of 2 and 3?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List multiples of 2 and 3."
+        },
+        {
+          "level": 2,
+          "text": "The smallest shared multiple is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The LCM of 2 and 3 is 6, which is why 6 works as a common denominator for halves and thirds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q1",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate: 2 + 3 x 4",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 2 + 3 x 4 evaluates to 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q2",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate: (2 + 3) x 4",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, (2 + 3) x 4 evaluates to 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q3",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate: 20 - 4 x 3",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 20 - 4 x 3 evaluates to 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q4",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate: 10 - 6 / 2",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 10 - 6 / 2 evaluates to 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q5",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate: 12 / 2 + 1",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 12 / 2 + 1 evaluates to 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q6",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate: 2 x 3 + 4 x 5",
+      "answer_spec": {
+        "correct_answer": 26
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 2 x 3 + 4 x 5 evaluates to 26.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q7",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Evaluate: 8 + 2 x (5 - 1)",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 8 + 2 x (5 - 1) evaluates to 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q8",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate: 3 x (4 + 1)",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, 3 x (4 + 1) evaluates to 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q9",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Evaluate: (6 - 2) x (1 + 2)",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do parentheses first, then multiplication and division, then addition and subtraction."
+        },
+        {
+          "level": 2,
+          "text": "Work the highest-priority operation before the others."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Following the order of operations, (6 - 2) x (1 + 2) evaluates to 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q10",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In 2 + 3 x 4, which operation do you do first?",
+      "answer_spec": {
+        "correct_answer": "3 x 4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiplication ranks above addition."
+        },
+        {
+          "level": 2,
+          "text": "So multiply before you add."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplication comes before addition, so you compute 3 x 4 first, giving 2 + 12 = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3 x 4", "2 + 3", "left to right", "3 + 4"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "2 + 3",
+          "misconception_id": "mc.math.numerical_structure.strict_left_to_right"
+        }
+      ]
+    },
+    {
+      "question_id": "math.numerical_structure.order_of_operations.q11",
+      "skill_id": "math.numerical_structure.order_of_operations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate: 5 + 5 x 0",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiplication first: 5 x 0."
+        },
+        {
+          "level": 2,
+          "text": "Anything times 0 is 0, then add 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying first gives 5 x 0 = 0, then 5 + 0 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "common_wrong_answers": [
+        {
+          "value": 0,
+          "misconception_id": "mc.math.numerical_structure.strict_left_to_right"
+        }
+      ]
+    }
+  ]
+}

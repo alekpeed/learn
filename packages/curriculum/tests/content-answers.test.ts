@@ -11,6 +11,8 @@ const UNITS = [
   'number_foundations',
   'add_sub',
   'mult_div',
+  'numerical_structure',
+  'integers',
   'fractions',
   'decimals_percents',
   'algebra',

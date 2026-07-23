@@ -10,6 +10,8 @@ import courses from '../../../../content/mvp/courses.json';
 import numberFoundations from '../../../../content/mvp/units/number_foundations.json';
 import addSub from '../../../../content/mvp/units/add_sub.json';
 import multDiv from '../../../../content/mvp/units/mult_div.json';
+import numericalStructure from '../../../../content/mvp/units/numerical_structure.json';
+import integers from '../../../../content/mvp/units/integers.json';
 import fractions from '../../../../content/mvp/units/fractions.json';
 import decimalsPercents from '../../../../content/mvp/units/decimals_percents.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
@@ -26,6 +28,8 @@ const units: UnitFile[] = [
   numberFoundations,
   addSub,
   multDiv,
+  numericalStructure,
+  integers,
   fractions,
   decimalsPercents,
   algebra,

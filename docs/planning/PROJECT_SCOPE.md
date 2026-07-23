@@ -56,10 +56,11 @@ introductory-algebra + scientific-reasoning course. It is the full "initial subj
 
 - it does NOT by itself reach trigonometry (see section 4).
 
-Current authored coverage: **~51 of ~138 documented topics (~37%)** across **49 skills**.
-One unit is complete, eight are partial, seven are entirely missing. (Phase 10 authored the
-Decimals & Percentages content as one combined unit, `math.decimals_percents`, covering the
-core of documented units 7 and 8.)
+Current authored coverage: **~65 of ~138 documented topics (~47%)** across **63 skills**.
+Three units are complete, eight are partial, five are entirely missing. (Phase 10 authored
+the Decimals & Percentages content as one combined unit, `math.decimals_percents`, covering
+the core of documented units 7 and 8; Phase 11 authored Numerical Structure and Integers in
+full.)
 
 ### Mathematics course (`math.core`)
 
@@ -68,8 +69,8 @@ core of documented units 7 and 8.)
 | 1   | Number Foundations        |   6    | built       | complete                                                                                                                    |
 | 2   | Addition & Subtraction    |   8    | partial (7) | missing word problems                                                                                                       |
 | 3   | Multiplication & Division |   9    | partial (6) | missing arrays/groups, remainders, word problems                                                                            |
-| 4   | Numerical Structure       |   7    | missing     | even/odd, factors, multiples, primes, GCF, LCM, order of operations                                                         |
-| 5   | Integers                  |   7    | missing     | negatives, comparing, +-x/ integers, absolute value                                                                         |
+| 4   | Numerical Structure       |   7    | built       | Phase 11: even/odd, factors, multiples, primes, GCF, LCM, order of operations                                               |
+| 5   | Integers                  |   7    | built       | Phase 11: negatives, comparing, absolute value, add/subtract/multiply/divide integers                                       |
 | 6   | Fractions                 |   14   | partial (7) | missing comparing, subtract-unlike, multiply, divide, mixed numbers, word problems                                          |
 | 7   | Decimals                  |   8    | partial (7) | Phase 10 (`math.decimals_percents`): place value, fraction-decimal, compare, +- x/; missing rounding                        |
 | 8   | Percentages               |   7    | partial (3) | Phase 10: meaning, F-D-P conversion, percent of a quantity; missing finding whole/percent, increase-decrease, word problems |
@@ -78,8 +79,8 @@ core of documented units 7 and 8.)
 | 11  | Algebra Foundations       |   12   | partial (5) | missing constants, terms, coefficients, combining like terms, distributive, two-step, word problems                         |
 | 12  | Coordinate Plane & Graphs |   9    | missing     | axes/origin, ordered pairs, plotting, tables, reading graphs, rate of change, input/output, function machines, intro linear |
 
-Math authored: ~41 of 103 documented topics (39 skills, including the 8-skill Decimals &
-Percentages unit).
+Math authored: ~55 of 103 documented topics (53 skills, including the 8-skill Decimals &
+Percentages unit and the two complete 7-skill Phase 11 units).
 
 ### Scientific Reasoning course (`science.core`)
 
@@ -100,7 +101,7 @@ The documentation defines scope as four widening rings. Only the innermost is pa
 
 1. **Initial subject scope** (docs 01, 03, 05): the full ~138-topic curriculum in section 2
    - arithmetic through introductory algebra + coordinate plane/graphs, plus scientific
-     reasoning / measurement / data. ~37% built. Completing this ring satisfies the spec's
+     reasoning / measurement / data. ~47% built. Completing this ring satisfies the spec's
      Completion Rule (the entire scoped curriculum traversable through prerequisites,
      lessons, practice, mastery, and review).
 
@@ -162,9 +163,10 @@ is the other. Most pre-Phase-10 skills ship with one lesson and about two practi
 ## 6. Summary for a new session
 
 - The **engine is done**; the work is **curriculum content** (breadth) and **item depth**.
-- The documented course is **16 units / ~138 topics**; about **37% is authored** across
-  **49 skills** (1 unit complete, 8 partial, 7 missing). Phase 10 (Decimals & Percentages)
-  is the most recent addition, built at mastery-grade depth.
+- The documented course is **16 units / ~138 topics**; about **47% is authored** across
+  **63 skills** (3 units complete, 8 partial, 5 missing). Phases 10 (Decimals &
+  Percentages) and 11 (Numerical Structure, Integers) are the most recent additions, built
+  at mastery-grade depth.
 - Scope widens in four rings: initial curriculum -> Version 1 features -> Later Features
   -> long-term subjects (trig, calculus, sciences, and more).
 - The docs' authored curriculum stops at introductory algebra; **trig/calc are vision, not

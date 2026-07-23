@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "content_version": "0.4.0",
+  "content_version": "0.5.0",
   "courses": ["math.core", "science.core"],
   "generated_at": "2026-07-23T00:00:00Z",
-  "change_summary": "Adds the Decimals and Percentages unit (8 skills) between Fractions and Algebra, authored at mastery-grade depth. Prior slice: mathematics (number foundations through one-step equations) plus scientific reasoning and measurement."
+  "change_summary": "Adds the Numerical Structure (7 skills) and Integers (7 skills) units after Multiplication and Division, authored at mastery-grade depth. Prior additions: Decimals and Percentages (8 skills). Base slice: mathematics (number foundations through one-step equations) plus scientific reasoning and measurement."
 }

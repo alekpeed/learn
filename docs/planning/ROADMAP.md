@@ -59,13 +59,16 @@ every answer verified through the real validators. Still open from docs 7-8: rou
 decimals, finding the whole/percent, percent increase-decrease, and word problems (fold into
 the Phase 16 depth pass or a later backfill).
 
-### Phase 11 - Integers & Numerical Structure [content]
+### Phase 11 - Integers & Numerical Structure [content] - DONE
 
-New units `math.numerical_structure` (doc unit 4: even/odd, factors, multiples, primes,
-GCF, LCM, order of operations) and `math.integers` (doc unit 5: negatives, comparing,
-+-x/ integers, absolute value). ~14 topics. These are true prerequisites for algebra and
-were skipped in the initial slice; authoring them repairs a real gap in the dependency
-graph. Uses `numeric`, `multiple_choice`.
+Shipped two complete units, slotted after Multiplication and Division (course orders 4-5;
+Fractions/Decimals/Algebra shifted to 6-8). `math.numerical_structure` (7 skills: even/odd,
+factors, multiples, primes, GCF, LCM, order of operations) and `math.integers` (7 skills:
+negatives, comparing, absolute value, add/subtract/multiply/divide integers). Authored at
+mastery-grade depth (~10 items/skill, 135 total) using `numeric`, `multiple_choice`,
+`multi_select`, `ordering`; every answer verified through the real validators. These repair
+a real dependency gap (factors/LCM underlie fractions; integers underlie algebra); a later
+backfill can add them as explicit prerequisites to the existing Fractions and Algebra units.
 
 ### Phase 12 - Ratios & Proportional Reasoning + Measurement Foundations [content]
 

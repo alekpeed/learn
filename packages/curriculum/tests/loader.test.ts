@@ -16,6 +16,8 @@ const UNIT_FILES = [
   'units/number_foundations.json',
   'units/add_sub.json',
   'units/mult_div.json',
+  'units/numerical_structure.json',
+  'units/integers.json',
   'units/fractions.json',
   'units/decimals_percents.json',
   'units/algebra.json',
@@ -93,6 +95,17 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     );
     expect(pos('math.decimals_percents.percent_meaning')).toBeLessThan(
       pos('math.decimals_percents.percent_of_number'),
+    );
+    // Numerical Structure: primes come after factors; GCF after factors.
+    expect(pos('math.numerical_structure.factors')).toBeLessThan(
+      pos('math.numerical_structure.prime_composite'),
+    );
+    // Integers: subtracting builds on adding; dividing on multiplying.
+    expect(pos('math.integers.adding_integers')).toBeLessThan(
+      pos('math.integers.subtracting_integers'),
+    );
+    expect(pos('math.integers.multiplying_integers')).toBeLessThan(
+      pos('math.integers.dividing_integers'),
     );
   });
 
