@@ -1,7 +1,15 @@
 /** Validator interface types (doc 08 §2 Validation Engine). */
 
 export type ValidatorType =
-  'numeric' | 'fraction' | 'decimal' | 'percentage' | 'unit' | 'exact_choice' | 'structured';
+  | 'numeric'
+  | 'fraction'
+  | 'decimal'
+  | 'percentage'
+  | 'unit'
+  | 'exact_choice'
+  | 'structured'
+  | 'multi_select'
+  | 'ordering';
 
 export interface AnswerSpec {
   correct_answer: unknown;

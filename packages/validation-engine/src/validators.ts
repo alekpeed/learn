@@ -160,6 +160,43 @@ export function validateUnit(submitted: string, spec: AnswerSpec): ValidationOut
   };
 }
 
+/** Split a `|`-delimited selection/order into trimmed, non-empty parts. */
+function parseList(input: string): string[] {
+  return input
+    .split('|')
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+}
+
+function toStringArray(value: unknown): string[] {
+  if (Array.isArray(value)) return value.map((v) => String(v).trim());
+  if (typeof value === 'string') return parseList(value);
+  return [];
+}
+
+/** Multi-select: the chosen set must equal the correct set (order-independent). */
+export function validateMultiSelect(submitted: string, spec: AnswerSpec): ValidationOutcome {
+  const chosen = parseList(submitted);
+  const normalized = [...chosen].sort().join('|');
+  if (chosen.length === 0) {
+    return { correct: false, normalized, reason: 'nothing selected' };
+  }
+  const target = toStringArray(spec.correct_answer);
+  const setEq =
+    chosen.length === target.length &&
+    new Set(chosen).size === new Set([...chosen, ...target]).size;
+  return { correct: setEq, normalized };
+}
+
+/** Ordering: the submitted sequence must match the correct order exactly. */
+export function validateOrdering(submitted: string, spec: AnswerSpec): ValidationOutcome {
+  const order = parseList(submitted);
+  const normalized = order.join('|');
+  const target = toStringArray(spec.correct_answer);
+  const correct = order.length === target.length && order.every((v, i) => v === target[i]);
+  return { correct, normalized };
+}
+
 export function validateExactChoice(submitted: string, spec: AnswerSpec): ValidationOutcome {
   const value = submitted.trim();
   const normalized = value;
@@ -180,6 +217,8 @@ const VALIDATORS: Record<
   unit: validateUnit,
   exact_choice: validateExactChoice,
   structured: validateExactChoice,
+  multi_select: validateMultiSelect,
+  ordering: validateOrdering,
 };
 
 export function validateAnswer(

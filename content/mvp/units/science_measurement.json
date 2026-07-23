@@ -327,6 +327,23 @@
       "content_version": "0.1.0"
     },
     {
+      "question_id": "science.measurement.si_units.q3",
+      "skill_id": "science.measurement.si_units",
+      "type": "multi_select",
+      "difficulty": 2,
+      "prompt": "Select all of the SI base units.",
+      "parameters": { "options": ["meter", "kilogram", "second", "foot", "liter"] },
+      "answer_spec": { "correct_answer": ["meter", "kilogram", "second"] },
+      "validator": "multi_select",
+      "hints": [
+        { "level": 1, "text": "There are three here: one each for length, mass, and time." },
+        { "level": 2, "text": "Foot and liter are not SI base units." }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base units shown here are the meter (length), kilogram (mass), and second (time).",
+      "content_version": "0.1.0"
+    },
+    {
       "question_id": "science.measurement.length.q1",
       "skill_id": "science.measurement.length",
       "type": "unit",

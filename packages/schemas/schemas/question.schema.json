@@ -31,7 +31,9 @@
         "unit",
         "multiple_choice",
         "structured_reasoning",
-        "self_explanation_select"
+        "self_explanation_select",
+        "multi_select",
+        "ordering"
       ],
       "description": "structured_reasoning / self_explanation_select feed Understanding (DEC-009)"
     },
@@ -69,7 +71,9 @@
         "percentage",
         "unit",
         "exact_choice",
-        "structured"
+        "structured",
+        "multi_select",
+        "ordering"
       ],
       "description": "Which deterministic validator grades this item (doc 08 §2)."
     },

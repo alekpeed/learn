@@ -97,6 +97,32 @@ describe('unit validator (PRC-004)', () => {
   });
 });
 
+describe('multi-select validator', () => {
+  const spec = { correct_answer: ['meter', 'kilogram', 'second'] };
+  it('accepts the correct set regardless of order', () => {
+    expect(validateAnswer('multi_select', 'second|meter|kilogram', spec).correct).toBe(true);
+  });
+  it('rejects a wrong or incomplete set', () => {
+    expect(validateAnswer('multi_select', 'meter|kilogram', spec).correct).toBe(false);
+    expect(validateAnswer('multi_select', 'meter|kilogram|foot', spec).correct).toBe(false);
+    expect(validateAnswer('multi_select', '', spec).reason).toBe('nothing selected');
+  });
+});
+
+describe('ordering validator', () => {
+  const spec = { correct_answer: ['observe', 'question', 'hypothesize', 'test'] };
+  it('accepts the exact order', () => {
+    expect(validateAnswer('ordering', 'observe|question|hypothesize|test', spec).correct).toBe(
+      true,
+    );
+  });
+  it('rejects a wrong order', () => {
+    expect(validateAnswer('ordering', 'question|observe|hypothesize|test', spec).correct).toBe(
+      false,
+    );
+  });
+});
+
 describe('dispatch + exact choice', () => {
   it('routes by validator type', () => {
     expect(validateAnswer('exact_choice', '>', { correct_answer: '>' }).correct).toBe(true);

@@ -25,17 +25,47 @@ export function QuestionView({
   nextLabel?: string;
 }): JSX.Element {
   const practice = usePractice({ question, learnerId, repository });
-  const [value, setValue] = useState('');
 
   const options = Array.isArray((question.parameters as { options?: unknown })?.options)
     ? (question.parameters as { options: string[] }).options
     : null;
   const isChoice = CHOICE_TYPES.has(question.type) && options !== null;
+  const isMulti = question.type === 'multi_select' && options !== null;
+  const isOrder = question.type === 'ordering' && options !== null;
+
+  const [value, setValue] = useState('');
+  const [selected, setSelected] = useState<string[]>([]);
+  const [order, setOrder] = useState<string[]>(() => (isOrder ? [...(options as string[])] : []));
+
+  const answer = isMulti
+    ? [...selected].sort().join('|')
+    : isOrder
+      ? order.join('|')
+      : value.trim();
+  const canSubmit = isMulti
+    ? selected.length > 0
+    : isOrder
+      ? order.length > 0
+      : value.trim() !== '';
+
+  function toggle(opt: string): void {
+    setSelected((prev) => (prev.includes(opt) ? prev.filter((o) => o !== opt) : [...prev, opt]));
+  }
+
+  function move(index: number, delta: number): void {
+    setOrder((prev) => {
+      const next = [...prev];
+      const target = index + delta;
+      if (target < 0 || target >= next.length) return prev;
+      [next[index], next[target]] = [next[target] as string, next[index] as string];
+      return next;
+    });
+  }
 
   async function onSubmit(e: FormEvent): Promise<void> {
     e.preventDefault();
-    if (!value.trim() || practice.solved) return;
-    await practice.submit(value.trim());
+    if (!canSubmit || practice.solved) return;
+    await practice.submit(answer);
   }
 
   return (
@@ -43,7 +73,7 @@ export function QuestionView({
       <p className="question-prompt">{question.prompt}</p>
 
       <form onSubmit={onSubmit}>
-        {isChoice ? (
+        {isChoice && (
           <fieldset>
             <legend>Choose your answer</legend>
             {options!.map((opt) => (
@@ -60,7 +90,57 @@ export function QuestionView({
               </label>
             ))}
           </fieldset>
-        ) : (
+        )}
+
+        {isMulti && (
+          <fieldset>
+            <legend>Select all that apply</legend>
+            {options!.map((opt) => (
+              <label key={opt} className="choice">
+                <input
+                  type="checkbox"
+                  name="answer"
+                  value={opt}
+                  checked={selected.includes(opt)}
+                  onChange={() => toggle(opt)}
+                  disabled={practice.solved}
+                />
+                {opt}
+              </label>
+            ))}
+          </fieldset>
+        )}
+
+        {isOrder && (
+          <fieldset>
+            <legend>Put these in the correct order</legend>
+            <ol className="ordering-list">
+              {order.map((item, i) => (
+                <li key={item}>
+                  <span className="ordering-item">{item}</span>
+                  <button
+                    type="button"
+                    onClick={() => move(i, -1)}
+                    disabled={i === 0 || practice.solved}
+                    aria-label={`Move ${item} up`}
+                  >
+                    ↑
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => move(i, 1)}
+                    disabled={i === order.length - 1 || practice.solved}
+                    aria-label={`Move ${item} down`}
+                  >
+                    ↓
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </fieldset>
+        )}
+
+        {!isChoice && !isMulti && !isOrder && (
           <>
             <label htmlFor="answer-input">Your answer</label>
             <input
@@ -76,7 +156,7 @@ export function QuestionView({
         )}
 
         <div className="question-actions">
-          <button type="submit" disabled={!value.trim() || practice.solved}>
+          <button type="submit" disabled={!canSubmit || practice.solved}>
             Submit
           </button>
           <button type="button" onClick={() => practice.revealHint()} disabled={!practice.canHint}>

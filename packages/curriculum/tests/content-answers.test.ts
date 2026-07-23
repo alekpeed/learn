@@ -35,7 +35,9 @@ describe('MVP content answers validate deterministically (Phase 6)', () => {
   it('every question is accepted by its own declared validator', () => {
     const failures: string[] = [];
     for (const q of allQuestions()) {
-      const answer = String(q.answer_spec.correct_answer);
+      const raw = q.answer_spec.correct_answer;
+      // multi_select / ordering answers are arrays submitted as a `|`-joined list.
+      const answer = Array.isArray(raw) ? raw.join('|') : String(raw);
       const outcome = validateAnswer(q.validator as ValidatorType, answer, q.answer_spec);
       if (!outcome.correct) {
         failures.push(`${q.question_id} (${q.validator}) rejects "${answer}"`);

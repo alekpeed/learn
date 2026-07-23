@@ -441,6 +441,37 @@
       "dimensions": ["accuracy", "understanding"],
       "explanation": "Evidence is data that supports or challenges a claim, letting you judge it fairly.",
       "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.evidence.q3",
+      "skill_id": "science.thinking.evidence",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Put the steps of a simple investigation in order.",
+      "parameters": {
+        "options": [
+          "Make an observation",
+          "Ask a testable question",
+          "Form a hypothesis",
+          "Run a test and gather evidence"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": [
+          "Make an observation",
+          "Ask a testable question",
+          "Form a hypothesis",
+          "Run a test and gather evidence"
+        ]
+      },
+      "validator": "ordering",
+      "hints": [
+        { "level": 1, "text": "You notice something before you can ask about it." },
+        { "level": 2, "text": "A hypothesis comes after the question and before the test." }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You observe, then ask a testable question, then form a hypothesis, then test it to gather evidence.",
+      "content_version": "0.1.0"
     }
   ]
 }
