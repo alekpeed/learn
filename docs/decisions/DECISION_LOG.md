@@ -124,3 +124,17 @@ Alternatives: A hosted key-proxy backend (rejected for MVP — reintroduces the 
 Consequences: Real providers (`OpenAiProvider`, `AnthropicProvider`, `GeminiProvider`) implement the existing `TutorProvider` interface; the gateway still validates output and enforces isolation. A clear in-UI warning states the key is stored in the browser and sent directly to the provider (not for shared devices). When a hosted deployment arrives, move the key server-side behind the same interface.
 
 Related: 08, 10, 15; DEC-005, DEC-010.
+
+## DEC-016: Native desktop (Windows) deferred but kept possible
+
+Status: Accepted (2026-07-23)
+
+Context: A native Windows app is wanted, but not now — the requirement is that it remain *possible* at final build time without rework.
+
+Decision: Do not add a desktop shell yet. Keep the client a **static, local-first SPA** (bundled content, IndexedDB, localStorage; no server required to run) so it can be wrapped by Tauri (preferred: tiny installer, Windows WebView2) or Electron later with no application-code changes. Producing the Windows installer is a Windows-only compile step (a CI job on a Windows runner), added at packaging time.
+
+Reasons: The wrapper needs exactly what the app already is; deferring avoids build-toolchain complexity now while preserving the option.
+
+Consequences: Keep the app free of browser-only assumptions that a desktop webview would break; avoid hard dependencies on a hosted origin. When desktop is scheduled, add `apps/desktop` (Tauri) + a `windows-latest` CI build — no changes to the existing packages.
+
+Related: 03 (native apps listed as Later); DEC-004 (local-first), DEC-013 (IndexedDB).
