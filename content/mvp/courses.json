@@ -14,7 +14,9 @@
       { "unit_id": "math.integers", "title": "Integers", "order": 5 },
       { "unit_id": "math.fractions", "title": "Fractions", "order": 6 },
       { "unit_id": "math.decimals_percents", "title": "Decimals and Percentages", "order": 7 },
-      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 8 }
+      { "unit_id": "math.ratios", "title": "Ratios and Proportions", "order": 8 },
+      { "unit_id": "math.measurement", "title": "Measurement Foundations", "order": 9 },
+      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 10 }
     ]
   },
   {

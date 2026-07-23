@@ -14,6 +14,8 @@ import numericalStructure from '../../../../content/mvp/units/numerical_structur
 import integers from '../../../../content/mvp/units/integers.json';
 import fractions from '../../../../content/mvp/units/fractions.json';
 import decimalsPercents from '../../../../content/mvp/units/decimals_percents.json';
+import ratios from '../../../../content/mvp/units/ratios.json';
+import measurement from '../../../../content/mvp/units/measurement.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
 import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
 import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
@@ -32,6 +34,8 @@ const units: UnitFile[] = [
   integers,
   fractions,
   decimalsPercents,
+  ratios,
+  measurement,
   algebra,
   scienceThinking,
   scienceMeasurement,

@@ -70,12 +70,16 @@ mastery-grade depth (~10 items/skill, 135 total) using `numeric`, `multiple_choi
 a real dependency gap (factors/LCM underlie fractions; integers underlie algebra); a later
 backfill can add them as explicit prerequisites to the existing Fractions and Algebra units.
 
-### Phase 12 - Ratios & Proportional Reasoning + Measurement Foundations [content]
+### Phase 12 - Ratios & Proportional Reasoning + Measurement Foundations [content] - DONE
 
-New units `math.ratios` (doc unit 9) and `math.measurement` (doc unit 10: length, mass,
-time, temperature, area, volume, unit conversion, estimation). ~16 topics. Uses `numeric`,
-`fraction`, `percentage`, `unit`, `multiple_choice`. Bridges into the science measurement
-and proportional-reasoning skills.
+Shipped two complete units before Algebra (course orders 8-9; Algebra moved to 10).
+`math.ratios` (7 skills: ratio meaning, equivalent ratios, rates, unit rates, proportions,
+scale, direct proportionality, with word problems embedded as transfer items) and
+`math.measurement` (8 skills: length, mass, time, temperature, area, volume, unit
+conversion, estimation). Authored at mastery-grade depth (~8 items/skill, 124 total) using
+`numeric`, `decimal`, `fraction`, `unit`, `multiple_choice`, `multi_select`. The `unit`
+answers were checked against the validator's own conversion families so grading agrees;
+every answer verified through the real validators.
 
 ### Phase 13 - Algebra completion [content]
 

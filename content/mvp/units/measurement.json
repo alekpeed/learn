@@ -1,0 +1,2243 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.measurement.length",
+      "unit_id": "math.measurement",
+      "title": "Measuring Length",
+      "summary": "Length is measured in units such as millimeters, centimeters, meters, and kilometers. Each metric unit is ten or more times larger than the one before, so you convert by multiplying or dividing by powers of ten. Choose a unit that fits the size of the object.",
+      "objectives": [
+        "Choose a suitable metric unit for a length.",
+        "Convert between metric length units.",
+        "Compare two lengths."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.decimal_place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.measurement.mass",
+      "unit_id": "math.measurement",
+      "title": "Measuring Mass",
+      "summary": "Mass is the amount of matter in an object, measured in units such as milligrams, grams, and kilograms. As with length, metric mass units are related by powers of ten: 1000 mg make a gram and 1000 g make a kilogram.",
+      "objectives": [
+        "Choose a suitable metric unit for a mass.",
+        "Convert between metric mass units.",
+        "Compare two masses."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.decimal_place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.measurement.time",
+      "unit_id": "math.measurement",
+      "title": "Measuring Time",
+      "summary": "Time is measured in units such as seconds, minutes, and hours. Unlike length and mass, time is not based on tens: 60 seconds make a minute and 60 minutes make an hour. Converting uses these factors of 60.",
+      "objectives": [
+        "Convert between seconds, minutes, and hours.",
+        "Choose a suitable unit for a duration.",
+        "Find an elapsed time."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.measurement.temperature",
+      "unit_id": "math.measurement",
+      "title": "Measuring Temperature",
+      "summary": "Temperature tells how hot or cold something is, often in degrees Celsius. Water freezes at 0 degrees and boils at 100 degrees. Temperatures below freezing are negative, so working with temperature change uses integer addition and subtraction.",
+      "objectives": [
+        "Read and compare temperatures, including negatives.",
+        "Find a temperature change.",
+        "Relate freezing and boiling points of water."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.subtracting_integers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.measurement.area",
+      "unit_id": "math.measurement",
+      "title": "Area",
+      "summary": "Area is the amount of flat surface a shape covers, measured in square units. The area of a rectangle is its length times its width, and the area of a square is a side times itself. Area is always given in square units, like square centimeters.",
+      "objectives": [
+        "Compute the area of a rectangle.",
+        "Compute the area of a square.",
+        "State that area uses square units."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.measurement.volume",
+      "unit_id": "math.measurement",
+      "title": "Volume",
+      "summary": "Volume is the amount of space a solid takes up, measured in cubic units. The volume of a box (rectangular prism) is length times width times height, and the volume of a cube is a side multiplied by itself three times.",
+      "objectives": [
+        "Compute the volume of a box.",
+        "Compute the volume of a cube.",
+        "State that volume uses cubic units."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.measurement.area",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.measurement.unit_conversion",
+      "unit_id": "math.measurement",
+      "title": "Unit Conversion",
+      "summary": "Converting between metric units means multiplying or dividing by a power of ten (for length and mass) or by 60 (for time). Going to a smaller unit multiplies, and going to a larger unit divides.",
+      "objectives": [
+        "Convert length and mass across metric units.",
+        "Convert time units.",
+        "Decide whether to multiply or divide when converting."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.measurement.length",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.measurement.mass",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.measurement.estimation",
+      "unit_id": "math.measurement",
+      "title": "Estimation and Reasonableness",
+      "summary": "Estimation gives a quick, approximate answer by rounding numbers or using benchmarks, and it helps you judge whether a result or a measurement is reasonable. A door about 2 meters tall is reasonable; 2 kilometers is not.",
+      "objectives": [
+        "Estimate a calculation by rounding.",
+        "Judge whether a measurement is reasonable.",
+        "Choose a sensible benchmark for a size."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.number_foundations.rounding",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.measurement.length.lesson",
+      "skill_id": "math.measurement.length",
+      "title": "Measuring Length",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to choose length units, convert between them, and compare lengths."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall place value and multiplying or dividing by 10 and 100. Metric conversions use these directly."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "You measure a pencil in centimeters, a room in meters, and a journey in kilometers, choosing a unit that gives a convenient number. The metric system is built on tens: 10 mm make a centimeter, 100 cm make a meter, 1000 m make a kilometer."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Common metric length units are the millimeter (mm), centimeter (cm), meter (m), and kilometer (km). Conversions: 1 cm = 10 mm, 1 m = 100 cm, 1 km = 1000 m. Multiply to go to smaller units, divide to go to larger units."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2 meters to centimeters. Since 1 m = 100 cm, multiply: 2 times 100 = 200 cm."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Convert 500 cm to meters. Since 100 cm = 1 m, divide: 500 divided by 100 = 5 m."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying when you should divide. Going to a smaller unit multiplies (more of them fit); going to a larger unit divides."
+        },
+        {
+          "type": "summary",
+          "body": "Length uses mm, cm, m, and km, related by powers of ten. Multiply to convert to smaller units and divide to convert to larger ones; pick a unit that suits the object."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How many centimeters are in 3 meters, and how did you convert?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.mass.lesson",
+      "skill_id": "math.measurement.mass",
+      "title": "Measuring Mass",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to choose mass units, convert between them, and compare masses."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall multiplying and dividing by 1000, and how metric length units scaled by powers of ten. Mass works the same way."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "You weigh a feather in grams, a person in kilograms, and a grain of medicine in milligrams. The metric system links them by thousands: 1000 mg make a gram, and 1000 g make a kilogram."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Common metric mass units are the milligram (mg), gram (g), and kilogram (kg). Conversions: 1 g = 1000 mg and 1 kg = 1000 g. Multiply to convert to smaller units and divide to convert to larger units."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2 kilograms to grams. Since 1 kg = 1000 g, multiply: 2 times 1000 = 2000 g."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Convert 500 grams to kilograms. Since 1000 g = 1 kg, divide: 500 divided by 1000 = 0.5 kg."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is confusing grams and kilograms, which differ by a factor of 1000. Always check which unit is larger before converting."
+        },
+        {
+          "type": "summary",
+          "body": "Mass uses mg, g, and kg, related by thousands. Multiply to convert to smaller units and divide to convert to larger ones."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How many grams are in 3 kilograms, and how did you convert?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.time.lesson",
+      "skill_id": "math.measurement.time",
+      "title": "Measuring Time",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to convert between seconds, minutes, and hours and find elapsed times."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your multiplication and division facts. Time conversions use 60, not powers of ten."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A clock reminds us that time units are grouped by 60: sixty seconds fill a minute, and sixty minutes fill an hour. So 2 minutes is 2 groups of 60 seconds, which is 120 seconds."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Common time units are the second (s), minute (min), and hour (h). Conversions: 1 min = 60 s and 1 h = 60 min. Multiply to convert to smaller units and divide to convert to larger units."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2 minutes to seconds. Since 1 min = 60 s, multiply: 2 times 60 = 120 s."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Convert 2 hours to minutes. Since 1 h = 60 min, multiply: 2 times 60 = 120 min."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is converting time as if it used 100 instead of 60. Remember that an hour has 60 minutes, not 100."
+        },
+        {
+          "type": "summary",
+          "body": "Time uses seconds, minutes, and hours, related by 60. Multiply to convert to smaller units and divide to convert to larger ones."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How many seconds are in 3 minutes, and what factor did you use?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.temperature.lesson",
+      "skill_id": "math.measurement.temperature",
+      "title": "Measuring Temperature",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to compare temperatures and calculate temperature changes, including below zero."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall adding and subtracting integers. A temperature below zero is a negative number, and a change is a difference."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A thermometer is a vertical number line. On the Celsius scale, water freezes at 0 degrees and boils at 100 degrees. A cold winter day might be -5 degrees, five below freezing."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Temperature in degrees Celsius uses 0 for the freezing point of water and 100 for the boiling point. A rise is a positive change and a drop is a negative change; the amount of change is found by subtracting the two temperatures."
+        },
+        {
+          "type": "worked_example",
+          "body": "The temperature is 5 degrees and drops 8 degrees. The new temperature is 5 - 8 = -3 degrees, three below freezing."
+        },
+        {
+          "type": "guided_practice",
+          "body": "The temperature rises from -5 degrees to 3 degrees. The change is 3 - (-5) = 3 + 5 = 8 degrees warmer."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is ignoring the sign when crossing zero. Use integer rules: dropping below zero gives a negative temperature, and a rise from a negative adds."
+        },
+        {
+          "type": "summary",
+          "body": "Temperature is measured in degrees, with water freezing at 0 and boiling at 100. Negative temperatures are below freezing, and changes are found by subtracting, using integer rules."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If it is 2 degrees and the temperature falls 6 degrees, what is the new temperature?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.area.lesson",
+      "skill_id": "math.measurement.area",
+      "title": "Area",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the area of rectangles and squares and label it in square units."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall multiplication and that a rectangle can be seen as rows and columns of unit squares."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Cover a rectangle with unit squares. A rectangle 3 cm by 4 cm holds 3 rows of 4 squares, which is 12 squares, so its area is 12 square centimeters. Multiplying length by width counts these squares quickly."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Area is the amount of surface a flat shape covers, measured in square units. For a rectangle, area = length times width. For a square, area = side times side. Units are squared, such as square centimeters."
+        },
+        {
+          "type": "worked_example",
+          "body": "A rectangle is 3 cm by 4 cm. Its area is 3 times 4 = 12 square centimeters."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A square has a side of 5 cm. Its area is 5 times 5 = 25 square centimeters."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding the sides instead of multiplying (that gives perimeter, not area), or forgetting to use square units."
+        },
+        {
+          "type": "summary",
+          "body": "Area measures surface in square units. Rectangle area is length times width; square area is side times side."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the area of a rectangle 6 m by 2 m, and why is it in square meters?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.volume.lesson",
+      "skill_id": "math.measurement.volume",
+      "title": "Volume",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the volume of boxes and cubes and label it in cubic units."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall area as length times width. Volume extends this by one more dimension, height."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Fill a box with unit cubes. A box 2 by 3 by 4 holds a bottom layer of 2 times 3 = 6 cubes, and there are 4 such layers, giving 24 cubes. So its volume is 24 cubic units."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Volume is the space a solid occupies, measured in cubic units. For a box (rectangular prism), volume = length times width times height. For a cube, volume = side times side times side. Units are cubed, such as cubic centimeters."
+        },
+        {
+          "type": "worked_example",
+          "body": "A box is 2 cm by 3 cm by 4 cm. Its volume is 2 times 3 times 4 = 24 cubic centimeters."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A cube has a side of 3 cm. Its volume is 3 times 3 times 3 = 27 cubic centimeters."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is using square units for volume or multiplying only two dimensions. Volume needs all three dimensions and cubic units."
+        },
+        {
+          "type": "summary",
+          "body": "Volume measures space in cubic units. Box volume is length times width times height; cube volume is side times side times side."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the volume of a box 5 by 2 by 2 cm, and why is it in cubic centimeters?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.unit_conversion.lesson",
+      "skill_id": "math.measurement.unit_conversion",
+      "title": "Unit Conversion",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to convert measurements between units and decide whether to multiply or divide."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the metric relationships: 1 cm = 10 mm, 1 m = 100 cm, 1 km = 1000 m, 1 g = 1000 mg, 1 kg = 1000 g, and 1 min = 60 s, 1 h = 60 min."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A smaller unit needs more of them to make the same amount, so converting to a smaller unit multiplies. A larger unit needs fewer, so converting to a larger unit divides. 4 km is many meters (4000), but 2500 mg is only a few grams (2.5)."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To convert to a smaller unit, multiply by the conversion factor; to convert to a larger unit, divide by it. The factor is a power of ten for metric length and mass, and 60 for the second-minute-hour steps of time."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 4 kilometers to meters. Meters are smaller, so multiply by 1000: 4 times 1000 = 4000 m."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Convert 250 centimeters to meters. Meters are larger, so divide by 100: 250 divided by 100 = 2.5 m."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying when you should divide. Ask whether the new unit is smaller (multiply) or larger (divide) than the old one."
+        },
+        {
+          "type": "summary",
+          "body": "Convert to a smaller unit by multiplying and to a larger unit by dividing, using the correct factor (a power of ten for length and mass, 60 for time)."
+        },
+        {
+          "type": "review_prompt",
+          "body": "To convert meters to centimeters, do you multiply or divide, and by what?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.measurement.estimation.lesson",
+      "skill_id": "math.measurement.estimation",
+      "title": "Estimation and Reasonableness",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to estimate calculations and judge whether measurements are reasonable."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall rounding to the nearest ten or hundred, which makes numbers easier to work with in your head."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Before trusting an answer, a quick estimate acts as a sanity check. To estimate 48 times 2, round 48 to 50 and get about 100. And common sense says a door is about 2 meters tall, not 2 centimeters or 2 kilometers."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Estimation replaces numbers with nearby round numbers, or uses known benchmarks, to get an approximate result quickly. A measurement is reasonable when its size matches a sensible benchmark for the object."
+        },
+        {
+          "type": "worked_example",
+          "body": "Estimate 19 + 22. Round 19 to 20 and 22 to 20; the estimate is 20 + 20 = 40. The exact answer, 41, is close, so 40 is a good estimate."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Estimate 302 - 99 by rounding to 300 - 100. The estimate is 200, close to the exact 203."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is choosing an unreasonable unit or benchmark, like saying an apple has a mass of 150 kilograms. Compare with a familiar object to check reasonableness."
+        },
+        {
+          "type": "summary",
+          "body": "Estimation uses rounding or benchmarks for a quick approximate answer and a reasonableness check. A good estimate is close to the exact value and matches sensible benchmarks."
+        },
+        {
+          "type": "review_prompt",
+          "body": "About how tall is a typical door, and how would you estimate 48 times 2?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.measurement.length.q1",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "How many centimeters are in 1 meter?",
+      "answer_spec": {
+        "correct_answer": "100 cm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 meter equals 100 centimeters."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 100 cm."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 meter is 100 centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.length.q2",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "Convert 2 meters to centimeters.",
+      "answer_spec": {
+        "correct_answer": "200 cm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply meters by 100."
+        },
+        {
+          "level": 2,
+          "text": "2 times 100 is 200."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 meters is 2 times 100 = 200 centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.length.q3",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "How many millimeters are in 1 centimeter?",
+      "answer_spec": {
+        "correct_answer": "10 mm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 centimeter equals 10 millimeters."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 10 mm."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 centimeter is 10 millimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.length.q4",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 3 kilometers to meters.",
+      "answer_spec": {
+        "correct_answer": "3000 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply kilometers by 1000."
+        },
+        {
+          "level": 2,
+          "text": "3 times 1000 is 3000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 kilometers is 3 times 1000 = 3000 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.length.q5",
+      "skill_id": "math.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which unit is best for measuring the length of a pencil?",
+      "answer_spec": {
+        "correct_answer": "centimeters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A pencil is small, but not tiny."
+        },
+        {
+          "level": 2,
+          "text": "Centimeters give a convenient number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A pencil is a few centimeters to about 20 cm long, so centimeters are the best unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["centimeters", "kilometers", "meters", "liters"]
+      }
+    },
+    {
+      "question_id": "math.measurement.length.q6",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 500 centimeters to meters.",
+      "answer_spec": {
+        "correct_answer": "5 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide centimeters by 100."
+        },
+        {
+          "level": 2,
+          "text": "500 divided by 100 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "500 centimeters is 500 / 100 = 5 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.length.q7",
+      "skill_id": "math.measurement.length",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A line is 4 cm long and you extend it by 3 cm. What is its total length in centimeters?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the two lengths."
+        },
+        {
+          "level": 2,
+          "text": "4 + 3 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The total length is 4 + 3 = 7 centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.length.q8",
+      "skill_id": "math.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is longer, 1 kilometer or 900 meters?",
+      "answer_spec": {
+        "correct_answer": "1 kilometer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 1 km to meters: 1000 m."
+        },
+        {
+          "level": 2,
+          "text": "1000 m is more than 900 m."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 kilometer is 1000 meters, which is longer than 900 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1 kilometer", "900 meters"]
+      }
+    },
+    {
+      "question_id": "math.measurement.length.q9",
+      "skill_id": "math.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 1.5 meters to centimeters.",
+      "answer_spec": {
+        "correct_answer": "150 cm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 100."
+        },
+        {
+          "level": 2,
+          "text": "1.5 times 100 is 150."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1.5 meters is 1.5 times 100 = 150 centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.mass.q1",
+      "skill_id": "math.measurement.mass",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "How many grams are in 1 kilogram?",
+      "answer_spec": {
+        "correct_answer": "1000 g"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 kilogram equals 1000 grams."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 1000 g."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 kilogram is 1000 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.mass.q2",
+      "skill_id": "math.measurement.mass",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "Convert 2 kilograms to grams.",
+      "answer_spec": {
+        "correct_answer": "2000 g"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply kilograms by 1000."
+        },
+        {
+          "level": 2,
+          "text": "2 times 1000 is 2000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 kilograms is 2 times 1000 = 2000 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.mass.q3",
+      "skill_id": "math.measurement.mass",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 500 grams to kilograms.",
+      "answer_spec": {
+        "correct_answer": "0.5 kg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide grams by 1000."
+        },
+        {
+          "level": 2,
+          "text": "500 divided by 1000 is 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "500 grams is 500 / 1000 = 0.5 kilograms.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.mass.q4",
+      "skill_id": "math.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which unit is best for the mass of an apple?",
+      "answer_spec": {
+        "correct_answer": "grams"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An apple is light but not tiny."
+        },
+        {
+          "level": 2,
+          "text": "Grams give a convenient number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An apple has a mass of roughly 150 grams, so grams are the best unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["grams", "kilometers", "liters", "seconds"]
+      }
+    },
+    {
+      "question_id": "math.measurement.mass.q5",
+      "skill_id": "math.measurement.mass",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 3 kilograms to grams.",
+      "answer_spec": {
+        "correct_answer": "3000 g"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 1000."
+        },
+        {
+          "level": 2,
+          "text": "3 times 1000 is 3000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 kilograms is 3 times 1000 = 3000 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.mass.q6",
+      "skill_id": "math.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is heavier, 1 kilogram or 900 grams?",
+      "answer_spec": {
+        "correct_answer": "1 kilogram"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 1 kg to grams: 1000 g."
+        },
+        {
+          "level": 2,
+          "text": "1000 g is more than 900 g."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 kilogram is 1000 grams, which is heavier than 900 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1 kilogram", "900 grams"]
+      }
+    },
+    {
+      "question_id": "math.measurement.mass.q7",
+      "skill_id": "math.measurement.mass",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "How many milligrams are in 1 gram?",
+      "answer_spec": {
+        "correct_answer": "1000 mg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 gram equals 1000 milligrams."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 1000 mg."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 gram is 1000 milligrams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.mass.q8",
+      "skill_id": "math.measurement.mass",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A box has a mass of 2 kg and you add 3 kg. What is the total mass in kilograms?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the masses."
+        },
+        {
+          "level": 2,
+          "text": "2 + 3 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The total mass is 2 + 3 = 5 kilograms.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.time.q1",
+      "skill_id": "math.measurement.time",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "How many seconds are in 1 minute?",
+      "answer_spec": {
+        "correct_answer": "60 s"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 minute equals 60 seconds."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 60 s."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 minute is 60 seconds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.time.q2",
+      "skill_id": "math.measurement.time",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "Convert 2 minutes to seconds.",
+      "answer_spec": {
+        "correct_answer": "120 s"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply minutes by 60."
+        },
+        {
+          "level": 2,
+          "text": "2 times 60 is 120."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 minutes is 2 times 60 = 120 seconds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.time.q3",
+      "skill_id": "math.measurement.time",
+      "type": "unit",
+      "difficulty": 1,
+      "prompt": "How many minutes are in 1 hour?",
+      "answer_spec": {
+        "correct_answer": "60 min"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 hour equals 60 minutes."
+        },
+        {
+          "level": 2,
+          "text": "So the answer is 60 min."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 hour is 60 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.time.q4",
+      "skill_id": "math.measurement.time",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 2 hours to minutes.",
+      "answer_spec": {
+        "correct_answer": "120 min"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply hours by 60."
+        },
+        {
+          "level": 2,
+          "text": "2 times 60 is 120."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 hours is 2 times 60 = 120 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.time.q5",
+      "skill_id": "math.measurement.time",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "A movie lasts 90 minutes. How many hours is that, as a decimal?",
+      "answer_spec": {
+        "correct_answer": 1.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide minutes by 60."
+        },
+        {
+          "level": 2,
+          "text": "90 divided by 60 is 1.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "90 minutes is 90 / 60 = 1.5 hours.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.time.q6",
+      "skill_id": "math.measurement.time",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which unit is best for timing a short running race?",
+      "answer_spec": {
+        "correct_answer": "seconds"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A race is over quickly."
+        },
+        {
+          "level": 2,
+          "text": "Seconds give useful detail."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A short race lasts only seconds, so seconds are the best unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["seconds", "hours", "days", "years"]
+      }
+    },
+    {
+      "question_id": "math.measurement.time.q7",
+      "skill_id": "math.measurement.time",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 3 hours to minutes.",
+      "answer_spec": {
+        "correct_answer": "180 min"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 60."
+        },
+        {
+          "level": 2,
+          "text": "3 times 60 is 180."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 hours is 3 times 60 = 180 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.time.q8",
+      "skill_id": "math.measurement.time",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A class starts at 2:00 and ends at 5:00. How many hours long is it?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the hours from 2 to 5."
+        },
+        {
+          "level": 2,
+          "text": "5 - 2 = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "From 2:00 to 5:00 is 5 - 2 = 3 hours.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.measurement.temperature.q1",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "The temperature is 5 degrees and drops 8 degrees. What is the new temperature, in degrees?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the drop from the start."
+        },
+        {
+          "level": 2,
+          "text": "5 - 8 = -3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 degrees dropping 8 gives 5 - 8 = -3 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.temperature.q2",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "It is -2 degrees and the temperature rises 6 degrees. What is the new temperature, in degrees?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the rise to the start."
+        },
+        {
+          "level": 2,
+          "text": "-2 + 6 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-2 degrees rising 6 gives -2 + 6 = 4 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.temperature.q3",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Water freezes at 0 degrees Celsius. If it is 4 degrees, how many degrees above freezing is it?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the freezing point."
+        },
+        {
+          "level": 2,
+          "text": "4 - 0 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 degrees is 4 - 0 = 4 degrees above freezing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.temperature.q4",
+      "skill_id": "math.measurement.temperature",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which is colder, -10 degrees or 2 degrees?",
+      "answer_spec": {
+        "correct_answer": "-10 degrees"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Lower on the thermometer is colder."
+        },
+        {
+          "level": 2,
+          "text": "-10 is below zero."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "-10 degrees is below zero, colder than 2 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["-10 degrees", "2 degrees"]
+      }
+    },
+    {
+      "question_id": "math.measurement.temperature.q5",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The temperature rises from -5 degrees to 3 degrees. How many degrees did it rise?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract: 3 - (-5)."
+        },
+        {
+          "level": 2,
+          "text": "3 + 5 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The rise is 3 - (-5) = 3 + 5 = 8 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.measurement.temperature.q6",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "At night it was -1 degree; by noon it was 9 degrees. What was the change in degrees?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract: 9 - (-1)."
+        },
+        {
+          "level": 2,
+          "text": "9 + 1 = 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The change is 9 - (-1) = 9 + 1 = 10 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.temperature.q7",
+      "skill_id": "math.measurement.temperature",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Water boils at 100 degrees Celsius. Is this true or false?",
+      "answer_spec": {
+        "correct_answer": "True"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the boiling point of water."
+        },
+        {
+          "level": 2,
+          "text": "It is 100 degrees Celsius."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the Celsius scale, water boils at 100 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["True", "False"]
+      }
+    },
+    {
+      "question_id": "math.measurement.temperature.q8",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The temperature drops from 2 degrees to -6 degrees. How many degrees did it fall?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract: 2 - (-6)."
+        },
+        {
+          "level": 2,
+          "text": "2 + 6 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The fall is 2 - (-6) = 2 + 6 = 8 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.area.q1",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle is 3 cm by 4 cm. What is its area, in square centimeters?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply length by width."
+        },
+        {
+          "level": 2,
+          "text": "3 times 4 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 3 times 4 = 12 square centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "common_wrong_answers": [
+        {
+          "value": 14,
+          "misconception_id": "mc.math.measurement.added_sides_for_area"
+        }
+      ]
+    },
+    {
+      "question_id": "math.measurement.area.q2",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A square has a side of 5 cm. What is its area, in square centimeters?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the side by itself."
+        },
+        {
+          "level": 2,
+          "text": "5 times 5 is 25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 5 times 5 = 25 square centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.area.q3",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle is 6 m by 2 m. What is its area, in square meters?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply length by width."
+        },
+        {
+          "level": 2,
+          "text": "6 times 2 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 6 times 2 = 12 square meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.area.q4",
+      "skill_id": "math.measurement.area",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Area is measured in what kind of units?",
+      "answer_spec": {
+        "correct_answer": "square"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area covers a flat surface."
+        },
+        {
+          "level": 2,
+          "text": "The units are squared."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Area is measured in square units, such as square centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["square", "straight", "cubic", "round"]
+      }
+    },
+    {
+      "question_id": "math.measurement.area.q5",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle is 10 cm by 3 cm. What is its area, in square centimeters?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply length by width."
+        },
+        {
+          "level": 2,
+          "text": "10 times 3 is 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 10 times 3 = 30 square centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.area.q6",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A square has a side of 8 m. What is its area, in square meters?",
+      "answer_spec": {
+        "correct_answer": 64
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the side by itself."
+        },
+        {
+          "level": 2,
+          "text": "8 times 8 is 64."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 8 times 8 = 64 square meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.area.q7",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle is 2 cm by 7 cm. What is its area, in square centimeters?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply length by width."
+        },
+        {
+          "level": 2,
+          "text": "2 times 7 is 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The area is 2 times 7 = 14 square centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.area.q8",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A room is 4 m by 5 m. What is its floor area, in square meters?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply length by width."
+        },
+        {
+          "level": 2,
+          "text": "4 times 5 is 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The area is 4 times 5 = 20 square meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.measurement.volume.q1",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A box is 2 cm by 3 cm by 4 cm. What is its volume, in cubic centimeters?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply all three dimensions."
+        },
+        {
+          "level": 2,
+          "text": "2 times 3 times 4 is 24."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 2 times 3 times 4 = 24 cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.volume.q2",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A cube has a side of 3 cm. What is its volume, in cubic centimeters?",
+      "answer_spec": {
+        "correct_answer": 27
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the side three times."
+        },
+        {
+          "level": 2,
+          "text": "3 times 3 times 3 is 27."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 3 times 3 times 3 = 27 cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.volume.q3",
+      "skill_id": "math.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Volume is measured in what kind of units?",
+      "answer_spec": {
+        "correct_answer": "cubic"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Volume fills a solid."
+        },
+        {
+          "level": 2,
+          "text": "The units are cubed."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Volume is measured in cubic units, such as cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["cubic", "square", "straight", "round"]
+      }
+    },
+    {
+      "question_id": "math.measurement.volume.q4",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A box is 5 cm by 2 cm by 2 cm. What is its volume, in cubic centimeters?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply all three dimensions."
+        },
+        {
+          "level": 2,
+          "text": "5 times 2 times 2 is 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 5 times 2 times 2 = 20 cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.volume.q5",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A cube has a side of 2 m. What is its volume, in cubic meters?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the side three times."
+        },
+        {
+          "level": 2,
+          "text": "2 times 2 times 2 is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 2 times 2 times 2 = 8 cubic meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.volume.q6",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A tank is 10 cm by 10 cm by 5 cm. What is its volume, in cubic centimeters?",
+      "answer_spec": {
+        "correct_answer": 500
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply all three dimensions."
+        },
+        {
+          "level": 2,
+          "text": "10 times 10 times 5 is 500."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 10 times 10 times 5 = 500 cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.measurement.volume.q7",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A box is 1 cm by 6 cm by 3 cm. What is its volume, in cubic centimeters?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply all three dimensions."
+        },
+        {
+          "level": 2,
+          "text": "1 times 6 times 3 is 18."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The volume is 1 times 6 times 3 = 18 cubic centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q1",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 4 kilometers to meters.",
+      "answer_spec": {
+        "correct_answer": "4000 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meters are smaller, so multiply by 1000."
+        },
+        {
+          "level": 2,
+          "text": "4 times 1000 is 4000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 kilometers is 4 times 1000 = 4000 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q2",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 250 centimeters to meters.",
+      "answer_spec": {
+        "correct_answer": "2.5 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meters are larger, so divide by 100."
+        },
+        {
+          "level": 2,
+          "text": "250 divided by 100 is 2.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "250 centimeters is 250 / 100 = 2.5 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q3",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 3000 grams to kilograms.",
+      "answer_spec": {
+        "correct_answer": "3 kg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Kilograms are larger, so divide by 1000."
+        },
+        {
+          "level": 2,
+          "text": "3000 divided by 1000 is 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3000 grams is 3000 / 1000 = 3 kilograms.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q4",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 5 minutes to seconds.",
+      "answer_spec": {
+        "correct_answer": "300 s"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Seconds are smaller, so multiply by 60."
+        },
+        {
+          "level": 2,
+          "text": "5 times 60 is 300."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 minutes is 5 times 60 = 300 seconds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q5",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To convert meters to centimeters, you do what by 100?",
+      "answer_spec": {
+        "correct_answer": "multiply"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Centimeters are smaller than meters."
+        },
+        {
+          "level": 2,
+          "text": "Smaller unit means multiply."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Centimeters are smaller, so you multiply meters by 100 to convert.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["multiply", "divide", "add", "subtract"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "divide",
+          "misconception_id": "mc.math.measurement.wrong_conversion_direction"
+        }
+      ]
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q6",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 0.5 kilometers to meters.",
+      "answer_spec": {
+        "correct_answer": "500 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 1000."
+        },
+        {
+          "level": 2,
+          "text": "0.5 times 1000 is 500."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "0.5 kilometers is 0.5 times 1000 = 500 meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q7",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 2500 milligrams to grams.",
+      "answer_spec": {
+        "correct_answer": "2.5 g"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Grams are larger, so divide by 1000."
+        },
+        {
+          "level": 2,
+          "text": "2500 divided by 1000 is 2.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2500 milligrams is 2500 / 1000 = 2.5 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q8",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many centimeters are in 2.5 meters?",
+      "answer_spec": {
+        "correct_answer": 250
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply meters by 100."
+        },
+        {
+          "level": 2,
+          "text": "2.5 times 100 is 250."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2.5 meters is 2.5 times 100 = 250 centimeters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.estimation.q1",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "About how tall is a typical door?",
+      "answer_spec": {
+        "correct_answer": "2 meters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Picture a door next to a person."
+        },
+        {
+          "level": 2,
+          "text": "It is about 2 meters tall."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A typical door is about 2 meters tall.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["2 meters", "2 centimeters", "2 kilometers", "20 meters"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q2",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is a reasonable estimate for the mass of an apple?",
+      "answer_spec": {
+        "correct_answer": "150 grams"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An apple fits in your hand."
+        },
+        {
+          "level": 2,
+          "text": "Its mass is a small number of grams."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An apple has a mass of roughly 150 grams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["150 grams", "150 kilograms", "15 milligrams", "15 kilograms"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q3",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Estimate 19 + 22 by rounding each to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": "40"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round 19 to 20 and 22 to 20."
+        },
+        {
+          "level": 2,
+          "text": "20 + 20 is 40."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 20 + 20 = 40, close to the exact 41.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["40", "30", "50", "60"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q4",
+      "skill_id": "math.measurement.estimation",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Estimate 48 times 2 by first rounding 48 to 50. What is 50 times 2?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round 48 up to 50."
+        },
+        {
+          "level": 2,
+          "text": "50 times 2 is 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 48 to 50 gives 50 times 2 = 100, close to the exact 96.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.estimation.q5",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "About how long is a school bus?",
+      "answer_spec": {
+        "correct_answer": "10 meters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A bus carries many people."
+        },
+        {
+          "level": 2,
+          "text": "It is about 10 meters long."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A school bus is roughly 10 meters long.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["10 meters", "10 centimeters", "1 meter", "10 kilometers"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q6",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is a reasonable time to walk 1 kilometer?",
+      "answer_spec": {
+        "correct_answer": "about 12 minutes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "People walk about 5 km in an hour."
+        },
+        {
+          "level": 2,
+          "text": "So 1 km takes around 12 minutes."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Walking 1 km takes roughly 12 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["about 12 minutes", "about 12 seconds", "about 12 hours", "about 1 second"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q7",
+      "skill_id": "math.measurement.estimation",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Estimate 302 - 99 by rounding to 300 - 100. What is the estimate?",
+      "answer_spec": {
+        "correct_answer": 200
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round 302 to 300 and 99 to 100."
+        },
+        {
+          "level": 2,
+          "text": "300 - 100 is 200."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 300 - 100 = 200, close to the exact 203.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.measurement.estimation.q8",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "About how much water does a drinking glass hold?",
+      "answer_spec": {
+        "correct_answer": "250 milliliters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A glass is a small container."
+        },
+        {
+          "level": 2,
+          "text": "It holds a few hundred milliliters."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A drinking glass holds about 250 milliliters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["250 milliliters", "250 liters", "25 liters", "2500 liters"]
+      }
+    }
+  ]
+}

@@ -15,6 +15,8 @@ const UNITS = [
   'integers',
   'fractions',
   'decimals_percents',
+  'ratios',
+  'measurement',
   'algebra',
   'science_thinking',
   'science_measurement',

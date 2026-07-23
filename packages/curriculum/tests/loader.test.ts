@@ -20,6 +20,8 @@ const UNIT_FILES = [
   'units/integers.json',
   'units/fractions.json',
   'units/decimals_percents.json',
+  'units/ratios.json',
+  'units/measurement.json',
   'units/algebra.json',
   'units/science_thinking.json',
   'units/science_measurement.json',
@@ -107,6 +109,12 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     expect(pos('math.integers.multiplying_integers')).toBeLessThan(
       pos('math.integers.dividing_integers'),
     );
+    // Ratios: proportions build on equivalent ratios; scale builds on proportions.
+    expect(pos('math.ratios.equivalent_ratios')).toBeLessThan(pos('math.ratios.proportions'));
+    expect(pos('math.ratios.proportions')).toBeLessThan(pos('math.ratios.scale'));
+    // Measurement: volume builds on area; unit conversion on length.
+    expect(pos('math.measurement.area')).toBeLessThan(pos('math.measurement.volume'));
+    expect(pos('math.measurement.length')).toBeLessThan(pos('math.measurement.unit_conversion'));
   });
 
   it('every skill with questions has a validator on each question', () => {

@@ -1,0 +1,2094 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.ratios.ratio_meaning",
+      "unit_id": "math.ratios",
+      "title": "The Meaning of a Ratio",
+      "summary": "A ratio compares two quantities, telling how much of one there is for each amount of the other. The ratio 3 to 2, written 3:2, means 3 of the first for every 2 of the second. Order matters: 3:2 is different from 2:3.",
+      "objectives": [
+        "Write a ratio that compares two quantities.",
+        "Read a ratio in the correct order.",
+        "Relate a part-to-whole ratio to a fraction."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.fraction_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.mult_div_relationship",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.ratios.equivalent_ratios",
+      "unit_id": "math.ratios",
+      "title": "Equivalent Ratios",
+      "summary": "Two ratios are equivalent when they describe the same comparison. Multiplying or dividing both terms of a ratio by the same number gives an equivalent ratio, just like equivalent fractions. So 2:3, 4:6, and 6:9 are all equivalent.",
+      "objectives": [
+        "Create an equivalent ratio by multiplying or dividing both terms.",
+        "Decide whether two ratios are equivalent.",
+        "Write a ratio in simplest form."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.ratio_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.equivalent_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.ratios.rates",
+      "unit_id": "math.ratios",
+      "title": "Rates",
+      "summary": "A rate is a ratio that compares two quantities measured in different units, such as miles and hours. Dividing the first quantity by the second gives the rate, like miles per hour or cost per item.",
+      "objectives": [
+        "Identify a rate as a ratio of different units.",
+        "Compute a rate by dividing.",
+        "Express a rate with the correct 'per' units."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.ratio_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.division_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.ratios.unit_rates",
+      "unit_id": "math.ratios",
+      "title": "Unit Rates",
+      "summary": "A unit rate is a rate with a denominator of 1: how much of the first quantity there is for exactly one of the second, such as the price of one item. Unit rates make it easy to compare which option is the better value.",
+      "objectives": [
+        "Compute a unit rate.",
+        "Use a unit rate to compare two options.",
+        "Explain that a unit rate has a denominator of 1."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.rates",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.ratios.proportions",
+      "unit_id": "math.ratios",
+      "title": "Proportions",
+      "summary": "A proportion is a statement that two ratios are equal, such as 2/3 = x/9. You can solve for an unknown term by finding the factor that scales one ratio to the other, or by cross-multiplying. Proportions solve many everyday scaling problems.",
+      "objectives": [
+        "Recognize a proportion as two equal ratios.",
+        "Solve a proportion for a missing term.",
+        "Apply proportions to real scaling problems."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.equivalent_ratios",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.ratios.scale",
+      "unit_id": "math.ratios",
+      "title": "Scale",
+      "summary": "A scale relates a length in a drawing, map, or model to the real length it represents, such as 1 cm to 5 km. You use the scale as a ratio and multiply or divide to convert between drawing lengths and real lengths.",
+      "objectives": [
+        "Interpret a map or model scale.",
+        "Convert a drawing length to a real length.",
+        "Convert a real length to a drawing length."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.proportions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.ratios.direct_proportionality",
+      "unit_id": "math.ratios",
+      "title": "Direct Proportionality",
+      "summary": "Two quantities are directly proportional when one is always a fixed multiple of the other: if one doubles, so does the other. This fixed multiple is the constant of proportionality, and the relationship graphs as a straight line through the origin.",
+      "objectives": [
+        "Recognize a directly proportional relationship.",
+        "Find the constant of proportionality.",
+        "Use direct proportion to find an unknown value."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.proportions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.unit_rates",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.ratios.ratio_meaning.lesson",
+      "skill_id": "math.ratios.ratio_meaning",
+      "title": "The Meaning of a Ratio",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to write and read ratios that compare two quantities."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a fraction compares a part to a whole. A ratio is similar but can compare a part to another part, and the order of the two numbers matters."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If a fruit bowl has 3 apples and 2 oranges, the ratio of apples to oranges is 3 to 2. For every 3 apples there are 2 oranges. If you flip the order to 2 to 3, you are now comparing oranges to apples, which is a different statement."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A ratio compares two quantities and is written a:b or 'a to b'. Order matters: the first number goes with the first quantity named. A part-to-whole ratio can also be written as a fraction; with 3 apples out of 5 fruits, the apple fraction is 3/5."
+        },
+        {
+          "type": "representation",
+          "body": "Draw 3 apple circles and 2 orange circles. Grouping them shows 3 apples paired against 2 oranges, the ratio 3:2. All 5 circles together show that apples are 3/5 of the fruit."
+        },
+        {
+          "type": "worked_example",
+          "body": "A class has 5 boys and 3 girls. The ratio of boys to girls is 5:3, read '5 boys for every 3 girls'. The ratio of girls to boys would be 3:5."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A bag has 4 red and 1 blue marble. The ratio of red to blue is 4:1, meaning four reds for every blue."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is reversing the order. In a ratio of red to blue, the red count comes first. Another is confusing a part-to-part ratio with a part-to-whole fraction."
+        },
+        {
+          "type": "summary",
+          "body": "A ratio compares two quantities in a fixed order, written a:b. Part-to-whole ratios can be written as fractions, but order always matters."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In a bowl with 3 apples and 2 oranges, what is the ratio of apples to oranges, and why is order important?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.equivalent_ratios.lesson",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "title": "Equivalent Ratios",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to make equivalent ratios and check whether two ratios are equivalent."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall equivalent fractions: multiplying the top and bottom by the same number keeps the value. Ratios work the same way with both terms."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A drink mixed as 2 parts juice to 3 parts water tastes the same as 4 parts juice to 6 parts water; you have just made twice as much. Scaling both terms by the same factor keeps the comparison the same."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Two ratios are equivalent if one can be obtained from the other by multiplying or dividing both terms by the same nonzero number. A ratio is in simplest form when the two terms share no common factor other than 1."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 2:3 equivalent to 4:6? Multiply both terms of 2:3 by 2: 2 times 2 is 4, 3 times 2 is 6. That gives 4:6, so yes, they are equivalent."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Fill in the blank: 2:3 = 4:? Since 2 times 2 is 4, multiply 3 by 2 as well: 3 times 2 is 6. So 2:3 = 4:6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying only one term, or adding the same number to both terms. You must multiply (or divide) both terms by the same number."
+        },
+        {
+          "type": "summary",
+          "body": "Equivalent ratios describe the same comparison. Multiply or divide both terms by the same number to make one, and simplify by dividing out a common factor."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you check whether 2:3 and 6:9 are equivalent?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.rates.lesson",
+      "skill_id": "math.ratios.rates",
+      "title": "Rates",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to recognize and calculate rates."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a ratio compares two quantities and that division splits a total into equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Driving 120 miles in 2 hours, your speed is a rate: miles compared to hours. Dividing 120 by 2 tells you how many miles you cover in one hour, which is 60 miles per hour."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A rate is a ratio comparing two quantities with different units. To find a rate, divide the first quantity by the second. The word 'per' means 'for each', as in miles per hour or dollars per pound."
+        },
+        {
+          "type": "worked_example",
+          "body": "A printer prints 20 pages in 4 minutes. The rate in pages per minute is 20 divided by 4, which is 5 pages per minute."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A car travels 120 miles in 2 hours. Divide 120 by 2 to get 60 miles per hour."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is dividing in the wrong order. For a rate 'per hour', divide the miles by the hours, not the hours by the miles."
+        },
+        {
+          "type": "summary",
+          "body": "A rate compares quantities with different units. Divide the first quantity by the second to find it, and label it with 'per'."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you find the rate in miles per hour if you drive 150 miles in 3 hours?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.unit_rates.lesson",
+      "skill_id": "math.ratios.unit_rates",
+      "title": "Unit Rates",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find unit rates and use them to compare values."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a rate is found by dividing two quantities with different units."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A unit rate answers 'how much for just one?'. If 6 eggs cost $3, then one egg costs $3 divided by 6, which is $0.50. Unit rates let you compare deals fairly, item by item."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A unit rate is a rate expressed per one unit of the second quantity, so its denominator is 1. Find it by dividing the first quantity by the second, such as total cost divided by number of items."
+        },
+        {
+          "type": "worked_example",
+          "body": "A pack of 12 cookies comes in 2 boxes. The unit rate is 12 divided by 2, which is 6 cookies per box."
+        },
+        {
+          "type": "guided_practice",
+          "body": "6 eggs cost $3. The unit price is 3 divided by 6, which is $0.50 per egg."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is stopping at a rate that is not per one unit. Divide until the second quantity is exactly 1."
+        },
+        {
+          "type": "summary",
+          "body": "A unit rate is a rate per single unit, with a denominator of 1. Divide the first quantity by the second; unit rates make comparisons easy."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you find the price of one ticket if 5 tickets cost $20?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.proportions.lesson",
+      "skill_id": "math.ratios.proportions",
+      "title": "Proportions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to solve a proportion for an unknown term and apply it to real problems."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that equivalent ratios are related by multiplying both terms by the same number."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If 3 pencils cost $6, then 6 pencils (twice as many) cost $12. A proportion captures this: the ratio of pencils to cost stays the same, so you scale both sides by the same factor."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A proportion states that two ratios are equal, written a/b = c/d. To solve for an unknown, find the scale factor between the known terms, or cross-multiply so a times d equals b times c and then solve."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve 2/3 = x/9. The denominator went from 3 to 9, a factor of 3. Multiply the numerator by 3 as well: 2 times 3 is 6, so x = 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Solve x/4 = 3/2. Cross-multiply: 2 times x equals 4 times 3, so 2x = 12 and x = 6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding instead of multiplying, or cross-multiplying incorrectly. Keep the ratios in the same order and scale both terms by the same factor."
+        },
+        {
+          "type": "summary",
+          "body": "A proportion says two ratios are equal. Solve for a missing term by scaling both terms of a ratio by the same factor, or by cross-multiplying."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you solve the proportion 2/3 = x/9?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.scale.lesson",
+      "skill_id": "math.ratios.scale",
+      "title": "Scale",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to use a scale to convert between drawing lengths and real lengths."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to solve a proportion by scaling both terms of a ratio by the same factor."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A map cannot be the real size of a country, so it shrinks everything by the same factor. A scale of 1 cm to 5 km means each centimeter on the map stands for 5 real kilometers, so 3 cm stands for 15 km."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A scale is a ratio comparing a drawing length to the real length it represents, written like 1:100 or 1 cm : 5 km. Multiply a drawing length by the scale to get the real length, or divide a real length by the scale to get the drawing length."
+        },
+        {
+          "type": "worked_example",
+          "body": "A map scale is 1 cm : 5 km. How far is 3 cm? Each centimeter is 5 km, so 3 cm is 3 times 5 = 15 km."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A model scale is 1:10, and the model is 4 cm long. The real length is 4 times 10 = 40 cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying when you should divide, or mixing up which side is the drawing. Decide whether you are going from drawing to real (multiply) or real to drawing (divide)."
+        },
+        {
+          "type": "summary",
+          "body": "A scale is a ratio of drawing length to real length. Multiply a drawing length by the scale to find the real length, and divide to go back."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If a map scale is 1 cm : 5 km, how far apart in real life are two points 4 cm apart on the map?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.ratios.direct_proportionality.lesson",
+      "skill_id": "math.ratios.direct_proportionality",
+      "title": "Direct Proportionality",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to recognize direct proportion, find the constant, and use it to find unknown values."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall proportions and unit rates: a unit rate is the amount per single unit, which is exactly the constant of proportionality."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If apples cost $3 per kilogram, then buying twice as many kilograms costs twice as much. Cost and weight are directly proportional; the price per kilogram, $3, is the constant that links them."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Two quantities x and y are directly proportional if y = k times x for a constant k, the constant of proportionality. When x doubles, y doubles. The graph of y against x is a straight line through the origin."
+        },
+        {
+          "type": "worked_example",
+          "body": "Cost is proportional to weight, and 2 kg costs $6. The constant is 6 divided by 2, which is $3 per kg. So 5 kg costs 3 times 5 = $15."
+        },
+        {
+          "type": "guided_practice",
+          "body": "If y is proportional to x and y = 6 when x = 2, the constant k is 6 divided by 2 = 3. Then when x = 5, y = 3 times 5 = 15."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding a fixed amount rather than multiplying. In direct proportion there is no starting amount; when x is 0, y is 0, and the line passes through the origin."
+        },
+        {
+          "type": "summary",
+          "body": "Directly proportional quantities satisfy y = k times x. Find k as the unit rate, then multiply. The graph is a straight line through the origin."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If 2 kg of apples cost $6, what does 5 kg cost, and what is the constant of proportionality?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.ratios.ratio_meaning.q1",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "A bag has 3 red marbles and 2 blue marbles. What is the ratio of red to blue?",
+      "answer_spec": {
+        "correct_answer": "3:2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Red is named first, so its count comes first."
+        },
+        {
+          "level": 2,
+          "text": "3 red for every 2 blue is 3:2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Red to blue lists red first: 3 red to 2 blue is 3:2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["3:2", "2:3", "3:5", "5:3"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "2:3",
+          "misconception_id": "mc.math.ratios.reversed_order"
+        }
+      ]
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q2",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "The ratio of cats to dogs is 4:1. Which is there more of?",
+      "answer_spec": {
+        "correct_answer": "cats"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The larger number belongs to the first quantity named."
+        },
+        {
+          "level": 2,
+          "text": "4 is larger than 1, and cats are named first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The ratio 4:1 means 4 cats for every 1 dog, so there are more cats.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["cats", "dogs"]
+      }
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q3",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A recipe uses 2 cups of flour to 1 cup of sugar. How many parts are there in total?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the two parts of the ratio."
+        },
+        {
+          "level": 2,
+          "text": "2 parts flour + 1 part sugar."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The ratio 2:1 has 2 + 1 = 3 parts in total.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q4",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A ratio compares two what?",
+      "answer_spec": {
+        "correct_answer": "quantities"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what 3:2 is describing."
+        },
+        {
+          "level": 2,
+          "text": "It compares two amounts."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A ratio compares two quantities, telling how much of one there is for each amount of the other.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["quantities", "sums", "differences", "fractions only"]
+      }
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q5",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "How is the ratio 5:3 of boys to girls read?",
+      "answer_spec": {
+        "correct_answer": "5 boys for every 3 girls"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The first number goes with the first quantity."
+        },
+        {
+          "level": 2,
+          "text": "5 goes with boys, 3 with girls."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5:3 of boys to girls means 5 boys for every 3 girls.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "5 boys for every 3 girls",
+          "5 girls for every 3 boys",
+          "5 children in total",
+          "3 children in total"
+        ]
+      }
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q6",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "A bowl has 3 red and 2 blue marbles. What fraction of the marbles are red?",
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There are 3 + 2 = 5 marbles in total."
+        },
+        {
+          "level": 2,
+          "text": "3 of the 5 are red."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "There are 5 marbles and 3 are red, so the red fraction is 3/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q7",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which ratio means 'twice as many apples as oranges'?",
+      "answer_spec": {
+        "correct_answer": "2:1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Twice as many means 2 for every 1."
+        },
+        {
+          "level": 2,
+          "text": "Apples come first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Twice as many apples as oranges is 2 apples for every 1 orange, the ratio 2:1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2:1", "1:2", "2:2", "1:1"]
+      }
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q8",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A team has 6 wins to 4 losses. How many games did they play in total?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add wins and losses."
+        },
+        {
+          "level": 2,
+          "text": "6 + 4 = 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The team played 6 + 4 = 10 games in total.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.ratio_meaning.q9",
+      "skill_id": "math.ratios.ratio_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a ratio of a to b, does the order of the numbers matter?",
+      "answer_spec": {
+        "correct_answer": "Yes, order matters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare 3:2 with 2:3."
+        },
+        {
+          "level": 2,
+          "text": "They describe different comparisons."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Order matters: a:b names the first quantity first, so 3:2 differs from 2:3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes, order matters", "No, order does not matter"]
+      }
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q1",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Fill in the blank: 2:3 = 4:? (find the missing second term)",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What did you multiply 2 by to get 4?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply 3 by the same number, 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 times 2 is 4, so multiply 3 by 2 as well: the missing term is 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q2",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Fill in the blank: 1:4 = ?:8 (find the missing first term)",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What did you multiply 4 by to get 8?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply 1 by the same number, 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 times 2 is 8, so 1 times 2 is 2: the missing term is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q3",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Fill in the blank: 3:5 = 6:? (find the missing second term)",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 times what is 6?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply 5 by the same number, 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 2 is 6, so 5 times 2 is 10: the missing term is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q4",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 2:3 equivalent to 4:6?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply both terms of 2:3 by 2."
+        },
+        {
+          "level": 2,
+          "text": "That gives 4:6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying both terms of 2:3 by 2 gives 4:6, so they are equivalent.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q5",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 2:3 equivalent to 3:4?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Is there one number that turns 2 into 3 and 3 into 4?"
+        },
+        {
+          "level": 2,
+          "text": "No single factor works for both terms."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "No single number multiplies 2 to 3 and 3 to 4, so 2:3 and 3:4 are not equivalent.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["Yes", "No"]
+      }
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q6",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select all ratios equivalent to 1:2.",
+      "answer_spec": {
+        "correct_answer": ["2:4", "3:6", "5:10"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each equivalent ratio has a second term that is twice the first."
+        },
+        {
+          "level": 2,
+          "text": "Check whether the second term is double the first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1:2 means the second term is double the first; 2:4, 3:6, and 5:10 all satisfy this, while 2:3 and 3:5 do not.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["2:4", "3:6", "2:3", "5:10", "3:5"]
+      }
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q7",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The ratio 10:15 simplifies to 2:3. What number did you divide both terms by?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the greatest common factor of 10 and 15."
+        },
+        {
+          "level": 2,
+          "text": "10 divided by 5 is 2, and 15 divided by 5 is 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dividing both 10 and 15 by their greatest common factor, 5, gives 2:3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q8",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Fill in the blank: 4:5 = ?:20 (find the missing first term)",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "5 times what is 20?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply 4 by the same number, 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 times 4 is 20, so 4 times 4 is 16: the missing term is 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.equivalent_ratios.q9",
+      "skill_id": "math.ratios.equivalent_ratios",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "To change 2:3 into 8:12, you multiply both terms by what number?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "2 times what is 8?"
+        },
+        {
+          "level": 2,
+          "text": "Check: 3 times 4 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 times 4 is 8 and 3 times 4 is 12, so both terms were multiplied by 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.rates.q1",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A car travels 120 miles in 2 hours. What is the rate in miles per hour?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the miles by the hours."
+        },
+        {
+          "level": 2,
+          "text": "120 divided by 2 is 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "120 miles in 2 hours is 120 / 2 = 60 miles per hour.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.rates.q2",
+      "skill_id": "math.ratios.rates",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "8 apples cost $4. What is the cost per apple, in dollars?",
+      "answer_spec": {
+        "correct_answer": 0.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the cost by the number of apples."
+        },
+        {
+          "level": 2,
+          "text": "4 divided by 8 is 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "$4 for 8 apples is 4 / 8 = $0.50 per apple.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.rates.q3",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A printer prints 20 pages in 4 minutes. What is the rate in pages per minute?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide pages by minutes."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by 4 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20 pages in 4 minutes is 20 / 4 = 5 pages per minute.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.rates.q4",
+      "skill_id": "math.ratios.rates",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A rate is a ratio that compares two quantities with different what?",
+      "answer_spec": {
+        "correct_answer": "units"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Miles and hours are different kinds of measures."
+        },
+        {
+          "level": 2,
+          "text": "They have different units."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A rate compares two quantities that have different units, such as miles and hours.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["units", "numbers", "signs", "colors"]
+      }
+    },
+    {
+      "question_id": "math.ratios.rates.q5",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A typist types 300 words in 5 minutes. What is the rate in words per minute?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide words by minutes."
+        },
+        {
+          "level": 2,
+          "text": "300 divided by 5 is 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "300 words in 5 minutes is 300 / 5 = 60 words per minute.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.rates.q6",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A runner covers 100 meters in 20 seconds. What is the rate in meters per second?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide meters by seconds."
+        },
+        {
+          "level": 2,
+          "text": "100 divided by 20 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "100 meters in 20 seconds is 100 / 20 = 5 meters per second.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.rates.q7",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Apples cost $12 for 3 kilograms. What is the cost per kilogram, in dollars?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide cost by kilograms."
+        },
+        {
+          "level": 2,
+          "text": "12 divided by 3 is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "$12 for 3 kg is 12 / 3 = $4 per kilogram.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.rates.q8",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A car goes 180 miles on 6 gallons of fuel. What is the rate in miles per gallon?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide miles by gallons."
+        },
+        {
+          "level": 2,
+          "text": "180 divided by 6 is 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "180 miles on 6 gallons is 180 / 6 = 30 miles per gallon.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q1",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A car travels 60 miles in 2 hours. As a unit rate, how many miles does it travel in 1 hour?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide to get the amount for one hour."
+        },
+        {
+          "level": 2,
+          "text": "60 divided by 2 is 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The unit rate is 60 / 2 = 30 miles per hour.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q2",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "6 eggs cost $3. What is the unit price per egg, in dollars?",
+      "answer_spec": {
+        "correct_answer": 0.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide cost by number of eggs."
+        },
+        {
+          "level": 2,
+          "text": "3 divided by 6 is 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The unit price is 3 / 6 = $0.50 per egg.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q3",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A store sells 4 pens for $8. What is the price of one pen, in dollars?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the price by the number of pens."
+        },
+        {
+          "level": 2,
+          "text": "8 divided by 4 is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One pen costs 8 / 4 = $2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q4",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "12 cookies come in 2 boxes. How many cookies are in one box?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide cookies by boxes."
+        },
+        {
+          "level": 2,
+          "text": "12 divided by 2 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One box holds 12 / 2 = 6 cookies.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q5",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A unit rate always has a denominator of what?",
+      "answer_spec": {
+        "correct_answer": "1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Unit rate means 'per one'."
+        },
+        {
+          "level": 2,
+          "text": "The second quantity is a single unit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A unit rate is expressed per one unit, so its denominator is 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1", "0", "10", "100"]
+      }
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q6",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A car travels 150 km in 3 hours. What is the unit rate in km per hour?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide km by hours."
+        },
+        {
+          "level": 2,
+          "text": "150 divided by 3 is 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The unit rate is 150 / 3 = 50 km per hour.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q7",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "5 tickets cost $20. What is the price per ticket, in dollars?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide cost by tickets."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by 5 is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One ticket costs 20 / 5 = $4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q8",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A heart beats 240 times in 4 minutes. What is the unit rate in beats per minute?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide beats by minutes."
+        },
+        {
+          "level": 2,
+          "text": "240 divided by 4 is 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The unit rate is 240 / 4 = 60 beats per minute.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.proportions.q1",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve the proportion 2/3 = x/9. What is x?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator went from 3 to 9, a factor of 3."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the numerator 2 by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 scaled up by 3 gives 9, so 2 scaled by 3 gives x = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.proportions.q2",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve the proportion x/4 = 3/2. What is x?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cross-multiply: 2 times x = 4 times 3."
+        },
+        {
+          "level": 2,
+          "text": "2x = 12, so x = 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Cross-multiplying gives 2x = 12, so x = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.proportions.q3",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve the proportion 5/x = 10/6. What is x?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cross-multiply: 5 times 6 = 10 times x."
+        },
+        {
+          "level": 2,
+          "text": "30 = 10x, so x = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Cross-multiplying gives 30 = 10x, so x = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.proportions.q4",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If 3 pencils cost $6, how much do 5 pencils cost, in dollars?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the cost of one pencil first."
+        },
+        {
+          "level": 2,
+          "text": "6 / 3 = $2 each, and 2 times 5 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Each pencil costs $2, so 5 pencils cost 5 times 2 = $10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.ratios.proportions.q5",
+      "skill_id": "math.ratios.proportions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A proportion is a statement that two what are equal?",
+      "answer_spec": {
+        "correct_answer": "ratios"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about a/b = c/d."
+        },
+        {
+          "level": 2,
+          "text": "Both sides are ratios."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A proportion states that two ratios are equal.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["ratios", "sums", "products", "units"]
+      }
+    },
+    {
+      "question_id": "math.ratios.proportions.q6",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve the proportion 4/5 = 12/x. What is x?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The numerator went from 4 to 12, a factor of 3."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the denominator 5 by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 scaled by 3 gives 12, so 5 scaled by 3 gives x = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.proportions.q7",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If 2 cups of flour make 12 cookies, how many cups make 30 cookies?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find cookies per cup: 12 / 2 = 6."
+        },
+        {
+          "level": 2,
+          "text": "30 divided by 6 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Two cups make 12 cookies (6 per cup), so 30 cookies need 30 / 6 = 5 cups.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.ratios.proportions.q8",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve the proportion 1/2 = x/10. What is x?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator went from 2 to 10, a factor of 5."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the numerator 1 by 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 scaled by 5 gives 10, so 1 scaled by 5 gives x = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.proportions.q9",
+      "skill_id": "math.ratios.proportions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "3 is to 4 as 9 is to what number?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 scaled to 9 is a factor of 3."
+        },
+        {
+          "level": 2,
+          "text": "Multiply 4 by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 3 is 9, so 4 times 3 is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.scale.q1",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A map scale is 1 cm : 5 km. How many real kilometers does 3 cm represent?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each centimeter is 5 km."
+        },
+        {
+          "level": 2,
+          "text": "3 times 5 is 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At 1 cm : 5 km, 3 cm represents 3 times 5 = 15 km.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.scale.q2",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A model has scale 1:10. If the model is 4 cm long, what is the real length in centimeters?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the model length by 10."
+        },
+        {
+          "level": 2,
+          "text": "4 times 10 is 40."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At scale 1:10, a 4 cm model represents 4 times 10 = 40 cm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.ratios.scale.q3",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A map scale is 1 inch : 20 miles. How many miles do 4 inches represent?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each inch is 20 miles."
+        },
+        {
+          "level": 2,
+          "text": "4 times 20 is 80."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At 1 inch : 20 miles, 4 inches represent 4 times 20 = 80 miles.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.scale.q4",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A drawing has scale 1:100. A real wall is 500 cm long. What is the drawing length in centimeters?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the real length by 100."
+        },
+        {
+          "level": 2,
+          "text": "500 divided by 100 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At scale 1:100, a 500 cm wall is drawn 500 / 100 = 5 cm long.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.scale.q5",
+      "skill_id": "math.ratios.scale",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A scale of 1:50 means the drawing is what compared to the real size?",
+      "answer_spec": {
+        "correct_answer": "1/50 of"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The drawing side is 1, the real side is 50."
+        },
+        {
+          "level": 2,
+          "text": "So the drawing is one fiftieth of real size."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scale of 1:50 means the drawing is 1/50 of the real size.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1/50 of", "50 times", "the same as", "1/5 of"]
+      }
+    },
+    {
+      "question_id": "math.ratios.scale.q6",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A map scale is 1 cm : 2 km. A road is 14 km long. How many centimeters is it on the map?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the real distance by 2."
+        },
+        {
+          "level": 2,
+          "text": "14 divided by 2 is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At 1 cm : 2 km, a 14 km road is 14 / 2 = 7 cm on the map.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.scale.q7",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A model car has scale 1:20. The real car is 400 cm long. What is the model length in centimeters?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the real length by 20."
+        },
+        {
+          "level": 2,
+          "text": "400 divided by 20 is 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At scale 1:20, a 400 cm car is modeled 400 / 20 = 20 cm long.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.scale.q8",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A blueprint scale is 2 cm : 5 m. How many real meters does 6 cm represent?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "6 cm is 3 groups of 2 cm."
+        },
+        {
+          "level": 2,
+          "text": "Each 2 cm is 5 m, so 3 times 5 is 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 cm is three lots of 2 cm, and each represents 5 m, so 6 cm represents 15 m.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q1",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "y is directly proportional to x, and y = 6 when x = 2. What is y when x = 5?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the constant: k = 6 / 2 = 3."
+        },
+        {
+          "level": 2,
+          "text": "Then y = 3 times 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The constant is 6 / 2 = 3, so when x = 5, y = 3 times 5 = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q2",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Cost is proportional to weight: 2 kg of apples cost $6. What do 5 kg cost, in dollars?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the price per kg: 6 / 2 = 3."
+        },
+        {
+          "level": 2,
+          "text": "Then 3 times 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The price is $3 per kg, so 5 kg cost 3 times 5 = $15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q3",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a direct proportion, when one quantity doubles, the other does what?",
+      "answer_spec": {
+        "correct_answer": "doubles"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The two quantities scale together."
+        },
+        {
+          "level": 2,
+          "text": "Double one, double the other."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In direct proportion, doubling one quantity doubles the other.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["doubles", "halves", "stays the same", "becomes zero"]
+      }
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q4",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "y is proportional to x, and y = 10 when x = 5. What is the constant of proportionality k?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "k is y divided by x."
+        },
+        {
+          "level": 2,
+          "text": "10 divided by 5 is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The constant is k = y / x = 10 / 5 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q5",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "At a constant speed, a car travels 60 km in 1 hour. How far does it travel in 3 hours?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Distance is proportional to time."
+        },
+        {
+          "level": 2,
+          "text": "60 times 3 is 180."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At 60 km per hour, in 3 hours the car travels 60 times 3 = 180 km.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q6",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If 3 books cost $18, how much do 7 books cost, in dollars?",
+      "answer_spec": {
+        "correct_answer": 42
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the price of one book: 18 / 3 = 6."
+        },
+        {
+          "level": 2,
+          "text": "Then 6 times 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Each book costs $6, so 7 books cost 6 times 7 = $42.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q7",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For y = k times x with k = 4, what is y when x = 6?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply k by x."
+        },
+        {
+          "level": 2,
+          "text": "4 times 6 is 24."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With k = 4 and x = 6, y = 4 times 6 = 24.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q8",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The graph of a direct proportion is a straight line through which point?",
+      "answer_spec": {
+        "correct_answer": "the origin"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "When x is 0, y is 0."
+        },
+        {
+          "level": 2,
+          "text": "So the line passes through (0, 0)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A direct proportion passes through the origin, since y is 0 when x is 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the origin",
+          "the top-right corner",
+          "the point where x = 1",
+          "the point where y = 1"
+        ]
+      }
+    },
+    {
+      "question_id": "math.ratios.direct_proportionality.q9",
+      "skill_id": "math.ratios.direct_proportionality",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Paint coverage is proportional to the amount used: 2 liters cover 30 square meters. How many square meters do 5 liters cover?",
+      "answer_spec": {
+        "correct_answer": 75
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find coverage per liter: 30 / 2 = 15."
+        },
+        {
+          "level": 2,
+          "text": "Then 15 times 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Each liter covers 15 square meters, so 5 liters cover 15 times 5 = 75 square meters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    }
+  ]
+}
