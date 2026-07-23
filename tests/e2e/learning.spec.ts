@@ -16,9 +16,12 @@ test.describe('learning engine (Phase 4)', () => {
 
     await page.goto('/progress');
     await expect(page.getByRole('heading', { name: /place value/i })).toBeVisible();
-    // Five mastery dimensions are shown, not one course percentage.
-    await expect(page.getByText('Understanding')).toBeVisible();
-    await expect(page.getByText('Retention')).toBeVisible();
+    // Headline dashboard is present.
+    await expect(page.getByRole('heading', { name: /mastery by unit/i })).toBeVisible();
+    // Five mastery dimensions are shown, not one course percentage. They appear
+    // in both the strengths legend and the skill detail grid.
+    await expect(page.getByText('Understanding').first()).toBeVisible();
+    await expect(page.getByText('Retention').first()).toBeVisible();
   });
 
   test('review queue is empty until something is scheduled', async ({ page }) => {

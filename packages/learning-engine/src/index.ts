@@ -7,3 +7,4 @@ export * from './gating.js';
 export * from './progress.js';
 export * from './activity.js';
 export * from './session.js';
+export * from './dashboard.js';

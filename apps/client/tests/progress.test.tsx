@@ -57,11 +57,19 @@ describe('Progress screen (Phase 4)', () => {
     await renderProgressWithLearner(events);
 
     expect(await screen.findByRole('heading', { name: /place value/i })).toBeInTheDocument();
-    // Five dimensions are surfaced (not a single course percentage).
-    expect(screen.getByText('Understanding')).toBeInTheDocument();
-    expect(screen.getByText('Retention')).toBeInTheDocument();
+    // Headline tiles summarize the whole graph.
+    expect(screen.getByRole('list', { name: /progress at a glance/i })).toBeInTheDocument();
+    // Mastery-by-unit and strengths cards are present.
+    expect(screen.getByRole('heading', { name: /mastery by unit/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /your strengths/i })).toBeInTheDocument();
+    // Five dimensions are surfaced (not a single course percentage). They appear
+    // in both the strengths legend and the skill detail grid.
+    expect(screen.getAllByText('Understanding').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Retention').length).toBeGreaterThan(0);
     // Sustained strong practice reaches at least provisional mastery.
-    expect(screen.getByText(/provisionally mastered|mastered/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /place value.*(provisionally mastered|mastered)/i }),
+    ).toBeInTheDocument();
   });
 
   it('shows an empty state before any practice', async () => {
