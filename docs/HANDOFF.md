@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · HEAD `f18df9b` on branch `claude/project-spec-review-5yebtu`_
+_Last updated: 2026-07-23 · latest on branch `claude/project-spec-review-5yebtu` (run `git log --oneline -1`)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -12,24 +12,23 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 The **MVP is complete (Phases 0–9)** and all four selected **Version 1** features have
 shipped on top of it. Everything is committed and pushed.
 
-**Phases 0–9 (the mastery-based learning engine):**
+### Phase-by-phase breakdown (0 → 9)
 
-- Local-first event-sourced foundation: append-only learning-event log is the source of
-  truth; `SkillProgress` is a reproducible projection (DEC-006). IndexedDB + in-memory
-  store adapters behind one interface (DEC-013).
-- Curriculum platform: content-as-data loader with JSON-Schema validation, prerequisite
-  graph, cycle detection, topological ordering, lesson renderer, curriculum map.
-- Deterministic practice/grading: numeric / fraction / decimal / percentage / unit /
-  multi-select / ordering validators with exact rational arithmetic and error diagnosis.
-- Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
-  machine, prerequisite gating + remediation, progress projection.
-- Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **41 skills** across 7 units (math number-sense → one-step algebra; scientific
-  reasoning → measurement/accuracy).
-- Isolated AI tutor: provider-neutral gateway that depends **only** on `@learn/domain`;
-  off by default; can never write verified state (DEC-005/010); verified fallback.
-- Release: progress export/import, offline handling, accessibility audit (axe) across all
-  screens, split cacheable bundle, deployment config, full acceptance checklist.
+Each phase was committed and pushed with all tests green before the next began. The
+roadmap these follow is `docs/spec/` + `docs/planning/TASK_PLAN_PHASE_0_1.md`.
+
+| Phase | Commit(s)                       | What it delivered                                                                                                                                                                                   |
+| ----- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0** | `8dce941`, `eb3e568`, `d870e33` | Spec review of the 17 docs (contradictions, risks); proposed repo structure + Phase 0/1 task plan; accepted stack + scope decisions (DEC-006…013); MVP skill inventory.                             |
+| **1** | `d870e33`                       | Application foundation: pnpm monorepo + toolchain, app shell + routes, local-first event store (IndexedDB), learner profile, settings + accessibility baseline, error/screen-state model, CI.       |
+| **2** | `917d69d`                       | Curriculum platform: course-package loader with schema validation, prerequisite graph (cycle detection + topological order), lesson renderer, curriculum map.                                       |
+| **3** | `37eedbc`                       | Practice & deterministic validation: numeric/fraction/decimal/percentage/unit validators with exact rational arithmetic, error classification, attempt + hint persistence, question renderer.       |
+| **4** | `f77210a`                       | Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state machine, prerequisite gating + remediation, progress projection (events → SkillProgress).                     |
+| **5** | `05d1422`                       | Adaptive diagnostic: binary-search placement over the skill graph, boundary detection, starting-point recommendation with override.                                                                 |
+| **6** | `8cac57b`                       | MVP mathematics content: **31 skills** (number sense → one-step equations), each with a lesson and deterministically-graded questions.                                                              |
+| **7** | `42e058d`                       | Scientific-reasoning content: **10 skills** (observation → accuracy/precision), cross-thread prerequisites, metric unit-conversion questions. (Brings content to 41 skills / 7 units.)              |
+| **8** | `69e9647`                       | AI tutor: provider-neutral gateway that depends **only** on `@learn/domain`, off by default, cannot write verified state (DEC-005/010), verified fallback, stub provider.                           |
+| **9** | `b51ba14`                       | Quality & release: progress export/import, offline handling, accessibility audit (axe) across all screens, split cacheable bundle, deployment config, full acceptance checklist — **MVP complete**. |
 
 **Version 1 features (all four complete):**
 
