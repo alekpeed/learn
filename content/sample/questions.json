@@ -1,0 +1,40 @@
+[
+  {
+    "question_id": "math.number_foundations.place_value.q1",
+    "skill_id": "math.number_foundations.place_value",
+    "type": "numeric",
+    "difficulty": 2,
+    "prompt": "In the number 42, what is the value of the digit 4?",
+    "answer_spec": { "correct_answer": 40 },
+    "validator": "numeric",
+    "hints": [
+      { "level": 1, "text": "Which place is the 4 in — ones or tens?" },
+      { "level": 2, "text": "The 4 is in the tens place." },
+      { "level": 3, "text": "Four tens is 40." }
+    ],
+    "dimensions": ["accuracy", "understanding"],
+    "explanation": "The 4 sits in the tens place, so its value is 4 tens = 40.",
+    "estimated_time_seconds": 20,
+    "transfer_flag": false,
+    "accessible_text": "In forty-two, the value of the four.",
+    "content_version": "0.1.0"
+  },
+  {
+    "question_id": "math.number_foundations.comparing_numbers.q1",
+    "skill_id": "math.number_foundations.comparing_numbers",
+    "type": "multiple_choice",
+    "difficulty": 1,
+    "prompt": "Which symbol makes this true: 8 __ 6 ?",
+    "answer_spec": { "correct_answer": ">", "accepted_equivalents": [] },
+    "validator": "exact_choice",
+    "hints": [
+      { "level": 1, "text": "Is 8 more or fewer than 6?" },
+      { "level": 2, "text": "8 is more than 6, so the open side faces 8." }
+    ],
+    "dimensions": ["accuracy"],
+    "explanation": "8 is greater than 6, so 8 > 6.",
+    "estimated_time_seconds": 15,
+    "transfer_flag": false,
+    "content_version": "0.1.0"
+  }
+]

@@ -148,3 +148,59 @@ button {
     transition: none !important;
   }
 }
+
+/* Screen-reader-only text (status labels, media descriptions). */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Curriculum map */
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skill-node {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--muted);
+}
+.skill-status {
+  font-size: 1.1em;
+}
+.skill-node[data-locked='true'] .skill-title {
+  color: var(--muted);
+}
+.prereqs {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+/* Lesson */
+.lesson-component {
+  margin: 1rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+.lesson-component h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+}
+.accessible-alt {
+  color: var(--muted);
+  font-style: italic;
+}
+.lesson-actions {
+  margin-top: 1.5rem;
+}

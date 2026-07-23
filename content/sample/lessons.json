@@ -1,0 +1,75 @@
+[
+  {
+    "lesson_id": "math.number_foundations.comparing_numbers.lesson",
+    "skill_id": "math.number_foundations.comparing_numbers",
+    "title": "Comparing Numbers",
+    "components": [
+      {
+        "type": "learning_objective",
+        "body": "Decide whether one quantity is greater than, less than, or equal to another."
+      },
+      {
+        "type": "prerequisite_reminder",
+        "body": "You already know how to count a group and say how many things it has."
+      },
+      {
+        "type": "intuitive_explanation",
+        "body": "If two groups sit side by side, the one that runs out first has fewer. The one still going has more. If they end together, they are equal."
+      },
+      {
+        "type": "representation",
+        "body": "Line up counters in two rows and match them one to one.",
+        "accessible_text": "Two rows of dots. The top row has five dots; the bottom row has three. The top row is longer, so five is greater than three."
+      },
+      {
+        "type": "formal_terminology",
+        "body": "We write greater-than as >, less-than as <, and equal as =. The open side of > and < faces the larger number."
+      },
+      {
+        "type": "worked_example",
+        "body": "Compare 5 and 3. Match them up: 5 has two extra. So 5 > 3. Check: the open side faces 5, the larger number."
+      },
+      {
+        "type": "guided_practice",
+        "body": "Compare 4 and 7 together. Which runs out first?"
+      },
+      {
+        "type": "independent_practice",
+        "body": "Write the correct symbol between 8 and 6."
+      },
+      {
+        "type": "summary",
+        "body": "Match groups one to one. More, fewer, or equal — then use >, <, or =."
+      },
+      {
+        "type": "review_prompt",
+        "body": "Tomorrow, compare two two-digit numbers without drawing counters."
+      }
+    ],
+    "content_version": "0.1.0"
+  },
+  {
+    "lesson_id": "math.number_foundations.place_value.lesson",
+    "skill_id": "math.number_foundations.place_value",
+    "title": "Place Value",
+    "components": [
+      {
+        "type": "learning_objective",
+        "body": "Understand that a digit's position gives it a value of ones, tens, hundreds, and so on."
+      },
+      {
+        "type": "intuitive_explanation",
+        "body": "The same digit means different amounts depending on where it sits. In 30, the 3 means three tens; in 3, it means three ones."
+      },
+      {
+        "type": "worked_example",
+        "body": "Break down 42. The 4 is in the tens place, so it is 40. The 2 is in the ones place, so it is 2. 42 = 40 + 2."
+      },
+      {
+        "type": "summary",
+        "body": "A digit's place tells you its value: ones, tens, hundreds."
+      }
+    ],
+    "content_version": "0.1.0"
+  }
+]

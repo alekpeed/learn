@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@learn/curriculum": "workspace:*",
     "@learn/domain": "workspace:*",
     "@learn/persistence": "workspace:*",
     "react": "^18.3.1",

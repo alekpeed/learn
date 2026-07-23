@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "courses": ["math.core"],
+  "generated_at": "2026-07-23T00:00:00Z",
+  "change_summary": "Phase 2 sample package: a small connected Number Foundations slice."
+}

@@ -11,6 +11,9 @@ export default defineWorkspace([
     test: { name: 'persistence', root: 'packages/persistence', environment: 'node' },
   },
   {
+    test: { name: 'curriculum', root: 'packages/curriculum', environment: 'node' },
+  },
+  {
     test: {
       name: 'client',
       root: 'apps/client',

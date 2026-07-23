@@ -18,7 +18,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "validate:content": "vitest run --project schemas",
+    "validate:content": "vitest run --project schemas --project curriculum",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },

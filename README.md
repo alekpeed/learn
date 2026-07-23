@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 1 (Application Foundation) complete.** The repository holds the specification, Phase 0 planning artifacts, and a tested TypeScript monorepo with the app shell, local-first persistence, learner profile, settings, and accessibility baseline. Curriculum, validators, the learning engine, the diagnostic, and the AI tutor arrive in Phase 2+.
+> **Status: Phase 2 (Curriculum Platform) complete.** On top of the Phase 1 foundation, the repository now has a curriculum loader (schema validation, missing-reference + cycle detection, topological ordering), a sample course package under `content/`, an accessible lesson renderer, and a curriculum map that displays skill relationships. Deterministic validators, the learning engine, the diagnostic, and the AI tutor arrive in Phase 3+.
 
 ## Documentation
 
@@ -22,10 +22,11 @@ packages/
   domain/        Framework-agnostic types: skill state, mastery dimensions, events, errors
   schemas/       JSON Schemas for content + Ajv validator + fixtures (ID grammar, DEC-007)
   persistence/   Append-only event store (in-memory + IndexedDB), projections, learner repo
+  curriculum/    Course-package loader: schema validation, graph (cycles, topo order)
 apps/
-  client/        Vite + React app shell: routes, screens, learner state, a11y, error handling
-content/         Curriculum content ONLY (data) — added in Phase 6/7, kept out of code
-tests/e2e/       Playwright smoke + accessibility (axe-core)
+  client/        Vite + React app: shell, screens, learner + curriculum state, lesson renderer
+content/         Curriculum content ONLY (data) — sample package now; full slice in Phase 6/7
+tests/e2e/       Playwright smoke + accessibility (axe-core) + curriculum flow
 docs/            Specification and planning
 ```
 
