@@ -8,17 +8,24 @@ import { useEffect } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { SCREENS } from '../screens/registry.js';
 import { useOnlineStatus } from '../state/useOnlineStatus.js';
-import { tutorProvider } from '../data/tutor.js';
+import { useOptionalLearner } from '../state/LearnerContext.js';
+import { setAiOnline, setAiSelection } from '../data/tutor.js';
 
 export function Layout(): JSX.Element {
   const navScreens = SCREENS.filter((s) => s.nav);
   const online = useOnlineStatus();
+  const prefs = useOptionalLearner()?.learner?.preferences;
 
   // The AI tutor is the only online-dependent feature; pause it when offline so
   // the gateway serves its verified fallback (doc 10 §7). Learning is unaffected.
   useEffect(() => {
-    tutorProvider.setAvailable(online);
+    setAiOnline(online);
   }, [online]);
+
+  // Keep the tutor's provider selection in sync with the learner's settings.
+  useEffect(() => {
+    setAiSelection({ provider: prefs?.ai_provider ?? 'stub', model: prefs?.ai_model });
+  }, [prefs?.ai_provider, prefs?.ai_model]);
 
   return (
     <>

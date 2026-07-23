@@ -27,7 +27,7 @@ packages/
   validation-engine/  Deterministic validators + rational arithmetic + error diagnosis
   learning-engine/    Mastery scoring, review scheduler, state machine, gating, progress
   diagnostic/         Adaptive placement (binary-search boundary detection)
-  ai-gateway/         Isolated tutor gateway + provider interface + stub (text only)
+  ai-gateway/         Isolated tutor gateway + providers: stub + BYOK OpenAI/Claude/Gemini
 apps/
   client/        Vite + React app: shell, lessons, practice, progress, review queue
 content/mvp/     Curriculum content ONLY (data): manifest, courses, one file per unit

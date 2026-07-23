@@ -108,3 +108,19 @@ Reasons: Makes Phase 4 testable and prevents ad-hoc scoring.
 Alternatives: Leave to implementation (rejected — untestable, drift-prone).
 Consequences: Two new spec docs feed learning-engine tests.
 Related: 02, 04, 12.
+
+## DEC-015: Bring-your-own-key AI providers (client-side)
+
+Status: Accepted (2026-07-23)
+
+Context: The MVP has no backend, but users want to use a real AI tutor with their own OpenAI / Anthropic / Gemini key. Doc 08 §7 says provider credentials must stay server-side — that guidance targets a hosted, multi-user deployment, where the app owns the key.
+
+Decision: For the local-first, single-user MVP, support **bring-your-own-key (BYOK)**. The learner selects a provider and pastes their own key in Settings. The browser calls the provider API directly. The key is stored in `localStorage` (per provider), kept **out of the event log and out of progress exports**. The provider/model selection (non-secret) lives in learner preferences. The built-in stub remains the default and needs no key.
+
+Reasons: Enables a real tutor with zero backend; the user owns and controls their own key; keeping the key out of the event log prevents it leaking through export/import.
+
+Alternatives: A hosted key-proxy backend (rejected for MVP — reintroduces the infrastructure the local-first MVP avoids; still the right model for a hosted multi-user deployment later); embedding a shared app key (rejected — never ship a shared secret in a client bundle).
+
+Consequences: Real providers (`OpenAiProvider`, `AnthropicProvider`, `GeminiProvider`) implement the existing `TutorProvider` interface; the gateway still validates output and enforces isolation. A clear in-UI warning states the key is stored in the browser and sent directly to the provider (not for shared devices). When a hosted deployment arrives, move the key server-side behind the same interface.
+
+Related: 08, 10, 15; DEC-005, DEC-010.

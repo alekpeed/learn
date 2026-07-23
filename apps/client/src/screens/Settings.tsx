@@ -4,6 +4,7 @@ import type { TextSize, Contrast } from '@learn/domain';
 import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
 import { DataSettings } from '../components/DataSettings.js';
+import { AiTutorSettings } from '../components/AiTutorSettings.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large', 'x-large'];
@@ -100,6 +101,13 @@ export function Settings(): JSX.Element {
           />
           AI tutor (optional; learning works without it)
         </label>
+        {prefs.ai_tutor_enabled && (
+          <AiTutorSettings
+            provider={prefs.ai_provider}
+            model={prefs.ai_model}
+            onChange={(changes) => updateSettings({ preferences: changes })}
+          />
+        )}
       </fieldset>
 
       <fieldset>

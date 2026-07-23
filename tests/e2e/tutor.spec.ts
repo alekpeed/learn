@@ -57,3 +57,19 @@ test.describe('offline + data (Phase 9)', () => {
     await expect(page.getByLabel(/import progress from a file/i)).toBeVisible();
   });
 });
+
+test.describe('BYOK provider selection (DEC-015)', () => {
+  test('lets the learner choose a provider and save a key', async ({ page }) => {
+    await page.goto('/');
+    await page.getByLabel(/your name/i).fill('Ada');
+    await page.getByRole('button', { name: /start learning/i }).click();
+    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+
+    await page.goto('/settings');
+    await page.getByLabel(/ai tutor/i).click();
+    await page.getByLabel(/tutor provider/i).selectOption('openai');
+    await page.getByLabel(/api key/i).fill('sk-test-key');
+    await page.getByRole('button', { name: /save key/i }).click();
+    await expect(page.getByText(/key is saved on this device/i)).toBeVisible();
+  });
+});

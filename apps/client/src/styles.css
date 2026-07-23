@@ -309,3 +309,15 @@ button {
   border-bottom: 2px solid var(--muted);
   font-weight: 600;
 }
+
+/* AI tutor / BYOK settings */
+.ai-settings {
+  margin-top: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--muted);
+}
+.ai-settings input,
+.ai-settings select {
+  max-width: 22rem;
+  width: 100%;
+}

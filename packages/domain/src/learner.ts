@@ -6,6 +6,9 @@ export type TextSize = 'small' | 'medium' | 'large' | 'x-large';
 export type Contrast = 'normal' | 'high';
 export type SessionDuration = 5 | 15 | 30 | 60 | 'custom';
 
+/** Which tutor provider to use. `stub` is the built-in, offline, key-free tutor. */
+export type AiProvider = 'stub' | 'openai' | 'anthropic' | 'gemini';
+
 export interface AccessibilitySettings {
   text_size: TextSize;
   contrast: Contrast;
@@ -18,6 +21,10 @@ export interface LearnerPreferences {
   custom_duration_minutes?: number;
   /** AI tutor is OFF by default in the MVP (DEC-010, doc 15 §10). */
   ai_tutor_enabled: boolean;
+  /** Which provider the tutor uses. Defaults to the built-in stub (DEC-015). */
+  ai_provider: AiProvider;
+  /** Optional model override for the selected provider. */
+  ai_model?: string;
 }
 
 export interface Learner {
@@ -39,4 +46,5 @@ export const DEFAULT_PREFERENCES: LearnerPreferences = {
   sound: true,
   session_duration: 15,
   ai_tutor_enabled: false,
+  ai_provider: 'stub',
 };
