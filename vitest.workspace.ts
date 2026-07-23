@@ -20,6 +20,9 @@ export default defineWorkspace([
     test: { name: 'learning', root: 'packages/learning-engine', environment: 'node' },
   },
   {
+    test: { name: 'diagnostic', root: 'packages/diagnostic', environment: 'node' },
+  },
+  {
     test: {
       name: 'client',
       root: 'apps/client',

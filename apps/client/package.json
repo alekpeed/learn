@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@learn/curriculum": "workspace:*",
+    "@learn/diagnostic": "workspace:*",
     "@learn/domain": "workspace:*",
     "@learn/learning-engine": "workspace:*",
     "@learn/persistence": "workspace:*",

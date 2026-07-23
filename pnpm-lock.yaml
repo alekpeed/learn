@@ -59,6 +59,9 @@ importers:
       '@learn/curriculum':
         specifier: workspace:*
         version: link:../../packages/curriculum
+      '@learn/diagnostic':
+        specifier: workspace:*
+        version: link:../../packages/diagnostic
       '@learn/domain':
         specifier: workspace:*
         version: link:../../packages/domain
@@ -89,6 +92,12 @@ importers:
       '@learn/schemas':
         specifier: workspace:*
         version: link:../schemas
+
+  packages/diagnostic:
+    dependencies:
+      '@learn/domain':
+        specifier: workspace:*
+        version: link:../domain
 
   packages/domain: {}
 

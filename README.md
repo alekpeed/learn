@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 4 (Learning Engine) complete.** On top of practice and validation, the repository now has the learning engine: deterministic mastery scoring (five dimensions), spaced-review scheduling, the skill-state machine, prerequisite gating + remediation routing, and adaptive difficulty — all folded from the event log into per-skill progress. The UI now has real prerequisite locks, a skill-level progress screen, and a working review queue. The diagnostic and the AI tutor arrive in Phase 5+.
+> **Status: Phase 5 (Diagnostic) complete.** On top of the learning engine, the repository now has an adaptive diagnostic: a binary-search placement over the skill graph that finds the learner's ability boundary, marks untested skills as unknown, and recommends a starting point — with a results screen and an override. The AI tutor and remaining content arrive in Phase 6+.
 
 ## Documentation
 
@@ -25,6 +25,7 @@ packages/
   curriculum/    Course-package loader: schema validation, graph (cycles, topo order)
   validation-engine/  Deterministic validators + rational arithmetic + error diagnosis
   learning-engine/    Mastery scoring, review scheduler, state machine, gating, progress
+  diagnostic/         Adaptive placement (binary-search boundary detection)
 apps/
   client/        Vite + React app: shell, lessons, practice, progress, review queue
 content/         Curriculum content ONLY (data) — sample package now; full slice in Phase 6/7

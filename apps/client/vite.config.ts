@@ -15,6 +15,7 @@ export default defineConfig({
       '@learn/curriculum',
       '@learn/validation-engine',
       '@learn/learning-engine',
+      '@learn/diagnostic',
     ],
   },
 });

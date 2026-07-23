@@ -12,6 +12,8 @@ import { LessonScreen } from './screens/LessonScreen.js';
 import { PracticeScreen } from './screens/PracticeScreen.js';
 import { ReviewQueue } from './screens/ReviewQueue.js';
 import { Progress } from './screens/Progress.js';
+import { DiagnosticScreen } from './screens/DiagnosticScreen.js';
+import { DiagnosticResults } from './screens/DiagnosticResults.js';
 import { Placeholder } from './screens/Placeholder.js';
 import { NotFound } from './screens/NotFound.js';
 
@@ -31,12 +33,9 @@ export function App(): JSX.Element {
                 <Route path="/practice" element={<PracticeScreen />} />
                 <Route path="/review" element={<ReviewQueue />} />
                 <Route path="/progress" element={<Progress />} />
+                <Route path="/diagnostic" element={<DiagnosticScreen />} />
+                <Route path="/diagnostic/results" element={<DiagnosticResults />} />
                 <Route path="/goal" element={<Placeholder title="Goal Selection" />} />
-                <Route path="/diagnostic" element={<Placeholder title="Diagnostic" />} />
-                <Route
-                  path="/diagnostic/results"
-                  element={<Placeholder title="Diagnostic Results" />}
-                />
                 <Route path="/mastery-check" element={<Placeholder title="Mastery Check" />} />
                 <Route path="*" element={<NotFound />} />
               </Route>

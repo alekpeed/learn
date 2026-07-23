@@ -40,6 +40,9 @@ export function Dashboard(): JSX.Element {
               <Link to="/review">Reviews due</Link>: {dueCount}
             </li>
             <li>
+              <Link to="/diagnostic">Take a placement check</Link>
+            </li>
+            <li>
               <Link to="/progress">Your progress</Link>
             </li>
           </ul>
