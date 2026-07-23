@@ -7,7 +7,15 @@ import { validateAnswer, type ValidatorType } from '@learn/validation-engine';
 const here = dirname(fileURLToPath(import.meta.url));
 const unitsDir = join(here, '..', '..', '..', 'content', 'mvp', 'units');
 
-const UNITS = ['number_foundations', 'add_sub', 'mult_div', 'fractions', 'algebra'];
+const UNITS = [
+  'number_foundations',
+  'add_sub',
+  'mult_div',
+  'fractions',
+  'algebra',
+  'science_thinking',
+  'science_measurement',
+];
 
 interface Question {
   question_id: string;

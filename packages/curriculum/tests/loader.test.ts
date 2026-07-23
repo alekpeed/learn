@@ -18,6 +18,8 @@ const UNIT_FILES = [
   'units/mult_div.json',
   'units/fractions.json',
   'units/algebra.json',
+  'units/science_thinking.json',
+  'units/science_measurement.json',
 ];
 
 interface UnitFile {
@@ -43,11 +45,22 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     expect(result.ok, result.ok ? '' : result.errors.join('\n')).toBe(true);
     if (!result.ok) return;
 
-    // Full path present: number foundations through one-step equations.
+    // Full path present: number foundations through one-step equations, plus
+    // the scientific reasoning + measurement course (cross-thread deps resolve).
     const ids = new Set(result.package.skills.map((s) => s.skill_id));
     expect(ids.has('math.number_foundations.counting_and_quantity')).toBe(true);
     expect(ids.has('math.algebra.one_step_equations')).toBe(true);
-    expect(result.package.skills.length).toBeGreaterThanOrEqual(30);
+    expect(ids.has('science.thinking.observation')).toBe(true);
+    expect(ids.has('science.measurement.accuracy_precision')).toBe(true);
+    expect(result.package.skills.length).toBeGreaterThanOrEqual(40);
+  });
+
+  it('unit-validator questions in the measurement course work', () => {
+    const result = loadCoursePackage(loadMvp());
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const unitQuestions = result.package.questions.filter((q) => q.validator === 'unit');
+    expect(unitQuestions.length).toBeGreaterThan(0);
   });
 
   it('topologically orders the whole graph (no cycles)', () => {

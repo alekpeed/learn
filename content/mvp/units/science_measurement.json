@@ -1,0 +1,453 @@
+{
+  "skills": [
+    {
+      "skill_id": "science.measurement.si_units",
+      "unit_id": "science.measurement",
+      "title": "SI Units",
+      "summary": "The SI system gives everyone the same base units: the meter for length, the kilogram for mass, and the second for time.",
+      "objectives": [
+        "Name the SI base unit for length, mass, and time",
+        "Explain why shared units matter"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.observation",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 1,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.measurement.length",
+      "unit_id": "science.measurement",
+      "title": "Measuring Length",
+      "summary": "Length is measured in meters and related units. Millimeters, centimeters, meters, and kilometers scale by powers of ten.",
+      "objectives": [
+        "Choose a sensible length unit for an object",
+        "Read a length measurement with its unit"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.measurement.unit_conversion",
+      "unit_id": "science.measurement",
+      "title": "Unit Conversion",
+      "summary": "To convert within the metric system, multiply or divide by powers of ten: 1 meter = 100 centimeters, 1 kilogram = 1000 grams.",
+      "objectives": ["Convert between metric length units", "Convert between metric mass units"],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.length",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.multiplication_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.measurement.estimation",
+      "unit_id": "science.measurement",
+      "title": "Estimation and Reasonableness",
+      "summary": "Estimation gives a sensible approximate value and helps you check whether a measurement is reasonable.",
+      "objectives": [
+        "Estimate everyday lengths and masses",
+        "Judge whether a measurement is reasonable"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.unit_conversion",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.estimation",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.measurement.accuracy_precision",
+      "unit_id": "science.measurement",
+      "title": "Accuracy and Precision",
+      "summary": "Accuracy is how close a measurement is to the true value. Precision is how close repeated measurements are to each other. They are not the same.",
+      "objectives": [
+        "Distinguish accuracy from precision",
+        "Judge a set of measurements for accuracy and precision"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.thinking.evidence",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "science.measurement.si_units.lesson",
+      "skill_id": "science.measurement.si_units",
+      "title": "SI Units",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Name the SI base units for length, mass, and time."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If everyone measures with different rulers, results cannot be compared. The SI system fixes shared units so a meter means the same thing everywhere."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "SI base units: the meter (m) for length, the kilogram (kg) for mass, and the second (s) for time."
+        },
+        {
+          "type": "worked_example",
+          "body": "To report how far a ball rolled, use meters. To report how heavy it is, use kilograms."
+        },
+        {
+          "type": "summary",
+          "body": "SI base units: meter (length), kilogram (mass), second (time)."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.measurement.length.lesson",
+      "skill_id": "science.measurement.length",
+      "title": "Measuring Length",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Choose a sensible unit and read a length with its unit."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Small things are measured in millimeters or centimeters; rooms in meters; long distances in kilometers. The unit should fit the size."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "1 cm = 10 mm, 1 m = 100 cm, 1 km = 1000 m. Each step scales by a power of ten."
+        },
+        {
+          "type": "worked_example",
+          "body": "A pencil is about 18 cm long. A doorway is about 2 m tall. A walk to school might be 1 km."
+        },
+        {
+          "type": "summary",
+          "body": "Pick a length unit that matches the object's size, and always write the unit."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.measurement.unit_conversion.lesson",
+      "skill_id": "science.measurement.unit_conversion",
+      "title": "Unit Conversion",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Convert between metric units by multiplying or dividing by powers of ten."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Converting does not change the amount, only the unit. 1 meter and 100 centimeters are the same length written two ways."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 3 m to cm. Since 1 m = 100 cm, multiply: 3 x 100 = 300 cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Multiply when moving to a smaller unit (more of them) and divide when moving to a larger unit."
+        },
+        {
+          "type": "summary",
+          "body": "Metric conversions multiply or divide by 10, 100, or 1000; the amount stays the same."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.measurement.estimation.lesson",
+      "skill_id": "science.measurement.estimation",
+      "title": "Estimation and Reasonableness",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Estimate everyday quantities and check if a measurement is reasonable."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An estimate is a sensible approximate value. It helps you catch mistakes: if a mouse 'weighs' 50 kg, something is wrong."
+        },
+        {
+          "type": "worked_example",
+          "body": "Estimate the height of a door. A typical door is about 2 m. A '2 km' door is unreasonable."
+        },
+        {
+          "type": "summary",
+          "body": "Estimate to get a sensible ballpark and to check measurements for reasonableness."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.measurement.accuracy_precision.lesson",
+      "skill_id": "science.measurement.accuracy_precision",
+      "title": "Accuracy and Precision",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Tell accuracy and precision apart and judge measurements by both."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Accuracy is how close you are to the true value. Precision is how close repeated measurements are to each other. A measurement can be precise but not accurate."
+        },
+        {
+          "type": "representation",
+          "body": "Think of a target: accurate hits cluster on the bullseye; precise hits cluster tightly together, even if off-center.",
+          "accessible_text": "On a target, accurate shots land near the center; precise shots land close together, which may be away from the center."
+        },
+        {
+          "type": "worked_example",
+          "body": "A scale reads 5.0 kg every time for a true 3.0 kg mass. It is precise (same result each time) but not accurate (far from 3.0 kg)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Getting the same answer repeatedly (precision) does not guarantee it is correct (accuracy)."
+        },
+        {
+          "type": "summary",
+          "body": "Accuracy = close to true value. Precision = repeatable. They are different."
+        }
+      ],
+      "content_version": "0.1.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "science.measurement.si_units.q1",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which is the SI base unit for length?",
+      "parameters": { "options": ["meter", "foot", "liter"] },
+      "answer_spec": { "correct_answer": "meter" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "It is the unit used on metric rulers." }],
+      "dimensions": ["accuracy"],
+      "explanation": "The meter is the SI base unit of length.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.si_units.q2",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why does science use shared SI units?",
+      "parameters": {
+        "options": [
+          "So measurements can be compared everywhere",
+          "Because they are the largest units",
+          "So each lab can use its own ruler"
+        ]
+      },
+      "answer_spec": { "correct_answer": "So measurements can be compared everywhere" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "Think about comparing results between people." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Shared units let anyone compare measurements reliably.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.length.q1",
+      "skill_id": "science.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "A rope is 2 meters long. Write its length in centimeters (include the unit, e.g. '200 cm').",
+      "answer_spec": { "correct_answer": "200 cm" },
+      "validator": "unit",
+      "hints": [
+        { "level": 1, "text": "1 meter is 100 centimeters." },
+        { "level": 2, "text": "2 x 100 = 200, so 200 cm." }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 m = 2 x 100 cm = 200 cm.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.length.q2",
+      "skill_id": "science.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which unit best measures the length of a pencil?",
+      "parameters": { "options": ["centimeters", "kilometers", "meters"] },
+      "answer_spec": { "correct_answer": "centimeters" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "A pencil is small — pick a small unit." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A pencil is best measured in centimeters.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q1",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 3 meters to centimeters (include the unit, e.g. '300 cm').",
+      "answer_spec": { "correct_answer": "300 cm" },
+      "validator": "unit",
+      "hints": [
+        { "level": 1, "text": "1 m = 100 cm." },
+        { "level": 2, "text": "Multiply: 3 x 100 = 300 cm." }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 m = 3 x 100 = 300 cm.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q2",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 2 kilograms to grams (include the unit, e.g. '2000 g').",
+      "answer_spec": { "correct_answer": "2000 g" },
+      "validator": "unit",
+      "hints": [
+        { "level": 1, "text": "1 kg = 1000 g." },
+        { "level": 2, "text": "Multiply: 2 x 1000 = 2000 g." }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 kg = 2 x 1000 = 2000 g.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.estimation.q1",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "About how tall is a typical doorway?",
+      "parameters": { "options": ["2 meters", "2 centimeters", "2 kilometers"] },
+      "answer_spec": { "correct_answer": "2 meters" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "A door is a bit taller than an adult." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A doorway is roughly 2 meters tall; the other options are far too small or too large.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q1",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A scale reads 5.0 kg every time for a mass that is truly 3.0 kg. The scale is...",
+      "parameters": {
+        "options": [
+          "precise but not accurate",
+          "accurate but not precise",
+          "both accurate and precise"
+        ]
+      },
+      "answer_spec": { "correct_answer": "precise but not accurate" },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Precision = same result each time. Accuracy = close to the true value."
+        },
+        { "level": 2, "text": "It repeats 5.0 kg (precise) but is far from 3.0 kg (not accurate)." }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "transfer_flag": true,
+      "explanation": "The scale gives the same reading each time (precise) but is far from the true 3.0 kg (not accurate).",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q2",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Accuracy means a measurement is...",
+      "parameters": {
+        "options": [
+          "close to the true value",
+          "the same every time you repeat it",
+          "written in SI units"
+        ]
+      },
+      "answer_spec": { "correct_answer": "close to the true value" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "Do not confuse this with precision (repeatability)." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Accuracy is closeness to the true value; repeatability is precision.",
+      "content_version": "0.1.0"
+    }
+  ]
+}

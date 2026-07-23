@@ -13,5 +13,17 @@
       { "unit_id": "math.fractions", "title": "Fractions", "order": 4 },
       { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 5 }
     ]
+  },
+  {
+    "course_id": "science.core",
+    "subject_id": "science",
+    "title": "Scientific Reasoning and Measurement",
+    "description": "Scientific thinking and measurement from the ground up.",
+    "version": "0.1.0",
+    "status": "draft",
+    "units": [
+      { "unit_id": "science.thinking", "title": "Scientific Thinking", "order": 1 },
+      { "unit_id": "science.measurement", "title": "Measurement", "order": 2 }
+    ]
   }
 ]

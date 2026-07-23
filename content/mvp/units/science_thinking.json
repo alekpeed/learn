@@ -1,0 +1,446 @@
+{
+  "skills": [
+    {
+      "skill_id": "science.thinking.observation",
+      "unit_id": "science.thinking",
+      "title": "Observation",
+      "summary": "An observation is information gathered directly with your senses or instruments, without adding explanation.",
+      "objectives": [
+        "Describe what you directly sense or measure",
+        "Tell an observation apart from an opinion"
+      ],
+      "prerequisites": [],
+      "difficulty_band": 1,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.thinking.inference",
+      "unit_id": "science.thinking",
+      "title": "Inference",
+      "summary": "An inference is a conclusion or explanation you reach by reasoning from observations — it goes beyond what you directly sense.",
+      "objectives": [
+        "Distinguish an observation from an inference",
+        "Explain the reasoning behind an inference"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.observation",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.thinking.testable_questions",
+      "unit_id": "science.thinking",
+      "title": "Testable Questions",
+      "summary": "A testable question can be answered by gathering evidence through observation or experiment.",
+      "objectives": [
+        "Recognize a testable question",
+        "Rewrite an untestable question so it can be tested"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.inference",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 2,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.thinking.hypotheses",
+      "unit_id": "science.thinking",
+      "title": "Hypotheses",
+      "summary": "A hypothesis is a testable, reasoned prediction about what will happen and why.",
+      "objectives": [
+        "State a hypothesis as a testable prediction with a reason",
+        "Tell a hypothesis apart from a guess"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.testable_questions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.thinking.evidence",
+      "unit_id": "science.thinking",
+      "title": "Evidence and Conclusions",
+      "summary": "Evidence is data that supports or challenges a claim. A conclusion follows from evidence, and correlation does not prove causation.",
+      "objectives": [
+        "Use evidence to support or challenge a claim",
+        "Explain why correlation does not always mean causation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.hypotheses",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "difficulty_band": 3,
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0"
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "science.thinking.observation.lesson",
+      "skill_id": "science.thinking.observation",
+      "title": "Observation",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Describe what you directly sense or measure, without adding explanation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An observation is what you can see, hear, feel, smell, or measure right now. 'The ground is wet' is an observation. Saying 'it rained' is not — that is a guess about the cause."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An observation records information from the senses or an instrument. It does not include why something happened."
+        },
+        {
+          "type": "worked_example",
+          "body": "Looking at a plant: 'The leaves are yellow' is an observation. 'The plant is sick' is not — that is an explanation you added."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Adding a cause or opinion turns an observation into something else. Keep observations to what you directly detect."
+        },
+        {
+          "type": "summary",
+          "body": "Observation = what you directly sense or measure, with no explanation attached."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.thinking.inference.lesson",
+      "skill_id": "science.thinking.inference",
+      "title": "Inference",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Reach a reasoned conclusion from observations and label it as an inference."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "An observation is what you directly sense. An inference goes one step further."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If you observe wet ground and puddles, you might infer that it rained. The inference is your explanation — it could be wrong (a sprinkler may have run)."
+        },
+        {
+          "type": "worked_example",
+          "body": "Observation: 'The window is broken and there is a ball inside.' Inference: 'A ball broke the window.' The inference explains the observations but is not something you directly saw."
+        },
+        {
+          "type": "summary",
+          "body": "Inference = a conclusion reasoned from observations; it may be wrong and needs evidence."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.thinking.testable_questions.lesson",
+      "skill_id": "science.thinking.testable_questions",
+      "title": "Testable Questions",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Recognize questions that can be answered by gathering evidence."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A testable question can be answered by observing or experimenting. 'Does more water make a plant grow taller?' is testable. 'Are roses the best flower?' is not — it is an opinion."
+        },
+        {
+          "type": "worked_example",
+          "body": "Turn 'Is music good?' into a testable question: 'Do students score higher on a memory test with music or with silence?'"
+        },
+        {
+          "type": "summary",
+          "body": "Testable question = one you can answer with observation or experiment, not opinion."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.thinking.hypotheses.lesson",
+      "skill_id": "science.thinking.hypotheses",
+      "title": "Hypotheses",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Write a hypothesis as a testable prediction with a reason."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A hypothesis predicts what will happen and gives a reason. It is more than a guess because it can be tested and explained."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A common form is: 'If [change], then [predicted result], because [reason].'"
+        },
+        {
+          "type": "worked_example",
+          "body": "'If a plant gets more sunlight, then it will grow taller, because sunlight provides energy for growth.' This is testable and gives a reason."
+        },
+        {
+          "type": "summary",
+          "body": "Hypothesis = a testable prediction with a reason, not just a guess."
+        }
+      ],
+      "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.thinking.evidence.lesson",
+      "skill_id": "science.thinking.evidence",
+      "title": "Evidence and Conclusions",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use evidence to support a conclusion, and avoid confusing correlation with causation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Evidence is data that supports or challenges a claim. A conclusion should follow from the evidence — not from what you hoped to find."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Two things that rise and fall together are correlated. Correlation does not prove that one causes the other; a third factor may cause both."
+        },
+        {
+          "type": "worked_example",
+          "body": "Ice cream sales and sunburns both rise in summer. They are correlated, but ice cream does not cause sunburn — hot, sunny weather raises both."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Do not assume that because two things happen together, one causes the other."
+        },
+        {
+          "type": "summary",
+          "body": "Evidence supports conclusions; correlation alone does not prove causation."
+        }
+      ],
+      "content_version": "0.1.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "science.thinking.observation.q1",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which statement is an observation?",
+      "parameters": {
+        "options": ["The ground is wet", "It rained last night", "Someone forgot an umbrella"]
+      },
+      "answer_spec": { "correct_answer": "The ground is wet" },
+      "validator": "exact_choice",
+      "hints": [
+        { "level": 1, "text": "An observation is something you can directly sense right now." },
+        { "level": 2, "text": "The other choices explain a cause you did not directly see." }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You can directly see that the ground is wet. The other statements add an explanation, so they are inferences.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.observation.q2",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "An observation should describe...",
+      "parameters": {
+        "options": [
+          "what you directly sense or measure",
+          "why something happened",
+          "what you hope will happen"
+        ]
+      },
+      "answer_spec": { "correct_answer": "what you directly sense or measure" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "Observations do not include explanations." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An observation records what your senses or instruments detect, with no explanation added.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.inference.q1",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You see wet ground and puddles. Which statement is an inference?",
+      "parameters": {
+        "options": ["It rained recently", "The ground is wet", "There are puddles"]
+      },
+      "answer_spec": { "correct_answer": "It rained recently" },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An inference is a conclusion you reason to, not something you directly see."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'It rained recently' is a conclusion reasoned from the observations; the others are the observations themselves.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.inference.q2",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "How is an inference different from an observation?",
+      "parameters": {
+        "options": [
+          "It adds reasoning that goes beyond what you sense",
+          "It uses more precise instruments",
+          "It is always correct"
+        ]
+      },
+      "answer_spec": { "correct_answer": "It adds reasoning that goes beyond what you sense" },
+      "validator": "exact_choice",
+      "hints": [
+        { "level": 1, "text": "Inferences can be wrong; observations are what you detect." }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An inference reasons beyond the direct observation, so it can be wrong and needs evidence.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q1",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which question can be tested with an experiment?",
+      "parameters": {
+        "options": [
+          "Does more sunlight make plants grow taller?",
+          "Is green the prettiest color?",
+          "Should everyone study science?"
+        ]
+      },
+      "answer_spec": { "correct_answer": "Does more sunlight make plants grow taller?" },
+      "validator": "exact_choice",
+      "hints": [
+        { "level": 1, "text": "A testable question can be answered by gathering evidence." }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You can measure plant height under different amounts of sunlight. The others are opinions.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q1",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is the best hypothesis?",
+      "parameters": {
+        "options": [
+          "If a plant gets more sunlight, it will grow taller, because sunlight gives energy for growth",
+          "Plants are nice",
+          "I think the plant will do something"
+        ]
+      },
+      "answer_spec": {
+        "correct_answer": "If a plant gets more sunlight, it will grow taller, because sunlight gives energy for growth"
+      },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "A hypothesis is a testable prediction with a reason." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A good hypothesis predicts a result and gives a reason, and it can be tested.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.evidence.q1",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Ice cream sales and sunburns both rise in summer. What is the best conclusion?",
+      "parameters": {
+        "options": [
+          "They are correlated, but one may not cause the other",
+          "Ice cream causes sunburns",
+          "Sunburns cause people to buy ice cream"
+        ]
+      },
+      "answer_spec": { "correct_answer": "They are correlated, but one may not cause the other" },
+      "validator": "exact_choice",
+      "hints": [
+        { "level": 1, "text": "Two things rising together does not prove one causes the other." },
+        { "level": 2, "text": "Hot, sunny weather could raise both." }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "transfer_flag": true,
+      "explanation": "The two are correlated, but a third factor (hot, sunny weather) likely drives both — correlation is not causation.",
+      "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.evidence.q2",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Evidence is best described as...",
+      "parameters": {
+        "options": [
+          "data that supports or challenges a claim",
+          "an opinion you feel strongly about",
+          "the question you started with"
+        ]
+      },
+      "answer_spec": { "correct_answer": "data that supports or challenges a claim" },
+      "validator": "exact_choice",
+      "hints": [{ "level": 1, "text": "Evidence comes from observation or measurement." }],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Evidence is data that supports or challenges a claim, letting you judge it fairly.",
+      "content_version": "0.1.0"
+    }
+  ]
+}

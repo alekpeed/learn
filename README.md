@@ -2,7 +2,7 @@
 
 A local-first, mastery-based learning application that teaches mathematics (arithmetic → introductory algebra) and scientific reasoning from the ground up: it identifies missing prerequisites, teaches in dependency order, grades deterministically, tracks five-dimension mastery, and schedules spaced review.
 
-> **Status: Phase 6 (MVP Mathematics Content) complete.** The full MVP mathematics slice is authored and validated: 31 skills across 5 units (number foundations → one-step equations), each with a lesson and deterministically-graded questions (~59 total). The graph loads with no missing prerequisites or cycles, and every question is accepted by its own validator. Scientific-reasoning content (Phase 7) and the AI tutor (Phase 8) remain.
+> **Status: Phase 7 (Scientific Reasoning Content) complete.** Both MVP subjects are now authored and validated: **41 skills** total — mathematics (31 skills, number foundations → one-step equations) plus scientific reasoning & measurement (10 skills, observation → accuracy/precision). Cross-thread prerequisites (science depends on math number-line, multiplication, estimation) resolve; metric unit-conversion questions grade via the unit validator. The AI tutor (Phase 8) and quality/release (Phase 9) remain.
 
 ## Documentation
 

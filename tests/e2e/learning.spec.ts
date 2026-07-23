@@ -27,3 +27,15 @@ test.describe('learning engine (Phase 4)', () => {
     await expect(page.getByText(/nothing is due for review/i)).toBeVisible();
   });
 });
+
+test.describe('science measurement (Phase 7)', () => {
+  test('a metric unit-conversion question grades equivalent units as correct', async ({ page }) => {
+    await page.goto('/practice?skill=science.measurement.unit_conversion');
+    await expect(page.getByRole('heading', { name: /^practice$/i })).toBeVisible();
+    // "Convert 3 meters to centimeters" — 300 cm; the unit validator also
+    // accepts the equivalent "3 m".
+    await page.getByLabel(/your answer/i).fill('300 cm');
+    await page.getByRole('button', { name: /submit/i }).click();
+    await expect(page.getByText(/correct/i)).toBeVisible();
+  });
+});

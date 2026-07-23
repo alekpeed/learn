@@ -12,6 +12,8 @@ import addSub from '../../../../content/mvp/units/add_sub.json';
 import multDiv from '../../../../content/mvp/units/mult_div.json';
 import fractions from '../../../../content/mvp/units/fractions.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
+import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
+import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
 
 interface UnitFile {
   skills: unknown[];
@@ -19,7 +21,15 @@ interface UnitFile {
   questions: unknown[];
 }
 
-const units: UnitFile[] = [numberFoundations, addSub, multDiv, fractions, algebra];
+const units: UnitFile[] = [
+  numberFoundations,
+  addSub,
+  multDiv,
+  fractions,
+  algebra,
+  scienceThinking,
+  scienceMeasurement,
+];
 
 export function loadSampleCurriculum(): LoadResult {
   return loadCoursePackage({
