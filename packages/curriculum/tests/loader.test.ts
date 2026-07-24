@@ -23,6 +23,7 @@ const UNIT_FILES = [
   'units/ratios.json',
   'units/measurement.json',
   'units/algebra.json',
+  'units/functions.json',
   'units/science_thinking.json',
   'units/science_measurement.json',
 ];
@@ -125,6 +126,14 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     );
     expect(pos('math.fractions.multiplying_fractions')).toBeLessThan(
       pos('math.fractions.dividing_fractions'),
+    );
+    // Functions: ordered pairs build on the coordinate plane; linear relationships
+    // build on function machines and rate of change.
+    expect(pos('math.functions.coordinate_plane')).toBeLessThan(
+      pos('math.functions.ordered_pairs'),
+    );
+    expect(pos('math.functions.rate_of_change')).toBeLessThan(
+      pos('math.functions.linear_relationships'),
     );
   });
 

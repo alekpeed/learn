@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "content_version": "0.6.0",
+  "content_version": "0.7.0",
   "courses": ["math.core", "science.core"],
   "generated_at": "2026-07-23T00:00:00Z",
-  "change_summary": "Adds the Ratios and Proportions (7 skills) and Measurement Foundations (8 skills) units before Algebra, authored at mastery-grade depth. Prior additions: Numerical Structure, Integers, Decimals and Percentages. Base slice: mathematics (number foundations through one-step equations) plus scientific reasoning and measurement."
+  "change_summary": "Adds the Coordinate Plane and Graphs unit (8 skills, math.functions) after Algebra, using a new deterministic point/coordinate validator. Prior additions: Ratios, Measurement Foundations, Numerical Structure, Integers, Decimals and Percentages, plus Phase 13 backfills. Base slice: mathematics (number foundations through one-step equations) plus scientific reasoning and measurement."
 }

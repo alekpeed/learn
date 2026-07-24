@@ -35,7 +35,8 @@ mastered -> review_due -> decayed`.
 - Adaptive diagnostic (binary-search boundary detection), prerequisite repair/detour,
   six-rung hint ladder, adaptive difficulty (1-5).
 - Deterministic grading and error diagnosis (13 error categories). Validators:
-  numeric, fraction, decimal, percentage, unit, multi-select, ordering, exact-choice.
+  numeric, fraction, decimal, percentage, unit, multi-select, ordering, exact-choice, point
+  (ordered-pair/coordinate; added in Phase 14).
 - Isolated AI tutor (provider-neutral, BYOK): may rephrase, hint, and draft
   non-authoritative practice, but never writes verified state (DEC-005/010).
 - Local-first and offline-capable: append-only event log is the source of truth (DEC-006);
@@ -56,34 +57,34 @@ introductory-algebra + scientific-reasoning course. It is the full "initial subj
 
 - it does NOT by itself reach trigonometry (see section 4).
 
-Current authored coverage: **~99 of ~138 documented topics (~72%)** across **93 skills**.
-Nine units are complete, four are partial, three are entirely missing. (Phase 10 authored
-Decimals & Percentages as one combined unit, `math.decimals_percents`, covering the core of
-documented units 7-8; Phase 11 authored Numerical Structure and Integers in full; Phase 12
-authored Ratios & Proportions and Measurement Foundations in full; Phase 13 completed the
-Addition/Subtraction, Multiplication/Division, Fractions, and Algebra units by backfilling
-their missing topics.)
+Current authored coverage: **~108 of ~138 documented topics (~78%)** across **101 skills**.
+Ten units are complete, four are partial, two are entirely missing. Phase 14 authored the
+Coordinate Plane & Graphs unit (`math.functions`, 8 skills), which added a new deterministic
+`point` validator - so **the entire mathematics course is now built except partial coverage
+of Decimals and Percentages.** (Earlier: Phase 10 Decimals & Percentages; Phase 11 Numerical
+Structure and Integers; Phase 12 Ratios and Measurement Foundations; Phase 13 completed
+Addition/Subtraction, Multiplication/Division, Fractions, and Algebra.) The remaining gaps
+are all in the science course plus the Decimals/Percentages backfill.
 
 ### Mathematics course (`math.core`)
 
-| #   | Unit                      | Topics | Status      | Notes                                                                                                                       |
-| --- | ------------------------- | :----: | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Number Foundations        |   6    | built       | complete                                                                                                                    |
-| 2   | Addition & Subtraction    |   8    | built       | Phase 13 added word problems                                                                                                |
-| 3   | Multiplication & Division |   9    | built       | Phase 13 added arrays/groups, remainders, word problems                                                                     |
-| 4   | Numerical Structure       |   7    | built       | Phase 11: even/odd, factors, multiples, primes, GCF, LCM, order of operations                                               |
-| 5   | Integers                  |   7    | built       | Phase 11: negatives, comparing, absolute value, add/subtract/multiply/divide integers                                       |
-| 6   | Fractions                 |   14   | built       | Phase 13 added comparing, subtract-unlike, multiply, divide, mixed numbers, word problems                                   |
-| 7   | Decimals                  |   8    | partial (7) | Phase 10 (`math.decimals_percents`): place value, fraction-decimal, compare, +- x/; missing rounding                        |
-| 8   | Percentages               |   7    | partial (3) | Phase 10: meaning, F-D-P conversion, percent of a quantity; missing finding whole/percent, increase-decrease, word problems |
-| 9   | Ratios & Proportions      |   8    | built       | Phase 12: ratio, equivalent ratios, rates, unit rate, proportions, scale, direct proportionality (word problems embedded)   |
-| 10  | Measurement Foundations   |   8    | built       | Phase 12: length, mass, time, temperature, area, volume, unit conversion, estimation                                        |
-| 11  | Algebra Foundations       |   12   | built       | Phase 13 added terms/coefficients/constants, combining like terms, distributive, two-step, word problems                    |
-| 12  | Coordinate Plane & Graphs |   9    | missing     | axes/origin, ordered pairs, plotting, tables, reading graphs, rate of change, input/output, function machines, intro linear |
+| #   | Unit                      | Topics | Status      | Notes                                                                                                                                                         |
+| --- | ------------------------- | :----: | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Number Foundations        |   6    | built       | complete                                                                                                                                                      |
+| 2   | Addition & Subtraction    |   8    | built       | Phase 13 added word problems                                                                                                                                  |
+| 3   | Multiplication & Division |   9    | built       | Phase 13 added arrays/groups, remainders, word problems                                                                                                       |
+| 4   | Numerical Structure       |   7    | built       | Phase 11: even/odd, factors, multiples, primes, GCF, LCM, order of operations                                                                                 |
+| 5   | Integers                  |   7    | built       | Phase 11: negatives, comparing, absolute value, add/subtract/multiply/divide integers                                                                         |
+| 6   | Fractions                 |   14   | built       | Phase 13 added comparing, subtract-unlike, multiply, divide, mixed numbers, word problems                                                                     |
+| 7   | Decimals                  |   8    | partial (7) | Phase 10 (`math.decimals_percents`): place value, fraction-decimal, compare, +- x/; missing rounding                                                          |
+| 8   | Percentages               |   7    | partial (3) | Phase 10: meaning, F-D-P conversion, percent of a quantity; missing finding whole/percent, increase-decrease, word problems                                   |
+| 9   | Ratios & Proportions      |   8    | built       | Phase 12: ratio, equivalent ratios, rates, unit rate, proportions, scale, direct proportionality (word problems embedded)                                     |
+| 10  | Measurement Foundations   |   8    | built       | Phase 12: length, mass, time, temperature, area, volume, unit conversion, estimation                                                                          |
+| 11  | Algebra Foundations       |   12   | built       | Phase 13 added terms/coefficients/constants, combining like terms, distributive, two-step, word problems                                                      |
+| 12  | Coordinate Plane & Graphs |   9    | built       | Phase 14: axes/origin, ordered pairs, plotting, tables, reading graphs, rate of change, input/output, function machines, intro linear (new `point` validator) |
 
-Math authored: ~89 of 103 documented topics (83 skills). Only Coordinate Plane & Graphs
-(unit 12) is entirely missing, and Decimals/Percentages are partial; all other math units
-are complete.
+Math authored: ~98 of 103 documented topics (91 skills). Every math unit is complete except
+Decimals and Percentages, which are partial.
 
 ### Scientific Reasoning course (`science.core`)
 
@@ -104,7 +105,7 @@ The documentation defines scope as four widening rings. Only the innermost is pa
 
 1. **Initial subject scope** (docs 01, 03, 05): the full ~138-topic curriculum in section 2
    - arithmetic through introductory algebra + coordinate plane/graphs, plus scientific
-     reasoning / measurement / data. ~72% built. Completing this ring satisfies the spec's
+     reasoning / measurement / data. ~78% built. Completing this ring satisfies the spec's
      Completion Rule (the entire scoped curriculum traversable through prerequisites,
      lessons, practice, mastery, and review).
 
@@ -166,13 +167,12 @@ sequenced.
 ## 6. Summary for a new session
 
 - The **engine is done**; the work is **curriculum content** (breadth) and **item depth**.
-- The documented course is **16 units / ~138 topics**; about **72% is authored** across
-  **93 skills** (9 units complete, 4 partial, 3 missing). Phases 10-13 added Decimals &
-  Percentages, Numerical Structure, Integers, Ratios & Proportions, and Measurement
-  Foundations, and completed the Addition/Subtraction, Multiplication/Division, Fractions,
-  and Algebra units - all at mastery-grade depth. The only entirely missing math unit is
-  Coordinate Plane & Graphs; the remaining gaps are the two science units (Experiments,
-  Data) and partial coverage of Decimals/Percentages and the two existing science units.
+- The documented course is **16 units / ~138 topics**; about **78% is authored** across
+  **101 skills** (10 units complete, 4 partial, 2 missing). Phases 10-14 built out the
+  entire mathematics course except partial Decimals/Percentages; Phase 14 added Coordinate
+  Plane & Graphs and a new `point` validator. The remaining gaps are all in the science
+  course - the two missing units (Experiments, Data), partial Scientific Thinking and
+  Measurement - plus the small Decimals/Percentages backfill.
 - Scope widens in four rings: initial curriculum -> Version 1 features -> Later Features
   -> long-term subjects (trig, calculus, sciences, and more).
 - The docs' authored curriculum stops at introductory algebra; **trig/calc are vision, not

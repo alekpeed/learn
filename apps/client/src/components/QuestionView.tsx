@@ -151,6 +151,7 @@ export function QuestionView({
               disabled={practice.solved}
               autoComplete="off"
               inputMode={question.type === 'numeric' ? 'decimal' : 'text'}
+              placeholder={question.type === 'point' ? '(x, y)' : undefined}
             />
           </>
         )}

@@ -17,6 +17,7 @@ import decimalsPercents from '../../../../content/mvp/units/decimals_percents.js
 import ratios from '../../../../content/mvp/units/ratios.json';
 import measurement from '../../../../content/mvp/units/measurement.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
+import functions from '../../../../content/mvp/units/functions.json';
 import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
 import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
 
@@ -37,6 +38,7 @@ const units: UnitFile[] = [
   ratios,
   measurement,
   algebra,
+  functions,
   scienceThinking,
   scienceMeasurement,
 ];

@@ -123,6 +123,26 @@ describe('ordering validator', () => {
   });
 });
 
+describe('point validator', () => {
+  const spec = { correct_answer: '(3, 4)' };
+  it('accepts the matching ordered pair in several formats', () => {
+    expect(validateAnswer('point', '(3, 4)', spec).correct).toBe(true);
+    expect(validateAnswer('point', '3,4', spec).correct).toBe(true);
+    expect(validateAnswer('point', '3, 4', spec).correct).toBe(true);
+  });
+  it('accepts negative and zero coordinates', () => {
+    expect(validateAnswer('point', '(-2, 5)', { correct_answer: '(-2, 5)' }).correct).toBe(true);
+    expect(validateAnswer('point', '(0, 0)', { correct_answer: '(0,0)' }).correct).toBe(true);
+  });
+  it('rejects a swapped or wrong pair', () => {
+    expect(validateAnswer('point', '(4, 3)', spec).correct).toBe(false);
+    expect(validateAnswer('point', '(3, 5)', spec).correct).toBe(false);
+  });
+  it('reports a bad format', () => {
+    expect(validateAnswer('point', '3', spec).reason).toMatch(/ordered pair/);
+  });
+});
+
 describe('dispatch + exact choice', () => {
   it('routes by validator type', () => {
     expect(validateAnswer('exact_choice', '>', { correct_answer: '>' }).correct).toBe(true);

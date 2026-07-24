@@ -9,7 +9,8 @@ export type ValidatorType =
   | 'exact_choice'
   | 'structured'
   | 'multi_select'
-  | 'ordering';
+  | 'ordering'
+  | 'point';
 
 export interface AnswerSpec {
   correct_answer: unknown;

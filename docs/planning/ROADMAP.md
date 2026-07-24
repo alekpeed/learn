@@ -94,13 +94,19 @@ fraction arithmetic are computed and verified; every answer grades through the v
 After this phase the only entirely missing math unit is Coordinate Plane & Graphs (Phase
 14), and Decimals/Percentages remain partial.
 
-### Phase 14 - Coordinate Plane, Graphs & Introductory Functions [content + engine]
+### Phase 14 - Coordinate Plane, Graphs & Introductory Functions [content + engine] - DONE
 
-New unit `math.functions` (doc unit 12, ~9 topics): coordinate plane & plotting, reading
-points, tables of values, reading graphs, rate-of-change intuition, input/output, function
-machines, introductory linear relationships. **First phase that needs new application
-code:** a coordinate/point question type and a small non-interactive graph renderer for
-prompts. Add one new deterministic validator (`point`/`coordinate`) plus its renderer.
+Shipped `math.functions` (doc unit 12, 8 skills, 67 questions): coordinate plane, ordered
+pairs, plotting points, tables of values, reading graphs, input/output (function machines),
+rate of change, and introductory linear relationships. **The first phase to touch
+application code:** added a new deterministic **`point` validator** (parses ordered pairs
+like "(3, 4)", "3,4", "-2, 5"; compares both coordinates within tolerance) to the
+validation-engine, added `point` to the question-type and validator schema enums, and gave
+the client a point input (placeholder "(x, y)"). Graph/table questions are posed textually
+so they stay accessible without a rendered plot; a richer interactive graph renderer remains
+a future enhancement. Point positions, table values, and function-machine outputs are all
+computed and verified. This completes the mathematics course except partial
+Decimals/Percentages.
 
 ### Phase 15 - Scientific Reasoning & Data completion [content, small engine]
 

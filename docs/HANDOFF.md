@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 13 shipped)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 14 shipped)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -9,11 +9,12 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 > end** (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
 > how far the vision reaches - including trigonometry and calculus). Its companion
 > `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
-> surprised a prior session and are easy to get wrong: (1) only about **72% of the
-> documented curriculum is authored** - the **93 skills** below are a slice, not the whole
-> course; and (2) **trigonometry and calculus are named in the vision but have no authored
-> curriculum** - completing 100% of the documented spec lands a learner at introductory
-> algebra + linear graphs, not trig.
+> surprised a prior session and are easy to get wrong: (1) only about **78% of the
+> documented curriculum is authored** - the **101 skills** below are a slice, not the whole
+> course (the entire math course is built except partial Decimals/Percentages; the gaps are
+> in science); and (2) **trigonometry and calculus are named in the vision but have no
+> authored curriculum** - completing 100% of the documented spec lands a learner at
+> introductory algebra + linear graphs, not trig.
 
 ---
 
@@ -34,9 +35,13 @@ shipped on top of it. Everything is committed and pushed.
 - Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
   machine, prerequisite gating + remediation, progress projection.
 - Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **93 skills** across 12 units. All math units are complete except Coordinate
-  Plane & Graphs (not started) and Decimals/Percentages (partial); the two science units
-  are partial, and Experiments and Data are not started.
+- Content: **101 skills** across 13 units. The **entire math course is complete** except
+  Decimals/Percentages (partial). The remaining gaps are all in science: Scientific Thinking
+  and Measurement are partial, and Experiments and Data are not started.
+- **New engine capability (Phase 14):** a deterministic **`point` validator** for
+  ordered-pair/coordinate answers (validation-engine), added to the question-type and
+  validator schema enums, with a client point input. This is the app's first content-driven
+  engine extension since the MVP.
 - Isolated AI tutor: provider-neutral gateway that depends **only** on `@learn/domain`;
   off by default; can never write verified state (DEC-005/010); verified fallback.
 - Release: progress export/import, offline handling, accessibility audit (axe) across all
@@ -87,14 +92,20 @@ shipped on top of it. Everything is committed and pushed.
   skills). This completed all four units. Combining-like-terms/distributive answers use
   `multiple_choice` (no expression validator exists); solutions and fraction arithmetic
   are computed and verified.
+- **Phase 14 — Coordinate Plane, Graphs & Functions** (`functions.json`, plus engine). New
+  unit `math.functions` (8 skills, 67 questions): coordinate plane, ordered pairs, plotting,
+  tables of values, reading graphs, input/output (function machines), rate of change, intro
+  linear relationships. Added a **`point` validator** (parses "(3, 4)", "3,4", "-2, 5") in
+  `validation-engine`, `point` in the schema type/validator enums, a `point` input in
+  `QuestionView`, and 4 validator unit tests. Graph/table items are posed textually (no
+  rendered plot yet). Completed the math course except partial Decimals/Percentages.
 
 **Test status (all green):**
 
-- `pnpm test` → **162** vitest tests across all packages (includes the 18
-  content-validation tests reachable via `pnpm validate:content`). The
-  `content-answers.test.ts` guard grades every new-unit answer (Decimals & Percentages plus
-  the Phase 11 units) through the deterministic validators, and `loader.test.ts` covers each
-  new unit's prerequisite order.
+- `pnpm test` → **166** vitest tests across all packages (includes the 18
+  content-validation tests reachable via `pnpm validate:content`, and 4 new `point`-validator
+  tests). The `content-answers.test.ts` guard grades every new-unit answer through the
+  deterministic validators, and `loader.test.ts` covers each new unit's prerequisite order.
 - `pnpm test:e2e` → **24** Playwright tests, including axe-core accessibility checks.
 - `pnpm typecheck`, `pnpm lint` (prettier), and `pnpm build` all clean.
 
@@ -235,13 +246,14 @@ The **engine** is complete; the outstanding work is almost entirely **curriculum
 The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
 `docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
-1. **Track A - complete the documented curriculum.** **Phases 10-13 are done.** The next
-   phase is **Phase 14: Coordinate Plane, Graphs & Introductory Functions** - the **first
-   phase that needs new application code** (a coordinate/point question type and a small
-   non-interactive graph renderer; add a `point`/`coordinate` validator). Then **Phase 15:
-   Science completion** (models & explanations, mass/time/temperature/volume, significant
-   figures, and the missing Experiments and Data units). A small remaining backfill:
-   Decimals/Percentages partial topics (rounding, finding whole/percent, increase-decrease).
+1. **Track A - complete the documented curriculum.** **Phases 10-14 are done; the math
+   course is complete** except partial Decimals/Percentages. The remaining Track A work is
+   **Phase 15: Science completion** - backfill Scientific Thinking (models, scientific
+   explanations) and Measurement (mass, time, temperature, volume, significant figures), and
+   author the two missing science units, **Experiments** and **Data**. The Data unit's
+   graph-reading items can reuse the textual/table approach from Phase 14 (or motivate a real
+   graph renderer). A small remaining math backfill: Decimals/Percentages partial topics
+   (rounding, finding whole/percent, increase-decrease).
 2. **Track B - content depth pass**: raise each authored skill from ~2 items to
    mastery-grade item pools (~8-15 across difficulties).
 3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content

@@ -1,0 +1,2330 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.functions.coordinate_plane",
+      "unit_id": "math.functions",
+      "title": "The Coordinate Plane",
+      "summary": "The coordinate plane is formed by two number lines that cross at right angles: the horizontal x-axis and the vertical y-axis. They meet at the origin, (0, 0). Positions are measured right/left along x and up/down along y.",
+      "objectives": [
+        "Name the parts of the coordinate plane.",
+        "Locate the origin and the axes.",
+        "State which directions are positive on each axis."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.integers.negative_numbers",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.number_line",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.functions.ordered_pairs",
+      "unit_id": "math.functions",
+      "title": "Ordered Pairs",
+      "summary": "An ordered pair (x, y) names a point's position: the first number is how far right (or left) along the x-axis, and the second is how far up (or down) along the y-axis. The order matters, so (3, 5) is different from (5, 3).",
+      "objectives": [
+        "Write an ordered pair for a described position.",
+        "Identify the x- and y-coordinates of a pair.",
+        "Explain why order matters in an ordered pair."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.coordinate_plane",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.functions.plotting_points",
+      "unit_id": "math.functions",
+      "title": "Plotting Points",
+      "summary": "To plot a point from its coordinates, start at the origin, move right or left by the x-value, then up or down by the y-value, and mark the spot. Reading a plotted point reverses this: measure its horizontal and vertical distances from the origin.",
+      "objectives": [
+        "Plot a point from an ordered pair.",
+        "Find the coordinates of a described point.",
+        "Recognize points that lie on an axis."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.ordered_pairs",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.functions.tables_of_values",
+      "unit_id": "math.functions",
+      "title": "Tables of Values",
+      "summary": "A table of values lists inputs (x) and the outputs (y) a rule produces. You fill a table by applying the rule to each x-value. Each row of the table is an ordered pair that can be plotted as a point.",
+      "objectives": [
+        "Complete a table of values from a rule.",
+        "Read an ordered pair from a table row.",
+        "Extend a pattern shown in a table."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.ordered_pairs",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.evaluating_expressions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.functions.reading_graphs",
+      "unit_id": "math.functions",
+      "title": "Reading Graphs",
+      "summary": "Reading a graph means finding information from plotted points or a line: the coordinates of a point, or the y-value that goes with a given x. Points on the x-axis have y = 0, and points on the y-axis have x = 0.",
+      "objectives": [
+        "Read the coordinates of a point on a graph.",
+        "Find the y-value for a given x on a line.",
+        "Recognize points that lie on an axis."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.plotting_points",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.functions.input_output",
+      "unit_id": "math.functions",
+      "title": "Input and Output (Function Machines)",
+      "summary": "A function machine takes an input, applies a rule, and produces one output. Following the rule forward gives the output for an input; working backward finds the input that produced a given output.",
+      "objectives": [
+        "Find the output of a function machine for a given input.",
+        "Apply a two-step rule.",
+        "Work backward to find an input from an output."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.evaluating_expressions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.functions.rate_of_change",
+      "unit_id": "math.functions",
+      "title": "Rate of Change",
+      "summary": "Rate of change describes how much the output changes for each one-unit change in the input. On a graph it is the steepness of a line: a bigger rate means a steeper line, and a rate of 0 means a flat line.",
+      "objectives": [
+        "Find the rate of change from two points or a description.",
+        "Interpret a rate of change in context.",
+        "Relate the rate of change to steepness."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.tables_of_values",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.rates",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.functions.linear_relationships",
+      "unit_id": "math.functions",
+      "title": "Introductory Linear Relationships",
+      "summary": "A linear relationship has the form y = (rate)x + (starting value); its graph is a straight line. The rate of change is how much y grows per unit x, and the starting value is y when x is 0 (where the line meets the y-axis).",
+      "objectives": [
+        "Find y from a linear rule for a given x.",
+        "Identify the rate of change and starting value.",
+        "Apply a linear relationship to a real situation."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.input_output",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.functions.rate_of_change",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.functions.coordinate_plane.lesson",
+      "skill_id": "math.functions.coordinate_plane",
+      "title": "The Coordinate Plane",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify the axes and origin of the coordinate plane and the positive directions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the number line, with negatives to the left of zero. The coordinate plane uses two number lines at once."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Picture two number lines: one lying flat (the x-axis) and one standing up (the y-axis), crossing at zero. Together they let you describe any spot on a flat surface, like a map grid, by how far across and how far up or down it is."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The horizontal number line is the x-axis and the vertical one is the y-axis. They intersect at the origin, the point (0, 0). On the x-axis, right is positive and left is negative; on the y-axis, up is positive and down is negative."
+        },
+        {
+          "type": "representation",
+          "body": "Draw a plus-sign shape: a horizontal line and a vertical line crossing in the middle. Label the crossing point (0, 0), the right end of the horizontal line as positive x, and the top of the vertical line as positive y."
+        },
+        {
+          "type": "worked_example",
+          "body": "Where is the origin? It is the point where the x-axis and y-axis cross, with coordinates (0, 0)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Is the point 3 units to the right of the origin at a positive or negative x-value? To the right is positive, so its x-value is positive."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is mixing up the axes. The x-axis is horizontal (across) and the y-axis is vertical (up and down)."
+        },
+        {
+          "type": "summary",
+          "body": "The coordinate plane has a horizontal x-axis and a vertical y-axis meeting at the origin (0, 0). Right and up are positive; left and down are negative."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the name of the point where the two axes cross, and what are its coordinates?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.ordered_pairs.lesson",
+      "skill_id": "math.functions.ordered_pairs",
+      "title": "Ordered Pairs",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read and write ordered pairs for points on the plane."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that the x-axis is horizontal and the y-axis is vertical, meeting at the origin."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An ordered pair is like directions from the origin: first walk right or left, then walk up or down. (3, 5) means 3 to the right, then 5 up. Swapping the numbers sends you to a different place, so the order matters."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An ordered pair is written (x, y). The x-coordinate is the horizontal distance from the origin (right positive, left negative). The y-coordinate is the vertical distance (up positive, down negative)."
+        },
+        {
+          "type": "worked_example",
+          "body": "Write the ordered pair for a point 3 units right and 2 units up from the origin. Right 3 gives x = 3; up 2 gives y = 2. The pair is (3, 2)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A point is 4 units left and 1 unit up. Left 4 gives x = -4; up 1 gives y = 1. The pair is (-4, 1)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is reversing the coordinates. The first number is always the horizontal (x) value; the second is the vertical (y) value."
+        },
+        {
+          "type": "summary",
+          "body": "An ordered pair (x, y) gives horizontal then vertical position from the origin. Right/up are positive, left/down negative, and order matters."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What ordered pair describes a point 2 to the right and 3 down from the origin?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.plotting_points.lesson",
+      "skill_id": "math.functions.plotting_points",
+      "title": "Plotting Points",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to plot points from coordinates and read coordinates from described positions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an ordered pair (x, y) gives horizontal then vertical distance from the origin."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Plotting is following directions from the origin. For (3, 4), step 3 to the right, then 4 up, and put a dot. Reading a point is the reverse: see how far right and up the dot is from the origin."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To plot (x, y): begin at the origin, move x units horizontally (right if positive, left if negative), then y units vertically (up if positive, down if negative), and mark the point."
+        },
+        {
+          "type": "worked_example",
+          "body": "Plot (3, 4). From the origin, move 3 right and 4 up, and mark the point. That location is the point (3, 4)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Plot a point by moving 2 left and 5 up from the origin. Left 2 gives x = -2; up 5 gives y = 5, so the point is (-2, 5)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is moving up first or reversing the numbers. Always move horizontally (x) first, then vertically (y)."
+        },
+        {
+          "type": "summary",
+          "body": "Plot a point by moving x horizontally then y vertically from the origin. Reading a point measures those same distances back."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Starting at the origin, what point do you reach by moving 3 right and 4 up?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.tables_of_values.lesson",
+      "skill_id": "math.functions.tables_of_values",
+      "title": "Tables of Values",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to build a table of values from a rule and read ordered pairs from it."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to evaluate an expression by substituting a number for the variable, and that an ordered pair is (x, y)."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A table of values is a list of what a rule does. For the rule y = x + 2, feeding in x = 1 gives y = 3, x = 2 gives y = 4, and so on. Each input and its output form a point you could plot."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A table of values pairs chosen input values (x) with the output values (y) that a rule produces. Each (x, y) pair is a point. To complete the table, substitute each x into the rule to find y."
+        },
+        {
+          "type": "worked_example",
+          "body": "For y = x + 2, complete the table for x = 1, 2, 3. Substitute: 1 + 2 = 3, 2 + 2 = 4, 3 + 2 = 5. The outputs are 3, 4, 5, giving points (1, 3), (2, 4), (3, 5)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "For y = 2x, what is y when x = 4? Substitute: 2 times 4 = 8. So the row is x = 4, y = 8, the point (4, 8)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is applying the rule incorrectly or mismatching x and y. Substitute each x carefully, and keep inputs and outputs in the right columns."
+        },
+        {
+          "type": "summary",
+          "body": "A table of values applies a rule to inputs to get outputs; each row is an (x, y) point. Substitute each x into the rule to fill it in."
+        },
+        {
+          "type": "review_prompt",
+          "body": "For the rule y = x + 2, what output does the input x = 3 give?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.reading_graphs.lesson",
+      "skill_id": "math.functions.reading_graphs",
+      "title": "Reading Graphs",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read coordinates and values from points and lines on a graph."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to read a point's coordinates by measuring its horizontal and vertical distance from the origin."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A graph turns numbers into a picture. To read a point, see how far right and up it sits. To read a line at a certain x, find that x, go up to the line, and read the matching y. A straight line lets you predict values between and beyond the plotted points."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To read a point, give its (x, y) coordinates. To read a line at a value of x, locate x on the horizontal axis, move to the line, and read the y-value. A point on the x-axis has y = 0; a point on the y-axis has x = 0."
+        },
+        {
+          "type": "worked_example",
+          "body": "A line passes through (1, 3), (2, 4), and (3, 5). What is y when x = 4? The y-value rises by 1 each time x rises by 1, so at x = 4, y = 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A point lies directly on the x-axis, 5 units right. Its y-value is 0, so its coordinates are (5, 0)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is swapping which axis is which when reading. Read the horizontal position as x and the vertical position as y."
+        },
+        {
+          "type": "summary",
+          "body": "Reading a graph means getting coordinates or values from points and lines. On-axis points have a zero coordinate, and a straight line lets you extend the pattern."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If a line passes through (1, 3), (2, 4), and (3, 5), what is y when x = 4?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.input_output.lesson",
+      "skill_id": "math.functions.input_output",
+      "title": "Input and Output (Function Machines)",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to use function machines to find outputs from inputs and inputs from outputs."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall evaluating expressions by substituting a value, and the order of operations for two-step rules."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A function machine is like a rule box: put a number in, it follows a rule, and one number comes out. If the rule is 'add 3', putting in 5 gives 8. To go backward from an output, undo the rule."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A function machine has an input, a rule, and exactly one output per input. Apply the rule to the input to get the output. To find an input from a known output, undo the operations in reverse order."
+        },
+        {
+          "type": "worked_example",
+          "body": "A machine does 'times 3 then plus 1'. For input 2: 3 times 2 = 6, then 6 + 1 = 7. The output is 7."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A machine multiplies by 4, and the output is 20. Working backward, divide: 20 divided by 4 = 5, so the input was 5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is doing a two-step rule out of order, or forgetting to reverse the steps when working backward. Follow the rule's order forward, and reverse it going backward."
+        },
+        {
+          "type": "summary",
+          "body": "A function machine gives one output per input by applying a rule. Apply the rule to find the output; undo it in reverse to find the input."
+        },
+        {
+          "type": "review_prompt",
+          "body": "A machine does 'times 3 then plus 1'. What output does the input 2 give?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.rate_of_change.lesson",
+      "skill_id": "math.functions.rate_of_change",
+      "title": "Rate of Change",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find and interpret the rate of change of a relationship."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall rates as a comparison of two quantities, and tables of values pairing inputs with outputs."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Rate of change answers 'how fast does y change as x increases by 1?'. If a plant grows 5 cm each week, its rate of change is 5 cm per week. On a graph, a faster change makes a steeper line."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The rate of change is the change in the output divided by the change in the input. Between two points it is (change in y) divided by (change in x). A larger rate means a steeper line; a rate of 0 means a horizontal line."
+        },
+        {
+          "type": "worked_example",
+          "body": "A line goes from (1, 3) to (2, 5). The change in y is 5 - 3 = 2 for a change in x of 1, so the rate of change is 2 per unit x."
+        },
+        {
+          "type": "guided_practice",
+          "body": "y goes from 4 to 10 as x goes from 1 to 4. The change in y is 6 over a change in x of 3, so the rate is 6 divided by 3 = 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is dividing in the wrong order or ignoring how much x changed. Divide the change in y by the change in x."
+        },
+        {
+          "type": "summary",
+          "body": "Rate of change is the change in output per unit change in input, or change in y over change in x. Bigger means steeper; zero means flat."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If a line goes from (1, 3) to (2, 5), what is its rate of change?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.functions.linear_relationships.lesson",
+      "skill_id": "math.functions.linear_relationships",
+      "title": "Introductory Linear Relationships",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to use a linear rule to find values and identify its rate of change and starting value."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall function machines (input to output) and rate of change (how y changes per unit x)."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A linear relationship grows by the same amount each step, so its graph is a straight line. In y = 2x + 1, you start at 1 (when x is 0) and add 2 for every increase of 1 in x. The 2 is the rate of change; the 1 is the starting value."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A linear relationship can be written y = mx + b, where m is the rate of change (how much y increases per unit x) and b is the starting value (the y-value when x = 0, where the line crosses the y-axis). Its graph is a straight line."
+        },
+        {
+          "type": "worked_example",
+          "body": "For y = 2x + 1, find y when x = 3. Substitute: 2 times 3 = 6, then 6 + 1 = 7, so y = 7. The rate of change is 2 and the starting value is 1."
+        },
+        {
+          "type": "guided_practice",
+          "body": "For y = 3x, find y when x = 5. Substitute: 3 times 5 = 15, so y = 15. The starting value is 0, since y = 0 when x = 0."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is confusing the rate of change with the starting value. In y = mx + b, m is the per-step change and b is the value at x = 0."
+        },
+        {
+          "type": "summary",
+          "body": "A linear relationship y = mx + b graphs as a straight line, with m the rate of change and b the starting value (y at x = 0). Substitute x to find y."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In the rule y = 2x + 1, what is the rate of change and what is the starting value?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.functions.coordinate_plane.q1",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "What is the name of the point where the two axes cross?",
+      "answer_spec": {
+        "correct_answer": "origin"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is at (0, 0)."
+        },
+        {
+          "level": 2,
+          "text": "That point is called the origin."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The axes cross at the origin, the point (0, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["origin", "corner", "center peak", "axis point"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q2",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "What is the name of the horizontal axis?",
+      "answer_spec": {
+        "correct_answer": "x-axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Horizontal means across."
+        },
+        {
+          "level": 2,
+          "text": "It is the x-axis."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The horizontal axis is the x-axis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["x-axis", "y-axis", "z-axis", "number line"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q3",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "What is the name of the vertical axis?",
+      "answer_spec": {
+        "correct_answer": "y-axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Vertical means up and down."
+        },
+        {
+          "level": 2,
+          "text": "It is the y-axis."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The vertical axis is the y-axis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["y-axis", "x-axis", "z-axis", "origin"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q4",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "Write the coordinates of the origin as an ordered pair (x, y).",
+      "answer_spec": {
+        "correct_answer": "(0, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The origin is where both axes meet."
+        },
+        {
+          "level": 2,
+          "text": "Both coordinates are 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The origin has coordinates (0, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q5",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In an ordered pair (x, y), which coordinate is written first?",
+      "answer_spec": {
+        "correct_answer": "x (the horizontal one)"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Alphabetical order: x before y."
+        },
+        {
+          "level": 2,
+          "text": "The across value comes first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The x-coordinate (horizontal) is written first, then y.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["x (the horizontal one)", "y (the vertical one)"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q6",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Positive x-values are found in which direction from the origin?",
+      "answer_spec": {
+        "correct_answer": "right"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The x-axis runs across."
+        },
+        {
+          "level": 2,
+          "text": "Positive is to the right."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the x-axis, positive values are to the right of the origin.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["right", "left", "up", "down"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q7",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Positive y-values are found in which direction from the origin?",
+      "answer_spec": {
+        "correct_answer": "up"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The y-axis runs up and down."
+        },
+        {
+          "level": 2,
+          "text": "Positive is upward."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the y-axis, positive values are above the origin.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["up", "down", "right", "left"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q8",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Negative x-values are found in which direction from the origin?",
+      "answer_spec": {
+        "correct_answer": "left"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Opposite of positive x."
+        },
+        {
+          "level": 2,
+          "text": "Negative x is to the left."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the x-axis, negative values are to the left of the origin.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["left", "right", "up", "down"]
+      }
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q1",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "Write the ordered pair for a point 3 units right and 2 units up from the origin.",
+      "answer_spec": {
+        "correct_answer": "(3, 2)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Right is the x-value; up is the y-value."
+        },
+        {
+          "level": 2,
+          "text": "Right 3, up 2 gives (3, 2)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 3 and up 2 give the ordered pair (3, 2).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q2",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "Write the ordered pair for a point 5 units right and 0 units up from the origin.",
+      "answer_spec": {
+        "correct_answer": "(5, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Right 5 gives x = 5; no vertical move gives y = 0."
+        },
+        {
+          "level": 2,
+          "text": "The pair is (5, 0)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 5 with no vertical move gives (5, 0), a point on the x-axis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q3",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "A point is 4 units left and 1 unit up from the origin. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(-4, 1)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Left makes x negative."
+        },
+        {
+          "level": 2,
+          "text": "Left 4 gives x = -4; up 1 gives y = 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Left 4 gives x = -4 and up 1 gives y = 1, so (-4, 1).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q4",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "A point is 2 units right and 3 units down from the origin. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(2, -3)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Down makes y negative."
+        },
+        {
+          "level": 2,
+          "text": "Right 2 gives x = 2; down 3 gives y = -3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 2 and down 3 give (2, -3).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q5",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the ordered pair (7, 4), what is the x-coordinate?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The x-coordinate is written first."
+        },
+        {
+          "level": 2,
+          "text": "It is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The first number in (7, 4) is the x-coordinate, 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q6",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the ordered pair (7, 4), what is the y-coordinate?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The y-coordinate is written second."
+        },
+        {
+          "level": 2,
+          "text": "It is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The second number in (7, 4) is the y-coordinate, 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q7",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What does the point (3, 5) mean?",
+      "answer_spec": {
+        "correct_answer": "3 right and 5 up"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "x comes first."
+        },
+        {
+          "level": 2,
+          "text": "3 is horizontal, 5 is vertical."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "(3, 5) means 3 right (x) and 5 up (y).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3 right and 5 up", "5 right and 3 up"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "5 right and 3 up",
+          "misconception_id": "mc.math.functions.reversed_coordinates"
+        }
+      ]
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q8",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "A point is on the y-axis, 4 units up from the origin (0 right). Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(0, 4)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No horizontal move gives x = 0."
+        },
+        {
+          "level": 2,
+          "text": "Up 4 gives y = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the y-axis with no horizontal move, x = 0 and y = 4, so (0, 4).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.ordered_pairs.q9",
+      "skill_id": "math.functions.ordered_pairs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the ordered pair (-2, 6), what is the x-coordinate?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The first number, including its sign."
+        },
+        {
+          "level": 2,
+          "text": "It is -2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The x-coordinate of (-2, 6) is -2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.plotting_points.q1",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "Starting at the origin, move 3 right then 4 up. Write the ordered pair for the point you reach.",
+      "answer_spec": {
+        "correct_answer": "(3, 4)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Right is x, up is y."
+        },
+        {
+          "level": 2,
+          "text": "Right 3, up 4 gives (3, 4)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Moving 3 right and 4 up lands on (3, 4).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.plotting_points.q2",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "From the origin, move 2 left and 5 up. Write the coordinates of the point.",
+      "answer_spec": {
+        "correct_answer": "(-2, 5)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Left makes x negative."
+        },
+        {
+          "level": 2,
+          "text": "Left 2 gives x = -2; up 5 gives y = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Left 2 and up 5 give (-2, 5).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.plotting_points.q3",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "From the origin, move 6 right and 2 down. Write the coordinates of the point.",
+      "answer_spec": {
+        "correct_answer": "(6, -2)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Down makes y negative."
+        },
+        {
+          "level": 2,
+          "text": "Right 6 gives x = 6; down 2 gives y = -2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 6 and down 2 give (6, -2).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.plotting_points.q4",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "Plot a point on the x-axis, 4 units left of the origin. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(-4, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "On the x-axis, y = 0."
+        },
+        {
+          "level": 2,
+          "text": "Left 4 gives x = -4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the x-axis 4 units left, the point is (-4, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.plotting_points.q5",
+      "skill_id": "math.functions.plotting_points",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To plot the point (5, 2), which move do you make first?",
+      "answer_spec": {
+        "correct_answer": "5 along the x-axis (right)"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The x-coordinate comes first."
+        },
+        {
+          "level": 2,
+          "text": "Move horizontally before vertically."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You move 5 right along the x-axis first, then 2 up.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["5 along the x-axis (right)", "2 along the y-axis (up)"]
+      }
+    },
+    {
+      "question_id": "math.functions.plotting_points.q6",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "From the origin, move 3 left and 3 down. Write the coordinates of the point.",
+      "answer_spec": {
+        "correct_answer": "(-3, -3)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both moves are negative."
+        },
+        {
+          "level": 2,
+          "text": "Left 3 gives x = -3; down 3 gives y = -3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Left 3 and down 3 give (-3, -3).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.plotting_points.q7",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "A point is 1 unit right and 7 units up from the origin. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(1, 7)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Right 1, up 7."
+        },
+        {
+          "level": 2,
+          "text": "That gives (1, 7)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 1 and up 7 give (1, 7).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.plotting_points.q8",
+      "skill_id": "math.functions.plotting_points",
+      "type": "point",
+      "difficulty": 1,
+      "prompt": "From the origin, make no moves at all. Write the coordinates of where you are.",
+      "answer_spec": {
+        "correct_answer": "(0, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No horizontal or vertical move."
+        },
+        {
+          "level": 2,
+          "text": "You are still at the origin."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With no moves you stay at the origin, (0, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q1",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "For the rule y = x + 2, what is y when x = 3?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 3 into y = x + 2 gives y = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q2",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For the rule y = 2x, what is y when x = 4?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 4 into y = 2x gives y = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q3",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "For the rule y = x - 1, what is y when x = 6?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 6 into y = x - 1 gives y = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q4",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For the rule y = 2x + 1, what is y when x = 3?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 3 into y = 2x + 1 gives y = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q5",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For the rule y = 3x, what is y when x = 0?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 0 into y = 3x gives y = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q6",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For the rule y = x + 2, what is y when x = 10?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 10 into y = x + 2 gives y = 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q7",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For the rule y = 5x, what is y when x = 2?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute the x-value into the rule."
+        },
+        {
+          "level": 2,
+          "text": "Then compute the output y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 2 into y = 5x gives y = 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q8",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "For the rule y = x + 1, the input x = 2 gives which point (x, y)?",
+      "answer_spec": {
+        "correct_answer": "(2, 3)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find y: 2 + 1 = 3."
+        },
+        {
+          "level": 2,
+          "text": "The point is (x, y) = (2, 3)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "For y = x + 1 at x = 2, y = 3, giving the point (2, 3).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.tables_of_values.q9",
+      "skill_id": "math.functions.tables_of_values",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A table shows x: 1, 2, 3 with y: 4, 5, 6. Following the pattern, what is y when x = 4?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "y is always x + 3."
+        },
+        {
+          "level": 2,
+          "text": "4 + 3 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each y is x + 3, so at x = 4, y = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q1",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A line passes through (1, 3), (2, 4), and (3, 5). What is y when x = 4?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "y rises by 1 each time x rises by 1."
+        },
+        {
+          "level": 2,
+          "text": "After 5 comes 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The pattern adds 1 to y for each step in x, so at x = 4, y = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q2",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "A point lies on the x-axis, 5 units to the right of the origin. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(5, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "On the x-axis, y = 0."
+        },
+        {
+          "level": 2,
+          "text": "Right 5 gives x = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the x-axis 5 units right, the point is (5, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q3",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On a distance-time graph, the distance is 10 at time 2 and 15 at time 3. If the pattern continues, what is the distance at time 4?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Distance rises by 5 each time step."
+        },
+        {
+          "level": 2,
+          "text": "15 + 5 = 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Distance increases 5 per time unit, so at time 4 it is 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q4",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A point that lies on the y-axis has an x-coordinate of what?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The y-axis is where x is zero."
+        },
+        {
+          "level": 2,
+          "text": "So x = 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Any point on the y-axis has x-coordinate 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0", "1", "its y-value", "any number"]
+      }
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q5",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A line passes through (0, 0), (1, 2), and (2, 4). What is y when x = 3?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "y is always 2 times x."
+        },
+        {
+          "level": 2,
+          "text": "2 times 3 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Here y = 2x, so at x = 3, y = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q6",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A point that lies on the x-axis has a y-coordinate of what?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The x-axis is where y is zero."
+        },
+        {
+          "level": 2,
+          "text": "So y = 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Any point on the x-axis has y-coordinate 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["0", "1", "its x-value", "10"]
+      }
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q7",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "point",
+      "difficulty": 2,
+      "prompt": "A graph point sits 3 units right and 0 units up. Write its coordinates.",
+      "answer_spec": {
+        "correct_answer": "(3, 0)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No vertical move means y = 0."
+        },
+        {
+          "level": 2,
+          "text": "Right 3 gives x = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Right 3 with no vertical move gives (3, 0).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q8",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line passes through (1, 5) and (2, 7). Each step in x adds 2 to y. What is y when x = 3?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 2 to the last y."
+        },
+        {
+          "level": 2,
+          "text": "7 + 2 = 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "y rises by 2 per step, so at x = 3, y = 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.input_output.q1",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A function machine adds 3. If the input is 5, what is the output?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the rule: 5 + 3."
+        },
+        {
+          "level": 2,
+          "text": "The output is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding 3 to the input 5 gives an output of 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.input_output.q2",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A function machine multiplies by 2. If the input is 6, what is the output?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the rule: 6 times 2."
+        },
+        {
+          "level": 2,
+          "text": "The output is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying the input 6 by 2 gives 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.input_output.q3",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A machine does 'times 3 then plus 1'. If the input is 2, what is the output?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First multiply: 3 times 2 = 6."
+        },
+        {
+          "level": 2,
+          "text": "Then add 1: 6 + 1 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 2 is 6, then plus 1 is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.input_output.q4",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A function machine subtracts 4. If the input is 10, what is the output?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the rule: 10 - 4."
+        },
+        {
+          "level": 2,
+          "text": "The output is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting 4 from 10 gives 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.input_output.q5",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A machine does 'times 2 then minus 1'. If the input is 5, what is the output?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First multiply: 2 times 5 = 10."
+        },
+        {
+          "level": 2,
+          "text": "Then minus 1: 10 - 1 = 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 times 5 is 10, then minus 1 is 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.input_output.q6",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A machine adds 10. If the output is 15, what was the input?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work backward: subtract 10."
+        },
+        {
+          "level": 2,
+          "text": "15 - 10 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Undoing 'add 10' on the output 15 gives an input of 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.input_output.q7",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A machine multiplies by 4. If the output is 20, what was the input?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work backward: divide by 4."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by 4 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Undoing 'times 4' on the output 20 gives an input of 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.input_output.q8",
+      "skill_id": "math.functions.input_output",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a function machine, the number you put in is called the what?",
+      "answer_spec": {
+        "correct_answer": "input"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It goes in before the rule."
+        },
+        {
+          "level": 2,
+          "text": "That is the input."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The number put into a function machine is the input; the result is the output.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["input", "output", "rule", "result"]
+      }
+    },
+    {
+      "question_id": "math.functions.input_output.q9",
+      "skill_id": "math.functions.input_output",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A function machine multiplies by 3. If the input is 0, what is the output?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the rule: 3 times 0."
+        },
+        {
+          "level": 2,
+          "text": "Anything times 0 is 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 0 is 0, so the output is 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q1",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A line rises 2 in y for every 1 increase in x. What is its rate of change (change in y per 1 unit of x)?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rate is change in y per unit x."
+        },
+        {
+          "level": 2,
+          "text": "That is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The rate of change is 2, since y rises 2 for each 1 in x.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q2",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "From the point (1, 3) to (2, 5), by how much does y increase for a 1-unit increase in x?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Change in y is 5 - 3."
+        },
+        {
+          "level": 2,
+          "text": "Over a change in x of 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "y changes by 5 - 3 = 2 for a change in x of 1, so the rate is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q3",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A car travels 60 km each hour. What is the rate of change of distance, in km per hour?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Distance per 1 hour."
+        },
+        {
+          "level": 2,
+          "text": "It is 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The distance changes by 60 km each hour, so the rate is 60 km/h.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q4",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line passes through (0, 0) and (3, 9). What is the change in y per 1-unit change in x?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Change in y is 9, change in x is 3."
+        },
+        {
+          "level": 2,
+          "text": "9 divided by 3 is 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The rate is 9 divided by 3 = 3 per unit x.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q5",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "y goes from 4 to 10 as x goes from 1 to 4. What is the rate of change per unit x?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Change in y is 6; change in x is 3."
+        },
+        {
+          "level": 2,
+          "text": "6 divided by 3 is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The rate is (10 - 4) divided by (4 - 1) = 6/3 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q6",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A steeper line has a rate of change that is what?",
+      "answer_spec": {
+        "correct_answer": "larger"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Steeper means y changes faster."
+        },
+        {
+          "level": 2,
+          "text": "So the rate is larger."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A steeper line changes y faster, so it has a larger rate of change.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["larger", "smaller", "zero", "negative"]
+      }
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q7",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A plant grows 5 cm each week. What is its rate of change, in cm per week?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Growth per 1 week."
+        },
+        {
+          "level": 2,
+          "text": "It is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The plant changes by 5 cm each week, a rate of 5 cm per week.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q8",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line passes through (2, 6) and (5, 6). What is its rate of change?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "y does not change."
+        },
+        {
+          "level": 2,
+          "text": "Change in y is 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "y stays 6, so the change in y is 0 and the rate of change is 0 (a flat line).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q1",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For y = 2x + 1, what is y when x = 0? (This is the starting value.)",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute x = 0."
+        },
+        {
+          "level": 2,
+          "text": "2 times 0 + 1 = 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At x = 0, y = 2 times 0 + 1 = 1, the starting value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q2",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For y = 2x + 1, what is y when x = 3?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute x = 3."
+        },
+        {
+          "level": 2,
+          "text": "2 times 3 + 1 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At x = 3, y = 6 + 1 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q3",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "For the rule y = x + 2, give the point (x, y) where x = 1.",
+      "answer_spec": {
+        "correct_answer": "(1, 3)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find y: 1 + 2 = 3."
+        },
+        {
+          "level": 2,
+          "text": "The point is (1, 3)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At x = 1, y = 3, giving the point (1, 3).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q4",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line has the rule y = 3x. What is y when x = 5?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute x = 5."
+        },
+        {
+          "level": 2,
+          "text": "3 times 5 = 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At x = 5, y = 3 times 5 = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q5",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In y = 2x + 1, what does the number 1 represent?",
+      "answer_spec": {
+        "correct_answer": "the starting value (y when x = 0)"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set x = 0 to see it."
+        },
+        {
+          "level": 2,
+          "text": "It is y when x is 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The 1 is the starting value, the y-value when x = 0 (where the line meets the y-axis).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the starting value (y when x = 0)",
+          "the rate of change",
+          "the input",
+          "the origin"
+        ]
+      }
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q6",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "In y = 2x + 1, the coefficient 2 tells how much y changes per unit x. What is that rate of change?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The rate of change is the multiplier of x."
+        },
+        {
+          "level": 2,
+          "text": "It is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In y = 2x + 1, the rate of change is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q7",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A taxi charges $2 plus $3 per kilometer, so cost y = 3x + 2. What is the cost for 4 kilometers, in dollars?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute x = 4."
+        },
+        {
+          "level": 2,
+          "text": "3 times 4 + 2 = 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "For 4 km, y = 3 times 4 + 2 = $14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q8",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "point",
+      "difficulty": 3,
+      "prompt": "For the rule y = 2x, give the point (x, y) where x = 3.",
+      "answer_spec": {
+        "correct_answer": "(3, 6)"
+      },
+      "validator": "point",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find y: 2 times 3 = 6."
+        },
+        {
+          "level": 2,
+          "text": "The point is (3, 6)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At x = 3, y = 6, giving the point (3, 6).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    }
+  ]
+}

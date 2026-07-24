@@ -18,6 +18,7 @@ const UNITS = [
   'ratios',
   'measurement',
   'algebra',
+  'functions',
   'science_thinking',
   'science_measurement',
 ];

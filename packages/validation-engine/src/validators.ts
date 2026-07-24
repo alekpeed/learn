@@ -197,6 +197,42 @@ export function validateOrdering(submitted: string, spec: AnswerSpec): Validatio
   return { correct, normalized };
 }
 
+/** Parse an ordered pair like "(3, 4)", "3,4", or "-2, 5" into [x, y]. */
+function parsePoint(input: string): [number, number] | null {
+  const cleaned = input.trim().replace(/^\(/, '').replace(/\)$/, '');
+  const parts = cleaned.split(',').map((s) => s.trim());
+  if (parts.length !== 2) return null;
+  const x = numericValue(parts[0] as string);
+  const y = numericValue(parts[1] as string);
+  if (x === null || y === null) return null;
+  return [x, y];
+}
+
+/** Coordinate point: both coordinates must match (within tolerance). */
+export function validatePoint(submitted: string, spec: AnswerSpec): ValidationOutcome {
+  const point = parsePoint(submitted);
+  if (!point) {
+    return {
+      correct: false,
+      normalized: submitted.trim(),
+      reason: 'expected an ordered pair like (x, y)',
+    };
+  }
+  const normalized = `(${point[0]}, ${point[1]})`;
+  const tolerance = spec.tolerance ?? DEFAULT_TOLERANCE;
+  for (const form of acceptedForms(spec)) {
+    const target = parsePoint(form);
+    if (
+      target &&
+      Math.abs(point[0] - target[0]) <= tolerance &&
+      Math.abs(point[1] - target[1]) <= tolerance
+    ) {
+      return { correct: true, normalized };
+    }
+  }
+  return { correct: false, normalized };
+}
+
 export function validateExactChoice(submitted: string, spec: AnswerSpec): ValidationOutcome {
   const value = submitted.trim();
   const normalized = value;
@@ -219,6 +255,7 @@ const VALIDATORS: Record<
   structured: validateExactChoice,
   multi_select: validateMultiSelect,
   ordering: validateOrdering,
+  point: validatePoint,
 };
 
 export function validateAnswer(
