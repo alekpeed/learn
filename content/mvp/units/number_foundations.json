@@ -784,6 +784,1139 @@
       "explanation": "Rounding gives 50 + 30 = 80, so 'about 80' is the reasonable estimate. An estimate is close, not exact, so 'exactly 81' is not an estimate.",
       "content_version": "0.1.0",
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q3",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You count a group of objects and say the numbers up to 7. How many objects are there?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last number you say is the total."
+        },
+        {
+          "level": 2,
+          "text": "That number is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting ends at 7, so there are 7 objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q4",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You count a group of objects and say the numbers up to 4. How many objects are there?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last number you say is the total."
+        },
+        {
+          "level": 2,
+          "text": "That number is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting ends at 4, so there are 4 objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q5",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You count a group of objects and say the numbers up to 12. How many objects are there?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last number you say is the total."
+        },
+        {
+          "level": 2,
+          "text": "That number is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting ends at 12, so there are 12 objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q6",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You count a group of objects and say the numbers up to 9. How many objects are there?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The last number you say is the total."
+        },
+        {
+          "level": 2,
+          "text": "That number is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting ends at 9, so there are 9 objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q7",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "There are 6 birds on a branch and 1 more lands. How many birds are there now?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count on from 6."
+        },
+        {
+          "level": 2,
+          "text": "One more than 6 is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting on one from 6 gives 7 birds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q8",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You count a group twice and get 8 both times. What does this tell you?",
+      "answer_spec": {
+        "correct_answer": "the group has 8 objects"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Counting the same group should give the same total."
+        },
+        {
+          "level": 2,
+          "text": "Both counts agree on 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Counting a fixed group always gives the same total, so the group has 8 objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "the group has 8 objects",
+          "you counted wrong",
+          "the group is growing",
+          "counting does not work"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q9",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why does the order you count objects in not change the total?",
+      "answer_spec": {
+        "correct_answer": "every object is counted exactly once either way"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each object gets one number."
+        },
+        {
+          "level": 2,
+          "text": "Rearranging does not add or remove objects."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "However you order them, each object is counted exactly once, so the total is the same.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "every object is counted exactly once either way",
+          "because counting is always wrong",
+          "because the objects move",
+          "the order does change the total"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.counting_and_quantity.q10",
+      "skill_id": "math.number_foundations.counting_and_quantity",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "You count 10 marbles, then 3 roll away. How many marbles are left?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count back 3 from 10."
+        },
+        {
+          "level": 2,
+          "text": "10 - 3 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Removing 3 from 10 leaves 7 marbles.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q3",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which symbol correctly completes the comparison: 15 __ 9 ?",
+      "answer_spec": {
+        "correct_answer": ">"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two numbers."
+        },
+        {
+          "level": 2,
+          "text": "Point the symbol at the smaller number, or use = if equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 compared with 9 gives 15 > 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q4",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which symbol correctly completes the comparison: 23 __ 32 ?",
+      "answer_spec": {
+        "correct_answer": "<"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two numbers."
+        },
+        {
+          "level": 2,
+          "text": "Point the symbol at the smaller number, or use = if equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "23 compared with 32 gives 23 < 32.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q5",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which symbol correctly completes the comparison: 17 __ 17 ?",
+      "answer_spec": {
+        "correct_answer": "="
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two numbers."
+        },
+        {
+          "level": 2,
+          "text": "Point the symbol at the smaller number, or use = if equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "17 compared with 17 gives 17 = 17.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q6",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which symbol correctly completes the comparison: 40 __ 39 ?",
+      "answer_spec": {
+        "correct_answer": ">"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two numbers."
+        },
+        {
+          "level": 2,
+          "text": "Point the symbol at the smaller number, or use = if equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "40 compared with 39 gives 40 > 39.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q7",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Of the numbers 27 and 72, what is the smaller number?",
+      "answer_spec": {
+        "correct_answer": 27
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the tens digits."
+        },
+        {
+          "level": 2,
+          "text": "2 tens is less than 7 tens."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "27 has fewer tens than 72, so 27 is smaller.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q8",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Order these from least to greatest. Arrange: 14, 8, 21.",
+      "answer_spec": {
+        "correct_answer": ["8", "14", "21"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the smallest first."
+        },
+        {
+          "level": 2,
+          "text": "8 is least, then 14, then 21."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "From least to greatest: 8, 14, 21.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["14", "8", "21"]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.comparing_numbers.q9",
+      "skill_id": "math.number_foundations.comparing_numbers",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Two numbers have the same number of digits. How do you compare them?",
+      "answer_spec": {
+        "correct_answer": "compare digits from the left until they differ"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start at the biggest place value."
+        },
+        {
+          "level": 2,
+          "text": "The first differing digit decides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With the same digit count, compare from the left; the first place where they differ decides.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "compare digits from the left until they differ",
+          "compare the last digits only",
+          "add the digits together",
+          "the longer one is greater"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q3",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the number 482, what is the value of the digit 8?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find which place the digit sits in."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the digit by its place value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 482, the digit 8 has a value of 80.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q4",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the number 725, what is the value of the digit 7?",
+      "answer_spec": {
+        "correct_answer": 700
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find which place the digit sits in."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the digit by its place value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 725, the digit 7 has a value of 700.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q5",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "In the number 136, what is the value of the digit 6?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find which place the digit sits in."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the digit by its place value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 136, the digit 6 has a value of 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q6",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "In the number 904, what is the value of the digit 9?",
+      "answer_spec": {
+        "correct_answer": 900
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find which place the digit sits in."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the digit by its place value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 904, the digit 9 has a value of 900.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q7",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many tens are in the number 60?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "60 is 6 groups of ten."
+        },
+        {
+          "level": 2,
+          "text": "So there are 6 tens."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "60 equals 6 tens.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q8",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the value of the 0 in the number 305?",
+      "answer_spec": {
+        "correct_answer": "0 tens, holding the tens place"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 0 sits in the tens place."
+        },
+        {
+          "level": 2,
+          "text": "It holds the place so the 3 stays in the hundreds."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The 0 marks zero tens and holds the place, keeping the 3 in the hundreds place.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["0 tens, holding the tens place", "it has no purpose", "5 tens", "300"]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.place_value.q9",
+      "skill_id": "math.number_foundations.place_value",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which number has a 4 worth four hundred?",
+      "answer_spec": {
+        "correct_answer": "473"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for a 4 in the hundreds place."
+        },
+        {
+          "level": 2,
+          "text": "In 473 the 4 is the leftmost of three digits."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 473 the 4 sits in the hundreds place, so it is worth 400.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["473", "347", "34", "4"]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q3",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "On a number line you start at 3 and move 4 steps to the right. Where do you land?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Moving right means adding."
+        },
+        {
+          "level": 2,
+          "text": "3 + 4 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Starting at 3 and moving 4 right lands on 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q4",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On a number line you start at 10 and move 3 steps to the left. Where do you land?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Moving left means subtracting."
+        },
+        {
+          "level": 2,
+          "text": "10 - 3 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Starting at 10 and moving 3 left lands on 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q5",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "On a number line you start at 0 and move 9 steps to the right. Where do you land?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Moving right means adding."
+        },
+        {
+          "level": 2,
+          "text": "0 + 9 = 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Starting at 0 and moving 9 right lands on 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q6",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "On a number line, what number is exactly halfway between 0 and 10?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Halfway means the same distance from each end."
+        },
+        {
+          "level": 2,
+          "text": "That number is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 is the midpoint of 0 and 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q7",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On a number line, what number is exactly halfway between 4 and 10?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the distance between them, then take half."
+        },
+        {
+          "level": 2,
+          "text": "The gap is 6, so halfway is 4 + 3 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The midpoint of 4 and 10 is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q8",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a number line, how far apart are 3 and 8?",
+      "answer_spec": {
+        "correct_answer": "5 units"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the steps from 3 to 8."
+        },
+        {
+          "level": 2,
+          "text": "8 - 3 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The distance from 3 to 8 is 8 - 3 = 5 units.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["5 units", "11 units", "3 units", "8 units"]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.number_line.q9",
+      "skill_id": "math.number_foundations.number_line",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is a number line useful for comparing numbers?",
+      "answer_spec": {
+        "correct_answer": "position shows order, and distance shows how far apart they are"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what the line shows visually."
+        },
+        {
+          "level": 2,
+          "text": "Order and distance are both visible."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A number line shows order by position and difference by distance.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "position shows order, and distance shows how far apart they are",
+          "it makes numbers larger",
+          "it hides the order",
+          "it only works for small numbers"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q3",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Round 28 to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the digit to the right of the tens place."
+        },
+        {
+          "level": 2,
+          "text": "If it is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 28 to the nearest ten gives 30.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q4",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Round 84 to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the digit to the right of the tens place."
+        },
+        {
+          "level": 2,
+          "text": "If it is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 84 to the nearest ten gives 80.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q5",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Round 65 to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the digit to the right of the tens place."
+        },
+        {
+          "level": 2,
+          "text": "If it is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 65 to the nearest ten gives 70.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q6",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Round 231 to the nearest hundred.",
+      "answer_spec": {
+        "correct_answer": 200
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the digit to the right of the hundreds place."
+        },
+        {
+          "level": 2,
+          "text": "If it is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 231 to the nearest hundred gives 200.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q7",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Round 350 to the nearest hundred.",
+      "answer_spec": {
+        "correct_answer": 400
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the digit to the right of the hundreds place."
+        },
+        {
+          "level": 2,
+          "text": "If it is 5 or more, round up; otherwise round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding 350 to the nearest hundred gives 400.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q8",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Rounding a number makes it what?",
+      "answer_spec": {
+        "correct_answer": "simpler and close to the original value"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rounding trades exactness for simplicity."
+        },
+        {
+          "level": 2,
+          "text": "The result stays close by."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding replaces a number with a nearby simpler value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "simpler and close to the original value",
+          "always larger",
+          "always smaller",
+          "exactly the same"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.rounding.q9",
+      "skill_id": "math.number_foundations.rounding",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A stadium holds 4,812 people. Rounded to the nearest hundred, about how many is that?",
+      "answer_spec": {
+        "correct_answer": 4800
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the tens digit."
+        },
+        {
+          "level": 2,
+          "text": "1 is less than 5, so round down."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "4,812 rounds to 4,800.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q3",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Estimate 58 + 33 by rounding each number to the nearest ten first. What is the estimate?",
+      "answer_spec": {
+        "correct_answer": 90
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round each number to the nearest ten."
+        },
+        {
+          "level": 2,
+          "text": "Then compute 60 + 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 60 + 30 = 90.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q4",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Estimate 72 - 29 by rounding each number to the nearest ten first. What is the estimate?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round each number to the nearest ten."
+        },
+        {
+          "level": 2,
+          "text": "Then compute 70 - 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 70 - 30 = 40.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q5",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Estimate 19 + 22 by rounding each number to the nearest ten first. What is the estimate?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round each number to the nearest ten."
+        },
+        {
+          "level": 2,
+          "text": "Then compute 20 + 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 20 + 20 = 40.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q6",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Estimate 91 - 48 by rounding each number to the nearest ten first. What is the estimate?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round each number to the nearest ten."
+        },
+        {
+          "level": 2,
+          "text": "Then compute 90 - 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rounding gives 90 - 50 = 40.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q7",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why is estimating useful?",
+      "answer_spec": {
+        "correct_answer": "it gives a quick answer close enough to check exact work"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Estimates are fast, not exact."
+        },
+        {
+          "level": 2,
+          "text": "They act as a sanity check."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Estimation gives a fast approximate answer that checks whether exact work is reasonable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "it gives a quick answer close enough to check exact work",
+          "it is always exact",
+          "it replaces the need for arithmetic",
+          "it makes numbers bigger"
+        ]
+      }
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q8",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You calculate 48 + 51 and get 990. An estimate says about 100. What does this tell you?",
+      "answer_spec": {
+        "correct_answer": "the exact answer is wrong and should be rechecked"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the estimate with the answer."
+        },
+        {
+          "level": 2,
+          "text": "990 is nowhere near 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The estimate of 100 shows 990 is far off, so the exact calculation should be rechecked.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the exact answer is wrong and should be rechecked",
+          "the estimate is wrong",
+          "both are correct",
+          "estimates cannot detect errors"
+        ]
+      },
+      "transfer_flag": true
     }
   ]
 }

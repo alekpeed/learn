@@ -14,15 +14,17 @@ skill graph in `content/mvp/`.
 - Engine complete (dev-roadmap Phases 0-9): event-sourced foundation, curriculum platform,
   deterministic practice/grading, learning engine, adaptive diagnostic, isolated AI tutor,
   release hardening. Tests green.
-- **Curriculum complete (Track A, Phases 10-15b):** all ~138 documented topics authored -
-  **130 skills, 843 questions, 16 of 16 units built**. Grown from the original 41-skill
-  slice.
+- **Curriculum complete and at uniform depth (Tracks A and B, Phases 10-16):** all ~138
+  documented topics authored - **130 skills, 1,121 questions, 16 of 16 units built**, every
+  skill carrying at least 7 practice items. Grown from the original 41-skill,
+  ~2-item-per-skill slice.
 - Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
   study plans, richer dashboard).
 
-The next work is **Track B (depth)**: the original 41 MVP-slice skills still carry only ~2
-practice items each, while everything authored from Phase 10 onward has ~8-15. After that,
-Track C picks up the remaining Version 1 features.
+**Tracks A and B are both complete**: the curriculum is fully authored (130 skills, 1,121
+questions, 16 of 16 units) and every skill is at mastery-grade depth. The next work is
+**Track C - the remaining Version 1 features** - or Track D if new subjects (Geometry,
+Algebra II, Precalculus/Trigonometry) are wanted.
 
 ## Guiding constraints (carried through every phase)
 
@@ -143,13 +145,20 @@ prerequisites, lessons, practice, mastery, and review.
 Coverage is not the same as mastery. Today each skill has ~1 lesson + ~2 practice items;
 the mastery model wants a larger pool per skill.
 
-### Phase 16 - Item-pool depth [content]
+### Phase 16 - Item-pool depth [content] - DONE
 
-Raise every authored skill to mastery-grade depth: roughly 8-15 practice items across
-difficulty bands 1-5, additional worked examples, transfer items, and misconception-tagged
-distractors. This can run per unit and interleave with Track A (deepen a unit right after
-authoring it). No engine change - it is more of the same content the validators already
-grade.
+Lifted the 41 original MVP-slice skills (number foundations, the early add/sub, mult/div,
+fractions and algebra skills, and the original science skills) from ~2 practice items each
+to the standard set by Phases 10-15b. **278 new questions** across difficulty bands, with
+progressive hints, explanations, transfer items, and misconception-tagged distractors.
+Existing questions, skills, and lessons were untouched; new items continue each skill's
+question numbering.
+
+**Result: depth is now uniform.** Every skill has at least 7 practice items (mean ~8.6),
+and the curriculum stands at **130 skills and 1,121 questions**. No engine change - all
+answers grade through the existing deterministic validators.
+
+**Track B complete.**
 
 ---
 

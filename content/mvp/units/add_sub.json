@@ -1237,6 +1237,1287 @@
       "parameters": {
         "options": ["subtraction", "addition"]
       }
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q3",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A box has 5 pencils. You put in 6 more. How many pencils are in the box now?",
+      "answer_spec": {
+        "correct_answer": 11
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Putting groups together means adding."
+        },
+        {
+          "level": 2,
+          "text": "5 + 6 = 11."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Combining the groups gives 5 + 6 = 11 pencils.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q4",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A box has 12 pencils. You put in 7 more. How many pencils are in the box now?",
+      "answer_spec": {
+        "correct_answer": 19
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Putting groups together means adding."
+        },
+        {
+          "level": 2,
+          "text": "12 + 7 = 19."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Combining the groups gives 12 + 7 = 19 pencils.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q5",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A box has 23 pencils. You put in 14 more. How many pencils are in the box now?",
+      "answer_spec": {
+        "correct_answer": 37
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Putting groups together means adding."
+        },
+        {
+          "level": 2,
+          "text": "23 + 14 = 37."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Combining the groups gives 23 + 14 = 37 pencils.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q6",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which word in a problem most often signals addition?",
+      "answer_spec": {
+        "correct_answer": "altogether"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about combining amounts."
+        },
+        {
+          "level": 2,
+          "text": "'Altogether' asks for a total."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'Altogether' asks for a combined total, which signals addition.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["altogether", "left", "fewer", "difference"]
+      }
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q7",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Does the order of the two numbers change an addition total?",
+      "answer_spec": {
+        "correct_answer": "No, the total is the same either way"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try 3 + 5 and 5 + 3."
+        },
+        {
+          "level": 2,
+          "text": "Both give 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Addition can be done in either order; 3 + 5 and 5 + 3 both give 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "No, the total is the same either way",
+          "Yes, the first number matters more",
+          "Yes, always",
+          "Only for large numbers"
+        ]
+      }
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q8",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three friends bring 4, 5, and 6 apples. How many apples are there altogether?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add all three amounts."
+        },
+        {
+          "level": 2,
+          "text": "4 + 5 + 6 = 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "4 + 5 + 6 = 15 apples.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.addition_meaning.q9",
+      "skill_id": "math.add_sub.addition_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the total of 0 and 9?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Adding zero adds nothing."
+        },
+        {
+          "level": 2,
+          "text": "The total is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding 0 leaves the amount unchanged, so the total is 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q3",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 7 + 9?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact, or count on from the larger number."
+        },
+        {
+          "level": 2,
+          "text": "7 + 9 = 16."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 + 9 = 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q4",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 6 + 5?",
+      "answer_spec": {
+        "correct_answer": 11
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact, or count on from the larger number."
+        },
+        {
+          "level": 2,
+          "text": "6 + 5 = 11."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 + 5 = 11.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q5",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 8 + 8?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact, or count on from the larger number."
+        },
+        {
+          "level": 2,
+          "text": "8 + 8 = 16."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 + 8 = 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q6",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 4 + 9?",
+      "answer_spec": {
+        "correct_answer": 13
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact, or count on from the larger number."
+        },
+        {
+          "level": 2,
+          "text": "4 + 9 = 13."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 + 9 = 13.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q7",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 7 + 7?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact, or count on from the larger number."
+        },
+        {
+          "level": 2,
+          "text": "7 + 7 = 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 + 7 = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q8",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 6 + 0?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Adding zero changes nothing."
+        },
+        {
+          "level": 2,
+          "text": "The answer is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 + 0 = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.add_sub.addition_facts.q9",
+      "skill_id": "math.add_sub.addition_facts",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Knowing 9 + 4 = 13, which other fact do you know immediately?",
+      "answer_spec": {
+        "correct_answer": "4 + 9 = 13"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Addition works in either order."
+        },
+        {
+          "level": 2,
+          "text": "Swap the two numbers."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because order does not matter in addition, 9 + 4 = 13 also gives 4 + 9 = 13.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["4 + 9 = 13", "13 + 9 = 4", "9 - 4 = 13", "4 + 13 = 9"]
+      }
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q3",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 36 + 27?",
+      "answer_spec": {
+        "correct_answer": 63
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and add the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Carry into the next column when a column reaches ten or more."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding place by place, 36 + 27 = 63.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q4",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 58 + 34?",
+      "answer_spec": {
+        "correct_answer": 92
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and add the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Carry into the next column when a column reaches ten or more."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding place by place, 58 + 34 = 92.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q5",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 125 + 46?",
+      "answer_spec": {
+        "correct_answer": 171
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and add the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Carry into the next column when a column reaches ten or more."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding place by place, 125 + 46 = 171.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q6",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is 240 + 175?",
+      "answer_spec": {
+        "correct_answer": 415
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and add the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Carry into the next column when a column reaches ten or more."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding place by place, 240 + 175 = 415.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q7",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 19 + 45?",
+      "answer_spec": {
+        "correct_answer": 64
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and add the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Carry into the next column when a column reaches ten or more."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding place by place, 19 + 45 = 64.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q8",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When adding 47 + 38, what do you do after the ones column gives 15?",
+      "answer_spec": {
+        "correct_answer": "write 5 and carry 1 into the tens column"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "15 ones is 1 ten and 5 ones."
+        },
+        {
+          "level": 2,
+          "text": "The ten belongs in the tens column."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 ones equal 1 ten and 5 ones, so write 5 and carry the 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "write 5 and carry 1 into the tens column",
+          "write 15 in the ones column",
+          "write 1 and carry 5",
+          "start again from the tens"
+        ]
+      }
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_addition.q9",
+      "skill_id": "math.add_sub.multi_digit_addition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A shop sold 148 items on Monday and 96 on Tuesday. How many items in total?",
+      "answer_spec": {
+        "correct_answer": 244
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the two amounts."
+        },
+        {
+          "level": 2,
+          "text": "148 + 96 = 244."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "148 + 96 = 244 items.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q3",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You have 12 sweets and give away 5. How many sweets are left?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking away means subtracting."
+        },
+        {
+          "level": 2,
+          "text": "12 - 5 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Giving away 5 from 12 leaves 7 sweets.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q4",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You have 20 sweets and give away 8. How many sweets are left?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking away means subtracting."
+        },
+        {
+          "level": 2,
+          "text": "20 - 8 = 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Giving away 8 from 20 leaves 12 sweets.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q5",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You have 15 sweets and give away 9. How many sweets are left?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking away means subtracting."
+        },
+        {
+          "level": 2,
+          "text": "15 - 9 = 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Giving away 9 from 15 leaves 6 sweets.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q6",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Ann has 14 books and Ben has 9. How many more books does Ann have?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'How many more' asks for a difference."
+        },
+        {
+          "level": 2,
+          "text": "14 - 9 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The difference is 14 - 9 = 5 books.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q7",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which question is answered by subtraction?",
+      "answer_spec": {
+        "correct_answer": "How many more does one group have than the other?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtraction finds what is left or the difference."
+        },
+        {
+          "level": 2,
+          "text": "Comparing two amounts is a difference."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtraction answers 'how many are left?' and 'how many more?'.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "How many more does one group have than the other?",
+          "How many are there altogether?",
+          "What is the total of both groups?",
+          "How many groups of equal size fit?"
+        ]
+      }
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q8",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 8 - 0?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking nothing away changes nothing."
+        },
+        {
+          "level": 2,
+          "text": "The answer is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 - 0 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_meaning.q9",
+      "skill_id": "math.add_sub.subtraction_meaning",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A jug holds 30 cups of water. After pouring out 12, how many cups remain?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Pouring out means subtracting."
+        },
+        {
+          "level": 2,
+          "text": "30 - 12 = 18."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "30 - 12 = 18 cups remain.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q3",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 14 - 6?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching addition fact."
+        },
+        {
+          "level": 2,
+          "text": "6 + 8 = 14, so the answer is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "14 - 6 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q4",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 12 - 7?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching addition fact."
+        },
+        {
+          "level": 2,
+          "text": "7 + 5 = 12, so the answer is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12 - 7 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q5",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 16 - 9?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching addition fact."
+        },
+        {
+          "level": 2,
+          "text": "9 + 7 = 16, so the answer is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "16 - 9 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q6",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 11 - 4?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching addition fact."
+        },
+        {
+          "level": 2,
+          "text": "4 + 7 = 11, so the answer is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "11 - 4 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q7",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 17 - 8?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching addition fact."
+        },
+        {
+          "level": 2,
+          "text": "8 + 9 = 17, so the answer is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "17 - 8 = 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q8",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which addition fact helps most directly with 13 - 5?",
+      "answer_spec": {
+        "correct_answer": "5 + 8 = 13"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the fact with 5 and 13 in it."
+        },
+        {
+          "level": 2,
+          "text": "5 plus what gives 13?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Since 5 + 8 = 13, it follows that 13 - 5 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["5 + 8 = 13", "13 + 5 = 18", "8 - 5 = 3", "5 + 5 = 10"]
+      }
+    },
+    {
+      "question_id": "math.add_sub.subtraction_facts.q9",
+      "skill_id": "math.add_sub.subtraction_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 9 - 9?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking away all of it leaves nothing."
+        },
+        {
+          "level": 2,
+          "text": "The answer is 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 - 9 = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q3",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 63 - 28?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and subtract the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Borrow from the next column if a column is too small."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting place by place, 63 - 28 = 35.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q4",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 85 - 47?",
+      "answer_spec": {
+        "correct_answer": 38
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and subtract the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Borrow from the next column if a column is too small."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting place by place, 85 - 47 = 38.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q5",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is 140 - 65?",
+      "answer_spec": {
+        "correct_answer": 75
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and subtract the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Borrow from the next column if a column is too small."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting place by place, 140 - 65 = 75.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q6",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 72 - 31?",
+      "answer_spec": {
+        "correct_answer": 41
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and subtract the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Borrow from the next column if a column is too small."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting place by place, 72 - 31 = 41.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q7",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is 200 - 84?",
+      "answer_spec": {
+        "correct_answer": 116
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Line up the places and subtract the ones column first."
+        },
+        {
+          "level": 2,
+          "text": "Borrow from the next column if a column is too small."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting place by place, 200 - 84 = 116.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q8",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When subtracting 52 - 27, why must you borrow?",
+      "answer_spec": {
+        "correct_answer": "because 2 ones is not enough to take 7 ones from"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the ones column."
+        },
+        {
+          "level": 2,
+          "text": "2 is smaller than 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The ones column has 2 but needs to give up 7, so a ten is borrowed to make 12 ones.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "because 2 ones is not enough to take 7 ones from",
+          "because 52 is larger than 27",
+          "because both numbers are even",
+          "you never need to borrow"
+        ]
+      }
+    },
+    {
+      "question_id": "math.add_sub.multi_digit_subtraction.q9",
+      "skill_id": "math.add_sub.multi_digit_subtraction",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A library has 320 books and 145 are on loan. How many are on the shelves?",
+      "answer_spec": {
+        "correct_answer": 175
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the loaned books."
+        },
+        {
+          "level": 2,
+          "text": "320 - 145 = 175."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "320 - 145 = 175 books.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q3",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Find the missing number: 7 + ? = 15.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use subtraction to undo the addition."
+        },
+        {
+          "level": 2,
+          "text": "15 - 7 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because subtraction undoes addition, the missing number is 15 - 7 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q4",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Find the missing number: 9 + ? = 21.",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use subtraction to undo the addition."
+        },
+        {
+          "level": 2,
+          "text": "21 - 9 = 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because subtraction undoes addition, the missing number is 21 - 9 = 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q5",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Find the missing number: 12 + ? = 20.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use subtraction to undo the addition."
+        },
+        {
+          "level": 2,
+          "text": "20 - 12 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because subtraction undoes addition, the missing number is 20 - 12 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q6",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Find the missing number: ? - 6 = 10.",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the subtraction by adding."
+        },
+        {
+          "level": 2,
+          "text": "10 + 6 = 16."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding 6 back to 10 gives 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q7",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You compute 34 + 19 = 53. How can subtraction check this?",
+      "answer_spec": {
+        "correct_answer": "check that 53 - 19 gives 34"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtraction undoes addition."
+        },
+        {
+          "level": 2,
+          "text": "Take one addend back off the total."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Since subtraction undoes addition, 53 - 19 should return the original 34.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "check that 53 - 19 gives 34",
+          "check that 53 + 19 gives 34",
+          "check that 34 - 19 gives 53",
+          "subtraction cannot check addition"
+        ]
+      }
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q8",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which set of numbers forms a fact family?",
+      "answer_spec": {
+        "correct_answer": "3, 5, and 8"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two of the numbers should add to the third."
+        },
+        {
+          "level": 2,
+          "text": "3 + 5 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 + 5 = 8, 5 + 3 = 8, 8 - 3 = 5, and 8 - 5 = 3, so they form a fact family.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["3, 5, and 8", "3, 5, and 9", "2, 4, and 7", "1, 2, and 4"]
+      }
+    },
+    {
+      "question_id": "math.add_sub.inverse_relationship.q9",
+      "skill_id": "math.add_sub.inverse_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A number increased by 8 and then decreased by 8 gives 25. What was the number?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The two operations undo each other."
+        },
+        {
+          "level": 2,
+          "text": "The number is unchanged."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding then subtracting the same amount returns the original number, 25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
     }
   ]
 }

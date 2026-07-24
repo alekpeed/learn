@@ -1592,6 +1592,1106 @@
       "content_version": "0.1.0",
       "estimated_time_seconds": 51,
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q3",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "Write 3 x 4 as repeated addition and find the total.",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 4 to itself 3 times."
+        },
+        {
+          "level": 2,
+          "text": "The total is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 x 4 means 3 groups of 4, giving 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q4",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Write 6 x 2 as repeated addition and find the total.",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 2 to itself 6 times."
+        },
+        {
+          "level": 2,
+          "text": "The total is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 x 2 means 6 groups of 2, giving 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q5",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Write 5 x 5 as repeated addition and find the total.",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 5 to itself 5 times."
+        },
+        {
+          "level": 2,
+          "text": "The total is 25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 x 5 means 5 groups of 5, giving 25.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q6",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which addition means the same as 3 x 5?",
+      "answer_spec": {
+        "correct_answer": "5 + 5 + 5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 x 5 means 3 groups of 5."
+        },
+        {
+          "level": 2,
+          "text": "Add 5 three times."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 x 5 is 5 + 5 + 5 = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["5 + 5 + 5", "3 + 5", "3 + 3 + 3 + 3 + 3 + 5", "5 + 3 + 5"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q7",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is multiplication faster than repeated addition for 8 x 7?",
+      "answer_spec": {
+        "correct_answer": "it gives the total in one step instead of seven additions"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count how many additions you would need."
+        },
+        {
+          "level": 2,
+          "text": "Multiplication does it at once."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplication replaces many repeated additions with a single known fact.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "it gives the total in one step instead of seven additions",
+          "it gives a different answer",
+          "it only works for small numbers",
+          "it is not faster"
+        ]
+      }
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q8",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 4 groups of 3?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the number of groups by the group size."
+        },
+        {
+          "level": 2,
+          "text": "4 x 3 = 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 groups of 3 is 4 x 3 = 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.repeated_addition.q9",
+      "skill_id": "math.mult_div.repeated_addition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A pack holds 6 pens. How many pens are in 5 packs?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Equal groups means multiply."
+        },
+        {
+          "level": 2,
+          "text": "5 x 6 = 30."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "5 packs of 6 is 30 pens.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q3",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 8 x 7?",
+      "answer_spec": {
+        "correct_answer": 56
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact or build up from a nearby one."
+        },
+        {
+          "level": 2,
+          "text": "8 x 7 = 56."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 x 7 = 56.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q4",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 6 x 9?",
+      "answer_spec": {
+        "correct_answer": 54
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact or build up from a nearby one."
+        },
+        {
+          "level": 2,
+          "text": "6 x 9 = 54."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 x 9 = 54.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q5",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 4 x 8?",
+      "answer_spec": {
+        "correct_answer": 32
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact or build up from a nearby one."
+        },
+        {
+          "level": 2,
+          "text": "4 x 8 = 32."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 x 8 = 32.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q6",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 9 x 9?",
+      "answer_spec": {
+        "correct_answer": 81
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact or build up from a nearby one."
+        },
+        {
+          "level": 2,
+          "text": "9 x 9 = 81."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 x 9 = 81.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q7",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 5 x 7?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall the fact or build up from a nearby one."
+        },
+        {
+          "level": 2,
+          "text": "5 x 7 = 35."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 x 7 = 35.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q8",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 7 x 1?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiplying by 1 leaves the number unchanged."
+        },
+        {
+          "level": 2,
+          "text": "The answer is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 x 1 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.mult_div.multiplication_facts.q9",
+      "skill_id": "math.mult_div.multiplication_facts",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is any number times zero equal to zero?",
+      "answer_spec": {
+        "correct_answer": "because you have zero groups, so there is nothing to count"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of 5 x 0 as five groups of nothing."
+        },
+        {
+          "level": 2,
+          "text": "Nothing added repeatedly is still nothing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by zero means having no groups at all, so the total is zero.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "because you have zero groups, so there is nothing to count",
+          "because zero is small",
+          "because zero is even",
+          "it is not always zero"
+        ]
+      }
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q3",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 32 x 3?",
+      "answer_spec": {
+        "correct_answer": 96
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Break the larger number into place-value parts."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part, then add the partial products."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "32 x 3 = 96.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q4",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 45 x 6?",
+      "answer_spec": {
+        "correct_answer": 270
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Break the larger number into place-value parts."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part, then add the partial products."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "45 x 6 = 270.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q5",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 28 x 5?",
+      "answer_spec": {
+        "correct_answer": 140
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Break the larger number into place-value parts."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part, then add the partial products."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "28 x 5 = 140.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q6",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is 123 x 4?",
+      "answer_spec": {
+        "correct_answer": 492
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Break the larger number into place-value parts."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part, then add the partial products."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "123 x 4 = 492.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q7",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 17 x 8?",
+      "answer_spec": {
+        "correct_answer": 136
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Break the larger number into place-value parts."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part, then add the partial products."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "17 x 8 = 136.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q8",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To compute 26 x 4, which partial products should you add?",
+      "answer_spec": {
+        "correct_answer": "20 x 4 and 6 x 4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Split 26 into 20 and 6."
+        },
+        {
+          "level": 2,
+          "text": "Multiply each part by 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "26 splits into 20 + 6, so the partial products are 20 x 4 = 80 and 6 x 4 = 24, totalling 104.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["20 x 4 and 6 x 4", "26 x 2 and 26 x 2", "20 x 6 and 4 x 4", "2 x 4 and 6 x 4"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.multi_digit_multiplication.q9",
+      "skill_id": "math.mult_div.multi_digit_multiplication",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A cinema has 24 rows with 8 seats each. How many seats are there?",
+      "answer_spec": {
+        "correct_answer": 192
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply rows by seats per row."
+        },
+        {
+          "level": 2,
+          "text": "24 x 8 = 192."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "24 x 8 = 192 seats.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q3",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "You share 15 counters equally among 3 children. How many does each child get?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sharing equally means dividing."
+        },
+        {
+          "level": 2,
+          "text": "15 / 3 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 shared among 3 gives 5 each.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q4",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You share 24 counters equally among 4 children. How many does each child get?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sharing equally means dividing."
+        },
+        {
+          "level": 2,
+          "text": "24 / 4 = 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "24 shared among 4 gives 6 each.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q5",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You share 36 counters equally among 6 children. How many does each child get?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sharing equally means dividing."
+        },
+        {
+          "level": 2,
+          "text": "36 / 6 = 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "36 shared among 6 gives 6 each.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q6",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many groups of 5 fit into 20?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division also asks how many groups fit."
+        },
+        {
+          "level": 2,
+          "text": "20 / 5 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20 / 5 = 4 groups of 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q7",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Division answers which two kinds of question?",
+      "answer_spec": {
+        "correct_answer": "how many in each group, and how many groups fit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sharing gives group size."
+        },
+        {
+          "level": 2,
+          "text": "Grouping gives the number of groups."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Division can find the size of each equal group or how many such groups fit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "how many in each group, and how many groups fit",
+          "how many altogether, and how many left",
+          "how much bigger, and how much smaller",
+          "only how many in each group"
+        ]
+      }
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q8",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In 18 / 3 = 6, which number is the total being shared?",
+      "answer_spec": {
+        "correct_answer": "18"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The total comes first in the division."
+        },
+        {
+          "level": 2,
+          "text": "That is 18."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "18 is the total being shared into groups.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["18", "3", "6", "none"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.division_meaning.q9",
+      "skill_id": "math.mult_div.division_meaning",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A baker packs 30 buns into boxes of 6. How many boxes are filled?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "How many groups of 6 fit into 30?"
+        },
+        {
+          "level": 2,
+          "text": "30 / 6 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "30 / 6 = 5 boxes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q3",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 42 divided by 7?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching multiplication fact."
+        },
+        {
+          "level": 2,
+          "text": "7 x 6 = 42."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "42 / 7 = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q4",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 36 divided by 9?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching multiplication fact."
+        },
+        {
+          "level": 2,
+          "text": "9 x 4 = 36."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "36 / 9 = 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q5",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 56 divided by 8?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching multiplication fact."
+        },
+        {
+          "level": 2,
+          "text": "8 x 7 = 56."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "56 / 8 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q6",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 27 divided by 3?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching multiplication fact."
+        },
+        {
+          "level": 2,
+          "text": "3 x 9 = 27."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "27 / 3 = 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q7",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 48 divided by 6?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of the matching multiplication fact."
+        },
+        {
+          "level": 2,
+          "text": "6 x 8 = 48."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "48 / 6 = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q8",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is 9 divided by 1?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Dividing by 1 leaves the number unchanged."
+        },
+        {
+          "level": 2,
+          "text": "The answer is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9 / 1 = 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.mult_div.division_facts.q9",
+      "skill_id": "math.mult_div.division_facts",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which multiplication fact helps you find 63 divided by 9?",
+      "answer_spec": {
+        "correct_answer": "9 x 7 = 63"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the fact containing 9 and 63."
+        },
+        {
+          "level": 2,
+          "text": "9 times what gives 63?"
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Since 9 x 7 = 63, it follows that 63 / 9 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["9 x 7 = 63", "9 x 6 = 54", "63 x 9 = 567", "9 + 7 = 16"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q3",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You know that 6 x 9 = 54. Use this to find 54 divided by 6.",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division undoes multiplication."
+        },
+        {
+          "level": 2,
+          "text": "The answer is the other factor, 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because 6 x 9 = 54, dividing 54 by 6 gives 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q4",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "You know that 7 x 8 = 56. Use this to find 56 divided by 7.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division undoes multiplication."
+        },
+        {
+          "level": 2,
+          "text": "The answer is the other factor, 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because 7 x 8 = 56, dividing 56 by 7 gives 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q5",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "You know that 5 x 6 = 30. Use this to find 30 divided by 5.",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Division undoes multiplication."
+        },
+        {
+          "level": 2,
+          "text": "The answer is the other factor, 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because 5 x 6 = 30, dividing 30 by 5 gives 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q6",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Find the missing number: 4 x ? = 32.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use division to undo the multiplication."
+        },
+        {
+          "level": 2,
+          "text": "32 / 4 = 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "32 / 4 = 8, so the missing factor is 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q7",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Find the missing number: ? / 5 = 7.",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the division by multiplying."
+        },
+        {
+          "level": 2,
+          "text": "7 x 5 = 35."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying back gives 7 x 5 = 35.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q8",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You compute 84 / 7 = 12. How can multiplication check this?",
+      "answer_spec": {
+        "correct_answer": "check that 12 x 7 gives 84"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiplication undoes division."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the answer by the divisor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Since multiplication undoes division, 12 x 7 should return 84.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "check that 12 x 7 gives 84",
+          "check that 84 x 7 gives 12",
+          "check that 12 + 7 gives 84",
+          "multiplication cannot check division"
+        ]
+      }
+    },
+    {
+      "question_id": "math.mult_div.mult_div_relationship.q9",
+      "skill_id": "math.mult_div.mult_div_relationship",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which equation belongs to the fact family for 3, 6, and 18?",
+      "answer_spec": {
+        "correct_answer": "18 / 6 = 3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two numbers multiply to the third."
+        },
+        {
+          "level": 2,
+          "text": "3 x 6 = 18, so 18 / 6 = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 x 6 = 18, so 18 / 6 = 3 is in the family.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["18 / 6 = 3", "18 / 3 = 9", "6 x 6 = 18", "18 + 3 = 6"]
+      }
     }
   ]
 }

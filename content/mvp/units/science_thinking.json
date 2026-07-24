@@ -1210,6 +1210,988 @@
           "so it is shorter"
         ]
       }
+    },
+    {
+      "question_id": "science.thinking.observation.q3",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which of these is an observation?",
+      "answer_spec": {
+        "correct_answer": "The liquid turned blue"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An observation reports what you sense or measure."
+        },
+        {
+          "level": 2,
+          "text": "The others interpret or predict."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'The liquid turned blue' reports what was directly seen; the others interpret or predict.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "The liquid turned blue",
+          "The liquid is dangerous",
+          "The reaction was a success",
+          "The liquid will boil soon"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.observation.q4",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which tool extends observation beyond the senses?",
+      "answer_spec": {
+        "correct_answer": "a thermometer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Instruments measure what senses cannot."
+        },
+        {
+          "level": 2,
+          "text": "A thermometer gives a number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Instruments such as thermometers extend observation by measuring precisely.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["a thermometer", "an opinion", "a guess", "a conclusion"]
+      }
+    },
+    {
+      "question_id": "science.thinking.observation.q5",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which statement is NOT an observation?",
+      "answer_spec": {
+        "correct_answer": "The plant is healthy because it was watered"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for reasoning or a cause."
+        },
+        {
+          "level": 2,
+          "text": "Explaining why goes beyond observing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Giving a cause is reasoning, not observing; the others simply report what is seen or measured.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "The plant is healthy because it was watered",
+          "The plant is 15 cm tall",
+          "The plant has 6 leaves",
+          "The leaves are green"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.observation.q6",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why should observations be recorded promptly?",
+      "answer_spec": {
+        "correct_answer": "so details are not forgotten or altered by memory"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Memory fades and shifts."
+        },
+        {
+          "level": 2,
+          "text": "Recording preserves accuracy."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Recording promptly keeps observations accurate before memory distorts them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "so details are not forgotten or altered by memory",
+          "to make the report longer",
+          "because rules require it",
+          "so results can be changed later"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.observation.q7",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A qualitative observation describes what?",
+      "answer_spec": {
+        "correct_answer": "a quality such as color or texture"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Qualitative relates to qualities."
+        },
+        {
+          "level": 2,
+          "text": "Quantitative would be numeric."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Qualitative observations describe qualities like color; quantitative ones give numbers.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "a quality such as color or texture",
+          "a measured number",
+          "a prediction",
+          "a conclusion"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.observation.q8",
+      "skill_id": "science.thinking.observation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is a quantitative observation?",
+      "answer_spec": {
+        "correct_answer": "The rod is 12 cm long"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Quantitative means measured with numbers."
+        },
+        {
+          "level": 2,
+          "text": "Look for a number and unit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'12 cm long' is a measurement, so it is quantitative.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "The rod is 12 cm long",
+          "The rod is shiny",
+          "The rod feels cold",
+          "The rod looks old"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q3",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You find an empty bowl and a cat licking its lips. Which is an inference?",
+      "answer_spec": {
+        "correct_answer": "The cat ate the food"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An inference explains what you observed."
+        },
+        {
+          "level": 2,
+          "text": "It goes beyond direct evidence."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'The cat ate the food' explains the observations rather than reporting them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "The cat ate the food",
+          "The bowl is empty",
+          "The cat is near the bowl",
+          "The bowl is white"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q4",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Can two people make different inferences from the same observation?",
+      "answer_spec": {
+        "correct_answer": "Yes, because inferences involve reasoning that can differ"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Inference adds interpretation."
+        },
+        {
+          "level": 2,
+          "text": "Different reasoning can fit the same facts."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because inference adds interpretation, different people may reasonably infer differently.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "Yes, because inferences involve reasoning that can differ",
+          "No, inferences are always identical",
+          "No, observations determine inferences exactly",
+          "Only if one person is wrong"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q5",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What makes an inference stronger?",
+      "answer_spec": {
+        "correct_answer": "more supporting evidence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence is what supports reasoning."
+        },
+        {
+          "level": 2,
+          "text": "More evidence, stronger inference."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An inference is stronger when more evidence supports it.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "more supporting evidence",
+          "stating it more confidently",
+          "making it longer",
+          "repeating it"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q6",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which comes first in scientific work?",
+      "answer_spec": {
+        "correct_answer": "observation, then inference"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You must sense something before explaining it."
+        },
+        {
+          "level": 2,
+          "text": "Observation precedes inference."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You observe first, then infer an explanation from what you observed.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "observation, then inference",
+          "inference, then observation",
+          "they happen at the same time",
+          "neither comes first"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q7",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "An inference turns out to be wrong when new data arrives. What should happen?",
+      "answer_spec": {
+        "correct_answer": "the inference should be revised"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence has priority."
+        },
+        {
+          "level": 2,
+          "text": "Revise the reasoning."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "New evidence should prompt a revised inference, not be discarded.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the inference should be revised",
+          "the data should be ignored",
+          "the inference should be defended",
+          "nothing"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.inference.q8",
+      "skill_id": "science.thinking.inference",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which word signals an inference rather than an observation?",
+      "answer_spec": {
+        "correct_answer": "because"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for reasoning language."
+        },
+        {
+          "level": 2,
+          "text": "'Because' introduces an explanation."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'Because' signals reasoning, which is characteristic of an inference.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["because", "measured", "observed", "recorded"]
+      }
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q2",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which question is testable?",
+      "answer_spec": {
+        "correct_answer": "Does salt dissolve faster in hot water than cold water?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A testable question can be answered by gathering data."
+        },
+        {
+          "level": 2,
+          "text": "Opinions cannot be tested."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dissolving speed can be measured and compared, so the question is testable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "Does salt dissolve faster in hot water than cold water?",
+          "Is chemistry the most beautiful science?",
+          "Should everyone study science?",
+          "What is the best colour?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q3",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is 'Is blue the prettiest colour?' not testable?",
+      "answer_spec": {
+        "correct_answer": "it asks for an opinion, not a measurable outcome"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Prettiness is a matter of taste."
+        },
+        {
+          "level": 2,
+          "text": "There is nothing to measure."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Prettiness is subjective, so no measurement can settle the question.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "it asks for an opinion, not a measurable outcome",
+          "blue is hard to see",
+          "it is too short",
+          "colours cannot be studied"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q4",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A testable question should name what?",
+      "answer_spec": {
+        "correct_answer": "something you can change and something you can measure"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of independent and dependent variables."
+        },
+        {
+          "level": 2,
+          "text": "One is changed, the other measured."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A testable question identifies a factor to change and an outcome to measure.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "something you can change and something you can measure",
+          "your favourite result",
+          "the conclusion in advance",
+          "only the equipment"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q5",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is the better testable question?",
+      "answer_spec": {
+        "correct_answer": "How does fertilizer amount affect plant height?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for measurable variables."
+        },
+        {
+          "level": 2,
+          "text": "Fertilizer amount and height are both measurable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "It names a factor to vary (fertilizer amount) and an outcome to measure (height).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "How does fertilizer amount affect plant height?",
+          "Are plants good?",
+          "Do plants like fertilizer?",
+          "Is gardening fun?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q6",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Turn 'Is this ball bouncy?' into a testable question.",
+      "answer_spec": {
+        "correct_answer": "How high does this ball bounce when dropped from 1 metre?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Make the outcome measurable."
+        },
+        {
+          "level": 2,
+          "text": "Specify a measurable height and a fixed drop."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Specifying a measured bounce height from a fixed drop makes it testable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "How high does this ball bounce when dropped from 1 metre?",
+          "Is this ball the best ball?",
+          "Do people like this ball?",
+          "Is bounciness important?"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.thinking.testable_questions.q7",
+      "skill_id": "science.thinking.testable_questions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What must you be able to do to answer a testable question?",
+      "answer_spec": {
+        "correct_answer": "collect data"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Testing means gathering evidence."
+        },
+        {
+          "level": 2,
+          "text": "That means data."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A testable question is answered by collecting data.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["collect data", "ask an expert only", "guess well", "vote on it"]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q2",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A hypothesis is best described as what?",
+      "answer_spec": {
+        "correct_answer": "a proposed, testable explanation"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It comes before testing."
+        },
+        {
+          "level": 2,
+          "text": "It must be testable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A hypothesis is a proposed explanation that can be tested.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "a proposed, testable explanation",
+          "a proven fact",
+          "a random guess",
+          "a summary of results"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q3",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is the strongest hypothesis?",
+      "answer_spec": {
+        "correct_answer": "If water is warmer, sugar will dissolve faster, because particles move more quickly"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for a testable prediction plus a reason."
+        },
+        {
+          "level": 2,
+          "text": "'If... then... because...' is the pattern."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "It predicts a testable outcome and gives a reason, which the others lack.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "If water is warmer, sugar will dissolve faster, because particles move more quickly",
+          "Sugar dissolves",
+          "Warm water is nice",
+          "Sugar might do something"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q4",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What should a hypothesis be able to do?",
+      "answer_spec": {
+        "correct_answer": "be supported or refuted by evidence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Testability is the key property."
+        },
+        {
+          "level": 2,
+          "text": "Evidence must be able to count for or against it."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A hypothesis must be capable of being supported or refuted by evidence.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "be supported or refuted by evidence",
+          "always be correct",
+          "avoid being tested",
+          "describe the equipment"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q5",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When is a hypothesis formed?",
+      "answer_spec": {
+        "correct_answer": "before the experiment is run"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It guides the test."
+        },
+        {
+          "level": 2,
+          "text": "So it comes first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A hypothesis is formed before testing, so it can guide the experiment.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "before the experiment is run",
+          "after the results are known",
+          "during the write-up only",
+          "it is never formed"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q6",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Your results do not support your hypothesis. What does that mean?",
+      "answer_spec": {
+        "correct_answer": "you have learned something useful; the hypothesis needs revising"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Unsupported does not mean worthless."
+        },
+        {
+          "level": 2,
+          "text": "It informs the next hypothesis."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An unsupported hypothesis is still a real finding and guides revision.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "you have learned something useful; the hypothesis needs revising",
+          "the experiment failed",
+          "you should change the data",
+          "hypotheses cannot be wrong"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.hypotheses.q7",
+      "skill_id": "science.thinking.hypotheses",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which sentence pattern suits a hypothesis?",
+      "answer_spec": {
+        "correct_answer": "If ... then ... because ..."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A hypothesis links a change to a predicted outcome with a reason."
+        },
+        {
+          "level": 2,
+          "text": "That is the if-then-because pattern."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'If [change], then [outcome], because [reason]' captures a testable hypothesis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "If ... then ... because ...",
+          "I think maybe ...",
+          "Everyone knows ...",
+          "It is obvious that ..."
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.evidence.q4",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is the strongest evidence for a claim?",
+      "answer_spec": {
+        "correct_answer": "repeated measurements under controlled conditions"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reliability comes from repetition and control."
+        },
+        {
+          "level": 2,
+          "text": "One-off or subjective sources are weak."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Repeated, controlled measurements are the most reliable evidence.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "repeated measurements under controlled conditions",
+          "one person's memory",
+          "a strongly held opinion",
+          "a single unusual result"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.evidence.q5",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What should you do with evidence that contradicts your claim?",
+      "answer_spec": {
+        "correct_answer": "report it and reconsider the claim"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Honesty is essential."
+        },
+        {
+          "level": 2,
+          "text": "Contradicting evidence must be reported."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Contradicting evidence must be reported and the claim reconsidered.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "report it and reconsider the claim",
+          "discard it quietly",
+          "change the numbers",
+          "ignore it if inconvenient"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.evidence.q6",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Two variables rise together. What can you conclude?",
+      "answer_spec": {
+        "correct_answer": "they are correlated, which does not prove cause"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Correlation is not causation."
+        },
+        {
+          "level": 2,
+          "text": "A third factor may explain both."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Rising together shows correlation; establishing cause needs a controlled experiment.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "they are correlated, which does not prove cause",
+          "one definitely causes the other",
+          "they are unrelated",
+          "the data must be wrong"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "one definitely causes the other",
+          "misconception_id": "mc.science.thinking.correlation_implies_causation"
+        }
+      ]
+    },
+    {
+      "question_id": "science.thinking.evidence.q7",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Evidence should be what?",
+      "answer_spec": {
+        "correct_answer": "relevant to the claim being tested"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence must bear on the claim."
+        },
+        {
+          "level": 2,
+          "text": "Cherry-picking is not science."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Evidence must be relevant to the claim; selecting only agreeable data is biased.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "relevant to the claim being tested",
+          "as long as possible",
+          "chosen to agree with the claim",
+          "kept private"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.evidence.q8",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is a single observation weak evidence?",
+      "answer_spec": {
+        "correct_answer": "it may be a coincidence or an error"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One result may not be typical."
+        },
+        {
+          "level": 2,
+          "text": "Repetition guards against chance."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A single observation may reflect chance or error, so it is weak on its own.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "it may be a coincidence or an error",
+          "it is always false",
+          "it takes too long",
+          "it cannot be recorded"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.evidence.q9",
+      "skill_id": "science.thinking.evidence",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What makes a conclusion trustworthy?",
+      "answer_spec": {
+        "correct_answer": "it follows from the evidence and states its limits"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Conclusions must be grounded and honest."
+        },
+        {
+          "level": 2,
+          "text": "Limits matter as much as the finding."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A trustworthy conclusion follows from the evidence and acknowledges its limitations.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "it follows from the evidence and states its limits",
+          "it sounds confident",
+          "it matches what was expected",
+          "it is short"
+        ]
+      }
     }
   ]
 }

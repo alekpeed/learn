@@ -1986,6 +1986,990 @@
       "content_version": "0.1.0",
       "estimated_time_seconds": 59,
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.variables.q2",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In the expression n + 3, what does n represent?",
+      "answer_spec": {
+        "correct_answer": "a number that can vary or is not yet known"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A variable stands in for a number."
+        },
+        {
+          "level": 2,
+          "text": "Its value can change or be unknown."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A variable such as n stands for a number that is unknown or can vary.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "a number that can vary or is not yet known",
+          "the letter n itself",
+          "always the number 14",
+          "an operation"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.variables.q3",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why do we use letters instead of writing 'the unknown number' each time?",
+      "answer_spec": {
+        "correct_answer": "letters are short and let us write general rules"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about writing a rule that works for any number."
+        },
+        {
+          "level": 2,
+          "text": "Symbols keep it compact and general."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Letters give a compact way to write rules that hold for any number.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "letters are short and let us write general rules",
+          "letters are always exact",
+          "letters make problems harder",
+          "there is no reason"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.variables.q4",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In 5y, what are the two parts?",
+      "answer_spec": {
+        "correct_answer": "the coefficient 5 and the variable y"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One part is a number, the other a letter."
+        },
+        {
+          "level": 2,
+          "text": "5 multiplies y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5y is the coefficient 5 multiplying the variable y.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "the coefficient 5 and the variable y",
+          "two variables",
+          "two coefficients",
+          "a sum of 5 and y"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.variables.q5",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Can the same letter stand for different values in different problems?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A variable is a placeholder."
+        },
+        {
+          "level": 2,
+          "text": "Its meaning is set by each problem."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A variable is a placeholder whose value is defined by the problem at hand.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["Yes", "No, each letter has one fixed value forever"]
+      }
+    },
+    {
+      "question_id": "math.algebra.variables.q6",
+      "skill_id": "math.algebra.variables",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "If n stands for 6, what is the value of n?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The variable takes the value given."
+        },
+        {
+          "level": 2,
+          "text": "n is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "When n stands for 6, its value is 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.variables.q7",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which of these uses a variable correctly to mean 'a number plus four'?",
+      "answer_spec": {
+        "correct_answer": "n + 4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Plus four' means addition."
+        },
+        {
+          "level": 2,
+          "text": "Write the variable, then + 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'A number plus four' is written n + 4; 4n would mean four times the number.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["n + 4", "n4", "4n", "n - 4"]
+      }
+    },
+    {
+      "question_id": "math.algebra.variables.q8",
+      "skill_id": "math.algebra.variables",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "In the rule 'total = 3 boxes times items per box', if items per box is b and there are 3 boxes, what is the total when b = 5?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The total is 3 times b."
+        },
+        {
+          "level": 2,
+          "text": "3 times 5 is 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "With b = 5, the total is 3 x 5 = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.expressions.q2",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is an algebraic expression?",
+      "answer_spec": {
+        "correct_answer": "a combination of numbers, variables, and operations with no equals sign"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An expression is not an equation."
+        },
+        {
+          "level": 2,
+          "text": "It has no equals sign."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An expression combines numbers, variables, and operations but has no equals sign.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "a combination of numbers, variables, and operations with no equals sign",
+          "a statement that two things are equal",
+          "a single number",
+          "a question"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q3",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which of these is an expression rather than an equation?",
+      "answer_spec": {
+        "correct_answer": "2x + 5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the equals sign."
+        },
+        {
+          "level": 2,
+          "text": "Only one option lacks it."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2x + 5 has no equals sign, so it is an expression.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["2x + 5", "2x + 5 = 11", "x = 3", "7 = 7"]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q4",
+      "skill_id": "math.algebra.expressions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the expression 7m, what is the coefficient?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient multiplies the variable."
+        },
+        {
+          "level": 2,
+          "text": "It is 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The coefficient of m in 7m is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.expressions.q5",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "How do you write 'three times a number, minus two'?",
+      "answer_spec": {
+        "correct_answer": "3n - 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Three times a number is 3n."
+        },
+        {
+          "level": 2,
+          "text": "Then subtract 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'Three times a number, minus two' is 3n - 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["3n - 2", "3 - 2n", "n3 - 2", "2 - 3n"]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q6",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What does the expression x + x mean?",
+      "answer_spec": {
+        "correct_answer": "two of the same number added together"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both terms use the same variable."
+        },
+        {
+          "level": 2,
+          "text": "It is the same number twice."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "x + x adds the same number to itself, which equals 2x.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "two of the same number added together",
+          "two different numbers added",
+          "x multiplied by itself",
+          "x squared"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q7",
+      "skill_id": "math.algebra.expressions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which expression represents 'a number divided by five'?",
+      "answer_spec": {
+        "correct_answer": "n / 5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The number comes first in the division."
+        },
+        {
+          "level": 2,
+          "text": "Then divide by 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'A number divided by five' is n / 5; 5 / n reverses it.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["n / 5", "5 / n", "5n", "n - 5"]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q8",
+      "skill_id": "math.algebra.expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A taxi charges 2 dollars per kilometer, written as the expression 2k. What is the charge for k = 7 kilometers?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute 7 for k."
+        },
+        {
+          "level": 2,
+          "text": "2 times 7 is 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "With k = 7, the charge 2k is $14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q3",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate the expression x + 7 when x = 4.",
+      "answer_spec": {
+        "correct_answer": 11
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with 4."
+        },
+        {
+          "level": 2,
+          "text": "Then compute, following the order of operations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 4 into x + 7 gives 11.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q4",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate the expression 2x when x = 6.",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with 6."
+        },
+        {
+          "level": 2,
+          "text": "Then compute, following the order of operations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 6 into 2x gives 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q5",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate the expression 5x - 3 when x = 4.",
+      "answer_spec": {
+        "correct_answer": 17
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with 4."
+        },
+        {
+          "level": 2,
+          "text": "Then compute, following the order of operations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 4 into 5x - 3 gives 17.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q6",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Evaluate the expression x / 2 when x = 10.",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with 10."
+        },
+        {
+          "level": 2,
+          "text": "Then compute, following the order of operations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 10 into x / 2 gives 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q7",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate the expression 3x + 1 when x = 5.",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace x with 5."
+        },
+        {
+          "level": 2,
+          "text": "Then compute, following the order of operations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Substituting x = 5 into 3x + 1 gives 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q8",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To evaluate 4x + 2 when x = 3, which step comes first?",
+      "answer_spec": {
+        "correct_answer": "multiply 4 by 3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Follow the order of operations."
+        },
+        {
+          "level": 2,
+          "text": "Multiplication comes before addition."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplication precedes addition, so compute 4 x 3 = 12 first, then add 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["multiply 4 by 3", "add 4 and 2", "add 2 to 3", "divide by 4"]
+      }
+    },
+    {
+      "question_id": "math.algebra.evaluating_expressions.q9",
+      "skill_id": "math.algebra.evaluating_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate 2x + 3y when x = 2 and y = 4.",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute both values."
+        },
+        {
+          "level": 2,
+          "text": "2(2) = 4 and 3(4) = 12, then add."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "2(2) + 3(4) = 4 + 12 = 16.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equality.q2",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What does the equals sign mean in an equation?",
+      "answer_spec": {
+        "correct_answer": "both sides have the same value"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of a balanced scale."
+        },
+        {
+          "level": 2,
+          "text": "Both sides weigh the same."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The equals sign states that both sides have the same value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "both sides have the same value",
+          "the answer comes next",
+          "the left side is larger",
+          "an operation follows"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.equality.q3",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You have x = 5. Which action keeps the equation true?",
+      "answer_spec": {
+        "correct_answer": "multiply both sides by 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Whatever you do must be done to both sides."
+        },
+        {
+          "level": 2,
+          "text": "Only one option treats both sides alike."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Doing the same to both sides keeps the balance, so multiplying both by 2 keeps it true.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "multiply both sides by 2",
+          "multiply only the left side by 2",
+          "add 3 to the right side only",
+          "subtract 1 from the left side only"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "multiply only the left side by 2",
+          "misconception_id": "mc.math.algebra.changed_one_side_only"
+        }
+      ]
+    },
+    {
+      "question_id": "math.algebra.equality.q4",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 4 + 3 = 7 an equation or an expression?",
+      "answer_spec": {
+        "correct_answer": "an equation"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the equals sign."
+        },
+        {
+          "level": 2,
+          "text": "It has one, so it is an equation."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "It contains an equals sign, so it is an equation.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["an equation", "an expression"]
+      }
+    },
+    {
+      "question_id": "math.algebra.equality.q5",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why must you do the same operation to both sides of an equation?",
+      "answer_spec": {
+        "correct_answer": "to keep both sides equal, like a balanced scale"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Changing one side breaks the balance."
+        },
+        {
+          "level": 2,
+          "text": "Equality must be preserved."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Equality is a balance; changing only one side would make the statement false.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "to keep both sides equal, like a balanced scale",
+          "to make the numbers smaller",
+          "because it is traditional",
+          "you do not have to"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.equality.q6",
+      "skill_id": "math.algebra.equality",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "If x = 8, what does x + 0 equal?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Adding zero changes nothing."
+        },
+        {
+          "level": 2,
+          "text": "The value stays 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "x + 0 = x = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.equality.q7",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The equation 9 = 9 is true. After subtracting 4 from both sides, what do you get?",
+      "answer_spec": {
+        "correct_answer": "5 = 5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract 4 from each side."
+        },
+        {
+          "level": 2,
+          "text": "9 - 4 = 5 on both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Subtracting 4 from both sides gives 5 = 5, still true.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["5 = 5", "9 = 5", "5 = 9", "4 = 4"]
+      }
+    },
+    {
+      "question_id": "math.algebra.equality.q8",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which statement is NOT true about a balanced equation?",
+      "answer_spec": {
+        "correct_answer": "you may change one side only"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the statement that breaks the balance."
+        },
+        {
+          "level": 2,
+          "text": "Changing one side alone is not allowed."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Changing only one side destroys the equality; every other statement is true.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "you may change one side only",
+          "both sides have equal value",
+          "the same operation may be applied to both sides",
+          "it can be checked by substitution"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q3",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve for x: x + 9 = 15",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the inverse operation on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Undo what is being done to x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving x + 9 = 15 gives x = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q4",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve for x: x - 4 = 10",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the inverse operation on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Undo what is being done to x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving x - 4 = 10 gives x = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q5",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve for x: 3x = 21",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the inverse operation on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Undo what is being done to x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 3x = 21 gives x = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q6",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: x / 4 = 5",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the inverse operation on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Undo what is being done to x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving x / 4 = 5 gives x = 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q7",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve for x: x + 12 = 20",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the inverse operation on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Undo what is being done to x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving x + 12 = 20 gives x = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q8",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To solve x - 7 = 12, what should you do to both sides?",
+      "answer_spec": {
+        "correct_answer": "add 7"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the subtraction."
+        },
+        {
+          "level": 2,
+          "text": "The inverse of subtracting 7 is adding 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding 7 to both sides undoes the subtraction, giving x = 19.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["add 7", "subtract 7", "multiply by 7", "divide by 7"]
+      }
+    },
+    {
+      "question_id": "math.algebra.one_step_equations.q9",
+      "skill_id": "math.algebra.one_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A number multiplied by 5 gives 45. What is the number?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 5x = 45."
+        },
+        {
+          "level": 2,
+          "text": "Divide both sides by 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "5x = 45 gives x = 9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "transfer_flag": true
     }
   ]
 }

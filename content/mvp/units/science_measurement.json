@@ -2025,6 +2025,938 @@
           "because units would change"
         ]
       }
+    },
+    {
+      "question_id": "science.measurement.si_units.q4",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is the SI base unit for mass?",
+      "answer_spec": {
+        "correct_answer": "kilogram"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the base unit, not a smaller one."
+        },
+        {
+          "level": 2,
+          "text": "The kilogram."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base unit of mass is the kilogram.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["kilogram", "gram", "pound", "newton"]
+      }
+    },
+    {
+      "question_id": "science.measurement.si_units.q5",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is the SI base unit for time?",
+      "answer_spec": {
+        "correct_answer": "second"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The smallest common unit of the set."
+        },
+        {
+          "level": 2,
+          "text": "The second."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base unit of time is the second.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["second", "minute", "hour", "day"]
+      }
+    },
+    {
+      "question_id": "science.measurement.si_units.q6",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why are SI prefixes such as kilo- and milli- useful?",
+      "answer_spec": {
+        "correct_answer": "they scale a unit by powers of ten"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Kilo means a thousand, milli a thousandth."
+        },
+        {
+          "level": 2,
+          "text": "They rescale the same unit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Prefixes scale a unit by powers of ten, so one unit covers many magnitudes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "they scale a unit by powers of ten",
+          "they change the quantity measured",
+          "they make units less precise",
+          "they are only used in chemistry"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.si_units.q7",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What does the prefix 'kilo-' mean?",
+      "answer_spec": {
+        "correct_answer": "one thousand"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A kilometre is 1000 metres."
+        },
+        {
+          "level": 2,
+          "text": "So kilo means 1000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The prefix kilo- means one thousand.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["one thousand", "one hundred", "one thousandth", "ten"]
+      }
+    },
+    {
+      "question_id": "science.measurement.si_units.q8",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does the prefix 'milli-' mean?",
+      "answer_spec": {
+        "correct_answer": "one thousandth"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A millimetre is a thousandth of a metre."
+        },
+        {
+          "level": 2,
+          "text": "So milli means 1/1000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The prefix milli- means one thousandth.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["one thousandth", "one thousand", "one hundredth", "one million"]
+      }
+    },
+    {
+      "question_id": "science.measurement.si_units.q9",
+      "skill_id": "science.measurement.si_units",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What problem do shared units solve?",
+      "answer_spec": {
+        "correct_answer": "measurements can be compared and repeated by anyone"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about scientists in different countries."
+        },
+        {
+          "level": 2,
+          "text": "Shared units make results comparable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Shared units let measurements be compared and reproduced anywhere.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "measurements can be compared and repeated by anyone",
+          "they make experiments faster",
+          "they remove all error",
+          "they replace instruments"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.length.q3",
+      "skill_id": "science.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "A desk is 150 centimeters wide. Write this in meters (include the unit, e.g. '1.5 m').",
+      "answer_spec": {
+        "correct_answer": "1.5 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "100 cm make a metre."
+        },
+        {
+          "level": 2,
+          "text": "150 / 100 = 1.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "150 cm equals 1.5 m.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "science.measurement.length.q4",
+      "skill_id": "science.measurement.length",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "A pencil is 18 centimeters long. Write this in millimeters (include the unit).",
+      "answer_spec": {
+        "correct_answer": "180 mm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 cm = 10 mm."
+        },
+        {
+          "level": 2,
+          "text": "18 times 10 is 180."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "18 cm equals 180 mm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "science.measurement.length.q5",
+      "skill_id": "science.measurement.length",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "A path is 2500 meters long. Write this in kilometers (include the unit).",
+      "answer_spec": {
+        "correct_answer": "2.5 km"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1000 m make a kilometre."
+        },
+        {
+          "level": 2,
+          "text": "2500 / 1000 = 2.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2500 m equals 2.5 km.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "science.measurement.length.q6",
+      "skill_id": "science.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which unit best measures the width of a room?",
+      "answer_spec": {
+        "correct_answer": "meters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A room is a few units across."
+        },
+        {
+          "level": 2,
+          "text": "Metres give a convenient number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A room is a few metres wide, so metres suit it best.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["meters", "millimeters", "kilometers", "grams"]
+      }
+    },
+    {
+      "question_id": "science.measurement.length.q7",
+      "skill_id": "science.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which instrument measures the length of a curved path most easily?",
+      "answer_spec": {
+        "correct_answer": "a flexible tape measure"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The path bends."
+        },
+        {
+          "level": 2,
+          "text": "A flexible tool follows the curve."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A flexible tape follows a curve, which a rigid ruler cannot.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["a flexible tape measure", "a rigid ruler", "a balance", "a stopwatch"]
+      }
+    },
+    {
+      "question_id": "science.measurement.length.q8",
+      "skill_id": "science.measurement.length",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When measuring with a ruler, where should the object start?",
+      "answer_spec": {
+        "correct_answer": "at the zero mark"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Measurement is from zero."
+        },
+        {
+          "level": 2,
+          "text": "Line the object up with 0."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Aligning the object with the zero mark gives the true length.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["at the zero mark", "at the end of the ruler", "at the 1 mark", "anywhere"]
+      }
+    },
+    {
+      "question_id": "science.measurement.length.q9",
+      "skill_id": "science.measurement.length",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line is 7 cm long. How many millimeters is that?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 cm = 10 mm."
+        },
+        {
+          "level": 2,
+          "text": "7 times 10 is 70."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 cm equals 70 mm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q3",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 5000 grams to kilograms (include the unit).",
+      "answer_spec": {
+        "correct_answer": "5 kg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1000 g make a kilogram."
+        },
+        {
+          "level": 2,
+          "text": "5000 / 1000 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5000 g equals 5 kg.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q4",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 4.5 kilometers to meters (include the unit).",
+      "answer_spec": {
+        "correct_answer": "4500 m"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 km = 1000 m."
+        },
+        {
+          "level": 2,
+          "text": "4.5 times 1000 is 4500."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4.5 km equals 4500 m.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q5",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 90 minutes to hours (include the unit).",
+      "answer_spec": {
+        "correct_answer": "1.5 h"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "60 minutes make an hour."
+        },
+        {
+          "level": 2,
+          "text": "90 / 60 = 1.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "90 minutes equals 1.5 h.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q6",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 25 millimeters to centimeters (include the unit).",
+      "answer_spec": {
+        "correct_answer": "2.5 cm"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "10 mm make a centimetre."
+        },
+        {
+          "level": 2,
+          "text": "25 / 10 = 2.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "25 mm equals 2.5 cm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q7",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Converting to a smaller unit does what to the number?",
+      "answer_spec": {
+        "correct_answer": "makes it larger"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "More small units fit in the same amount."
+        },
+        {
+          "level": 2,
+          "text": "So the number grows."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Smaller units are needed in greater quantity, so the number gets larger.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "makes it larger",
+          "makes it smaller",
+          "leaves it unchanged",
+          "makes it negative"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "makes it smaller",
+          "misconception_id": "mc.science.measurement.wrong_conversion_direction"
+        }
+      ]
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q8",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many milliliters are in 2.5 liters?",
+      "answer_spec": {
+        "correct_answer": 2500
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 L = 1000 mL."
+        },
+        {
+          "level": 2,
+          "text": "2.5 times 1000 is 2500."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2.5 L equals 2500 mL.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "science.measurement.unit_conversion.q9",
+      "skill_id": "science.measurement.unit_conversion",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A recipe needs 500 g of flour and you have a 2 kg bag. How many such batches can you make?",
+      "answer_spec": {
+        "correct_answer": "4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 2 kg to grams: 2000 g."
+        },
+        {
+          "level": 2,
+          "text": "2000 / 500 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "2 kg is 2000 g, and 2000 / 500 = 4 batches.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["4", "2", "40", "1"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.estimation.q2",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "About how much does a large apple weigh?",
+      "answer_spec": {
+        "correct_answer": "about 200 grams"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An apple fits in your hand."
+        },
+        {
+          "level": 2,
+          "text": "A couple of hundred grams."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A large apple is roughly 200 g.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["about 200 grams", "about 2 grams", "about 2 kilograms", "about 200 kilograms"]
+      }
+    },
+    {
+      "question_id": "science.measurement.estimation.q3",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "About how long does it take to boil a kettle of water?",
+      "answer_spec": {
+        "correct_answer": "a few minutes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about everyday experience."
+        },
+        {
+          "level": 2,
+          "text": "It is minutes, not seconds or hours."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Boiling a kettle takes a few minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["a few minutes", "a few seconds", "a few hours", "a few days"]
+      }
+    },
+    {
+      "question_id": "science.measurement.estimation.q4",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is estimating a measurement before taking it useful?",
+      "answer_spec": {
+        "correct_answer": "it helps you spot a reading that is wildly wrong"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An estimate is a sanity check."
+        },
+        {
+          "level": 2,
+          "text": "It catches gross errors."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An estimate flags readings that are far from plausible, catching mistakes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "it helps you spot a reading that is wildly wrong",
+          "it replaces the measurement",
+          "it makes the instrument more accurate",
+          "it saves equipment"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.estimation.q5",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "About how tall is an adult person?",
+      "answer_spec": {
+        "correct_answer": "about 1.7 meters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare with a doorway of about 2 m."
+        },
+        {
+          "level": 2,
+          "text": "A person is a bit shorter."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An adult is roughly 1.7 m tall.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "about 1.7 meters",
+          "about 17 meters",
+          "about 17 centimeters",
+          "about 1.7 kilometers"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.estimation.q6",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student measures a pencil and records 15 meters. What should they conclude?",
+      "answer_spec": {
+        "correct_answer": "the unit is wrong; it should be centimeters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "15 m is longer than a room."
+        },
+        {
+          "level": 2,
+          "text": "The value is plausible only in centimetres."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "A pencil cannot be 15 m; the reading is plausible as 15 cm, so the unit is wrong.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the unit is wrong; it should be centimeters",
+          "the pencil is unusually long",
+          "the ruler is broken",
+          "the measurement is fine"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.estimation.q7",
+      "skill_id": "science.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A good estimate is one that is what?",
+      "answer_spec": {
+        "correct_answer": "close enough to be useful"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Estimates trade precision for speed."
+        },
+        {
+          "level": 2,
+          "text": "Close enough is the goal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An estimate aims to be close enough to be useful, not exact.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "close enough to be useful",
+          "exactly correct",
+          "always too large",
+          "always too small"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q3",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Repeated measurements are all close to each other but far from the true value. This is...",
+      "answer_spec": {
+        "correct_answer": "precise but not accurate"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Closeness to each other is precision."
+        },
+        {
+          "level": 2,
+          "text": "Closeness to truth is accuracy."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Consistent but wrong readings are precise but not accurate.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "precise but not accurate",
+          "accurate but not precise",
+          "both accurate and precise",
+          "neither accurate nor precise"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q4",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Measurements scatter widely but average close to the true value. This is...",
+      "answer_spec": {
+        "correct_answer": "accurate on average but not precise"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Wide scatter means low precision."
+        },
+        {
+          "level": 2,
+          "text": "A correct average means reasonable accuracy."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A correct average with wide scatter indicates accuracy on average but poor precision.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "accurate on average but not precise",
+          "precise but not accurate",
+          "both accurate and precise",
+          "neither"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q5",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Precision describes what?",
+      "answer_spec": {
+        "correct_answer": "how close repeated measurements are to each other"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Precision is about consistency."
+        },
+        {
+          "level": 2,
+          "text": "Accuracy is about truth."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Precision is the consistency of repeated measurements.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "how close repeated measurements are to each other",
+          "how close a measurement is to the true value",
+          "how large the measurement is",
+          "which unit was used"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q6",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which change improves accuracy rather than precision?",
+      "answer_spec": {
+        "correct_answer": "calibrating the instrument correctly"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Accuracy is closeness to the true value."
+        },
+        {
+          "level": 2,
+          "text": "Calibration fixes a systematic offset."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Calibration removes a systematic offset, improving accuracy; more readings improve precision.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "calibrating the instrument correctly",
+          "taking more readings",
+          "using a finer scale",
+          "reporting more digits"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q7",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Can a measurement be accurate but not precise?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They are independent qualities."
+        },
+        {
+          "level": 2,
+          "text": "An average can be right while readings scatter."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Yes; readings can scatter widely (low precision) yet average to the true value (accurate).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["Yes", "No, they always go together"]
+      }
+    },
+    {
+      "question_id": "science.measurement.accuracy_precision.q8",
+      "skill_id": "science.measurement.accuracy_precision",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is the ideal outcome for a set of measurements?",
+      "answer_spec": {
+        "correct_answer": "accurate and precise"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You want readings both consistent and true."
+        },
+        {
+          "level": 2,
+          "text": "That is accurate and precise."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Ideally measurements are both close to the true value and consistent with each other.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["accurate and precise", "accurate only", "precise only", "neither"]
+      }
     }
   ]
 }

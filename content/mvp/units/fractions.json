@@ -2657,6 +2657,1337 @@
       "content_version": "0.1.0",
       "estimated_time_seconds": 67,
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q3",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "fraction",
+      "difficulty": 1,
+      "prompt": "A shape is split into 7 equal parts and 2 are shaded. What fraction is shaded?",
+      "answer_spec": {
+        "correct_answer": "2/7"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is the total number of equal parts, 7."
+        },
+        {
+          "level": 2,
+          "text": "The numerator is the shaded count, 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 of 7 equal parts shaded is 2/7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q4",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "A shape is split into 8 equal parts and 5 are shaded. What fraction is shaded?",
+      "answer_spec": {
+        "correct_answer": "5/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is the total number of equal parts, 8."
+        },
+        {
+          "level": 2,
+          "text": "The numerator is the shaded count, 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 of 8 equal parts shaded is 5/8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q5",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "fraction",
+      "difficulty": 1,
+      "prompt": "A shape is split into 4 equal parts and 1 are shaded. What fraction is shaded?",
+      "answer_spec": {
+        "correct_answer": "1/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator is the total number of equal parts, 4."
+        },
+        {
+          "level": 2,
+          "text": "The numerator is the shaded count, 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 of 4 equal parts shaded is 1/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q6",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In the fraction 3/8, what does the numerator 3 tell you?",
+      "answer_spec": {
+        "correct_answer": "how many equal parts you have"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The numerator is the top number."
+        },
+        {
+          "level": 2,
+          "text": "It counts the parts you have."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The numerator counts how many of the equal parts you have.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "how many equal parts you have",
+          "how many parts the whole is split into",
+          "how much bigger the fraction is than 1",
+          "the total of the two numbers"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q7",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A shape is cut into 4 pieces, but the pieces are different sizes. Can you name a simple fraction for one piece?",
+      "answer_spec": {
+        "correct_answer": "No, because the parts must be equal"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Fractions require equal parts."
+        },
+        {
+          "level": 2,
+          "text": "Unequal pieces cannot be named this way."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Fractions describe equal parts, so unequal pieces cannot be named as a simple fraction.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "No, because the parts must be equal",
+          "Yes, it is 1/4",
+          "Yes, any piece is a fraction",
+          "Only if the piece is biggest"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, it is 1/4",
+          "misconception_id": "mc.math.fractions.unequal_parts_as_fraction"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q8",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What fraction of a whole is one of two equal parts?",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two equal parts means the denominator is 2."
+        },
+        {
+          "level": 2,
+          "text": "One part gives numerator 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One of two equal parts is 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.fraction_meaning.q9",
+      "skill_id": "math.fractions.fraction_meaning",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "On a number line from 0 to 1 split into 4 equal jumps, where does 3/4 sit?",
+      "answer_spec": {
+        "correct_answer": "at the third jump"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each jump is 1/4."
+        },
+        {
+          "level": 2,
+          "text": "Three jumps is 3/4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Three of the four equal jumps reaches 3/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["at the third jump", "at the fourth jump", "at the first jump", "beyond 1"]
+      }
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q3",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write a fraction equivalent to 1/3 with denominator 9.",
+      "answer_spec": {
+        "correct_answer": "3/9"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What times 3 gives 9?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply both parts by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying top and bottom by 3 gives 3/9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q4",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write a fraction equivalent to 3/4 with denominator 8.",
+      "answer_spec": {
+        "correct_answer": "6/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What times 4 gives 8?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply both parts by 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying top and bottom by 2 gives 6/8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q5",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Write a fraction equivalent to 2/5 with denominator 10.",
+      "answer_spec": {
+        "correct_answer": "4/10"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What times 5 gives 10?"
+        },
+        {
+          "level": 2,
+          "text": "Multiply both parts by 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying top and bottom by 2 gives 4/10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q6",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which fraction is equivalent to 2/3?",
+      "answer_spec": {
+        "correct_answer": "6/9"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply top and bottom by the same number."
+        },
+        {
+          "level": 2,
+          "text": "2/3 times 3/3 gives 6/9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying 2/3 by 3/3 gives 6/9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": ["6/9", "3/2", "2/6", "4/9"]
+      }
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q7",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why does adding the same number to the top and bottom NOT make an equivalent fraction?",
+      "answer_spec": {
+        "correct_answer": "because it changes the ratio between the parts"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try 1/2 and add 1 to each part."
+        },
+        {
+          "level": 2,
+          "text": "2/3 is not the same as 1/2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding changes the relationship: 1/2 becomes 2/3, a different value. Only multiplying or dividing both parts works.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "because it changes the ratio between the parts",
+          "because addition is harder",
+          "it does make an equivalent fraction",
+          "because only subtraction works"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "it does make an equivalent fraction",
+          "misconception_id": "mc.math.fractions.added_to_both_parts"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q8",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Write a fraction equivalent to 1/2 with denominator 10.",
+      "answer_spec": {
+        "correct_answer": "5/10"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "2 times 5 is 10."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the numerator by 5 too."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 equals 5/10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q3",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Simplify 6/8 to its simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a number that divides both 6 and 8."
+        },
+        {
+          "level": 2,
+          "text": "Divide both by their greatest common factor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6/8 simplifies to 3/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q4",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Simplify 9/12 to its simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a number that divides both 9 and 12."
+        },
+        {
+          "level": 2,
+          "text": "Divide both by their greatest common factor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "9/12 simplifies to 3/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q5",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Simplify 10/15 to its simplest form.",
+      "answer_spec": {
+        "correct_answer": "2/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a number that divides both 10 and 15."
+        },
+        {
+          "level": 2,
+          "text": "Divide both by their greatest common factor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10/15 simplifies to 2/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q6",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Simplify 8/12 to its simplest form.",
+      "answer_spec": {
+        "correct_answer": "2/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a number that divides both 8 and 12."
+        },
+        {
+          "level": 2,
+          "text": "Divide both by their greatest common factor."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8/12 simplifies to 2/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q7",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "How do you know a fraction is fully simplified?",
+      "answer_spec": {
+        "correct_answer": "the only number dividing both parts is 1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for shared factors."
+        },
+        {
+          "level": 2,
+          "text": "If none remain above 1, it is simplest."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A fraction is in simplest form when the numerator and denominator share no factor other than 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the only number dividing both parts is 1",
+          "the numerator is 1",
+          "the denominator is even",
+          "the numbers are small"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q8",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which fraction is already in simplest form?",
+      "answer_spec": {
+        "correct_answer": "5/9"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check each for shared factors."
+        },
+        {
+          "level": 2,
+          "text": "5 and 9 share only 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 and 9 share no common factor above 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": ["5/9", "4/6", "6/8", "10/20"]
+      }
+    },
+    {
+      "question_id": "math.fractions.simplifying_fractions.q9",
+      "skill_id": "math.fractions.simplifying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Simplify 12/16.",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both divide by 4."
+        },
+        {
+          "level": 2,
+          "text": "12/4 = 3 and 16/4 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12/16 simplifies to 3/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q3",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 2/7 + 3/7?",
+      "answer_spec": {
+        "correct_answer": "5/7"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the parts are the same size."
+        },
+        {
+          "level": 2,
+          "text": "Add the numerators: 2 + 3 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2/7 + 3/7 = 5/7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q4",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 1,
+      "prompt": "What is 1/4 + 1/4?",
+      "answer_spec": {
+        "correct_answer": "2/4",
+        "accepted_equivalents": ["1/2"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the parts are the same size."
+        },
+        {
+          "level": 2,
+          "text": "Add the numerators: 1 + 1 = 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/4 + 1/4 = 2/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 38
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q5",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 3/9 + 4/9?",
+      "answer_spec": {
+        "correct_answer": "7/9"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the parts are the same size."
+        },
+        {
+          "level": 2,
+          "text": "Add the numerators: 3 + 4 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/9 + 4/9 = 7/9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q6",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/11 + 5/11?",
+      "answer_spec": {
+        "correct_answer": "7/11"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match, so the parts are the same size."
+        },
+        {
+          "level": 2,
+          "text": "Add the numerators: 2 + 5 = 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2/11 + 5/11 = 7/11.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q7",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is wrong with writing 2/7 + 3/7 as 5/14?",
+      "answer_spec": {
+        "correct_answer": "the denominators should not be added"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator gives the size of each part."
+        },
+        {
+          "level": 2,
+          "text": "That size does not change when you add."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding the denominators wrongly changes the part size; the answer is 5/7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the denominators should not be added",
+          "the numerators should not be added",
+          "nothing is wrong",
+          "the answer should be 6/7"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "nothing is wrong",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q8",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/8 + 5/8?",
+      "answer_spec": {
+        "correct_answer": "1",
+        "accepted_equivalents": ["8/8"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the numerators: 3 + 5 = 8."
+        },
+        {
+          "level": 2,
+          "text": "8/8 is one whole."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/8 + 5/8 = 8/8, which is 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_like_denominators.q9",
+      "skill_id": "math.fractions.add_like_denominators",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When adding fractions with the same denominator, what happens to the denominator?",
+      "answer_spec": {
+        "correct_answer": "it stays the same"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominator gives the size of each part."
+        },
+        {
+          "level": 2,
+          "text": "Adding parts does not change how big each part is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The denominator stays the same, because adding parts changes how many you have, not how large each part is.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46,
+      "parameters": {
+        "options": [
+          "it stays the same",
+          "it is added to the other denominator",
+          "it doubles",
+          "it becomes the numerator"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "it is added to the other denominator",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q3",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 4/7 - 1/7?",
+      "answer_spec": {
+        "correct_answer": "3/7"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 4 - 1 = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4/7 - 1/7 = 3/7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q4",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 7/8 - 3/8?",
+      "answer_spec": {
+        "correct_answer": "4/8",
+        "accepted_equivalents": ["1/2"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 7 - 3 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7/8 - 3/8 = 4/8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q5",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 5/9 - 2/9?",
+      "answer_spec": {
+        "correct_answer": "3/9",
+        "accepted_equivalents": ["1/3"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 5 - 2 = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5/9 - 2/9 = 3/9.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q6",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 3/4 - 1/4?",
+      "answer_spec": {
+        "correct_answer": "2/4",
+        "accepted_equivalents": ["1/2"]
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The denominators match."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 3 - 1 = 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/4 - 1/4 = 2/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q7",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 5/5 - 2/5?",
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "5/5 is one whole."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators: 5 - 2 = 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5/5 - 2/5 = 3/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q8",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why does the denominator stay the same when subtracting like fractions?",
+      "answer_spec": {
+        "correct_answer": "because the size of each part does not change"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You remove parts, not resize them."
+        },
+        {
+          "level": 2,
+          "text": "The part size is fixed by the denominator."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Removing parts does not change how big each part is, so the denominator stays.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "because the size of each part does not change",
+          "because it is always the larger number",
+          "because subtraction is the opposite of addition",
+          "it does change"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.subtract_like_denominators.q9",
+      "skill_id": "math.fractions.subtract_like_denominators",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the numerator of the answer to 9/10 - 4/10?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the numerators."
+        },
+        {
+          "level": 2,
+          "text": "9 - 4 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The numerator of the difference is 9 - 4 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q3",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the smallest common denominator for fractions with denominators 2 and 5?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List multiples of 2 and of 5."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest they share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The least common multiple of 2 and 5 is 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q4",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the smallest common denominator for fractions with denominators 3 and 4?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List multiples of 3 and of 4."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest they share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The least common multiple of 3 and 4 is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q5",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the smallest common denominator for fractions with denominators 4 and 6?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List multiples of 4 and of 6."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest they share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The least common multiple of 4 and 6 is 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q6",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the smallest common denominator for fractions with denominators 2 and 8?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List multiples of 2 and of 8."
+        },
+        {
+          "level": 2,
+          "text": "Find the smallest they share."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The least common multiple of 2 and 8 is 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q7",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When you rewrite 1/3 with denominator 12, what must you do to the numerator?",
+      "answer_spec": {
+        "correct_answer": "multiply it by 4, the same factor used on the denominator"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 times 4 gives 12."
+        },
+        {
+          "level": 2,
+          "text": "Do the same to the top."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Both parts scale by the same factor, so 1/3 becomes 4/12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "multiply it by 4, the same factor used on the denominator",
+          "leave it as 1",
+          "add 4 to it",
+          "multiply it by 12"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "leave it as 1",
+          "misconception_id": "mc.math.fractions.changed_denominator_only"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q8",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two fractions have denominators 5 and 10. What common denominator can you use?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "5 divides evenly into 10."
+        },
+        {
+          "level": 2,
+          "text": "So 10 works."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10 works because 5 divides into it evenly.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.common_denominators.q9",
+      "skill_id": "math.fractions.common_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why does multiplying the two denominators always give a usable common denominator?",
+      "answer_spec": {
+        "correct_answer": "because both denominators divide into their product"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about 3 and 4 giving 12."
+        },
+        {
+          "level": 2,
+          "text": "Both divide into 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The product of two denominators is always a multiple of each, so both divide into it (though it may not be the smallest).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "because both denominators divide into their product",
+          "because it is always the smallest",
+          "because it makes the fractions smaller",
+          "it does not always work"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q3",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/4 + 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "7/12"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a common denominator first."
+        },
+        {
+          "level": 2,
+          "text": "Rewrite both fractions, then add the numerators."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/4 + 1/3 = 7/12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q4",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/2 + 1/5? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "7/10"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a common denominator first."
+        },
+        {
+          "level": 2,
+          "text": "Rewrite both fractions, then add the numerators."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 + 1/5 = 7/10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q5",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 2/3 + 1/4? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "11/12"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a common denominator first."
+        },
+        {
+          "level": 2,
+          "text": "Rewrite both fractions, then add the numerators."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2/3 + 1/4 = 11/12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q6",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/6 + 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a common denominator first."
+        },
+        {
+          "level": 2,
+          "text": "Rewrite both fractions, then add the numerators."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/6 + 1/3 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q7",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is wrong with writing 1/2 + 1/3 as 2/5?",
+      "answer_spec": {
+        "correct_answer": "the fractions were added without a common denominator"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The parts are different sizes."
+        },
+        {
+          "level": 2,
+          "text": "You must rewrite them first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Adding straight across ignores that halves and thirds are different sizes; the answer is 5/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 54,
+      "parameters": {
+        "options": [
+          "the fractions were added without a common denominator",
+          "the answer should be 2/6",
+          "nothing is wrong",
+          "you should multiply instead"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "nothing is wrong",
+          "misconception_id": "mc.math.fractions.add_numerators_and_denominators"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q8",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "A recipe uses 1/3 cup of oil and 1/6 cup of water. How much liquid in total, in cups?",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use a common denominator of 6."
+        },
+        {
+          "level": 2,
+          "text": "1/3 = 2/6, so 2/6 + 1/6 = 3/6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "1/3 + 1/6 = 3/6 = 1/2 cup.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 62,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.add_unlike_denominators.q9",
+      "skill_id": "math.fractions.add_unlike_denominators",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "To add 1/4 and 1/8, what common denominator should you use?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "4 divides into 8."
+        },
+        {
+          "level": 2,
+          "text": "So 8 works."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "8 is the smallest common denominator for fourths and eighths.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 46
     }
   ]
 }

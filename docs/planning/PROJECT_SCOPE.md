@@ -57,14 +57,15 @@ introductory-algebra + scientific-reasoning course. It is the full "initial subj
 
 - it does NOT by itself reach trigonometry (see section 4).
 
-**The documented curriculum is complete.** All ~138 documented topics are authored across
-**130 skills and 843 practice questions**, and **all 16 units are built** - none partial,
-none missing. Phases 10-14 completed the mathematics course, Phase 15 completed the science
+**The documented curriculum is complete, at uniform depth.** All ~138 documented topics are
+authored across **130 skills and 1,121 practice questions**, and **all 16 units are built** -
+none partial, none missing. Phase 16 raised the original MVP-slice skills to match the newer
+units, so **every skill now carries at least 7 practice items (mean ~8.6)**. Phases 10-14 completed the mathematics course, Phase 15 completed the science
 course (Experiments and Data units plus backfills), and Phase 15b closed the last gap by
 adding rounding decimals, finding the whole, finding the percent, percent
 increase/decrease, and percentage word problems.
 
-Remaining curriculum work is **depth, not coverage** - see section 5.
+Both coverage and depth are now done; see section 5 for how depth was measured.
 
 ### Mathematics course (`math.core`)
 
@@ -151,11 +152,11 @@ as an optional extended track.
 ## 5. Depth vs. breadth (a second dimension of scope)
 
 Coverage (how many topics) is only one axis. **Depth** (how many practice items per skill)
-is the other. The original MVP-slice skills (number foundations, the first few skills of
-add/sub, mult/div, fractions, and algebra, and the science units) ship with one lesson and
-about two practice questions, thinner than mastery-grade. Everything authored in Phases
-10-13 is at ~8-15 items/skill, and new work targets that depth; a future depth pass should
-lift the remaining original skills to match. The mastery model
+is the other, and it is now **uniform across the curriculum**. Phases 10-15b authored new
+units at ~8-15 items per skill, and **Phase 16 (the depth pass)** lifted the 41 original
+MVP-slice skills from ~2 items each to the same standard by adding 278 questions. Every
+skill now has at least 7 items, averaging ~8.6, spread across difficulty bands with
+progressive hints and misconception-tagged distractors. The mastery model
 (retention + transfer across difficulty bands) wants a larger item pool per skill (roughly
 8-15 items across difficulties, with worked examples and misconception coverage). Any plan
 to make the existing units genuinely learnable, not just present, must budget a
