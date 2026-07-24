@@ -218,6 +218,178 @@
       },
       "content_version": "0.1.0",
       "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.comparing_fractions",
+      "unit_id": "math.fractions",
+      "title": "Comparing Fractions",
+      "summary": "To compare fractions, give them a common denominator so the parts are the same size, then compare the numerators. With the same denominator, the fraction with the larger numerator is greater.",
+      "objectives": [
+        "Compare two fractions using a common denominator.",
+        "Order fractions by size.",
+        "Compare a fraction to one half."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.common_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "unit_id": "math.fractions",
+      "title": "Subtracting Fractions with Unlike Denominators",
+      "summary": "To subtract fractions with different denominators, first rewrite them with a common denominator so the parts are the same size, then subtract the numerators and keep the shared denominator. Simplify the result if possible.",
+      "objectives": [
+        "Rewrite two fractions with a common denominator.",
+        "Subtract fractions with unlike denominators.",
+        "Simplify the difference."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.add_unlike_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.multiplying_fractions",
+      "unit_id": "math.fractions",
+      "title": "Multiplying Fractions",
+      "summary": "To multiply two fractions, multiply the numerators to get the new numerator and multiply the denominators to get the new denominator, then simplify. Multiplying by a fraction less than one makes the result smaller.",
+      "objectives": [
+        "Multiply two fractions.",
+        "Simplify the product.",
+        "Interpret multiplying a fraction as taking a part of a part."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.simplifying_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.dividing_fractions",
+      "unit_id": "math.fractions",
+      "title": "Dividing Fractions",
+      "summary": "To divide by a fraction, multiply by its reciprocal (the fraction flipped upside down). So a/b divided by c/d equals a/b times d/c. Dividing by a fraction less than one gives a larger result.",
+      "objectives": [
+        "Find the reciprocal of a fraction.",
+        "Divide one fraction by another.",
+        "Explain why dividing uses the reciprocal."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.multiplying_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.mixed_numbers",
+      "unit_id": "math.fractions",
+      "title": "Mixed Numbers",
+      "summary": "A mixed number combines a whole number and a fraction, like 1 1/2. It can be rewritten as an improper fraction (numerator larger than denominator) and back, which makes it easier to compute with.",
+      "objectives": [
+        "Convert a mixed number to an improper fraction.",
+        "Convert an improper fraction to a mixed number.",
+        "Recognize equivalent mixed and improper forms."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.add_like_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.simplifying_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.fractions.fraction_word_problems",
+      "unit_id": "math.fractions",
+      "title": "Fraction Word Problems",
+      "summary": "Fraction word problems use fractions in real situations: combining parts (add), finding what is left (subtract), or taking a fraction of an amount (multiply). Identify the operation from the situation, compute, and simplify.",
+      "objectives": [
+        "Choose the operation for a fraction word problem.",
+        "Solve the problem with fractions.",
+        "Take a fraction of a whole number."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.fractions.add_unlike_denominators",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.multiplying_fractions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
     }
   ],
   "lessons": [
@@ -538,6 +710,270 @@
         {
           "type": "review_prompt",
           "body": "What is the first step before you can add 1/2 and 1/3, and why is it necessary?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.comparing_fractions.lesson",
+      "skill_id": "math.fractions.comparing_fractions",
+      "title": "Comparing Fractions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to compare and order fractions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to rewrite fractions with a common denominator so their parts are the same size."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "You cannot compare halves and thirds directly because the pieces differ in size. Rewrite both with a common denominator, and then it is just a matter of counting pieces: more same-size pieces means a bigger fraction."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To compare fractions, rewrite them with a common denominator, then compare numerators: with equal denominators, the larger numerator gives the larger fraction."
+        },
+        {
+          "type": "worked_example",
+          "body": "Compare 1/2 and 2/3. A common denominator is 6: 1/2 = 3/6 and 2/3 = 4/6. Since 4/6 has more sixths, 2/3 is greater."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Compare 3/4 and 1/2. Use denominator 4: 1/2 = 2/4. Since 3/4 has more fourths than 2/4, 3/4 is greater."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking a larger denominator means a larger fraction. With the same numerator, a larger denominator actually means smaller pieces, so 1/3 is less than 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "Compare fractions by giving them a common denominator, then comparing numerators. More same-size pieces means a greater fraction."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you decide which is greater, 1/2 or 2/3?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.subtract_unlike_denominators.lesson",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "title": "Subtracting Fractions with Unlike Denominators",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to subtract fractions with different denominators."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall adding fractions with unlike denominators: rewrite with a common denominator first. Subtraction works the same way."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "You cannot take thirds away from halves directly because the pieces differ in size. Make the pieces the same size with a common denominator, then subtract the counts."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To subtract fractions with unlike denominators, rewrite each with a common denominator, subtract the numerators, keep the denominator, and simplify."
+        },
+        {
+          "type": "worked_example",
+          "body": "Subtract 1/2 - 1/3. Common denominator 6: 1/2 = 3/6 and 1/3 = 2/6. Subtract: 3/6 - 2/6 = 1/6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Subtract 3/4 - 1/2. Use denominator 4: 1/2 = 2/4. Then 3/4 - 2/4 = 1/4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is subtracting numerators and denominators straight across. You must give the fractions a common denominator first."
+        },
+        {
+          "type": "summary",
+          "body": "Subtract unlike fractions by rewriting with a common denominator, subtracting numerators, keeping the denominator, and simplifying."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the first step to compute 1/2 - 1/3, and why?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.multiplying_fractions.lesson",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "title": "Multiplying Fractions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to multiply fractions and simplify the result."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to simplify a fraction by dividing the numerator and denominator by a common factor."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Multiplying fractions finds a part of a part. Half of one third means 1/2 times 1/3. Splitting a third into two equal pieces gives sixths, so the answer is 1/6. You do not need a common denominator to multiply."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To multiply fractions, multiply the numerators together and the denominators together, then simplify: a/b times c/d = (a times c)/(b times d)."
+        },
+        {
+          "type": "worked_example",
+          "body": "Multiply 2/3 times 3/4. Numerators: 2 times 3 = 6. Denominators: 3 times 4 = 12. That is 6/12, which simplifies to 1/2."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Multiply 1/2 times 1/3. Numerators: 1 times 1 = 1. Denominators: 2 times 3 = 6. The product is 1/6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is finding a common denominator first, as you would for addition. For multiplication, just multiply across, then simplify."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply fractions by multiplying numerators and denominators straight across, then simplify. No common denominator is needed."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you multiply 2/3 by 3/4, and what do you get?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.dividing_fractions.lesson",
+      "skill_id": "math.fractions.dividing_fractions",
+      "title": "Dividing Fractions",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to divide fractions by multiplying by the reciprocal."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to multiply fractions across. Division builds directly on multiplication."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Dividing asks how many of one amount fit into another. How many halves fit in 3? Six. That is 3 divided by 1/2 = 6, the same as 3 times 2. Flipping the divisor turns division into multiplication."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The reciprocal of a fraction swaps its numerator and denominator. To divide by a fraction, multiply by its reciprocal: a/b divided by c/d = a/b times d/c. Then simplify."
+        },
+        {
+          "type": "worked_example",
+          "body": "Divide 1/2 by 1/4. The reciprocal of 1/4 is 4/1. Multiply: 1/2 times 4/1 = 4/2 = 2. So 1/2 divided by 1/4 is 2 (two quarters fit in a half)."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Divide 2/3 by 1/3. The reciprocal of 1/3 is 3/1. Multiply: 2/3 times 3 = 6/3 = 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is flipping the first fraction instead of the divisor. Only the fraction you divide by is turned upside down."
+        },
+        {
+          "type": "summary",
+          "body": "Divide by a fraction by multiplying by its reciprocal (the divisor flipped), then simplify."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you compute 1/2 divided by 1/4, and why does the answer come out greater than 1/2?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.mixed_numbers.lesson",
+      "skill_id": "math.fractions.mixed_numbers",
+      "title": "Mixed Numbers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to convert between mixed numbers and improper fractions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a fraction is parts of a whole and that simplifying keeps a fraction's value."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "One and a half pizzas is 1 1/2, a whole pizza plus a half. Counting all the halves, that is 3 halves, or 3/2. A mixed number and its improper fraction name the same amount."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A mixed number has a whole part and a proper fraction. To convert to an improper fraction, multiply the whole number by the denominator and add the numerator, keeping the denominator. To convert back, divide the numerator by the denominator: the quotient is the whole part and the remainder is the new numerator."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2 1/3 to an improper fraction. Multiply 2 by 3 to get 6, add 1 to get 7, keep the denominator 3: the result is 7/3."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Convert 7/2 to a mixed number. Divide 7 by 2: quotient 3, remainder 1, so 7/2 = 3 1/2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is forgetting to add the numerator, or keeping the wrong denominator. Multiply the whole by the denominator, add the numerator, and keep the same denominator."
+        },
+        {
+          "type": "summary",
+          "body": "Mixed numbers and improper fractions are two forms of the same amount. Multiply-and-add to make an improper fraction; divide to make a mixed number."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you convert 2 1/3 into an improper fraction?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.fractions.fraction_word_problems.lesson",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "title": "Fraction Word Problems",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to solve word problems involving fractions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall adding and subtracting fractions with common denominators and multiplying a fraction by a number or fraction."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Fraction stories work like whole-number stories. Combining parts of a whole means adding fractions; finding what remains means subtracting; and 'a fraction of' an amount means multiplying. The situation tells you which."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In fraction word problems, add to combine parts, subtract to find a remaining part, and multiply to find a fraction of a quantity. 'Of' usually signals multiplication, as in 1/2 of 10 = 5."
+        },
+        {
+          "type": "worked_example",
+          "body": "A recipe needs 1/2 cup of milk and 1/3 cup of water. How much liquid in all? Combining parts means add: 1/2 + 1/3 = 3/6 + 2/6 = 5/6 cup."
+        },
+        {
+          "type": "guided_practice",
+          "body": "What is 1/2 of 10 apples? 'Of' means multiply: 1/2 times 10 = 5 apples."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding when the problem says 'of', which calls for multiplication. Read the situation: combining is addition, but a fraction 'of' an amount is multiplication."
+        },
+        {
+          "type": "summary",
+          "body": "Solve fraction word problems by matching the situation to an operation: add to combine, subtract to find what is left, multiply for a fraction of an amount."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why does 'What is 1/3 of 12?' call for multiplication rather than addition?"
         }
       ]
     }
@@ -983,6 +1419,1244 @@
       "explanation": "Because 1/4 and 1/2 have different size parts, the first step is to give them a common denominator (4): 1/2 becomes 2/4. Then 1/4 + 2/4 = 3/4.",
       "content_version": "0.1.0",
       "estimated_time_seconds": 55
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q1",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is greater, 1/2 or 2/3?",
+      "answer_spec": {
+        "correct_answer": "2/3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use a common denominator of 6."
+        },
+        {
+          "level": 2,
+          "text": "1/2 = 3/6 and 2/3 = 4/6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With denominator 6, 1/2 = 3/6 and 2/3 = 4/6, so 2/3 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2/3", "1/2"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q2",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is greater, 3/4 or 1/2?",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use denominator 4."
+        },
+        {
+          "level": 2,
+          "text": "1/2 = 2/4, and 3/4 has more fourths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 = 2/4, so 3/4 (three fourths) is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3/4", "1/2"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q3",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "With the same numerator, which is greater, 1/3 or 1/2?",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Larger denominator means smaller pieces."
+        },
+        {
+          "level": 2,
+          "text": "Halves are bigger than thirds."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 has larger pieces than 1/3, so 1/2 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1/2", "1/3"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "1/3",
+          "misconception_id": "mc.math.fractions.bigger_denominator_bigger_fraction"
+        }
+      ]
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q4",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which symbol makes this true: 2/5 __ 3/5 ?",
+      "answer_spec": {
+        "correct_answer": "<"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same denominator, so compare numerators."
+        },
+        {
+          "level": 2,
+          "text": "2 fifths is less than 3 fifths."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With equal denominators, 2/5 < 3/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["<", ">", "="]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q5",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is greater, 5/8 or 1/2?",
+      "answer_spec": {
+        "correct_answer": "5/8"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1/2 = 4/8."
+        },
+        {
+          "level": 2,
+          "text": "5/8 has more eighths than 4/8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/2 = 4/8, so 5/8 is greater than 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["5/8", "1/2"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q6",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is smaller, 1/4 or 1/3?",
+      "answer_spec": {
+        "correct_answer": "1/4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Larger denominator means smaller pieces."
+        },
+        {
+          "level": 2,
+          "text": "Fourths are smaller than thirds."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1/4 has smaller pieces than 1/3, so 1/4 is smaller.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["1/4", "1/3"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q7",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Is 3/6 greater than, less than, or equal to 1/2?",
+      "answer_spec": {
+        "correct_answer": "equal to"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Simplify 3/6."
+        },
+        {
+          "level": 2,
+          "text": "3/6 = 1/2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3/6 simplifies to 1/2, so they are equal.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["equal to", "greater than", "less than"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q8",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is greater, 2/3 or 3/4?",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use denominator 12."
+        },
+        {
+          "level": 2,
+          "text": "2/3 = 8/12 and 3/4 = 9/12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With denominator 12, 2/3 = 8/12 and 3/4 = 9/12, so 3/4 is greater.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["3/4", "2/3"]
+      }
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q1",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/2 - 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 1/2 - 1/3 = 1/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q2",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/4 - 1/2? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 3/4 - 1/2 = 1/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q3",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/3 - 1/6? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 2/3 - 1/6 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q4",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 5/6 - 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 5/6 - 1/3 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q5",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 3/4 - 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "5/12"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 3/4 - 1/3 = 5/12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q6",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 7/8 - 1/2? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 7/8 - 1/2 = 3/8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q7",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 2/3 - 1/2? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite both fractions with a common denominator."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the numerators and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a common denominator, 2/3 - 1/2 = 1/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q8",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the first step to compute 1/2 - 1/3?",
+      "answer_spec": {
+        "correct_answer": "give them a common denominator"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The pieces are different sizes."
+        },
+        {
+          "level": 2,
+          "text": "Make them the same size first."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "First rewrite 1/2 and 1/3 with a common denominator so the pieces match.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "give them a common denominator",
+          "subtract 2 and 3",
+          "subtract 1 and 1",
+          "flip the second fraction"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q1",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 1/2 x 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 1/2 x 1/3 = 1/6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q2",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/3 x 3/4? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 2/3 x 3/4 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q3",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/5 x 1/2? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 2/5 x 1/2 = 1/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q4",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/4 x 2/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 3/4 x 2/3 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q5",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/2 x 4/5? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 1/2 x 4/5 = 2/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q6",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 3/5 x 5/6? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 3/5 x 5/6 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q7",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/3 x 3/5? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the numerators, then the denominators."
+        },
+        {
+          "level": 2,
+          "text": "Simplify the result."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying across, 2/3 x 3/5 = 2/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q8",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To multiply two fractions, you do NOT need to first find what?",
+      "answer_spec": {
+        "correct_answer": "a common denominator"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Common denominators are for adding and subtracting."
+        },
+        {
+          "level": 2,
+          "text": "Multiplication goes straight across."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Unlike addition, multiplying fractions needs no common denominator; you multiply across.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["a common denominator", "the numerators", "the denominators", "the product"]
+      }
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q1",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "What is 1/2 / 1/4? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 1/2 / 1/4 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q2",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/3 / 1/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 2/3 / 1/3 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q3",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/4 / 1/2? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 3/4 / 1/2 = 3/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q4",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 1/2 / 1/8? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 1/2 / 1/8 = 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q5",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/5 / 1/5? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 2/5 / 1/5 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q6",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 3/4 / 3/8? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 3/4 / 3/8 = 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q7",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 1/3 / 2/3? Give your answer in simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the first fraction by the reciprocal of the second."
+        },
+        {
+          "level": 2,
+          "text": "Flip the divisor, then multiply and simplify."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Multiplying by the reciprocal, 1/3 / 2/3 = 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q8",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To divide by a fraction, you multiply by its what?",
+      "answer_spec": {
+        "correct_answer": "reciprocal"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Flip the divisor upside down."
+        },
+        {
+          "level": 2,
+          "text": "That flipped fraction is the reciprocal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dividing by a fraction means multiplying by its reciprocal.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["reciprocal", "numerator", "denominator", "square"]
+      }
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q1",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Convert the mixed number 2 1/3 to an improper fraction.",
+      "answer_spec": {
+        "correct_answer": "7/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the whole by the denominator, then add the numerator."
+        },
+        {
+          "level": 2,
+          "text": "2 times 3 + 1 = 7, over 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 1/3 = (2 times 3 + 1)/3 = 7/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q2",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Convert the mixed number 1 1/2 to an improper fraction.",
+      "answer_spec": {
+        "correct_answer": "3/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 times 2 + 1 = 3, over 2."
+        },
+        {
+          "level": 2,
+          "text": "So it is 3/2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 1/2 = (1 times 2 + 1)/2 = 3/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q3",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Convert the improper fraction 7/2 to a mixed number.",
+      "answer_spec": {
+        "correct_answer": "3 1/2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 7 by 2."
+        },
+        {
+          "level": 2,
+          "text": "Quotient 3, remainder 1, over 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 divided by 2 is 3 remainder 1, so 7/2 = 3 1/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["3 1/2", "2 1/2", "3 1/3", "1 1/2"]
+      }
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q4",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Convert the mixed number 3 1/4 to an improper fraction.",
+      "answer_spec": {
+        "correct_answer": "13/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 times 4 + 1 = 13, over 4."
+        },
+        {
+          "level": 2,
+          "text": "So it is 13/4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 1/4 = (3 times 4 + 1)/4 = 13/4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q5",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Convert the improper fraction 11/3 to a mixed number.",
+      "answer_spec": {
+        "correct_answer": "3 2/3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 11 by 3."
+        },
+        {
+          "level": 2,
+          "text": "Quotient 3, remainder 2, over 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "11 divided by 3 is 3 remainder 2, so 11/3 = 3 2/3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["3 2/3", "2 2/3", "3 1/3", "4 1/3"]
+      }
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q6",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 2,
+      "prompt": "Convert the mixed number 2 3/5 to an improper fraction.",
+      "answer_spec": {
+        "correct_answer": "13/5"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "2 times 5 + 3 = 13, over 5."
+        },
+        {
+          "level": 2,
+          "text": "So it is 13/5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 3/5 = (2 times 5 + 3)/5 = 13/5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q7",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which improper fraction equals the mixed number 1 1/2?",
+      "answer_spec": {
+        "correct_answer": "3/2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the halves in one and a half."
+        },
+        {
+          "level": 2,
+          "text": "That is 3 halves."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "1 1/2 is 3 halves, or 3/2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3/2", "2/3", "1/2", "3/4"]
+      }
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q1",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 1/2 of 10 apples?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Of' means multiply."
+        },
+        {
+          "level": 2,
+          "text": "1/2 times 10 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "1/2 of 10 is 1/2 times 10 = 5 apples.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q2",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 1/3 of 12 cookies?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Of' means multiply."
+        },
+        {
+          "level": 2,
+          "text": "1/3 times 12 is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "1/3 of 12 is 12 divided by 3 = 4 cookies.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q3",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "A recipe needs 1/2 cup of milk and 1/3 cup of water. How much liquid is there in all, in cups?",
+      "answer_spec": {
+        "correct_answer": "5/6"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combining parts means add."
+        },
+        {
+          "level": 2,
+          "text": "1/2 + 1/3 = 3/6 + 2/6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Adding, 1/2 + 1/3 = 5/6 cup.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q4",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "A jug holds 3/4 liter and you pour out 1/4 liter. How much is left, in liters?",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Finding what is left means subtract."
+        },
+        {
+          "level": 2,
+          "text": "3/4 - 1/4 = 2/4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3/4 - 1/4 = 2/4 = 1/2 liter remains.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q5",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 3/4 of 8 slices of pizza?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Of' means multiply."
+        },
+        {
+          "level": 2,
+          "text": "3/4 times 8 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3/4 of 8 is 3 times 8 divided by 4 = 6 slices.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q6",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is 1/4 of 20 dollars?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Of' means multiply."
+        },
+        {
+          "level": 2,
+          "text": "1/4 times 20 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "1/4 of 20 is 20 divided by 4 = $5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q7",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which operation finds '1/2 of 10'?",
+      "answer_spec": {
+        "correct_answer": "multiplication"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'Of' signals a fraction of an amount."
+        },
+        {
+          "level": 2,
+          "text": "That is multiplication."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "'A fraction of an amount' means multiply, so 1/2 of 10 is multiplication.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["multiplication", "addition", "subtraction", "division"]
+      }
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q8",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "A board is 5/6 meter long and you cut off 1/2 meter. How much is left, in meters?",
+      "answer_spec": {
+        "correct_answer": "1/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cutting off means subtract."
+        },
+        {
+          "level": 2,
+          "text": "5/6 - 1/2 = 5/6 - 3/6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "5/6 - 3/6 = 2/6 = 1/3 meter remains.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
     }
   ]
 }

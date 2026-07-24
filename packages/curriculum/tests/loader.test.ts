@@ -115,6 +115,17 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     // Measurement: volume builds on area; unit conversion on length.
     expect(pos('math.measurement.area')).toBeLessThan(pos('math.measurement.volume'));
     expect(pos('math.measurement.length')).toBeLessThan(pos('math.measurement.unit_conversion'));
+    // Phase 13 completions: two-step equations follow one-step; dividing fractions
+    // follows multiplying; distributive follows combining like terms.
+    expect(pos('math.algebra.one_step_equations')).toBeLessThan(
+      pos('math.algebra.two_step_equations'),
+    );
+    expect(pos('math.algebra.combining_like_terms')).toBeLessThan(
+      pos('math.algebra.distributive_property'),
+    );
+    expect(pos('math.fractions.multiplying_fractions')).toBeLessThan(
+      pos('math.fractions.dividing_fractions'),
+    );
   });
 
   it('every skill with questions has a validator on each question', () => {

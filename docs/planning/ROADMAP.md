@@ -81,14 +81,18 @@ conversion, estimation). Authored at mastery-grade depth (~8 items/skill, 124 to
 answers were checked against the validator's own conversion families so grading agrees;
 every answer verified through the real validators.
 
-### Phase 13 - Algebra completion [content]
+### Phase 13 - Algebra completion + backfills [content] - DONE
 
-Backfill `math.algebra` to the full doc unit 11: constants, terms, coefficients, combining
-like terms, distributive property, two-step equations, equation word problems (adds ~7
-topics to the existing 5). Also backfill the missing Add/Sub, Mult/Div, and Fractions
-topics (word problems, arrays/remainders, comparing/multiplying/dividing fractions, mixed
-numbers) so those partial units become complete. Uses `numeric`, `fraction`,
-`multiple_choice`.
+Completed four partial units by appending new skills (existing content untouched).
+`math.algebra` (+5 skills: terms/coefficients/constants, combining like terms, distributive
+property, two-step equations, equation word problems - now 10 skills, doc unit 11 fully
+covered); `math.add_sub` (+word problems); `math.mult_div` (+arrays/groups, remainders,
+word problems); `math.fractions` (+comparing, subtract-unlike, multiply, divide, mixed
+numbers, word problems - now 13 skills). 15 new skills, 119 questions at mastery-grade
+depth, using `numeric`, `fraction`, `multiple_choice`. Two-step-equation solutions and all
+fraction arithmetic are computed and verified; every answer grades through the validators.
+After this phase the only entirely missing math unit is Coordinate Plane & Graphs (Phase
+14), and Decimals/Percentages remain partial.
 
 ### Phase 14 - Coordinate Plane, Graphs & Introductory Functions [content + engine]
 

@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 12 shipped)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 13 shipped)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -9,8 +9,8 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 > end** (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
 > how far the vision reaches - including trigonometry and calculus). Its companion
 > `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
-> surprised a prior session and are easy to get wrong: (1) only about **60% of the
-> documented curriculum is authored** - the **78 skills** below are a slice, not the whole
+> surprised a prior session and are easy to get wrong: (1) only about **72% of the
+> documented curriculum is authored** - the **93 skills** below are a slice, not the whole
 > course; and (2) **trigonometry and calculus are named in the vision but have no authored
 > curriculum** - completing 100% of the documented spec lands a learner at introductory
 > algebra + linear graphs, not trig.
@@ -34,9 +34,9 @@ shipped on top of it. Everything is committed and pushed.
 - Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
   machine, prerequisite gating + remediation, progress projection.
 - Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **78 skills** across 12 units (math number-sense → numerical structure →
-  integers → fractions → decimals/percentages → ratios → measurement → one-step algebra;
-  scientific reasoning → measurement/accuracy).
+- Content: **93 skills** across 12 units. All math units are complete except Coordinate
+  Plane & Graphs (not started) and Decimals/Percentages (partial); the two science units
+  are partial, and Experiments and Data are not started.
 - Isolated AI tutor: provider-neutral gateway that depends **only** on `@learn/domain`;
   off by default; can never write verified state (DEC-005/010); verified fallback.
 - Release: progress export/import, offline handling, accessibility audit (axe) across all
@@ -78,6 +78,15 @@ shipped on top of it. Everything is committed and pushed.
   `decimal`, `fraction`, `unit`, `multiple_choice`, `multi_select`. The `unit`-validator
   answers were checked against the engine's own conversion families; every answer grades
   through the real validators.
+- **Phase 13 — Algebra completion + backfills** (appended to `algebra.json`, `add_sub.json`,
+  `mult_div.json`, `fractions.json`; existing content untouched). **15 new skills, 119
+  questions**: algebra gained terms/coefficients, combining like terms, distributive
+  property, two-step equations, equation word problems (now 10 skills); add/sub gained word
+  problems; mult/div gained arrays & groups, remainders, word problems; fractions gained
+  comparing, subtract-unlike, multiply, divide, mixed numbers, word problems (now 13
+  skills). This completed all four units. Combining-like-terms/distributive answers use
+  `multiple_choice` (no expression validator exists); solutions and fraction arithmetic
+  are computed and verified.
 
 **Test status (all green):**
 
@@ -226,13 +235,13 @@ The **engine** is complete; the outstanding work is almost entirely **curriculum
 The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
 `docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
-1. **Track A - complete the documented curriculum** (content-only through Phase 13).
-   **Phases 10-12 are done** (Decimals & Percentages; Numerical Structure & Integers;
-   Ratios & Measurement Foundations). Next up is **Phase 13: Algebra completion + backfills**
-   (two-step equations, combining like terms, distributive property, plus the missing
-   Add/Sub, Mult/Div, and Fractions topics), then Graphs & Functions (first phase needing
-   new app code) and Science/Data completion. Build at the same mastery-grade depth (~8-15
-   items/skill).
+1. **Track A - complete the documented curriculum.** **Phases 10-13 are done.** The next
+   phase is **Phase 14: Coordinate Plane, Graphs & Introductory Functions** - the **first
+   phase that needs new application code** (a coordinate/point question type and a small
+   non-interactive graph renderer; add a `point`/`coordinate` validator). Then **Phase 15:
+   Science completion** (models & explanations, mass/time/temperature/volume, significant
+   figures, and the missing Experiments and Data units). A small remaining backfill:
+   Decimals/Percentages partial topics (rounding, finding whole/percent, increase-decrease).
 2. **Track B - content depth pass**: raise each authored skill from ~2 items to
    mastery-grade item pools (~8-15 across difficulties).
 3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content

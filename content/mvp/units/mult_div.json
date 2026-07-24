@@ -165,6 +165,92 @@
         "transfer": 70
       },
       "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "unit_id": "math.mult_div",
+      "title": "Arrays and Equal Groups",
+      "summary": "Multiplication counts equal groups. An array arranges objects in equal rows and columns, so the total is the number of rows times the number in each row. This is why 3 rows of 4 equals 3 times 4.",
+      "objectives": [
+        "Find a total from equal groups.",
+        "Read a multiplication fact from an array.",
+        "Connect repeated addition to multiplication."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.repeated_addition",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 1
+    },
+    {
+      "skill_id": "math.mult_div.remainders",
+      "unit_id": "math.mult_div",
+      "title": "Division with Remainders",
+      "summary": "Sometimes a number does not divide evenly into equal groups, and some is left over. The leftover amount is the remainder. For example, 23 divided by 5 is 4 with a remainder of 3, because 5 groups of 4 use 20 and 3 remain.",
+      "objectives": [
+        "Find the quotient and remainder of a division.",
+        "Interpret a remainder in context.",
+        "Check a division using multiplication."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.division_facts",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.mult_div.word_problems",
+      "unit_id": "math.mult_div",
+      "title": "Multiplication and Division Word Problems",
+      "summary": "Word problems can call for multiplication (finding a total from equal groups) or division (splitting a total into equal groups or finding group size). Deciding which operation fits the situation is the key step.",
+      "objectives": [
+        "Decide whether a problem needs multiplication or division.",
+        "Solve a one-operation word problem.",
+        "Check the answer for reasonableness."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.mult_div.multi_digit_multiplication",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.mult_div.division_meaning",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
     }
   ],
   "lessons": [
@@ -406,6 +492,138 @@
         }
       ],
       "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "math.mult_div.arrays_and_groups.lesson",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "title": "Arrays and Equal Groups",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to use equal groups and arrays to multiply."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that multiplication is repeated addition of equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An egg carton is an array: 2 rows of 6 eggs. Instead of counting one by one, you see 2 groups of 6, which is 2 times 6 = 12. Arranging objects in equal rows turns counting into multiplication."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An array is an arrangement of objects in equal rows and columns. The total equals the number of rows times the number in each row. Equal groups work the same way: number of groups times the size of each group."
+        },
+        {
+          "type": "worked_example",
+          "body": "There are 3 rows of 4 stars. The total is 3 times 4 = 12 stars."
+        },
+        {
+          "type": "guided_practice",
+          "body": "There are 5 bags with 2 apples each. The total is 5 times 2 = 10 apples."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is adding the rows and columns instead of multiplying. An array's total is rows times columns, not rows plus columns."
+        },
+        {
+          "type": "summary",
+          "body": "Equal groups and arrays turn counting into multiplication: multiply the number of groups (or rows) by the size of each group (or row)."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How many objects are in 4 rows of 5, and how did you find it?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.mult_div.remainders.lesson",
+      "skill_id": "math.mult_div.remainders",
+      "title": "Division with Remainders",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to divide with a remainder and interpret what the remainder means."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall your division facts and that division splits a total into equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Sharing 23 apples among 5 friends, each gets 4 and there are 3 apples left over that cannot be shared equally. That leftover is the remainder."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "When a number does not divide evenly, the result has a quotient (how many are in each group) and a remainder (what is left over). If a divided by b gives quotient q and remainder r, then b times q plus r equals a, and r is less than b."
+        },
+        {
+          "type": "worked_example",
+          "body": "Divide 23 by 5. Five goes into 23 four times (5 times 4 = 20), leaving 23 - 20 = 3. So the quotient is 4 and the remainder is 3."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Divide 17 by 3. Three goes in five times (3 times 5 = 15), leaving 17 - 15 = 2. Quotient 5, remainder 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is a remainder equal to or larger than the divisor, which means the quotient should be bigger. The remainder must be smaller than the number you divide by."
+        },
+        {
+          "type": "summary",
+          "body": "Division with a remainder gives a quotient and a leftover remainder smaller than the divisor. Check with divisor times quotient plus remainder equals the original number."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When you divide 23 by 5, what are the quotient and the remainder?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.mult_div.word_problems.lesson",
+      "skill_id": "math.mult_div.word_problems",
+      "title": "Multiplication and Division Word Problems",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to solve multiplication and division word problems."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that multiplication finds a total of equal groups and division splits a total into equal groups."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If you know how many groups and how big each is, multiply to get the total. If you know the total and want to split it evenly, divide. The words tell you which situation you are in."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Use multiplication when combining equal groups to find a total. Use division when sharing a total into equal groups (to find group size) or grouping a total (to find the number of groups)."
+        },
+        {
+          "type": "worked_example",
+          "body": "There are 6 boxes with 8 pencils each. How many pencils in all? Equal groups combined means multiply: 6 times 8 = 48 pencils."
+        },
+        {
+          "type": "guided_practice",
+          "body": "24 cookies are shared equally among 4 children. How many each? Splitting a total evenly means divide: 24 divided by 4 = 6 cookies each."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying when you should divide. If a total is given and you are splitting it, divide; if you are building a total from groups, multiply."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply to build a total from equal groups; divide to split a total into equal groups or find group size. Match the operation to the situation, then compute."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you decide whether a word problem needs multiplication or division?"
+        }
+      ]
     }
   ],
   "questions": [
@@ -752,6 +970,628 @@
       "estimated_time_seconds": 30,
       "transfer_flag": false,
       "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q1",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "There are 3 rows of 4 stars. How many stars are there in total?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply rows by the number in each row."
+        },
+        {
+          "level": 2,
+          "text": "3 times 4 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 rows of 4 is 3 times 4 = 12 stars.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "common_wrong_answers": [
+        {
+          "value": 7,
+          "misconception_id": "mc.math.mult_div.added_rows_and_columns"
+        }
+      ]
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q2",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "There are 5 bags with 2 apples each. How many apples in total?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply groups by size of each group."
+        },
+        {
+          "level": 2,
+          "text": "5 times 2 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 groups of 2 is 5 times 2 = 10 apples.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q3",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "An egg carton has 2 rows of 6 eggs. How many eggs in total?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply rows by eggs per row."
+        },
+        {
+          "level": 2,
+          "text": "2 times 6 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 rows of 6 is 2 times 6 = 12 eggs.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q4",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "There are 4 rows of 5 chairs. How many chairs in total?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply rows by chairs per row."
+        },
+        {
+          "level": 2,
+          "text": "4 times 5 is 20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 rows of 5 is 4 times 5 = 20 chairs.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q5",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which multiplication matches 3 groups of 6?",
+      "answer_spec": {
+        "correct_answer": "3 x 6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Number of groups times size of each group."
+        },
+        {
+          "level": 2,
+          "text": "3 groups of 6 is 3 times 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 groups of 6 is written 3 x 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3 x 6", "3 + 6", "6 - 3", "6 / 3"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q6",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A tray holds 6 rows of 3 muffins. How many muffins in total?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply rows by muffins per row."
+        },
+        {
+          "level": 2,
+          "text": "6 times 3 is 18."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 rows of 3 is 6 times 3 = 18 muffins.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q7",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "There are 2 groups of 5 pencils. How many pencils in total?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply groups by size."
+        },
+        {
+          "level": 2,
+          "text": "2 times 5 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 groups of 5 is 2 times 5 = 10 pencils.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.mult_div.remainders.q1",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the remainder when 23 is divided by 5?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 5 not exceeding 23."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 times 4 is 20, and 23 - 20 = 3, so the remainder is 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.mult_div.remainders.q2",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the remainder when 17 is divided by 3?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 3 not exceeding 17."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 times 5 is 15, and 17 - 15 = 2, so the remainder is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.remainders.q3",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the remainder when 20 is divided by 6?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 6 not exceeding 20."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6 times 3 is 18, and 20 - 18 = 2, so the remainder is 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.remainders.q4",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "What is the remainder when 29 is divided by 4?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 4 not exceeding 29."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 times 7 is 28, and 29 - 28 = 1, so the remainder is 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.mult_div.remainders.q5",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the remainder when 13 is divided by 5?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 5 not exceeding 13."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 times 2 is 10, and 13 - 10 = 3, so the remainder is 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.mult_div.remainders.q6",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the remainder when 25 is divided by 7?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 7 not exceeding 25."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 times 3 is 21, and 25 - 21 = 4, so the remainder is 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.mult_div.remainders.q7",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the remainder when 19 is divided by 2?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest multiple of 2 not exceeding 19."
+        },
+        {
+          "level": 2,
+          "text": "Subtract it from the number to get the remainder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 times 9 is 18, and 19 - 18 = 1, so the remainder is 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.mult_div.remainders.q8",
+      "skill_id": "math.mult_div.remainders",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "When 23 is divided by 5, what is the quotient (whole number of groups)?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "How many times does 5 fit into 23?"
+        },
+        {
+          "level": 2,
+          "text": "5 times 4 is 20, close to 23."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 fits into 23 four times, so the quotient is 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.mult_div.remainders.q9",
+      "skill_id": "math.mult_div.remainders",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A remainder must always be what, compared to the divisor?",
+      "answer_spec": {
+        "correct_answer": "smaller"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "If it were as big as the divisor, one more group would fit."
+        },
+        {
+          "level": 2,
+          "text": "So it is smaller."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A remainder is always smaller than the divisor; otherwise the quotient would be larger.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["smaller", "larger", "equal", "zero"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q1",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "There are 6 boxes with 8 pencils each. How many pencils in all?",
+      "answer_spec": {
+        "correct_answer": 48
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Equal groups combined means multiply."
+        },
+        {
+          "level": 2,
+          "text": "6 times 8 is 48."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "6 groups of 8 is 6 times 8 = 48 pencils.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q2",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "24 cookies are shared equally among 4 children. How many cookies does each child get?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Splitting a total evenly means divide."
+        },
+        {
+          "level": 2,
+          "text": "24 divided by 4 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "24 shared among 4 is 24 / 4 = 6 each.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q3",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A room has 5 rows of 7 chairs. How many chairs are there?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Equal groups means multiply."
+        },
+        {
+          "level": 2,
+          "text": "5 times 7 is 35."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "5 rows of 7 is 5 times 7 = 35 chairs.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q4",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "36 students are split into teams of 6. How many teams are there?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Grouping a total means divide."
+        },
+        {
+          "level": 2,
+          "text": "36 divided by 6 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "36 split into groups of 6 is 36 / 6 = 6 teams.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q5",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Each ticket costs $9. How much do 4 tickets cost, in dollars?",
+      "answer_spec": {
+        "correct_answer": 36
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Repeated equal cost means multiply."
+        },
+        {
+          "level": 2,
+          "text": "9 times 4 is 36."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "4 tickets at $9 each is 9 times 4 = $36.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q6",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A baker has 42 rolls and packs them 7 to a bag. How many bags are filled?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Grouping a total means divide."
+        },
+        {
+          "level": 2,
+          "text": "42 divided by 7 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "42 rolls in bags of 7 is 42 / 7 = 6 bags.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q7",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which operation solves: '30 apples shared equally among 5 baskets, how many per basket?'",
+      "answer_spec": {
+        "correct_answer": "division"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A total is being split evenly."
+        },
+        {
+          "level": 2,
+          "text": "That is division."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Splitting a total into equal groups is division (30 / 5).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["division", "multiplication"]
+      }
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q8",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A pack holds 12 crayons. How many crayons are in 3 packs?",
+      "answer_spec": {
+        "correct_answer": 36
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Equal groups combined means multiply."
+        },
+        {
+          "level": 2,
+          "text": "12 times 3 is 36."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3 packs of 12 is 12 times 3 = 36 crayons.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
     }
   ]
 }

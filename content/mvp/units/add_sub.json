@@ -263,6 +263,38 @@
           "definition": "An operation that undoes another operation, such as subtraction undoing addition."
         }
       ]
+    },
+    {
+      "skill_id": "math.add_sub.word_problems",
+      "unit_id": "math.add_sub",
+      "title": "Addition and Subtraction Word Problems",
+      "summary": "Word problems describe a situation in words that you turn into an addition or subtraction. Watch for clue words: joining or gaining suggests addition, while taking away, spending, or comparing suggests subtraction.",
+      "objectives": [
+        "Decide whether a word problem needs addition or subtraction.",
+        "Solve a one-operation word problem.",
+        "Check that the answer is reasonable."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.add_sub.multi_digit_addition",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.add_sub.multi_digit_subtraction",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
     }
   ],
   "lessons": [
@@ -551,6 +583,50 @@
         {
           "type": "summary",
           "body": "Addition and subtraction undo each other. This lets you rewrite equations as fact families, find missing addends by subtracting, and check subtraction by adding."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.add_sub.word_problems.lesson",
+      "skill_id": "math.add_sub.word_problems",
+      "title": "Addition and Subtraction Word Problems",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to solve addition and subtraction word problems."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to add and subtract multi-digit numbers, and that subtraction finds a difference or what is left."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A word problem tells a small story about amounts. If amounts come together or grow, you add. If something is taken away, spent, or you compare to find a difference, you subtract. The clue words guide the choice."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Translate a word problem by identifying the known amounts and what is asked. Joining, gaining, and 'in all' point to addition; taking away, spending, remaining, and 'how many more' point to subtraction."
+        },
+        {
+          "type": "worked_example",
+          "body": "Maria has 45 stickers and buys 28 more. How many in all? 'In all' after gaining more means addition: 45 + 28 = 73 stickers."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A jar has 60 candies and 25 are eaten. How many remain? 'Remain' after taking away means subtraction: 60 - 25 = 35."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is choosing the operation from a single word without reading the whole situation. Read carefully; 'how many more' asks for a difference, which is subtraction."
+        },
+        {
+          "type": "summary",
+          "body": "Turn word problems into addition when amounts join or grow, and subtraction when amounts are removed or compared. Then compute and check."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What clue words tell you a problem needs subtraction rather than addition?"
         }
       ]
     }
@@ -951,6 +1027,216 @@
       "explanation": "Addition and subtraction are inverses, so adding 5 and then subtracting the same 5 cancels out and returns you to the original number.",
       "content_version": "0.1.0",
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q1",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Maria has 45 stickers and buys 28 more. How many stickers does she have in all?",
+      "answer_spec": {
+        "correct_answer": 73
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Gaining more means addition."
+        },
+        {
+          "level": 2,
+          "text": "45 + 28 = 73."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "She gains stickers, so add: 45 + 28 = 73.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q2",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A jar has 60 candies and 25 are eaten. How many candies remain?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taking away means subtraction."
+        },
+        {
+          "level": 2,
+          "text": "60 - 25 = 35."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Candies are removed, so subtract: 60 - 25 = 35.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q3",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Tom has $80 and spends $35. How many dollars does he have left?",
+      "answer_spec": {
+        "correct_answer": 45
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Spending means subtraction."
+        },
+        {
+          "level": 2,
+          "text": "80 - 35 = 45."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Spending removes money, so subtract: 80 - 35 = $45.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q4",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A library had 120 books and received 45 more, then 30 were borrowed. How many are on the shelves now?",
+      "answer_spec": {
+        "correct_answer": 135
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the new books, then subtract the borrowed ones."
+        },
+        {
+          "level": 2,
+          "text": "120 + 45 = 165, then 165 - 30 = 135."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "120 + 45 = 165 books, and 165 - 30 = 135 remain on the shelves.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q5",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A theater has 200 seats and 156 are filled. How many seats are empty?",
+      "answer_spec": {
+        "correct_answer": 44
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'How many empty' is a difference."
+        },
+        {
+          "level": 2,
+          "text": "200 - 156 = 44."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The empty seats are 200 - 156 = 44.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q6",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "One box has 34 apples and another has 29. How many apples are there in all?",
+      "answer_spec": {
+        "correct_answer": 63
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'In all' means addition."
+        },
+        {
+          "level": 2,
+          "text": "34 + 29 = 63."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Together there are 34 + 29 = 63 apples.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q7",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Sara has 72 marbles and Ken has 48. How many more marbles does Sara have?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "'How many more' is a difference."
+        },
+        {
+          "level": 2,
+          "text": "72 - 48 = 24."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The difference is 72 - 48 = 24 marbles.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q8",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which operation solves: 'A tank had 90 liters and 40 were used. How much is left?'",
+      "answer_spec": {
+        "correct_answer": "subtraction"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Something is used up."
+        },
+        {
+          "level": 2,
+          "text": "That calls for subtraction."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Using up water removes it, so the problem needs subtraction (90 - 40).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["subtraction", "addition"]
+      }
     }
   ]
 }

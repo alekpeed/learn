@@ -149,6 +149,141 @@
       },
       "content_version": "0.1.0",
       "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "unit_id": "math.algebra",
+      "title": "Terms, Coefficients, and Constants",
+      "summary": "An algebraic expression is built from terms separated by plus or minus signs. A term like 5x has a coefficient (the number 5) multiplied by a variable. A constant is a term that is just a number, with no variable.",
+      "objectives": [
+        "Identify the terms in an expression.",
+        "Name the coefficient of a term.",
+        "Identify constant terms."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.expressions",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.algebra.combining_like_terms",
+      "unit_id": "math.algebra",
+      "title": "Combining Like Terms",
+      "summary": "Like terms have the same variable, so they can be combined by adding or subtracting their coefficients. For example, 3x + 2x is 5x. Terms with different variables, or a variable term and a constant, cannot be combined.",
+      "objectives": [
+        "Identify like terms.",
+        "Combine like terms in an expression.",
+        "Explain why unlike terms cannot be combined."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.terms_and_coefficients",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.algebra.distributive_property",
+      "unit_id": "math.algebra",
+      "title": "The Distributive Property",
+      "summary": "The distributive property says that multiplying a number by a sum is the same as multiplying it by each part and adding: a(b + c) = ab + ac. It lets you expand expressions like 2(x + 3) into 2x + 6.",
+      "objectives": [
+        "State the distributive property.",
+        "Expand an expression using distribution.",
+        "Use distribution to evaluate expressions."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.combining_like_terms",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.algebra.two_step_equations",
+      "unit_id": "math.algebra",
+      "title": "Two-Step Equations",
+      "summary": "A two-step equation needs two inverse operations to solve, such as 2x + 3 = 11. Undo the addition or subtraction first, then undo the multiplication or division, keeping the equation balanced by doing the same to both sides.",
+      "objectives": [
+        "Solve a two-step equation.",
+        "Apply inverse operations in the correct order.",
+        "Check a solution by substitution."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.one_step_equations",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.algebra.equation_word_problems",
+      "unit_id": "math.algebra",
+      "title": "Equation Word Problems",
+      "summary": "Many word problems can be solved by translating them into an equation and solving it. Choose a variable for the unknown, write an equation that matches the words, solve it, and check that the answer makes sense.",
+      "objectives": [
+        "Translate a word problem into an equation.",
+        "Solve the equation for the unknown.",
+        "Check that the solution fits the problem."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
     }
   ],
   "lessons": [
@@ -345,6 +480,226 @@
         {
           "type": "summary",
           "body": "Solve a one-step equation by applying the inverse operation to both sides, which isolates the variable while keeping the equation balanced."
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.terms_and_coefficients.lesson",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "title": "Terms, Coefficients, and Constants",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify terms, coefficients, and constants in an expression."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an expression combines numbers and variables with operations, and that a variable is a letter standing for a number."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think of an expression as a sentence made of pieces joined by plus and minus signs. In 3x + 7, the pieces are 3x and 7. The 3 in 3x tells how many x's you have; that is the coefficient. The 7 stands alone as a plain number, a constant."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A term is a single number, variable, or product of them, separated from other terms by + or -. The coefficient is the number multiplying the variable in a term. A constant is a term with no variable. In 3x + 7, the terms are 3x and 7, the coefficient of x is 3, and 7 is the constant."
+        },
+        {
+          "type": "worked_example",
+          "body": "In the expression 5x + 2, name the parts. There are two terms: 5x and 2. The coefficient of x is 5. The constant term is 2."
+        },
+        {
+          "type": "guided_practice",
+          "body": "In 4y + 9, the terms are 4y and 9. The coefficient of y is 4, and 9 is the constant."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is thinking the variable itself is the coefficient. The coefficient is the number multiplying the variable. Also, a term written as just x has coefficient 1."
+        },
+        {
+          "type": "summary",
+          "body": "Expressions are made of terms joined by + or -. A term's coefficient is the number multiplying its variable; a constant is a term with no variable."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In 6x + 5, what is the coefficient of x and what is the constant?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.combining_like_terms.lesson",
+      "skill_id": "math.algebra.combining_like_terms",
+      "title": "Combining Like Terms",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to simplify expressions by combining like terms."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a coefficient is the number multiplying a variable, and that terms are separated by + or -."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Combining like terms is like counting the same kind of object. 3 apples plus 2 apples is 5 apples, so 3x + 2x is 5x. But 3 apples plus 2 oranges cannot be merged into one number, just as 3x + 2y stays as it is."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Like terms have exactly the same variable part. To combine them, add or subtract their coefficients and keep the variable. Constants combine with constants. Unlike terms (different variables, or a variable term and a constant) cannot be combined."
+        },
+        {
+          "type": "worked_example",
+          "body": "Simplify 4a + 3 + 2a. The like terms are 4a and 2a; combine them to 6a. The 3 is a constant with nothing to combine, so the result is 6a + 3."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Simplify 3x + 2x. Both are x-terms, so add the coefficients: 3 + 2 = 5, giving 5x."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is combining unlike terms, such as writing 3x + 2 as 5x. You can only combine terms with the same variable; 3x and 2 stay separate."
+        },
+        {
+          "type": "summary",
+          "body": "Like terms share the same variable and combine by adding or subtracting coefficients. Unlike terms stay separate."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why can 3x + 2x be combined into 5x, but 3x + 2 cannot be combined?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.distributive_property.lesson",
+      "skill_id": "math.algebra.distributive_property",
+      "title": "The Distributive Property",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to expand expressions using the distributive property."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a coefficient multiplies a term and that multiplication distributes over addition."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If you buy 2 gift bags, each holding an apple and 3 dollars, you have 2 apples and 6 dollars. That is 2(apple + 3 dollars) = 2 apples + 6 dollars. Multiplying the outside number by each item inside is distribution."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The distributive property states a(b + c) = a times b plus a times c. You multiply the factor outside the parentheses by each term inside, then add. It also works with subtraction: a(b - c) = ab - ac."
+        },
+        {
+          "type": "worked_example",
+          "body": "Expand 2(x + 3). Multiply 2 by each term inside: 2 times x is 2x, and 2 times 3 is 6. So 2(x + 3) = 2x + 6."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Expand 3(x + 4). Multiply: 3 times x is 3x, and 3 times 4 is 12, giving 3x + 12."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying only the first term, writing 2(x + 3) as 2x + 3. You must multiply the outside number by every term inside the parentheses."
+        },
+        {
+          "type": "summary",
+          "body": "The distributive property expands a(b + c) into ab + ac. Multiply the outside factor by each inside term, then add."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you expand 2(x + 3), and why does the 2 multiply both the x and the 3?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.two_step_equations.lesson",
+      "skill_id": "math.algebra.two_step_equations",
+      "title": "Two-Step Equations",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to solve two-step equations and check your answer."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall one-step equations: you undo an operation by doing its inverse to both sides to keep the equation balanced."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Solving is unwrapping. In 2x + 3 = 11, the x was multiplied by 2, then 3 was added. To undo, reverse the order: first subtract 3, then divide by 2. Whatever you do to one side, do to the other so the balance holds."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A two-step equation is solved with two inverse operations. Undo addition or subtraction first, then multiplication or division, applying each operation to both sides equally."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve 2x + 3 = 11. Subtract 3 from both sides: 2x = 8. Divide both sides by 2: x = 4. Check: 2 times 4 + 3 = 11, correct."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Solve 3x - 1 = 8. Add 1 to both sides: 3x = 9. Divide by 3: x = 3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is dividing before undoing the addition, or changing only one side. Undo addition/subtraction first, and always operate on both sides."
+        },
+        {
+          "type": "summary",
+          "body": "Solve a two-step equation by undoing addition or subtraction, then multiplication or division, keeping both sides balanced. Check by substituting."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What two steps, in order, solve 2x + 3 = 11?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.algebra.equation_word_problems.lesson",
+      "skill_id": "math.algebra.equation_word_problems",
+      "title": "Equation Word Problems",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to turn a word problem into an equation and solve it."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall how to solve one- and two-step equations by using inverse operations on both sides."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A word problem is a story with a hidden number. Naming that number with a letter lets you write the story as an equation. For example, 'twice a number plus 5 is 15' becomes 2n + 5 = 15, which you can then solve."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To solve a word problem algebraically: define a variable for the unknown, translate the relationships into an equation, solve the equation, and interpret and check the answer in the context."
+        },
+        {
+          "type": "worked_example",
+          "body": "Twice a number plus 5 equals 15. Let the number be n. Then 2n + 5 = 15. Subtract 5: 2n = 10. Divide by 2: n = 5. Check: 2 times 5 + 5 = 15, correct."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A number tripled is 21. Let the number be n. Then 3n = 21, so n = 7."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is translating the words in the wrong order or skipping the check. Match each phrase to its operation, and verify your answer in the original problem."
+        },
+        {
+          "type": "summary",
+          "body": "Solve word problems by naming the unknown, writing an equation from the words, solving, and checking the answer against the story."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How would you translate 'twice a number plus 5 is 15' into an equation?"
         }
       ]
     }
@@ -565,6 +920,1072 @@
       "dimensions": ["accuracy", "transfer"],
       "explanation": "Translate the words into x + 6 = 15, then subtract 6 from both sides: x = 15 - 6 = 9.",
       "content_version": "0.1.0"
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q1",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "In the term 5x, what is the coefficient?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient is the number multiplying the variable."
+        },
+        {
+          "level": 2,
+          "text": "In 5x, that number is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The coefficient of x in 5x is 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q2",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the expression 3x + 7, what is the constant term?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The constant is the term with no variable."
+        },
+        {
+          "level": 2,
+          "text": "7 has no variable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 3x + 7, the constant term is 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q3",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many terms are in the expression 2x + 3y + 4?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Terms are separated by + or - signs."
+        },
+        {
+          "level": 2,
+          "text": "Count the pieces: 2x, 3y, 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The expression 2x + 3y + 4 has three terms.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q4",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the coefficient of y in the term 8y?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient multiplies the variable."
+        },
+        {
+          "level": 2,
+          "text": "In 8y it is 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The coefficient of y in 8y is 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q5",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which part of 4x + 9 is a constant?",
+      "answer_spec": {
+        "correct_answer": "9"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A constant has no variable."
+        },
+        {
+          "level": 2,
+          "text": "9 stands alone."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 4x + 9, the constant term is 9; 4x has the variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["9", "4x", "4", "x"]
+      }
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q6",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "The term x has an unwritten coefficient. What is it?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "x means 1 times x."
+        },
+        {
+          "level": 2,
+          "text": "So the coefficient is 1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A variable written alone, like x, has coefficient 1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q7",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In 7 - 2x, what is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": "-2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Include the sign in front of the term."
+        },
+        {
+          "level": 2,
+          "text": "The term is -2x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "In 7 - 2x, the x-term is -2x, so the coefficient is -2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["-2", "2", "7", "-7"]
+      }
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q8",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "In 3x + 7, what is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The number multiplying x."
+        },
+        {
+          "level": 2,
+          "text": "It is 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The coefficient of x in 3x + 7 is 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q1",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Simplify 3x + 2x.",
+      "answer_spec": {
+        "correct_answer": "5x"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both are x-terms, so add the coefficients."
+        },
+        {
+          "level": 2,
+          "text": "3 + 2 = 5, keep the x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3x + 2x combines to 5x.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["5x", "6x", "5", "6x^2"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q2",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Simplify 4a + 3 + 2a.",
+      "answer_spec": {
+        "correct_answer": "6a + 3"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combine the a-terms; the constant stays."
+        },
+        {
+          "level": 2,
+          "text": "4a + 2a = 6a, then + 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4a + 2a = 6a, and the constant 3 stays: 6a + 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["6a + 3", "9a", "6a", "7a"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q3",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Can 3x + 2 be simplified to a single term?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3x has a variable; 2 does not."
+        },
+        {
+          "level": 2,
+          "text": "Unlike terms cannot be combined."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3x and 2 are unlike terms, so 3x + 2 cannot be combined.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["No", "Yes"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes",
+          "misconception_id": "mc.math.algebra.combined_unlike_terms"
+        }
+      ]
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q4",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Simplify 7y - 2y.",
+      "answer_spec": {
+        "correct_answer": "5y"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the coefficients."
+        },
+        {
+          "level": 2,
+          "text": "7 - 2 = 5, keep the y."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7y - 2y = 5y.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["5y", "9y", "5", "14y"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q5",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Simplify 2x + 5 + 3x + 1.",
+      "answer_spec": {
+        "correct_answer": "5x + 6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combine x-terms and combine constants."
+        },
+        {
+          "level": 2,
+          "text": "2x + 3x = 5x; 5 + 1 = 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2x + 3x = 5x and 5 + 1 = 6, giving 5x + 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["5x + 6", "11x", "6x + 5", "5x + 5"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q6",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Simplify 3x + 2x, then evaluate the result when x = 2.",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3x + 2x = 5x."
+        },
+        {
+          "level": 2,
+          "text": "5 times 2 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3x + 2x simplifies to 5x, and 5 times 2 = 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q7",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Simplify 6a + 2b + a.",
+      "answer_spec": {
+        "correct_answer": "7a + 2b"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combine only the a-terms."
+        },
+        {
+          "level": 2,
+          "text": "6a + a = 7a; 2b stays."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "6a + a = 7a, and 2b is unlike, so the result is 7a + 2b.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["7a + 2b", "9ab", "8a + b", "7ab"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q8",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which two are like terms: 4x, 3, 2x?",
+      "answer_spec": {
+        "correct_answer": "4x and 2x"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Like terms have the same variable."
+        },
+        {
+          "level": 2,
+          "text": "4x and 2x both have x."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4x and 2x are like terms; 3 is a constant.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["4x and 2x", "4x and 3", "3 and 2x", "none of them"]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q1",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Expand 2(x + 3).",
+      "answer_spec": {
+        "correct_answer": "2x + 6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 2 by each term inside."
+        },
+        {
+          "level": 2,
+          "text": "2 times x is 2x; 2 times 3 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2(x + 3) = 2x + 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["2x + 6", "2x + 3", "x + 6", "2x + 5"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "2x + 3",
+          "misconception_id": "mc.math.algebra.distributed_first_term_only"
+        }
+      ]
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q2",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Expand 3(x + 4).",
+      "answer_spec": {
+        "correct_answer": "3x + 12"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 3 by each term."
+        },
+        {
+          "level": 2,
+          "text": "3 times x is 3x; 3 times 4 is 12."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3(x + 4) = 3x + 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["3x + 12", "3x + 4", "x + 12", "3x + 7"]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q3",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Expand 5(a - 2).",
+      "answer_spec": {
+        "correct_answer": "5a - 10"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Distribute over subtraction too."
+        },
+        {
+          "level": 2,
+          "text": "5 times a is 5a; 5 times 2 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5(a - 2) = 5a - 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["5a - 10", "5a - 2", "a - 10", "5a + 10"]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q4",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The distributive property says a(b + c) equals what?",
+      "answer_spec": {
+        "correct_answer": "ab + ac"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply a by each term inside."
+        },
+        {
+          "level": 2,
+          "text": "a times b plus a times c."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The distributive property gives a(b + c) = ab + ac.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["ab + ac", "ab + c", "a + bc", "abc"]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q5",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand 2(x + 3) to 2x + 6, then evaluate it when x = 4.",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "2(x + 3) = 2x + 6."
+        },
+        {
+          "level": 2,
+          "text": "2 times 4 is 8, plus 6 is 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2(x + 3) = 2x + 6, and at x = 4 that is 8 + 6 = 14.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q6",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Expand 4(2x + 1).",
+      "answer_spec": {
+        "correct_answer": "8x + 4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply 4 by each term."
+        },
+        {
+          "level": 2,
+          "text": "4 times 2x is 8x; 4 times 1 is 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4(2x + 1) = 8x + 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["8x + 4", "6x + 4", "8x + 1", "2x + 4"]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q7",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Use distribution to compute 6 times 21 as 6(20 + 1). What is the result?",
+      "answer_spec": {
+        "correct_answer": 126
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "6 times 20 is 120; 6 times 1 is 6."
+        },
+        {
+          "level": 2,
+          "text": "120 + 6 = 126."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "6(20 + 1) = 120 + 6 = 126.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q8",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Expand 3(x + 2) and simplify by adding to x: what is 3(x + 2) + x?",
+      "answer_spec": {
+        "correct_answer": "4x + 6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First expand 3(x + 2) = 3x + 6."
+        },
+        {
+          "level": 2,
+          "text": "Then add x: 3x + x = 4x, keep +6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3(x + 2) = 3x + 6; adding x gives 4x + 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["4x + 6", "3x + 6", "4x + 2", "6x"]
+      }
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q1",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve for x: 2x + 3 = 11",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 2x + 3 = 11 step by step gives x = 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q2",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 3x - 1 = 8",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 3x - 1 = 8 step by step gives x = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q3",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 4x + 2 = 14",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 4x + 2 = 14 step by step gives x = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q4",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 2x - 5 = 7",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 2x - 5 = 7 step by step gives x = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q5",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 5x + 5 = 20",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 5x + 5 = 20 step by step gives x = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q6",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 3x + 4 = 19",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 3x + 4 = 19 step by step gives x = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q7",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve for x: 6x - 6 = 12",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 6x - 6 = 12 step by step gives x = 3.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q8",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve for x: 2x + 9 = 9",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition or subtraction first, on both sides."
+        },
+        {
+          "level": 2,
+          "text": "Then undo the multiplication by dividing both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Solving 2x + 9 = 9 step by step gives x = 0.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q1",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Twice a number plus 5 equals 15. What is the number?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 2n + 5 = 15."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 5, then divide by 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "2n + 5 = 15 gives 2n = 10, so n = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q2",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A number tripled equals 21. What is the number?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 3n = 21."
+        },
+        {
+          "level": 2,
+          "text": "Divide both sides by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3n = 21 gives n = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q3",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Five more than a number is 12. What is the number?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as n + 5 = 12."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 5 from both sides."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "n + 5 = 12 gives n = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q4",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A number doubled, minus 3, equals 9. What is the number?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 2n - 3 = 9."
+        },
+        {
+          "level": 2,
+          "text": "Add 3, then divide by 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "2n - 3 = 9 gives 2n = 12, so n = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q5",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Seven times a number is 42. What is the number?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 7n = 42."
+        },
+        {
+          "level": 2,
+          "text": "Divide both sides by 7."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "7n = 42 gives n = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q6",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Three tickets and a $2 fee cost $17 in total. What is the price of one ticket, in dollars?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 3p + 2 = 17."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 2, then divide by 3."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "3p + 2 = 17 gives 3p = 15, so p = $5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q7",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A number divided by 4, plus 1, equals 3. What is the number?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as n/4 + 1 = 3."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 1, then multiply by 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "n/4 + 1 = 3 gives n/4 = 2, so n = 8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q8",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The sum of a number and 8 is 20. What is the number?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as n + 8 = 20."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "n + 8 = 20 gives n = 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
     }
   ]
 }
