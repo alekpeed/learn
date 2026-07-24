@@ -20,7 +20,9 @@ const UNITS = [
   'algebra',
   'functions',
   'science_thinking',
+  'science_experiments',
   'science_measurement',
+  'science_data',
 ];
 
 interface Question {

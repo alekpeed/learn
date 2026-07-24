@@ -1,0 +1,3225 @@
+{
+  "skills": [
+    {
+      "skill_id": "science.data.tables",
+      "unit_id": "science.data",
+      "title": "Data Tables",
+      "summary": "A data table organizes measurements in labelled rows and columns, with the independent variable usually in the first column and the dependent variable beside it. Headings must name the quantity and its unit so the data can be read without ambiguity.",
+      "objectives": [
+        "Read a value from a data table.",
+        "Explain what belongs in table headings.",
+        "Organize measurements into a table."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.observation",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.data.categorical_numerical",
+      "unit_id": "science.data",
+      "title": "Categorical and Numerical Data",
+      "summary": "Categorical data sorts observations into named groups such as color or species, while numerical data records measured or counted amounts. The type of data determines which graph is appropriate.",
+      "objectives": [
+        "Classify data as categorical or numerical.",
+        "Give examples of each type.",
+        "Explain how data type affects graph choice."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.tables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.data.reading_axes",
+      "unit_id": "science.data",
+      "title": "Reading Axes",
+      "summary": "Every graph axis has a label naming the quantity, a unit, and a scale of evenly spaced intervals. Reading a graph correctly means checking what each axis represents and how much each division is worth before interpreting any point.",
+      "objectives": [
+        "Identify what each axis of a graph represents.",
+        "Determine the value of one scale division.",
+        "Read a point's value from labelled axes."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.coordinate_plane",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.data.bar_graphs",
+      "unit_id": "science.data",
+      "title": "Bar Graphs",
+      "summary": "A bar graph compares categorical data using bars whose heights show the value for each category. The bars are separated because the categories are distinct groups rather than a continuous scale.",
+      "objectives": [
+        "Read a value from a bar graph.",
+        "Explain when a bar graph is the right choice.",
+        "Compare categories using bar heights."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.reading_axes",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.data.categorical_numerical",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.data.line_graphs",
+      "unit_id": "science.data",
+      "title": "Line Graphs",
+      "summary": "A line graph shows how a numerical quantity changes across a continuous scale such as time, with points joined to reveal the pattern of change. Line graphs suit continuous data, unlike bar graphs which compare categories.",
+      "objectives": [
+        "Read a value from a line graph.",
+        "Explain when a line graph is appropriate.",
+        "Describe what a rising or falling line means."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.reading_axes",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.data.scatter_plots",
+      "unit_id": "science.data",
+      "title": "Scatter Plots",
+      "summary": "A scatter plot shows paired measurements of two numerical variables as separate points, revealing whether they are related. Points are not joined, because the aim is to show the overall pattern rather than a sequence.",
+      "objectives": [
+        "Explain what a scatter plot displays.",
+        "Describe a positive, negative, or absent relationship.",
+        "Explain why scatter points are not joined."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.line_graphs",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "science.data.trends",
+      "unit_id": "science.data",
+      "title": "Trends",
+      "summary": "A trend is the overall direction of a data set: increasing, decreasing, or staying roughly constant. Describing a trend means summarizing the general pattern rather than listing every individual value.",
+      "objectives": [
+        "Describe the trend in a data set.",
+        "Distinguish a trend from an individual fluctuation.",
+        "Use a trend to make a prediction."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.line_graphs",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.data.outliers",
+      "unit_id": "science.data",
+      "title": "Outliers",
+      "summary": "An outlier is a value that lies far away from the rest of the data. Outliers may come from measurement or recording mistakes, or may be genuine and important, so they are investigated rather than silently deleted.",
+      "objectives": [
+        "Identify an outlier in a data set.",
+        "Give possible causes of an outlier.",
+        "Explain how outliers should be handled."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.trends",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.data.proportional_relationships",
+      "unit_id": "science.data",
+      "title": "Proportional Relationships in Data",
+      "summary": "Two quantities in data are proportional when their ratio stays constant, so doubling one doubles the other. On a graph a proportional relationship appears as a straight line passing through the origin.",
+      "objectives": [
+        "Decide from data whether two quantities are proportional.",
+        "Recognize a proportional relationship on a graph.",
+        "Use a constant ratio to predict a value."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.scatter_plots",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.direct_proportionality",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "science.data.drawing_conclusions",
+      "unit_id": "science.data",
+      "title": "Drawing Conclusions from Data",
+      "summary": "A conclusion states what the data shows about the original question, referring to the evidence and saying whether it supports the hypothesis. A sound conclusion stays within what the data can show and acknowledges its limitations.",
+      "objectives": [
+        "Write a conclusion that refers to the evidence.",
+        "Judge whether data supports a hypothesis.",
+        "Recognize a conclusion that goes beyond the data."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.data.trends",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.thinking.evidence",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "science.data.tables.lesson",
+      "skill_id": "science.data.tables",
+      "title": "Data Tables",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read and construct a clear data table."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an observation is information gathered with the senses or instruments. Tables are how those observations get organized."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A table is a grid that keeps measurements tidy. Reading down the first column tells you what was changed; reading across a row tells you what was measured for that value. Labelled headings mean anyone can interpret it later."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A data table arranges values in rows and columns with headings that state the quantity and its unit, such as 'Time (s)'. The independent variable is conventionally placed in the first column and the dependent variable in the next."
+        },
+        {
+          "type": "representation",
+          "body": "Consider this table. Time (s): 0, 1, 2, 3. Distance (m): 0, 5, 10, 15. Each row pairs a time with the distance measured at that time."
+        },
+        {
+          "type": "worked_example",
+          "body": "Using the table above, what distance corresponds to a time of 2 s? Find the row where Time is 2 and read across: the distance is 10 m."
+        },
+        {
+          "type": "guided_practice",
+          "body": "In the same table, what is the distance at time 3 s? Reading across that row gives 15 m."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is omitting units from headings, which makes a number meaningless: '5' could be 5 metres or 5 kilometres."
+        },
+        {
+          "type": "summary",
+          "body": "Data tables organize measurements in labelled rows and columns, with units in the headings and the independent variable first."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why must a table heading include the unit as well as the quantity?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.categorical_numerical.lesson",
+      "skill_id": "science.data.categorical_numerical",
+      "title": "Categorical and Numerical Data",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to classify data as categorical or numerical and connect the type to graph choice."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that data tables organize measurements with labelled headings."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Recording the color of each car in a car park gives you labels: red, blue, white. Recording each car's length gives you numbers. Labels group things; numbers measure them, and you can do arithmetic only with the numbers."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Categorical data places observations into named categories (eye color, material, species). Numerical data consists of counts or measurements (length, mass, time, temperature) on which arithmetic is meaningful. Categorical data is usually shown with bar graphs; numerical data that changes continuously suits line graphs."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is 'favorite fruit' categorical or numerical? The values are names such as apple or banana, which are categories, so it is categorical data."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Is the height of a plant in centimeters categorical or numerical? It is a measurement, so it is numerical."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is treating numbered labels as numerical data. A jersey number identifies a player and is really a category, even though it looks like a number."
+        },
+        {
+          "type": "summary",
+          "body": "Categorical data sorts into named groups; numerical data records counts or measurements. The distinction determines which graph type suits the data."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How can you tell numerical data from categorical data that happens to use numbers?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.reading_axes.lesson",
+      "skill_id": "science.data.reading_axes",
+      "title": "Reading Axes",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to interpret graph axes, scales, and the value of a division."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the coordinate plane, where the horizontal x-axis and the vertical y-axis meet at the origin."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Before reading any graph, look at its edges. The labels tell you what is being plotted and the numbers tell you how much each gridline is worth. If five divisions cover 10 units, each division is 2 units, and misreading that turns every value you take off the graph into a wrong number."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An axis has a label (the quantity), a unit, and a scale of equal intervals. The independent variable is conventionally on the horizontal x-axis and the dependent variable on the vertical y-axis. The value of one division equals the range covered divided by the number of divisions."
+        },
+        {
+          "type": "worked_example",
+          "body": "An axis runs from 0 to 10 with 5 equal divisions. Each division is worth 10 divided by 5 = 2 units."
+        },
+        {
+          "type": "guided_practice",
+          "body": "An axis runs from 0 to 20 with 4 equal divisions. Each division is worth 20 divided by 4 = 5 units."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is assuming every gridline equals one unit. Always compute the division value from the labelled numbers before reading points."
+        },
+        {
+          "type": "summary",
+          "body": "Axes carry a label, a unit, and an evenly spaced scale. Work out the value of one division first, then read points; the independent variable normally goes on the x-axis."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you work out how much one division on an axis is worth?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.bar_graphs.lesson",
+      "skill_id": "science.data.bar_graphs",
+      "title": "Bar Graphs",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read and choose bar graphs appropriately."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that categorical data sorts into named groups, and that axes carry labels, units, and scales."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Counting how many students prefer each of four fruits, you draw one bar per fruit. The taller the bar, the more students. Because apples and bananas are separate groups rather than points on a scale, the bars stand apart."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A bar graph displays categorical data as bars whose lengths are proportional to their values. Categories go along one axis and the measured value along the other; bars are drawn separated to show that the categories are discrete."
+        },
+        {
+          "type": "representation",
+          "body": "Consider a bar graph of pets owned. Dogs: 8, Cats: 6, Fish: 3, Birds: 2. Each bar's height gives the count for that category."
+        },
+        {
+          "type": "worked_example",
+          "body": "Using that graph, which pet is most common? The tallest bar is dogs at 8, so dogs are most common."
+        },
+        {
+          "type": "guided_practice",
+          "body": "How many more dogs than fish are there? 8 - 3 = 5 more."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is joining the tops of bars with a line. Categories are not a continuous scale, so a connecting line has no meaning."
+        },
+        {
+          "type": "summary",
+          "body": "Bar graphs compare distinct categories using bar heights, with bars separated because the categories are discrete."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why are the bars on a bar graph drawn separated rather than touching?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.line_graphs.lesson",
+      "skill_id": "science.data.line_graphs",
+      "title": "Line Graphs",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to read line graphs and choose them appropriately."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall reading axes: check the label, unit, and value of each division before taking readings."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Recording a cooling drink's temperature every minute and joining the points shows the story of the cooling: steep at first, then flattening. Joining makes sense because temperature exists at every instant between your readings."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A line graph plots points for a numerical dependent variable against a continuous independent variable, usually time, and joins them. Joining is valid only when values exist between the plotted points. A rising line shows increase, a falling line decrease, and a flat line no change."
+        },
+        {
+          "type": "representation",
+          "body": "Consider a line graph of temperature over time. Time (min): 0, 1, 2, 3. Temperature (degrees C): 90, 80, 72, 66. The line falls steeply then more gently."
+        },
+        {
+          "type": "worked_example",
+          "body": "Using that graph, what is the temperature at 2 minutes? Reading the point at time 2 gives 72 degrees Celsius."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Between 0 and 1 minute the temperature falls from 90 to 80, a drop of 10 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is using a line graph for categories. Joining points implies values in between, which is meaningless for separate categories."
+        },
+        {
+          "type": "summary",
+          "body": "Line graphs show change across a continuous scale, with joined points revealing the pattern. Rising means increasing, falling means decreasing, flat means unchanged."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When is it valid to join plotted points with a line?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.scatter_plots.lesson",
+      "skill_id": "science.data.scatter_plots",
+      "title": "Scatter Plots",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to interpret scatter plots and describe the relationship they show."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall line graphs, which join points to show change over a continuous scale, and axis reading."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Measuring the height and arm span of thirty people and plotting each person as one dot, you see a cloud of dots sloping upward: taller people tend to have longer arm spans. No line is drawn because each dot is a separate individual, not a step in a sequence."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A scatter plot displays paired values of two numerical variables as individual points. An upward pattern indicates a positive relationship, a downward pattern a negative relationship, and a shapeless cloud indicates no relationship. Points are not joined because they are independent observations."
+        },
+        {
+          "type": "worked_example",
+          "body": "In a scatter plot of study time against test score, the dots rise from left to right. This is a positive relationship: more study time is associated with higher scores."
+        },
+        {
+          "type": "guided_practice",
+          "body": "If dots fall from left to right, more of the first variable goes with less of the second: a negative relationship."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is concluding that one variable causes the other. A scatter plot shows association only; a controlled experiment is needed to establish cause."
+        },
+        {
+          "type": "summary",
+          "body": "Scatter plots show paired numerical measurements as unjoined points, revealing positive, negative, or no relationship. Association is not proof of cause."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why are the points on a scatter plot not joined by a line?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.trends.lesson",
+      "skill_id": "science.data.trends",
+      "title": "Trends",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to describe trends and use them to make predictions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall reading line graphs, where a rising line shows increase and a falling line shows decrease."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Plant heights of 2, 5, 7, 10, and 12 cm over five weeks wobble slightly from week to week, but the story is simple: the plant is getting taller. That overall direction is the trend, and small week-to-week variations do not change it."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A trend is the general direction of change in a data set: increasing, decreasing, or approximately constant. Trends are described from the overall pattern, not from single points, and can be used to predict values beyond the measured range with caution."
+        },
+        {
+          "type": "worked_example",
+          "body": "Heights over five weeks are 2, 5, 7, 10, 12 cm. Each week the value is larger, so the trend is increasing, at roughly 2 to 3 cm per week."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Temperatures of 20, 18, 15, 13 degrees over four hours show a decreasing trend."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is calling a single unusual value a change in trend. One dip in an otherwise rising set is a fluctuation, not a reversal."
+        },
+        {
+          "type": "summary",
+          "body": "A trend is the overall direction of a data set. Describe it from the whole pattern, ignore single fluctuations, and use it for cautious predictions."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you tell a genuine trend from a one-off fluctuation?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.outliers.lesson",
+      "skill_id": "science.data.outliers",
+      "title": "Outliers",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to spot outliers and decide how to handle them properly."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that trends describe the general pattern, and that repeated trials expose random variation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Among the readings 12, 13, 12, 47, and 13, the value 47 stands out sharply. It might be a slipped decimal point or a misread scale, or it might be a real and interesting event. Either way it deserves a second look, not silent deletion."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An outlier is a data value that differs markedly from the others in a set. Possible causes include measurement error, recording error, equipment fault, or a genuine unusual event. Good practice is to investigate the outlier, repeat the measurement if possible, and report any exclusion with its reason."
+        },
+        {
+          "type": "worked_example",
+          "body": "In the set 12, 13, 12, 47, 13, the outlier is 47 because every other value clusters near 12 or 13."
+        },
+        {
+          "type": "guided_practice",
+          "body": "In the set 100, 102, 5, 101, the outlier is 5, far below the cluster near 100."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is deleting any inconvenient value. Removing data without investigation and without reporting it is poor practice and can hide a real discovery."
+        },
+        {
+          "type": "summary",
+          "body": "An outlier lies far from the rest of the data. Investigate its cause, repeat the measurement where possible, and report any exclusion openly."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why should an outlier be investigated rather than simply deleted?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.proportional_relationships.lesson",
+      "skill_id": "science.data.proportional_relationships",
+      "title": "Proportional Relationships in Data",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to recognize proportional relationships in data and use them to predict."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall direct proportionality, where y = k times x, and that its graph is a straight line through the origin."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If 1 kg of a substance has a volume of 2 litres, and 2 kg has 4 litres, and 3 kg has 6 litres, the ratio of volume to mass is always 2. Doubling the mass doubles the volume, and a graph of the pairs would be a straight line running through the origin."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Two quantities are proportional when their ratio is constant, so y divided by x equals the same constant k for every pair. The graph is a straight line through the origin. If the line is straight but does not pass through the origin, the relationship is linear but not proportional."
+        },
+        {
+          "type": "representation",
+          "body": "Consider the pairs Mass (kg): 1, 2, 3 and Volume (L): 2, 4, 6. Each volume divided by its mass equals 2, so the points lie on a straight line through the origin."
+        },
+        {
+          "type": "worked_example",
+          "body": "Are these proportional? Mass 1, 2, 3 kg with volume 2, 4, 6 L. Compute the ratios: 2/1 = 2, 4/2 = 2, 6/3 = 2. The ratio is constant, so yes, they are proportional with constant 2."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Using that constant, what volume corresponds to 5 kg? Multiply: 5 times 2 = 10 L."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is calling any straight line proportional. A line that crosses the y-axis above zero has a starting value, so the ratio is not constant and the relationship is not proportional."
+        },
+        {
+          "type": "summary",
+          "body": "Proportional quantities have a constant ratio and graph as a straight line through the origin. A straight line missing the origin is linear but not proportional."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What two features show that a graphed relationship is proportional?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.data.drawing_conclusions.lesson",
+      "skill_id": "science.data.drawing_conclusions",
+      "title": "Drawing Conclusions from Data",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to draw sound conclusions that are supported by data and to spot overreaching ones."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that evidence supports or challenges an idea, and that a trend is the overall direction of the data."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "After growing plants in three light levels, a good conclusion says what happened and points at the numbers: plants in bright light grew tallest, averaging 15 cm against 6 cm in dim light. A weak conclusion just says 'light is good for plants', which the numbers never quite showed."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A conclusion answers the investigation's question by stating what the data shows, citing specific evidence, and saying whether the hypothesis is supported. It must not claim more than the data can show, and it should note limitations such as small sample size or uncontrolled factors."
+        },
+        {
+          "type": "worked_example",
+          "body": "Data: plants under bright light averaged 15 cm, dim light 6 cm, controlled otherwise. Conclusion: the data supports the hypothesis that more light increases growth, since bright-light plants grew about 9 cm taller on average."
+        },
+        {
+          "type": "guided_practice",
+          "body": "If the two groups had grown equally, the conclusion would be that the data does not support the hypothesis, and light showed no measurable effect in this range."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is claiming a hypothesis is 'proved'. Data can support or fail to support a hypothesis, but a single experiment does not prove it, and conclusions should not extend beyond the conditions tested."
+        },
+        {
+          "type": "summary",
+          "body": "A conclusion states what the data shows, cites the evidence, judges support for the hypothesis, and stays within the limits of what was measured."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What three things should a good conclusion contain?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "science.data.tables.q1",
+      "skill_id": "science.data.tables",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A table shows Time (s): 0, 1, 2, 3 and Distance (m): 0, 5, 10, 15. What is the distance, in meters, at time 2 s?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the row where time is 2."
+        },
+        {
+          "level": 2,
+          "text": "Read the matching distance."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At time 2 s the table gives a distance of 10 m.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.tables.q2",
+      "skill_id": "science.data.tables",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Using the same table (Time 0,1,2,3 s; Distance 0,5,10,15 m), what is the distance at time 3 s?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the row where time is 3."
+        },
+        {
+          "level": 2,
+          "text": "Read across to the distance."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At time 3 s the distance is 15 m.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.tables.q3",
+      "skill_id": "science.data.tables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What must a data table heading include?",
+      "answer_spec": {
+        "correct_answer": "the quantity and its unit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A bare number is ambiguous."
+        },
+        {
+          "level": 2,
+          "text": "Name the quantity and give the unit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Headings must state the quantity and its unit, such as 'Time (s)', so values are unambiguous.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the quantity and its unit",
+          "only the quantity",
+          "only the unit",
+          "the student's name"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.tables.q4",
+      "skill_id": "science.data.tables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which variable conventionally goes in the first column of a results table?",
+      "answer_spec": {
+        "correct_answer": "the independent variable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The factor you set comes first."
+        },
+        {
+          "level": 2,
+          "text": "That is the independent variable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The independent variable is conventionally placed in the first column.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the independent variable",
+          "the dependent variable",
+          "the controlled variable",
+          "any variable"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.tables.q5",
+      "skill_id": "science.data.tables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A table column is headed just 'Length'. What is the problem?",
+      "answer_spec": {
+        "correct_answer": "the unit is missing, so the values are ambiguous"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Is it centimetres or kilometres?"
+        },
+        {
+          "level": 2,
+          "text": "Without a unit you cannot tell."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Without a unit, a value like 5 could mean 5 cm or 5 km, so the data is ambiguous.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the unit is missing, so the values are ambiguous",
+          "the heading is too short",
+          "length cannot be tabulated",
+          "nothing is wrong"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "nothing is wrong",
+          "misconception_id": "mc.science.data.missing_units_in_table"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.tables.q6",
+      "skill_id": "science.data.tables",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A table shows Trial: 1, 2, 3 and Mass (g): 12, 14, 13. What mass, in grams, was recorded in trial 2?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the row for trial 2."
+        },
+        {
+          "level": 2,
+          "text": "Read the mass column."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Trial 2 recorded a mass of 14 g.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.tables.q7",
+      "skill_id": "science.data.tables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the main purpose of a data table?",
+      "answer_spec": {
+        "correct_answer": "to organize measurements clearly so they can be read and compared"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about tidiness and clarity."
+        },
+        {
+          "level": 2,
+          "text": "It organizes data for reading and comparison."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A data table organizes measurements so they can be read, compared, and analyzed.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "to organize measurements clearly so they can be read and compared",
+          "to decorate a report",
+          "to hide unwanted results",
+          "to replace a conclusion"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.tables.q8",
+      "skill_id": "science.data.tables",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A table shows Time (s): 0, 1, 2, 3 and Distance (m): 0, 5, 10, 15. By how many meters does distance increase per second?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare consecutive distances."
+        },
+        {
+          "level": 2,
+          "text": "Each second adds 5 m."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Distance rises by 5 m each second.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q1",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is 'favorite fruit' categorical or numerical data?",
+      "answer_spec": {
+        "correct_answer": "categorical"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The values are names, not amounts."
+        },
+        {
+          "level": 2,
+          "text": "Names form categories."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Favorite fruit takes named values, so it is categorical data.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["categorical", "numerical"]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q2",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Is the height of a plant in centimeters categorical or numerical?",
+      "answer_spec": {
+        "correct_answer": "numerical"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is a measurement."
+        },
+        {
+          "level": 2,
+          "text": "Measurements are numerical."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Plant height is measured, so it is numerical data.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["numerical", "categorical"]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q3",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every example of numerical data.",
+      "answer_spec": {
+        "correct_answer": ["mass in grams", "time in seconds", "number of leaves"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Numerical data is counted or measured."
+        },
+        {
+          "level": 2,
+          "text": "Colors and materials are categories."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Mass, time, and leaf count are measured or counted; eye color and material type are categories.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "mass in grams",
+          "eye color",
+          "time in seconds",
+          "number of leaves",
+          "material type"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q4",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which graph type best suits categorical data?",
+      "answer_spec": {
+        "correct_answer": "a bar graph"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Categories are separate groups."
+        },
+        {
+          "level": 2,
+          "text": "Bars compare separate groups."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Bar graphs compare separate categories, so they suit categorical data.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["a bar graph", "a line graph", "a number line", "no graph"]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q5",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A player's jersey number is recorded. Is this really numerical data?",
+      "answer_spec": {
+        "correct_answer": "No, it is a label, so it is categorical"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Would averaging jersey numbers mean anything?"
+        },
+        {
+          "level": 2,
+          "text": "It identifies rather than measures."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A jersey number identifies a player rather than measuring an amount, so it is categorical despite looking numeric.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "No, it is a label, so it is categorical",
+          "Yes, because it is a number",
+          "Yes, because it can be averaged",
+          "It is neither"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, because it is a number",
+          "misconception_id": "mc.science.data.numeric_label_as_numerical"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q6",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which is an example of categorical data?",
+      "answer_spec": {
+        "correct_answer": "the material an object is made from"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for named groups."
+        },
+        {
+          "level": 2,
+          "text": "Material type is a category."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Material type sorts objects into named groups, so it is categorical.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the material an object is made from",
+          "the mass in kilograms",
+          "the temperature in degrees",
+          "the length in centimeters"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q7",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why does the type of data matter?",
+      "answer_spec": {
+        "correct_answer": "because it determines which graph and analysis are appropriate"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You cannot average categories."
+        },
+        {
+          "level": 2,
+          "text": "Data type drives graph and analysis choice."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The data type determines which graphs and calculations make sense.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "because it determines which graph and analysis are appropriate",
+          "because it changes the units",
+          "because it makes data more accurate",
+          "it does not matter"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.categorical_numerical.q8",
+      "skill_id": "science.data.categorical_numerical",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Counting how many students have brown, blue, or green eyes produces what kind of data?",
+      "answer_spec": {
+        "correct_answer": "categorical data with counts"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Eye color names the groups."
+        },
+        {
+          "level": 2,
+          "text": "The categories are counted."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Eye color forms the categories and the counts show how many fall in each, so this is categorical data with counts.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "categorical data with counts",
+          "purely numerical data",
+          "no data at all",
+          "continuous measurement data"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.reading_axes.q1",
+      "skill_id": "science.data.reading_axes",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An axis runs from 0 to 10 with 5 equal divisions. How many units is each division worth?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the range by the number of divisions."
+        },
+        {
+          "level": 2,
+          "text": "10 divided by 5 is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each division is 10 / 5 = 2 units.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.reading_axes.q2",
+      "skill_id": "science.data.reading_axes",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An axis runs from 0 to 20 with 4 equal divisions. How many units is each division worth?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the range by the divisions."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by 4 is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each division is 20 / 4 = 5 units.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.reading_axes.q3",
+      "skill_id": "science.data.reading_axes",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What must an axis label include?",
+      "answer_spec": {
+        "correct_answer": "the quantity and its unit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A number alone is ambiguous."
+        },
+        {
+          "level": 2,
+          "text": "Name the quantity and the unit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An axis label states the quantity being plotted and its unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the quantity and its unit",
+          "only a number",
+          "the title of the experiment",
+          "the date"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.reading_axes.q4",
+      "skill_id": "science.data.reading_axes",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which variable conventionally goes on the horizontal x-axis?",
+      "answer_spec": {
+        "correct_answer": "the independent variable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The factor you changed goes across the bottom."
+        },
+        {
+          "level": 2,
+          "text": "That is the independent variable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "By convention the independent variable is plotted on the horizontal x-axis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the independent variable",
+          "the dependent variable",
+          "the controlled variable",
+          "either one"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.reading_axes.q5",
+      "skill_id": "science.data.reading_axes",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An axis runs from 0 to 50 with 10 equal divisions. How many units is each division worth?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 50 by 10."
+        },
+        {
+          "level": 2,
+          "text": "Each division is 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each division is 50 / 10 = 5 units.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.reading_axes.q6",
+      "skill_id": "science.data.reading_axes",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student assumes each gridline is 1 unit, but the axis shows 0 to 10 over 5 divisions. What happens?",
+      "answer_spec": {
+        "correct_answer": "every value read from the graph is wrong"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each division is really 2 units."
+        },
+        {
+          "level": 2,
+          "text": "Misreading the scale corrupts all readings."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each division is really 2 units, so assuming 1 makes every reading incorrect.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "every value read from the graph is wrong",
+          "only the first value is wrong",
+          "nothing changes",
+          "the graph becomes categorical"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "nothing changes",
+          "misconception_id": "mc.science.data.assumed_unit_gridline"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.reading_axes.q7",
+      "skill_id": "science.data.reading_axes",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why must the intervals on an axis be evenly spaced?",
+      "answer_spec": {
+        "correct_answer": "so distances along the axis represent equal changes in value"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Uneven spacing would distort the shape."
+        },
+        {
+          "level": 2,
+          "text": "Equal spacing keeps the picture honest."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Even spacing means equal distances represent equal value changes, so the graph is not distorted.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "so distances along the axis represent equal changes in value",
+          "to make the graph prettier",
+          "so the line is straight",
+          "so the graph fits the page"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.reading_axes.q8",
+      "skill_id": "science.data.reading_axes",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On an axis where each division is 2 units, a point sits 3 divisions above zero. What is its value?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply divisions by the division value."
+        },
+        {
+          "level": 2,
+          "text": "3 times 2 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Three divisions of 2 units each gives 3 times 2 = 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.bar_graphs.q1",
+      "skill_id": "science.data.bar_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A bar graph is the best choice for what kind of data?",
+      "answer_spec": {
+        "correct_answer": "categorical data"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Bars compare separate groups."
+        },
+        {
+          "level": 2,
+          "text": "That is categorical data."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Bar graphs compare distinct categories, so they suit categorical data.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "categorical data",
+          "continuous change over time",
+          "a single value",
+          "coordinates"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.bar_graphs.q2",
+      "skill_id": "science.data.bar_graphs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A bar graph of pets shows Dogs 8, Cats 6, Fish 3, Birds 2. How many students own cats?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the cats bar."
+        },
+        {
+          "level": 2,
+          "text": "Its height is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The cats bar has a height of 6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.bar_graphs.q3",
+      "skill_id": "science.data.bar_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Using that graph (Dogs 8, Cats 6, Fish 3, Birds 2), which pet is most common?",
+      "answer_spec": {
+        "correct_answer": "dogs"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the tallest bar."
+        },
+        {
+          "level": 2,
+          "text": "Dogs has the greatest height, 8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Dogs has the tallest bar at 8, so it is most common.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["dogs", "cats", "fish", "birds"]
+      }
+    },
+    {
+      "question_id": "science.data.bar_graphs.q4",
+      "skill_id": "science.data.bar_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "From the same graph, how many more dogs than fish are there?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the fish value from the dogs value."
+        },
+        {
+          "level": 2,
+          "text": "8 - 3 = 5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The difference is 8 - 3 = 5.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.bar_graphs.q5",
+      "skill_id": "science.data.bar_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why are bars on a bar graph drawn with gaps between them?",
+      "answer_spec": {
+        "correct_answer": "because the categories are separate, not a continuous scale"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Categories are discrete groups."
+        },
+        {
+          "level": 2,
+          "text": "Gaps show they are not continuous."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Gaps show that the categories are distinct groups rather than points on a continuous scale.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "because the categories are separate, not a continuous scale",
+          "to save ink",
+          "to make the graph wider",
+          "because the bars are different heights"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.bar_graphs.q6",
+      "skill_id": "science.data.bar_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student joins the tops of the bars with a line. Why is this wrong?",
+      "answer_spec": {
+        "correct_answer": "there are no values between separate categories"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What would a point between 'dogs' and 'cats' mean?"
+        },
+        {
+          "level": 2,
+          "text": "Nothing lies between categories."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A connecting line implies values between categories, but nothing exists between 'dogs' and 'cats'.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "there are no values between separate categories",
+          "the line is the wrong color",
+          "lines are never allowed on graphs",
+          "it makes the graph too tall"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "the line is the wrong color",
+          "misconception_id": "mc.science.data.line_between_categories"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.bar_graphs.q7",
+      "skill_id": "science.data.bar_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "From the pets graph (Dogs 8, Cats 6, Fish 3, Birds 2), how many pets are there in total?",
+      "answer_spec": {
+        "correct_answer": 19
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add all four bar values."
+        },
+        {
+          "level": 2,
+          "text": "8 + 6 + 3 + 2 = 19."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The total is 8 + 6 + 3 + 2 = 19 pets.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.bar_graphs.q8",
+      "skill_id": "science.data.bar_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a bar graph, what does the height of a bar represent?",
+      "answer_spec": {
+        "correct_answer": "the value for that category"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Taller means more."
+        },
+        {
+          "level": 2,
+          "text": "It shows the category's value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The bar height shows the measured value or count for that category.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the value for that category",
+          "the number of categories",
+          "the unit used",
+          "the order of the categories"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.line_graphs.q1",
+      "skill_id": "science.data.line_graphs",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A line graph shows Time (min): 0, 1, 2, 3 and Temperature (C): 90, 80, 72, 66. What is the temperature at 2 minutes?",
+      "answer_spec": {
+        "correct_answer": 72
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find time 2 on the horizontal axis."
+        },
+        {
+          "level": 2,
+          "text": "Read the matching temperature."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "At 2 minutes the temperature is 72 degrees Celsius.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.line_graphs.q2",
+      "skill_id": "science.data.line_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "From the same graph, by how many degrees did the temperature fall between 0 and 1 minute?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the two readings."
+        },
+        {
+          "level": 2,
+          "text": "90 - 80 = 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The temperature fell 90 - 80 = 10 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.line_graphs.q3",
+      "skill_id": "science.data.line_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A line graph is most appropriate for what kind of data?",
+      "answer_spec": {
+        "correct_answer": "a numerical quantity changing over a continuous scale"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Joining points implies in-between values."
+        },
+        {
+          "level": 2,
+          "text": "That needs continuous data."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Line graphs suit numerical data changing across a continuous scale such as time.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "a numerical quantity changing over a continuous scale",
+          "separate categories",
+          "a single measurement",
+          "names of species"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.line_graphs.q4",
+      "skill_id": "science.data.line_graphs",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a line graph, what does a falling line show?",
+      "answer_spec": {
+        "correct_answer": "the quantity is decreasing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The line goes down as you move right."
+        },
+        {
+          "level": 2,
+          "text": "Values are getting smaller."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A falling line means the plotted quantity is decreasing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the quantity is decreasing",
+          "the quantity is increasing",
+          "the quantity is constant",
+          "the graph is wrong"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.line_graphs.q5",
+      "skill_id": "science.data.line_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does a flat horizontal section of a line graph show?",
+      "answer_spec": {
+        "correct_answer": "the quantity is not changing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The value stays level."
+        },
+        {
+          "level": 2,
+          "text": "No change is happening."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A flat line means the quantity stays the same over that interval.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the quantity is not changing",
+          "the quantity is rising",
+          "the quantity is falling",
+          "the data is missing"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.line_graphs.q6",
+      "skill_id": "science.data.line_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is a line graph wrong for comparing favorite fruits?",
+      "answer_spec": {
+        "correct_answer": "the categories are separate, so points between them have no meaning"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What lies between apple and banana?"
+        },
+        {
+          "level": 2,
+          "text": "Nothing does."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Fruit names are separate categories, so joining points would imply meaningless in-between values.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the categories are separate, so points between them have no meaning",
+          "fruits cannot be counted",
+          "line graphs are always wrong",
+          "there are too few fruits"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.line_graphs.q7",
+      "skill_id": "science.data.line_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "From the cooling graph (90, 80, 72, 66 at 0, 1, 2, 3 min), what is the total fall in temperature over the 3 minutes?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the final from the initial."
+        },
+        {
+          "level": 2,
+          "text": "90 - 66 = 24."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The total fall is 90 - 66 = 24 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.line_graphs.q8",
+      "skill_id": "science.data.line_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The cooling line is steep at first and flatter later. What does this mean?",
+      "answer_spec": {
+        "correct_answer": "the temperature fell quickly at first, then more slowly"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Steepness shows rate of change."
+        },
+        {
+          "level": 2,
+          "text": "Steeper means faster change."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A steeper section means faster change, so the drink cooled quickly at first and then more slowly.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the temperature fell quickly at first, then more slowly",
+          "the temperature rose then fell",
+          "the temperature was constant",
+          "the graph is inaccurate"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q1",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does a scatter plot display?",
+      "answer_spec": {
+        "correct_answer": "paired values of two numerical variables as separate points"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each point carries two measurements."
+        },
+        {
+          "level": 2,
+          "text": "It plots pairs of values."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scatter plot shows paired measurements of two numerical variables as individual points.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "paired values of two numerical variables as separate points",
+          "counts for named categories",
+          "a single value over time",
+          "the mean of a data set"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q2",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Dots on a scatter plot rise from left to right. What relationship is this?",
+      "answer_spec": {
+        "correct_answer": "a positive relationship"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both variables increase together."
+        },
+        {
+          "level": 2,
+          "text": "That is a positive relationship."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "When one variable increases as the other does, the relationship is positive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a positive relationship",
+          "a negative relationship",
+          "no relationship",
+          "a categorical relationship"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q3",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Dots on a scatter plot fall from left to right. What relationship is this?",
+      "answer_spec": {
+        "correct_answer": "a negative relationship"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One rises as the other falls."
+        },
+        {
+          "level": 2,
+          "text": "That is a negative relationship."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "When one variable decreases as the other increases, the relationship is negative.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a negative relationship",
+          "a positive relationship",
+          "no relationship",
+          "a perfect relationship"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q4",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The dots form a shapeless cloud with no direction. What does this suggest?",
+      "answer_spec": {
+        "correct_answer": "there is no relationship between the variables"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No pattern means no association."
+        },
+        {
+          "level": 2,
+          "text": "The variables appear unrelated."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A patternless cloud suggests the two variables are not related.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "there is no relationship between the variables",
+          "a strong positive relationship",
+          "a strong negative relationship",
+          "the data is fake"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q5",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why are scatter plot points not joined by a line?",
+      "answer_spec": {
+        "correct_answer": "each point is a separate observation, not a step in a sequence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The dots are individuals, not a progression."
+        },
+        {
+          "level": 2,
+          "text": "Joining would imply a sequence."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each point is an independent observation, so joining them would falsely suggest a sequence.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "each point is a separate observation, not a step in a sequence",
+          "lines are too hard to draw",
+          "the points are always random",
+          "joining is optional styling"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q6",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A scatter plot shows ice cream sales and sunburn cases rising together. What can you conclude?",
+      "answer_spec": {
+        "correct_answer": "they are associated, but one may not cause the other"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Association is not causation."
+        },
+        {
+          "level": 2,
+          "text": "A third factor, sunshine, may drive both."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The scatter plot shows association only; a hidden factor such as hot sunny weather may cause both.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "they are associated, but one may not cause the other",
+          "ice cream causes sunburn",
+          "sunburn causes ice cream sales",
+          "there is no relationship"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "ice cream causes sunburn",
+          "misconception_id": "mc.science.data.correlation_implies_causation"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.scatter_plots.q7",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In a scatter plot of height against arm span, what does one dot represent?",
+      "answer_spec": {
+        "correct_answer": "one individual's pair of measurements"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each dot carries two values."
+        },
+        {
+          "level": 2,
+          "text": "It is one person's height and arm span."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each dot represents a single individual's paired measurements.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "one individual's pair of measurements",
+          "the average of all people",
+          "one category",
+          "one unit of measurement"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.scatter_plots.q8",
+      "skill_id": "science.data.scatter_plots",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "What is needed to establish that one variable causes another?",
+      "answer_spec": {
+        "correct_answer": "a controlled experiment"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Scatter plots show association only."
+        },
+        {
+          "level": 2,
+          "text": "You need to control the variables."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Only a controlled experiment, changing one variable while holding others constant, can establish cause.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "a controlled experiment",
+          "a larger scatter plot",
+          "a line joining the dots",
+          "more categories"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q1",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Plant heights over five weeks are 2, 5, 7, 10, 12 cm. What is the trend?",
+      "answer_spec": {
+        "correct_answer": "increasing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare each value with the one before."
+        },
+        {
+          "level": 2,
+          "text": "The values keep growing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each week's height is larger, so the trend is increasing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["increasing", "decreasing", "constant", "no trend"]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q2",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Temperatures over four hours are 20, 18, 15, 13 degrees. What is the trend?",
+      "answer_spec": {
+        "correct_answer": "decreasing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The values keep dropping."
+        },
+        {
+          "level": 2,
+          "text": "That is a decreasing trend."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each reading is lower than the last, so the trend is decreasing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["decreasing", "increasing", "constant", "no trend"]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q3",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Readings are 7, 7, 7, 7 units. What is the trend?",
+      "answer_spec": {
+        "correct_answer": "constant"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The values do not change."
+        },
+        {
+          "level": 2,
+          "text": "The trend is flat."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The values stay the same, so the trend is constant.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["constant", "increasing", "decreasing", "unpredictable"]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q4",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Values rise steadily but one week dips slightly before rising again. What is the trend?",
+      "answer_spec": {
+        "correct_answer": "still increasing; the dip is a fluctuation"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at the whole pattern."
+        },
+        {
+          "level": 2,
+          "text": "One dip does not reverse the trend."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The overall pattern is still increasing; a single dip is a fluctuation, not a change of trend.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "still increasing; the dip is a fluctuation",
+          "now decreasing",
+          "constant",
+          "there is no trend"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "now decreasing",
+          "misconception_id": "mc.science.data.fluctuation_as_trend"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.trends.q5",
+      "skill_id": "science.data.trends",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A plant grows 3 cm per week and is 12 cm tall at week 4. Following the trend, how tall will it be at week 5, in centimeters?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add one more week of growth."
+        },
+        {
+          "level": 2,
+          "text": "12 + 3 = 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Continuing the trend, 12 + 3 = 15 cm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.trends.q6",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is a trend?",
+      "answer_spec": {
+        "correct_answer": "the overall direction of change in a data set"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It summarizes the whole pattern."
+        },
+        {
+          "level": 2,
+          "text": "It is the general direction."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A trend is the general direction of change across the data set.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the overall direction of change in a data set",
+          "the largest single value",
+          "the difference between two points",
+          "a measurement error"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q7",
+      "skill_id": "science.data.trends",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why should predictions far beyond the measured data be treated with caution?",
+      "answer_spec": {
+        "correct_answer": "the trend may not continue outside the range measured"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You have no data out there."
+        },
+        {
+          "level": 2,
+          "text": "Trends can change."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A trend observed in one range may not hold outside it, so distant predictions are uncertain.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "the trend may not continue outside the range measured",
+          "predictions are never allowed",
+          "the units change",
+          "the graph runs out of paper"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.trends.q8",
+      "skill_id": "science.data.trends",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Readings are 10, 20, 30, 40. Following the trend, what is the next value?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each step adds 10."
+        },
+        {
+          "level": 2,
+          "text": "40 + 10 = 50."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The values rise by 10 each step, so the next is 50.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.outliers.q1",
+      "skill_id": "science.data.outliers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the data set 12, 13, 12, 47, 13, which value is the outlier?",
+      "answer_spec": {
+        "correct_answer": 47
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the value far from the others."
+        },
+        {
+          "level": 2,
+          "text": "Most values are near 12 or 13."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "47 lies far from the cluster near 12-13, so it is the outlier.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.outliers.q2",
+      "skill_id": "science.data.outliers",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "In the data set 100, 102, 5, 101, which value is the outlier?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which value is far from the rest?"
+        },
+        {
+          "level": 2,
+          "text": "The others cluster near 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 is far below the cluster near 100, so it is the outlier.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.data.outliers.q3",
+      "skill_id": "science.data.outliers",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is an outlier?",
+      "answer_spec": {
+        "correct_answer": "a value that lies far from the rest of the data"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It stands apart from the others."
+        },
+        {
+          "level": 2,
+          "text": "It is far from the cluster."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An outlier differs markedly from the other values in the data set.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "a value that lies far from the rest of the data",
+          "the largest value in any set",
+          "the average value",
+          "any repeated value"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.outliers.q4",
+      "skill_id": "science.data.outliers",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "You find an outlier in your results. What is the best first step?",
+      "answer_spec": {
+        "correct_answer": "investigate its cause and repeat the measurement if possible"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do not delete it straight away."
+        },
+        {
+          "level": 2,
+          "text": "Find out why it happened."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The proper first step is to investigate the cause and, where possible, repeat the measurement.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "investigate its cause and repeat the measurement if possible",
+          "delete it immediately",
+          "ignore all the data",
+          "change it to match the others"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "delete it immediately",
+          "misconception_id": "mc.science.data.delete_outlier_silently"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.outliers.q5",
+      "skill_id": "science.data.outliers",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every possible cause of an outlier.",
+      "answer_spec": {
+        "correct_answer": ["a measurement mistake", "a recording error", "a genuine unusual event"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Outliers can be errors or real."
+        },
+        {
+          "level": 2,
+          "text": "Consider mistakes, faults, and genuine events."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Outliers can arise from measurement or recording mistakes, or can be genuine unusual events; having many data points is not itself a cause.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a measurement mistake",
+          "a recording error",
+          "a genuine unusual event",
+          "having many data points"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.outliers.q6",
+      "skill_id": "science.data.outliers",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "If you exclude an outlier from your analysis, what must you do?",
+      "answer_spec": {
+        "correct_answer": "report that you excluded it and why"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Transparency matters."
+        },
+        {
+          "level": 2,
+          "text": "State the exclusion and the reason."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Any exclusion must be reported along with the reason, so others can judge it.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "report that you excluded it and why",
+          "say nothing about it",
+          "delete the whole data set",
+          "replace it with the mean without saying so"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.outliers.q7",
+      "skill_id": "science.data.outliers",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why can silently deleting outliers be harmful?",
+      "answer_spec": {
+        "correct_answer": "it can hide a genuine discovery or make results look better than they are"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Some outliers are real."
+        },
+        {
+          "level": 2,
+          "text": "Deleting them distorts the findings."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "An outlier may be a genuine finding; deleting it silently distorts the results and can conceal a discovery.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "it can hide a genuine discovery or make results look better than they are",
+          "it takes too much time",
+          "it is against the rules of arithmetic",
+          "it never causes problems"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.outliers.q8",
+      "skill_id": "science.data.outliers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "In the set 5, 6, 5, 6, 30, which value is the outlier?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the value far from the cluster."
+        },
+        {
+          "level": 2,
+          "text": "The others are 5 or 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "30 is far from the cluster of 5s and 6s, so it is the outlier.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q1",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Mass (kg): 1, 2, 3 with Volume (L): 2, 4, 6. What is the constant ratio of volume to mass?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide each volume by its mass."
+        },
+        {
+          "level": 2,
+          "text": "2/1 = 2, 4/2 = 2, 6/3 = 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Every volume divided by its mass gives 2, the constant ratio.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q2",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Are the pairs (1, 2), (2, 4), (3, 6) proportional?",
+      "answer_spec": {
+        "correct_answer": "Yes, the ratio is constant"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check y divided by x for each pair."
+        },
+        {
+          "level": 2,
+          "text": "All give 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Each ratio equals 2, so the quantities are proportional.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["Yes, the ratio is constant", "No, the ratio changes"]
+      }
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q3",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Using the constant ratio of 2 L per kg, what volume, in liters, corresponds to 5 kg?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the mass by the constant."
+        },
+        {
+          "level": 2,
+          "text": "5 times 2 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "5 kg times 2 L/kg gives 10 L.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q4",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "On a graph, a proportional relationship appears as what?",
+      "answer_spec": {
+        "correct_answer": "a straight line through the origin"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Zero of one means zero of the other."
+        },
+        {
+          "level": 2,
+          "text": "The line passes through (0, 0)."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A proportional relationship graphs as a straight line passing through the origin.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a straight line through the origin",
+          "a curve",
+          "a straight line crossing the y-axis above zero",
+          "a shapeless cloud"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q5",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A graph is a straight line but crosses the y-axis at 5. Is the relationship proportional?",
+      "answer_spec": {
+        "correct_answer": "No, because it does not pass through the origin"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check the origin."
+        },
+        {
+          "level": 2,
+          "text": "A starting value means the ratio is not constant."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because the line has a starting value of 5 rather than passing through the origin, the ratio is not constant, so it is not proportional.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "No, because it does not pass through the origin",
+          "Yes, because it is straight",
+          "Yes, because it is a line graph",
+          "It cannot be decided"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, because it is straight",
+          "misconception_id": "mc.science.data.straight_line_means_proportional"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q6",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Are the pairs (1, 3), (2, 5), (3, 7) proportional?",
+      "answer_spec": {
+        "correct_answer": "No, the ratio changes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compute 3/1, 5/2, 7/3."
+        },
+        {
+          "level": 2,
+          "text": "They are not equal."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The ratios are 3, 2.5, and about 2.33, so they are not proportional.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["No, the ratio changes", "Yes, the ratio is constant"]
+      }
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q7",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In a proportional relationship, doubling one quantity does what to the other?",
+      "answer_spec": {
+        "correct_answer": "doubles it"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The ratio stays fixed."
+        },
+        {
+          "level": 2,
+          "text": "Both scale together."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With a constant ratio, doubling one quantity doubles the other.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["doubles it", "halves it", "leaves it unchanged", "squares it"]
+      }
+    },
+    {
+      "question_id": "science.data.proportional_relationships.q8",
+      "skill_id": "science.data.proportional_relationships",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Distance (m): 4, 8, 12 for Time (s): 1, 2, 3. What is the constant ratio of distance to time, in meters per second?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide each distance by its time."
+        },
+        {
+          "level": 2,
+          "text": "4/1 = 4, 8/2 = 4, 12/3 = 4."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Every distance divided by its time gives 4 m/s.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q1",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What should a good conclusion do?",
+      "answer_spec": {
+        "correct_answer": "state what the data shows and refer to the evidence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It must be tied to the results."
+        },
+        {
+          "level": 2,
+          "text": "Cite the evidence."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A conclusion states what the data shows about the question and refers to specific evidence.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "state what the data shows and refer to the evidence",
+          "restate the hypothesis word for word",
+          "describe the equipment",
+          "list every measurement"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q2",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Bright-light plants averaged 15 cm and dim-light plants 6 cm, all else controlled. What is the best conclusion?",
+      "answer_spec": {
+        "correct_answer": "the data supports the hypothesis that more light increases growth"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two averages."
+        },
+        {
+          "level": 2,
+          "text": "The difference supports the hypothesis."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The 9 cm difference under controlled conditions supports the hypothesis that more light increases growth.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the data supports the hypothesis that more light increases growth",
+          "light has no effect",
+          "plants always grow 15 cm",
+          "the experiment failed"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q3",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why is it wrong to say an experiment 'proves' a hypothesis?",
+      "answer_spec": {
+        "correct_answer": "data can support a hypothesis but a single experiment cannot prove it"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Science is provisional."
+        },
+        {
+          "level": 2,
+          "text": "Support is not proof."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Evidence can support or fail to support a hypothesis; one experiment does not prove it.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "data can support a hypothesis but a single experiment cannot prove it",
+          "hypotheses are always false",
+          "proof requires more decimal places",
+          "it is only about wording"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "proof requires more decimal places",
+          "misconception_id": "mc.science.data.claimed_proof"
+        }
+      ]
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q4",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Both groups grew the same amount. What conclusion follows?",
+      "answer_spec": {
+        "correct_answer": "the data does not support the hypothesis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No difference means no measured effect."
+        },
+        {
+          "level": 2,
+          "text": "The hypothesis is not supported."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With no difference between groups, the data does not support the hypothesis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the data does not support the hypothesis",
+          "the hypothesis is proven",
+          "the experiment must be repeated forever",
+          "light causes growth"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q5",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A study of 3 plants concludes 'all plants everywhere grow faster in light'. What is wrong?",
+      "answer_spec": {
+        "correct_answer": "the conclusion goes far beyond what the small sample can show"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Three plants is a small sample."
+        },
+        {
+          "level": 2,
+          "text": "The claim is too broad."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A sample of three cannot support a claim about all plants everywhere; the conclusion overreaches.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "the conclusion goes far beyond what the small sample can show",
+          "plants cannot be studied",
+          "the units are missing",
+          "nothing is wrong"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q6",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What should a conclusion mention besides the result?",
+      "answer_spec": {
+        "correct_answer": "limitations of the investigation"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Be honest about weaknesses."
+        },
+        {
+          "level": 2,
+          "text": "Note limitations."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A good conclusion notes limitations such as small samples or uncontrolled factors.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "limitations of the investigation",
+          "the names of classmates",
+          "the price of the equipment",
+          "unrelated experiments"
+        ]
+      }
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q7",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Results contradict your hypothesis. What is the correct response?",
+      "answer_spec": {
+        "correct_answer": "report the results honestly and say the hypothesis was not supported"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Never adjust data to fit."
+        },
+        {
+          "level": 2,
+          "text": "Report honestly."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "You report the results honestly and state that the hypothesis was not supported; unexpected results are still valid findings.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "report the results honestly and say the hypothesis was not supported",
+          "change the data to fit",
+          "hide the results",
+          "repeat until you get the answer you want"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.data.drawing_conclusions.q8",
+      "skill_id": "science.data.drawing_conclusions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which conclusion is best supported by data showing a 9 cm difference?",
+      "answer_spec": {
+        "correct_answer": "Plants in bright light grew about 9 cm taller on average than those in dim light."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The best conclusion quotes the evidence."
+        },
+        {
+          "level": 2,
+          "text": "It should cite the measured difference."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The strongest conclusion states the measured difference precisely rather than making a vague claim.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "Plants in bright light grew about 9 cm taller on average than those in dim light.",
+          "Light is good for plants.",
+          "Plants like the sun.",
+          "The experiment worked."
+        ]
+      }
+    }
+  ]
+}

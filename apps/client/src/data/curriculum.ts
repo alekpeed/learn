@@ -19,7 +19,9 @@ import measurement from '../../../../content/mvp/units/measurement.json';
 import algebra from '../../../../content/mvp/units/algebra.json';
 import functions from '../../../../content/mvp/units/functions.json';
 import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
+import scienceExperiments from '../../../../content/mvp/units/science_experiments.json';
 import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
+import scienceData from '../../../../content/mvp/units/science_data.json';
 
 interface UnitFile {
   skills: unknown[];
@@ -40,7 +42,9 @@ const units: UnitFile[] = [
   algebra,
   functions,
   scienceThinking,
+  scienceExperiments,
   scienceMeasurement,
+  scienceData,
 ];
 
 export function loadSampleCurriculum(): LoadResult {

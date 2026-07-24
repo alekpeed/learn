@@ -146,6 +146,151 @@
         "transfer": 70
       },
       "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.measurement.mass",
+      "unit_id": "science.measurement",
+      "title": "Measuring Mass",
+      "summary": "Mass is the amount of matter in an object, measured with a balance in grams and kilograms. Mass does not change with location, unlike weight, which depends on gravity.",
+      "objectives": [
+        "Select an appropriate unit and instrument for measuring mass.",
+        "Convert between grams and kilograms.",
+        "Distinguish mass from weight."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.measurement.time",
+      "unit_id": "science.measurement",
+      "title": "Measuring Time",
+      "summary": "Time is measured in seconds, the SI base unit, along with minutes and hours. Instruments such as stopwatches measure intervals, and careful timing includes repeating measurements because human reaction time introduces error.",
+      "objectives": [
+        "Convert between seconds, minutes, and hours.",
+        "Choose an instrument and unit for timing.",
+        "Explain why timing measurements are repeated."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.measurement.temperature",
+      "unit_id": "science.measurement",
+      "title": "Measuring Temperature",
+      "summary": "Temperature measures how hot or cold something is, read with a thermometer in degrees Celsius or in kelvins. Water freezes at 0 degrees Celsius and boils at 100 degrees Celsius, and temperature is distinct from the total heat energy in an object.",
+      "objectives": [
+        "Read and compare temperatures.",
+        "Use the freezing and boiling points of water as reference points.",
+        "Distinguish temperature from heat."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.measurement.volume",
+      "unit_id": "science.measurement",
+      "title": "Measuring Volume",
+      "summary": "Volume is the space a substance occupies, measured in liters and milliliters for liquids or cubic centimeters for solids. Liquids are measured in a graduated cylinder by reading the bottom of the meniscus at eye level.",
+      "objectives": [
+        "Choose an instrument and unit for measuring volume.",
+        "Convert between liters and milliliters.",
+        "Read a graduated cylinder correctly."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.si_units",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.measurement.volume",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.measurement.significant_figures",
+      "unit_id": "science.measurement",
+      "title": "Significant Figures",
+      "summary": "Significant figures are the digits in a measurement that carry real information about its precision. A measurement of 12.5 cm has three significant figures, showing it was read to a tenth of a centimeter; a calculated result should not claim more precision than the measurements it came from.",
+      "objectives": [
+        "Count the significant figures in a measurement.",
+        "Explain what significant figures indicate about precision.",
+        "Avoid reporting more precision than the data supports."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.accuracy_precision",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.decimal_place_value",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
     }
   ],
   "lessons": [
@@ -289,6 +434,226 @@
         }
       ],
       "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.measurement.mass.lesson",
+      "skill_id": "science.measurement.mass",
+      "title": "Measuring Mass",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to measure and convert mass and explain how mass differs from weight."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the SI system and that metric units are related by powers of ten. The SI base unit of mass is the kilogram."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A balance compares an unknown mass against known masses, which is why it gives the same reading anywhere. An astronaut's mass is the same on the Moon as on Earth, even though they weigh much less there, because weight depends on gravity but mass does not."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Mass is the quantity of matter in an object, measured in kilograms (kg) or grams (g), with 1 kg = 1000 g. It is measured with a balance. Weight is the force of gravity on that mass and changes with location; mass does not."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2.5 kilograms to grams. Since 1 kg = 1000 g, multiply: 2.5 times 1000 = 2500 g."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A sample reads 750 g. In kilograms that is 750 divided by 1000 = 0.75 kg."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is treating mass and weight as the same. Mass is the amount of matter and is constant; weight is a force that changes with gravity."
+        },
+        {
+          "type": "summary",
+          "body": "Mass is the amount of matter, measured with a balance in grams and kilograms (1 kg = 1000 g). Unlike weight, mass does not change with location."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why does an object's mass stay the same on the Moon while its weight changes?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.measurement.time.lesson",
+      "skill_id": "science.measurement.time",
+      "title": "Measuring Time",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to measure and convert time and explain sources of timing error."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the SI system. Unlike length and mass, time units step by 60 rather than by powers of ten."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A stopwatch measures an interval between two moments. But your thumb does not press exactly when the event happens, so every hand-timed measurement is slightly off. Timing several trials and comparing them shows how large that wobble is."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The SI base unit of time is the second (s). 1 minute = 60 s and 1 hour = 60 minutes. Intervals are measured with clocks and stopwatches. Human reaction time adds error to hand timing, so measurements are repeated."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 3 minutes to seconds. Since 1 min = 60 s, multiply: 3 times 60 = 180 s."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A run takes 120 seconds. In minutes that is 120 divided by 60 = 2 minutes."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is converting time as if it used 100 instead of 60, or reporting a single hand-timed value as exact. Use 60, and repeat trials."
+        },
+        {
+          "type": "summary",
+          "body": "Time is measured in seconds (SI base unit), with 60 s per minute and 60 minutes per hour. Hand timing carries reaction-time error, so trials are repeated."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why should a hand-timed measurement be repeated several times?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.measurement.temperature.lesson",
+      "skill_id": "science.measurement.temperature",
+      "title": "Measuring Temperature",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to measure temperature, use reference points, and distinguish temperature from heat."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the SI system, and that negative numbers describe values below zero on a scale."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A thermometer is a vertical scale you read directly. A cup and a bathtub of water can be at the same temperature, yet the bathtub holds far more heat energy because there is much more water. Temperature tells how hot, not how much energy in total."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Temperature is measured with a thermometer, commonly in degrees Celsius; the SI base unit is the kelvin (K). On the Celsius scale water freezes at 0 and boils at 100. Heat is energy transferred between objects, while temperature indicates how hot an object is."
+        },
+        {
+          "type": "worked_example",
+          "body": "A liquid is at 25 degrees Celsius and is cooled by 30 degrees. The new temperature is 25 - 30 = -5 degrees Celsius, below freezing."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Water boils at 100 degrees Celsius and freezes at 0. The interval between these reference points is 100 - 0 = 100 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is confusing temperature with heat. A large object at a low temperature can contain more heat energy than a small object at a high temperature."
+        },
+        {
+          "type": "summary",
+          "body": "Temperature is read with a thermometer, in degrees Celsius (or kelvins), with water freezing at 0 and boiling at 100 degrees Celsius. Temperature is not the same as total heat energy."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is the difference between temperature and heat?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.measurement.volume.lesson",
+      "skill_id": "science.measurement.volume",
+      "title": "Measuring Volume",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to measure volume correctly and convert between liters and milliliters."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that the volume of a box is length times width times height, and that metric units scale by powers of ten."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Pouring a liquid into a graduated cylinder, its surface curves. Reading the top of the curve gives a value that is too high, so you read the bottom of the curve, with your eye level with it, to get the true volume."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Volume is the space occupied by matter. Liquids are measured in liters (L) and milliliters (mL), with 1 L = 1000 mL, using a graduated cylinder read at the bottom of the meniscus at eye level. Solids may be measured in cubic centimeters, and 1 mL equals 1 cubic centimeter."
+        },
+        {
+          "type": "worked_example",
+          "body": "Convert 2 liters to milliliters. Since 1 L = 1000 mL, multiply: 2 times 1000 = 2000 mL."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A cylinder reads 250 mL. In liters that is 250 divided by 1000 = 0.25 L."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is reading the top of the meniscus, or reading from above or below eye level, both of which give the wrong volume."
+        },
+        {
+          "type": "summary",
+          "body": "Volume is measured in liters and milliliters (1 L = 1000 mL) with a graduated cylinder, read at the bottom of the meniscus at eye level. 1 mL equals 1 cubic centimeter."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Where on the meniscus do you read a graduated cylinder, and from what position?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.measurement.significant_figures.lesson",
+      "skill_id": "science.measurement.significant_figures",
+      "title": "Significant Figures",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to count significant figures and explain why results must not overstate precision."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall decimal place value, and that precision describes how finely a measurement was made."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A ruler marked in millimeters lets you honestly report 12.5 cm, but not 12.5432 cm; the extra digits are invented. Significant figures are a way of stating how much of a number you actually know."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Significant figures are the digits that carry meaning about a measurement's precision: all non-zero digits count, zeros between non-zero digits count, and leading zeros do not. A calculated result should be reported to no more significant figures than the least precise measurement used."
+        },
+        {
+          "type": "worked_example",
+          "body": "How many significant figures are in 12.5 cm? The digits 1, 2, and 5 all carry information, so there are three significant figures, meaning the value was read to the nearest tenth of a centimeter."
+        },
+        {
+          "type": "guided_practice",
+          "body": "How many significant figures are in 0.045? Leading zeros do not count, so only 4 and 5 do: two significant figures."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is copying every digit from a calculator. If you measured to three significant figures, reporting eight digits claims precision you do not have."
+        },
+        {
+          "type": "summary",
+          "body": "Significant figures show how precisely a value is known. Non-zero digits and zeros between them count, leading zeros do not, and results must not exceed the precision of the data."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why should a calculated answer not have more significant figures than the measurements used to find it?"
+        }
+      ]
     }
   ],
   "questions": [
@@ -298,10 +663,19 @@
       "type": "multiple_choice",
       "difficulty": 1,
       "prompt": "Which is the SI base unit for length?",
-      "parameters": { "options": ["meter", "foot", "liter"] },
-      "answer_spec": { "correct_answer": "meter" },
+      "parameters": {
+        "options": ["meter", "foot", "liter"]
+      },
+      "answer_spec": {
+        "correct_answer": "meter"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "It is the unit used on metric rulers." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the unit used on metric rulers."
+        }
+      ],
       "dimensions": ["accuracy"],
       "explanation": "The meter is the SI base unit of length.",
       "content_version": "0.1.0"
@@ -319,9 +693,16 @@
           "So each lab can use its own ruler"
         ]
       },
-      "answer_spec": { "correct_answer": "So measurements can be compared everywhere" },
+      "answer_spec": {
+        "correct_answer": "So measurements can be compared everywhere"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "Think about comparing results between people." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about comparing results between people."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "Shared units let anyone compare measurements reliably.",
       "content_version": "0.1.0"
@@ -332,12 +713,22 @@
       "type": "multi_select",
       "difficulty": 2,
       "prompt": "Select all of the SI base units.",
-      "parameters": { "options": ["meter", "kilogram", "second", "foot", "liter"] },
-      "answer_spec": { "correct_answer": ["meter", "kilogram", "second"] },
+      "parameters": {
+        "options": ["meter", "kilogram", "second", "foot", "liter"]
+      },
+      "answer_spec": {
+        "correct_answer": ["meter", "kilogram", "second"]
+      },
       "validator": "multi_select",
       "hints": [
-        { "level": 1, "text": "There are three here: one each for length, mass, and time." },
-        { "level": 2, "text": "Foot and liter are not SI base units." }
+        {
+          "level": 1,
+          "text": "There are three here: one each for length, mass, and time."
+        },
+        {
+          "level": 2,
+          "text": "Foot and liter are not SI base units."
+        }
       ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "The SI base units shown here are the meter (length), kilogram (mass), and second (time).",
@@ -349,11 +740,19 @@
       "type": "unit",
       "difficulty": 2,
       "prompt": "A rope is 2 meters long. Write its length in centimeters (include the unit, e.g. '200 cm').",
-      "answer_spec": { "correct_answer": "200 cm" },
+      "answer_spec": {
+        "correct_answer": "200 cm"
+      },
       "validator": "unit",
       "hints": [
-        { "level": 1, "text": "1 meter is 100 centimeters." },
-        { "level": 2, "text": "2 x 100 = 200, so 200 cm." }
+        {
+          "level": 1,
+          "text": "1 meter is 100 centimeters."
+        },
+        {
+          "level": 2,
+          "text": "2 x 100 = 200, so 200 cm."
+        }
       ],
       "dimensions": ["accuracy"],
       "explanation": "2 m = 2 x 100 cm = 200 cm.",
@@ -365,10 +764,19 @@
       "type": "multiple_choice",
       "difficulty": 1,
       "prompt": "Which unit best measures the length of a pencil?",
-      "parameters": { "options": ["centimeters", "kilometers", "meters"] },
-      "answer_spec": { "correct_answer": "centimeters" },
+      "parameters": {
+        "options": ["centimeters", "kilometers", "meters"]
+      },
+      "answer_spec": {
+        "correct_answer": "centimeters"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "A pencil is small — pick a small unit." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "A pencil is small \u2014 pick a small unit."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "A pencil is best measured in centimeters.",
       "content_version": "0.1.0"
@@ -379,11 +787,19 @@
       "type": "unit",
       "difficulty": 3,
       "prompt": "Convert 3 meters to centimeters (include the unit, e.g. '300 cm').",
-      "answer_spec": { "correct_answer": "300 cm" },
+      "answer_spec": {
+        "correct_answer": "300 cm"
+      },
       "validator": "unit",
       "hints": [
-        { "level": 1, "text": "1 m = 100 cm." },
-        { "level": 2, "text": "Multiply: 3 x 100 = 300 cm." }
+        {
+          "level": 1,
+          "text": "1 m = 100 cm."
+        },
+        {
+          "level": 2,
+          "text": "Multiply: 3 x 100 = 300 cm."
+        }
       ],
       "dimensions": ["accuracy"],
       "explanation": "3 m = 3 x 100 = 300 cm.",
@@ -395,11 +811,19 @@
       "type": "unit",
       "difficulty": 3,
       "prompt": "Convert 2 kilograms to grams (include the unit, e.g. '2000 g').",
-      "answer_spec": { "correct_answer": "2000 g" },
+      "answer_spec": {
+        "correct_answer": "2000 g"
+      },
       "validator": "unit",
       "hints": [
-        { "level": 1, "text": "1 kg = 1000 g." },
-        { "level": 2, "text": "Multiply: 2 x 1000 = 2000 g." }
+        {
+          "level": 1,
+          "text": "1 kg = 1000 g."
+        },
+        {
+          "level": 2,
+          "text": "Multiply: 2 x 1000 = 2000 g."
+        }
       ],
       "dimensions": ["accuracy"],
       "explanation": "2 kg = 2 x 1000 = 2000 g.",
@@ -411,10 +835,19 @@
       "type": "multiple_choice",
       "difficulty": 2,
       "prompt": "About how tall is a typical doorway?",
-      "parameters": { "options": ["2 meters", "2 centimeters", "2 kilometers"] },
-      "answer_spec": { "correct_answer": "2 meters" },
+      "parameters": {
+        "options": ["2 meters", "2 centimeters", "2 kilometers"]
+      },
+      "answer_spec": {
+        "correct_answer": "2 meters"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "A door is a bit taller than an adult." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "A door is a bit taller than an adult."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "A doorway is roughly 2 meters tall; the other options are far too small or too large.",
       "content_version": "0.1.0"
@@ -432,14 +865,19 @@
           "both accurate and precise"
         ]
       },
-      "answer_spec": { "correct_answer": "precise but not accurate" },
+      "answer_spec": {
+        "correct_answer": "precise but not accurate"
+      },
       "validator": "exact_choice",
       "hints": [
         {
           "level": 1,
           "text": "Precision = same result each time. Accuracy = close to the true value."
         },
-        { "level": 2, "text": "It repeats 5.0 kg (precise) but is far from 3.0 kg (not accurate)." }
+        {
+          "level": 2,
+          "text": "It repeats 5.0 kg (precise) but is far from 3.0 kg (not accurate)."
+        }
       ],
       "dimensions": ["accuracy", "understanding", "transfer"],
       "transfer_flag": true,
@@ -459,12 +897,1134 @@
           "written in SI units"
         ]
       },
-      "answer_spec": { "correct_answer": "close to the true value" },
+      "answer_spec": {
+        "correct_answer": "close to the true value"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "Do not confuse this with precision (repeatability)." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do not confuse this with precision (repeatability)."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "Accuracy is closeness to the true value; repeatability is precision.",
       "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.measurement.mass.q1",
+      "skill_id": "science.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which instrument is used to measure mass?",
+      "answer_spec": {
+        "correct_answer": "a balance"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It compares an unknown mass against known masses."
+        },
+        {
+          "level": 2,
+          "text": "That instrument is a balance."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Mass is measured with a balance, which compares it against known masses.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["a balance", "a ruler", "a thermometer", "a stopwatch"]
+      }
+    },
+    {
+      "question_id": "science.measurement.mass.q2",
+      "skill_id": "science.measurement.mass",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 2.5 kilograms to grams.",
+      "answer_spec": {
+        "correct_answer": "2500 g"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 kg = 1000 g."
+        },
+        {
+          "level": 2,
+          "text": "2.5 times 1000 is 2500."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2.5 kg is 2.5 times 1000 = 2500 g.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.mass.q3",
+      "skill_id": "science.measurement.mass",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 750 grams to kilograms.",
+      "answer_spec": {
+        "correct_answer": "0.75 kg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide grams by 1000."
+        },
+        {
+          "level": 2,
+          "text": "750 divided by 1000 is 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "750 g is 750 / 1000 = 0.75 kg.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.mass.q4",
+      "skill_id": "science.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the SI base unit of mass?",
+      "answer_spec": {
+        "correct_answer": "kilogram"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the only base unit with a prefix."
+        },
+        {
+          "level": 2,
+          "text": "The kilogram."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base unit of mass is the kilogram (kg).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["kilogram", "gram", "newton", "liter"]
+      }
+    },
+    {
+      "question_id": "science.measurement.mass.q5",
+      "skill_id": "science.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "An astronaut travels to the Moon. What happens to their mass?",
+      "answer_spec": {
+        "correct_answer": "it stays the same"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mass is the amount of matter."
+        },
+        {
+          "level": 2,
+          "text": "Only weight depends on gravity."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Mass is the quantity of matter and does not change with location; weight does.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["it stays the same", "it decreases", "it increases", "it becomes zero"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "it decreases",
+          "misconception_id": "mc.science.measurement.mass_equals_weight"
+        }
+      ]
+    },
+    {
+      "question_id": "science.measurement.mass.q6",
+      "skill_id": "science.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which unit is most suitable for the mass of a paper clip?",
+      "answer_spec": {
+        "correct_answer": "grams"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A paper clip is very light."
+        },
+        {
+          "level": 2,
+          "text": "Grams give a convenient number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A paper clip has a mass of about a gram, so grams are the suitable unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["grams", "kilograms", "meters", "seconds"]
+      }
+    },
+    {
+      "question_id": "science.measurement.mass.q7",
+      "skill_id": "science.measurement.mass",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 3 grams to milligrams.",
+      "answer_spec": {
+        "correct_answer": "3000 mg"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 g = 1000 mg."
+        },
+        {
+          "level": 2,
+          "text": "3 times 1000 is 3000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 g is 3 times 1000 = 3000 mg.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.measurement.mass.q8",
+      "skill_id": "science.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the difference between mass and weight?",
+      "answer_spec": {
+        "correct_answer": "mass is the amount of matter; weight is the force of gravity on it"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One is a quantity of matter, the other a force."
+        },
+        {
+          "level": 2,
+          "text": "Weight changes with gravity."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Mass measures how much matter an object contains; weight is the gravitational force on that mass.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "mass is the amount of matter; weight is the force of gravity on it",
+          "they are the same thing",
+          "mass is measured in newtons",
+          "weight never changes"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.time.q1",
+      "skill_id": "science.measurement.time",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "What is the SI base unit of time?",
+      "answer_spec": {
+        "correct_answer": "second"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the smallest of the common time units."
+        },
+        {
+          "level": 2,
+          "text": "The second."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base unit of time is the second (s).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["second", "minute", "hour", "day"]
+      }
+    },
+    {
+      "question_id": "science.measurement.time.q2",
+      "skill_id": "science.measurement.time",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 3 minutes to seconds.",
+      "answer_spec": {
+        "correct_answer": "180 s"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 min = 60 s."
+        },
+        {
+          "level": 2,
+          "text": "3 times 60 is 180."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "3 minutes is 3 times 60 = 180 s.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.time.q3",
+      "skill_id": "science.measurement.time",
+      "type": "unit",
+      "difficulty": 2,
+      "prompt": "Convert 120 seconds to minutes.",
+      "answer_spec": {
+        "correct_answer": "2 min"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide seconds by 60."
+        },
+        {
+          "level": 2,
+          "text": "120 divided by 60 is 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "120 s is 120 / 60 = 2 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.time.q4",
+      "skill_id": "science.measurement.time",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which instrument best measures how long a short race takes?",
+      "answer_spec": {
+        "correct_answer": "a stopwatch"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You need to time an interval precisely."
+        },
+        {
+          "level": 2,
+          "text": "A stopwatch measures elapsed time."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A stopwatch measures the elapsed interval of a short event.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["a stopwatch", "a balance", "a ruler", "a thermometer"]
+      }
+    },
+    {
+      "question_id": "science.measurement.time.q5",
+      "skill_id": "science.measurement.time",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is a hand-timed measurement repeated several times?",
+      "answer_spec": {
+        "correct_answer": "because human reaction time adds error to each trial"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Your thumb is not perfectly synchronized."
+        },
+        {
+          "level": 2,
+          "text": "Repeating reveals the spread."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Human reaction time makes each hand-timed value slightly off, so repeating trials shows and reduces that error.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "because human reaction time adds error to each trial",
+          "because stopwatches are always broken",
+          "to make the experiment longer",
+          "because time is not measurable"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.time.q6",
+      "skill_id": "science.measurement.time",
+      "type": "unit",
+      "difficulty": 3,
+      "prompt": "Convert 2 hours to minutes.",
+      "answer_spec": {
+        "correct_answer": "120 min"
+      },
+      "validator": "unit",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1 h = 60 min."
+        },
+        {
+          "level": 2,
+          "text": "2 times 60 is 120."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 hours is 2 times 60 = 120 minutes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.measurement.time.q7",
+      "skill_id": "science.measurement.time",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three timed trials give 10.2 s, 10.4 s, and 10.0 s. What is the mean, in seconds?",
+      "answer_spec": {
+        "correct_answer": 10.2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the three values, then divide by 3."
+        },
+        {
+          "level": 2,
+          "text": "30.6 divided by 3 is 10.2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The mean is (10.2 + 10.4 + 10.0) / 3 = 30.6 / 3 = 10.2 s.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.time.q8",
+      "skill_id": "science.measurement.time",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "How many seconds are in one hour?",
+      "answer_spec": {
+        "correct_answer": "3600"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "60 minutes, each of 60 seconds."
+        },
+        {
+          "level": 2,
+          "text": "60 times 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One hour is 60 times 60 = 3600 seconds.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["3600", "600", "360", "100"]
+      }
+    },
+    {
+      "question_id": "science.measurement.temperature.q1",
+      "skill_id": "science.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "At what temperature, in degrees Celsius, does water freeze?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the zero point of the Celsius scale."
+        },
+        {
+          "level": 2,
+          "text": "Water freezes at 0 degrees Celsius."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the Celsius scale, water freezes at 0 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "science.measurement.temperature.q2",
+      "skill_id": "science.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "At what temperature, in degrees Celsius, does water boil?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the upper reference point of the Celsius scale."
+        },
+        {
+          "level": 2,
+          "text": "Water boils at 100 degrees Celsius."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "On the Celsius scale, water boils at 100 degrees.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "science.measurement.temperature.q3",
+      "skill_id": "science.measurement.temperature",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which instrument measures temperature?",
+      "answer_spec": {
+        "correct_answer": "a thermometer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It reads how hot or cold something is."
+        },
+        {
+          "level": 2,
+          "text": "A thermometer."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Temperature is measured with a thermometer.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["a thermometer", "a balance", "a stopwatch", "a graduated cylinder"]
+      }
+    },
+    {
+      "question_id": "science.measurement.temperature.q4",
+      "skill_id": "science.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A liquid at 25 degrees Celsius is cooled by 30 degrees. What is its new temperature, in degrees Celsius?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the cooling from the start."
+        },
+        {
+          "level": 2,
+          "text": "25 - 30 = -5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "25 - 30 = -5 degrees Celsius, which is below freezing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.temperature.q5",
+      "skill_id": "science.measurement.temperature",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the difference between temperature and heat?",
+      "answer_spec": {
+        "correct_answer": "temperature is how hot something is; heat is energy transferred"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One is an intensity, the other an amount of energy."
+        },
+        {
+          "level": 2,
+          "text": "A bathtub and a cup can share a temperature but not total energy."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Temperature indicates how hot an object is; heat is the energy transferred between objects.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "temperature is how hot something is; heat is energy transferred",
+          "they are the same thing",
+          "heat is measured in degrees",
+          "temperature is a form of energy"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "they are the same thing",
+          "misconception_id": "mc.science.measurement.heat_equals_temperature"
+        }
+      ]
+    },
+    {
+      "question_id": "science.measurement.temperature.q6",
+      "skill_id": "science.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many degrees Celsius are there between the freezing and boiling points of water?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the freezing point from the boiling point."
+        },
+        {
+          "level": 2,
+          "text": "100 - 0 = 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The interval is 100 - 0 = 100 degrees Celsius.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.temperature.q7",
+      "skill_id": "science.measurement.temperature",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the SI base unit of temperature?",
+      "answer_spec": {
+        "correct_answer": "kelvin"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is not degrees Celsius."
+        },
+        {
+          "level": 2,
+          "text": "The SI base unit is the kelvin."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The SI base unit of temperature is the kelvin (K).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["kelvin", "degree Celsius", "degree Fahrenheit", "joule"]
+      }
+    },
+    {
+      "question_id": "science.measurement.temperature.q8",
+      "skill_id": "science.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A sample warms from -8 degrees Celsius to 6 degrees Celsius. By how many degrees did it rise?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract: 6 - (-8)."
+        },
+        {
+          "level": 2,
+          "text": "6 + 8 = 14."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The rise is 6 - (-8) = 6 + 8 = 14 degrees Celsius.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.volume.q1",
+      "skill_id": "science.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which instrument measures the volume of a liquid?",
+      "answer_spec": {
+        "correct_answer": "a graduated cylinder"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It has volume markings up its side."
+        },
+        {
+          "level": 2,
+          "text": "A graduated cylinder."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A graduated cylinder measures liquid volume.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43,
+      "parameters": {
+        "options": ["a graduated cylinder", "a balance", "a ruler", "a thermometer"]
+      }
+    },
+    {
+      "question_id": "science.measurement.volume.q2",
+      "skill_id": "science.measurement.volume",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "How many milliliters are in 1 liter?",
+      "answer_spec": {
+        "correct_answer": 1000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The metric step is a thousand."
+        },
+        {
+          "level": 2,
+          "text": "1 L = 1000 mL."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One liter is 1000 milliliters.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "science.measurement.volume.q3",
+      "skill_id": "science.measurement.volume",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Convert 2 liters to milliliters.",
+      "answer_spec": {
+        "correct_answer": 2000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply liters by 1000."
+        },
+        {
+          "level": 2,
+          "text": "2 times 1000 is 2000."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "2 L is 2 times 1000 = 2000 mL.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.volume.q4",
+      "skill_id": "science.measurement.volume",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Convert 250 milliliters to liters.",
+      "answer_spec": {
+        "correct_answer": 0.25
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide milliliters by 1000."
+        },
+        {
+          "level": 2,
+          "text": "250 divided by 1000 is 0.25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "250 mL is 250 / 1000 = 0.25 L.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.volume.q5",
+      "skill_id": "science.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Where should you read the liquid level in a graduated cylinder?",
+      "answer_spec": {
+        "correct_answer": "at the bottom of the meniscus, at eye level"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The surface curves."
+        },
+        {
+          "level": 2,
+          "text": "Read the bottom of the curve, level with your eye."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You read the bottom of the meniscus with your eye level with it, to avoid a distorted reading.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "at the bottom of the meniscus, at eye level",
+          "at the top of the meniscus",
+          "from above the cylinder",
+          "anywhere on the curve"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "at the top of the meniscus",
+          "misconception_id": "mc.science.measurement.read_top_of_meniscus"
+        }
+      ]
+    },
+    {
+      "question_id": "science.measurement.volume.q6",
+      "skill_id": "science.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "One milliliter is equal to what volume?",
+      "answer_spec": {
+        "correct_answer": "1 cubic centimeter"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Milliliters and cubic centimeters are interchangeable."
+        },
+        {
+          "level": 2,
+          "text": "1 mL = 1 cubic centimeter."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One milliliter equals one cubic centimeter.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["1 cubic centimeter", "1 cubic meter", "1 gram", "1 liter"]
+      }
+    },
+    {
+      "question_id": "science.measurement.volume.q7",
+      "skill_id": "science.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A stone is placed in a cylinder holding 40 mL of water, raising the level to 55 mL. What is the stone's volume, in milliliters?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The rise equals the stone's volume."
+        },
+        {
+          "level": 2,
+          "text": "55 - 40 = 15."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "By displacement, the stone's volume is 55 - 40 = 15 mL.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.volume.q8",
+      "skill_id": "science.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which unit is most suitable for the volume of a drop of medicine?",
+      "answer_spec": {
+        "correct_answer": "milliliters"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A drop is tiny."
+        },
+        {
+          "level": 2,
+          "text": "Milliliters give a convenient number."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A drop is a fraction of a milliliter, so milliliters are the suitable unit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["milliliters", "liters", "kilograms", "meters"]
+      }
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q1",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many significant figures are in the measurement 12.5 cm?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the digits that carry information."
+        },
+        {
+          "level": 2,
+          "text": "1, 2, and 5 all count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12.5 has three significant figures.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q2",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many significant figures are in 0.045?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Leading zeros do not count."
+        },
+        {
+          "level": 2,
+          "text": "Only 4 and 5 count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Leading zeros are not significant, so 0.045 has two significant figures.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "common_wrong_answers": [
+        {
+          "value": 4,
+          "misconception_id": "mc.science.measurement.counted_leading_zeros"
+        }
+      ]
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q3",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many significant figures are in 3.06?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A zero between non-zero digits counts."
+        },
+        {
+          "level": 2,
+          "text": "3, 0, and 6 all count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A zero between non-zero digits is significant, so 3.06 has three.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q4",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many significant figures are in 250.7?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "All four digits carry information."
+        },
+        {
+          "level": 2,
+          "text": "2, 5, 0, and 7 count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "250.7 has four significant figures.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q5",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What do significant figures tell you about a measurement?",
+      "answer_spec": {
+        "correct_answer": "how precisely it was measured"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They reflect the instrument's fineness."
+        },
+        {
+          "level": 2,
+          "text": "They indicate precision."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Significant figures indicate how precisely a value is known.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "how precisely it was measured",
+          "how large it is",
+          "whether it is correct",
+          "which unit was used"
+        ]
+      }
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q6",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "You measure to 3 significant figures and your calculator shows 4.36871. How should you report it?",
+      "answer_spec": {
+        "correct_answer": "4.37"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Do not claim more precision than your data."
+        },
+        {
+          "level": 2,
+          "text": "Round to three significant figures."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "With three significant figures of data, report 4.37 rather than the full calculator display.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": ["4.37", "4.36871", "4.4", "4"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q7",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many significant figures are in 7.0?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A trailing zero after a decimal point is significant."
+        },
+        {
+          "level": 2,
+          "text": "7 and 0 both count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The trailing zero after the decimal point is significant, so 7.0 has two significant figures.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.measurement.significant_figures.q8",
+      "skill_id": "science.measurement.significant_figures",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why should a calculated result not have more significant figures than the data?",
+      "answer_spec": {
+        "correct_answer": "because it would claim precision the measurements do not have"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Calculation cannot create precision."
+        },
+        {
+          "level": 2,
+          "text": "The result is limited by the least precise input."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A calculation cannot add precision; reporting extra digits overstates what was actually measured.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "because it would claim precision the measurements do not have",
+          "because calculators are inaccurate",
+          "because it looks untidy",
+          "because units would change"
+        ]
+      }
     }
   ]
 }

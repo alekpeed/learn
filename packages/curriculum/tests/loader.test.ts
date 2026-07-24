@@ -25,7 +25,9 @@ const UNIT_FILES = [
   'units/algebra.json',
   'units/functions.json',
   'units/science_thinking.json',
+  'units/science_experiments.json',
   'units/science_measurement.json',
+  'units/science_data.json',
 ];
 
 interface UnitFile {
@@ -135,6 +137,16 @@ describe('MVP math package (Phase 6 exit criteria)', () => {
     expect(pos('math.functions.rate_of_change')).toBeLessThan(
       pos('math.functions.linear_relationships'),
     );
+    // Experiments: the variable chain, then control groups and error analysis.
+    expect(pos('science.experiments.independent_variables')).toBeLessThan(
+      pos('science.experiments.dependent_variables'),
+    );
+    expect(pos('science.experiments.controlled_variables')).toBeLessThan(
+      pos('science.experiments.control_groups'),
+    );
+    // Data: axes precede the graph types; trends precede outliers and conclusions.
+    expect(pos('science.data.reading_axes')).toBeLessThan(pos('science.data.bar_graphs'));
+    expect(pos('science.data.trends')).toBeLessThan(pos('science.data.outliers'));
   });
 
   it('every skill with questions has a validator on each question', () => {

@@ -108,18 +108,27 @@ a future enhancement. Point positions, table values, and function-machine output
 computed and verified. This completes the mathematics course except partial
 Decimals/Percentages.
 
-### Phase 15 - Scientific Reasoning & Data completion [content, small engine]
+### Phase 15 - Scientific Reasoning & Data completion [content] - DONE
 
-Backfill Science Thinking (models, scientific explanations) and Measurement (mass, time,
-temperature, volume, significant figures), and author the two missing science units:
-Experiments (doc unit 2: variables, controls, control groups, repeated trials, fair tests,
-sources of error) and Data (doc unit 4: tables, bar/line/scatter graphs, reading axes,
-trends, outliers, proportional relationships, drawing conclusions). ~25 topics. Reuses the
-Phase 14 graph renderer for graph-reading items; otherwise `unit`, `numeric`,
-`multi_select`, `ordering`, `multiple_choice`.
+Completed the science course: 24 new skills and 192 questions. Backfilled Scientific
+Thinking (models, scientific explanations) and Measurement (mass, time, temperature, volume,
+significant figures), and authored the two missing units - `science.experiments` (7 skills:
+independent/dependent/controlled variables, control groups, repeated trials, fair tests,
+sources of error) and `science.data` (10 skills: tables, categorical vs numerical data,
+reading axes, bar/line/scatter graphs, trends, outliers, proportional relationships, drawing
+conclusions). Graph and table items are posed textually, as in Phase 14. `unit`-validator
+answers were checked against the engine's conversion families; volume and temperature use
+numeric because those families do not exist in the validator.
 
-**Track A milestone:** the full documented curriculum (16 units, ~138 topics) is complete
-and traversable end to end. Dev-roadmap Phases 6 and 7 are closed.
+**Track A milestone reached:** the documented curriculum is complete apart from one small
+backfill - **125 skills, 801 questions, 14 of 16 units complete and none missing**.
+Dev-roadmap Phases 6 and 7 are effectively closed.
+
+### Phase 15b - Decimals & Percentages backfill [content]
+
+The last curriculum gap: rounding decimals, finding the whole, finding the percent, percent
+increase/decrease, and percentage word problems (~5 documented topics). Small, content-only,
+uses existing validators. Completing it closes Track A entirely.
 
 ---
 

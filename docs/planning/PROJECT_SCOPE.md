@@ -57,14 +57,18 @@ introductory-algebra + scientific-reasoning course. It is the full "initial subj
 
 - it does NOT by itself reach trigonometry (see section 4).
 
-Current authored coverage: **~108 of ~138 documented topics (~78%)** across **101 skills**.
-Ten units are complete, four are partial, two are entirely missing. Phase 14 authored the
-Coordinate Plane & Graphs unit (`math.functions`, 8 skills), which added a new deterministic
-`point` validator - so **the entire mathematics course is now built except partial coverage
-of Decimals and Percentages.** (Earlier: Phase 10 Decimals & Percentages; Phase 11 Numerical
-Structure and Integers; Phase 12 Ratios and Measurement Foundations; Phase 13 completed
-Addition/Subtraction, Multiplication/Division, Fractions, and Algebra.) The remaining gaps
-are all in the science course plus the Decimals/Percentages backfill.
+Current authored coverage: **~133 of ~138 documented topics (~96%)** across **125 skills**
+and **801 practice questions**. **Fourteen of the sixteen units are complete and none is
+missing**; only Decimals and Percentages remain partial. Phase 15 completed the science
+course (Experiments and Data units, plus Scientific Thinking and Measurement backfills), and
+Phases 10-14 completed the mathematics course. (Phase 10 Decimals & Percentages; Phase 11
+Numerical Structure and Integers; Phase 12 Ratios and Measurement Foundations; Phase 13
+Addition/Subtraction, Multiplication/Division, Fractions, and Algebra; Phase 14 Coordinate
+Plane & Graphs plus the `point` validator.)
+
+The only outstanding curriculum gap is a small Decimals/Percentages backfill: rounding
+decimals, finding the whole, finding the percent, percent increase/decrease, and percentage
+word problems (about 5 documented topics).
 
 ### Mathematics course (`math.core`)
 
@@ -88,14 +92,15 @@ Decimals and Percentages, which are partial.
 
 ### Scientific Reasoning course (`science.core`)
 
-| #   | Unit                | Topics | Status      | Notes                                                                                                                            |
-| --- | ------------------- | :----: | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Scientific Thinking |   7    | partial (5) | missing models, scientific explanations                                                                                          |
-| 2   | Experiments         |   7    | missing     | independent/dependent/controlled variables, control groups, repeated trials, fair tests, sources of error                        |
-| 3   | Measurement         |   11   | partial (5) | missing mass, time, temperature, volume, significant figures                                                                     |
-| 4   | Data                |   10   | missing     | tables, categorical/numerical, bar/line/scatter, reading axes, trends, outliers, proportional relationships, drawing conclusions |
+| #   | Unit                | Topics | Status | Notes                                                                                                                                     |
+| --- | ------------------- | :----: | ------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Scientific Thinking |   7    | built  | Phase 15 added models and scientific explanations                                                                                         |
+| 2   | Experiments         |   7    | built  | Phase 15: independent/dependent/controlled variables, control groups, repeated trials, fair tests, sources of error                       |
+| 3   | Measurement         |   11   | built  | Phase 15 added mass, time, temperature, volume, significant figures (accuracy + precision share one skill)                                |
+| 4   | Data                |   10   | built  | Phase 15: tables, categorical/numerical, reading axes, bar/line/scatter graphs, trends, outliers, proportional relationships, conclusions |
 
-Science authored: 10 of 35 documented topics.
+Science authored: 35 of 35 documented topics (34 skills; accuracy and precision are taught
+in a single combined skill).
 
 ---
 
@@ -105,7 +110,7 @@ The documentation defines scope as four widening rings. Only the innermost is pa
 
 1. **Initial subject scope** (docs 01, 03, 05): the full ~138-topic curriculum in section 2
    - arithmetic through introductory algebra + coordinate plane/graphs, plus scientific
-     reasoning / measurement / data. ~78% built. Completing this ring satisfies the spec's
+     reasoning / measurement / data. ~96% built. Completing this ring satisfies the spec's
      Completion Rule (the entire scoped curriculum traversable through prerequisites,
      lessons, practice, mastery, and review).
 
@@ -167,12 +172,11 @@ sequenced.
 ## 6. Summary for a new session
 
 - The **engine is done**; the work is **curriculum content** (breadth) and **item depth**.
-- The documented course is **16 units / ~138 topics**; about **78% is authored** across
-  **101 skills** (10 units complete, 4 partial, 2 missing). Phases 10-14 built out the
-  entire mathematics course except partial Decimals/Percentages; Phase 14 added Coordinate
-  Plane & Graphs and a new `point` validator. The remaining gaps are all in the science
-  course - the two missing units (Experiments, Data), partial Scientific Thinking and
-  Measurement - plus the small Decimals/Percentages backfill.
+- The documented course is **16 units / ~138 topics**; about **96% is authored** across
+  **125 skills and 801 questions** (14 units complete, 2 partial, 0 missing). Phases 10-15
+  built out both courses: mathematics through Coordinate Plane & Graphs (with a new `point`
+  validator), and the full science course including the Experiments and Data units. The one
+  remaining gap is a small Decimals/Percentages backfill (~5 topics).
 - Scope widens in four rings: initial curriculum -> Version 1 features -> Later Features
   -> long-term subjects (trig, calculus, sciences, and more).
 - The docs' authored curriculum stops at introductory algebra; **trig/calc are vision, not

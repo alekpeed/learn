@@ -29,7 +29,9 @@
     "status": "draft",
     "units": [
       { "unit_id": "science.thinking", "title": "Scientific Thinking", "order": 1 },
-      { "unit_id": "science.measurement", "title": "Measurement", "order": 2 }
+      { "unit_id": "science.experiments", "title": "Experiments", "order": 2 },
+      { "unit_id": "science.measurement", "title": "Measurement", "order": 3 },
+      { "unit_id": "science.data", "title": "Data", "order": 4 }
     ]
   }
 ]

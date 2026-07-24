@@ -24,7 +24,7 @@
       "skill_id": "science.thinking.inference",
       "unit_id": "science.thinking",
       "title": "Inference",
-      "summary": "An inference is a conclusion or explanation you reach by reasoning from observations — it goes beyond what you directly sense.",
+      "summary": "An inference is a conclusion or explanation you reach by reasoning from observations \u2014 it goes beyond what you directly sense.",
       "objectives": [
         "Distinguish an observation from an inference",
         "Explain the reasoning behind an inference"
@@ -123,6 +123,65 @@
         "transfer": 70
       },
       "content_version": "0.1.0"
+    },
+    {
+      "skill_id": "science.thinking.models",
+      "unit_id": "science.thinking",
+      "title": "Scientific Models",
+      "summary": "A scientific model is a simplified representation of something real - a diagram, a physical replica, an equation, or a simulation - used to explain and predict. Models leave out detail on purpose, so every model has limits.",
+      "objectives": [
+        "Explain what a scientific model is for.",
+        "Identify examples of models.",
+        "State a limitation of a given model."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.inference",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.thinking.explanations",
+      "unit_id": "science.thinking",
+      "title": "Scientific Explanations",
+      "summary": "A scientific explanation states a claim, supports it with evidence, and gives reasoning that links the two. It differs from an opinion because it can be checked against data, and it must account for the observations rather than restate them.",
+      "objectives": [
+        "State the parts of a scientific explanation.",
+        "Distinguish an explanation from an opinion.",
+        "Judge whether an explanation is supported by evidence."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.evidence",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.thinking.models",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
     }
   ],
   "lessons": [
@@ -137,7 +196,7 @@
         },
         {
           "type": "intuitive_explanation",
-          "body": "An observation is what you can see, hear, feel, smell, or measure right now. 'The ground is wet' is an observation. Saying 'it rained' is not — that is a guess about the cause."
+          "body": "An observation is what you can see, hear, feel, smell, or measure right now. 'The ground is wet' is an observation. Saying 'it rained' is not \u2014 that is a guess about the cause."
         },
         {
           "type": "formal_terminology",
@@ -145,7 +204,7 @@
         },
         {
           "type": "worked_example",
-          "body": "Looking at a plant: 'The leaves are yellow' is an observation. 'The plant is sick' is not — that is an explanation you added."
+          "body": "Looking at a plant: 'The leaves are yellow' is an observation. 'The plant is sick' is not \u2014 that is an explanation you added."
         },
         {
           "type": "common_mistakes",
@@ -173,7 +232,7 @@
         },
         {
           "type": "intuitive_explanation",
-          "body": "If you observe wet ground and puddles, you might infer that it rained. The inference is your explanation — it could be wrong (a sprinkler may have run)."
+          "body": "If you observe wet ground and puddles, you might infer that it rained. The inference is your explanation \u2014 it could be wrong (a sprinkler may have run)."
         },
         {
           "type": "worked_example",
@@ -197,7 +256,7 @@
         },
         {
           "type": "intuitive_explanation",
-          "body": "A testable question can be answered by observing or experimenting. 'Does more water make a plant grow taller?' is testable. 'Are roses the best flower?' is not — it is an opinion."
+          "body": "A testable question can be answered by observing or experimenting. 'Does more water make a plant grow taller?' is testable. 'Are roses the best flower?' is not \u2014 it is an opinion."
         },
         {
           "type": "worked_example",
@@ -249,7 +308,7 @@
         },
         {
           "type": "intuitive_explanation",
-          "body": "Evidence is data that supports or challenges a claim. A conclusion should follow from the evidence — not from what you hoped to find."
+          "body": "Evidence is data that supports or challenges a claim. A conclusion should follow from the evidence \u2014 not from what you hoped to find."
         },
         {
           "type": "formal_terminology",
@@ -257,7 +316,7 @@
         },
         {
           "type": "worked_example",
-          "body": "Ice cream sales and sunburns both rise in summer. They are correlated, but ice cream does not cause sunburn — hot, sunny weather raises both."
+          "body": "Ice cream sales and sunburns both rise in summer. They are correlated, but ice cream does not cause sunburn \u2014 hot, sunny weather raises both."
         },
         {
           "type": "common_mistakes",
@@ -269,6 +328,98 @@
         }
       ],
       "content_version": "0.1.0"
+    },
+    {
+      "lesson_id": "science.thinking.models.lesson",
+      "skill_id": "science.thinking.models",
+      "title": "Scientific Models",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to say what a scientific model is, give examples, and describe limits of a model."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that an inference is an explanation you reason out from observations. Models are tools that help you make and test such explanations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A map is a model of a city. It is not the city: it leaves out most buildings, colors, and people. But because it keeps the parts you need, it helps you predict which streets connect. Scientific models work the same way, keeping the important parts and dropping the rest."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A scientific model is a simplified representation of an object, system, or process, used to explain observations and predict what will happen. Models can be physical, diagrammatic, mathematical, or computational. Because a model simplifies, it always has limitations and can be revised as evidence improves."
+        },
+        {
+          "type": "representation",
+          "body": "A globe models the Earth: it shows shape and the arrangement of continents accurately, but it is far smaller, cannot show weather, and its painted colors are not real surface colors."
+        },
+        {
+          "type": "worked_example",
+          "body": "Is a diagram of the water cycle a model? Yes. It represents a real process in simplified form, using arrows for evaporation and rainfall so you can explain and predict where water goes. It leaves out the vast detail of real weather."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Name a limitation of a globe as a model of Earth. It is not to full scale and cannot show changing features such as clouds or seasons."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is treating a model as a perfect copy of reality. Models simplify on purpose; being incomplete is expected, not a flaw, but it does limit what the model can tell you."
+        },
+        {
+          "type": "summary",
+          "body": "A scientific model is a simplified representation used to explain and predict. Models can be physical, diagrammatic, or mathematical, and every model has limits because it leaves detail out."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What is a scientific model for, and why does every model have limitations?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.thinking.explanations.lesson",
+      "skill_id": "science.thinking.explanations",
+      "title": "Scientific Explanations",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to build and judge a scientific explanation using claim, evidence, and reasoning."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that evidence is data that supports or challenges an idea, and that models help explain how something works."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Saying 'the plant died because I forgot to water it' is an explanation only if you can point to something you observed, like dry soil and wilted leaves, and say why that would cause death. A claim on its own is just an assertion; evidence and reasoning turn it into science."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A scientific explanation has three parts: a claim (a statement answering the question), evidence (data or observations that support the claim), and reasoning (why the evidence supports the claim, often using a scientific principle). A good explanation accounts for the observations and can be tested against new data."
+        },
+        {
+          "type": "worked_example",
+          "body": "Question: why did the ice melt faster on the metal tray? Claim: metal transfers heat to the ice faster than plastic. Evidence: ice on metal melted in 4 minutes; ice on plastic took 11 minutes. Reasoning: metal conducts heat well, so it moves energy into the ice more quickly."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Which part is missing here: 'The plant grew taller because it got more light. It grew 12 cm versus 4 cm.' The claim and evidence are present, so the missing part is the reasoning linking light to growth."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is restating the observation instead of explaining it ('it melted because it got warmer'), or giving a claim with no evidence. Explanations must connect evidence to the claim with reasoning."
+        },
+        {
+          "type": "summary",
+          "body": "A scientific explanation combines a claim, supporting evidence, and reasoning that links them. It must account for the observations and be testable, unlike an opinion."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What are the three parts of a scientific explanation, and what does the reasoning part do?"
+        }
+      ]
     }
   ],
   "questions": [
@@ -281,11 +432,19 @@
       "parameters": {
         "options": ["The ground is wet", "It rained last night", "Someone forgot an umbrella"]
       },
-      "answer_spec": { "correct_answer": "The ground is wet" },
+      "answer_spec": {
+        "correct_answer": "The ground is wet"
+      },
       "validator": "exact_choice",
       "hints": [
-        { "level": 1, "text": "An observation is something you can directly sense right now." },
-        { "level": 2, "text": "The other choices explain a cause you did not directly see." }
+        {
+          "level": 1,
+          "text": "An observation is something you can directly sense right now."
+        },
+        {
+          "level": 2,
+          "text": "The other choices explain a cause you did not directly see."
+        }
       ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "You can directly see that the ground is wet. The other statements add an explanation, so they are inferences.",
@@ -304,9 +463,16 @@
           "what you hope will happen"
         ]
       },
-      "answer_spec": { "correct_answer": "what you directly sense or measure" },
+      "answer_spec": {
+        "correct_answer": "what you directly sense or measure"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "Observations do not include explanations." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Observations do not include explanations."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "An observation records what your senses or instruments detect, with no explanation added.",
       "content_version": "0.1.0"
@@ -320,7 +486,9 @@
       "parameters": {
         "options": ["It rained recently", "The ground is wet", "There are puddles"]
       },
-      "answer_spec": { "correct_answer": "It rained recently" },
+      "answer_spec": {
+        "correct_answer": "It rained recently"
+      },
       "validator": "exact_choice",
       "hints": [
         {
@@ -345,10 +513,15 @@
           "It is always correct"
         ]
       },
-      "answer_spec": { "correct_answer": "It adds reasoning that goes beyond what you sense" },
+      "answer_spec": {
+        "correct_answer": "It adds reasoning that goes beyond what you sense"
+      },
       "validator": "exact_choice",
       "hints": [
-        { "level": 1, "text": "Inferences can be wrong; observations are what you detect." }
+        {
+          "level": 1,
+          "text": "Inferences can be wrong; observations are what you detect."
+        }
       ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "An inference reasons beyond the direct observation, so it can be wrong and needs evidence.",
@@ -367,10 +540,15 @@
           "Should everyone study science?"
         ]
       },
-      "answer_spec": { "correct_answer": "Does more sunlight make plants grow taller?" },
+      "answer_spec": {
+        "correct_answer": "Does more sunlight make plants grow taller?"
+      },
       "validator": "exact_choice",
       "hints": [
-        { "level": 1, "text": "A testable question can be answered by gathering evidence." }
+        {
+          "level": 1,
+          "text": "A testable question can be answered by gathering evidence."
+        }
       ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "You can measure plant height under different amounts of sunlight. The others are opinions.",
@@ -393,7 +571,12 @@
         "correct_answer": "If a plant gets more sunlight, it will grow taller, because sunlight gives energy for growth"
       },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "A hypothesis is a testable prediction with a reason." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "A hypothesis is a testable prediction with a reason."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "A good hypothesis predicts a result and gives a reason, and it can be tested.",
       "content_version": "0.1.0"
@@ -411,15 +594,23 @@
           "Sunburns cause people to buy ice cream"
         ]
       },
-      "answer_spec": { "correct_answer": "They are correlated, but one may not cause the other" },
+      "answer_spec": {
+        "correct_answer": "They are correlated, but one may not cause the other"
+      },
       "validator": "exact_choice",
       "hints": [
-        { "level": 1, "text": "Two things rising together does not prove one causes the other." },
-        { "level": 2, "text": "Hot, sunny weather could raise both." }
+        {
+          "level": 1,
+          "text": "Two things rising together does not prove one causes the other."
+        },
+        {
+          "level": 2,
+          "text": "Hot, sunny weather could raise both."
+        }
       ],
       "dimensions": ["accuracy", "understanding", "transfer"],
       "transfer_flag": true,
-      "explanation": "The two are correlated, but a third factor (hot, sunny weather) likely drives both — correlation is not causation.",
+      "explanation": "The two are correlated, but a third factor (hot, sunny weather) likely drives both \u2014 correlation is not causation.",
       "content_version": "0.1.0"
     },
     {
@@ -435,9 +626,16 @@
           "the question you started with"
         ]
       },
-      "answer_spec": { "correct_answer": "data that supports or challenges a claim" },
+      "answer_spec": {
+        "correct_answer": "data that supports or challenges a claim"
+      },
       "validator": "exact_choice",
-      "hints": [{ "level": 1, "text": "Evidence comes from observation or measurement." }],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence comes from observation or measurement."
+        }
+      ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "Evidence is data that supports or challenges a claim, letting you judge it fairly.",
       "content_version": "0.1.0"
@@ -466,12 +664,552 @@
       },
       "validator": "ordering",
       "hints": [
-        { "level": 1, "text": "You notice something before you can ask about it." },
-        { "level": 2, "text": "A hypothesis comes after the question and before the test." }
+        {
+          "level": 1,
+          "text": "You notice something before you can ask about it."
+        },
+        {
+          "level": 2,
+          "text": "A hypothesis comes after the question and before the test."
+        }
       ],
       "dimensions": ["accuracy", "understanding"],
       "explanation": "You observe, then ask a testable question, then form a hypothesis, then test it to gather evidence.",
       "content_version": "0.1.0"
+    },
+    {
+      "question_id": "science.thinking.models.q1",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the main purpose of a scientific model?",
+      "answer_spec": {
+        "correct_answer": "to explain and predict"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what a map lets you do."
+        },
+        {
+          "level": 2,
+          "text": "Models help you understand and forecast."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scientific model represents something in simplified form so you can explain observations and predict outcomes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "to explain and predict",
+          "to copy reality exactly",
+          "to decorate a report",
+          "to replace observation"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q2",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which of these is an example of a scientific model?",
+      "answer_spec": {
+        "correct_answer": "a diagram of the water cycle"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A model represents a real system in simplified form."
+        },
+        {
+          "level": 2,
+          "text": "A labelled diagram of a process qualifies."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A water-cycle diagram represents a real process in simplified form, so it is a model.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "a diagram of the water cycle",
+          "a list of yesterday's temperatures",
+          "a photograph of a cloud",
+          "a ruler"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q3",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A globe is a model of Earth. What is one limitation?",
+      "answer_spec": {
+        "correct_answer": "it is not full size and cannot show changing weather"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Models leave detail out."
+        },
+        {
+          "level": 2,
+          "text": "Think about scale and what a globe cannot display."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A globe simplifies: it is far smaller than Earth and cannot show changing features such as weather.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "it is not full size and cannot show changing weather",
+          "it shows the continents",
+          "it is round",
+          "it can be turned"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q4",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "True or false: a good model must include every detail of the real thing.",
+      "answer_spec": {
+        "correct_answer": "False"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Models simplify on purpose."
+        },
+        {
+          "level": 2,
+          "text": "Including every detail would make a model useless."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Models deliberately leave out detail; simplification is what makes them useful.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["False", "True"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "True",
+          "misconception_id": "mc.science.thinking.model_must_be_exact"
+        }
+      ]
+    },
+    {
+      "question_id": "science.thinking.models.q5",
+      "skill_id": "science.thinking.models",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every item that is a scientific model.",
+      "answer_spec": {
+        "correct_answer": ["a globe", "an equation for motion", "a computer climate simulation"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A model represents a system in simplified form."
+        },
+        {
+          "level": 2,
+          "text": "Physical, mathematical, and computational representations all count."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A globe, an equation, and a simulation all represent real systems in simplified form; a thermometer and a raw data table are tools and records, not models.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a globe",
+          "an equation for motion",
+          "a thermometer",
+          "a computer climate simulation",
+          "a raw data table"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q6",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "New evidence contradicts part of a model. What should scientists do?",
+      "answer_spec": {
+        "correct_answer": "revise the model"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Models are not fixed truths."
+        },
+        {
+          "level": 2,
+          "text": "Evidence drives changes to models."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Models are revised when evidence contradicts them; that is how scientific understanding improves.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "revise the model",
+          "ignore the evidence",
+          "hide the result",
+          "keep the model unchanged forever"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q7",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A model airplane in a wind tunnel is used to study a real aircraft. Why use a model?",
+      "answer_spec": {
+        "correct_answer": "it is safer and cheaper to test than the real aircraft"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Consider cost and risk."
+        },
+        {
+          "level": 2,
+          "text": "Models let you test without the real thing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scale model lets researchers test behavior safely and cheaply before building the real aircraft.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "it is safer and cheaper to test than the real aircraft",
+          "it flies better",
+          "it is exactly the same",
+          "it removes the need for data"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.models.q8",
+      "skill_id": "science.thinking.models",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which statement best describes a mathematical model?",
+      "answer_spec": {
+        "correct_answer": "an equation that describes how quantities relate"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mathematical models use numbers and symbols."
+        },
+        {
+          "level": 2,
+          "text": "They capture relationships between quantities."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A mathematical model uses an equation to describe how quantities relate, letting you predict values.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "an equation that describes how quantities relate",
+          "a photograph",
+          "a physical replica only",
+          "an opinion"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q1",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What are the three parts of a scientific explanation?",
+      "answer_spec": {
+        "correct_answer": "claim, evidence, and reasoning"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One part states the answer, one supports it, one links them."
+        },
+        {
+          "level": 2,
+          "text": "Claim, evidence, reasoning."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scientific explanation states a claim, gives evidence, and provides reasoning connecting them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "claim, evidence, and reasoning",
+          "guess, opinion, and result",
+          "question, answer, and grade",
+          "data, chart, and title"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q2",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What makes a scientific explanation different from an opinion?",
+      "answer_spec": {
+        "correct_answer": "it is supported by evidence and can be tested"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Opinions need no data."
+        },
+        {
+          "level": 2,
+          "text": "Explanations must stand up to evidence."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A scientific explanation is backed by evidence and can be checked against data; an opinion need not be.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "it is supported by evidence and can be tested",
+          "it is written more formally",
+          "it is longer",
+          "it is always correct"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q3",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "'The plant grew taller because it got more light. It grew 12 cm versus 4 cm.' Which part is missing?",
+      "answer_spec": {
+        "correct_answer": "reasoning"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A claim and evidence are both present."
+        },
+        {
+          "level": 2,
+          "text": "Nothing explains why light causes growth."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The claim and evidence are present, but the reasoning linking light to plant growth is missing.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["reasoning", "claim", "evidence", "nothing is missing"]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q4",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is the weakest scientific explanation?",
+      "answer_spec": {
+        "correct_answer": "The ice melted because it stopped being frozen."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for one that just restates the observation."
+        },
+        {
+          "level": 2,
+          "text": "Restating is not explaining."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Saying ice melted because it stopped being frozen restates the observation instead of explaining a cause.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "The ice melted because it stopped being frozen.",
+          "The ice melted faster on metal because metal conducts heat well.",
+          "The plant grew more in light because light powers photosynthesis.",
+          "The ball rolled farther on tile because tile has less friction."
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The ice melted because it stopped being frozen.",
+          "misconception_id": "mc.science.thinking.restated_observation"
+        }
+      ]
+    },
+    {
+      "question_id": "science.thinking.explanations.q5",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "An explanation contradicts the collected data. What should you do?",
+      "answer_spec": {
+        "correct_answer": "revise the explanation to fit the evidence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence has priority."
+        },
+        {
+          "level": 2,
+          "text": "Change the explanation, not the data."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "When data contradicts an explanation, the explanation must be revised; you never adjust evidence to fit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "revise the explanation to fit the evidence",
+          "change the data",
+          "ignore the contradiction",
+          "publish it anyway"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q6",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a scientific explanation, what is the role of evidence?",
+      "answer_spec": {
+        "correct_answer": "to support the claim with observations or data"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Evidence is what you actually measured or saw."
+        },
+        {
+          "level": 2,
+          "text": "It backs the claim."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Evidence supplies the observations or data that support the claim.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "to support the claim with observations or data",
+          "to state the question",
+          "to decorate the report",
+          "to replace the claim"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q7",
+      "skill_id": "science.thinking.explanations",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Select every statement that is a claim rather than evidence.",
+      "answer_spec": {
+        "correct_answer": [
+          "Metal transfers heat faster than plastic",
+          "The plant needs light to grow"
+        ]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A claim is a statement being argued for."
+        },
+        {
+          "level": 2,
+          "text": "Evidence is a specific measurement or observation."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The two general statements are claims; the measured times and heights are evidence.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "Metal transfers heat faster than plastic",
+          "Ice on metal melted in 4 minutes",
+          "The plant needs light to grow",
+          "The plant grew 12 cm in two weeks"
+        ]
+      }
+    },
+    {
+      "question_id": "science.thinking.explanations.q8",
+      "skill_id": "science.thinking.explanations",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why must a scientific explanation be testable?",
+      "answer_spec": {
+        "correct_answer": "so others can check it against new evidence"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Science relies on independent checking."
+        },
+        {
+          "level": 2,
+          "text": "Untestable claims cannot be confirmed or refuted."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Testability lets others gather new evidence to confirm or refute the explanation.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "so others can check it against new evidence",
+          "so it sounds convincing",
+          "so it can never be wrong",
+          "so it is shorter"
+        ]
+      }
     }
   ]
 }

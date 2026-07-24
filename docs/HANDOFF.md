@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 14 shipped)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 15 shipped)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -9,12 +9,12 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 > end** (engine, the 16-unit / ~138-topic documented curriculum, the four scope tiers, and
 > how far the vision reaches - including trigonometry and calculus). Its companion
 > `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
-> surprised a prior session and are easy to get wrong: (1) only about **78% of the
-> documented curriculum is authored** - the **101 skills** below are a slice, not the whole
-> course (the entire math course is built except partial Decimals/Percentages; the gaps are
-> in science); and (2) **trigonometry and calculus are named in the vision but have no
-> authored curriculum** - completing 100% of the documented spec lands a learner at
-> introductory algebra + linear graphs, not trig.
+> surprised a prior session and are easy to get wrong: (1) the documented curriculum is now
+> **~96% authored** (**125 skills, 801 questions**; 14 of 16 units complete, none missing) -
+> the only gap left is a small Decimals/Percentages backfill; and (2) **trigonometry and
+> calculus are named in the vision but have no authored curriculum** - completing 100% of the
+> documented spec lands a learner at introductory algebra + linear graphs, not trig. Reaching
+> trig needs new Geometry, Algebra II, and Precalculus courses (ROADMAP Track D).
 
 ---
 
@@ -35,9 +35,9 @@ shipped on top of it. Everything is committed and pushed.
 - Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
   machine, prerequisite gating + remediation, progress projection.
 - Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **101 skills** across 13 units. The **entire math course is complete** except
-  Decimals/Percentages (partial). The remaining gaps are all in science: Scientific Thinking
-  and Measurement are partial, and Experiments and Data are not started.
+- Content: **125 skills and 801 questions** across 15 unit files (12 math units + 4 science
+  units). **Both courses are complete** except the Decimals/Percentages unit, which is still
+  partial (rounding, finding the whole/percent, increase-decrease, word problems).
 - **New engine capability (Phase 14):** a deterministic **`point` validator** for
   ordered-pair/coordinate answers (validation-engine), added to the question-type and
   validator schema enums, with a client point input. This is the app's first content-driven
@@ -99,6 +99,16 @@ shipped on top of it. Everything is committed and pushed.
   `validation-engine`, `point` in the schema type/validator enums, a `point` input in
   `QuestionView`, and 4 validator unit tests. Graph/table items are posed textually (no
   rendered plot yet). Completed the math course except partial Decimals/Percentages.
+- **Phase 15 — Science completion** (`science_experiments.json`, `science_data.json` new;
+  `science_thinking.json`, `science_measurement.json` appended). **24 new skills, 192
+  questions**, completing the science course: Scientific Thinking gained models and
+  scientific explanations; Measurement gained mass, time, temperature, volume, and
+  significant figures; new `science.experiments` (independent/dependent/controlled variables,
+  control groups, repeated trials, fair tests, sources of error) and `science.data` (tables,
+  categorical vs numerical, reading axes, bar/line/scatter graphs, trends, outliers,
+  proportional relationships, drawing conclusions). Note: the `unit` validator has **no
+  volume or temperature family**, so those items use `numeric`; only length/mass/time answers
+  use `unit`. Graph and table items are posed textually.
 
 **Test status (all green):**
 
@@ -246,14 +256,12 @@ The **engine** is complete; the outstanding work is almost entirely **curriculum
 The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
 `docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
-1. **Track A - complete the documented curriculum.** **Phases 10-14 are done; the math
-   course is complete** except partial Decimals/Percentages. The remaining Track A work is
-   **Phase 15: Science completion** - backfill Scientific Thinking (models, scientific
-   explanations) and Measurement (mass, time, temperature, volume, significant figures), and
-   author the two missing science units, **Experiments** and **Data**. The Data unit's
-   graph-reading items can reuse the textual/table approach from Phase 14 (or motivate a real
-   graph renderer). A small remaining math backfill: Decimals/Percentages partial topics
-   (rounding, finding whole/percent, increase-decrease).
+1. **Track A is essentially complete. Phases 10-15 are done** - both the mathematics and
+   science courses are authored (125 skills, 801 questions; 14 of 16 units complete, none
+   missing). The only curriculum gap left is **Phase 15b: the Decimals/Percentages backfill**
+   (rounding decimals, finding the whole, finding the percent, percent increase/decrease,
+   percentage word problems - about 5 topics, content-only). After that, Track A is closed
+   and the next meaningful work is Track B (depth pass) or Track C (Version 1 features).
 2. **Track B - content depth pass**: raise each authored skill from ~2 items to
    mastery-grade item pools (~8-15 across difficulties).
 3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content

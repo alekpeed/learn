@@ -1,0 +1,2326 @@
+{
+  "skills": [
+    {
+      "skill_id": "science.experiments.independent_variables",
+      "unit_id": "science.experiments",
+      "title": "Independent Variables",
+      "summary": "The independent variable is the one factor the investigator deliberately changes to see what effect it has. A well-designed experiment changes only one independent variable at a time.",
+      "objectives": [
+        "Identify the independent variable in an investigation.",
+        "Explain why it is deliberately changed.",
+        "Recognize that only one should change at a time."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.hypotheses",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.experiments.dependent_variables",
+      "unit_id": "science.experiments",
+      "title": "Dependent Variables",
+      "summary": "The dependent variable is the outcome the investigator measures to see whether changing the independent variable had an effect. Its value depends on what was changed, which is why it is measured rather than set.",
+      "objectives": [
+        "Identify the dependent variable in an investigation.",
+        "Distinguish it from the independent variable.",
+        "Explain why it is measured, not chosen."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.independent_variables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "science.experiments.controlled_variables",
+      "unit_id": "science.experiments",
+      "title": "Controlled Variables",
+      "summary": "Controlled variables are the factors deliberately kept the same for every trial so they cannot affect the result. Holding them constant is what allows a difference in the outcome to be attributed to the independent variable.",
+      "objectives": [
+        "Identify controlled variables in an investigation.",
+        "Explain why they are held constant.",
+        "Spot an uncontrolled factor that would spoil a test."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.dependent_variables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.experiments.control_groups",
+      "unit_id": "science.experiments",
+      "title": "Control Groups",
+      "summary": "A control group is a set of trials that does not receive the treatment being tested, providing a baseline for comparison. Without it there is nothing to judge the treated group against.",
+      "objectives": [
+        "Explain the purpose of a control group.",
+        "Identify the control group in an investigation.",
+        "Recognize when a study lacks one."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.controlled_variables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.experiments.repeated_trials",
+      "unit_id": "science.experiments",
+      "title": "Repeated Trials",
+      "summary": "Repeating an experiment several times and comparing the results reveals random variation and makes the findings more reliable. A single trial can be misleading, so results are usually averaged across trials.",
+      "objectives": [
+        "Explain why experiments are repeated.",
+        "Compute a mean across trials.",
+        "Recognize an unreliable single-trial result."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.control_groups",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.experiments.fair_tests",
+      "unit_id": "science.experiments",
+      "title": "Fair Tests",
+      "summary": "A fair test changes only the independent variable while holding every other relevant factor constant, so the comparison is valid. If more than one factor differs, the test is not fair and no cause can be identified.",
+      "objectives": [
+        "Judge whether an investigation is a fair test.",
+        "Explain what makes a test fair.",
+        "Correct an unfair test."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.controlled_variables",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 3
+    },
+    {
+      "skill_id": "science.experiments.sources_of_error",
+      "unit_id": "science.experiments",
+      "title": "Sources of Error",
+      "summary": "Experimental error is the difference between a measured value and the true value. Random errors vary unpredictably between trials and are reduced by repeating and averaging, while systematic errors shift every reading the same way and must be corrected at the source.",
+      "objectives": [
+        "Distinguish random from systematic error.",
+        "Identify likely sources of error in a procedure.",
+        "Choose an appropriate way to reduce a given error."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.experiments.repeated_trials",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.measurement.accuracy_precision",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "science.experiments.independent_variables.lesson",
+      "skill_id": "science.experiments.independent_variables",
+      "title": "Independent Variables",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify the independent variable in an investigation."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a hypothesis proposes a testable relationship, usually of the form 'if this changes, then that will happen'."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "To find out whether more light makes a plant grow taller, you decide how much light each plant gets. Light is the thing you set on purpose, so it is the independent variable. If you also changed the water, you could not tell which change caused any difference."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The independent variable is the factor the investigator deliberately changes or selects in order to test its effect. To keep results interpretable, only one independent variable is changed in an experiment."
+        },
+        {
+          "type": "worked_example",
+          "body": "In a test of how fertilizer amount affects plant height, plants get 0 g, 5 g, or 10 g of fertilizer. The amount of fertilizer is chosen by the investigator, so it is the independent variable."
+        },
+        {
+          "type": "guided_practice",
+          "body": "You test whether water temperature affects how fast sugar dissolves. The independent variable is the water temperature, because you set it."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is confusing the independent variable with the result you measure. The independent variable is what you change; the result is what you observe."
+        },
+        {
+          "type": "summary",
+          "body": "The independent variable is the single factor you deliberately change to test its effect. Changing only one at a time keeps the results interpretable."
+        },
+        {
+          "type": "review_prompt",
+          "body": "In an experiment on how light affects plant growth, which variable is independent, and why?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.dependent_variables.lesson",
+      "skill_id": "science.experiments.dependent_variables",
+      "title": "Dependent Variables",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify the dependent variable and distinguish it from the independent variable."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that the independent variable is the factor you deliberately change."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If you change how much light plants get, the thing you then measure is how tall they grow. You do not decide the height; it comes out of the experiment. Because it depends on the light, it is the dependent variable."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The dependent variable is the outcome measured in an experiment. Its value depends on the independent variable, so it is recorded rather than set by the investigator."
+        },
+        {
+          "type": "worked_example",
+          "body": "In a study of how fertilizer amount affects plant height, height is measured at the end. Height is the dependent variable because it responds to the fertilizer."
+        },
+        {
+          "type": "guided_practice",
+          "body": "You change water temperature and record how long sugar takes to dissolve. The dissolving time is the dependent variable, because you measure it."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is swapping the two variables. Ask: did I set this value (independent) or did I measure it at the end (dependent)?"
+        },
+        {
+          "type": "summary",
+          "body": "The dependent variable is the measured outcome whose value depends on the independent variable. You record it rather than choose it."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How can you tell the dependent variable from the independent variable?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.controlled_variables.lesson",
+      "skill_id": "science.experiments.controlled_variables",
+      "title": "Controlled Variables",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify controlled variables and explain their role."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the independent variable (what you change) and the dependent variable (what you measure)."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Testing whether light affects plant growth, you give every plant the same water, the same soil, and the same pot size. If one plant also got extra water, you could not say whether light or water caused it to grow taller. Keeping everything else the same isolates the factor you are testing."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Controlled variables are all the factors deliberately held constant across every trial so they do not influence the dependent variable. Controlling them is what allows a causal link between the independent and dependent variables."
+        },
+        {
+          "type": "worked_example",
+          "body": "In a light-and-plant-growth test, controlled variables include the amount of water, the soil type, the pot size, and the temperature. Only the light differs between plants."
+        },
+        {
+          "type": "guided_practice",
+          "body": "You test how slope steepness affects rolling distance. Controlled variables include using the same ball and the same floor surface each time."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is letting a second factor vary along with the independent variable. If two things change together, the results cannot show which one caused the effect."
+        },
+        {
+          "type": "summary",
+          "body": "Controlled variables are held constant across trials so only the independent variable differs. Controlling them is what makes the comparison fair and the conclusion valid."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why must factors other than the independent variable be kept the same?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.control_groups.lesson",
+      "skill_id": "science.experiments.control_groups",
+      "title": "Control Groups",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify a control group and explain why it is needed."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall controlled variables, which are kept the same across trials. A control group takes this further by omitting the treatment entirely."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If every plant gets fertilizer and they all grow, you cannot say the fertilizer helped, because you do not know how they would have grown without it. Keeping some plants fertilizer-free gives you that comparison."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A control group is the group that does not receive the treatment or experimental condition, while the experimental group does. Comparing the two shows what difference the treatment actually made."
+        },
+        {
+          "type": "worked_example",
+          "body": "Testing a fertilizer, one set of plants gets fertilizer (experimental group) and an otherwise identical set gets none (control group). If the fertilized plants grow taller, the difference can be credited to the fertilizer."
+        },
+        {
+          "type": "guided_practice",
+          "body": "In a medicine trial, the group receiving no medicine (or a placebo) is the control group; it shows what happens without treatment."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is treating every subject and having no baseline. Without a control group, you cannot know whether the observed change was caused by the treatment."
+        },
+        {
+          "type": "summary",
+          "body": "A control group receives no treatment and provides the baseline for comparison. Without one, an experiment cannot show that the treatment caused the result."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is an experiment weaker if every group receives the treatment?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.repeated_trials.lesson",
+      "skill_id": "science.experiments.repeated_trials",
+      "title": "Repeated Trials",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to explain why trials are repeated and to average results across them."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that measurements carry error, and that controlled variables keep conditions the same between trials."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Timing the same rolling ball three times gives slightly different values, because tiny differences and reaction time creep in. One trial could be unusually fast by chance. Repeating and averaging smooths out that randomness."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Repeated trials are multiple runs of the same procedure under the same conditions. They expose random variation, improve reliability, and are usually summarized with a mean (the sum of the values divided by how many there are)."
+        },
+        {
+          "type": "worked_example",
+          "body": "Three trials give 12 cm, 14 cm, and 13 cm. The mean is (12 + 14 + 13) divided by 3 = 39 / 3 = 13 cm."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Trials of 8 s, 10 s, and 9 s give a mean of 27 / 3 = 9 s."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is drawing a firm conclusion from a single trial. One result may be an outlier caused by chance, so repetition is needed."
+        },
+        {
+          "type": "summary",
+          "body": "Repeating trials reveals random variation and makes results more reliable. Results across trials are typically averaged using the mean."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why is a conclusion based on a single trial unreliable?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.fair_tests.lesson",
+      "skill_id": "science.experiments.fair_tests",
+      "title": "Fair Tests",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to judge whether a test is fair and to fix one that is not."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall independent, dependent, and controlled variables. A fair test is what you get when those roles are respected."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Comparing two paper airplanes to see which design flies farther, you must throw both with the same force, from the same height, in the same room. If you throw one harder, the test tells you nothing about the designs."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A fair test changes only the independent variable and holds all other relevant factors constant, so that any difference in the dependent variable can be attributed to the change. If two or more factors differ, the test is unfair and inconclusive."
+        },
+        {
+          "type": "worked_example",
+          "body": "Two plants are compared for light. One is in a sunny window and one in a dark cupboard, but the cupboard plant is also watered less. This is not a fair test: light and water both differ. Give both the same water to make it fair."
+        },
+        {
+          "type": "guided_practice",
+          "body": "To compare two ramps fairly, use the same ball, released from the same starting point, on the same surface, changing only the ramp."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is changing the setup for convenience mid-experiment, such as switching to a different measuring instrument, which quietly makes the test unfair."
+        },
+        {
+          "type": "summary",
+          "body": "A fair test changes one factor and keeps everything else the same, so the result can be trusted to reflect that factor."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What single rule makes an investigation a fair test?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "science.experiments.sources_of_error.lesson",
+      "skill_id": "science.experiments.sources_of_error",
+      "title": "Sources of Error",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to identify sources of error and choose ways to reduce them."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall accuracy (closeness to the true value) and precision (consistency between trials), and that trials are repeated to expose variation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If your hand wobbles on a stopwatch, sometimes you press early and sometimes late; averaging many trials cancels much of that out. But if the balance reads 2 g too high every single time, averaging will not help at all, because every reading is shifted the same way. Those are two different kinds of error."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Random error varies unpredictably between measurements and is reduced by repeating trials and averaging. Systematic error shifts every measurement in the same direction, often from a mis-calibrated instrument or a flawed procedure, and is corrected by fixing or recalibrating the source, not by averaging."
+        },
+        {
+          "type": "worked_example",
+          "body": "A balance is not zeroed and reads 2 g high on every sample. This is a systematic error: all readings are too large by the same amount. Averaging cannot fix it; the balance must be re-zeroed."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Hand-timing gives 10.2, 10.4, and 10.0 seconds. The scatter comes from reaction time, a random error, best reduced by repeating trials and averaging."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is assuming that taking more readings fixes every error. Repetition reduces random error only; a systematic error persists no matter how many times you measure."
+        },
+        {
+          "type": "summary",
+          "body": "Random errors scatter unpredictably and are reduced by repeating and averaging; systematic errors shift all readings the same way and must be corrected at the source."
+        },
+        {
+          "type": "review_prompt",
+          "body": "Why does averaging more trials fail to remove a systematic error?"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "science.experiments.independent_variables.q1",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In an experiment testing how light affects plant growth, what is the independent variable?",
+      "answer_spec": {
+        "correct_answer": "the amount of light"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the factor you set on purpose."
+        },
+        {
+          "level": 2,
+          "text": "You choose how much light each plant gets."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The amount of light is deliberately changed by the investigator, so it is the independent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the amount of light",
+          "the height of the plant",
+          "the type of pot",
+          "the room temperature"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q2",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The independent variable is best described as the one that is what?",
+      "answer_spec": {
+        "correct_answer": "deliberately changed by the investigator"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about who decides its value."
+        },
+        {
+          "level": 2,
+          "text": "The investigator sets it."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The independent variable is the factor the investigator deliberately changes.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "deliberately changed by the investigator",
+          "measured as the result",
+          "kept constant",
+          "impossible to control"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q3",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Plants receive 0 g, 5 g, or 10 g of fertilizer, and their heights are recorded. What is the independent variable?",
+      "answer_spec": {
+        "correct_answer": "the amount of fertilizer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which factor was set at different levels on purpose?"
+        },
+        {
+          "level": 2,
+          "text": "The fertilizer amounts were chosen."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The fertilizer amount is set by the investigator, making it the independent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the amount of fertilizer",
+          "the height of the plants",
+          "the number of plants",
+          "the soil brand"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q4",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why should only one independent variable change in an experiment?",
+      "answer_spec": {
+        "correct_answer": "so any effect can be traced to that one factor"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two changes at once confuse the cause."
+        },
+        {
+          "level": 2,
+          "text": "One change keeps the cause clear."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Changing one factor at a time lets you attribute any observed effect to that factor.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "so any effect can be traced to that one factor",
+          "to save time",
+          "because more variables are impossible to measure",
+          "so the hypothesis is always supported"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q5",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You test whether water temperature affects how fast sugar dissolves. What is the independent variable?",
+      "answer_spec": {
+        "correct_answer": "the water temperature"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You choose the temperatures to test."
+        },
+        {
+          "level": 2,
+          "text": "Temperature is set on purpose."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The water temperature is chosen by the investigator, so it is the independent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the water temperature",
+          "the dissolving time",
+          "the amount of sugar",
+          "the size of the cup"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q6",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "An experiment changes both the light and the water given to plants. What is the problem?",
+      "answer_spec": {
+        "correct_answer": "you cannot tell which change caused the effect"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two things changed at once."
+        },
+        {
+          "level": 2,
+          "text": "The cause becomes ambiguous."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With two factors changing, any difference cannot be attributed to one of them.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "you cannot tell which change caused the effect",
+          "the plants will die",
+          "the experiment takes too long",
+          "there is no problem"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "there is no problem",
+          "misconception_id": "mc.science.experiments.multiple_independent_variables"
+        }
+      ]
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q7",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a hypothesis 'if the slope is steeper, then the ball rolls farther', which is the independent variable?",
+      "answer_spec": {
+        "correct_answer": "the steepness of the slope"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 'if' part names what you change."
+        },
+        {
+          "level": 2,
+          "text": "The slope steepness is set."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The 'if' clause names the independent variable: the steepness of the slope.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the steepness of the slope",
+          "the distance the ball rolls",
+          "the mass of the ball",
+          "the floor type"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.independent_variables.q8",
+      "skill_id": "science.experiments.independent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which question could an independent variable answer?",
+      "answer_spec": {
+        "correct_answer": "What did I change on purpose?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The independent variable is chosen by the investigator."
+        },
+        {
+          "level": 2,
+          "text": "It answers what was changed."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The independent variable answers 'what did I deliberately change?'.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "What did I change on purpose?",
+          "What did I measure?",
+          "What stayed the same?",
+          "What went wrong?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q1",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In an experiment testing how light affects plant growth, what is the dependent variable?",
+      "answer_spec": {
+        "correct_answer": "the height of the plant"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the outcome you measure."
+        },
+        {
+          "level": 2,
+          "text": "Plant height is recorded at the end."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Plant height is measured as the outcome, so it is the dependent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the height of the plant",
+          "the amount of light",
+          "the size of the pot",
+          "the type of seed"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q2",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The dependent variable is the one that is what?",
+      "answer_spec": {
+        "correct_answer": "measured as the outcome"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You do not choose its value."
+        },
+        {
+          "level": 2,
+          "text": "It is measured."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The dependent variable is measured as the outcome of the experiment.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "measured as the outcome",
+          "deliberately changed",
+          "always kept constant",
+          "never recorded"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q3",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "You change water temperature and record how long sugar takes to dissolve. What is the dependent variable?",
+      "answer_spec": {
+        "correct_answer": "the dissolving time"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What did you measure at the end?"
+        },
+        {
+          "level": 2,
+          "text": "The time was recorded, not chosen."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The dissolving time is measured, making it the dependent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the dissolving time",
+          "the water temperature",
+          "the amount of sugar",
+          "the stirring speed"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q4",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why is it called the 'dependent' variable?",
+      "answer_spec": {
+        "correct_answer": "because its value depends on the independent variable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Its value follows from what you changed."
+        },
+        {
+          "level": 2,
+          "text": "It depends on the independent variable."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "It is called dependent because its value depends on the factor that was changed.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "because its value depends on the independent variable",
+          "because it depends on the weather",
+          "because scientists depend on it",
+          "because it cannot be measured"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q5",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In 'if the slope is steeper, then the ball rolls farther', which is the dependent variable?",
+      "answer_spec": {
+        "correct_answer": "the distance the ball rolls"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 'then' part names the outcome."
+        },
+        {
+          "level": 2,
+          "text": "Distance is measured."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The 'then' clause names the dependent variable: the distance the ball rolls.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the distance the ball rolls",
+          "the steepness of the slope",
+          "the ball's color",
+          "the room size"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q6",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which question does the dependent variable answer?",
+      "answer_spec": {
+        "correct_answer": "What did I measure?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the recorded outcome."
+        },
+        {
+          "level": 2,
+          "text": "It answers what was measured."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The dependent variable answers 'what did I measure?'.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "What did I measure?",
+          "What did I change?",
+          "What stayed the same?",
+          "Who did the experiment?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q7",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student sets three light levels and measures leaf count. Which pair is correct?",
+      "answer_spec": {
+        "correct_answer": "independent: light level; dependent: leaf count"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The set factor is independent; the measured one is dependent."
+        },
+        {
+          "level": 2,
+          "text": "Light was set, leaves were counted."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Light level was deliberately set (independent) and leaf count was measured (dependent).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "independent: light level; dependent: leaf count",
+          "independent: leaf count; dependent: light level",
+          "both are independent",
+          "both are dependent"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "independent: leaf count; dependent: light level",
+          "misconception_id": "mc.science.experiments.swapped_variables"
+        }
+      ]
+    },
+    {
+      "question_id": "science.experiments.dependent_variables.q8",
+      "skill_id": "science.experiments.dependent_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "On a results graph, the dependent variable is usually plotted on which axis?",
+      "answer_spec": {
+        "correct_answer": "the vertical (y) axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The measured outcome goes up the side."
+        },
+        {
+          "level": 2,
+          "text": "That is the y-axis."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "By convention the measured dependent variable is plotted on the vertical y-axis.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["the vertical (y) axis", "the horizontal (x) axis", "neither axis", "both axes"]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q1",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Controlled variables are the factors that are what?",
+      "answer_spec": {
+        "correct_answer": "kept the same in every trial"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They must not vary."
+        },
+        {
+          "level": 2,
+          "text": "They are held constant."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Controlled variables are deliberately kept constant across all trials.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "kept the same in every trial",
+          "changed on purpose",
+          "measured as the result",
+          "ignored entirely"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q2",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a test of how light affects plant growth, which is a controlled variable?",
+      "answer_spec": {
+        "correct_answer": "the amount of water each plant receives"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It must be identical for every plant."
+        },
+        {
+          "level": 2,
+          "text": "Water is held constant."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Water is kept the same for every plant so only light differs.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the amount of water each plant receives",
+          "the amount of light",
+          "the plant's height",
+          "the growth rate"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q3",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why are controlled variables kept constant?",
+      "answer_spec": {
+        "correct_answer": "so the result can be attributed to the independent variable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Other factors must not interfere."
+        },
+        {
+          "level": 2,
+          "text": "Constant factors cannot explain a difference."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Holding other factors constant means any difference in the outcome must come from the independent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "so the result can be attributed to the independent variable",
+          "to make the experiment faster",
+          "because they cannot be measured",
+          "to increase the number of variables"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q4",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "In a light-and-plant-growth experiment, select every controlled variable.",
+      "answer_spec": {
+        "correct_answer": ["soil type", "pot size", "water amount"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Controlled variables are held constant."
+        },
+        {
+          "level": 2,
+          "text": "Light is changed and height is measured; the rest are held constant."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Soil type, pot size, and water amount are held constant; light is the independent variable and height the dependent one.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["soil type", "pot size", "light amount", "water amount", "plant height"]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q5",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "One plant in a light experiment accidentally gets extra water. What has happened?",
+      "answer_spec": {
+        "correct_answer": "a controlled variable was not held constant, so the result is unreliable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Water should have been the same for all."
+        },
+        {
+          "level": 2,
+          "text": "An uncontrolled factor spoils the comparison."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Water was supposed to be controlled; letting it vary means the outcome cannot be attributed to light alone.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a controlled variable was not held constant, so the result is unreliable",
+          "nothing important",
+          "the independent variable changed",
+          "the hypothesis is proven"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q6",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a test of how slope steepness affects rolling distance, which should be controlled?",
+      "answer_spec": {
+        "correct_answer": "the ball used each time"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the same ball for every trial."
+        },
+        {
+          "level": 2,
+          "text": "That keeps the comparison fair."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Using the same ball each time controls a factor that could otherwise affect distance.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the ball used each time",
+          "the slope steepness",
+          "the distance rolled",
+          "the trial number"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q7",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which question do controlled variables answer?",
+      "answer_spec": {
+        "correct_answer": "What did I keep the same?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They are the constants."
+        },
+        {
+          "level": 2,
+          "text": "They answer what stayed the same."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Controlled variables answer 'what did I keep the same?'.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "What did I keep the same?",
+          "What did I change?",
+          "What did I measure?",
+          "How long did it take?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.controlled_variables.q8",
+      "skill_id": "science.experiments.controlled_variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "An experiment has no controlled variables. What can you conclude from it?",
+      "answer_spec": {
+        "correct_answer": "very little, because any factor could have caused the result"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Many things could differ between trials."
+        },
+        {
+          "level": 2,
+          "text": "The cause is unclear."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Without controls, any of several factors could explain the outcome, so no firm conclusion is possible.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "very little, because any factor could have caused the result",
+          "that the hypothesis is correct",
+          "that the hypothesis is wrong",
+          "the exact cause of the effect"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q1",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the purpose of a control group?",
+      "answer_spec": {
+        "correct_answer": "to provide a baseline for comparison"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It shows what happens without the treatment."
+        },
+        {
+          "level": 2,
+          "text": "It is the comparison group."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The control group shows what happens without the treatment, giving a baseline to compare against.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "to provide a baseline for comparison",
+          "to receive extra treatment",
+          "to make the experiment bigger",
+          "to prove the hypothesis"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q2",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a fertilizer test, which set of plants is the control group?",
+      "answer_spec": {
+        "correct_answer": "the plants that receive no fertilizer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The control does not get the treatment."
+        },
+        {
+          "level": 2,
+          "text": "No fertilizer means control."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The plants receiving no fertilizer form the control group.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the plants that receive no fertilizer",
+          "the plants that receive the most fertilizer",
+          "the tallest plants",
+          "all the plants"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q3",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Every plant in a study receives fertilizer and they all grow. What is the flaw?",
+      "answer_spec": {
+        "correct_answer": "there is no control group, so the growth cannot be credited to the fertilizer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Nothing shows what would happen without it."
+        },
+        {
+          "level": 2,
+          "text": "A baseline is missing."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Without an untreated control group, the growth might have happened anyway, so the fertilizer cannot be credited.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "there is no control group, so the growth cannot be credited to the fertilizer",
+          "too many plants were used",
+          "the plants grew too fast",
+          "there is no flaw"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "there is no flaw",
+          "misconception_id": "mc.science.experiments.no_control_group"
+        }
+      ]
+    },
+    {
+      "question_id": "science.experiments.control_groups.q4",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In a medicine trial, what does the control group receive?",
+      "answer_spec": {
+        "correct_answer": "no medicine, or a placebo"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The control does not get the real treatment."
+        },
+        {
+          "level": 2,
+          "text": "It gets nothing or a placebo."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The control group receives no active medicine, often a placebo, to provide a baseline.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "no medicine, or a placebo",
+          "double the medicine",
+          "the medicine plus a vitamin",
+          "a different illness"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q5",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "The group that does receive the treatment is called the what?",
+      "answer_spec": {
+        "correct_answer": "experimental group"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the opposite of the control group."
+        },
+        {
+          "level": 2,
+          "text": "It is the experimental group."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The group receiving the treatment is the experimental group.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["experimental group", "control group", "baseline group", "placebo group"]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q6",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Apart from the treatment, how should the control group compare to the experimental group?",
+      "answer_spec": {
+        "correct_answer": "as similar as possible in every other way"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Only the treatment should differ."
+        },
+        {
+          "level": 2,
+          "text": "Everything else should match."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The two groups should be alike in every respect except the treatment, so only it can explain a difference.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "as similar as possible in every other way",
+          "as different as possible",
+          "much larger",
+          "measured differently"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.control_groups.q7",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The control plants grew just as tall as the fertilized plants. What does this suggest?",
+      "answer_spec": {
+        "correct_answer": "the fertilizer had little or no effect"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two outcomes."
+        },
+        {
+          "level": 2,
+          "text": "No difference means no detectable effect."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "If both groups grew the same, the fertilizer made no measurable difference.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the fertilizer had little or no effect",
+          "the fertilizer worked well",
+          "the experiment failed",
+          "the control group was treated"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "science.experiments.control_groups.q8",
+      "skill_id": "science.experiments.control_groups",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A control group is most useful because it answers which question?",
+      "answer_spec": {
+        "correct_answer": "What would have happened without the treatment?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the no-treatment case."
+        },
+        {
+          "level": 2,
+          "text": "It shows the outcome without treatment."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The control group answers what would have happened without the treatment.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "What would have happened without the treatment?",
+          "How large is the sample?",
+          "Who performed the experiment?",
+          "How long did it take?"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q1",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Why are experiments repeated several times?",
+      "answer_spec": {
+        "correct_answer": "to reveal random variation and make results more reliable"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A single result can be a fluke."
+        },
+        {
+          "level": 2,
+          "text": "Repetition exposes and reduces randomness."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Repeating trials shows random variation and makes conclusions more reliable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "to reveal random variation and make results more reliable",
+          "to use up materials",
+          "to change the hypothesis",
+          "to make the report longer"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q2",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Three trials give 12 cm, 14 cm, and 13 cm. What is the mean, in centimeters?",
+      "answer_spec": {
+        "correct_answer": 13
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the values, then divide by 3."
+        },
+        {
+          "level": 2,
+          "text": "39 divided by 3 is 13."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The mean is (12 + 14 + 13) / 3 = 13 cm.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q3",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Three timed trials give 8 s, 10 s, and 9 s. What is the mean, in seconds?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add and divide by 3."
+        },
+        {
+          "level": 2,
+          "text": "27 divided by 3 is 9."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The mean is (8 + 10 + 9) / 3 = 9 s.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q4",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student runs one trial and draws a firm conclusion. What is the problem?",
+      "answer_spec": {
+        "correct_answer": "a single trial may be unusual by chance"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One result might be a fluke."
+        },
+        {
+          "level": 2,
+          "text": "Randomness is not ruled out."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "One trial can be an outlier produced by chance, so it cannot support a firm conclusion.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "a single trial may be unusual by chance",
+          "one trial is always wrong",
+          "the hypothesis is invalid",
+          "there is no problem"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "there is no problem",
+          "misconception_id": "mc.science.experiments.single_trial_conclusion"
+        }
+      ]
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q5",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Four trials give 20, 22, 21, and 21 grams. What is the mean, in grams?",
+      "answer_spec": {
+        "correct_answer": 21
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add all four, then divide by 4."
+        },
+        {
+          "level": 2,
+          "text": "84 divided by 4 is 21."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The mean is (20 + 22 + 21 + 21) / 4 = 84 / 4 = 21 g.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q6",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Repeated trials give widely differing results. What does this suggest?",
+      "answer_spec": {
+        "correct_answer": "the measurement has low reliability"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Consistent results indicate reliability."
+        },
+        {
+          "level": 2,
+          "text": "Wide spread indicates the opposite."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A wide spread across trials indicates the measurement or procedure is not reliable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the measurement has low reliability",
+          "the results are very precise",
+          "the hypothesis is proven",
+          "the control group failed"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q7",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the mean of a set of trial results?",
+      "answer_spec": {
+        "correct_answer": "the sum divided by the number of trials"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the average."
+        },
+        {
+          "level": 2,
+          "text": "Add them up and divide."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The mean is the sum of the values divided by how many there are.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the sum divided by the number of trials",
+          "the largest value",
+          "the smallest value",
+          "the difference between the largest and smallest"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.repeated_trials.q8",
+      "skill_id": "science.experiments.repeated_trials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Five trials give 5, 6, 5, 7, and 7 seconds. What is the mean, in seconds?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add all five, then divide by 5."
+        },
+        {
+          "level": 2,
+          "text": "30 divided by 5 is 6."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The mean is (5 + 6 + 5 + 7 + 7) / 5 = 30 / 5 = 6 s.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q1",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What makes an investigation a fair test?",
+      "answer_spec": {
+        "correct_answer": "only the independent variable changes; everything else is kept the same"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One change at a time."
+        },
+        {
+          "level": 2,
+          "text": "Everything else must be constant."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A fair test changes only the independent variable and holds all other relevant factors constant.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "only the independent variable changes; everything else is kept the same",
+          "everything changes at once",
+          "nothing changes",
+          "the result matches the hypothesis"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q2",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "One plant sits in sunlight and another in a cupboard, but the cupboard plant is also watered less. Is this a fair test of light?",
+      "answer_spec": {
+        "correct_answer": "No, because water also differs"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count how many factors differ."
+        },
+        {
+          "level": 2,
+          "text": "Two factors changed, not one."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Both light and water differ, so any growth difference cannot be attributed to light alone.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "No, because water also differs",
+          "Yes, because both are plants",
+          "Yes, because light is the main factor",
+          "No, because plants were used"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q3",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "How would you fix the test above?",
+      "answer_spec": {
+        "correct_answer": "give both plants the same amount of water"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Remove the extra difference."
+        },
+        {
+          "level": 2,
+          "text": "Control the water."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Giving both plants identical water leaves light as the only difference, making the test fair.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "give both plants the same amount of water",
+          "put both plants in the cupboard",
+          "use a bigger plant",
+          "stop measuring height"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q4",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "To compare two ramp designs fairly, what should stay the same?",
+      "answer_spec": {
+        "correct_answer": "the ball and its release point"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Only the ramp should differ."
+        },
+        {
+          "level": 2,
+          "text": "Use the same ball, released the same way."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Using the same ball and release point ensures only the ramp design differs.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the ball and its release point",
+          "the ramp design",
+          "the measured distance",
+          "the person watching"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q5",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Two paper airplanes are compared, but one is thrown much harder. What is wrong?",
+      "answer_spec": {
+        "correct_answer": "throwing force differs, so the designs cannot be compared"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "More than one factor changed."
+        },
+        {
+          "level": 2,
+          "text": "Force was not controlled."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because throwing force differs as well as the design, the comparison is unfair and inconclusive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "throwing force differs, so the designs cannot be compared",
+          "paper airplanes cannot be tested",
+          "the room was too small",
+          "nothing is wrong"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q6",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A student switches to a different ruler halfway through an experiment. Why is this a problem?",
+      "answer_spec": {
+        "correct_answer": "it introduces a second change, making the test unfair"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The measuring method should stay constant."
+        },
+        {
+          "level": 2,
+          "text": "Another factor now varies."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Changing instruments mid-experiment introduces a second variable, undermining the fairness of the test.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "it introduces a second change, making the test unfair",
+          "rulers cannot measure",
+          "the experiment becomes faster",
+          "it has no effect"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q7",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In a fair test, how many independent variables change?",
+      "answer_spec": {
+        "correct_answer": "one"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Only the factor being tested."
+        },
+        {
+          "level": 2,
+          "text": "Exactly one."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A fair test changes exactly one independent variable.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": ["one", "two", "as many as possible", "none"]
+      }
+    },
+    {
+      "question_id": "science.experiments.fair_tests.q8",
+      "skill_id": "science.experiments.fair_tests",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why does an unfair test give an inconclusive result?",
+      "answer_spec": {
+        "correct_answer": "because the effect cannot be traced to a single factor"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Several factors changed together."
+        },
+        {
+          "level": 2,
+          "text": "The cause is ambiguous."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "When several factors differ, no single one can be identified as the cause, so the result is inconclusive.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "because the effect cannot be traced to a single factor",
+          "because the data is always wrong",
+          "because it takes too long",
+          "because there is no hypothesis"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q1",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A balance is not zeroed and reads 2 g high every time. What kind of error is this?",
+      "answer_spec": {
+        "correct_answer": "systematic error"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Every reading is shifted the same way."
+        },
+        {
+          "level": 2,
+          "text": "A consistent shift is systematic."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A consistent shift in one direction on every reading is a systematic error.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["systematic error", "random error", "no error", "human error only"]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q2",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Hand-timing gives 10.2, 10.4, and 10.0 seconds. What kind of error causes this scatter?",
+      "answer_spec": {
+        "correct_answer": "random error"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The values vary unpredictably."
+        },
+        {
+          "level": 2,
+          "text": "Unpredictable variation is random error."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Reaction-time variation scatters readings unpredictably, which is random error.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["random error", "systematic error", "calculation error", "no error"]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q3",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "How is random error best reduced?",
+      "answer_spec": {
+        "correct_answer": "by repeating trials and averaging"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Randomness cancels out over many trials."
+        },
+        {
+          "level": 2,
+          "text": "Repeat and average."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Repeating trials and averaging reduces random error because the variations tend to cancel.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "by repeating trials and averaging",
+          "by recalibrating the instrument",
+          "by using one careful trial",
+          "by changing the hypothesis"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q4",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "How is systematic error best reduced?",
+      "answer_spec": {
+        "correct_answer": "by finding and correcting its cause, such as recalibrating the instrument"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Averaging will not help."
+        },
+        {
+          "level": 2,
+          "text": "Fix the source of the shift."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A systematic error must be corrected at its source, for example by recalibrating the instrument.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "by finding and correcting its cause, such as recalibrating the instrument",
+          "by repeating trials and averaging",
+          "by ignoring outliers",
+          "by measuring faster"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "by repeating trials and averaging",
+          "misconception_id": "mc.science.experiments.averaging_fixes_systematic"
+        }
+      ]
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q5",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why does averaging more trials not remove a systematic error?",
+      "answer_spec": {
+        "correct_answer": "because every reading is shifted the same way"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The shift does not cancel."
+        },
+        {
+          "level": 2,
+          "text": "All readings are off in the same direction."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because a systematic error shifts every reading identically, averaging preserves the shift.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "because every reading is shifted the same way",
+          "because averages are unreliable",
+          "because the trials are too few",
+          "it does remove it"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q6",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A thermometer is always read from above eye level, giving a slightly high value each time. What error is this?",
+      "answer_spec": {
+        "correct_answer": "systematic error"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The same mistake occurs every reading."
+        },
+        {
+          "level": 2,
+          "text": "Consistent bias is systematic."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "A consistent viewing mistake biases every reading the same way, which is systematic error.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["systematic error", "random error", "no error at all", "rounding error"]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q7",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is experimental error?",
+      "answer_spec": {
+        "correct_answer": "the difference between a measured value and the true value"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is about measurement, not mistakes in general."
+        },
+        {
+          "level": 2,
+          "text": "It is the gap from the true value."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Experimental error is the difference between what was measured and the true value.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "the difference between a measured value and the true value",
+          "a mistake in arithmetic",
+          "a wrong hypothesis",
+          "an untidy report"
+        ]
+      }
+    },
+    {
+      "question_id": "science.experiments.sources_of_error.q8",
+      "skill_id": "science.experiments.sources_of_error",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Select every likely source of random error in a hand-timed experiment.",
+      "answer_spec": {
+        "correct_answer": [
+          "reaction time when starting the stopwatch",
+          "small differences in release position"
+        ]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Random errors vary from trial to trial."
+        },
+        {
+          "level": 2,
+          "text": "A mis-calibrated instrument is systematic, not random."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Reaction time and small release differences vary unpredictably (random); an uncalibrated balance and a consistently mis-read scale are systematic.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "parameters": {
+        "options": [
+          "reaction time when starting the stopwatch",
+          "an uncalibrated balance",
+          "small differences in release position",
+          "always reading the scale from the same wrong angle"
+        ]
+      },
+      "transfer_flag": true
+    }
+  ]
+}
