@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 15 shipped)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 15b shipped - Track A complete)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -10,8 +10,8 @@ Read it top to bottom, then read `docs/spec/00_README.md` for the product vision
 > how far the vision reaches - including trigonometry and calculus). Its companion
 > `docs/planning/ROADMAP.md` sequences the remaining work phase by phase. Two facts that
 > surprised a prior session and are easy to get wrong: (1) the documented curriculum is now
-> **~96% authored** (**125 skills, 801 questions**; 14 of 16 units complete, none missing) -
-> the only gap left is a small Decimals/Percentages backfill; and (2) **trigonometry and
+> **fully authored** (**130 skills, 843 questions**; all 16 units complete) - remaining
+> curriculum work is depth, not coverage; and (2) **trigonometry and
 > calculus are named in the vision but have no authored curriculum** - completing 100% of the
 > documented spec lands a learner at introductory algebra + linear graphs, not trig. Reaching
 > trig needs new Geometry, Algebra II, and Precalculus courses (ROADMAP Track D).
@@ -35,9 +35,8 @@ shipped on top of it. Everything is committed and pushed.
 - Learning engine: five-dimension mastery scoring, spaced-review scheduler, skill-state
   machine, prerequisite gating + remediation, progress projection.
 - Adaptive diagnostic: binary-search placement over the skill graph.
-- Content: **125 skills and 801 questions** across 15 unit files (12 math units + 4 science
-  units). **Both courses are complete** except the Decimals/Percentages unit, which is still
-  partial (rounding, finding the whole/percent, increase-decrease, word problems).
+- Content: **130 skills and 843 questions** across 15 unit files (12 math units + 4 science
+  units). **The documented curriculum is complete** - all 16 units built, none partial.
 - **New engine capability (Phase 14):** a deterministic **`point` validator** for
   ordered-pair/coordinate answers (validation-engine), added to the question-type and
   validator schema enums, with a client point input. This is the app's first content-driven
@@ -109,6 +108,10 @@ shipped on top of it. Everything is committed and pushed.
   proportional relationships, drawing conclusions). Note: the `unit` validator has **no
   volume or temperature family**, so those items use `numeric`; only length/mass/time answers
   use `unit`. Graph and table items are posed textually.
+- **Phase 15b — Decimals & Percentages backfill** (appended to `decimals_percents.json`).
+  **5 skills, 42 questions**: rounding decimals, finding the whole, finding the percent,
+  percent increase/decrease, and percentage word problems (including successive percent
+  changes). This closed the last curriculum gap; the unit is now 13 skills.
 
 **Test status (all green):**
 
@@ -256,12 +259,11 @@ The **engine** is complete; the outstanding work is almost entirely **curriculum
 The authoritative plan is in `docs/planning/ROADMAP.md`, grounded in
 `docs/planning/PROJECT_SCOPE.md`. Summary of the sequenced tracks:
 
-1. **Track A is essentially complete. Phases 10-15 are done** - both the mathematics and
-   science courses are authored (125 skills, 801 questions; 14 of 16 units complete, none
-   missing). The only curriculum gap left is **Phase 15b: the Decimals/Percentages backfill**
-   (rounding decimals, finding the whole, finding the percent, percent increase/decrease,
-   percentage word problems - about 5 topics, content-only). After that, Track A is closed
-   and the next meaningful work is Track B (depth pass) or Track C (Version 1 features).
+1. **TRACK A IS COMPLETE (Phases 10-15b).** The entire documented curriculum is authored:
+   130 skills, 843 questions, all 16 units built. The spec's Completion Rule is satisfied.
+   The next work is **Track B (Phase 16, content depth pass)** - the original 41 MVP-slice
+   skills still carry only ~2 practice items each while everything from Phase 10 on has
+   ~8-15 - or **Track C (remaining Version 1 features)**.
 2. **Track B - content depth pass**: raise each authored skill from ~2 items to
    mastery-grade item pools (~8-15 across difficulties).
 3. **Track C - remaining Version 1 features**: deeper misconception diagnosis, content

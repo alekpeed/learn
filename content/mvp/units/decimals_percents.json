@@ -250,6 +250,151 @@
       },
       "content_version": "0.1.0",
       "difficulty_band": 3
+    },
+    {
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "unit_id": "math.decimals_percents",
+      "title": "Rounding Decimals",
+      "summary": "Rounding a decimal replaces it with a nearby simpler value to a chosen place. Look at the digit just to the right of the rounding place: if it is 5 or more, round up; if it is less than 5, round down (keep the digit as it is).",
+      "objectives": [
+        "Round a decimal to the nearest whole number.",
+        "Round a decimal to a given decimal place.",
+        "Explain the rule for deciding whether to round up or down."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.reading_comparing_decimals",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.number_foundations.rounding",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 2
+    },
+    {
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "unit_id": "math.decimals_percents",
+      "title": "Finding the Whole",
+      "summary": "Sometimes you know a percent and the amount it represents, and need the original whole. Divide the part by the percent written as a decimal: if 25% of a number is 20, the whole is 20 divided by 0.25, which is 80.",
+      "objectives": [
+        "Find the whole given a part and its percent.",
+        "Set up the division correctly.",
+        "Check the answer by taking the percent of the result."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_of_number",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "unit_id": "math.decimals_percents",
+      "title": "Finding the Percent",
+      "summary": "To find what percent one number is of another, divide the part by the whole and multiply by 100. For example, 15 out of 60 is 15 divided by 60 = 0.25, which is 25%.",
+      "objectives": [
+        "Find what percent one number is of another.",
+        "Convert the resulting decimal to a percent.",
+        "Apply the method to scores and shares."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_of_number",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.decimals_percents.percent_change",
+      "unit_id": "math.decimals_percents",
+      "title": "Percent Increase and Decrease",
+      "summary": "A percent increase adds a percent of the original to itself, and a percent decrease subtracts it. To find the new amount, work out the change and add or subtract it, or multiply by 1 plus (or minus) the percent as a decimal.",
+      "objectives": [
+        "Compute a percent increase.",
+        "Compute a percent decrease.",
+        "Find a sale price or an increased amount in one step."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_of_number",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "unit_id": "math.decimals_percents",
+      "title": "Percentage Word Problems",
+      "summary": "Percentage word problems describe real situations such as discounts, tips, taxes, and test scores. The key step is deciding which of the three percent questions is being asked: a percent of a number, what percent one number is of another, or the original whole.",
+      "objectives": [
+        "Identify which percent calculation a word problem needs.",
+        "Solve real percent problems.",
+        "Check that the answer is reasonable."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.decimals_percents.finding_the_percent",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_change",
+          "minimum_threshold": 75,
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "0.1.0",
+      "difficulty_band": 4
     }
   ],
   "lessons": [
@@ -634,6 +779,230 @@
         {
           "type": "review_prompt",
           "body": "Starting from the fraction 3/5, what steps turn it into a percent, and what percent do you get?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.rounding_decimals.lesson",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "title": "Rounding Decimals",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to round decimals to the nearest whole number, tenth, or hundredth."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall rounding whole numbers and the decimal places: tenths, hundredths, thousandths."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "On a number line, 3.7 sits between 3 and 4 but is closer to 4, so rounding to the nearest whole number gives 4. The digit right after the rounding place tells you which side you are closer to, and 5 is the agreed tipping point where we round up."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To round to a given place, look at the digit immediately to its right. If that digit is 5 or greater, increase the rounding digit by one; otherwise leave it unchanged. Then drop all digits to the right of the rounding place."
+        },
+        {
+          "type": "representation",
+          "body": "Picture a number line from 3 to 4 divided into tenths. The halfway mark is 3.5. Anything at or above 3.5 rounds to 4; anything below rounds to 3."
+        },
+        {
+          "type": "worked_example",
+          "body": "Round 3.68 to the nearest tenth. The tenths digit is 6, and the digit to its right is 8. Since 8 is 5 or more, round the 6 up to 7, giving 3.7."
+        },
+        {
+          "type": "guided_practice",
+          "body": "Round 2.4 to the nearest whole number. The digit after the ones place is 4, which is less than 5, so the answer stays 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is looking at the wrong digit, or rounding one place at a time from the far right. Use only the single digit immediately to the right of the rounding place."
+        },
+        {
+          "type": "summary",
+          "body": "Round by checking the digit just right of the rounding place: 5 or more rounds up, less than 5 leaves the digit unchanged. Then drop the remaining digits."
+        },
+        {
+          "type": "review_prompt",
+          "body": "When rounding 3.68 to the nearest tenth, which digit do you check, and what is the answer?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.finding_the_whole.lesson",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "title": "Finding the Whole",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find the original whole when you know a part and what percent it is."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that finding a percent of a number multiplies by the percent as a decimal. This lesson reverses that step."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If 25% of a class is 6 students, then 6 people make up a quarter of the class, so the whole class is four times as big: 24. Undoing a multiplication means dividing."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "If a part equals a given percent of an unknown whole, then whole = part divided by (percent / 100). Checking is easy: take that percent of your answer and confirm you get the part back."
+        },
+        {
+          "type": "worked_example",
+          "body": "25% of a number is 20. What is the number? Write 25% as 0.25 and divide: 20 divided by 0.25 = 80. Check: 0.25 times 80 = 20, correct."
+        },
+        {
+          "type": "guided_practice",
+          "body": "50% of a number is 15. Divide: 15 divided by 0.5 = 30. Check: half of 30 is 15."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is multiplying by the percent instead of dividing. If the part is smaller than the whole, the whole must be larger than the part, so division is the right move."
+        },
+        {
+          "type": "summary",
+          "body": "To find the whole, divide the part by the percent expressed as a decimal, then check by taking that percent of your answer."
+        },
+        {
+          "type": "review_prompt",
+          "body": "If 25% of a number is 20, how do you find the number, and what is it?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.finding_the_percent.lesson",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "title": "Finding the Percent",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to work out what percent one quantity is of another."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall that a percent is a fraction out of 100, and that multiplying a decimal by 100 turns it into a percent."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Scoring 15 out of 60 on a test, the fraction 15/60 tells you how much you got. Turning that fraction into a decimal and then into hundredths tells you the score as a percent: 25%."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "To find what percent a part is of a whole, compute part divided by whole, then multiply by 100 and add the percent sign: percent = (part / whole) times 100."
+        },
+        {
+          "type": "worked_example",
+          "body": "What percent of 60 is 15? Divide: 15 / 60 = 0.25. Multiply by 100: 25. So 15 is 25% of 60."
+        },
+        {
+          "type": "guided_practice",
+          "body": "What percent of 50 is 10? Divide: 10 / 50 = 0.2. Times 100 gives 20%."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is dividing the wrong way round. The part goes on top; if your answer is above 100% but the part is smaller than the whole, you have divided upside down."
+        },
+        {
+          "type": "summary",
+          "body": "Percent = (part divided by whole) times 100. Divide the part by the whole first, then convert the decimal to a percent."
+        },
+        {
+          "type": "review_prompt",
+          "body": "How do you work out what percent 15 is of 60?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.percent_change.lesson",
+      "skill_id": "math.decimals_percents.percent_change",
+      "title": "Percent Increase and Decrease",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to find new amounts after a percent increase or decrease."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall finding a percent of a number by multiplying by the percent as a decimal."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A $50 coat with 20% off loses $10, leaving $40. You can do this in two steps (find the discount, then subtract) or in one (pay 80% of the price, since 100% - 20% = 80%). Both give the same answer."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "For a percent increase, new amount = original + (percent/100) times original, which equals original times (1 + percent/100). For a percent decrease, subtract instead: original times (1 - percent/100)."
+        },
+        {
+          "type": "worked_example",
+          "body": "A $50 item is reduced by 20%. The discount is 0.2 times 50 = $10, so the new price is 50 - 10 = $40. In one step: 0.8 times 50 = $40."
+        },
+        {
+          "type": "guided_practice",
+          "body": "A $200 salary rises by 10%. The increase is 0.1 times 200 = $20, so the new amount is $220. In one step: 1.1 times 200 = 220."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is reporting the change instead of the new amount. If a $50 item drops 20%, the answer to 'what is the new price' is $40, not the $10 discount."
+        },
+        {
+          "type": "summary",
+          "body": "Percent increase multiplies by (1 + percent as a decimal); percent decrease multiplies by (1 - percent as a decimal). Or find the change and add or subtract it."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What are the two ways to find the price of a $50 item after a 20% discount?"
+        }
+      ]
+    },
+    {
+      "lesson_id": "math.decimals_percents.percent_word_problems.lesson",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "title": "Percentage Word Problems",
+      "content_version": "0.1.0",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "By the end of this lesson, you will be able to recognize and solve the three main kinds of percent word problem."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "Recall the three tools: percent of a number (multiply), what percent one is of another (divide part by whole, times 100), and finding the whole (divide part by the percent)."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Every percent problem gives you two of these three things - the percent, the part, and the whole - and asks for the third. Working out which one is missing tells you immediately what to do."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "If the percent and whole are known, multiply to get the part. If the part and whole are known, divide part by whole and multiply by 100 to get the percent. If the part and percent are known, divide to get the whole."
+        },
+        {
+          "type": "worked_example",
+          "body": "A restaurant bill is $40 and you leave an 18% tip. The percent and whole are known, so multiply: 0.18 times 40 = $7.20 tip."
+        },
+        {
+          "type": "guided_practice",
+          "body": "You got 45 of 50 questions right. The part and whole are known, so divide: 45 / 50 = 0.9, which is 90%."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A common mistake is applying the wrong operation because the numbers were not sorted into percent, part, and whole first. Identify what is missing before calculating."
+        },
+        {
+          "type": "summary",
+          "body": "Sort a percent word problem into percent, part, and whole, see which is missing, and use the matching method: multiply, divide-and-times-100, or divide."
+        },
+        {
+          "type": "review_prompt",
+          "body": "What three quantities appear in every percent problem, and how do you know which method to use?"
         }
       ]
     }
@@ -2961,6 +3330,1131 @@
       "explanation": "0.8 times 100 is 80, so a score of 0.8 is 80%.",
       "content_version": "0.1.0",
       "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q1",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "Round 3.7 to the nearest whole number.",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q2",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 1,
+      "prompt": "Round 2.4 to the nearest whole number.",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 43
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q3",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Round 3.68 to the nearest tenth.",
+      "answer_spec": {
+        "correct_answer": 3.7
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 3.7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q4",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "Round 0.42 to the nearest tenth.",
+      "answer_spec": {
+        "correct_answer": 0.4
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 0.4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q5",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Round 5.55 to the nearest tenth.",
+      "answer_spec": {
+        "correct_answer": 5.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 5.6.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q6",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Round 1.234 to the nearest hundredth.",
+      "answer_spec": {
+        "correct_answer": 1.23
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 1.23.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q7",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Round 9.87 to the nearest whole number.",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 10.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q8",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Round 0.06 to the nearest tenth.",
+      "answer_spec": {
+        "correct_answer": 0.1
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rounding place, then look at the digit immediately to its right."
+        },
+        {
+          "level": 2,
+          "text": "If that digit is 5 or more, round up; otherwise keep the digit as it is."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the rounding rule gives 0.1.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q9",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "When rounding to the nearest tenth, which digit do you look at to decide?",
+      "answer_spec": {
+        "correct_answer": "the hundredths digit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look immediately to the right of the tenths place."
+        },
+        {
+          "level": 2,
+          "text": "That is the hundredths digit."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "You check the digit immediately to the right of the rounding place, which is the hundredths digit.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51,
+      "parameters": {
+        "options": [
+          "the hundredths digit",
+          "the tenths digit",
+          "the ones digit",
+          "the last digit of the number"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "the last digit of the number",
+          "misconception_id": "mc.math.decimals_percents.rounded_from_far_right"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.rounding_decimals.q10",
+      "skill_id": "math.decimals_percents.rounding_decimals",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A price is $4.276. Rounded to the nearest cent (hundredth), what is it in dollars?",
+      "answer_spec": {
+        "correct_answer": 4.28
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Round to two decimal places."
+        },
+        {
+          "level": 2,
+          "text": "The thousandths digit is 6, which is 5 or more, so round up."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Rounding 4.276 to the nearest hundredth gives 4.28.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q1",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "25% of a number is 20. What is the number?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.25)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 20 / 0.25."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "20 divided by 0.25 gives 80. Check: 0.25 times 80 = 20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q2",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "50% of a number is 15. What is the number?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.5)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 15 / 0.5."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 divided by 0.5 gives 30. Check: 0.5 times 30 = 15.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q3",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "10% of a number is 7. What is the number?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.1)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 7 / 0.1."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "7 divided by 0.1 gives 70. Check: 0.1 times 70 = 7.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q4",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "20% of a number is 12. What is the number?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.2)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 12 / 0.2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "12 divided by 0.2 gives 60. Check: 0.2 times 60 = 12.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q5",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "75% of a number is 30. What is the number?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.75)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 30 / 0.75."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "30 divided by 0.75 gives 40. Check: 0.75 times 40 = 30.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q6",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "5% of a number is 4. What is the number?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the percent as a decimal (0.05)."
+        },
+        {
+          "level": 2,
+          "text": "Divide the part by it: 4 / 0.05."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "4 divided by 0.05 gives 80. Check: 0.05 times 80 = 4.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q7",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To find the whole from a part and its percent, what do you do?",
+      "answer_spec": {
+        "correct_answer": "divide the part by the percent as a decimal"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You are undoing a multiplication."
+        },
+        {
+          "level": 2,
+          "text": "Undoing multiplication is division."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Because taking a percent multiplies, finding the whole divides the part by the percent as a decimal.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "divide the part by the percent as a decimal",
+          "multiply the part by the percent",
+          "add the percent to the part",
+          "subtract the percent from 100"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "multiply the part by the percent",
+          "misconception_id": "mc.math.decimals_percents.multiplied_instead_of_divided"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q8",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A jacket is discounted by 20%, and the discount is $16. What was the original price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The $16 is 20% of the original price."
+        },
+        {
+          "level": 2,
+          "text": "Divide: 16 / 0.2 = 80."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The discount is 20% of the original, so the original is 16 / 0.2 = $80.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q1",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "What percent of 60 is 15?",
+      "answer_spec": {
+        "correct_answer": "25%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "15 / 60 = 0.25, and times 100 gives 25%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q2",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "What percent of 50 is 10?",
+      "answer_spec": {
+        "correct_answer": "20%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10 / 50 = 0.2, and times 100 gives 20%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q3",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "What percent of 40 is 10?",
+      "answer_spec": {
+        "correct_answer": "25%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "10 / 40 = 0.25, and times 100 gives 25%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q4",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "What percent of 200 is 50?",
+      "answer_spec": {
+        "correct_answer": "25%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "50 / 200 = 0.25, and times 100 gives 25%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q5",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "What percent of 25 is 5?",
+      "answer_spec": {
+        "correct_answer": "20%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "5 / 25 = 0.2, and times 100 gives 20%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q6",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 2,
+      "prompt": "What percent of 80 is 40?",
+      "answer_spec": {
+        "correct_answer": "50%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the decimal by 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "40 / 80 = 0.5, and times 100 gives 50%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 51
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q7",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To find what percent a part is of a whole, what do you do?",
+      "answer_spec": {
+        "correct_answer": "divide the part by the whole, then multiply by 100"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The part goes on top."
+        },
+        {
+          "level": 2,
+          "text": "Then convert the decimal to a percent."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Percent = (part / whole) times 100.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "divide the part by the whole, then multiply by 100",
+          "divide the whole by the part, then multiply by 100",
+          "multiply the part by the whole",
+          "subtract the part from the whole"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "divide the whole by the part, then multiply by 100",
+          "misconception_id": "mc.math.decimals_percents.divided_upside_down"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q8",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "percentage",
+      "difficulty": 4,
+      "prompt": "A student answered 18 of 20 questions correctly. What percent did they score?",
+      "answer_spec": {
+        "correct_answer": "90%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 18 by 20."
+        },
+        {
+          "level": 2,
+          "text": "0.9 times 100 is 90."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "18 / 20 = 0.9, which is 90%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q1",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A $50 item is reduced by 20%. What is the new price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 40.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q2",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A $200 amount increases by 10%. What is the new amount, in dollars?",
+      "answer_spec": {
+        "correct_answer": 220
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 220.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q3",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A $80 item is reduced by 25%. What is the new price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 60.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q4",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A $60 amount increases by 50%. What is the new amount, in dollars?",
+      "answer_spec": {
+        "correct_answer": 90
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 90.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q5",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A $30 item is reduced by 10%. What is the new price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 27
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 27.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q6",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A $150 amount increases by 20%. What is the new amount, in dollars?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change: multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "Then add it for an increase, or subtract it for a decrease."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Applying the percent change gives 180.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q7",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "To decrease an amount by 20% in one step, what do you multiply by?",
+      "answer_spec": {
+        "correct_answer": "0.8"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You keep 100% - 20% = 80%."
+        },
+        {
+          "level": 2,
+          "text": "80% as a decimal is 0.8."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "Decreasing by 20% leaves 80% of the original, so multiply by 0.8.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": ["0.8", "0.2", "1.2", "20"]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q8",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A $50 item is reduced by 20%. How many dollars is the discount itself?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find 20% of 50."
+        },
+        {
+          "level": 2,
+          "text": "0.2 times 50 is 10."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "The discount is 0.2 times 50 = $10 (the new price would be $40).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "common_wrong_answers": [
+        {
+          "value": 40,
+          "misconception_id": "mc.math.decimals_percents.change_vs_new_amount"
+        }
+      ]
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q1",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A restaurant bill is $40 and you leave an 18% tip. How many dollars is the tip?",
+      "answer_spec": {
+        "correct_answer": 7.2
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The percent and the whole are known, so multiply."
+        },
+        {
+          "level": 2,
+          "text": "0.18 times 40 = 7.20."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The tip is 0.18 times 40 = $7.20.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q2",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "percentage",
+      "difficulty": 3,
+      "prompt": "A student answered 45 of 50 questions correctly. What percent is that?",
+      "answer_spec": {
+        "correct_answer": "90%"
+      },
+      "validator": "percentage",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The part and whole are known, so divide."
+        },
+        {
+          "level": 2,
+          "text": "45 / 50 = 0.9, times 100 is 90."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "45 / 50 = 0.9, which is 90%.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q3",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A store offers 30% off, and the discount saves $18. What was the original price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The part and percent are known, so divide."
+        },
+        {
+          "level": 2,
+          "text": "18 / 0.3 = 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The original price is 18 / 0.3 = $60.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q4",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A $25 item has 8% sales tax added. How many dollars is the tax?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by the percent as a decimal."
+        },
+        {
+          "level": 2,
+          "text": "0.08 times 25 = 2."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The tax is 0.08 times 25 = $2.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q5",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A jacket costs $80 and is on sale for 25% off. What is the sale price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the discount, then subtract; or multiply by 0.75."
+        },
+        {
+          "level": 2,
+          "text": "0.75 times 80 = 60."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The sale price is 0.75 times 80 = $60.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q6",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A town of 500 people grows by 20%. What is the new population?",
+      "answer_spec": {
+        "correct_answer": 600
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the increase, then add."
+        },
+        {
+          "level": 2,
+          "text": "0.2 times 500 = 100, and 500 + 100 = 600."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "The population grows by 100 to 600.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q7",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A problem gives the part and the whole and asks for the percent. What should you do?",
+      "answer_spec": {
+        "correct_answer": "divide the part by the whole and multiply by 100"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both amounts are known; the percent is missing."
+        },
+        {
+          "level": 2,
+          "text": "Divide part by whole, then times 100."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding"],
+      "explanation": "With the part and whole known, divide part by whole and multiply by 100 to find the percent.",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 59,
+      "parameters": {
+        "options": [
+          "divide the part by the whole and multiply by 100",
+          "multiply the part by the whole",
+          "divide the whole by the part",
+          "add the part and the whole"
+        ]
+      }
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q8",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A phone costs $300. Its price drops 10%, then the new price drops another 10%. What is the final price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 243
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the first decrease, then the second to the NEW price."
+        },
+        {
+          "level": 2,
+          "text": "300 times 0.9 = 270; 270 times 0.9 = 243."
+        }
+      ],
+      "dimensions": ["accuracy", "understanding", "transfer"],
+      "explanation": "Successive decreases apply to the running price: 300 times 0.9 = 270, then 270 times 0.9 = $243 (not $240).",
+      "content_version": "0.1.0",
+      "estimated_time_seconds": 67,
+      "common_wrong_answers": [
+        {
+          "value": 240,
+          "misconception_id": "mc.math.decimals_percents.added_successive_percents"
+        }
+      ],
       "transfer_flag": true
     }
   ]

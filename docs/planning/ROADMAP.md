@@ -14,14 +14,15 @@ skill graph in `content/mvp/`.
 - Engine complete (dev-roadmap Phases 0-9): event-sourced foundation, curriculum platform,
   deterministic practice/grading, learning engine, adaptive diagnostic, isolated AI tutor,
   release hardening. Tests green.
-- Curriculum authored: ~41 of ~138 documented topics (~30%). One unit complete
-  (Number Foundations), six partial (Add/Sub, Mult/Div, Fractions, Algebra, Science
-  Thinking, Science Measurement), nine missing.
+- **Curriculum complete (Track A, Phases 10-15b):** all ~138 documented topics authored -
+  **130 skills, 843 questions, 16 of 16 units built**. Grown from the original 41-skill
+  slice.
 - Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
   study plans, richer dashboard).
 
-The immediate, lowest-risk continuation is finishing the documented curriculum, because it
-is content-only and mostly uses validators that already exist.
+The next work is **Track B (depth)**: the original 41 MVP-slice skills still carry only ~2
+practice items each, while everything authored from Phase 10 onward has ~8-15. After that,
+Track C picks up the remaining Version 1 features.
 
 ## Guiding constraints (carried through every phase)
 
@@ -55,9 +56,8 @@ reading/comparing decimals -> fraction/decimal equivalence -> add & subtract dec
 multiply & divide decimals -> meaning of percent -> percent of a number -> converting among
 fractions/decimals/percents. Authored at mastery-grade depth (~10 items/skill, 86 total)
 using existing `decimal`, `percentage`, `numeric`, `fraction`, `multiple_choice` validators;
-every answer verified through the real validators. Still open from docs 7-8: rounding
-decimals, finding the whole/percent, percent increase-decrease, and word problems (fold into
-the Phase 16 depth pass or a later backfill).
+every answer verified through the real validators. (The remaining doc 7-8 topics - rounding,
+finding the whole/percent, increase-decrease, word problems - were added in Phase 15b.)
 
 ### Phase 11 - Integers & Numerical Structure [content] - DONE
 
@@ -124,11 +124,17 @@ numeric because those families do not exist in the validator.
 backfill - **125 skills, 801 questions, 14 of 16 units complete and none missing**.
 Dev-roadmap Phases 6 and 7 are effectively closed.
 
-### Phase 15b - Decimals & Percentages backfill [content]
+### Phase 15b - Decimals & Percentages backfill [content] - DONE
 
-The last curriculum gap: rounding decimals, finding the whole, finding the percent, percent
-increase/decrease, and percentage word problems (~5 documented topics). Small, content-only,
-uses existing validators. Completing it closes Track A entirely.
+Closed the last curriculum gap: 5 skills and 42 questions covering rounding decimals,
+finding the whole, finding the percent, percent increase/decrease, and percentage word
+problems (including successive percent changes, a classic misconception). The
+`math.decimals_percents` unit is now 13 skills.
+
+**TRACK A COMPLETE.** All 16 documented units are built - **130 skills, 843 questions,
+~138 of ~138 documented topics**. Dev-roadmap Phases 6 and 7 are closed, and the spec's
+Completion Rule is satisfied: the entire scoped curriculum is traversable through
+prerequisites, lessons, practice, mastery, and review.
 
 ---
 
