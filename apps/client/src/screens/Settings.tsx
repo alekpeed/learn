@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { TextSize, Contrast } from '@learn/domain';
+import type { TextSize, Contrast, Theme } from '@learn/domain';
 import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
 import { DataSettings } from '../components/DataSettings.js';
@@ -8,6 +8,11 @@ import { AiTutorSettings } from '../components/AiTutorSettings.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large', 'x-large'];
+const THEMES: Array<{ value: Theme; label: string }> = [
+  { value: 'system', label: 'match my system' },
+  { value: 'light', label: 'light' },
+  { value: 'dark', label: 'dark' },
+];
 
 export function Settings(): JSX.Element {
   const { status, learner, updateSettings, resetAll, reload } = useLearner();
@@ -53,6 +58,21 @@ export function Settings(): JSX.Element {
           {TEXT_SIZES.map((s) => (
             <option key={s} value={s}>
               {s}
+            </option>
+          ))}
+        </select>
+
+        <label htmlFor="theme">Theme</label>
+        <select
+          id="theme"
+          value={a11y.theme ?? 'system'}
+          onChange={(e) =>
+            updateSettings({ accessibility_settings: { theme: e.target.value as Theme } })
+          }
+        >
+          {THEMES.map((t) => (
+            <option key={t.value} value={t.value}>
+              {t.label}
             </option>
           ))}
         </select>

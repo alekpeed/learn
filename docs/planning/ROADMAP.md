@@ -20,6 +20,8 @@ skill graph in `content/mvp/`.
   ~2-item-per-skill slice.
 - Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
   study plans, richer dashboard).
+- UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
+  palettes.
 
 **Tracks A, B and E are complete**: the curriculum is fully authored (130 skills, 1,121
 questions, 16 of 16 units) at mastery-grade depth, and the Tauri desktop shell (Phase F)

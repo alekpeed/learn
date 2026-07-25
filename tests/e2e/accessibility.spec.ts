@@ -31,6 +31,16 @@ async function auditNoSeriousViolations(
   expect(serious, `${name}: ${JSON.stringify(serious.map((v) => v.id))}`).toEqual([]);
 }
 
+const CORE_SCREENS = [
+  '/dashboard',
+  '/map',
+  '/practice',
+  '/progress',
+  '/review',
+  '/diagnostic',
+  '/settings',
+];
+
 test('welcome screen has no serious/critical violations', async ({ page }) => {
   await page.goto('/');
   await auditNoSeriousViolations(page, 'welcome');
@@ -44,16 +54,25 @@ test('all core screens pass the accessibility audit', async ({ page }) => {
   await page.getByRole('button', { name: /start learning/i }).click();
   await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
 
-  for (const path of [
-    '/dashboard',
-    '/map',
-    '/practice',
-    '/progress',
-    '/review',
-    '/diagnostic',
-    '/settings',
-  ]) {
+  for (const path of CORE_SCREENS) {
     await page.goto(path);
     await auditNoSeriousViolations(page, path);
+  }
+});
+
+// A second palette is a second chance to fail contrast, so dark mode gets the
+// same audit rather than being trusted because light mode passed.
+test('all core screens pass the accessibility audit in dark mode', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel(/your name/i).fill('Ada');
+  await page.getByRole('button', { name: /start learning/i }).click();
+  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+
+  await page.goto('/settings');
+  await page.getByLabel(/theme/i).selectOption('dark');
+
+  for (const path of CORE_SCREENS) {
+    await page.goto(path);
+    await auditNoSeriousViolations(page, `${path} (dark)`);
   }
 });

@@ -211,6 +211,7 @@ The app must support:
 - Screen-reader labels
 - Adjustable text size
 - High contrast
+- Light and dark themes, defaulting to the operating system's setting
 - Reduced motion
 - Color-independent status indicators
 - Captions or text alternatives for media

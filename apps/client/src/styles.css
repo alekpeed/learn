@@ -1,9 +1,15 @@
 /*
  * Baseline styles with accessibility support (doc 02 §12, doc 11 §4).
- * Text size, contrast, and reduced motion are driven by data-* attributes on
- * <html>, set from the learner's settings in LearnerContext.
+ * Text size, contrast, reduced motion, and theme are driven by data-* attributes
+ * on <html>, set from the learner's settings in LearnerContext.
+ *
+ * Every colour in this file comes from the tokens below, so a theme only has to
+ * redefine the tokens - no component needs a theme-specific rule. The `-max`
+ * tokens are where [data-contrast='high'] pushes each colour, which lets high
+ * contrast work in both themes from a single rule.
  */
 :root {
+  color-scheme: light;
   --font-scale: 1;
   --fg: #10151c;
   --bg: #ffffff;
@@ -11,6 +17,11 @@
   --accent: #1a5fb4;
   --focus: #0b5cad;
   --error: #b3261e;
+  --success: #1a7f37;
+  --fg-max: #000000;
+  --bg-max: #ffffff;
+  --muted-max: #1a1a1a;
+  --accent-max: #0033aa;
   font-family:
     system-ui,
     -apple-system,
@@ -35,11 +46,50 @@
   --font-scale: 1.4;
 }
 
+/*
+ * Dark theme. An explicit choice wins outright; 'system' (the default, and what
+ * an unset attribute means before the profile loads) defers to the OS. The two
+ * blocks repeat the same palette because CSS has no way to name a group of
+ * custom properties and reuse it under a media query.
+ */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --fg: #e6ecf3;
+  --bg: #12161c;
+  --muted: #9fadbf;
+  --accent: #7fb4ff;
+  --focus: #9ec8ff;
+  --error: #ff9a90;
+  --success: #6fd18d;
+  --fg-max: #ffffff;
+  --bg-max: #000000;
+  --muted-max: #e0e0e0;
+  --accent-max: #9ec8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --fg: #e6ecf3;
+    --bg: #12161c;
+    --muted: #9fadbf;
+    --accent: #7fb4ff;
+    --focus: #9ec8ff;
+    --error: #ff9a90;
+    --success: #6fd18d;
+    --fg-max: #ffffff;
+    --bg-max: #000000;
+    --muted-max: #e0e0e0;
+    --accent-max: #9ec8ff;
+  }
+}
+
+/* High contrast, expressed against whichever theme is active. */
 :root[data-contrast='high'] {
-  --fg: #000000;
-  --bg: #ffffff;
-  --muted: #1a1a1a;
-  --accent: #0033aa;
+  --fg: var(--fg-max);
+  --bg: var(--bg-max);
+  --muted: var(--muted-max);
+  --accent: var(--accent-max);
 }
 
 *,
@@ -230,7 +280,7 @@ button {
   border-color: var(--error);
 }
 .feedback[data-status='success'] {
-  border-color: #1a7f37;
+  border-color: var(--success);
 }
 .feedback[data-status='success'] p:first-child {
   font-weight: 700;

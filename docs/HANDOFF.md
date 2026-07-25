@@ -55,6 +55,15 @@ shipped on top of it. Everything is committed and pushed.
   off by default; can never write verified state (DEC-005/010); verified fallback.
 - Release: progress export/import, offline handling, accessibility audit (axe) across all
   screens, split cacheable bundle, deployment config, full acceptance checklist.
+- **Dark mode:** an `accessibility_settings.theme` of `system` (default) / `light` / `dark`,
+  persisted in the event log like every other setting. Implemented purely as CSS custom
+  properties - `LearnerContext` writes `data-theme` on `<html>` and `styles.css` resolves it,
+  with `system` deferring to `prefers-color-scheme` so there is no flash of the wrong palette
+  and no JS involved. **Every colour in the app comes from a token**, so a new theme only
+  redefines tokens; keep it that way. High contrast is expressed against whichever theme is
+  active via the `--*-max` tokens. The axe audit runs over all core screens in **both**
+  palettes (`tests/e2e/accessibility.spec.ts`) - that dark pass was verified to fail on a
+  deliberately low-contrast palette before shipping.
 
 **Version 1 features (all four complete):**
 

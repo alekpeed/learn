@@ -80,6 +80,28 @@ describe('settings + accessibility (P1-5)', () => {
     });
   });
 
+  it('applies the theme choice to the document root and persists it', async () => {
+    const store = new InMemoryEventStore();
+    const clock = () => '2026-07-23T00:00:00.000Z';
+    await new LearnerRepository(store, clock).createProfile('Nia');
+
+    renderApp(new LearnerRepository(store, clock), '/settings');
+    const select = (await screen.findByLabelText(/theme/i)) as HTMLSelectElement;
+    // Nobody has chosen yet, so the app defers to the OS rather than picking one.
+    expect(select.value).toBe('system');
+
+    await userEvent.selectOptions(select, 'dark');
+    await waitFor(() => {
+      expect(document.documentElement.dataset.theme).toBe('dark');
+    });
+
+    applyAccessibility(undefined);
+    renderApp(new LearnerRepository(store, clock), '/settings');
+    await waitFor(() => {
+      expect(document.documentElement.dataset.theme).toBe('dark');
+    });
+  });
+
   it('requires confirmation before resetting local data', async () => {
     const store = new InMemoryEventStore();
     const clock = () => '2026-07-23T00:00:00.000Z';

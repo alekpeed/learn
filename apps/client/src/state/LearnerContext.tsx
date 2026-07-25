@@ -1,7 +1,8 @@
 /**
  * Learner state: loads the local profile from the event log, exposes profile
  * creation, settings updates, and reset. Applies accessibility settings to the
- * document root so text size / contrast / reduced motion take effect app-wide.
+ * document root so text size / contrast / reduced motion / theme take effect
+ * app-wide.
  */
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { Learner, LearnerPreferences, AccessibilitySettings } from '@learn/domain';
@@ -33,6 +34,9 @@ export function applyAccessibility(settings: AccessibilitySettings | undefined):
   root.dataset.textSize = settings?.text_size ?? 'medium';
   root.dataset.contrast = settings?.contrast ?? 'normal';
   root.dataset.reducedMotion = String(settings?.reduced_motion ?? false);
+  // 'system' is the default and is resolved by CSS, not here, so a learner who
+  // never opens Settings still gets the OS palette with no flash of the wrong one.
+  root.dataset.theme = settings?.theme ?? 'system';
 }
 
 export function LearnerProvider({

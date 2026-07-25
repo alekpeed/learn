@@ -4,6 +4,8 @@
 
 export type TextSize = 'small' | 'medium' | 'large' | 'x-large';
 export type Contrast = 'normal' | 'high';
+/** Colour theme. `system` follows the operating system's light/dark setting. */
+export type Theme = 'system' | 'light' | 'dark';
 export type SessionDuration = 5 | 15 | 30 | 60 | 'custom';
 
 /** Which tutor provider to use. `stub` is the built-in, offline, key-free tutor. */
@@ -13,6 +15,7 @@ export interface AccessibilitySettings {
   text_size: TextSize;
   contrast: Contrast;
   reduced_motion: boolean;
+  theme: Theme;
 }
 
 export interface LearnerPreferences {
@@ -42,6 +45,7 @@ export const DEFAULT_ACCESSIBILITY_SETTINGS: AccessibilitySettings = {
   text_size: 'medium',
   contrast: 'normal',
   reduced_motion: false,
+  theme: 'system',
 };
 
 export const DEFAULT_PREFERENCES: LearnerPreferences = {
