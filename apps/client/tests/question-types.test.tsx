@@ -43,6 +43,41 @@ describe('multi-select questions', () => {
   });
 });
 
+describe('exact value questions (Phase 23)', () => {
+  function exactQ(): Question {
+    return {
+      ...base(),
+      type: 'exact_value',
+      validator: 'exact_value',
+      answer_spec: { correct_answer: 'sqrt(3)/2' },
+    };
+  }
+
+  it('explains the notation and links the help to the input', () => {
+    renderQ(exactQ());
+    const input = screen.getByLabelText(/your answer/i);
+    expect(input).toHaveAttribute('placeholder', expect.stringContaining('sqrt(3)/2'));
+    // The notation help must be announced with the field, not merely nearby.
+    const describedBy = input.getAttribute('aria-describedby');
+    expect(describedBy).toBeTruthy();
+    expect(document.getElementById(describedBy as string)).toHaveTextContent(/exact value/i);
+  });
+
+  it('accepts an equivalent exact form', async () => {
+    renderQ(exactQ());
+    await userEvent.type(screen.getByLabelText(/your answer/i), 'sqrt(12)/4');
+    await userEvent.click(screen.getByRole('button', { name: /submit/i }));
+    expect(await screen.findByText('Correct!')).toBeInTheDocument();
+  });
+
+  it('rejects a rounded decimal where an exact value was asked for', async () => {
+    renderQ(exactQ());
+    await userEvent.type(screen.getByLabelText(/your answer/i), '0.866');
+    await userEvent.click(screen.getByRole('button', { name: /submit/i }));
+    expect(await screen.findByText(/not quite|try again/i)).toBeInTheDocument();
+  });
+});
+
 describe('ordering questions', () => {
   it('grades the arranged order', async () => {
     const q: Question = {

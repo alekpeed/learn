@@ -5,6 +5,7 @@
  */
 import type { AnswerSpec, ValidationOutcome, ValidatorType } from './types.js';
 import { parseRational, rationalsEqual, rationalToNumber, type Rational } from './rational.js';
+import { exactValuesEqual, formatExactValue, isUndefinedForm, parseExactValue } from './surd.js';
 
 const DEFAULT_TOLERANCE = 1e-9;
 
@@ -242,6 +243,39 @@ export function validateExactChoice(submitted: string, spec: AnswerSpec): Valida
   return { correct: false, normalized };
 }
 
+/**
+ * Exact symbolic value: surds and multiples of pi (Phase 23).
+ *
+ * An approximation of an irrational value grades wrong rather than raising a
+ * format error - 0.866 is a real misconception about what "exact" asks for, so
+ * it deserves the normal wrong-answer feedback path. An exact decimal still
+ * grades correct, because 0.5 and 1/2 are the same number.
+ */
+export function validateExactValue(submitted: string, spec: AnswerSpec): ValidationOutcome {
+  const raw = submitted.trim();
+
+  if (isUndefinedForm(raw)) {
+    return { correct: acceptedForms(spec).some(isUndefinedForm), normalized: 'undefined' };
+  }
+
+  const value = parseExactValue(raw);
+  if (!value) {
+    return {
+      correct: false,
+      normalized: raw,
+      reason: 'expected an exact value such as 1/2, sqrt(3)/2, or pi/6',
+    };
+  }
+
+  const normalized = formatExactValue(value);
+  for (const form of acceptedForms(spec)) {
+    if (isUndefinedForm(form)) continue;
+    const target = parseExactValue(form);
+    if (target && exactValuesEqual(value, target)) return { correct: true, normalized };
+  }
+  return { correct: false, normalized };
+}
+
 const VALIDATORS: Record<
   ValidatorType,
   (submitted: string, spec: AnswerSpec) => ValidationOutcome
@@ -256,6 +290,7 @@ const VALIDATORS: Record<
   multi_select: validateMultiSelect,
   ordering: validateOrdering,
   point: validatePoint,
+  exact_value: validateExactValue,
 };
 
 export function validateAnswer(

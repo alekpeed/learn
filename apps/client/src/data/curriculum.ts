@@ -21,6 +21,8 @@ import algebra from '../../../../content/mvp/units/algebra.json';
 import functions from '../../../../content/mvp/units/functions.json';
 import geometry from '../../../../content/mvp/units/geometry.json';
 import algebra2 from '../../../../content/mvp/units/algebra2.json';
+import precalculus from '../../../../content/mvp/units/precalculus.json';
+import trigonometry from '../../../../content/mvp/units/trigonometry.json';
 import scienceThinking from '../../../../content/mvp/units/science_thinking.json';
 import scienceExperiments from '../../../../content/mvp/units/science_experiments.json';
 import scienceMeasurement from '../../../../content/mvp/units/science_measurement.json';
@@ -46,6 +48,8 @@ const units: UnitFile[] = [
   functions,
   geometry,
   algebra2,
+  precalculus,
+  trigonometry,
   scienceThinking,
   scienceExperiments,
   scienceMeasurement,

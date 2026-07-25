@@ -71,6 +71,16 @@
         "unit_id": "math.algebra2",
         "title": "Algebra II",
         "order": 13
+      },
+      {
+        "unit_id": "math.precalculus",
+        "title": "Precalculus: Functions, Exponents and Logarithms",
+        "order": 14
+      },
+      {
+        "unit_id": "math.trigonometry",
+        "title": "Trigonometry",
+        "order": 15
       }
     ]
   },

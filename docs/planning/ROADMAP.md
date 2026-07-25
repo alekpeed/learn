@@ -25,10 +25,17 @@ skill graph in `content/mvp/`.
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
-**Tracks A, B and E are complete**: the curriculum is fully authored (130 skills, 1,121
-questions, 16 of 16 units) at mastery-grade depth, and the Tauri desktop shell (Phase F)
-now wraps it for Windows. The next work is **Track C - the remaining Version 1 features** -
-or Track D if new subjects (Geometry, Algebra II, Precalculus/Trigonometry) are wanted.
+**Tracks A, B, C, E and F are complete**, and Track D is complete through Phase 23. The
+documented curriculum was fully authored at mastery-grade depth (130 skills, 1,121
+questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri desktop shell
+wrapped it for Windows, and Phases 21-23 then added Geometry, Algebra II, Precalculus and
+Trigonometry on top. The curriculum now stands at **177 skills and 1,499 questions across
+19 unit files** (15 math units, 4 science units).
+
+The remaining work is: standing up a real sync server (the only unfinished Version 1
+item), **Phase 24** (Physics, Chemistry, Biology), **Phase 25** (platform and social
+tier), and the two subjects this file has never assigned a phase number - statistics and
+probability, and calculus. Each is described in its own section below.
 
 ## Guiding constraints (carried through every phase)
 
@@ -229,7 +236,7 @@ their relationships, parallel lines, triangles, quadrilaterals, polygons, perime
 area, circles, volume and surface area, the Pythagorean theorem, similarity and congruence.
 Kept inside the existing course rather than made a separate one so the prerequisite graph
 stays connected to measurement, ratios and algebra. Curriculum now 142 skills, 1,217
-questions across 17 units. This is the prerequisite for trigonometry.
+questions across 16 unit files. This is the prerequisite for trigonometry.
 
 Figures are posed textually, as in Phases 14-15; a rendered geometry-figure component
 remains a future enhancement rather than a blocker.
@@ -239,16 +246,57 @@ remains a future enhancement rather than a blocker.
 Shipped as unit 13 of `math.core` (12 skills, 96 questions): exponent rules, radicals,
 polynomials, multiplying binomials, factoring, solving quadratics, the quadratic formula
 and discriminant, systems of equations, inequalities, rational expressions, function
-notation, and graph transformations. Curriculum now 154 skills, 1,313 questions across 18
-units. With Phase 21, the prerequisites for precalculus and trigonometry are in place, so
-**Phase 23 is the next piece of the arithmetic-to-trigonometry path**.
+notation, and graph transformations. Curriculum now 154 skills, 1,313 questions across 17
+unit files. With Phase 21, the prerequisites for precalculus and trigonometry are in place,
+so **Phase 23 is the next piece of the arithmetic-to-trigonometry path**.
 
-### Phase 23 - Precalculus & Trigonometry [content + engine]
+### Phase 23 - Precalculus & Trigonometry [content + engine] - DONE
 
-The unit circle, sine/cosine/tangent, right-triangle trig, radians, trig graphs and
-identities. Requires Geometry (21) and Algebra II (22) as prerequisites and likely new
-angle/graph question types. **This is the phase that finally delivers an
-arithmetic-to-trig path.** Calculus would follow as a further course beyond this.
+Shipped as two units, **23 skills and 186 questions**, taking the curriculum to 177 skills
+and 1,499 questions across 19 unit files. **This is the phase that delivers the
+arithmetic-to-trigonometry path.**
+
+Trigonometry sits _inside_ precalculus rather than after it - the standard sequence is
+Algebra II, then Precalculus (of which trig is the largest strand), then Calculus - so this
+phase authored both strands. The unit order puts functions and logarithms first because
+`inverse_functions` is a genuine prerequisite for inverse trigonometry.
+
+- **Unit 14, `math.precalculus`** (11 skills, 88 questions): domain and range, composing
+  functions, inverse functions, behaviour of polynomials, rational functions and
+  asymptotes, exponential functions, logarithms, logarithm rules, exponential equations,
+  arithmetic and geometric sequences, and series.
+- **Unit 15, `math.trigonometry`** (12 skills, 98 questions): ratios in a right triangle,
+  sine/cosine/tangent, finding an unknown side, finding an unknown angle, angles of
+  elevation and depression, exact values from the special triangles, radian measure, the
+  unit circle, reference angles and signs, graphs of the trig functions, transforming trig
+  graphs, and identities with simple equations.
+
+**Engine change - the `exact_value` validator.** This is why the phase was not content-only.
+`parseRational` handles integers, fractions, mixed numbers and terminating decimals, so it
+cannot represent `sqrt(3)/2` or `pi/6` - meaning an exact trig value had no deterministic
+validator at all and four skills would have been ungradable. `packages/validation-engine/src/surd.ts`
+holds a value as `(num/den) * sqrt(radicand) * pi^piExp` in a canonical form (radicand
+square-free, denominator rationalized, fraction reduced), so equality is structural and
+exact: `1/sqrt(2)`, `sqrt(2)/2` and `sqrt(8)/4` all compare equal with no floating-point
+tolerance. It accepts `undefined` so `tan 90` can be asked directly, and it accepts an exact
+decimal (`0.5` for `1/2`) while grading an approximation of a surd (`0.866`) as wrong rather
+than as a format error. Added to both schema enums, with a client input carrying notation
+help. 30 new misconception records bring the catalog to 87.
+
+Verification: every exact value is asserted against `math.sin`/`cos`/`tan` to 1e-12, every
+unit-circle point is checked to satisfy `x^2 + y^2 = 1` in exact arithmetic, every stated
+period and amplitude is checked against a dense sample of the real function, every series
+formula against brute-force summation, and every inverse against substitution back into the
+forward function. A Python mirror of the normalizer was cross-checked against the TypeScript
+implementation on a 50-case corpus before any content was authored. `content-answers.test.ts`
+also now asserts that every declared `common_wrong_answers` entry is _rejected_ by its
+validator, which catches a distractor that is secretly a correct answer.
+
+Figures and graphs are posed textually, as in Phases 14, 15 and 21; a rendered
+figure/graph component remains a future enhancement rather than a blocker.
+
+Calculus would follow as a further course beyond this, and the remaining precalculus
+strands not needed for trigonometry (conics, vectors, polar coordinates) are unauthored.
 
 ### Phase 24 - Sciences: Physics, Chemistry, Biology [content, later interactive]
 
@@ -261,6 +309,23 @@ Multi-user support, teacher dashboards, classrooms, social features, gamificatio
 tutoring, handwriting recognition, interactive simulations, community/course marketplace.
 Each is a standalone initiative gated on real demand and on multi-user infrastructure from
 Phase 20. Several were explicitly excluded from the MVP.
+
+### Unsequenced - in scope, but never given a phase number
+
+Recording these here so they stop being invisible. Both are in the specification; this file
+has simply never sequenced them, which is a gap in the roadmap rather than a decision to
+drop them.
+
+- **Statistics and probability.** `03_VERSION_AND_SCOPE_PLAN.md` lists "Statistics and
+  probability" under Later Features, and `01_PRODUCT_VISION.md` lists Statistics and
+  Probability as separate entries in its Long-Term Direction. Until this edit the words did
+  not appear in this file at all. Prerequisites are already authored (ratios, decimals and
+  percentages, the coordinate plane and graphs, and the science course's data-handling
+  unit), so it could be authored at any point.
+- **Calculus.** Named in `01_PRODUCT_VISION.md` under Long-Term Direction. Phase 23 above
+  says only that it "would follow", without a number. It is the furthest out, and it needs
+  the remaining precalculus strands (limits-oriented work, conics, vectors, polar
+  coordinates) that Phase 23 did not author.
 
 ---
 
@@ -294,9 +359,13 @@ Curriculum: 10 (Decimals/Percents) -> 11 (Integers/Structure) -> 12 (Ratios/Meas
 -> 13 (Algebra + backfills) -> 14 (Graphs/Functions) -> 15 (Science/Data) [documented
 curriculum done] -> 16 (Depth pass). Then features: 17 (Misconceptions) -> 18
 (Authoring/modules) -> 19 (AI drafts) -> 20 (Cloud sync) [Version 1 done]. Then reach for
-trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) -> 24 (Sciences) -> 25
-(Platform). Phase F (desktop wrap) is done.
+trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) [arithmetic-to-trig path done]
+-> 24 (Sciences) -> 25 (Platform). Phase F (desktop wrap) is done.
+
+Everything through Phase 23 is now shipped. What is left, in this file's own terms: the
+sync server (the only unfinished Version 1 item), Phase 24, Phase 25, and the two
+unsequenced subjects above - statistics and probability, and calculus.
 
 Track A is content-only through Phase 13. Phase 14 is the first point requiring new
-application code. A true arithmetic-to-trigonometry experience is not reached until
-Phase 23. Confirm direction before starting any new phase, per the standing approval rule.
+application code, and Phase 23 the second. Confirm direction before starting any new phase,
+per the standing approval rule.

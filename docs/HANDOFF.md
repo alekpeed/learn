@@ -1,6 +1,6 @@
 # Session Handoff - Ground-Up Learning App
 
-_Last updated: 2026-07-25 - branch `claude/learning-app-next-phase-pgs09j` - HEAD `e2fb5f7`_
+_Last updated: 2026-07-25 - branch `claude/learning-app-next-phase-pgs09j` - Phase 23 complete_
 
 > **`CLAUDE.md` at the repository root states the governing rule and is loaded into every
 > session automatically. Read it first. This handoff is subordinate to it, and both are
@@ -71,17 +71,17 @@ disagree, the file wins - and fix this table.**
 | 20    | Optional sync and cross-device resume                                                                                                                             | DONE (no server deployed) |
 | 21    | Geometry                                                                                                                                                          | DONE                      |
 | 22    | Algebra II                                                                                                                                                        | DONE                      |
+| 23    | Precalculus & Trigonometry - **the arithmetic-to-trigonometry path**                                                                                              | DONE                      |
 
 ### Not done - this is what is left
 
-| Phase | What                                      | Notes                                                                                                                                                                                                                                                                                     |
-| ----- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -     | **Sync server**                           | The only unfinished Version 1 item. Engine, HTTP backend and UI exist and are tested against a stub; no live endpoint.                                                                                                                                                                    |
-| 23    | **Precalculus & Trigonometry**            | Unit circle, sin/cos/tan, right-triangle trig, radians, identities, trig graphs. Geometry (21) and Algebra II (22) are its prerequisites and both are now authored. **This is the phase that delivers the arithmetic-to-trigonometry path.** Likely needs new angle/graph question types. |
-| 24    | **Sciences: Physics, Chemistry, Biology** | Introductory units per subject through the existing pipeline. Interactive simulations are a separate, later capability.                                                                                                                                                                   |
-| 25    | **Platform & social tier**                | Multi-user, teacher dashboards, classrooms, social, gamification, voice tutoring, handwriting recognition, simulations, marketplace. Gated on demand and multi-user infrastructure.                                                                                                       |
-| -     | **Statistics & probability**              | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision, but **`ROADMAP.md` never gives it a phase number**. Genuine sequencing gap, not a decision to drop it.                                                                                                     |
-| -     | **Calculus**                              | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out.                                                                                                                                                                                                |
+| Phase | What                                      | Notes                                                                                                                                                                                                                                                                      |
+| ----- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -     | **Sync server**                           | The only unfinished Version 1 item. Engine, HTTP backend and UI exist and are tested against a stub; no live endpoint.                                                                                                                                                     |
+| 24    | **Sciences: Physics, Chemistry, Biology** | Introductory units per subject through the existing pipeline. Interactive simulations are a separate, later capability.                                                                                                                                                    |
+| 25    | **Platform & social tier**                | Multi-user, teacher dashboards, classrooms, social, gamification, voice tutoring, handwriting recognition, simulations, marketplace. Gated on demand and multi-user infrastructure.                                                                                        |
+| -     | **Statistics & probability**              | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime. |
+| -     | **Calculus**                              | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                     |
 
 ### The distinction that keeps being missed
 
@@ -100,12 +100,17 @@ describe the current science course as covering "science" without that qualifier
 
 |                                     | Skills  | Questions |
 | ----------------------------------- | ------- | --------- |
-| Mathematics (`math.core`, 13 units) | 120     | 1,040     |
+| Mathematics (`math.core`, 15 units) | 143     | 1,226     |
 | Science (`science.core`, 4 units)   | 34      | 273       |
-| **Total (17 unit files)**           | **154** | **1,313** |
+| **Total (19 unit files)**           | **177** | **1,499** |
 
-Plus a 57-record misconception catalog (`content/mvp/misconceptions.json`). Every skill has
+Plus an 87-record misconception catalog (`content/mvp/misconceptions.json`). Every skill has
 a lesson and at least 7 practice items.
+
+**The arithmetic-to-trigonometry path is complete** as of Phase 23. Note that trigonometry
+is a strand _inside_ precalculus, not a course after it - the two units are ordered
+`math.precalculus` (14) then `math.trigonometry` (15) so that `inverse_functions` is an
+authored prerequisite for `inverse_trig`.
 
 **Known content quality gap:** the science course is 78% multiple-choice versus 27% for
 math, tops out at difficulty 4 (math reaches 5), and has 6% transfer items (math 11%).
@@ -115,8 +120,8 @@ Partly inherent - reasoning questions resist deterministic grading - but `multi_
 ### Test gate - every phase must end green on all six
 
 ```
-pnpm validate:content   # 34 tests
-pnpm test               # 271 tests
+pnpm validate:content   # 35 tests
+pnpm test               # 292 tests
 pnpm typecheck
 pnpm lint
 pnpm build
@@ -144,8 +149,13 @@ pnpm test:e2e           # 39 tests, includes axe in BOTH light and dark
 - **No sync server is deployed.** `HttpSyncBackend` is tested against a stubbed `fetch`,
   never a live endpoint. `syncEvents` pulls the whole remote log rather than using a
   watermark.
-- **Geometry and Algebra II pose figures textually.** No rendered figure component.
+- **Geometry, Algebra II and Trigonometry pose figures textually.** No rendered figure or
+  graph component. Trig graph questions ask for period, amplitude, midline, maximum and
+  minimum in words rather than showing a wave.
 - **The schema caps `difficulty` and `difficulty_band` at 5.** Hard items clamp there.
+- **`exact_value` does not handle sums of unlike terms** such as `1 + sqrt(2)`, nested
+  radicals, or non-integer radicands. No authored item needs one; a question that did would
+  need the parser extended.
 
 ---
 
@@ -176,7 +186,13 @@ Content is authored by a Python script that emits JSON only if every check passe
   the options, and no choice validator ships without options.
 - Assert ASCII-clean text, at least 7 questions per skill, a lesson per skill, unique IDs.
 - Add the new unit to `content-answers.test.ts` so **every** answer is graded through the
-  real validators, not merely schema-checked.
+  real validators, not merely schema-checked. That file now also asserts every declared
+  `common_wrong_answers` entry is _rejected_ by its validator - a generator's string
+  comparison cannot catch a distractor of `0.5` against an answer of `1/2`.
+- If the unit needs a new validator, mirror its normalizer in the generator and
+  **cross-check the two implementations on a shared corpus before authoring any content**.
+  Phase 23 ran 50 cases through both the Python mirror and the TypeScript parser, including
+  the strings that must be rejected, and only then started writing questions.
 
 Wiring a new unit touches: `content/mvp/courses.json`, `content/mvp/manifest.json`,
 `apps/client/src/data/curriculum.ts`, and the `UNIT_FILES` lists in

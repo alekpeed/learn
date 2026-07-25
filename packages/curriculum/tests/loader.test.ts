@@ -26,6 +26,8 @@ const UNIT_FILES = [
   'units/functions.json',
   'units/geometry.json',
   'units/algebra2.json',
+  'units/precalculus.json',
+  'units/trigonometry.json',
   'units/science_thinking.json',
   'units/science_experiments.json',
   'units/science_measurement.json',

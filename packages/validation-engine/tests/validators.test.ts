@@ -8,6 +8,10 @@ import {
   validateUnit,
   parseRational,
   rationalsEqual,
+  parseExactValue,
+  exactValuesEqual,
+  formatExactValue,
+  exactValueToNumber,
 } from '../src/index.js';
 
 describe('rational parsing', () => {
@@ -152,5 +156,138 @@ describe('dispatch + exact choice', () => {
     const out = validateAnswer('mystery' as never, 'x', { correct_answer: 'x' });
     expect(out.correct).toBe(false);
     expect(out.reason).toMatch(/unknown validator/);
+  });
+});
+
+describe('exact value parsing (surds and pi)', () => {
+  it('parses integers, fractions and decimals', () => {
+    expect(parseExactValue('3')).toEqual({ num: 3, den: 1, radicand: 1, piExp: 0 });
+    expect(parseExactValue('-1')).toEqual({ num: -1, den: 1, radicand: 1, piExp: 0 });
+    expect(parseExactValue('1/2')).toEqual({ num: 1, den: 2, radicand: 1, piExp: 0 });
+    expect(parseExactValue('0.5')).toEqual({ num: 1, den: 2, radicand: 1, piExp: 0 });
+  });
+
+  it('collapses every zero form to one canonical zero', () => {
+    const zero = { num: 0, den: 1, radicand: 1, piExp: 0 };
+    expect(parseExactValue('0')).toEqual(zero);
+    expect(parseExactValue('0/5')).toEqual(zero);
+    expect(parseExactValue('sqrt(0)')).toEqual(zero);
+    expect(parseExactValue('0pi')).toEqual(zero);
+  });
+
+  it('makes the radicand square-free', () => {
+    expect(parseExactValue('sqrt(8)')).toEqual({ num: 2, den: 1, radicand: 2, piExp: 0 });
+    expect(parseExactValue('sqrt(12)')).toEqual({ num: 2, den: 1, radicand: 3, piExp: 0 });
+    expect(parseExactValue('sqrt(4)')).toEqual({ num: 2, den: 1, radicand: 1, piExp: 0 });
+  });
+
+  it('rationalizes a radical in the denominator', () => {
+    expect(parseExactValue('1/sqrt(2)')).toEqual(parseExactValue('sqrt(2)/2'));
+    expect(parseExactValue('2/sqrt(3)')).toEqual(parseExactValue('2sqrt(3)/3'));
+    expect(parseExactValue('1/sqrt(3)')).toEqual(parseExactValue('sqrt(3)/3'));
+  });
+
+  it('parses multiples of pi and reduces them', () => {
+    expect(parseExactValue('pi')).toEqual({ num: 1, den: 1, radicand: 1, piExp: 1 });
+    expect(parseExactValue('pi/6')).toEqual({ num: 1, den: 6, radicand: 1, piExp: 1 });
+    expect(parseExactValue('4pi/6')).toEqual(parseExactValue('2pi/3'));
+    expect(parseExactValue('-pi/2')).toEqual({ num: -1, den: 2, radicand: 1, piExp: 1 });
+  });
+
+  it('accepts optional whitespace and explicit multiplication', () => {
+    expect(parseExactValue(' 2 * sqrt(3) / 3 ')).toEqual(parseExactValue('2sqrt(3)/3'));
+    expect(parseExactValue('5 pi / 4')).toEqual(parseExactValue('5pi/4'));
+  });
+
+  it('rejects notation it cannot represent exactly', () => {
+    expect(parseExactValue('sqrt(-1)')).toBeNull();
+    expect(parseExactValue('sqrt(2)+1')).toBeNull();
+    expect(parseExactValue('1/0')).toBeNull();
+    expect(parseExactValue('x')).toBeNull();
+    expect(parseExactValue('1/2/3')).toBeNull();
+    expect(parseExactValue('')).toBeNull();
+    expect(parseExactValue('sqrt2')).toBeNull();
+  });
+
+  it('keeps pi and a surd distinct from each other', () => {
+    expect(exactValuesEqual(parseExactValue('pi/6')!, parseExactValue('1/6')!)).toBe(false);
+    expect(exactValuesEqual(parseExactValue('sqrt(3)/2')!, parseExactValue('3/2')!)).toBe(false);
+  });
+
+  it('formats canonically', () => {
+    expect(formatExactValue(parseExactValue('1/sqrt(2)')!)).toBe('sqrt(2)/2');
+    expect(formatExactValue(parseExactValue('4pi/6')!)).toBe('2*pi/3');
+    expect(formatExactValue(parseExactValue('sqrt(4)')!)).toBe('2');
+    expect(formatExactValue(parseExactValue('0/9')!)).toBe('0');
+    expect(formatExactValue(parseExactValue('-1')!)).toBe('-1');
+  });
+
+  it('agrees with floating point on the values trig actually uses', () => {
+    const cases: Array<[string, number]> = [
+      ['sqrt(3)/2', Math.sin((60 * Math.PI) / 180)],
+      ['sqrt(2)/2', Math.sin((45 * Math.PI) / 180)],
+      ['1/2', Math.sin((30 * Math.PI) / 180)],
+      ['sqrt(3)', Math.tan((60 * Math.PI) / 180)],
+      ['sqrt(3)/3', Math.tan((30 * Math.PI) / 180)],
+      ['pi/6', (30 * Math.PI) / 180],
+      ['5pi/4', (225 * Math.PI) / 180],
+    ];
+    for (const [text, expected] of cases) {
+      expect(exactValueToNumber(parseExactValue(text)!)).toBeCloseTo(expected, 12);
+    }
+  });
+});
+
+describe('exact value validator', () => {
+  it('accepts every equivalent exact form of the same value', () => {
+    const spec = { correct_answer: 'sqrt(2)/2' };
+    for (const form of ['sqrt(2)/2', '1/sqrt(2)', 'sqrt(8)/4', ' sqrt(2) / 2 ']) {
+      expect(validateAnswer('exact_value', form, spec).correct).toBe(true);
+    }
+  });
+
+  it('accepts an exact decimal but rejects an approximation of a surd', () => {
+    expect(validateAnswer('exact_value', '0.5', { correct_answer: '1/2' }).correct).toBe(true);
+    const approx = validateAnswer('exact_value', '0.866', { correct_answer: 'sqrt(3)/2' });
+    expect(approx.correct).toBe(false);
+    // Wrong, not unparseable: it takes the normal wrong-answer path.
+    expect(approx.reason).toBeUndefined();
+  });
+
+  it('grades radian answers', () => {
+    const spec = { correct_answer: 'pi/6' };
+    expect(validateAnswer('exact_value', 'pi/6', spec).correct).toBe(true);
+    expect(validateAnswer('exact_value', '2pi/12', spec).correct).toBe(true);
+    expect(validateAnswer('exact_value', 'pi/3', spec).correct).toBe(false);
+    expect(validateAnswer('exact_value', '30', spec).correct).toBe(false);
+  });
+
+  it('grades undefined, so tan 90 can be asked directly', () => {
+    const spec = { correct_answer: 'undefined' };
+    expect(validateAnswer('exact_value', 'undefined', spec).correct).toBe(true);
+    expect(validateAnswer('exact_value', 'not defined', spec).correct).toBe(true);
+    expect(validateAnswer('exact_value', 'DNE', spec).correct).toBe(true);
+    expect(validateAnswer('exact_value', '0', spec).correct).toBe(false);
+    // And a defined answer is not satisfied by claiming it is undefined.
+    expect(validateAnswer('exact_value', 'undefined', { correct_answer: '1/2' }).correct).toBe(
+      false,
+    );
+  });
+
+  it('honours accepted_equivalents', () => {
+    const spec = { correct_answer: 'sqrt(3)/3', accepted_equivalents: ['1/sqrt(3)'] };
+    expect(validateAnswer('exact_value', '1/sqrt(3)', spec).correct).toBe(true);
+  });
+
+  it('explains an unparseable answer instead of marking it wrong silently', () => {
+    const out = validateAnswer('exact_value', 'about a half', { correct_answer: '1/2' });
+    expect(out.correct).toBe(false);
+    expect(out.reason).toMatch(/exact value/);
+  });
+
+  it('normalizes the stored answer', () => {
+    expect(
+      validateAnswer('exact_value', '1/sqrt(2)', { correct_answer: 'sqrt(2)/2' }).normalized,
+    ).toBe('sqrt(2)/2');
   });
 });

@@ -13,6 +13,12 @@ import { PracticeRepository } from '@learn/persistence';
 
 const CHOICE_TYPES = new Set(['multiple_choice', 'exact_choice', 'structured']);
 
+/** Free-text answer hints, keyed by question type. */
+const PLACEHOLDERS: Record<string, string | undefined> = {
+  point: '(x, y)',
+  exact_value: 'e.g. sqrt(3)/2 or pi/6',
+};
+
 export function QuestionView({
   question,
   learnerId,
@@ -172,8 +178,15 @@ export function QuestionView({
               disabled={practice.solved}
               autoComplete="off"
               inputMode={question.type === 'numeric' ? 'decimal' : 'text'}
-              placeholder={question.type === 'point' ? '(x, y)' : undefined}
+              placeholder={PLACEHOLDERS[question.type]}
+              aria-describedby={question.type === 'exact_value' ? 'answer-notation' : undefined}
             />
+            {question.type === 'exact_value' && (
+              <p id="answer-notation" className="answer-notation">
+                Give the exact value, not a rounded decimal. Write a square root as sqrt(3) and pi
+                as pi, so three quarters of pi is 3pi/4.
+              </p>
+            )}
           </>
         )}
 

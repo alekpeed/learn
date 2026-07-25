@@ -34,7 +34,8 @@
         "self_explanation_select",
         "multi_select",
         "ordering",
-        "point"
+        "point",
+        "exact_value"
       ],
       "description": "structured_reasoning / self_explanation_select feed Understanding (DEC-009)"
     },
@@ -75,7 +76,8 @@
         "structured",
         "multi_select",
         "ordering",
-        "point"
+        "point",
+        "exact_value"
       ],
       "description": "Which deterministic validator grades this item (doc 08 §2)."
     },

@@ -10,7 +10,8 @@ export type ValidatorType =
   | 'structured'
   | 'multi_select'
   | 'ordering'
-  | 'point';
+  | 'point'
+  | 'exact_value';
 
 export interface AnswerSpec {
   correct_answer: unknown;

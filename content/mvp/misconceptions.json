@@ -343,6 +343,170 @@
       "example_wrong_answer": 5
     },
     {
+      "misconception_id": "mc.math.precalculus.composed_in_wrong_order",
+      "description": "Applies the outer function first, so f(g(x)) is evaluated as g(f(x)).",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The function written closest to the input acts first. In f(g(3)) the g touches the 3, so compute g(3) and feed that into f. Working left to right computes the other composition.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 49
+    },
+    {
+      "misconception_id": "mc.math.precalculus.compound_treated_as_simple",
+      "description": "Adds the same interest each period instead of applying the rate to the new balance.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Each year's growth applies to the balance at the time, which already includes earlier growth. Two years at 5 percent is not 10 percent of the original - it is 1.05 times 1.05, so a little more.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 1100,
+      "recommended_prerequisite_check": "math.decimals_percents.percent_change"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.cube_root_as_divide_by_three",
+      "description": "Undoes a cube by dividing by 3 instead of taking a cube root.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Cubing multiplies a number by itself three times, so undoing it needs a cube root, not a division. 27 divided by 3 is 9, but 9 cubed is 729, not 27.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 9
+    },
+    {
+      "misconception_id": "mc.math.precalculus.degree_taken_from_one_factor",
+      "description": "Reports the degree of the largest factor instead of adding the degrees of a product.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Multiplying powers adds their exponents, so the degree of a product is the sum of the degrees. (x^2 + 1)(x^3 - 2) has degree 2 + 3 = 5, not 3.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 3,
+      "recommended_prerequisite_check": "math.algebra2.exponent_rules"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.doubling_read_as_arithmetic",
+      "description": "Calls a doubling pattern arithmetic because the early differences look like a pattern of their own.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Arithmetic needs the same amount added every time. In 2, 4, 8, 16 the differences are 2, 4, 8 - growing, not constant - while the ratios are all 2, which makes it geometric.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Arithmetic"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.every_denominator_zero_is_asymptote",
+      "description": "Treats every zero of the denominator as a vertical asymptote, even when the factor cancels.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Check whether the factor also divides the numerator. If it cancels, the graph has a single missing point - a hole - because the function agrees with a simpler expression everywhere else.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "There is a vertical asymptote"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.growth_factor_read_as_difference",
+      "description": "Reads a constant difference where the pattern actually has a constant ratio.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Check whether consecutive terms differ by the same amount or are multiplied by the same amount. In 2, 6, 18, 54 the differences are 4, 12, 36 - not constant - while the ratios are all 3.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 4
+    },
+    {
+      "misconception_id": "mc.math.precalculus.inverse_as_reciprocal",
+      "description": "Reads f^-1 as one divided by f, turning an inverse into a reciprocal.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The -1 in f^-1 means 'the function that undoes f', not a power. f^-1(11) asks which input gives 11. If you want a reciprocal, that is written 1/f(x).",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "1/11"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.last_term_used_as_count",
+      "description": "Uses the value of the last term as the number of terms in a series formula.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The formula needs how many terms there are, not how big the last one is. From 5 to 41 in steps of 4 there are 10 terms, so use 10.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 943
+    },
+    {
+      "misconception_id": "mc.math.precalculus.log_of_sum_split",
+      "description": "Applies the product rule to a sum, so log(a + b) becomes log(a) + log(b).",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The product rule needs a product. log(a) + log(b) equals log(ab), not log(a + b). Test it with a = b = 10 in base 10: log(20) is about 1.301, but log(10) + log(10) = 2.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, always"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.log_read_as_division",
+      "description": "Divides the number by the base instead of finding the exponent.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A logarithm asks for an exponent, not a quotient. log base 2 of 8 asks what power of 2 gives 8, which is 3 because 2^3 = 8. Dividing gives 4, and 2^4 is 16.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 4
+    },
+    {
+      "misconception_id": "mc.math.precalculus.multiplied_base_by_coefficient",
+      "description": "Folds the coefficient into the base, treating a times b^x as (ab)^x.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Only the base carries the exponent. In 3 times 2^x you raise 2 to the power first and then multiply by 3. Turning it into 6^x multiplies the 3 in as many times as the exponent says.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 1296,
+      "recommended_prerequisite_check": "math.algebra2.exponent_rules"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.solved_exponent_not_variable",
+      "description": "Stops at the value of the whole exponent instead of solving for the variable inside it.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Matching the bases tells you what the exponent equals, not what x equals. In 3^(x+1) = 81 you get x + 1 = 4, so there is still one step left: x = 3.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 4
+    },
+    {
+      "misconception_id": "mc.math.precalculus.solved_squared_term_once",
+      "description": "Gives only the positive solution of x^2 = k, missing the negative one.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A square has two square roots. x^2 = 9 is true for x = 3 and for x = -3, because a negative times a negative is positive. Always check both signs.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "3",
+      "recommended_prerequisite_check": "math.algebra2.solving_quadratics"
+    },
+    {
+      "misconception_id": "mc.math.precalculus.used_n_steps_not_n_minus_one",
+      "description": "Takes n steps to reach the nth term, so every answer overshoots by one step.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The first term is already there before any step is taken, so the nth term is only n - 1 steps along. For 4, 7, 10 the 10th term needs 9 threes added, not 10.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 34
+    },
+    {
+      "misconception_id": "mc.math.precalculus.zero_sign_copied_from_factor",
+      "description": "Reads the zero of (x - a) as -a, copying the sign in the bracket instead of solving.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Solve the bracket rather than reading it. x - 2 = 0 gives x = +2, and x + 5 = 0 gives x = -5, so the signs flip.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "-2"
+    },
+    {
       "misconception_id": "mc.math.ratios.reversed_order",
       "description": "Writes a ratio in the opposite order to the one the question names.",
       "detection_rule": {
@@ -362,6 +526,146 @@
       "content_version": "1.0.0",
       "example_wrong_answer": 70,
       "recommended_prerequisite_check": "math.number_foundations.place_value"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.all_quadrants_positive",
+      "description": "Gives the reference-angle value without its sign, so ratios stay positive outside quadrant I.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Only quadrant I has all three ratios positive. Work out the size from the reference angle, then set the sign from the quadrant: sine is positive in quadrants I and II, cosine in I and IV, tangent in I and III.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "sqrt(3)/2"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.amplitude_given_as_negative",
+      "description": "Reports a negative amplitude when the coefficient is negative.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Amplitude measures a distance from the midline to a peak, so it is never negative. A negative coefficient reflects the graph; take the size of the coefficient for the amplitude.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": -4
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.amplitude_read_as_full_range",
+      "description": "Reports the whole distance from minimum to maximum as the amplitude, doubling the true value.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Amplitude is measured from the midline to a peak, which is half the distance from lowest to highest. For y = 3 sin x the graph runs from -3 to 3, a span of 6, but the amplitude is 3.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 6
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.decimal_given_for_exact_value",
+      "description": "Gives a rounded decimal where an exact value was asked for.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An exact value keeps the square root or the pi in it. sqrt(3)/2 is exact; 0.866 is a rounding of it and is not equal to it. Write the surd or the multiple of pi instead.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "0.866"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.degrees_and_radians_confused",
+      "description": "Treats a radian measure as if it were a number of degrees, or reports degrees when radians were asked for.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A radian is much bigger than a degree: pi radians is 180 degrees, so one radian is about 57 degrees. Convert with the ratio 180 degrees = pi radians before answering.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 30
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.forgot_to_use_inverse",
+      "description": "Applies the trig function to the ratio instead of the inverse function, so a ratio comes back where an angle was wanted.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Sine turns an angle into a ratio; inverse sine turns a ratio into an angle. If you know the ratio and want the angle, use the inverse. Check your answer by feeding it forwards through sine again.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.0087
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.hypotenuse_misidentified",
+      "description": "Takes the longest-looking or first-listed side as the hypotenuse rather than the one opposite the right angle.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The hypotenuse is always the side opposite the right angle, and it is always the longest side. Find the right angle first, then look straight across from it.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "the side next to the right angle"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.multiplied_instead_of_divided",
+      "description": "Multiplies by the ratio when the unknown is the hypotenuse, giving a hypotenuse shorter than a leg.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The hypotenuse is the longest side of a right triangle. If the unknown is the hypotenuse, it sits underneath in the ratio, so you divide by the sine or cosine rather than multiplying. A hypotenuse shorter than one of the legs is impossible.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 3.38
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.period_ignores_coefficient",
+      "description": "Leaves the period at 360 degrees when a coefficient on x has compressed the graph.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A coefficient on x changes how fast the input runs, so it changes the period. Divide 360 degrees by that coefficient: y = sin 2x completes a cycle in 180 degrees.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 360
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.sine_read_as_first_coordinate",
+      "description": "Reads the unit-circle point as (sine, cosine), swapping the two coordinates.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The horizontal coordinate is written first and it is the cosine; the vertical coordinate is the sine. The point at angle A is (cos A, sin A).",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "sqrt(3)/2"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.sine_used_for_cosine",
+      "description": "Uses sine where the adjacent side is involved, so cosine problems get the opposite side.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Sine pairs the opposite side with the hypotenuse; cosine pairs the adjacent side with the hypotenuse. Check which of the two non-hypotenuse sides the question names before picking the ratio.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "3/5"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.swapped_opposite_adjacent",
+      "description": "Swaps the opposite and adjacent sides, so sine and tangent use the wrong side.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Opposite and adjacent are named relative to the angle you are working with. The opposite side does not touch the angle; the adjacent side does, and is not the hypotenuse. Label the triangle from the angle before choosing a ratio.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "4/3"
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.tan_ninety_read_as_zero",
+      "description": "Reports tan 90 as 0 or 1 rather than recognising that it has no value.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Tangent is opposite over adjacent, and at 90 degrees the adjacent side is zero. Dividing by zero gives no answer at all, so tan 90 is undefined rather than any particular number.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0
+    },
+    {
+      "misconception_id": "mc.math.trigonometry.trig_function_distributed_over_multiplication",
+      "description": "Treats sine as if it distributed over multiplication, so sin 2A becomes 2 sin A.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Sine is a function, not a multiplier, so it cannot be pulled apart that way. Test it: sin 60 is about 0.866 but 2 sin 30 is 1. The correct expansion is sin 2A = 2 sin A cos A.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, always"
     },
     {
       "misconception_id": "mc.science.data.assumed_unit_gridline",

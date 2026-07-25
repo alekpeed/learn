@@ -21,6 +21,8 @@ const UNITS = [
   'functions',
   'geometry',
   'algebra2',
+  'precalculus',
+  'trigonometry',
   'science_thinking',
   'science_experiments',
   'science_measurement',
@@ -31,6 +33,7 @@ interface Question {
   question_id: string;
   validator: string;
   answer_spec: { correct_answer: unknown };
+  common_wrong_answers?: { value: unknown; misconception_id: string }[];
 }
 
 function allQuestions(): Question[] {
@@ -51,6 +54,23 @@ describe('MVP content answers validate deterministically (Phase 6)', () => {
       const outcome = validateAnswer(q.validator as ValidatorType, answer, q.answer_spec);
       if (!outcome.correct) {
         failures.push(`${q.question_id} (${q.validator}) rejects "${answer}"`);
+      }
+    }
+    expect(failures, failures.join('\n')).toEqual([]);
+  });
+
+  // A distractor the validator would accept is a question that marks a correct
+  // answer wrong. That has happened here before, and a string comparison in the
+  // generator cannot catch it: 0.5 and 1/2 differ as text but grade the same.
+  it('every declared common wrong answer is rejected by that validator', () => {
+    const failures: string[] = [];
+    for (const q of allQuestions()) {
+      for (const cwa of q.common_wrong_answers ?? []) {
+        const answer = Array.isArray(cwa.value) ? cwa.value.join('|') : String(cwa.value);
+        const outcome = validateAnswer(q.validator as ValidatorType, answer, q.answer_spec);
+        if (outcome.correct) {
+          failures.push(`${q.question_id} (${q.validator}) accepts distractor "${answer}"`);
+        }
       }
     }
     expect(failures, failures.join('\n')).toEqual([]);

@@ -1,0 +1,3179 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.precalculus.domain_range",
+      "unit_id": "math.precalculus",
+      "title": "Domain and Range",
+      "summary": "The inputs a function accepts and the outputs it can produce.",
+      "objectives": [
+        "Find the values an input must avoid.",
+        "Describe the outputs a function can take."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.function_notation",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.rational_expressions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "domain",
+          "definition": "Every input value a function accepts."
+        },
+        {
+          "term": "range",
+          "definition": "Every output value a function can produce."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.composition",
+      "unit_id": "math.precalculus",
+      "title": "Composing Functions",
+      "summary": "Feeding the output of one function into another.",
+      "objectives": [
+        "Evaluate a composition in the right order.",
+        "Show that order changes the result."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.function_notation",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "composition",
+          "definition": "Applying one function to the output of another, written f(g(x))."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.inverse_functions",
+      "unit_id": "math.precalculus",
+      "title": "Inverse Functions",
+      "summary": "The function that undoes another function.",
+      "objectives": [
+        "Evaluate an inverse at a given output.",
+        "Explain when a function has an inverse."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.precalculus.composition",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "inverse function",
+          "definition": "The function that reverses another, written f with exponent -1."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "unit_id": "math.precalculus",
+      "title": "Behaviour of Polynomials",
+      "summary": "Degree, zeros and what a polynomial does for large inputs.",
+      "objectives": [
+        "Find the degree and the zeros of a polynomial.",
+        "Describe end behaviour from the leading term."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.polynomials",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.factoring",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "degree",
+          "definition": "The highest power of the variable in a polynomial."
+        },
+        {
+          "term": "zero",
+          "definition": "An input that makes the polynomial equal to 0."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.rational_functions",
+      "unit_id": "math.precalculus",
+      "title": "Rational Functions and Asymptotes",
+      "summary": "Lines a graph approaches but does not reach.",
+      "objectives": [
+        "Locate a vertical asymptote.",
+        "Find a horizontal asymptote from the leading terms."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.rational_expressions",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.precalculus.domain_range",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "asymptote",
+          "definition": "A line the graph gets ever closer to without meeting it."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.exponential_functions",
+      "unit_id": "math.precalculus",
+      "title": "Exponential Functions",
+      "summary": "Repeated multiplication as a function, for growth and decay.",
+      "objectives": [
+        "Evaluate a function of the form a times b to the power x.",
+        "Read a growth factor from a table."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.exponent_rules",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.precalculus.domain_range",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "growth factor",
+          "definition": "The number a quantity is multiplied by for each step."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.logarithms",
+      "unit_id": "math.precalculus",
+      "title": "Logarithms",
+      "summary": "The exponent that produces a given number.",
+      "objectives": [
+        "Evaluate a logarithm from its definition.",
+        "Rewrite a logarithm as an exponent statement."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.precalculus.exponential_functions",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.precalculus.inverse_functions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "logarithm",
+          "definition": "The exponent a base must be raised to in order to give a number."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.log_rules",
+      "unit_id": "math.precalculus",
+      "title": "Logarithm Rules",
+      "summary": "Turning products into sums, quotients into differences and powers into multiples.",
+      "objectives": [
+        "Apply the product, quotient and power rules for logarithms.",
+        "Reject rules that do not hold."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.precalculus.logarithms",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    },
+    {
+      "skill_id": "math.precalculus.exponential_equations",
+      "unit_id": "math.precalculus",
+      "title": "Solving Exponential Equations",
+      "summary": "Finding the unknown exponent.",
+      "objectives": [
+        "Solve an equation by matching bases.",
+        "Check a solution by substituting it back."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.precalculus.logarithms",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    },
+    {
+      "skill_id": "math.precalculus.sequences",
+      "unit_id": "math.precalculus",
+      "title": "Arithmetic and Geometric Sequences",
+      "summary": "Patterns that add a fixed amount or multiply by a fixed amount.",
+      "objectives": [
+        "Find a common difference or common ratio.",
+        "Find a distant term without listing every one."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.expressions",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.precalculus.exponential_functions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "common difference",
+          "definition": "The fixed amount added between consecutive terms of an arithmetic sequence."
+        },
+        {
+          "term": "common ratio",
+          "definition": "The fixed multiplier between consecutive terms of a geometric sequence."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.precalculus.series",
+      "unit_id": "math.precalculus",
+      "title": "Arithmetic and Geometric Series",
+      "summary": "Adding up the terms of a sequence.",
+      "objectives": [
+        "Sum an arithmetic series with the pairing method.",
+        "Sum a geometric series."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.precalculus.sequences",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "series",
+          "definition": "The sum of the terms of a sequence."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.precalculus.domain_range.lesson",
+      "skill_id": "math.precalculus.domain_range",
+      "title": "Domain and Range",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Work out which inputs a function accepts and which outputs it can give."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need function notation, and you need to know that dividing by zero has no answer."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A function is a machine. The domain is the list of things you are allowed to put in; the range is everything that can come out. Two things force a value out of the domain: dividing by zero, and taking the square root of a negative number. Neither has an answer, so the machine jams."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The domain is the set of permitted inputs. The range is the set of achievable outputs."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 1/(x - 3), ask when the bottom is zero. x - 3 = 0 when x = 3, so 3 is excluded and every other number is allowed. Check: f(4) = 1, f(2) = -1, both fine."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = sqrt(x - 5), the inside must not be negative. x - 5 is zero at x = 5 and negative below it, so the domain starts at 5. Check: f(5) = 0, and f(4) would need sqrt(-1)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Excluding the value that makes the top zero. A zero numerator is fine - it just makes the output zero. Only a zero denominator is a problem."
+        },
+        {
+          "type": "summary",
+          "body": "Exclude what breaks the arithmetic: a zero denominator or a negative under a square root."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.composition.lesson",
+      "skill_id": "math.precalculus.composition",
+      "title": "Composing Functions",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Evaluate f(g(x)) and explain why it usually differs from g(f(x))."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to be comfortable substituting a value into f(x) notation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Composition is two machines in a row. The output of the first becomes the input of the second. Because the order of the machines changes what happens, swapping them usually changes the answer."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "f(g(x)) means: work out g(x) first, then put that result into f. It is also written (f o g)(x). The function nearest the x acts first."
+        },
+        {
+          "type": "worked_example",
+          "body": "With f(x) = 2x + 1 and g(x) = x^2, find f(g(3)). Inner first: g(3) = 9. Then f(9) = 2(9) + 1 = 19."
+        },
+        {
+          "type": "worked_example",
+          "body": "The other order, g(f(3)): f(3) = 7, then g(7) = 49. Same functions, same input, different answer - so order matters."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Working from the left. In f(g(3)) the g is closest to the 3 and acts first. Reading left to right gives the other composition."
+        },
+        {
+          "type": "summary",
+          "body": "Innermost function first. f(g(x)) and g(f(x)) are different questions."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.inverse_functions.lesson",
+      "skill_id": "math.precalculus.inverse_functions",
+      "title": "Inverse Functions",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use an inverse to work backwards from an output to its input."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to solve a two-step equation, and to know what composing functions means."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An inverse runs the machine backwards. If f turns 3 into 11, then the inverse turns 11 back into 3. That is the whole idea, and it gives you a way to check any answer: put it through the original function and you should get back where you started."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The inverse of f is written f^-1. It satisfies f^-1(f(x)) = x. The exponent -1 here means 'undoes', not 'one divided by'."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 3x - 6, find f^-1(0). Ask which input gives 0: 3x - 6 = 0, so x = 2. Check by going forwards: f(2) = 3(2) - 6 = 0. Correct."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 2x + 5, find f^-1(11). Solve 2x + 5 = 11, giving x = 3. Check: f(3) = 11."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Reading f^-1 as 1/f. They are different: f^-1(11) asks which input produced 11, while 1/f(11) is a division."
+        },
+        {
+          "type": "summary",
+          "body": "To evaluate f^-1(k), solve f(x) = k. Always check by substituting your answer into f."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.polynomial_behavior.lesson",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "title": "Behaviour of Polynomials",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Read degree, zeros and end behaviour off a polynomial."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to multiply polynomials and to factorise a quadratic."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "For very large inputs the highest power dwarfs everything else, so the leading term alone decides which way the ends of the graph go. Near the middle the other terms matter, and that is where the zeros sit."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The degree is the highest power. A polynomial of degree n has at most n real zeros. A zero of p is a value a with p(a) = 0, and it corresponds to a factor (x - a)."
+        },
+        {
+          "type": "worked_example",
+          "body": "For p(x) = (x - 2)(x + 5), the zeros are 2 and -5. Check: p(2) = 0 times 7 = 0, and p(-5) = -7 times 0 = 0. Multiplying out gives x^2 + 3x - 10, degree 2."
+        },
+        {
+          "type": "worked_example",
+          "body": "The degree of (x^2 + 1)(x^3 - 2) is 2 + 3 = 5, because the leading terms multiply to x^5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Adding degrees when polynomials are added. Degrees add when you multiply; when you add, the degree is just the larger of the two."
+        },
+        {
+          "type": "summary",
+          "body": "Leading term decides the ends. Factors give the zeros. Degree caps how many zeros there can be."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.rational_functions.lesson",
+      "skill_id": "math.precalculus.rational_functions",
+      "title": "Rational Functions and Asymptotes",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Find vertical and horizontal asymptotes, and tell a hole from an asymptote."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to factorise, to simplify a fraction, and to exclude values from a domain."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Where the denominator hits zero the output blows up, so the graph shoots off along a vertical line it never touches. For very large inputs the highest powers dominate, and their ratio settles the horizontal line the graph flattens towards."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A vertical asymptote occurs where the denominator is zero and the numerator is not. When the degrees on top and bottom are equal, the horizontal asymptote is the ratio of the leading coefficients. When the bottom has the higher degree, the horizontal asymptote is 0."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 1/(x - 4) the denominator vanishes at x = 4 and the numerator does not, so x = 4 is a vertical asymptote. Sampling nearby: f(4.1) = 10, f(4.01) = 100 - the values run away."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 2x/(x + 1) the degrees match, so the horizontal asymptote is 2/1 = 2. Check: f(100) = 200/101, which is about 1.98."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Calling every zero of the denominator an asymptote. If the same factor cancels from the top, the graph has a hole there instead - one missing point, not a blow-up."
+        },
+        {
+          "type": "summary",
+          "body": "Denominator zero and numerator non-zero gives a vertical asymptote. Compare degrees for the horizontal one."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.exponential_functions.lesson",
+      "skill_id": "math.precalculus.exponential_functions",
+      "title": "Exponential Functions",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Evaluate exponential functions and identify growth or decay."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need the exponent rules, including that anything to the power 0 is 1."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A linear function adds the same amount each step. An exponential multiplies by the same amount each step. That difference is small at first and enormous later, which is why exponential growth always overtakes linear growth eventually."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An exponential function is f(x) = a times b^x. Here a is the starting value, because b^0 = 1 makes f(0) = a. If b is greater than 1 the function grows; if b is between 0 and 1 it decays."
+        },
+        {
+          "type": "worked_example",
+          "body": "For f(x) = 3 times 2^x, f(4) = 3 times 16 = 48. Step by step the outputs are 3, 6, 12, 24, 48 - doubling each time."
+        },
+        {
+          "type": "worked_example",
+          "body": "Decay: 800 times 0.5^3 = 800 times 0.125 = 100. Halving three times, 800 goes to 400 to 200 to 100."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Multiplying the base by the coefficient. In 3 times 2^x only the 2 is raised to the power. It is not 6^x - check at x = 1, where 3 times 2 = 6 but also 6^1 = 6, then at x = 2, where 3 times 4 = 12 while 6^2 = 36."
+        },
+        {
+          "type": "summary",
+          "body": "f(x) = a times b^x starts at a and multiplies by b each step."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.logarithms.lesson",
+      "skill_id": "math.precalculus.logarithms",
+      "title": "Logarithms",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Evaluate a logarithm by asking what exponent is needed."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need exponentials, and the idea that an inverse undoes a function."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A logarithm answers one question: what exponent do I need? Reading log base 2 of 8 as 'two to the what gives eight' turns it into arithmetic you already know. It is the inverse of raising to a power, which is why every answer can be checked by exponentiating."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "log base b of y = x means exactly the same as b^x = y. The two statements are interchangeable."
+        },
+        {
+          "type": "worked_example",
+          "body": "log base 2 of 8: two to the what gives 8? 2^3 = 8, so the answer is 3. Check by exponentiating: 2^3 = 8."
+        },
+        {
+          "type": "worked_example",
+          "body": "log base 2 of 1/4: 2^-2 = 1/(2^2) = 1/4, so the answer is -2. A negative exponent gives a value below 1."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Dividing instead of finding an exponent. log base 2 of 8 is not 8/2 = 4; 2^4 is 16, not 8."
+        },
+        {
+          "type": "summary",
+          "body": "log base b of y asks: b to the what gives y? Check every answer by raising b to it."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.log_rules.lesson",
+      "skill_id": "math.precalculus.log_rules",
+      "title": "Logarithm Rules",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use the product, quotient and power rules, and know their limits."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need the definition of a logarithm as an exponent."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Logarithms are exponents, so the exponent rules become logarithm rules. Multiplying powers adds exponents, so multiplying numbers adds their logarithms. Every rule here is an exponent rule in disguise."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Product rule: log(xy) = log(x) + log(y). Quotient rule: log(x/y) = log(x) - log(y). Power rule: log(x^n) = n times log(x). There is no rule for log(x + y)."
+        },
+        {
+          "type": "worked_example",
+          "body": "log base 2 of 4 plus log base 2 of 8 = 2 + 3 = 5, and 4 times 8 = 32 with log base 2 of 32 = 5. The two agree."
+        },
+        {
+          "type": "worked_example",
+          "body": "Given log(2) = 0.301 and log(3) = 0.477, log(6) = log(2) + log(3) = 0.778, because 2 times 3 = 6."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Splitting the logarithm of a sum. log(a + b) is not log(a) + log(b). Test it: log base 10 of (10 + 10) is about 1.301, but 1 + 1 = 2."
+        },
+        {
+          "type": "summary",
+          "body": "Products add, quotients subtract, powers multiply. Sums do nothing."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.exponential_equations.lesson",
+      "skill_id": "math.precalculus.exponential_equations",
+      "title": "Solving Exponential Equations",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Solve for an unknown exponent by writing both sides to the same base."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need logarithms and two-step equations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If both sides are powers of the same base, then the exponents must match. That turns an exponential equation into an ordinary one you can already solve."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "If b^m = b^n with b positive and not 1, then m = n. Equivalently, take the logarithm of both sides."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve 2^x = 32. Since 32 = 2^5, the exponents match: x = 5. Check: 2^5 = 32."
+        },
+        {
+          "type": "worked_example",
+          "body": "Solve 3^(x+1) = 81. Since 81 = 3^4, we need x + 1 = 4, so x = 3. Check: 3^(3+1) = 3^4 = 81."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Forgetting to solve the whole exponent. In 3^(x+1) = 81 the answer is not 4 - that is x + 1. Subtract 1 to finish."
+        },
+        {
+          "type": "summary",
+          "body": "Match the bases, equate the exponents, solve, then check by substituting."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.sequences.lesson",
+      "skill_id": "math.precalculus.sequences",
+      "title": "Arithmetic and Geometric Sequences",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Tell the two kinds of sequence apart and find any term of either."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to build an expression, and to understand repeated multiplication."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "There are two simple ways a list can continue: add the same thing each time, or multiply by the same thing each time. Checking which one applies is a matter of testing the differences and then the ratios."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Arithmetic: the nth term is a + (n - 1)d, where a is the first term and d the common difference. Geometric: the nth term is a times r^(n-1), where r is the common ratio."
+        },
+        {
+          "type": "worked_example",
+          "body": "For 4, 7, 10, 13 the differences are all 3, so it is arithmetic with a = 4 and d = 3. The 10th term is 4 + 9 times 3 = 31. Listing the terms out to the tenth also gives 31."
+        },
+        {
+          "type": "worked_example",
+          "body": "For 3, 6, 12 the ratios are all 2, so it is geometric with a = 3 and r = 2. The 6th term is 3 times 2^5 = 96."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Using n instead of n - 1. The first term needs no steps, so reaching the 10th term takes 9 steps, not 10."
+        },
+        {
+          "type": "summary",
+          "body": "Test the differences, then the ratios. Reaching term n takes n - 1 steps."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.precalculus.series.lesson",
+      "skill_id": "math.precalculus.series",
+      "title": "Arithmetic and Geometric Series",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Add up a sequence without listing every term."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to find the nth term of an arithmetic or geometric sequence."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Pair the first term with the last, the second with the second-to-last, and so on. In an arithmetic sequence every pair has the same total, so the sum is just that total times the number of pairs. This is the trick Gauss is said to have used on the numbers 1 to 100."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Arithmetic series: the sum of n terms is n/2 times (first + last). Geometric series: the sum of n terms is a times (r^n - 1) divided by (r - 1), for r not equal to 1."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 1 to 100. Pairing gives 1 + 100 = 101, and there are 50 such pairs, so the total is 50 times 101 = 5050."
+        },
+        {
+          "type": "worked_example",
+          "body": "Add 3 + 6 + 12 + 24. The formula gives 3 times (2^4 - 1)/(2 - 1) = 3 times 15 = 45, and adding directly gives 45 too."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Using the last term where the number of terms belongs. In 5 + 9 + ... + 41 the last term is 41 but there are only 10 terms."
+        },
+        {
+          "type": "summary",
+          "body": "Arithmetic: half the count times (first + last). Geometric: use the ratio formula. Check small cases by adding directly."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.precalculus.domain_range.q1",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = 1/(x - 3), which single value of x is not in the domain?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask what would make the bottom of the fraction zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve x - 3 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "At x = 3 the denominator is 3 - 3 = 0, and dividing by zero has no answer, so 3 is excluded.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q2",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = sqrt(x - 5), what is the smallest value of x in the domain?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A square root needs its inside to be zero or positive."
+        },
+        {
+          "level": 2,
+          "text": "Solve x - 5 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x - 5 must not be negative. It is zero at x = 5, so 5 is the smallest allowed input.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q3",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = x^2 + 2, what is the smallest output the function can produce?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A square is never negative."
+        },
+        {
+          "level": 2,
+          "text": "The smallest value of x^2 is 0. Add 2 to it."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "x^2 is smallest at 0, when x = 0, so the smallest output is 0 + 2 = 2. Every other input gives more.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q4",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "For f(x) = 1/(x^2 - 9), which values of x must be excluded from the domain? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["3", "-3"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find every x that makes x^2 - 9 equal to zero."
+        },
+        {
+          "level": 2,
+          "text": "x^2 = 9 has two solutions, not one."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "x^2 - 9 = 0 when x^2 = 9, so x = 3 or x = -3. Both make the denominator zero, so both are excluded.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["3", "-3", "9", "0"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "9",
+          "misconception_id": "mc.math.precalculus.solved_squared_term_once"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q5",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = 1/(2x + 8), which value of x is not in the domain?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set the denominator equal to zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve 2x + 8 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x + 8 = 0 gives x = -4. Check: 2(-4) + 8 = 0, so the denominator vanishes and -4 is excluded.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q6",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which description fits the range of f(x) = x^2?",
+      "answer_spec": {
+        "correct_answer": "Every number greater than or equal to 0"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about whether a squared value can ever be negative."
+        },
+        {
+          "level": 2,
+          "text": "The smallest output is 0, and outputs grow without limit."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Squaring never gives a negative result, and every non-negative number is the square of something, so the range is 0 and above.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Every number greater than or equal to 0",
+          "Every number",
+          "Every number greater than 0",
+          "Only the whole numbers"
+        ]
+      }
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q7",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = sqrt(2x - 6), what is the smallest value of x in the domain?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The expression under the root must not be negative."
+        },
+        {
+          "level": 2,
+          "text": "Solve 2x - 6 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x - 6 = 0 gives x = 3. Check: 2(3) - 6 = 0, so the root is defined at 3 and undefined below it.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q8",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A function is defined by f(x) = 1/(x - 2). Why is x = 2 excluded rather than simply giving a large answer?",
+      "answer_spec": {
+        "correct_answer": "Dividing by zero has no answer at all"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Consider what 1/0 would mean."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether any number multiplied by 0 can give 1."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "No number times zero equals 1, so 1/0 names nothing. Inputs near 2 give large outputs, but 2 itself gives no output, which is why it leaves the domain entirely.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Dividing by zero has no answer at all",
+          "The answer would be zero",
+          "The answer would be infinity, which is a number",
+          "The function is negative there"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.composition.q1",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "With f(x) = 2x + 1 and g(x) = x^2, what is f(g(3))?",
+      "answer_spec": {
+        "correct_answer": 19
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out g(3) before you touch f."
+        },
+        {
+          "level": 2,
+          "text": "g(3) = 9, so you need f(9)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(3) = 9, then f(9) = 2(9) + 1 = 19.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q2",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "With f(x) = 2x + 1 and g(x) = x^2, what is g(f(3))?",
+      "answer_spec": {
+        "correct_answer": 49
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This time f acts first."
+        },
+        {
+          "level": 2,
+          "text": "f(3) = 7, so you need g(7)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(3) = 2(3) + 1 = 7, then g(7) = 49.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 19,
+          "misconception_id": "mc.math.precalculus.composed_in_wrong_order"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.composition.q3",
+      "skill_id": "math.precalculus.composition",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "For most pairs of functions, is f(g(x)) the same as g(f(x))?",
+      "answer_spec": {
+        "correct_answer": "No, the order usually changes the answer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two answers you found for f and g above."
+        },
+        {
+          "level": 2,
+          "text": "19 and 49 came from the same functions and the same input."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "With f(x) = 2x + 1 and g(x) = x^2 the two orders gave 19 and 49, so composition is not interchangeable.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, the order usually changes the answer",
+          "Yes, always",
+          "Yes, as long as both are linear",
+          "Only when x is positive"
+        ]
+      }
+    },
+    {
+      "question_id": "math.precalculus.composition.q4",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "With f(x) = x + 4 and g(x) = 3x, what is f(g(5))?",
+      "answer_spec": {
+        "correct_answer": 19
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Triple the 5 first."
+        },
+        {
+          "level": 2,
+          "text": "g(5) = 15, so work out f(15)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(5) = 15, then f(15) = 15 + 4 = 19.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q5",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "With f(x) = x + 4 and g(x) = 3x, what is g(f(5))?",
+      "answer_spec": {
+        "correct_answer": 27
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 4 first this time."
+        },
+        {
+          "level": 2,
+          "text": "f(5) = 9, so work out g(9)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(5) = 9, then g(9) = 27. Adding before tripling multiplies the 4 as well, which is why this exceeds 19.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 19,
+          "misconception_id": "mc.math.precalculus.composed_in_wrong_order"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.composition.q6",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "With f(x) = 2x + 1, what is f(f(2))?",
+      "answer_spec": {
+        "correct_answer": 11
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply f, then apply f again to that answer."
+        },
+        {
+          "level": 2,
+          "text": "f(2) = 5, so you need f(5)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(2) = 5, then f(5) = 2(5) + 1 = 11.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q7",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "With f(x) = x^2 - 1 and g(x) = x + 3, what is f(g(-1))?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out g(-1) first."
+        },
+        {
+          "level": 2,
+          "text": "g(-1) = 2, so you need f(2)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(-1) = -1 + 3 = 2, then f(2) = 4 - 1 = 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q8",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A shop applies g(x) = 0.75x for a 25 percent discount, then f(x) = 1.1x for 10 percent tax. For a 40 dollar item, what is f(g(40)) in dollars?",
+      "answer_spec": {
+        "correct_answer": 33
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Take the discount first, then tax the discounted price."
+        },
+        {
+          "level": 2,
+          "text": "g(40) = 30, so work out f(30)."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "g(40) = 0.75 times 40 = 30 dollars after the discount. Then f(30) = 1.1 times 30 = 33 dollars after tax.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q1",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = 3x - 6, what is the inverse of f evaluated at 0?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask which input makes f give 0."
+        },
+        {
+          "level": 2,
+          "text": "Solve 3x - 6 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Solving 3x - 6 = 0 gives x = 2. Check forwards: f(2) = 3(2) - 6 = 0, so the inverse sends 0 back to 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q2",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = 2x + 5, what is the inverse of f evaluated at 11?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which input gives an output of 11?"
+        },
+        {
+          "level": 2,
+          "text": "Solve 2x + 5 = 11."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x + 5 = 11 gives x = 3. Check: f(3) = 2(3) + 5 = 11.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q3",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A function f satisfies f(4) = 9. What is the inverse of f evaluated at 9?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The inverse reverses the arrow."
+        },
+        {
+          "level": 2,
+          "text": "f sends 4 to 9, so the inverse sends 9 to what?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "f takes 4 to 9, so the inverse takes 9 back to 4. No formula is needed, only the pairing.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": "1/9",
+          "misconception_id": "mc.math.precalculus.inverse_as_reciprocal"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q4",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = x/2 + 1, what is the inverse of f evaluated at 4?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Solve x/2 + 1 = 4."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 1, then undo the halving."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x/2 + 1 = 4 gives x/2 = 3, so x = 6. Check: f(6) = 6/2 + 1 = 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q5",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which test on a graph shows that a function has an inverse which is itself a function?",
+      "answer_spec": {
+        "correct_answer": "The horizontal line test"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An inverse must send each output back to exactly one input."
+        },
+        {
+          "level": 2,
+          "text": "Ask what happens if some output came from two different inputs."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "If a horizontal line meets the graph twice, one output came from two inputs, so reversing it would not give a single answer. Passing the horizontal line test rules that out.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The horizontal line test",
+          "The vertical line test",
+          "The diagonal line test",
+          "Any function has an inverse function"
+        ]
+      }
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q6",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = 5x - 2, what is the inverse of f evaluated at f(7)?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "You do not need to work out f(7)."
+        },
+        {
+          "level": 2,
+          "text": "An inverse undoes the function it came from."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Applying f then its inverse returns the original input, so the answer is 7. Working it out the long way agrees: f(7) = 33, and solving 5x - 2 = 33 gives x = 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q7",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = x^3, what is the inverse of f evaluated at 27?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which number cubed gives 27?"
+        },
+        {
+          "level": 2,
+          "text": "Solve x^3 = 27."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3^3 = 27, so the inverse of 27 is 3. Check by cubing: 3 times 3 times 3 = 27.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 9,
+          "misconception_id": "mc.math.precalculus.cube_root_as_divide_by_three"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q8",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A function f converts a temperature in degrees Celsius to degrees Fahrenheit. What does the inverse of f do?",
+      "answer_spec": {
+        "correct_answer": "Converts degrees Fahrenheit to degrees Celsius"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An inverse reverses the direction of the conversion."
+        },
+        {
+          "level": 2,
+          "text": "If f goes from Celsius to Fahrenheit, the inverse goes the other way."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The inverse undoes f, so it takes a Fahrenheit reading and returns the Celsius value it came from.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Converts degrees Fahrenheit to degrees Celsius",
+          "Converts degrees Celsius to degrees Fahrenheit more accurately",
+          "Gives one divided by the Fahrenheit value",
+          "Makes the temperature negative"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q1",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the degree of (x^2 + 1)(x^3 - 2)?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the leading terms."
+        },
+        {
+          "level": 2,
+          "text": "x^2 times x^3 gives x to what power?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The leading terms multiply to x^2 times x^3 = x^5, so the degree is 5. Degrees add when polynomials are multiplied.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 3,
+          "misconception_id": "mc.math.precalculus.degree_taken_from_one_factor"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q2",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Where does the graph of p(x) = x^3 - 2x + 7 cross the vertical axis?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The vertical axis is where x = 0."
+        },
+        {
+          "level": 2,
+          "text": "Work out p(0)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "p(0) = 0 - 0 + 7 = 7, so the graph crosses the vertical axis at 7. Only the constant term survives.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q3",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Which values are zeros of p(x) = (x - 2)(x + 5)? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["2", "-5"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A product is zero when one of its factors is zero."
+        },
+        {
+          "level": 2,
+          "text": "Set each bracket to zero in turn."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "x - 2 = 0 gives x = 2 and x + 5 = 0 gives x = -5. Check: p(2) = 0 times 7 = 0 and p(-5) = -7 times 0 = 0.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["2", "-5", "-2", "5"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "-2",
+          "misconception_id": "mc.math.precalculus.zero_sign_copied_from_factor"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q4",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "At most how many real zeros can a polynomial of degree 3 have?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each real zero uses up one linear factor."
+        },
+        {
+          "level": 2,
+          "text": "A degree-3 polynomial has three linear factors at most."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A polynomial of degree n has at most n real zeros, so a cubic has at most 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q5",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "One zero of p(x) = x^2 - 5x + 6 is 2. What is the other zero?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factorise the quadratic."
+        },
+        {
+          "level": 2,
+          "text": "x^2 - 5x + 6 factors as (x - 2)(x - 3)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^2 - 5x + 6 = (x - 2)(x - 3), so the zeros are 2 and 3. Check: 9 - 15 + 6 = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q6",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "As x becomes very large and positive, what does p(x) = x^3 do?",
+      "answer_spec": {
+        "correct_answer": "Rises without bound"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try a few large inputs."
+        },
+        {
+          "level": 2,
+          "text": "10^3 is 1000 and 100^3 is a million."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Cubing a large positive number gives a much larger positive number, and there is no ceiling, so the graph rises without bound.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Rises without bound",
+          "Falls without bound",
+          "Levels off at a fixed value",
+          "Approaches zero"
+        ]
+      }
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q7",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the degree of (2x^3 - 1)^2?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Squaring means multiplying the polynomial by itself."
+        },
+        {
+          "level": 2,
+          "text": "The leading term is 2x^3 times 2x^3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The leading term squares to 4x^6, so the degree is 6. Raising to a power multiplies the degree by that power.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q8",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why must every polynomial of odd degree have at least one real zero?",
+      "answer_spec": {
+        "correct_answer": "Its two ends go in opposite directions, so it has to cross the axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about where the graph is for very large negative and very large positive inputs."
+        },
+        {
+          "level": 2,
+          "text": "A graph with no break cannot get from below the axis to above it without touching it."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "For an odd degree the leading term sends one end down and the other up. A polynomial graph has no breaks, so getting from below the axis to above it forces at least one crossing.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Its two ends go in opposite directions, so it has to cross the axis",
+          "Odd numbers are never zero",
+          "Because its degree is not divisible by 2",
+          "It does not have to, this is false"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q1",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "At which value of x does f(x) = 1/(x - 4) have a vertical asymptote?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find where the denominator is zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve x - 4 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The denominator is zero at x = 4 while the numerator stays 1, so the outputs run away and x = 4 is a vertical asymptote.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q2",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the horizontal asymptote of f(x) = 2x/(x + 1)?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the highest power on the top with the highest power on the bottom."
+        },
+        {
+          "level": 2,
+          "text": "Both are degree 1, so divide the leading coefficients."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Top and bottom both have degree 1, so the asymptote is 2/1 = 2. Check: f(1000) is about 1.998.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q3",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The function f(x) = (x^2 - 9)/(x - 3) is undefined at x = 3. What value do its outputs approach as x gets close to 3?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factorise the top."
+        },
+        {
+          "level": 2,
+          "text": "x^2 - 9 = (x - 3)(x + 3), and the (x - 3) cancels."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Away from 3 the function equals x + 3, so the outputs approach 3 + 3 = 6. Check: f(2.999) is about 5.999.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q4",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "For f(x) = (x^2 - 9)/(x - 3), what happens at x = 3?",
+      "answer_spec": {
+        "correct_answer": "There is a hole, a single missing point"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask whether the factor causing the zero also cancels from the top."
+        },
+        {
+          "level": 2,
+          "text": "The function agrees with x + 3 everywhere except at 3."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The (x - 3) factor cancels, so the graph is the line x + 3 with one point removed. That is a hole, not a vertical asymptote.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "There is a hole, a single missing point",
+          "There is a vertical asymptote",
+          "There is a horizontal asymptote",
+          "Nothing, the function is defined there"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "There is a vertical asymptote",
+          "misconception_id": "mc.math.precalculus.every_denominator_zero_is_asymptote"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q5",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "At which value of x does f(x) = 5/(2x - 10) have a vertical asymptote?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set the denominator to zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve 2x - 10 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x - 10 = 0 gives x = 5, and the numerator is 5 there, so x = 5 is a vertical asymptote.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q6",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the horizontal asymptote of f(x) = 3x^2/(x^2 + 4)?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The degrees on top and bottom are equal."
+        },
+        {
+          "level": 2,
+          "text": "Divide the leading coefficients."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Both have degree 2, so the asymptote is 3/1 = 3. Check: f(100) is about 2.9988.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q7",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the horizontal asymptote of f(x) = x/(x^2 + 1)?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the degrees: 1 on top, 2 on the bottom."
+        },
+        {
+          "level": 2,
+          "text": "The bottom grows faster, so the fraction shrinks."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "The denominator grows faster than the numerator, so the outputs shrink towards 0. Check: f(100) is about 0.01.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q8",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why can a graph never touch its vertical asymptote?",
+      "answer_spec": {
+        "correct_answer": "The function has no output at all at that input"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Recall why the value was excluded from the domain."
+        },
+        {
+          "level": 2,
+          "text": "Touching the line would mean the function had a value there."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "A vertical asymptote sits where the denominator is zero, and the function has no output there at all. With no point to plot, the graph cannot meet the line.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The function has no output at all at that input",
+          "The graph is always too steep",
+          "It touches it once, very far out",
+          "Because the output there is zero"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q1",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = 3 times 2^x, what is f(4)?",
+      "answer_spec": {
+        "correct_answer": 48
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out 2^4 first."
+        },
+        {
+          "level": 2,
+          "text": "2^4 = 16, then multiply by 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^4 = 16 and 3 times 16 = 48. Doubling from 3 gives 3, 6, 12, 24, 48, which agrees.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 1296,
+          "misconception_id": "mc.math.precalculus.multiplied_base_by_coefficient"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q2",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "For f(x) = 7 times 5^x, what is f(0)?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "What is any non-zero number to the power 0?"
+        },
+        {
+          "level": 2,
+          "text": "5^0 = 1."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "5^0 = 1, so f(0) = 7 times 1 = 7. The coefficient is always the starting value.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q3",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A colony of 5 cells doubles each hour. How many cells are there after 3 hours?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Double three times."
+        },
+        {
+          "level": 2,
+          "text": "5 becomes 10, then 20, then what?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Doubling three times: 5, 10, 20, 40. That is 5 times 2^3 = 5 times 8 = 40.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q4",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A sample of 800 grams halves every day. How many grams remain after 3 days?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Halve three times."
+        },
+        {
+          "level": 2,
+          "text": "800 becomes 400, then 200, then what?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Halving three times: 800, 400, 200, 100. That is 800 times 0.5^3 = 100.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q5",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A table of values reads 2, 6, 18, 54. What is the growth factor?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide each term by the one before it."
+        },
+        {
+          "level": 2,
+          "text": "6 divided by 2 is 3. Check the next pair too."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "6/2 = 3, 18/6 = 3 and 54/18 = 3, so the growth factor is 3 throughout.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 4,
+          "misconception_id": "mc.math.precalculus.growth_factor_read_as_difference"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q6",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A population of 200 doubles every year. What is the population after 5 years?",
+      "answer_spec": {
+        "correct_answer": 6400
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Double five times, or work out 2^5 first."
+        },
+        {
+          "level": 2,
+          "text": "2^5 = 32, then multiply by 200."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "200 times 2^5 = 200 times 32 = 6400. Stepwise: 400, 800, 1600, 3200, 6400.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q7",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "An account holds 1000 dollars and grows by 5 percent each year. How many dollars are in it after 2 years?",
+      "answer_spec": {
+        "correct_answer": 1102.5,
+        "tolerance": 0.01
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 1.05 for each year."
+        },
+        {
+          "level": 2,
+          "text": "After one year it is 1050 dollars. Grow that by 5 percent."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1000 times 1.05 = 1050 after one year, then 1050 times 1.05 = 1102.50 after two. The second year earns interest on the first year's interest.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 1100,
+          "misconception_id": "mc.math.precalculus.compound_treated_as_simple"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q8",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A linear function starts far ahead of an exponential one but grows by a fixed amount each step, while the exponential doubles. Which is eventually larger?",
+      "answer_spec": {
+        "correct_answer": "The exponential, always, given enough steps"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare adding a fixed amount with doubling."
+        },
+        {
+          "level": 2,
+          "text": "Doubling makes each step larger than the last, while adding keeps every step the same size."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Adding a constant makes every step the same size, but doubling makes each step bigger than the one before, so the exponential's steps eventually exceed any fixed head start.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The exponential, always, given enough steps",
+          "The linear one, because it started ahead",
+          "They stay the same distance apart",
+          "It depends on the starting values"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q1",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the logarithm of 8 to base 2?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask: two to the what gives 8?"
+        },
+        {
+          "level": 2,
+          "text": "2^3 = 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^3 = 8, so the logarithm is 3.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 4,
+          "misconception_id": "mc.math.precalculus.log_read_as_division"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q2",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the logarithm of 1000 to base 10?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask: ten to the what gives 1000?"
+        },
+        {
+          "level": 2,
+          "text": "Count the zeros."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "10^3 = 1000, so the logarithm is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q3",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the logarithm of 1 to base 5?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Anything to the power 0 is 1."
+        },
+        {
+          "level": 2,
+          "text": "So which exponent gives 1?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "5^0 = 1, so the logarithm is 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q4",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 1/4 to base 2?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A value below 1 needs a negative exponent."
+        },
+        {
+          "level": 2,
+          "text": "2^-2 = 1/(2^2)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^-2 = 1/4, so the logarithm is -2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q5",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 81 to base 3?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask: three to the what gives 81?"
+        },
+        {
+          "level": 2,
+          "text": "3, 9, 27, 81 - count the steps."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3^4 = 81, so the logarithm is 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q6",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 4 to base 4?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Any base to the power 1 is itself."
+        },
+        {
+          "level": 2,
+          "text": "So which exponent gives 4?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "4^1 = 4, so the logarithm is 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q7",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the logarithm of 1/32 to base 2?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "32 is 2^5, and the answer is below 1."
+        },
+        {
+          "level": 2,
+          "text": "2^-5 = 1/32."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^-5 = 1/32, so the logarithm is -5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q8",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Which question does a logarithm answer?",
+      "answer_spec": {
+        "correct_answer": "What exponent gives this number?"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look back at how each answer above was checked."
+        },
+        {
+          "level": 2,
+          "text": "Every check raised the base to a power."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "log base b of y asks which exponent turns b into y. That is why exponentiating the answer always recovers the original number.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "What exponent gives this number?",
+          "What do I divide this number by?",
+          "What is the square root of this number?",
+          "How many digits does this number have?"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q1",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 4 to base 2, plus the logarithm of 8 to base 2?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out each logarithm separately."
+        },
+        {
+          "level": 2,
+          "text": "One is 2 and the other is 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "log base 2 of 4 = 2 and log base 2 of 8 = 3, giving 5. The product rule agrees: 4 times 8 = 32 and 2^5 = 32.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q2",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 32 to base 2, minus the logarithm of 4 to base 2?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out each logarithm separately."
+        },
+        {
+          "level": 2,
+          "text": "One is 5 and the other is 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "log base 2 of 32 = 5 and log base 2 of 4 = 2, giving 3. The quotient rule agrees: 32/4 = 8 and 2^3 = 8.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q3",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "The logarithm of x to base b is 2. What is the logarithm of x cubed to base b?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The power rule brings the exponent to the front."
+        },
+        {
+          "level": 2,
+          "text": "log(x^3) = 3 times log(x)."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "log(x^3) = 3 times log(x) = 3 times 2 = 6. If log(x) = 2 then x = b^2, so x^3 = b^6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q4",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "Given that the logarithm of 2 to base 10 is 0.301 and of 3 is 0.477, what is the logarithm of 6 to base 10?",
+      "answer_spec": {
+        "correct_answer": 0.778,
+        "tolerance": 0.001
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "6 is 2 times 3."
+        },
+        {
+          "level": 2,
+          "text": "The product rule turns multiplication into addition."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 = 2 times 3, so log(6) = log(2) + log(3) = 0.301 + 0.477 = 0.778.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q5",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "Given that the logarithm of 2 to base 10 is 0.301, what is the logarithm of 8 to base 10?",
+      "answer_spec": {
+        "correct_answer": 0.903
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "8 is a power of 2."
+        },
+        {
+          "level": 2,
+          "text": "8 = 2^3, so use the power rule."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8 = 2^3, so log(8) = 3 times log(2) = 3 times 0.301 = 0.903.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q6",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the logarithm of 1/25 to base 5?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 1/25 as a power of 5."
+        },
+        {
+          "level": 2,
+          "text": "1/25 = 5^-2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1/25 = 5^-2, so the logarithm is -2. Check: 5^-2 = 1/25.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q7",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "Given that the logarithm of 2 to base 10 is 0.301 and of 3 is 0.477, what is the logarithm of 1.5 to base 10?",
+      "answer_spec": {
+        "correct_answer": 0.176
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1.5 is 3 divided by 2."
+        },
+        {
+          "level": 2,
+          "text": "The quotient rule turns division into subtraction."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1.5 = 3/2, so log(1.5) = log(3) - log(2) = 0.477 - 0.301 = 0.176.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q8",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Is the logarithm of (a + b) equal to the logarithm of a plus the logarithm of b?",
+      "answer_spec": {
+        "correct_answer": "No, there is no rule for the logarithm of a sum"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try a = 10 and b = 10 with base 10."
+        },
+        {
+          "level": 2,
+          "text": "log(20) is about 1.301, but log(10) + log(10) = 2."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Take a = b = 10 in base 10: log(20) is about 1.301, while log(10) + log(10) = 2. The rules cover products, quotients and powers - never sums.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, there is no rule for the logarithm of a sum",
+          "Yes, always",
+          "Yes, when a and b are positive",
+          "Yes, when the base is 10"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, always",
+          "misconception_id": "mc.math.precalculus.log_of_sum_split"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q1",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve 2^x = 32 for x.",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 32 as a power of 2."
+        },
+        {
+          "level": 2,
+          "text": "32 = 2^5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "32 = 2^5, so x = 5. Check: 2^5 = 32.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q2",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Solve 3^x = 81 for x.",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 81 as a power of 3."
+        },
+        {
+          "level": 2,
+          "text": "3, 9, 27, 81."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "81 = 3^4, so x = 4. Check: 3^4 = 81.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q3",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 3^(x + 1) = 81 for x.",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 81 as a power of 3, then equate exponents."
+        },
+        {
+          "level": 2,
+          "text": "x + 1 = 4, so there is one more step."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "81 = 3^4, so x + 1 = 4 and x = 3. Check: 3^(3+1) = 3^4 = 81.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 4,
+          "misconception_id": "mc.math.precalculus.solved_exponent_not_variable"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q4",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 5^x = 1 for x.",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which exponent always gives 1?"
+        },
+        {
+          "level": 2,
+          "text": "Any non-zero base to the power 0 is 1."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "5^0 = 1, so x = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q5",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 2^x = 1/8 for x.",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A result below 1 needs a negative exponent."
+        },
+        {
+          "level": 2,
+          "text": "8 = 2^3, so 1/8 = 2^-3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1/8 = 2^-3, so x = -3. Check: 2^-3 = 1/8.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q6",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve 2^(2x) = 64 for x.",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 64 as a power of 2."
+        },
+        {
+          "level": 2,
+          "text": "2x = 6, so halve it."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "64 = 2^6, so 2x = 6 and x = 3. Check: 2^(2 times 3) = 2^6 = 64.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 6,
+          "misconception_id": "mc.math.precalculus.solved_exponent_not_variable"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q7",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve 10^(x - 1) = 1000 for x.",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "1000 is a power of 10."
+        },
+        {
+          "level": 2,
+          "text": "x - 1 = 3, so add 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1000 = 10^3, so x - 1 = 3 and x = 4. Check: 10^(4-1) = 10^3 = 1000.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 3,
+          "misconception_id": "mc.math.precalculus.solved_exponent_not_variable"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q8",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A culture of 50 bacteria doubles every hour. After how many hours are there 1600 bacteria?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set up 50 times 2^h = 1600."
+        },
+        {
+          "level": 2,
+          "text": "Divide both sides by 50 to get 2^h = 32."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "50 times 2^h = 1600 gives 2^h = 32, so h = 5. Counting up confirms it: 100, 200, 400, 800, 1600.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.sequences.q1",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the common difference of the sequence 4, 7, 10, 13?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract each term from the next."
+        },
+        {
+          "level": 2,
+          "text": "7 - 4 = 3. Check the other pairs too."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 - 4 = 3, 10 - 7 = 3 and 13 - 10 = 3, so the common difference is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q2",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the next term of the sequence 4, 7, 10, 13?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find what is added each time."
+        },
+        {
+          "level": 2,
+          "text": "Add 3 to the last term."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The sequence adds 3 each time, so after 13 comes 16.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q3",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the 10th term of the sequence 4, 7, 10, 13?",
+      "answer_spec": {
+        "correct_answer": 31
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The first term needs no steps."
+        },
+        {
+          "level": 2,
+          "text": "Reaching the 10th term takes 9 additions of 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The 10th term is 4 + 9 times 3 = 31. Listing the terms confirms it: 4, 7, 10, 13, 16, 19, 22, 25, 28, 31.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 34,
+          "misconception_id": "mc.math.precalculus.used_n_steps_not_n_minus_one"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.sequences.q4",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the common ratio of the sequence 3, 6, 12, 24?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide each term by the one before it."
+        },
+        {
+          "level": 2,
+          "text": "6 divided by 3 is 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6/3 = 2, 12/6 = 2 and 24/12 = 2, so the common ratio is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q5",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the 6th term of the sequence 3, 6, 12, 24?",
+      "answer_spec": {
+        "correct_answer": 96
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reaching the 6th term takes 5 doublings."
+        },
+        {
+          "level": 2,
+          "text": "3 times 2^5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 times 2^5 = 3 times 32 = 96. Doubling out: 3, 6, 12, 24, 48, 96.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q6",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An arithmetic sequence starts at 5 and has common difference 4. What is its 20th term?",
+      "answer_spec": {
+        "correct_answer": 81
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use first term plus (n - 1) times the difference."
+        },
+        {
+          "level": 2,
+          "text": "19 steps of 4 from 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 + 19 times 4 = 5 + 76 = 81.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 85,
+          "misconception_id": "mc.math.precalculus.used_n_steps_not_n_minus_one"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.sequences.q7",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A geometric sequence starts at 2 with common ratio 3. What is its 5th term?",
+      "answer_spec": {
+        "correct_answer": 162
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reaching the 5th term takes 4 multiplications."
+        },
+        {
+          "level": 2,
+          "text": "2 times 3^4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 times 3^4 = 2 times 81 = 162. Stepping out: 2, 6, 18, 54, 162.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q8",
+      "skill_id": "math.precalculus.sequences",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Is the sequence 2, 4, 8, 16 arithmetic, geometric, or neither?",
+      "answer_spec": {
+        "correct_answer": "Geometric"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Test the differences first."
+        },
+        {
+          "level": 2,
+          "text": "The differences are 2, 4, 8 - not constant. Now try the ratios."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The differences 2, 4, 8 are not constant, so it is not arithmetic. The ratios are all 2, so it is geometric.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Geometric", "Arithmetic", "Neither", "Both"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Arithmetic",
+          "misconception_id": "mc.math.precalculus.doubling_read_as_arithmetic"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.series.q1",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 2 + 4 + 6 + 8 + 10?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Pair the ends: 2 + 10, then 4 + 8."
+        },
+        {
+          "level": 2,
+          "text": "Each pair makes 12, and 6 is left in the middle."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 + 10 = 12 and 4 + 8 = 12, with 6 left over, giving 12 + 12 + 6 = 30.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q2",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the sum of the first 10 even numbers, from 2 to 20?",
+      "answer_spec": {
+        "correct_answer": 110
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use half the count times (first + last)."
+        },
+        {
+          "level": 2,
+          "text": "The first is 2 and the tenth is 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "There are 10 terms, so the sum is (10/2) times (2 + 20) = 5 times 22 = 110.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q3",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the sum of the whole numbers from 1 to 100?",
+      "answer_spec": {
+        "correct_answer": 5050
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Pair 1 with 100, 2 with 99, and so on."
+        },
+        {
+          "level": 2,
+          "text": "Each pair makes 101, and there are 50 pairs."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Every pair from the ends totals 101, and 100 terms make 50 pairs, so the sum is 50 times 101 = 5050.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q4",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 3 + 6 + 12 + 24?",
+      "answer_spec": {
+        "correct_answer": 45
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add them directly, or use the geometric sum formula."
+        },
+        {
+          "level": 2,
+          "text": "The first term is 3 and the ratio is 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Adding directly gives 45. The formula agrees: 3 times (2^4 - 1)/(2 - 1) = 3 times 15 = 45.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q5",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A geometric series starts at 2 with ratio 3. What is the sum of its first 4 terms?",
+      "answer_spec": {
+        "correct_answer": 80
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "List the four terms first."
+        },
+        {
+          "level": 2,
+          "text": "2, 6, 18, 54."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The terms are 2, 6, 18, 54, which total 80. The formula agrees: 2 times (3^4 - 1)/(3 - 1) = 2 times 40 = 80.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q6",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the sum of the arithmetic series 5 + 9 + 13 + ... + 41?",
+      "answer_spec": {
+        "correct_answer": 230
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First work out how many terms there are."
+        },
+        {
+          "level": 2,
+          "text": "From 5 to 41 in steps of 4 is 10 terms, not 41."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The terms run 5, 9, ..., 41, which is 10 terms. The sum is (10/2) times (5 + 41) = 5 times 46 = 230.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 943,
+          "misconception_id": "mc.math.precalculus.last_term_used_as_count"
+        }
+      ]
+    },
+    {
+      "question_id": "math.precalculus.series.q7",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the sum of the first 20 odd numbers, from 1 to 39?",
+      "answer_spec": {
+        "correct_answer": 400
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use half the count times (first + last)."
+        },
+        {
+          "level": 2,
+          "text": "The first is 1 and the twentieth is 39."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The sum is (20/2) times (1 + 39) = 10 times 40 = 400. Notice that this is 20 squared.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q8",
+      "skill_id": "math.precalculus.series",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why does pairing the ends of an arithmetic series give every pair the same total?",
+      "answer_spec": {
+        "correct_answer": "Moving in one step from the front adds d while moving in one step from the back subtracts d"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the pair (first, last) with the pair (second, second-to-last)."
+        },
+        {
+          "level": 2,
+          "text": "One term went up by the common difference and the other went down by it."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Stepping in from the front adds the common difference and stepping in from the back subtracts it, so the two changes cancel and every pair keeps the same total.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Moving in one step from the front adds d while moving in one step from the back subtracts d",
+          "Because all the terms are equal",
+          "Because the number of terms is always even",
+          "It does not, the pairs have different totals"
+        ]
+      },
+      "transfer_flag": true
+    }
+  ]
+}
