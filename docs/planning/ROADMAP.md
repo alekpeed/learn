@@ -234,10 +234,14 @@ questions across 17 units. This is the prerequisite for trigonometry.
 Figures are posed textually, as in Phases 14-15; a rendered geometry-figure component
 remains a future enhancement rather than a blocker.
 
-### Phase 22 - Algebra II [content]
+### Phase 22 - Algebra II [content] - DONE
 
-Systems of equations, quadratics, functions in depth, exponents/radicals. Builds on
-Phases 13-14.
+Shipped as unit 13 of `math.core` (12 skills, 96 questions): exponent rules, radicals,
+polynomials, multiplying binomials, factoring, solving quadratics, the quadratic formula
+and discriminant, systems of equations, inequalities, rational expressions, function
+notation, and graph transformations. Curriculum now 154 skills, 1,313 questions across 18
+units. With Phase 21, the prerequisites for precalculus and trigonometry are in place, so
+**Phase 23 is the next piece of the arithmetic-to-trigonometry path**.
 
 ### Phase 23 - Precalculus & Trigonometry [content + engine]
 

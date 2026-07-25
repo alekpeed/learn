@@ -1,0 +1,3091 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.algebra2.exponent_rules",
+      "unit_id": "math.algebra2",
+      "title": "Exponent Rules",
+      "summary": "Multiplying, dividing and raising powers.",
+      "objectives": [
+        "Apply the product, quotient and power rules.",
+        "Simplify an expression with exponents."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.expressions",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.numerical_structure.order_of_operations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "exponent",
+          "definition": "How many times a base is used as a factor."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.radicals",
+      "unit_id": "math.algebra2",
+      "title": "Square Roots and Radicals",
+      "summary": "Square roots, perfect squares, and simplifying radicals.",
+      "objectives": [
+        "Evaluate square roots of perfect squares.",
+        "Simplify a radical by taking out a square factor."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.exponent_rules",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "radical",
+          "definition": "A root symbol; the square root undoes squaring."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.polynomials",
+      "unit_id": "math.algebra2",
+      "title": "Polynomials",
+      "summary": "Naming, adding and subtracting polynomial expressions.",
+      "objectives": [
+        "Identify the degree of a polynomial.",
+        "Add and subtract polynomials by combining like terms."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.combining_like_terms",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.exponent_rules",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "polynomial",
+          "definition": "A sum of terms, each a number times a power of a variable."
+        },
+        {
+          "term": "degree",
+          "definition": "The highest exponent appearing in the polynomial."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "unit_id": "math.algebra2",
+      "title": "Multiplying Binomials",
+      "summary": "Expanding brackets with two terms in each.",
+      "objectives": [
+        "Expand a product of two binomials.",
+        "Recognise the difference of two squares."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.polynomials",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.distributive_property",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.algebra2.factoring",
+      "unit_id": "math.algebra2",
+      "title": "Factoring Quadratics",
+      "summary": "Writing a quadratic as a product of two binomials.",
+      "objectives": [
+        "Factor a quadratic with leading coefficient one.",
+        "Factor a difference of two squares."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.multiplying_binomials",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    },
+    {
+      "skill_id": "math.algebra2.solving_quadratics",
+      "unit_id": "math.algebra2",
+      "title": "Solving Quadratic Equations",
+      "summary": "Finding the values of x that make a quadratic zero.",
+      "objectives": ["Solve a quadratic by factoring.", "Use the zero-product property."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.factoring",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "root",
+          "definition": "A value of the variable that makes the equation true."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.quadratic_formula",
+      "unit_id": "math.algebra2",
+      "title": "The Quadratic Formula",
+      "summary": "Solving any quadratic, and reading the discriminant.",
+      "objectives": [
+        "Use the discriminant to count the real roots.",
+        "Solve a quadratic with the formula."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.solving_quadratics",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.radicals",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "discriminant",
+          "definition": "b^2 - 4ac, which tells you how many real roots there are."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.systems",
+      "unit_id": "math.algebra2",
+      "title": "Systems of Equations",
+      "summary": "Solving two equations in two unknowns.",
+      "objectives": ["Solve a system by substitution.", "Solve a system by elimination."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.functions.linear_relationships",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    },
+    {
+      "skill_id": "math.algebra2.inequalities",
+      "unit_id": "math.algebra2",
+      "title": "Inequalities",
+      "summary": "Solving and interpreting inequalities.",
+      "objectives": ["Solve a linear inequality.", "Know when the inequality sign must flip."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.integers.dividing_integers",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "math.algebra2.rational_expressions",
+      "unit_id": "math.algebra2",
+      "title": "Rational Expressions",
+      "summary": "Fractions whose parts are algebraic expressions.",
+      "objectives": [
+        "Simplify a rational expression by cancelling a common factor.",
+        "Say when a rational expression is undefined."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.factoring",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.simplifying_fractions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    },
+    {
+      "skill_id": "math.algebra2.function_notation",
+      "unit_id": "math.algebra2",
+      "title": "Function Notation",
+      "summary": "Reading and evaluating f(x).",
+      "objectives": [
+        "Evaluate a function at a given input.",
+        "Read domain and range from a simple function."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.functions.input_output",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.polynomials",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "function",
+          "definition": "A rule giving exactly one output for each input."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.algebra2.transformations",
+      "unit_id": "math.algebra2",
+      "title": "Transformations of Graphs",
+      "summary": "How changing a function's formula moves its graph.",
+      "objectives": [
+        "Predict a vertical or horizontal shift.",
+        "Recognise a reflection or a stretch."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.algebra2.function_notation",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.functions.reading_graphs",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.algebra2.exponent_rules.lesson",
+      "skill_id": "math.algebra2.exponent_rules",
+      "title": "Exponent Rules",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "An exponent counts repeated multiplication. Writing out the factors makes every rule obvious: x cubed times x squared is five x factors in a row."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Product rule: x^a times x^b = x^(a+b). Quotient rule: x^a divided by x^b = x^(a-b). Power rule: (x^a)^b = x^(ab). Also x^0 = 1 for any non-zero x."
+        },
+        {
+          "type": "worked_example",
+          "body": "x^4 times x^3 = x^7, and (x^2)^5 = x^10."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Exponents add when powers multiply. They do not multiply."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply powers, add exponents. Divide powers, subtract. Power of a power, multiply."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.radicals.lesson",
+      "skill_id": "math.algebra2.radicals",
+      "title": "Square Roots and Radicals",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "The square root of a number is the side length of a square with that area. The square root of 36 is 6 because a 6 by 6 square has area 36."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Perfect squares are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 and so on. A radical simplifies when a perfect-square factor can be taken out."
+        },
+        {
+          "type": "worked_example",
+          "body": "The square root of 50 is the square root of 25 times 2, which is 5 times the square root of 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The square root of a sum is not the sum of the square roots."
+        },
+        {
+          "type": "summary",
+          "body": "Find perfect-square factors and take them outside the root."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.polynomials.lesson",
+      "skill_id": "math.algebra2.polynomials",
+      "title": "Polynomials",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "A polynomial is a tidy sum of powers. Adding two of them is just collecting like terms, exactly as before."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The degree is the highest exponent. A degree-2 polynomial is quadratic; degree 3 is cubic. Subtracting means changing every sign in the second polynomial."
+        },
+        {
+          "type": "worked_example",
+          "body": "(3x^2 + 5x) + (2x^2 - 3x) = 5x^2 + 2x."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "When subtracting, the minus applies to every term in the bracket, not only the first."
+        },
+        {
+          "type": "summary",
+          "body": "Collect like terms; the degree is the largest exponent."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.multiplying_binomials.lesson",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "title": "Multiplying Binomials",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Every term in the first bracket must meet every term in the second, exactly like working out the area of a rectangle split into four smaller rectangles."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "(x + a)(x + b) = x^2 + (a + b)x + ab. When b = -a the middle term vanishes: (x + a)(x - a) = x^2 - a^2."
+        },
+        {
+          "type": "worked_example",
+          "body": "(x + 3)(x + 4) = x^2 + 7x + 12."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Multiplying only the first terms and only the last terms misses the two cross terms."
+        },
+        {
+          "type": "summary",
+          "body": "Four products; the middle coefficient is the sum and the constant is the product."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.factoring.lesson",
+      "skill_id": "math.algebra2.factoring",
+      "title": "Factoring Quadratics",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Factoring runs expansion backwards. You need two numbers that multiply to the constant and add to the middle coefficient."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "For x^2 + bx + c, find p and q with pq = c and p + q = b. Then the factorisation is (x + p)(x + q)."
+        },
+        {
+          "type": "worked_example",
+          "body": "For x^2 + 7x + 12, the pair 3 and 4 multiply to 12 and add to 7, so it factors as (x + 3)(x + 4)."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Both conditions must hold. A pair that multiplies correctly but adds wrongly is not a factorisation."
+        },
+        {
+          "type": "summary",
+          "body": "Multiply to c, add to b."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.solving_quadratics.lesson",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "title": "Solving Quadratic Equations",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "If two things multiply to zero, at least one of them must be zero. That single fact turns a factored quadratic into two easy equations."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "If (x + p)(x + q) = 0 then x = -p or x = -q. A quadratic has at most two real roots."
+        },
+        {
+          "type": "worked_example",
+          "body": "x^2 + 7x + 12 = 0 factors as (x + 3)(x + 4) = 0, so x = -3 or x = -4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The roots are the negatives of the numbers in the brackets. (x + 3) is zero when x is -3, not 3."
+        },
+        {
+          "type": "summary",
+          "body": "Factor, set each bracket to zero, and read off the roots."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.quadratic_formula.lesson",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "title": "The Quadratic Formula",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Some quadratics do not factor nicely. The formula solves every one of them, and the part under the root tells you in advance how many answers to expect."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "For ax^2 + bx + c = 0, x = (-b plus or minus the square root of (b^2 - 4ac)) divided by 2a. The discriminant b^2 - 4ac is positive for two roots, zero for one, negative for none."
+        },
+        {
+          "type": "worked_example",
+          "body": "For x^2 - 5x + 6, the discriminant is 25 - 24 = 1, which is positive, so there are two real roots."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The whole of -b is divided by 2a, not just part of it, and b^2 is never negative."
+        },
+        {
+          "type": "summary",
+          "body": "Discriminant first: it tells you how many roots before you do the work."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.systems.lesson",
+      "skill_id": "math.algebra2.systems",
+      "title": "Systems of Equations",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Two straight lines usually cross at exactly one point. Solving a system finds that crossing point, the single pair of values that satisfies both equations."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Substitution rearranges one equation and puts it into the other. Elimination adds or subtracts the equations so that one variable disappears."
+        },
+        {
+          "type": "worked_example",
+          "body": "x + y = 10 and x - y = 2. Adding gives 2x = 12, so x = 6 and then y = 4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A solution must satisfy BOTH equations. Always substitute back into both."
+        },
+        {
+          "type": "summary",
+          "body": "Eliminate one unknown, solve for the other, then substitute back."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.inequalities.lesson",
+      "skill_id": "math.algebra2.inequalities",
+      "title": "Inequalities",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "An inequality describes a whole range of answers rather than one. It is solved almost exactly like an equation, with one important exception."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Adding or subtracting anything, or multiplying and dividing by a positive number, keeps the direction. Multiplying or dividing by a negative number reverses it."
+        },
+        {
+          "type": "worked_example",
+          "body": "2x + 3 < 11 gives 2x < 8 and then x < 4."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Forgetting to flip the sign after dividing by a negative is the classic error."
+        },
+        {
+          "type": "summary",
+          "body": "Solve like an equation, but flip the sign whenever you multiply or divide by a negative."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.rational_expressions.lesson",
+      "skill_id": "math.algebra2.rational_expressions",
+      "title": "Rational Expressions",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "A rational expression is an algebraic fraction. It simplifies the same way a numeric fraction does: cancel a factor common to top and bottom."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Only whole factors may be cancelled, never single terms of a sum. The expression is undefined wherever the denominator is zero."
+        },
+        {
+          "type": "worked_example",
+          "body": "(x^2 - 9) / (x + 3) factors to (x + 3)(x - 3) / (x + 3), which cancels to x - 3 provided x is not -3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Cancelling a term that is being added, rather than a factor that is being multiplied, is wrong."
+        },
+        {
+          "type": "summary",
+          "body": "Factor first, cancel whole factors, and note where the denominator is zero."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.function_notation.lesson",
+      "skill_id": "math.algebra2.function_notation",
+      "title": "Function Notation",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "f(x) is a name for the rule and a slot for the input at the same time. f(3) means run the rule on 3."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "If f(x) = 2x + 1 then f(3) = 2 x 3 + 1 = 7. The domain is the set of allowed inputs; the range is the set of outputs produced."
+        },
+        {
+          "type": "worked_example",
+          "body": "For g(x) = x^2 - 4, g(5) = 25 - 4 = 21."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "f(3) does not mean f times 3. The brackets mark the input."
+        },
+        {
+          "type": "summary",
+          "body": "Substitute the input for x and evaluate."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.algebra2.transformations.lesson",
+      "skill_id": "math.algebra2.transformations",
+      "title": "Transformations of Graphs",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Adding outside the function moves the graph up or down. Adding inside moves it left or right, and it moves the opposite way to the sign, which surprises everyone at first."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "f(x) + k shifts up by k. f(x + h) shifts LEFT by h. -f(x) reflects in the x-axis. a x f(x) stretches vertically by a factor of a."
+        },
+        {
+          "type": "worked_example",
+          "body": "If f(x) = x^2, then f(x) + 3 is the same parabola raised 3 units."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "f(x + 2) shifts left, not right. The inside change acts in reverse."
+        },
+        {
+          "type": "summary",
+          "body": "Outside changes act as they read; inside changes act in reverse."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.algebra2.exponent_rules.q1",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Simplify x^4 times x^3. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write out the factors and count them."
+        },
+        {
+          "level": 2,
+          "text": "Multiplying powers of the same base adds the exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^4 times x^3 has 4 + 3 = 7 factors of x, so the exponent is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q2",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Simplify x^5 times x^2. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write out the factors and count them."
+        },
+        {
+          "level": 2,
+          "text": "Multiplying powers of the same base adds the exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^5 times x^2 has 5 + 2 = 7 factors of x, so the exponent is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q3",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Simplify x^6 times x^6. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write out the factors and count them."
+        },
+        {
+          "level": 2,
+          "text": "Multiplying powers of the same base adds the exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^6 times x^6 has 6 + 6 = 12 factors of x, so the exponent is 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q4",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Simplify x^9 divided by x^4. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cancel matching factors from top and bottom."
+        },
+        {
+          "level": 2,
+          "text": "Dividing powers subtracts the exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 - 4 = 5, so the result is x^5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q5",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Simplify x^7 divided by x^7. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cancel matching factors from top and bottom."
+        },
+        {
+          "level": 2,
+          "text": "Dividing powers subtracts the exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 - 7 = 0, so the result is x^0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q6",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Simplify (x^3)^4. What is the new exponent?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A power of a power means repeating the whole block."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the two exponents."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(x^3)^4 = x^(3 x 4) = x^12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q7",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the value of 7^0?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Any non-zero base raised to the power zero gives the same result."
+        },
+        {
+          "level": 2,
+          "text": "Think about x^3 divided by x^3."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "x^3 divided by x^3 is 1, and by the quotient rule it is x^0, so 7^0 = 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.exponent_rules.q8",
+      "skill_id": "math.algebra2.exponent_rules",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A bacterium doubles every hour. Starting from one, how many are there after 8 hours?",
+      "answer_spec": {
+        "correct_answer": 256
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each hour multiplies the count by 2."
+        },
+        {
+          "level": 2,
+          "text": "After 8 hours the factor is 2^8."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "2^8 = 256 bacteria.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.radicals.q1",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the square root of 49?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the number that multiplies by itself to give it."
+        },
+        {
+          "level": 2,
+          "text": "Try numbers near 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 x 7 = 49, so the square root of 49 is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.radicals.q2",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the square root of 144?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the number that multiplies by itself to give it."
+        },
+        {
+          "level": 2,
+          "text": "Try numbers near 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 x 12 = 144, so the square root of 144 is 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.radicals.q3",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the square root of 225?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the number that multiplies by itself to give it."
+        },
+        {
+          "level": 2,
+          "text": "Try numbers near 15."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "15 x 15 = 225, so the square root of 225 is 15.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.radicals.q4",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Simplify the square root of 50. What whole number comes outside the radical?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a perfect-square factor of 50."
+        },
+        {
+          "level": 2,
+          "text": "50 = 25 x 2, and the square root of 25 is 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The square root of 50 is the square root of 25 x 2, which is 5 times the square root of 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.radicals.q5",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Simplify the square root of 72. What whole number comes outside the radical?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the largest perfect-square factor of 72."
+        },
+        {
+          "level": 2,
+          "text": "72 = 36 x 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "72 = 36 x 2, and the square root of 36 is 6, so the answer is 6 times the square root of 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.radicals.q6",
+      "skill_id": "math.algebra2.radicals",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Between which two whole numbers does the square root of 40 lie?",
+      "answer_spec": {
+        "correct_answer": "6 and 7"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the perfect squares either side of 40."
+        },
+        {
+          "level": 2,
+          "text": "36 is below it and 49 is above it."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "36 is less than 40, which is less than 49, so the root lies between 6 and 7.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["6 and 7", "5 and 6", "7 and 8", "20 and 21"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.radicals.q7",
+      "skill_id": "math.algebra2.radicals",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Is the square root of 9 plus 16 equal to 3 plus 4?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the square root of 25 first."
+        },
+        {
+          "level": 2,
+          "text": "Compare it with 3 + 4."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The square root of 25 is 5, but 3 + 4 is 7, so the square root of a sum is not the sum of the roots.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only for perfect squares", "Only for even numbers"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.radicals.q8",
+      "skill_id": "math.algebra2.radicals",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A square field has an area of 196 square metres. How long is each side, in metres?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Side length is the square root of the area."
+        },
+        {
+          "level": 2,
+          "text": "14 x 14 = 196."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "The square root of 196 is 14, so each side is 14 m.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q1",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the degree of 4x^3 + 2x^2 - 7?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the largest exponent."
+        },
+        {
+          "level": 2,
+          "text": "The x^3 term is the highest."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The highest exponent is 3, so the degree is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q2",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the degree of 9x + 5?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The x term has an unwritten exponent of 1."
+        },
+        {
+          "level": 2,
+          "text": "A constant has degree 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The highest power of x is x^1, so the degree is 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q3",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Add (3x^2 + 5x) and (2x^2 - 3x). What is the coefficient of x^2 in the answer?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combine the x^2 terms only."
+        },
+        {
+          "level": 2,
+          "text": "3 + 2 gives the new coefficient."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3x^2 + 2x^2 = 5x^2, so the coefficient is 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q4",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Add (3x^2 + 5x) and (2x^2 - 3x). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Combine the x terms only."
+        },
+        {
+          "level": 2,
+          "text": "5 + (-3) gives the new coefficient."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5x - 3x = 2x, so the coefficient is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q5",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Subtract (2x^2 - 4x) from (6x^2 + x). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtracting changes the sign of every term in the bracket."
+        },
+        {
+          "level": 2,
+          "text": "-(-4x) becomes +4x."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x - (-4x) = x + 4x = 5x, so the coefficient is 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q6",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which expression is a quadratic?",
+      "answer_spec": {
+        "correct_answer": "x^2 + 3x - 1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A quadratic has degree 2."
+        },
+        {
+          "level": 2,
+          "text": "Look for the highest power being x^2."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A quadratic has degree 2, and x^2 + 3x - 1 has highest power x^2.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["x^2 + 3x - 1", "x^3 - 2", "5x + 4", "7"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q7",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many terms are in the polynomial 4x^3 - 2x^2 + x - 9?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Terms are separated by plus and minus signs."
+        },
+        {
+          "level": 2,
+          "text": "Count each piece."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The terms are 4x^3, -2x^2, x and -9, so there are 4 terms.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.polynomials.q8",
+      "skill_id": "math.algebra2.polynomials",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A rectangle has length x + 5 and width x. Its area is x^2 + 5x. What is the degree of that area expression?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the two expressions first."
+        },
+        {
+          "level": 2,
+          "text": "The highest power in x^2 + 5x is 2."
+        }
+      ],
+      "dimensions": ["transfer", "understanding"],
+      "explanation": "Multiplying two degree-1 expressions gives degree 2.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q1",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand (x + 3)(x + 4). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply every term in the first bracket by every term in the second."
+        },
+        {
+          "level": 2,
+          "text": "The x terms combine to give the sum of the two numbers."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The two cross terms give 3 + 4 = 7, so the coefficient of x is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q2",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand (x + 5)(x + 2). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply every term in the first bracket by every term in the second."
+        },
+        {
+          "level": 2,
+          "text": "The x terms combine to give the sum of the two numbers."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The two cross terms give 5 + 2 = 7, so the coefficient of x is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q3",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand (x + 6)(x - 2). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply every term in the first bracket by every term in the second."
+        },
+        {
+          "level": 2,
+          "text": "The x terms combine to give the sum of the two numbers."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The two cross terms give 6 + -2 = 4, so the coefficient of x is 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q4",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand (x + 3)(x + 4). What is the constant term in the answer?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The constant comes from the last terms only."
+        },
+        {
+          "level": 2,
+          "text": "Work out 3 x 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 x 4 = 12, so the constant term is 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q5",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand (x + 5)(x + 2). What is the constant term in the answer?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The constant comes from the last terms only."
+        },
+        {
+          "level": 2,
+          "text": "Work out 5 x 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 2 = 10, so the constant term is 10.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q6",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Expand (x + 6)(x - 6). What is the coefficient of x in the answer?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the two cross terms."
+        },
+        {
+          "level": 2,
+          "text": "+6x and -6x cancel each other."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "The cross terms are +6x and -6x, which cancel, so the coefficient of x is 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q7",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Expand (x + 6)(x - 6). What is the constant term?",
+      "answer_spec": {
+        "correct_answer": -36
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the last terms: 6 times -6."
+        },
+        {
+          "level": 2,
+          "text": "This is the difference of two squares."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 x (-6) = -36, giving x^2 - 36.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.multiplying_binomials.q8",
+      "skill_id": "math.algebra2.multiplying_binomials",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A square garden of side x is extended by 3 m one way and 3 m the other. What is the constant term in the expanded area (x + 3)(x + 3)?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the two last terms."
+        },
+        {
+          "level": 2,
+          "text": "3 x 3 = 9."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "(x + 3)(x + 3) = x^2 + 6x + 9, so the constant is 9.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.factoring.q1",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Factor x^2 + 7x + 12 as (x + p)(x + q). What is the smaller of p and q?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find two numbers that multiply to 12."
+        },
+        {
+          "level": 2,
+          "text": "Of those, find the pair that adds to 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 and 4 multiply to 12 and add to 7, so the smaller is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q2",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Factor x^2 + 7x + 10 as (x + p)(x + q). What is the smaller of p and q?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find two numbers that multiply to 10."
+        },
+        {
+          "level": 2,
+          "text": "Of those, find the pair that adds to 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 and 5 multiply to 10 and add to 7, so the smaller is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q3",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Factor x^2 - 7x + 12 as (x + p)(x + q). What is the smaller of p and q?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find two numbers that multiply to 12."
+        },
+        {
+          "level": 2,
+          "text": "Of those, find the pair that adds to -7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "-3 and -4 multiply to 12 and add to -7, so the smaller is -4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q4",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Factor x^2 - 49 as (x + a)(x - a). What is a?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This is a difference of two squares."
+        },
+        {
+          "level": 2,
+          "text": "49 is 7 squared."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^2 - 49 = (x + 7)(x - 7), so a = 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q5",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Factor x^2 - 100 as (x + a)(x - a). What is a?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for a perfect square."
+        },
+        {
+          "level": 2,
+          "text": "100 is 10 squared."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^2 - 100 = (x + 10)(x - 10), so a = 10.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q6",
+      "skill_id": "math.algebra2.factoring",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which pair of numbers factors x^2 + 9x + 20?",
+      "answer_spec": {
+        "correct_answer": "4 and 5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The pair must multiply to 20."
+        },
+        {
+          "level": 2,
+          "text": "It must also add to 9."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "4 x 5 = 20 and 4 + 5 = 9, so the factorisation is (x + 4)(x + 5).",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["4 and 5", "2 and 10", "1 and 20", "3 and 6"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.factoring.q7",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Factor x^2 + 2x - 15 as (x + p)(x + q). What is the larger of p and q?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The two numbers multiply to -15, so one of them is negative."
+        },
+        {
+          "level": 2,
+          "text": "They must also add to 2. Try 5 and -3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 and -3 multiply to -15 and add to 2, so the factorisation is (x + 5)(x - 3) and the larger of p and q is 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.factoring.q8",
+      "skill_id": "math.algebra2.factoring",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A rectangle has area x^2 + 8x + 15 and one side x + 3. What is the constant in the other side?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the area."
+        },
+        {
+          "level": 2,
+          "text": "Two numbers multiply to 15 and add to 8."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "x^2 + 8x + 15 = (x + 3)(x + 5), so the other side is x + 5.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q1",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve x^2 + 7x + 12 = 0. What is the smaller root?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the quadratic first: find numbers multiplying to 12 and adding to 7."
+        },
+        {
+          "level": 2,
+          "text": "Set each bracket to zero; the root is the negative of the number inside."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "It factors as (x + 3)(x + 4) = 0, giving roots -4 and -3. The smaller is -4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q2",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve x^2 + 7x + 10 = 0. What is the smaller root?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the quadratic first: find numbers multiplying to 10 and adding to 7."
+        },
+        {
+          "level": 2,
+          "text": "Set each bracket to zero; the root is the negative of the number inside."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "It factors as (x + 2)(x + 5) = 0, giving roots -5 and -2. The smaller is -5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q3",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve x^2 - 7x + 12 = 0. What is the smaller root?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the quadratic first: find numbers multiplying to 12 and adding to -7."
+        },
+        {
+          "level": 2,
+          "text": "Set each bracket to zero; the root is the negative of the number inside."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "It factors as (x + -3)(x + -4) = 0, giving roots 3 and 4. The smaller is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q4",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve x^2 - 25 = 0. What is the positive root?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This is a difference of two squares."
+        },
+        {
+          "level": 2,
+          "text": "(x + 5)(x - 5) = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^2 - 25 = (x + 5)(x - 5), so the roots are -5 and 5; the positive one is 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q5",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve x^2 - 9x = 0. What is the non-zero root?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Take out the common factor x."
+        },
+        {
+          "level": 2,
+          "text": "x(x - 9) = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x(x - 9) = 0 gives x = 0 or x = 9, so the non-zero root is 9.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q6",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many real roots can a quadratic equation have at most?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about how many brackets a quadratic factors into."
+        },
+        {
+          "level": 2,
+          "text": "Each bracket contributes one root."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A quadratic factors into two linear brackets, so it has at most two real roots.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q7",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "If (x - 6)(x + 2) = 0, what is the larger value of x?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set each bracket to zero separately."
+        },
+        {
+          "level": 2,
+          "text": "x - 6 = 0 gives x = 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The roots are 6 and -2, so the larger is 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.solving_quadratics.q8",
+      "skill_id": "math.algebra2.solving_quadratics",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A ball's height is zero when t^2 - 7t = 0, with t in seconds. At what positive time does it land?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor out t."
+        },
+        {
+          "level": 2,
+          "text": "t(t - 7) = 0 gives t = 0 at launch and t = 7 on landing."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "t(t - 7) = 0, so t = 0 (launch) or t = 7, meaning it lands after 7 seconds.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q1",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For 1x^2 - 5x + 6 = 0, what is the discriminant b^2 - 4ac?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The discriminant is b^2 - 4ac."
+        },
+        {
+          "level": 2,
+          "text": "Work out (-5)^2 - 4 x 1 x 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(-5)^2 - 4 x 1 x 6 = 25 - 24 = 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q2",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For 1x^2 + 6x + 9 = 0, what is the discriminant b^2 - 4ac?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The discriminant is b^2 - 4ac."
+        },
+        {
+          "level": 2,
+          "text": "Work out (6)^2 - 4 x 1 x 9."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(6)^2 - 4 x 1 x 9 = 36 - 36 = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q3",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For 1x^2 + 2x + 5 = 0, what is the discriminant b^2 - 4ac?",
+      "answer_spec": {
+        "correct_answer": -16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The discriminant is b^2 - 4ac."
+        },
+        {
+          "level": 2,
+          "text": "Work out (2)^2 - 4 x 1 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(2)^2 - 4 x 1 x 5 = 4 - 20 = -16.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q4",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A quadratic has discriminant 1. How many real roots does it have?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A positive discriminant gives two roots and a negative one gives none."
+        },
+        {
+          "level": 2,
+          "text": "A discriminant of exactly zero gives one repeated root."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A discriminant of 1 means 2 real roots.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q5",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A quadratic has discriminant 0. How many real roots does it have?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A positive discriminant gives two roots and a negative one gives none."
+        },
+        {
+          "level": 2,
+          "text": "A discriminant of exactly zero gives one repeated root."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A discriminant of 0 means 1 real root.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q6",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A quadratic has discriminant -16. How many real roots does it have?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A positive discriminant gives two roots and a negative one gives none."
+        },
+        {
+          "level": 2,
+          "text": "A discriminant of exactly zero gives one repeated root."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A discriminant of -16 means 0 real roots.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q7",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve x^2 - 5x + 6 = 0 using the formula. What is the larger root?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The discriminant is 1, so the roots are (5 plus or minus 1) / 2."
+        },
+        {
+          "level": 2,
+          "text": "Work out (5 + 1) / 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(5 + 1) / 2 = 3 and (5 - 1) / 2 = 2, so the larger root is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.quadratic_formula.q8",
+      "skill_id": "math.algebra2.quadratic_formula",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why does a negative discriminant mean no real roots?",
+      "answer_spec": {
+        "correct_answer": "A negative number has no real square root."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The discriminant sits under a square root sign."
+        },
+        {
+          "level": 2,
+          "text": "Ask what happens when you square any real number."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The formula takes the square root of the discriminant, and no real number squares to a negative value.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A negative number has no real square root.",
+          "Dividing by 2a fails.",
+          "The parabola is upside down.",
+          "b must be negative."
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.systems.q1",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 1x + 1y = 10 and 1x - 1y = 2. What is x?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add or subtract the equations to remove one unknown."
+        },
+        {
+          "level": 2,
+          "text": "Solve the single-variable equation that remains."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Eliminating y gives x = 6, and substituting back gives y = 4. Both equations check out.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q2",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 1x + 1y = 10 and 1x - 1y = 2. What is y?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find x first."
+        },
+        {
+          "level": 2,
+          "text": "Substitute x = 6 into either equation."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "With x = 6, both equations give y = 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q3",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 2x + 1y = 11 and 1x - 1y = 1. What is x?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add or subtract the equations to remove one unknown."
+        },
+        {
+          "level": 2,
+          "text": "Solve the single-variable equation that remains."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Eliminating y gives x = 4, and substituting back gives y = 3. Both equations check out.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q4",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 2x + 1y = 11 and 1x - 1y = 1. What is y?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find x first."
+        },
+        {
+          "level": 2,
+          "text": "Substitute x = 4 into either equation."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "With x = 4, both equations give y = 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q5",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 3x + 2y = 16 and 1x + 1y = 6. What is x?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add or subtract the equations to remove one unknown."
+        },
+        {
+          "level": 2,
+          "text": "Solve the single-variable equation that remains."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Eliminating y gives x = 4, and substituting back gives y = 2. Both equations check out.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q6",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve the system 3x + 2y = 16 and 1x + 1y = 6. What is y?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find x first."
+        },
+        {
+          "level": 2,
+          "text": "Substitute x = 4 into either equation."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "With x = 4, both equations give y = 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.systems.q7",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Two lines are parallel and distinct. How many solutions does the system have?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Solutions are crossing points."
+        },
+        {
+          "level": 2,
+          "text": "Parallel distinct lines never meet."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Parallel distinct lines never cross, so there is no solution.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.systems.q8",
+      "skill_id": "math.algebra2.systems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Two adult tickets and one child ticket cost 11 pounds. One adult and one child cost 7 pounds. What is the price of an adult ticket, in pounds?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write the two equations: 2a + c = 11 and a + c = 7."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the second from the first to remove c."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "Subtracting gives a = 4, and then c = 3. Checking: 2 x 4 + 3 = 11 and 4 + 3 = 7.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q1",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve 2x + 3 < 11. What is the largest whole number x can be?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract 3 from both sides, then halve."
+        },
+        {
+          "level": 2,
+          "text": "x < 4, so the largest whole number below 4 is needed."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x < 8 gives x < 4, so the largest whole number is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q2",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve x - 5 > 2. What is the smallest whole number x can be?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 5 to both sides."
+        },
+        {
+          "level": 2,
+          "text": "x > 7, so the smallest whole number above 7 is needed."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x > 7, so the smallest whole number is 8.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q3",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 3x <= 18. What is the largest whole number x can be?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide both sides by 3."
+        },
+        {
+          "level": 2,
+          "text": "x is less than or equal to 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x <= 6, and 6 is allowed because the sign includes equality.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q4",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "When you divide both sides of an inequality by -2, what must you do to the sign?",
+      "answer_spec": {
+        "correct_answer": "Reverse it."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try it with a true statement like 4 > 2."
+        },
+        {
+          "level": 2,
+          "text": "Dividing both by -2 gives -2 and -1."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "4 > 2 becomes -2 and -1, and -2 < -1, so the direction reverses.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Reverse it.", "Leave it unchanged.", "Change it to equals.", "Remove it."]
+      }
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q5",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Solve -2x > 6. What is the largest whole number x can be?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide both sides by -2 and flip the sign."
+        },
+        {
+          "level": 2,
+          "text": "x < -3, so the largest whole number is just below -3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Dividing by -2 flips the sign to give x < -3, so the largest whole number is -4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q6",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which whole numbers satisfy both x > 2 and x < 6? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["3", "4", "5"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The value must be strictly greater than 2."
+        },
+        {
+          "level": 2,
+          "text": "It must also be strictly less than 6."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Strictly between 2 and 6 leaves 3, 4 and 5; the endpoints are excluded.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["3", "4", "5", "6"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q7",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A lift holds at most 8 people. Which inequality describes the number n it can carry?",
+      "answer_spec": {
+        "correct_answer": "n <= 8"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "At most means it can reach the limit."
+        },
+        {
+          "level": 2,
+          "text": "Look for the sign that includes equality."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "At most 8 means n can be 8 or fewer, which is n <= 8.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["n <= 8", "n < 8", "n >= 8", "n > 8"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.inequalities.q8",
+      "skill_id": "math.algebra2.inequalities",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A taxi charges 3 pounds plus 2 pounds per mile. For a 20 pound budget, what is the greatest whole number of miles?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 3 + 2m <= 20."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 3, then halve: m <= 8.5."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "3 + 2m <= 20 gives 2m <= 17 and m <= 8.5, so 8 whole miles.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q1",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For which value of x is 1 / (x - 4) undefined?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A fraction is undefined when its denominator is zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve x - 4 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The denominator is zero when x = 4, so the expression is undefined there.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q2",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For which value of x is 5 / (x + 7) undefined?",
+      "answer_spec": {
+        "correct_answer": -7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set the denominator to zero."
+        },
+        {
+          "level": 2,
+          "text": "Solve x + 7 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x + 7 = 0 gives x = -7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q3",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Simplify (x^2 - 9) / (x + 3). What is the constant in the answer?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the numerator as a difference of squares."
+        },
+        {
+          "level": 2,
+          "text": "(x + 3)(x - 3) / (x + 3) cancels."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "It simplifies to x - 3, so the constant is -3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q4",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Simplify (x^2 - 25) / (x - 5). What is the constant in the answer?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the numerator."
+        },
+        {
+          "level": 2,
+          "text": "(x + 5)(x - 5) / (x - 5) cancels."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "It simplifies to x + 5, so the constant is 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q5",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Can the x terms be cancelled in (x + 2) / (x + 5)?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cancelling needs a common factor, not a common term."
+        },
+        {
+          "level": 2,
+          "text": "Test it with x = 1: 3/6 is not 2/5."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The x values are added, not multiplied, so they are terms rather than factors and cannot be cancelled.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only when x is positive", "Only when x is a whole number"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q6",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Simplify 6x / (3x) for x not equal to zero.",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cancel the common factor of 3 and the common factor of x."
+        },
+        {
+          "level": 2,
+          "text": "6 / 3 = 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6x / 3x = 2, provided x is not zero.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q7",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "For which value of x is (x + 1) / (x^2 - 16) undefined? Give the positive value.",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Factor the denominator."
+        },
+        {
+          "level": 2,
+          "text": "x^2 - 16 = (x + 4)(x - 4)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The denominator is zero at x = 4 and x = -4; the positive value is 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.rational_expressions.q8",
+      "skill_id": "math.algebra2.rational_expressions",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Two pipes fill a tank in x hours and x + 2 hours. Which expression must never be zero for the rates to make sense?",
+      "answer_spec": {
+        "correct_answer": "x and x + 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A rate is 1 divided by the time."
+        },
+        {
+          "level": 2,
+          "text": "Both denominators matter."
+        }
+      ],
+      "dimensions": ["transfer", "understanding"],
+      "explanation": "The rates are 1/x and 1/(x + 2), so neither x nor x + 2 may be zero.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["x and x + 2", "only x", "only x + 2", "neither matters"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q1",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If f(x) = 2x + 1, what is f(3)?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace every x with 3."
+        },
+        {
+          "level": 2,
+          "text": "Work out 2 x 3 + 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(3) = 2 x 3 + 1 = 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q2",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If f(x) = 5x - 2, what is f(4)?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace every x with 4."
+        },
+        {
+          "level": 2,
+          "text": "Work out 5 x 4 - 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(4) = 5 x 4 - 2 = 18.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q3",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If f(x) = 3x + 7, what is f(0)?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace every x with 0."
+        },
+        {
+          "level": 2,
+          "text": "Work out 3 x 0 + 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(0) = 3 x 0 + 7 = 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q4",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If g(x) = x^2 - 4, what is g(5)?",
+      "answer_spec": {
+        "correct_answer": 21
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square 5 first."
+        },
+        {
+          "level": 2,
+          "text": "Then subtract 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(5) = 25 - 4 = 21.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q5",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If g(x) = x^2 - 4, what is g(2)?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square 2 first."
+        },
+        {
+          "level": 2,
+          "text": "Then subtract 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(2) = 4 - 4 = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q6",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Does f(3) mean f multiplied by 3?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The brackets mark an input, not a product."
+        },
+        {
+          "level": 2,
+          "text": "f is the name of a rule, not a number."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "f(3) means the rule f applied to the input 3, not multiplication.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only for linear functions", "Only when f is a number"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q7",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = 2x + 1, which input gives an output of 11?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set 2x + 1 = 11."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 1, then halve."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x + 1 = 11 gives 2x = 10 and x = 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.function_notation.q8",
+      "skill_id": "math.algebra2.function_notation",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A taxi fare is f(m) = 3 + 2m pounds for m miles. What is the fare for 7 miles, in pounds?",
+      "answer_spec": {
+        "correct_answer": 17
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute m = 7."
+        },
+        {
+          "level": 2,
+          "text": "3 + 2 x 7."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "f(7) = 3 + 14 = 17 pounds.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.transformations.q1",
+      "skill_id": "math.algebra2.transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "The graph of f(x) = x^2 is changed to f(x) + 5. How many units does it move up?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Adding outside the function shifts vertically."
+        },
+        {
+          "level": 2,
+          "text": "The graph rises by the number added."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Adding 5 outside raises every output by 5, so the graph moves up 5 units.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.transformations.q2",
+      "skill_id": "math.algebra2.transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "The graph of f(x) = x^2 becomes f(x) - 4. How many units does it move down?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtracting outside shifts down."
+        },
+        {
+          "level": 2,
+          "text": "Every output drops by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Subtracting 4 lowers every output by 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.transformations.q3",
+      "skill_id": "math.algebra2.transformations",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "In which direction does the graph of f(x + 3) move compared with f(x)?",
+      "answer_spec": {
+        "correct_answer": "left"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Changes inside the brackets act in reverse."
+        },
+        {
+          "level": 2,
+          "text": "Adding inside moves the graph the opposite way."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "An inside change acts in reverse, so f(x + 3) shifts the graph 3 units left.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["left", "right", "up", "down"]
+      }
+    },
+    {
+      "question_id": "math.algebra2.transformations.q4",
+      "skill_id": "math.algebra2.transformations",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "What does the graph of -f(x) look like compared with f(x)?",
+      "answer_spec": {
+        "correct_answer": "reflected in the x-axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Every output changes sign."
+        },
+        {
+          "level": 2,
+          "text": "Positive outputs become negative and vice versa."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Negating every output flips the graph over the x-axis.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "reflected in the x-axis",
+          "reflected in the y-axis",
+          "shifted down",
+          "stretched"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra2.transformations.q5",
+      "skill_id": "math.algebra2.transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "The graph of f(x) = x^2 becomes 3f(x). By what factor is it stretched vertically?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiplying outside the function scales the outputs."
+        },
+        {
+          "level": 2,
+          "text": "Every output is tripled."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Each output is multiplied by 3, a vertical stretch of factor 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.transformations.q6",
+      "skill_id": "math.algebra2.transformations",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "The parabola y = x^2 is moved so its lowest point is at (0, 6). What is the new rule?",
+      "answer_spec": {
+        "correct_answer": "x^2 + 6"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Only a vertical shift is needed."
+        },
+        {
+          "level": 2,
+          "text": "Add the shift outside the function."
+        }
+      ],
+      "dimensions": ["transfer"],
+      "explanation": "Raising the graph 6 units gives y = x^2 + 6.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["x^2 + 6", "x^2 - 6", "(x + 6)^2", "6x^2"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra2.transformations.q7",
+      "skill_id": "math.algebra2.transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = x^2, what is the value of f(x) + 2 when x = 3?",
+      "answer_spec": {
+        "correct_answer": 11
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out f(3) first."
+        },
+        {
+          "level": 2,
+          "text": "Then add 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(3) = 9, and 9 + 2 = 11.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra2.transformations.q8",
+      "skill_id": "math.algebra2.transformations",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A graph is shifted 4 right and 2 up. Which describes the new rule?",
+      "answer_spec": {
+        "correct_answer": "f(x - 4) + 2"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A right shift uses a minus inside the brackets."
+        },
+        {
+          "level": 2,
+          "text": "An up shift adds outside."
+        }
+      ],
+      "dimensions": ["transfer", "understanding"],
+      "explanation": "Right by 4 is f(x - 4) because inside changes reverse, and up by 2 adds 2 outside.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["f(x - 4) + 2", "f(x + 4) + 2", "f(x - 4) - 2", "f(x + 4) - 2"]
+      },
+      "transfer_flag": true
+    }
+  ]
+}

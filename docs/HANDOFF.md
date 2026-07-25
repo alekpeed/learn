@@ -70,6 +70,19 @@ shipped on top of it. Everything is committed and pushed.
   duplicate record, or a record pointing at an unknown skill. One content bug fixed:
   `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
   answer, which could never fire; a loader test now guards against that class of bug.
+- **Phase 22 - Algebra II (Track D):** `content/mvp/units/algebra2.json` - **12 skills, 96
+  questions**: exponent rules, radicals, polynomials, multiplying binomials, factoring
+  quadratics, solving quadratics, the quadratic formula and discriminant, systems of
+  equations, inequalities, rational expressions, function notation, and graph
+  transformations. Unit 13 of `math.core`, same reasoning as Geometry. Curriculum now
+  **154 skills, 1,313 questions, 18 units**. The generator verifies the mathematics rather
+  than trusting it: quadratic roots are substituted back into their equations,
+  factorisations are expanded and compared, and system solutions are checked against BOTH
+  equations. That caught a wrong hand-written answer (the larger root of x^2 + 2x - 15 is
+  5, not 3) and a choice question shipped with no options - both now impossible, since the
+  generator refuses to emit a choice validator without options.
+  **With Geometry, the two courses a learner needs before precalculus and trigonometry are
+  both in place.**
 - **Phase 21 - Geometry (Track D):** `content/mvp/units/geometry.json` - **12 skills, 96
   questions**, the first content beyond the originally documented curriculum. Points/lines,
   angles, angle relationships, parallel lines and transversals, triangles, quadrilaterals,

@@ -66,6 +66,11 @@
         "unit_id": "math.geometry",
         "title": "Geometry",
         "order": 12
+      },
+      {
+        "unit_id": "math.algebra2",
+        "title": "Algebra II",
+        "order": 13
       }
     ]
   },

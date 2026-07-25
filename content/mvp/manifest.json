@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "content_version": "1.1.0",
+  "content_version": "1.2.0",
   "courses": ["math.core", "science.core"],
   "generated_at": "2026-07-23T00:00:00Z",
-  "change_summary": "Adds the Geometry unit (12 skills, 96 questions): points and lines, angles and their relationships, parallel lines, triangles, quadrilaterals, polygons, perimeter and area, circles, volume and surface area, the Pythagorean theorem, and similarity. The first course content beyond the originally documented curriculum, and the prerequisite for trigonometry."
+  "change_summary": "Adds the Algebra II unit (12 skills, 96 questions): exponent rules, radicals, polynomials, multiplying binomials, factoring, solving quadratics, the quadratic formula, systems of equations, inequalities, rational expressions, function notation, and graph transformations. With Geometry, this completes the two courses a learner needs before precalculus and trigonometry."
 }
