@@ -3988,6 +3988,533 @@
       "explanation": "8 is the smallest common denominator for fourths and eighths.",
       "content_version": "0.1.0",
       "estimated_time_seconds": 46
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q8",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "Write 7/3 as a mixed number. Give the fractional part as a fraction.",
+      "answer_spec": {
+        "correct_answer": "1/3"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "How many whole 3/3 fit into 7/3?"
+        },
+        {
+          "level": 2,
+          "text": "Two wholes use 6/3, leaving what?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7/3 = 2 and 1/3, so the fractional part is 1/3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q9",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Write 7/3 as a mixed number. What is the whole-number part?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 7 by 3 and take the whole part."
+        },
+        {
+          "level": 2,
+          "text": "3 goes into 7 twice."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 divided by 3 is 2 remainder 1, so the whole number part is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.mixed_numbers.q10",
+      "skill_id": "math.fractions.mixed_numbers",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "Write 2 and 3/4 as an improper fraction. Give your answer as a fraction.",
+      "answer_spec": {
+        "correct_answer": "11/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two wholes are 8/4."
+        },
+        {
+          "level": 2,
+          "text": "Add the extra 3/4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 = 8/4, and 8/4 + 3/4 = 11/4. Check: 11/4 is 2 remainder 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q9",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is larger, 3/4 or 2/3?",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Give them a common denominator of 12."
+        },
+        {
+          "level": 2,
+          "text": "9/12 against 8/12."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "3/4 = 9/12 and 2/3 = 8/12, so 3/4 is larger.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["3/4", "2/3", "They are equal", "It cannot be decided"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q10",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "With the same numerator, which is larger, 3/5 or 3/8?",
+      "answer_spec": {
+        "correct_answer": "3/5"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The same number of pieces, but different sizes."
+        },
+        {
+          "level": 2,
+          "text": "Fifths are bigger than eighths."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Splitting a whole into 5 gives bigger pieces than splitting into 8, so 3/5 is larger.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["3/5", "3/8", "They are equal", "It depends"]
+      }
+    },
+    {
+      "question_id": "math.fractions.comparing_fractions.q11",
+      "skill_id": "math.fractions.comparing_fractions",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "Which fraction lies exactly halfway between 1/4 and 3/4? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add them and halve the result."
+        },
+        {
+          "level": 2,
+          "text": "1/4 + 3/4 = 1, then halve."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(1/4 + 3/4)/2 = 1/2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q9",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 2/3 divided by 1/6? Give your answer as a fraction or whole number.",
+      "answer_spec": {
+        "correct_answer": "4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Dividing by a fraction is multiplying by its reciprocal."
+        },
+        {
+          "level": 2,
+          "text": "2/3 x 6/1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2/3 x 6 = 12/3 = 4. Check: 4 x 1/6 = 4/6 = 2/3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q10",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/4 divided by 2? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "3/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Dividing by 2 is multiplying by 1/2."
+        },
+        {
+          "level": 2,
+          "text": "3/4 x 1/2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3/4 x 1/2 = 3/8. Check: 3/8 x 2 = 3/4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.dividing_fractions.q11",
+      "skill_id": "math.fractions.dividing_fractions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why can dividing by a fraction give a larger answer?",
+      "answer_spec": {
+        "correct_answer": "Dividing asks how many of the small piece fit in, and many small pieces fit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask how many quarters fit into 2."
+        },
+        {
+          "level": 2,
+          "text": "Eight of them do."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "2 divided by 1/4 asks how many quarters fit into 2, and the answer is 8 - larger than 2.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Dividing asks how many of the small piece fit in, and many small pieces fit",
+          "Because fractions are always small",
+          "Because division always increases numbers",
+          "It cannot give a larger answer"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q9",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Complete: 2/3 = ?/12. What is the missing numerator?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3 was multiplied by 4 to reach 12."
+        },
+        {
+          "level": 2,
+          "text": "Do the same to the top."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 x 4 = 8, so 2/3 = 8/12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q10",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Complete: 5/6 = 15/?. What is the missing denominator?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "5 was multiplied by 3 to reach 15."
+        },
+        {
+          "level": 2,
+          "text": "Do the same to the bottom."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 x 3 = 18, so 5/6 = 15/18.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.equivalent_fractions.q11",
+      "skill_id": "math.fractions.equivalent_fractions",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "Write 18/24 in its simplest form. Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the highest common factor of 18 and 24."
+        },
+        {
+          "level": 2,
+          "text": "Both divide by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "18/6 = 3 and 24/6 = 4, so the simplest form is 3/4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q9",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A class of 20 children is 1/4 girls. How many girls are there?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find a quarter of 20."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "20 / 4 = 5 girls.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q10",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A jug holds 35 ml and 2/5 is poured out. How many millilitres were poured out?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One fifth of 35 is 7."
+        },
+        {
+          "level": 2,
+          "text": "Two fifths is twice that."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "35 / 5 = 7, and 2 x 7 = 14 ml.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.fraction_word_problems.q11",
+      "skill_id": "math.fractions.fraction_word_problems",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "A tank is 3/8 full. What fraction of it is empty? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "5/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The whole tank is 8/8."
+        },
+        {
+          "level": 2,
+          "text": "8/8 - 3/8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8/8 - 3/8 = 5/8 empty.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q9",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 3/4 times 2/5? Give a fraction in its simplest form.",
+      "answer_spec": {
+        "correct_answer": "3/10"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the tops and the bottoms."
+        },
+        {
+          "level": 2,
+          "text": "6/20, then simplify."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 x 2 = 6 and 4 x 5 = 20, and 6/20 simplifies to 3/10.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q10",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 2/3 of 9?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One third of 9 is 3."
+        },
+        {
+          "level": 2,
+          "text": "Two thirds is twice that."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 / 3 = 3, and 2 x 3 = 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.multiplying_fractions.q11",
+      "skill_id": "math.fractions.multiplying_fractions",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why does multiplying by a fraction less than 1 make a number smaller?",
+      "answer_spec": {
+        "correct_answer": "You are taking only part of it"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Half of 10 is 5."
+        },
+        {
+          "level": 2,
+          "text": "Taking a part of something leaves less than the whole."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Multiplying by 1/2 takes half, so the result is smaller. Multiplying only increases when the multiplier exceeds 1.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "You are taking only part of it",
+          "Because fractions are negative",
+          "Because multiplying always reduces",
+          "It does not"
+        ]
+      }
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q9",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "What is 3/4 minus 1/6? Give a fraction in its simplest form.",
+      "answer_spec": {
+        "correct_answer": "7/12"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The lowest common denominator of 4 and 6 is 12."
+        },
+        {
+          "level": 2,
+          "text": "9/12 - 2/12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3/4 = 9/12 and 1/6 = 2/12, so the difference is 7/12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q10",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 5/6 minus 1/3? Give a fraction in its simplest form.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 1/3 with denominator 6."
+        },
+        {
+          "level": 2,
+          "text": "5/6 - 2/6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1/3 = 2/6, so 5/6 - 2/6 = 3/6 = 1/2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.fractions.subtract_unlike_denominators.q11",
+      "skill_id": "math.fractions.subtract_unlike_denominators",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "What is 7/8 minus 1/2? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "3/8"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rewrite 1/2 with denominator 8."
+        },
+        {
+          "level": 2,
+          "text": "7/8 - 4/8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "1/2 = 4/8, so 7/8 - 4/8 = 3/8.",
+      "content_version": "1.0.0"
     }
   ]
 }

@@ -459,10 +459,11 @@ in this file's own terms, in the order worth doing it:
 
 1. **Statistics and probability** - unsequenced, but every prerequisite is authored, it needs
    no new validator and no infrastructure. The most buildable thing remaining.
-2. **More figures** - the renderer now exists (DEC-019) with five widget kinds, and 35
-   figures are attached across trigonometry and Pythagoras, so a sine wave is finally drawn.
-   The rest of geometry, the coordinate-plane unit and the science data unit still pose their
-   figures in words. That is content work against existing renderers, not new code.
+2. **More figures** - six widget kinds and 69 figures now, across trigonometry, Pythagoras,
+   angles, the coordinate plane and the number line. Polygons, circles, solids, precalculus
+   and the science data unit are still textual. Content work against existing renderers.
+   **Science item depth** belongs here too: 54 science skills sit at 8 items or fewer, while
+   every math skill is now at 9 or more.
 3. **Calculus** - furthest out, and it needs precalculus strands Phase 23 did not author.
 4. **The sync server** - the last Version 1 item. DEC-018 removed most of its leverage; it
    now buys cross-device resume for one person and nothing more.

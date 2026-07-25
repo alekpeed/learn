@@ -149,6 +149,32 @@ pnpm test:e2e           # 43 tests, includes axe in BOTH light and dark
 - **`CurriculumProvider` keeps the bundled package as its synchronous initial value**, so a
   broken installed course module falls back rather than bricking the app.
 
+### Question rotation - read this before touching PracticeScreen or ReviewQueue
+
+Practice used to walk a skill's items in authored order from index 0 on every visit, and
+`ReviewQueue` served `questionsBySkill[0]` **every time** - so a skill on the full spaced
+ladder (0, 1, 3, 7, 14, 30, 90 days) asked the identical question seven times over three
+months. That trains recall of one answer rather than of the method, which is the opposite
+of what the ladder measures.
+
+`packages/learning-engine/src/rotation.ts` fixes it. Exposure is projected from the event
+log (`answer_submitted` already carries `question_id`), so there is no new state.
+
+Three things that are easy to get wrong here, all learned the hard way:
+
+- **Do not prefer already-seen questions for review.** It looks right for a retention probe,
+  but with one item seen the "seen" pool is that one item, so review serves it forever - the
+  same defect one level down. A test covers this. Breadth-first is correct.
+- **The practice order is frozen per visit.** Recomputing as answers land would reshuffle the
+  remaining questions under the learner, because answering one changes its exposure.
+- **Wait for `projectedFor` to match the active learner** before computing the order.
+  `ProgressContext` settles once with no learner before the profile loads, so `loading` alone
+  can be false against an empty exposure map - and since the order is frozen after the first
+  computation, that silently restores the old fixed ordering with no visible symptom.
+
+`/practice?skill=X&q=<question_id>` pins one question first. e2e specs that assert on a
+specific item use it; without it they depend on whatever rotation happens to serve.
+
 ### DEC-019: figures are a widget registry, not free-form drawing
 
 Content names a `kind` and supplies numbers; the drawing lives in the app. Same arrangement
@@ -202,12 +228,16 @@ Do not describe Phase 25 as done.
 - **No sync server is deployed.** `HttpSyncBackend` is tested against a stubbed `fetch`,
   never a live endpoint. `syncEvents` pulls the whole remote log rather than using a
   watermark.
-- **Figures are drawn for trigonometry and Pythagoras only.** DEC-019 added a figure widget
-  registry (`apps/client/src/components/figures/Figure.tsx`) and attached 35 figures to
-  existing questions, but most of geometry (angles, polygons, circles, solids), the
-  coordinate-plane unit and the science data unit still pose their figures in words. The
-  `number_line` and `coordinate_plane` renderers exist and are unused - attaching them is
-  content work, not code work.
+- **Science content is still thin: 54 skills sit at 8 items or fewer**, and three at 7
+  (`science.thinking.hypotheses`, `science.thinking.testable_questions`,
+  `science.measurement.estimation`). Every **math** skill is now at 9 or more. The depth
+  pass covered math only.
+- **Figures are drawn for trigonometry, Pythagoras, angles, the coordinate plane and the
+  number line.** DEC-019 added a figure widget
+  registry (`apps/client/src/components/figures/Figure.tsx`) and there are now 69 figures
+  across six widget kinds. Still textual: polygons, circles, solids, most of precalculus,
+  and the whole science data unit. Attaching more is content work against existing
+  renderers, not code.
 - **The schema caps `difficulty` and `difficulty_band` at 5.** Hard items clamp there.
 - **`exact_value` does not handle sums of unlike terms** such as `1 + sqrt(2)`, nested
   radicals, or non-integer radicands. No authored item needs one; a question that did would

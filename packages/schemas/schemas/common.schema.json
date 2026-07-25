@@ -71,6 +71,7 @@
           "type": "string",
           "enum": [
             "right_triangle",
+            "angle",
             "trig_graph",
             "unit_circle",
             "number_line",

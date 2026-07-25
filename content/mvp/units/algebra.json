@@ -2970,6 +2970,610 @@
       "content_version": "0.1.0",
       "estimated_time_seconds": 54,
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.algebra.variables.q9",
+      "skill_id": "math.algebra.variables",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "If n = 7, what is the value of n + 5?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Replace n with 7."
+        },
+        {
+          "level": 2,
+          "text": "7 + 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 + 5 = 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.variables.q10",
+      "skill_id": "math.algebra.variables",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If a = 4, what is the value of 3a?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "3a means 3 times a."
+        },
+        {
+          "level": 2,
+          "text": "3 x 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 x 4 = 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.variables.q11",
+      "skill_id": "math.algebra.variables",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does a letter stand for in algebra?",
+      "answer_spec": {
+        "correct_answer": "A number that can vary or is not yet known"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Letters hold a place for a value."
+        },
+        {
+          "level": 2,
+          "text": "The value can change or be unknown."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A letter stands in for a number, either one that is not yet known or one that can take different values.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A number that can vary or is not yet known",
+          "The first letter of a word",
+          "Always the number 1",
+          "A unit of measurement"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.expressions.q9",
+      "skill_id": "math.algebra.expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Write an expression for 'five more than n' and evaluate it when n = 12.",
+      "answer_spec": {
+        "correct_answer": 17
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Five more than n is n + 5."
+        },
+        {
+          "level": 2,
+          "text": "Substitute 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "n + 5 with n = 12 gives 17.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.expressions.q10",
+      "skill_id": "math.algebra.expressions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Evaluate 2x + 3 when x = 6.",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute 6 for x."
+        },
+        {
+          "level": 2,
+          "text": "12 + 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2(6) + 3 = 15.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.expressions.q11",
+      "skill_id": "math.algebra.expressions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Evaluate 5(y - 2) when y = 7.",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the bracket first."
+        },
+        {
+          "level": 2,
+          "text": "7 - 2 = 5, then multiply by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5(7 - 2) = 5 x 5 = 25.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.equality.q9",
+      "skill_id": "math.algebra.equality",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "If x + 4 = 11, what is x?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Take 4 from both sides."
+        },
+        {
+          "level": 2,
+          "text": "11 - 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x = 7. Check: 7 + 4 = 11.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.equality.q10",
+      "skill_id": "math.algebra.equality",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does the equals sign mean in an equation?",
+      "answer_spec": {
+        "correct_answer": "Both sides have the same value"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think of a balance."
+        },
+        {
+          "level": 2,
+          "text": "Both pans hold the same amount."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The equals sign asserts that the two sides are the same value - it is a balance, not an instruction.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Both sides have the same value",
+          "The answer comes next",
+          "The left side is larger",
+          "You must do a calculation"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.equality.q11",
+      "skill_id": "math.algebra.equality",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "If 3x = 21, what is x?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide both sides by 3."
+        },
+        {
+          "level": 2,
+          "text": "21 divided by 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x = 7. Check: 3 x 7 = 21.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q9",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "In the expression 7x + 4, what is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient is the number multiplying the letter."
+        },
+        {
+          "level": 2,
+          "text": "It sits in front of the x."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The coefficient of x is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q10",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many terms are in 3x + 2y - 5?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Terms are separated by plus and minus signs."
+        },
+        {
+          "level": 2,
+          "text": "Count them."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3x, 2y and -5 make three terms.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.terms_and_coefficients.q11",
+      "skill_id": "math.algebra.terms_and_coefficients",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "In 9 - 4x, what is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": "-4"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The sign in front belongs to the term."
+        },
+        {
+          "level": 2,
+          "text": "The term is minus four x."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The term is -4x, so the coefficient is -4. The sign travels with the coefficient.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["-4", "4", "9", "There is none"]
+      }
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q9",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Simplify 5x + 3x. What is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "These are like terms."
+        },
+        {
+          "level": 2,
+          "text": "5 + 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5x + 3x = 8x.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q10",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Simplify 7a - 2a + 4a. What is the coefficient of a?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work left to right."
+        },
+        {
+          "level": 2,
+          "text": "7 - 2 = 5, then + 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7a - 2a + 4a = 9a.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.combining_like_terms.q11",
+      "skill_id": "math.algebra.combining_like_terms",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Can 4x and 3y be combined into a single term?",
+      "answer_spec": {
+        "correct_answer": "No, they are not like terms"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Like terms need exactly the same letter part."
+        },
+        {
+          "level": 2,
+          "text": "x and y count different things."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Only like terms combine. 4x and 3y have different variable parts, so 4x + 3y is already simplest.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, they are not like terms",
+          "Yes, giving 7xy",
+          "Yes, giving 7x",
+          "Yes, giving 12xy"
+        ]
+      }
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q9",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Expand 4(x + 3). What is the constant term?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 4 multiplies everything in the bracket."
+        },
+        {
+          "level": 2,
+          "text": "4 x 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4(x + 3) = 4x + 12, so the constant is 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q10",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Expand 5(2x - 3). What is the coefficient of x?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the 2x by 5."
+        },
+        {
+          "level": 2,
+          "text": "5 x 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5(2x - 3) = 10x - 15, so the coefficient is 10.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.distributive_property.q11",
+      "skill_id": "math.algebra.distributive_property",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Expand -2(x + 6). What is the constant term?",
+      "answer_spec": {
+        "correct_answer": -12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The minus sign multiplies both terms."
+        },
+        {
+          "level": 2,
+          "text": "-2 x 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "-2(x + 6) = -2x - 12, so the constant is -12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q9",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 3x + 4 = 19.",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Undo the addition first."
+        },
+        {
+          "level": 2,
+          "text": "3x = 15."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3x = 15, so x = 5. Check: 3(5) + 4 = 19.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q10",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve 2x - 7 = 9.",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add 7 to both sides first."
+        },
+        {
+          "level": 2,
+          "text": "2x = 16."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2x = 16, so x = 8. Check: 2(8) - 7 = 9.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.two_step_equations.q11",
+      "skill_id": "math.algebra.two_step_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve x/4 + 2 = 7.",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract 2 first."
+        },
+        {
+          "level": 2,
+          "text": "x/4 = 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x/4 = 5, so x = 20. Check: 20/4 + 2 = 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q9",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A number is doubled and 5 is added, giving 21. What is the number?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 2n + 5 = 21."
+        },
+        {
+          "level": 2,
+          "text": "2n = 16."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2n + 5 = 21 gives 2n = 16, so n = 8. Check: 2(8) + 5 = 21.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q10",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Three equal pencils and a 2 dollar pen cost 11 dollars. How much is one pencil, in dollars?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as 3p + 2 = 11."
+        },
+        {
+          "level": 2,
+          "text": "3p = 9."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3p + 2 = 11 gives 3p = 9, so p = 3 dollars.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.algebra.equation_word_problems.q11",
+      "skill_id": "math.algebra.equation_word_problems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A number is halved and 3 is subtracted, giving 9. What is the number?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write it as n/2 - 3 = 9."
+        },
+        {
+          "level": 2,
+          "text": "n/2 = 12."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "n/2 - 3 = 9 gives n/2 = 12, so n = 24. Check: 24/2 - 3 = 9.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
     }
   ]
 }

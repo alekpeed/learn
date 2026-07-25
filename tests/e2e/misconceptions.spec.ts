@@ -9,6 +9,10 @@
  */
 import { test, expect } from '@playwright/test';
 
+// Practice rotates questions, so these pin the exact item they assert on
+// with the ?q= deep link. Without it the test would depend on which
+// question rotation happened to serve first.
+
 async function createProfile(page: import('@playwright/test').Page): Promise<void> {
   await page.goto('/');
   await page.getByLabel(/your name/i).fill('Ada');
@@ -21,7 +25,7 @@ const SKILL = 'math.fractions.add_like_denominators';
 const WRONG = '3/10';
 
 async function answerWrongly(page: import('@playwright/test').Page): Promise<void> {
-  await page.goto(`/practice?skill=${SKILL}`);
+  await page.goto(`/practice?skill=${SKILL}&q=${SKILL}.q1`);
   await page.getByLabel(/your answer/i).fill(WRONG);
   await page.getByRole('button', { name: /submit/i }).click();
   // Wait for the feedback before any caller navigates away, so the attempt has

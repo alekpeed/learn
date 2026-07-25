@@ -2089,6 +2089,230 @@
       "content_version": "0.1.0",
       "estimated_time_seconds": 67,
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.ratios.rates.q9",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A car travels 180 km in 3 hours. What is its speed in kilometres per hour?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A rate is one quantity per unit of another."
+        },
+        {
+          "level": 2,
+          "text": "180 divided by 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 / 3 = 60 km per hour.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.rates.q10",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A tap fills 45 litres in 5 minutes. How many litres per minute is that?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the litres by the minutes."
+        },
+        {
+          "level": 2,
+          "text": "45 divided by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "45 / 5 = 9 litres per minute.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.rates.q11",
+      "skill_id": "math.ratios.rates",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A printer prints 24 pages in 3 minutes. How many pages does it print in 7 minutes?",
+      "answer_spec": {
+        "correct_answer": 56
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the rate per minute first."
+        },
+        {
+          "level": 2,
+          "text": "24/3 = 8 pages per minute."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8 pages per minute for 7 minutes gives 56 pages.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q9",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "6 apples cost 3 dollars. What is the cost of one apple, in dollars?",
+      "answer_spec": {
+        "correct_answer": 0.5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the cost by the number of apples."
+        },
+        {
+          "level": 2,
+          "text": "3 divided by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 / 6 = 0.50 dollars each.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q10",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A 2 kg bag costs 8 dollars. What is the cost per kilogram, in dollars?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the price by the mass."
+        },
+        {
+          "level": 2,
+          "text": "8 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8 / 2 = 4 dollars per kilogram.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.unit_rates.q11",
+      "skill_id": "math.ratios.unit_rates",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which is better value: 5 pens for 10 dollars, or 3 pens for 9 dollars?",
+      "answer_spec": {
+        "correct_answer": "5 pens for 10 dollars"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the cost of one pen in each case."
+        },
+        {
+          "level": 2,
+          "text": "10/5 against 9/3."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "10/5 = 2 dollars each and 9/3 = 3 dollars each, so the first is better value.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "5 pens for 10 dollars",
+          "3 pens for 9 dollars",
+          "They are the same",
+          "It cannot be compared"
+        ]
+      }
+    },
+    {
+      "question_id": "math.ratios.scale.q9",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A map has scale 1 cm to 5 km. Two towns are 7 cm apart on the map. How far apart are they in kilometres?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each centimetre stands for 5 km."
+        },
+        {
+          "level": 2,
+          "text": "7 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 x 5 = 35 km.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.scale.q10",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On a scale drawing of 1 cm to 2 m, a wall is 6 m long. How long is it on the drawing, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work backwards: divide by 2."
+        },
+        {
+          "level": 2,
+          "text": "6 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 / 2 = 3 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.ratios.scale.q11",
+      "skill_id": "math.ratios.scale",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A model is built at 1:50. The real car is 4 m long. How long is the model, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert 4 m to centimetres first."
+        },
+        {
+          "level": 2,
+          "text": "400 cm divided by 50."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4 m = 400 cm, and 400 / 50 = 8 cm.",
+      "content_version": "1.0.0"
     }
   ]
 }

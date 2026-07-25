@@ -1,3 +1,5 @@
+// Practice rotates questions, so these pin the exact item they assert
+// on with the ?q= deep link.
 import { test, expect, type Page } from '@playwright/test';
 
 /**
@@ -30,7 +32,9 @@ test.describe('multiple learners on one device (Phase 25)', () => {
     await firstProfile(page, 'Ada');
 
     // Ada earns a badge that Grace must not inherit.
-    await page.goto('/practice?skill=math.number_foundations.place_value');
+    await page.goto(
+      '/practice?skill=math.number_foundations.place_value&q=math.number_foundations.place_value.q1',
+    );
     await page.getByLabel(/your answer/i).fill('50');
     await page.getByRole('button', { name: /submit/i }).click();
     await expect(page.getByText('Correct!')).toBeVisible();
@@ -82,7 +86,9 @@ test.describe('achievements (Phase 25)', () => {
   test('a badge is earned by practising and survives a reload', async ({ page }) => {
     await firstProfile(page, 'Ada');
 
-    await page.goto('/practice?skill=math.number_foundations.place_value');
+    await page.goto(
+      '/practice?skill=math.number_foundations.place_value&q=math.number_foundations.place_value.q1',
+    );
     await page.getByLabel(/your answer/i).fill('50');
     await page.getByRole('button', { name: /submit/i }).click();
     await expect(page.getByText('Correct!')).toBeVisible();

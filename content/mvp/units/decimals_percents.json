@@ -4456,6 +4456,294 @@
         }
       ],
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q9",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "15 is what percentage of 60?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the part by the whole, then multiply by 100."
+        },
+        {
+          "level": 2,
+          "text": "15/60 = 0.25."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "15/60 = 0.25, and 0.25 x 100 = 25 percent.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q10",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "9 is what percentage of 45?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 9 by 45."
+        },
+        {
+          "level": 2,
+          "text": "That gives 0.2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9/45 = 0.2, so 20 percent.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_percent.q11",
+      "skill_id": "math.decimals_percents.finding_the_percent",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "30 is what percentage of 24?",
+      "answer_spec": {
+        "correct_answer": 125
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The part is larger than the whole, so expect over 100 percent."
+        },
+        {
+          "level": 2,
+          "text": "30/24 = 1.25."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "30/24 = 1.25, so 125 percent.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q9",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "12 is 25 percent of what number?",
+      "answer_spec": {
+        "correct_answer": 48
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "25 percent is a quarter."
+        },
+        {
+          "level": 2,
+          "text": "If a quarter is 12, the whole is four times that."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 x 4 = 48. Check: 25 percent of 48 is 12.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q10",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "45 is 90 percent of what number?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide by 0.9."
+        },
+        {
+          "level": 2,
+          "text": "45 / 0.9."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "45 / 0.9 = 50. Check: 90 percent of 50 is 45.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.finding_the_whole.q11",
+      "skill_id": "math.decimals_percents.finding_the_whole",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A price after a 20 percent discount is 80 dollars. What was the original price, in dollars?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "80 dollars represents 80 percent of the original."
+        },
+        {
+          "level": 2,
+          "text": "Divide 80 by 0.8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "80 / 0.8 = 100 dollars. Check: 20 percent off 100 is 80.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q9",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A price rises from 50 to 60 dollars. What is the percentage increase?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The change is 10, compared with the original 50."
+        },
+        {
+          "level": 2,
+          "text": "10/50 = 0.2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "10/50 = 0.2, so a 20 percent increase.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q10",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A value falls from 80 to 60. What is the percentage decrease?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The change is 20, compared with the original 80."
+        },
+        {
+          "level": 2,
+          "text": "20/80 = 0.25."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "20/80 = 0.25, so a 25 percent decrease.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_change.q11",
+      "skill_id": "math.decimals_percents.percent_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A number rises by 50 percent to reach 90. What was it before?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "90 is 150 percent of the original."
+        },
+        {
+          "level": 2,
+          "text": "Divide 90 by 1.5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "90 / 1.5 = 60. Check: 60 plus 50 percent is 90.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q9",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A jacket costs 40 dollars and there is 15 percent off. How many dollars do you save?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find 15 percent of 40."
+        },
+        {
+          "level": 2,
+          "text": "0.15 x 40."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "0.15 x 40 = 6 dollars saved.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q10",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A 250 dollar bill has 8 percent tax added. What is the total, in dollars?",
+      "answer_spec": {
+        "correct_answer": 270
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the tax, then add it on."
+        },
+        {
+          "level": 2,
+          "text": "0.08 x 250 = 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The tax is 20 dollars, so the total is 270 dollars.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.decimals_percents.percent_word_problems.q11",
+      "skill_id": "math.decimals_percents.percent_word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A class of 30 has 60 percent girls. How many boys are there?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Girls are 60 percent, so boys are 40 percent."
+        },
+        {
+          "level": 2,
+          "text": "0.4 x 30."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "40 percent of 30 = 12 boys. Check: 18 girls + 12 boys = 30.",
+      "content_version": "1.0.0"
     }
   ]
 }

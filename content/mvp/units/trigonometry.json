@@ -3892,6 +3892,920 @@
         ]
       },
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.trigonometry.right_triangle_ratios.q9",
+      "skill_id": "math.trigonometry.right_triangle_ratios",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "A right triangle has sides 8, 15 and 17. For the angle opposite the side of length 8, what is the opposite side over the hypotenuse? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "8/17"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The hypotenuse is the longest side."
+        },
+        {
+          "level": 2,
+          "text": "That is 17."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "opposite/hypotenuse = 8/17. The triangle checks out: 64 + 225 = 289.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.right_triangle_ratios.q10",
+      "skill_id": "math.trigonometry.right_triangle_ratios",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "In the same 8-15-17 triangle, what is the adjacent side over the hypotenuse for that angle? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "15/17"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The adjacent side touches the angle and is not the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "That leaves 15."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "adjacent/hypotenuse = 15/17.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.right_triangle_ratios.q11",
+      "skill_id": "math.trigonometry.right_triangle_ratios",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Two right triangles have the same acute angle but one is twice the size. How do their side ratios compare?",
+      "answer_spec": {
+        "correct_answer": "They are identical"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Scaling multiplies top and bottom equally."
+        },
+        {
+          "level": 2,
+          "text": "The angle did not change."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Scaling multiplies both parts of each ratio by the same factor, so the ratios are unchanged.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They are identical",
+          "They are doubled",
+          "They are halved",
+          "They are unrelated"
+        ]
+      }
+    },
+    {
+      "question_id": "math.trigonometry.sine_cosine_tangent.q9",
+      "skill_id": "math.trigonometry.sine_cosine_tangent",
+      "type": "fraction",
+      "difficulty": 3,
+      "prompt": "In an 8-15-17 right triangle, what is the tangent of the angle opposite the side of length 8? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "8/15"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Tangent leaves out the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "opposite over adjacent."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "tan A = 8/15. Checking against sin/cos: (8/17)/(15/17) = 8/15.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.sine_cosine_tangent.q10",
+      "skill_id": "math.trigonometry.sine_cosine_tangent",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which ratio does NOT involve the hypotenuse?",
+      "answer_spec": {
+        "correct_answer": "Tangent"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sine and cosine both compare a side with the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "Tangent compares the two shorter sides."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Tangent is opposite over adjacent, so the hypotenuse plays no part.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Tangent", "Sine", "Cosine", "All three use it"]
+      }
+    },
+    {
+      "question_id": "math.trigonometry.sine_cosine_tangent.q11",
+      "skill_id": "math.trigonometry.sine_cosine_tangent",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "A right triangle has sides 7, 24 and 25. What is the sine of the angle opposite the side of length 7? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "7/25"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "25 is the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "Check: 49 + 576 = 625."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "sin A = 7/25.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.finding_sides.q9",
+      "skill_id": "math.trigonometry.finding_sides",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A right triangle has hypotenuse 30 cm and an acute angle of 20 degrees. How long is the opposite side, in centimetres? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 10.26,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use opposite = hypotenuse x sin of the angle."
+        },
+        {
+          "level": 2,
+          "text": "30 x sin 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "30 x sin 20 = 10.26 cm to 2 decimal places.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.finding_sides.q10",
+      "skill_id": "math.trigonometry.finding_sides",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "In a right triangle the side adjacent to a 35 degree angle is 18 cm. How long is the hypotenuse, in centimetres? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 21.97,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cosine links the adjacent side to the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "18 divided by cos 35."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "18 / cos 35 = 21.97 cm, which must exceed 18 as the hypotenuse is longest.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.finding_sides.q11",
+      "skill_id": "math.trigonometry.finding_sides",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "A right triangle has a side of 9 cm adjacent to a 50 degree angle. How long is the opposite side, in centimetres? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 10.73,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Tangent links opposite to adjacent."
+        },
+        {
+          "level": 2,
+          "text": "9 x tan 50."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 x tan 50 = 10.72 cm to 2 decimal places.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.inverse_trig.q9",
+      "skill_id": "math.trigonometry.inverse_trig",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "An acute angle has a sine of 0.8. What is the angle, in degrees? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 53.13,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use inverse sine."
+        },
+        {
+          "level": 2,
+          "text": "The answer is a little over 53 degrees."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The inverse sine of 0.8 is 53.13 degrees. Check: sin 53.13 degrees is 0.8.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.inverse_trig.q10",
+      "skill_id": "math.trigonometry.inverse_trig",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "In a right triangle the opposite side is 5 and the adjacent side is 10. What is the angle, in degrees? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 26.57,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Form the tangent first."
+        },
+        {
+          "level": 2,
+          "text": "tan A = 5/10 = 0.5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "tan A = 0.5, and the inverse tangent of 0.5 is 26.57 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.inverse_trig.q11",
+      "skill_id": "math.trigonometry.inverse_trig",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "An acute angle has a cosine of 1. What is the angle, in degrees?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cosine is largest when the angle is smallest."
+        },
+        {
+          "level": 2,
+          "text": "cos 0 = 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "cos 0 = 1, so the angle is 0 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.applications.q9",
+      "skill_id": "math.trigonometry.applications",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "A tree casts a 45 m shadow when the sun's elevation is 28 degrees. How tall is the tree, in metres? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 23.93,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Height is opposite the angle; shadow is adjacent."
+        },
+        {
+          "level": 2,
+          "text": "45 x tan 28."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "45 x tan 28 = 23.93 m to 2 decimal places.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.trigonometry.applications.q10",
+      "skill_id": "math.trigonometry.applications",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "From a 20 m tower, a car is seen at an angle of depression of 35 degrees. How far is the car from the base, in metres? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 28.56,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The tower height is opposite the angle."
+        },
+        {
+          "level": 2,
+          "text": "20 divided by tan 35."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "20 / tan 35 = 28.56 m to 2 decimal places.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.trigonometry.applications.q11",
+      "skill_id": "math.trigonometry.applications",
+      "type": "decimal",
+      "difficulty": 5,
+      "prompt": "A ramp 12 m long rises 3 m. What angle does it make with the horizontal, in degrees? Round to 2 decimal places.",
+      "answer_spec": {
+        "correct_answer": 14.48,
+        "rounding": {
+          "decimals": 2
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rise is opposite; ramp length is the hypotenuse."
+        },
+        {
+          "level": 2,
+          "text": "sin A = 3/12 = 0.25."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "sin A = 0.25, so the angle is 14.48 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.trigonometry.special_triangles.q10",
+      "skill_id": "math.trigonometry.special_triangles",
+      "type": "exact_value",
+      "difficulty": 3,
+      "prompt": "What is the exact value of the cosine of 45 degrees?",
+      "answer_spec": {
+        "correct_answer": "sqrt(2)/2",
+        "accepted_equivalents": ["1/sqrt(2)"]
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "In the 45-45-90 triangle the legs are equal."
+        },
+        {
+          "level": 2,
+          "text": "1 divided by sqrt(2), then rationalise."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "cos 45 = 1/sqrt(2) = sqrt(2)/2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.special_triangles.q11",
+      "skill_id": "math.trigonometry.special_triangles",
+      "type": "exact_value",
+      "difficulty": 2,
+      "prompt": "What is the exact value of the sine of 0 degrees?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "At 0 degrees the point sits on the horizontal axis."
+        },
+        {
+          "level": 2,
+          "text": "Its height is zero."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "sin 0 = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.special_triangles.q12",
+      "skill_id": "math.trigonometry.special_triangles",
+      "type": "exact_value",
+      "difficulty": 3,
+      "prompt": "What is the exact value of the tangent of 0 degrees?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "tan is sin divided by cos."
+        },
+        {
+          "level": 2,
+          "text": "sin 0 = 0 and cos 0 = 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "tan 0 = 0/1 = 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.radians.q10",
+      "skill_id": "math.trigonometry.radians",
+      "type": "exact_value",
+      "difficulty": 3,
+      "prompt": "Write 60 degrees in radians, as an exact multiple of pi.",
+      "answer_spec": {
+        "correct_answer": "pi/3"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by pi/180."
+        },
+        {
+          "level": 2,
+          "text": "60/180 reduces to 1/3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "60 x pi/180 = pi/3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.radians.q11",
+      "skill_id": "math.trigonometry.radians",
+      "type": "exact_value",
+      "difficulty": 4,
+      "prompt": "Write 225 degrees in radians, as an exact multiple of pi.",
+      "answer_spec": {
+        "correct_answer": "5pi/4"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by pi/180."
+        },
+        {
+          "level": 2,
+          "text": "225/180 reduces to 5/4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "225 x pi/180 = 5pi/4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.radians.q12",
+      "skill_id": "math.trigonometry.radians",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many degrees is an angle of 3pi/2 radians?",
+      "answer_spec": {
+        "correct_answer": 270
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply by 180/pi."
+        },
+        {
+          "level": 2,
+          "text": "The pi cancels, leaving 3 x 180 / 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3pi/2 x 180/pi = 270 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.unit_circle.q9",
+      "skill_id": "math.trigonometry.unit_circle",
+      "type": "exact_value",
+      "difficulty": 2,
+      "prompt": "On the unit circle, what is the exact x-coordinate of the point at 0 degrees?",
+      "answer_spec": {
+        "correct_answer": "1"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "At 0 degrees the point is on the positive horizontal axis."
+        },
+        {
+          "level": 2,
+          "text": "It is one unit right of the origin."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The point is (1, 0), so the x-coordinate is 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.unit_circle.q10",
+      "skill_id": "math.trigonometry.unit_circle",
+      "type": "exact_value",
+      "difficulty": 3,
+      "prompt": "On the unit circle, what is the exact x-coordinate of the point at 90 degrees?",
+      "answer_spec": {
+        "correct_answer": "0"
+      },
+      "validator": "exact_value",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A quarter turn lands on the vertical axis."
+        },
+        {
+          "level": 2,
+          "text": "Its horizontal position is zero."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The point is (0, 1), so the x-coordinate is 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.unit_circle.q11",
+      "skill_id": "math.trigonometry.unit_circle",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why is the circle used for this defined with radius 1?",
+      "answer_spec": {
+        "correct_answer": "It makes the coordinates equal the cosine and sine directly"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "With radius r the coordinates would be r cos A and r sin A."
+        },
+        {
+          "level": 2,
+          "text": "Setting r = 1 removes the factor."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "With radius 1 the point is exactly (cos A, sin A) with no scaling factor to carry around.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It makes the coordinates equal the cosine and sine directly",
+          "Because 1 is easy to draw",
+          "Because larger circles do not work",
+          "To keep the angles small"
+        ]
+      }
+    },
+    {
+      "question_id": "math.trigonometry.reference_angles.q9",
+      "skill_id": "math.trigonometry.reference_angles",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the reference angle for 135 degrees, in degrees?",
+      "answer_spec": {
+        "correct_answer": 45
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "135 degrees is in quadrant II."
+        },
+        {
+          "level": 2,
+          "text": "Subtract from 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 135 = 45 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.reference_angles.q10",
+      "skill_id": "math.trigonometry.reference_angles",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the reference angle for 315 degrees, in degrees?",
+      "answer_spec": {
+        "correct_answer": 45
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "315 degrees is in quadrant IV."
+        },
+        {
+          "level": 2,
+          "text": "Subtract from 360."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "360 - 315 = 45 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.reference_angles.q11",
+      "skill_id": "math.trigonometry.reference_angles",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "In which quadrant are both sine and cosine negative?",
+      "answer_spec": {
+        "correct_answer": "Quadrant III"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sine is the vertical coordinate and cosine the horizontal."
+        },
+        {
+          "level": 2,
+          "text": "Both are negative when the point is down and to the left."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "In quadrant III both coordinates are negative, so both sine and cosine are negative.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Quadrant III", "Quadrant I", "Quadrant II", "Quadrant IV"]
+      }
+    },
+    {
+      "question_id": "math.trigonometry.trig_graphs.q9",
+      "skill_id": "math.trigonometry.trig_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the amplitude of y = sin x?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The graph runs from -1 to 1."
+        },
+        {
+          "level": 2,
+          "text": "Amplitude is half that span."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The span is 2, so the amplitude is 1.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.trig_graphs.q10",
+      "skill_id": "math.trigonometry.trig_graphs",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the period of y = cos x, in degrees?",
+      "answer_spec": {
+        "correct_answer": 360
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Cosine comes from going round the unit circle."
+        },
+        {
+          "level": 2,
+          "text": "One full turn."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "One full turn is 360 degrees, so the period is 360.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.trig_graphs.q11",
+      "skill_id": "math.trigonometry.trig_graphs",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the maximum value of y = 5 sin x?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The largest value of sin x is 1."
+        },
+        {
+          "level": 2,
+          "text": "Multiply by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 1 = 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.graph_transformations.q9",
+      "skill_id": "math.trigonometry.graph_transformations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the amplitude of y = 3 cos(2x) - 1?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Amplitude is the size of the coefficient in front."
+        },
+        {
+          "level": 2,
+          "text": "The 2 and the -1 do not affect it."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The coefficient is 3, so the amplitude is 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.graph_transformations.q10",
+      "skill_id": "math.trigonometry.graph_transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the period of y = 3 cos(2x) - 1, in degrees?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide 360 by the coefficient on x."
+        },
+        {
+          "level": 2,
+          "text": "360/2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "360/2 = 180 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.graph_transformations.q11",
+      "skill_id": "math.trigonometry.graph_transformations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the minimum value of y = 3 cos(2x) - 1?",
+      "answer_spec": {
+        "correct_answer": -4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start at the midline and subtract the amplitude."
+        },
+        {
+          "level": 2,
+          "text": "-1 - 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The midline is -1 and the amplitude 3, so the minimum is -1 - 3 = -4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.identities.q9",
+      "skill_id": "math.trigonometry.identities",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "An acute angle has sine 8/17. What is its cosine? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "15/17"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use sin^2 + cos^2 = 1."
+        },
+        {
+          "level": 2,
+          "text": "cos^2 = 1 - 64/289 = 225/289."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "cos^2 A = 1 - 64/289 = 225/289, so cos A = 15/17.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.identities.q10",
+      "skill_id": "math.trigonometry.identities",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "An acute angle has sine 7/25. What is its cosine? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "24/25"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the Pythagorean identity."
+        },
+        {
+          "level": 2,
+          "text": "cos^2 = 1 - 49/625 = 576/625."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "cos^2 A = 576/625, so cos A = 24/25.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.trigonometry.identities.q11",
+      "skill_id": "math.trigonometry.identities",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is sin^2 50 degrees + cos^2 50 degrees?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This is the Pythagorean identity."
+        },
+        {
+          "level": 2,
+          "text": "It holds for every angle."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "sin^2 A + cos^2 A = 1 for any A, so the answer is 1 without computing anything.",
+      "content_version": "1.0.0"
     }
   ]
 }

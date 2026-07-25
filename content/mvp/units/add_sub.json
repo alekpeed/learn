@@ -2518,6 +2518,78 @@
       "explanation": "Adding then subtracting the same amount returns the original number, 25.",
       "content_version": "0.1.0",
       "estimated_time_seconds": 54
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q9",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A shop had 145 apples and sold 68. How many are left?",
+      "answer_spec": {
+        "correct_answer": 77
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Selling means taking away."
+        },
+        {
+          "level": 2,
+          "text": "145 - 68."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "145 - 68 = 77 apples. Check: 77 + 68 = 145.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q10",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Ann has 34 stickers and is given 27 more. How many does she have now?",
+      "answer_spec": {
+        "correct_answer": 61
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Being given more means adding."
+        },
+        {
+          "level": 2,
+          "text": "34 + 27."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "34 + 27 = 61 stickers.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.add_sub.word_problems.q11",
+      "skill_id": "math.add_sub.word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A bus had 52 passengers. 19 got off and 24 got on. How many are on board now?",
+      "answer_spec": {
+        "correct_answer": 57
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Deal with the two changes in order."
+        },
+        {
+          "level": 2,
+          "text": "52 - 19 = 33, then add 24."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "52 - 19 = 33, then 33 + 24 = 57 passengers.",
+      "content_version": "1.0.0"
     }
   ]
 }

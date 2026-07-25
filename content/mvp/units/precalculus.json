@@ -3174,6 +3174,801 @@
         ]
       },
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q9",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = 1/(x + 7), which value of x is not in the domain?",
+      "answer_spec": {
+        "correct_answer": -7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set the denominator to zero."
+        },
+        {
+          "level": 2,
+          "text": "x + 7 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x + 7 = 0 at x = -7, so the function is undefined there.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q10",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = sqrt(x + 2), what is the smallest x in the domain?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The inside of a square root must not be negative."
+        },
+        {
+          "level": 2,
+          "text": "Solve x + 2 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x + 2 = 0 at x = -2, and below that the root is undefined.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.domain_range.q11",
+      "skill_id": "math.precalculus.domain_range",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = x^2 - 3, what is the smallest output the function can produce?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A square is never negative."
+        },
+        {
+          "level": 2,
+          "text": "The smallest x^2 is 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "x^2 is smallest at 0, so the smallest output is 0 - 3 = -3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q9",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "With f(x) = 3x - 2 and g(x) = x + 5, what is f(g(1))?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out g(1) first."
+        },
+        {
+          "level": 2,
+          "text": "g(1) = 6, so find f(6)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "g(1) = 6, then f(6) = 18 - 2 = 16.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q10",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "With the same functions, what is g(f(1))?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This time f acts first."
+        },
+        {
+          "level": 2,
+          "text": "f(1) = 1, so find g(1)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(1) = 3 - 2 = 1, then g(1) = 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.composition.q11",
+      "skill_id": "math.precalculus.composition",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "With f(x) = x^2, what is f(f(2))?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply f, then apply it again."
+        },
+        {
+          "level": 2,
+          "text": "f(2) = 4, so find f(4)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f(2) = 4, then f(4) = 16.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q9",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = 4x + 1, what is the inverse of f evaluated at 9?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Solve 4x + 1 = 9."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 1, then divide by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4x + 1 = 9 gives x = 2. Check: f(2) = 9.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q10",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A function satisfies f(7) = 2. What is the inverse of f evaluated at 2?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The inverse reverses the pairing."
+        },
+        {
+          "level": 2,
+          "text": "f sends 7 to 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The inverse sends 2 back to 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.inverse_functions.q11",
+      "skill_id": "math.precalculus.inverse_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For f(x) = x^3, what is the inverse of f evaluated at 8?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Which number cubed is 8?"
+        },
+        {
+          "level": 2,
+          "text": "Solve x^3 = 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^3 = 8, so the inverse of 8 is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q9",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the degree of 5x^4 - x^2 + 3?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The degree is the highest power."
+        },
+        {
+          "level": 2,
+          "text": "Look at the first term."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The highest power is 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q10",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Where does p(x) = 2x^3 - x + 5 cross the vertical axis?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The vertical axis is x = 0."
+        },
+        {
+          "level": 2,
+          "text": "Work out p(0)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "p(0) = 5, so it crosses at 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.polynomial_behavior.q11",
+      "skill_id": "math.precalculus.polynomial_behavior",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "At most how many real zeros can a polynomial of degree 5 have?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each real zero uses one linear factor."
+        },
+        {
+          "level": 2,
+          "text": "The degree caps the count."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A degree-5 polynomial has at most 5 real zeros.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q9",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Where is the vertical asymptote of f(x) = 3/(x + 2)?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set the denominator to zero."
+        },
+        {
+          "level": 2,
+          "text": "x + 2 = 0."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The denominator vanishes at x = -2 while the numerator does not, so that is a vertical asymptote.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q10",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the horizontal asymptote of f(x) = 5x/(x - 3)?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Top and bottom have the same degree."
+        },
+        {
+          "level": 2,
+          "text": "Divide the leading coefficients."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Both are degree 1, so the asymptote is 5/1 = 5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.rational_functions.q11",
+      "skill_id": "math.precalculus.rational_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the horizontal asymptote of f(x) = 2/(x^2 + 1)?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The bottom grows much faster than the top."
+        },
+        {
+          "level": 2,
+          "text": "The fraction shrinks towards nothing."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The denominator grows without bound while the numerator stays at 2, so the outputs approach 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q9",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = 5 times 2^x, what is f(3)?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out 2^3 first."
+        },
+        {
+          "level": 2,
+          "text": "8 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^3 = 8, and 5 x 8 = 40.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q10",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For f(x) = 4 times 3^x, what is f(2)?",
+      "answer_spec": {
+        "correct_answer": 36
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out 3^2 first."
+        },
+        {
+          "level": 2,
+          "text": "9 x 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3^2 = 9, and 4 x 9 = 36.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_functions.q11",
+      "skill_id": "math.precalculus.exponential_functions",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A culture of 12 cells triples every hour. How many are there after 2 hours?",
+      "answer_spec": {
+        "correct_answer": 108
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Triple twice."
+        },
+        {
+          "level": 2,
+          "text": "12 becomes 36, then what?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 x 3^2 = 12 x 9 = 108.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q9",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 64 to base 2?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Two to the what gives 64?"
+        },
+        {
+          "level": 2,
+          "text": "2, 4, 8, 16, 32, 64."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2^6 = 64, so the logarithm is 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q10",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the logarithm of 100 to base 10?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ten to the what gives 100?"
+        },
+        {
+          "level": 2,
+          "text": "Count the zeros."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "10^2 = 100, so the answer is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.logarithms.q11",
+      "skill_id": "math.precalculus.logarithms",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 27 to base 3?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Three to the what gives 27?"
+        },
+        {
+          "level": 2,
+          "text": "3, 9, 27."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3^3 = 27.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q9",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the logarithm of 8 to base 2, plus the logarithm of 4 to base 2?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out each separately."
+        },
+        {
+          "level": 2,
+          "text": "3 and 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 + 2 = 5. The product rule agrees: 8 x 4 = 32 and 2^5 = 32.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q10",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "If the logarithm of x to base b is 3, what is the logarithm of x squared to base b?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The power rule brings the exponent to the front."
+        },
+        {
+          "level": 2,
+          "text": "2 x 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "log(x^2) = 2 log(x) = 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.log_rules.q11",
+      "skill_id": "math.precalculus.log_rules",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "Given that the logarithm of 2 to base 10 is 0.301, what is the logarithm of 16 to base 10? Round to 3 decimal places.",
+      "answer_spec": {
+        "correct_answer": 1.204,
+        "rounding": {
+          "decimals": 3
+        }
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "16 is a power of 2."
+        },
+        {
+          "level": 2,
+          "text": "16 = 2^4, so use the power rule."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "16 = 2^4, so log(16) = 4 x 0.301 = 1.204.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q9",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 2^x = 16.",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 16 as a power of 2."
+        },
+        {
+          "level": 2,
+          "text": "16 = 2^4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "16 = 2^4, so x = 4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q10",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Solve 5^x = 125.",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 125 as a power of 5."
+        },
+        {
+          "level": 2,
+          "text": "5, 25, 125."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "125 = 5^3, so x = 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.exponential_equations.q11",
+      "skill_id": "math.precalculus.exponential_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Solve 2^(x - 1) = 32.",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write 32 as a power of 2, then solve for x."
+        },
+        {
+          "level": 2,
+          "text": "x - 1 = 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "32 = 2^5, so x - 1 = 5 and x = 6. Check: 2^5 = 32.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q9",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the common difference of 11, 8, 5, 2?",
+      "answer_spec": {
+        "correct_answer": -3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract each term from the next."
+        },
+        {
+          "level": 2,
+          "text": "8 - 11."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8 - 11 = -3, and the same gap holds throughout, so the sequence decreases by 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q10",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the 7th term of the arithmetic sequence starting at 2 with common difference 5?",
+      "answer_spec": {
+        "correct_answer": 32
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reaching the 7th term takes 6 steps."
+        },
+        {
+          "level": 2,
+          "text": "2 + 6 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 + 6 x 5 = 32.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.sequences.q11",
+      "skill_id": "math.precalculus.sequences",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the 4th term of the geometric sequence starting at 5 with common ratio 3?",
+      "answer_spec": {
+        "correct_answer": 135
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reaching the 4th term takes 3 multiplications."
+        },
+        {
+          "level": 2,
+          "text": "5 x 3^3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 27 = 135. Stepping out: 5, 15, 45, 135.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q9",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is 1 + 2 + 3 + 4 + 5 + 6?",
+      "answer_spec": {
+        "correct_answer": 21
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Pair the ends."
+        },
+        {
+          "level": 2,
+          "text": "1 + 6, 2 + 5, 3 + 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Three pairs of 7 gives 21.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q10",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the sum of the first 50 whole numbers, from 1 to 50?",
+      "answer_spec": {
+        "correct_answer": 1275
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use half the count times (first + last)."
+        },
+        {
+          "level": 2,
+          "text": "25 x 51."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(50/2) x (1 + 50) = 25 x 51 = 1275.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.precalculus.series.q11",
+      "skill_id": "math.precalculus.series",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the sum of the arithmetic series 3 + 7 + 11 + 15 + 19?",
+      "answer_spec": {
+        "correct_answer": 55
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There are 5 terms."
+        },
+        {
+          "level": 2,
+          "text": "(5/2) x (3 + 19)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(5/2) x 22 = 55. Adding directly gives 55 too.",
+      "content_version": "1.0.0"
     }
   ]
 }

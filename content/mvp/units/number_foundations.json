@@ -1917,6 +1917,86 @@
         ]
       },
       "transfer_flag": true
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q9",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Estimate 297 + 104 by rounding each to the nearest hundred.",
+      "answer_spec": {
+        "correct_answer": 400
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "297 rounds to 300 and 104 rounds to 100."
+        },
+        {
+          "level": 2,
+          "text": "300 + 100."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "300 + 100 = 400. The exact answer, 401, is very close.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q10",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Estimate 61 x 19 by rounding each to the nearest ten.",
+      "answer_spec": {
+        "correct_answer": 1200
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "61 rounds to 60 and 19 rounds to 20."
+        },
+        {
+          "level": 2,
+          "text": "60 x 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "60 x 20 = 1200. The exact answer is 1159, so the estimate is sensible.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.number_foundations.estimation.q11",
+      "skill_id": "math.number_foundations.estimation",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why is estimating useful even when a calculator is available?",
+      "answer_spec": {
+        "correct_answer": "It catches an answer that is wildly wrong"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about mistyping a number."
+        },
+        {
+          "level": 2,
+          "text": "An estimate tells you roughly what to expect."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "An estimate sets your expectation, so a mistyped digit that shifts the answer by a factor of ten stands out immediately.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It catches an answer that is wildly wrong",
+          "It is always more accurate",
+          "It is faster than any other method",
+          "It replaces exact calculation"
+        ]
+      }
     }
   ]
 }

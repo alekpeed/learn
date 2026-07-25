@@ -283,7 +283,55 @@ function CoordinatePlane({ alt, params }: FigureSpec): JSX.Element | null {
   );
 }
 
+/**
+ * An angle: two rays from a vertex with the opening marked.
+ *
+ * `hide_measure` omits the degree label, for questions that ask the learner to
+ * read or classify the angle - showing the number would answer them.
+ */
+function Angle({ alt, params }: FigureSpec): JSX.Element | null {
+  const degrees = num(params, 'degrees');
+  if (degrees === null || degrees <= 0 || degrees >= 360) return null;
+  const hide = params?.['hide_measure'] === true;
+
+  const w = 260;
+  const h = 190;
+  const vx = 46;
+  const vy = h - 46;
+  const len = 150;
+  const rad = (degrees * Math.PI) / 180;
+  const ex = vx + len * Math.cos(rad);
+  const ey = vy - len * Math.sin(rad);
+  const arcR = 40;
+  const large = degrees > 180 ? 1 : 0;
+  const arc = [
+    `M ${vx + arcR} ${vy}`,
+    `A ${arcR} ${arcR} 0 ${large} 0 ${(vx + arcR * Math.cos(rad)).toFixed(2)} ${(vy - arcR * Math.sin(rad)).toFixed(2)}`,
+  ].join(' ');
+  const midRad = rad / 2;
+
+  return (
+    <Frame alt={alt} viewBox={`0 0 ${w} ${h}`}>
+      <line className="fig-shape" x1={vx} y1={vy} x2={vx + len} y2={vy} />
+      <line className="fig-shape" x1={vx} y1={vy} x2={ex} y2={ey} />
+      <path className="fig-guide" d={arc} fill="none" />
+      {!hide && (
+        <text
+          className="fig-label"
+          x={vx + (arcR + 22) * Math.cos(midRad)}
+          y={vy - (arcR + 22) * Math.sin(midRad) + 4}
+          textAnchor="middle"
+        >
+          {degrees} deg
+        </text>
+      )}
+      <circle className="fig-point" cx={vx} cy={vy} r={3.5} />
+    </Frame>
+  );
+}
+
 const RENDERERS: Record<string, (spec: FigureSpec) => JSX.Element | null> = {
+  angle: Angle,
   right_triangle: RightTriangle,
   trig_graph: TrigGraph,
   unit_circle: UnitCircle,

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { isReviewDue, quality, daysBetween } from '@learn/learning-engine';
+import { isReviewDue, quality, daysBetween, selectForReview } from '@learn/learning-engine';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
@@ -17,7 +17,7 @@ import { practiceRepository } from '../data/repository.js';
 export function ReviewQueue(): JSX.Element {
   const { package: pkg } = useCurriculum();
   const { learner } = useLearner();
-  const { progress, refresh } = useProgress();
+  const { progress, refresh, exposure } = useProgress();
   const [now] = useState(() => new Date().toISOString());
   const [active, setActive] = useState<string | null>(null);
 
@@ -49,7 +49,13 @@ export function ReviewQueue(): JSX.Element {
   }
 
   const activeSkill = active ?? due[0]!.skill_id;
-  const question = pkg.questionsBySkill.get(activeSkill)?.[0];
+  /*
+   * Review used to serve questionsBySkill[0] every time, so a skill on the full
+   * ladder (0, 1, 3, 7, 14, 30, 90 days) asked the same question seven times
+   * over three months - training recall of one answer rather than of the skill.
+   * Rotation walks the pool instead, and only revisits an item after a gap.
+   */
+  const question = selectForReview(pkg.questionsBySkill.get(activeSkill) ?? [], exposure);
   const progressForActive = progress.get(activeSkill);
 
   async function completeReview(snapshot: { hintsUsed: number; attempts: number }): Promise<void> {

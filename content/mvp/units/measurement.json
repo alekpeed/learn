@@ -2238,6 +2238,530 @@
       "parameters": {
         "options": ["250 milliliters", "250 liters", "25 liters", "2500 liters"]
       }
+    },
+    {
+      "question_id": "math.measurement.volume.q8",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A box measures 3 cm by 4 cm by 5 cm. What is its volume, in cubic centimetres?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Volume of a cuboid is length x width x height."
+        },
+        {
+          "level": 2,
+          "text": "3 x 4 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 x 4 x 5 = 60 cubic centimetres.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.volume.q9",
+      "skill_id": "math.measurement.volume",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many millilitres are in 2 litres?",
+      "answer_spec": {
+        "correct_answer": 2000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One litre is 1000 millilitres."
+        },
+        {
+          "level": 2,
+          "text": "2 x 1000."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 litres = 2000 millilitres.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.volume.q10",
+      "skill_id": "math.measurement.volume",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which unit is most suitable for the volume of a teaspoon of liquid?",
+      "answer_spec": {
+        "correct_answer": "Millilitres"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A teaspoon is very small."
+        },
+        {
+          "level": 2,
+          "text": "Kilograms measure mass, not volume."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A teaspoon holds about 5 millilitres, so millilitres is the sensible unit.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Millilitres", "Litres", "Cubic metres", "Kilograms"]
+      }
+    },
+    {
+      "question_id": "math.measurement.area.q9",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A square has sides of 9 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 81
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area of a square is side times side."
+        },
+        {
+          "level": 2,
+          "text": "9 x 9."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 x 9 = 81 square centimetres.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.area.q10",
+      "skill_id": "math.measurement.area",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A rectangle has area 48 square centimetres and width 6 cm. What is its length, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the area by the width."
+        },
+        {
+          "level": 2,
+          "text": "48 divided by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "48 / 6 = 8 cm. Check: 6 x 8 = 48.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.area.q11",
+      "skill_id": "math.measurement.area",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which unit is used for area?",
+      "answer_spec": {
+        "correct_answer": "Square centimetres"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area covers a surface in two directions."
+        },
+        {
+          "level": 2,
+          "text": "Length is one direction, volume is three."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Area is measured in square units, because it covers two dimensions.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Square centimetres", "Centimetres", "Cubic centimetres", "Grams"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q9",
+      "skill_id": "math.measurement.estimation",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "About how many centimetres tall is a typical door?",
+      "answer_spec": {
+        "correct_answer": 200
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A door is roughly the height of a tall adult."
+        },
+        {
+          "level": 2,
+          "text": "That is about 2 metres."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A door is about 2 m, which is 200 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.estimation.q10",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which is the best estimate for the mass of an apple?",
+      "answer_spec": {
+        "correct_answer": "150 grams"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An apple fits in your hand."
+        },
+        {
+          "level": 2,
+          "text": "A bag of sugar is 1 kilogram."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "An apple is roughly 150 g - much less than a bag of sugar and much more than a paperclip.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["150 grams", "15 grams", "1.5 kilograms", "15 kilograms"]
+      }
+    },
+    {
+      "question_id": "math.measurement.estimation.q11",
+      "skill_id": "math.measurement.estimation",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why check a measurement against an estimate first?",
+      "answer_spec": {
+        "correct_answer": "It reveals an answer that is out by a factor of ten"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about misreading a scale."
+        },
+        {
+          "level": 2,
+          "text": "An estimate tells you the size to expect."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "An estimate sets the expected size, so a reading ten times too large or small is obvious immediately.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It reveals an answer that is out by a factor of ten",
+          "It makes the measurement exact",
+          "It is required by the units",
+          "It is faster than measuring"
+        ]
+      }
+    },
+    {
+      "question_id": "math.measurement.mass.q9",
+      "skill_id": "math.measurement.mass",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many grams are in 3 kilograms?",
+      "answer_spec": {
+        "correct_answer": 3000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One kilogram is 1000 grams."
+        },
+        {
+          "level": 2,
+          "text": "3 x 1000."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 kg = 3000 g.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.mass.q10",
+      "skill_id": "math.measurement.mass",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many kilograms are 4500 grams?",
+      "answer_spec": {
+        "correct_answer": 4.5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide by 1000."
+        },
+        {
+          "level": 2,
+          "text": "4500 / 1000."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4500 g = 4.5 kg.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.mass.q11",
+      "skill_id": "math.measurement.mass",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which unit suits the mass of a lorry?",
+      "answer_spec": {
+        "correct_answer": "Tonnes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A lorry is very heavy."
+        },
+        {
+          "level": 2,
+          "text": "One tonne is 1000 kilograms."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Lorries are measured in tonnes; grams would give an unwieldy number.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Tonnes", "Grams", "Milligrams", "Kilograms only"]
+      }
+    },
+    {
+      "question_id": "math.measurement.temperature.q9",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Water freezes at what temperature, in degrees Celsius?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Celsius is built around water."
+        },
+        {
+          "level": 2,
+          "text": "Freezing is the zero point."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Water freezes at 0 degrees Celsius.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.temperature.q10",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Water boils at what temperature, in degrees Celsius?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Celsius sets boiling at a round number."
+        },
+        {
+          "level": 2,
+          "text": "It is 100."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Water boils at 100 degrees Celsius at normal pressure.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.temperature.q11",
+      "skill_id": "math.measurement.temperature",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "The temperature is -3 degrees Celsius and rises by 8 degrees. What is it now, in degrees Celsius?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start at -3 and count up 8."
+        },
+        {
+          "level": 2,
+          "text": "-3 + 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "-3 + 8 = 5 degrees Celsius.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.time.q9",
+      "skill_id": "math.measurement.time",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many minutes are in 3 hours?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One hour is 60 minutes."
+        },
+        {
+          "level": 2,
+          "text": "3 x 60."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3 x 60 = 180 minutes.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.time.q10",
+      "skill_id": "math.measurement.time",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A film starts at 14:20 and lasts 95 minutes. At what time does it end? Give the answer in minutes past midnight.",
+      "answer_spec": {
+        "correct_answer": 955
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Convert the start time to minutes past midnight."
+        },
+        {
+          "level": 2,
+          "text": "14:20 is 860 minutes, then add 95."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "14:20 is 860 minutes past midnight, and 860 + 95 = 955, which is 15:55.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.time.q11",
+      "skill_id": "math.measurement.time",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many seconds are in a quarter of an hour?",
+      "answer_spec": {
+        "correct_answer": 900
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A quarter of an hour is 15 minutes."
+        },
+        {
+          "level": 2,
+          "text": "15 x 60."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "15 x 60 = 900 seconds.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q9",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many centimetres are in 2.5 metres?",
+      "answer_spec": {
+        "correct_answer": 250
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One metre is 100 centimetres."
+        },
+        {
+          "level": 2,
+          "text": "2.5 x 100."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2.5 m = 250 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q10",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many metres are in 3.2 kilometres?",
+      "answer_spec": {
+        "correct_answer": 3200
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One kilometre is 1000 metres."
+        },
+        {
+          "level": 2,
+          "text": "3.2 x 1000."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3.2 km = 3200 m.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.measurement.unit_conversion.q11",
+      "skill_id": "math.measurement.unit_conversion",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many millimetres are in 4 centimetres?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One centimetre is 10 millimetres."
+        },
+        {
+          "level": 2,
+          "text": "4 x 10."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4 cm = 40 mm.",
+      "content_version": "1.0.0"
     }
   ]
 }

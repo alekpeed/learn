@@ -17,8 +17,10 @@ import { DEFAULT_MASTERY_THRESHOLDS } from '@learn/domain';
 import {
   projectProgress,
   projectMisconceptions,
+  projectExposure,
   type ThresholdLookup,
   type MisconceptionOccurrence,
+  type ExposureMap,
 } from '@learn/learning-engine';
 import { useLearner } from './LearnerContext.js';
 import { useCurriculum } from './CurriculumContext.js';
@@ -32,6 +34,19 @@ interface ProgressContextValue {
    * never has to derive remediation state of its own.
    */
   misconceptions: MisconceptionOccurrence[];
+  /**
+   * How often each question has been answered, and when (Phase: rotation).
+   * Projected in the same pass as progress so the log is still read once.
+   */
+  exposure: ExposureMap;
+  /**
+   * Which learner the current projection actually reflects, or null when there
+   * is no profile. `loading` alone is not enough to know the projection is
+   * ready: this provider settles once with no learner before the profile
+   * arrives, so a consumer can observe loading=false against an empty
+   * projection. Comparing this to the active learner id closes that window.
+   */
+  projectedFor: string | null;
   loading: boolean;
   refresh: () => Promise<void>;
 }
@@ -55,6 +70,8 @@ export function ProgressProvider({
     progressOverride ?? new Map(),
   );
   const [misconceptions, setMisconceptions] = useState<MisconceptionOccurrence[]>([]);
+  const [exposure, setExposure] = useState<ExposureMap>(() => new Map());
+  const [projectedFor, setProjectedFor] = useState<string | null>(null);
   const [loading, setLoading] = useState(progressOverride ? false : true);
 
   const thresholds = useMemo<ThresholdLookup>(() => {
@@ -72,12 +89,16 @@ export function ProgressProvider({
     if (!learner) {
       setProgress(new Map());
       setMisconceptions([]);
+      setExposure(new Map());
+      setProjectedFor(null);
       setLoading(false);
       return;
     }
     const events = await load(learner.learner_id);
     setProgress(projectProgress(events, thresholds));
     setMisconceptions(projectMisconceptions(events));
+    setExposure(projectExposure(events));
+    setProjectedFor(learner.learner_id);
     setLoading(false);
   }, [learner, load, thresholds]);
 
@@ -94,8 +115,8 @@ export function ProgressProvider({
   }, [refresh, progressOverride]);
 
   const value = useMemo<ProgressContextValue>(
-    () => ({ progress, misconceptions, loading, refresh }),
-    [progress, misconceptions, loading, refresh],
+    () => ({ progress, misconceptions, exposure, projectedFor, loading, refresh }),
+    [progress, misconceptions, exposure, projectedFor, loading, refresh],
   );
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;

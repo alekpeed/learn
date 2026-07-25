@@ -622,6 +622,15 @@
       "estimated_time_seconds": 43,
       "parameters": {
         "options": ["origin", "corner", "center peak", "axis point"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -650,6 +659,15 @@
       "estimated_time_seconds": 43,
       "parameters": {
         "options": ["x-axis", "y-axis", "z-axis", "number line"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -678,6 +696,15 @@
       "estimated_time_seconds": 43,
       "parameters": {
         "options": ["y-axis", "x-axis", "z-axis", "origin"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -731,6 +758,15 @@
       "estimated_time_seconds": 51,
       "parameters": {
         "options": ["x (the horizontal one)", "y (the vertical one)"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -759,6 +795,15 @@
       "estimated_time_seconds": 51,
       "parameters": {
         "options": ["right", "left", "up", "down"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -787,6 +832,15 @@
       "estimated_time_seconds": 51,
       "parameters": {
         "options": ["up", "down", "right", "left"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -815,6 +869,15 @@
       "estimated_time_seconds": 51,
       "parameters": {
         "options": ["left", "right", "up", "down"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "An empty coordinate grid from -8 to 8 on both axes, showing the horizontal and vertical axes crossing at the origin.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": []
+        }
       }
     },
     {
@@ -940,7 +1003,16 @@
       "dimensions": ["accuracy", "understanding"],
       "explanation": "The first number in (7, 4) is the x-coordinate, 7.",
       "content_version": "0.1.0",
-      "estimated_time_seconds": 51
+      "estimated_time_seconds": 51,
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "A coordinate grid from -8 to 8 on both axes, with the point (7, 4) marked.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": [[7, 4]]
+        }
+      }
     },
     {
       "question_id": "math.functions.ordered_pairs.q6",
@@ -965,7 +1037,16 @@
       "dimensions": ["accuracy", "understanding"],
       "explanation": "The second number in (7, 4) is the y-coordinate, 4.",
       "content_version": "0.1.0",
-      "estimated_time_seconds": 51
+      "estimated_time_seconds": 51,
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "A coordinate grid from -8 to 8 on both axes, with the point (7, 4) marked.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": [[7, 4]]
+        }
+      }
     },
     {
       "question_id": "math.functions.ordered_pairs.q7",
@@ -999,7 +1080,16 @@
           "value": "5 right and 3 up",
           "misconception_id": "mc.math.functions.reversed_coordinates"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "A coordinate grid from -8 to 8 on both axes, with the point (3, 5) marked.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": [[3, 5]]
+        }
+      }
     },
     {
       "question_id": "math.functions.ordered_pairs.q8",
@@ -1049,7 +1139,16 @@
       "dimensions": ["accuracy", "understanding"],
       "explanation": "The x-coordinate of (-2, 6) is -2.",
       "content_version": "0.1.0",
-      "estimated_time_seconds": 51
+      "estimated_time_seconds": 51,
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "A coordinate grid from -8 to 8 on both axes, with the point (-2, 6) marked.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": [[-2, 6]]
+        }
+      }
     },
     {
       "question_id": "math.functions.plotting_points.q1",
@@ -1177,6 +1276,15 @@
       "estimated_time_seconds": 51,
       "parameters": {
         "options": ["5 along the x-axis (right)", "2 along the y-axis (up)"]
+      },
+      "figure": {
+        "kind": "coordinate_plane",
+        "alt": "A coordinate grid from -8 to 8 on both axes, with the point (5, 2) marked.",
+        "params": {
+          "min": -8,
+          "max": 8,
+          "points": [[5, 2]]
+        }
       }
     },
     {
@@ -2325,6 +2433,415 @@
       "explanation": "At x = 3, y = 6, giving the point (3, 6).",
       "content_version": "0.1.0",
       "estimated_time_seconds": 59
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q9",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In which quadrant are both coordinates negative?",
+      "answer_spec": {
+        "correct_answer": "The third"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Quadrants are numbered anticlockwise from the top right."
+        },
+        {
+          "level": 2,
+          "text": "Both negative means left and down."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Quadrant three is the bottom left, where x and y are both negative.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["The third", "The first", "The second", "The fourth"]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q10",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A point has coordinates (0, 6). Where does it lie?",
+      "answer_spec": {
+        "correct_answer": "On the vertical axis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An x-coordinate of 0 means no horizontal movement."
+        },
+        {
+          "level": 2,
+          "text": "The point stays on the vertical line through the origin."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "With x = 0 the point sits on the vertical axis, 6 units up.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "On the vertical axis",
+          "On the horizontal axis",
+          "At the origin",
+          "In the first quadrant only"
+        ]
+      }
+    },
+    {
+      "question_id": "math.functions.coordinate_plane.q11",
+      "skill_id": "math.functions.coordinate_plane",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why is the order in an ordered pair important?",
+      "answer_spec": {
+        "correct_answer": "(3, 5) and (5, 3) are different points"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Plot both and compare."
+        },
+        {
+          "level": 2,
+          "text": "One is 3 right and 5 up; the other is 5 right and 3 up."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The first number is the horizontal move and the second the vertical, so swapping them lands somewhere else.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "(3, 5) and (5, 3) are different points",
+          "It is only a convention with no effect",
+          "Because x is always larger",
+          "It is not important"
+        ]
+      }
+    },
+    {
+      "question_id": "math.functions.plotting_points.q9",
+      "skill_id": "math.functions.plotting_points",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Starting at the origin, move 5 left and 2 up. What is the x-coordinate of the point?",
+      "answer_spec": {
+        "correct_answer": -5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Left is the negative horizontal direction."
+        },
+        {
+          "level": 2,
+          "text": "5 units left is -5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Moving left makes x negative, so the x-coordinate is -5.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.plotting_points.q10",
+      "skill_id": "math.functions.plotting_points",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Starting at the origin, move 5 left and 2 up. What is the y-coordinate?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Up is the positive vertical direction."
+        },
+        {
+          "level": 2,
+          "text": "2 units up is +2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The y-coordinate is 2, giving the point (-5, 2).",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.plotting_points.q11",
+      "skill_id": "math.functions.plotting_points",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "To plot a point, which move is made first by convention?",
+      "answer_spec": {
+        "correct_answer": "The horizontal move"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The pair is written (x, y)."
+        },
+        {
+          "level": 2,
+          "text": "x is the horizontal coordinate."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The pair is written with x first, so the horizontal move is read first - though you land in the same place either way.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The horizontal move",
+          "The vertical move",
+          "Either, it makes no difference to the notation",
+          "Diagonally in one step"
+        ]
+      }
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q9",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A graph shows distance against time. The line is flat for 10 minutes. How far did the object travel in that time?",
+      "answer_spec": {
+        "correct_answer": 0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A flat line means the distance is not changing."
+        },
+        {
+          "level": 2,
+          "text": "No change means no movement."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A horizontal segment means the distance stayed the same, so it travelled 0.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q10",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "On a distance-time graph, what does a steeper line mean?",
+      "answer_spec": {
+        "correct_answer": "A greater speed"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Steeper means more distance in the same time."
+        },
+        {
+          "level": 2,
+          "text": "More distance per unit time is faster."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Steeper means more distance covered per unit of time, which is a greater speed.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A greater speed", "A slower speed", "Going backwards", "A longer journey"]
+      }
+    },
+    {
+      "question_id": "math.functions.reading_graphs.q11",
+      "skill_id": "math.functions.reading_graphs",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does the point where a graph crosses the vertical axis tell you?",
+      "answer_spec": {
+        "correct_answer": "The value when the input is zero"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The vertical axis is where x = 0."
+        },
+        {
+          "level": 2,
+          "text": "The crossing gives the output there."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The vertical axis is x = 0, so the crossing point gives the starting value.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The value when the input is zero",
+          "The largest value",
+          "The steepest point",
+          "Nothing useful"
+        ]
+      }
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q9",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A line rises 12 units for every 4 units across. What is its rate of change?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rate of change is rise divided by run."
+        },
+        {
+          "level": 2,
+          "text": "12 divided by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 / 4 = 3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q10",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A line falls 10 units over 5 units across. What is its rate of change?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Falling means a negative rise."
+        },
+        {
+          "level": 2,
+          "text": "-10 divided by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "-10 / 5 = -2. The sign shows it is decreasing.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.rate_of_change.q11",
+      "skill_id": "math.functions.rate_of_change",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "What is the rate of change of a horizontal line?",
+      "answer_spec": {
+        "correct_answer": "Zero"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A horizontal line does not rise at all."
+        },
+        {
+          "level": 2,
+          "text": "The rise is 0."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The rise is 0 over any run, so the rate of change is 0.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Zero", "One", "Undefined", "It depends on the line"]
+      }
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q9",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "For y = 2x + 1, what is y when x = 4?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Substitute 4 for x."
+        },
+        {
+          "level": 2,
+          "text": "8 + 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2(4) + 1 = 9.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q10",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "For y = 3x - 2, what is x when y = 10?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Set 3x - 2 equal to 10."
+        },
+        {
+          "level": 2,
+          "text": "3x = 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3x = 12, so x = 4. Check: 3(4) - 2 = 10.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.functions.linear_relationships.q11",
+      "skill_id": "math.functions.linear_relationships",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "What makes a relationship linear?",
+      "answer_spec": {
+        "correct_answer": "Equal steps in the input give equal steps in the output"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what the graph looks like."
+        },
+        {
+          "level": 2,
+          "text": "A straight line has a constant rate of change."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A constant rate of change is what makes the graph a straight line; doubling each step would be exponential instead.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Equal steps in the input give equal steps in the output",
+          "The graph passes through the origin",
+          "The numbers are all positive",
+          "The output doubles each time"
+        ]
+      }
     }
   ]
 }

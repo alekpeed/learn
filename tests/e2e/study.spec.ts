@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 
+// Practice rotates questions, so these pin the exact item they assert on
+// with the ?q= deep link. Without it the test would depend on which
+// question rotation happened to serve first.
+
 test.describe('study plans & daily goals (Version 1)', () => {
   test('the Today panel tracks the daily goal and streak after practice', async ({ page }) => {
     await page.goto('/');
@@ -13,7 +17,9 @@ test.describe('study plans & daily goals (Version 1)', () => {
     );
 
     // Answer one question.
-    await page.goto('/practice?skill=math.number_foundations.place_value');
+    await page.goto(
+      '/practice?skill=math.number_foundations.place_value&q=math.number_foundations.place_value.q1',
+    );
     await page.getByLabel(/your answer/i).fill('50');
     await page.getByRole('button', { name: /submit/i }).click();
     await expect(page.getByText('Correct!')).toBeVisible();

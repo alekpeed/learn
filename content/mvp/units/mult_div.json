@@ -2692,6 +2692,150 @@
       "parameters": {
         "options": ["18 / 6 = 3", "18 / 3 = 9", "6 x 6 = 18", "18 + 3 = 6"]
       }
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q8",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "An array has 6 rows of 4 counters. How many counters are there altogether?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the rows by the number in each row."
+        },
+        {
+          "level": 2,
+          "text": "6 x 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 x 4 = 24 counters.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q9",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "There are 5 bags with 7 marbles in each. How many marbles in total?",
+      "answer_spec": {
+        "correct_answer": 35
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This is 5 groups of 7."
+        },
+        {
+          "level": 2,
+          "text": "5 x 7."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 7 = 35 marbles.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.mult_div.arrays_and_groups.q10",
+      "skill_id": "math.mult_div.arrays_and_groups",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An array has 24 counters in 3 equal rows. How many are in each row?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the total by the number of rows."
+        },
+        {
+          "level": 2,
+          "text": "24 divided by 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "24 / 3 = 8 counters per row. Check: 3 x 8 = 24.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q9",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Eggs come in boxes of 12. How many eggs are in 7 boxes?",
+      "answer_spec": {
+        "correct_answer": 84
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This is 7 groups of 12."
+        },
+        {
+          "level": 2,
+          "text": "7 x 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "7 x 12 = 84 eggs.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q10",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "96 sweets are shared equally among 8 children. How many does each get?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sharing equally is division."
+        },
+        {
+          "level": 2,
+          "text": "96 divided by 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "96 / 8 = 12 sweets each. Check: 8 x 12 = 96.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.mult_div.word_problems.q11",
+      "skill_id": "math.mult_div.word_problems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A ribbon 150 cm long is cut into 6 equal pieces. How long is each piece, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the total length by the number of pieces."
+        },
+        {
+          "level": 2,
+          "text": "150 divided by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "150 / 6 = 25 cm.",
+      "content_version": "1.0.0"
     }
   ]
 }
