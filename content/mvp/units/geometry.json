@@ -1,0 +1,3218 @@
+{
+  "skills": [
+    {
+      "skill_id": "math.geometry.figures",
+      "unit_id": "math.geometry",
+      "title": "Points, Lines and Segments",
+      "summary": "The basic objects of geometry and how they are named.",
+      "objectives": [
+        "Name points, lines, rays and segments.",
+        "Tell the difference between a line, a ray and a segment."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.measurement.length",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 1,
+      "vocabulary": [
+        {
+          "term": "segment",
+          "definition": "A piece of a line with two endpoints."
+        },
+        {
+          "term": "ray",
+          "definition": "A piece of a line with one endpoint, going on forever the other way."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.angles",
+      "unit_id": "math.geometry",
+      "title": "Angles and Their Measure",
+      "summary": "What an angle is, how it is measured in degrees, and how angles are classified.",
+      "objectives": [
+        "Measure and name angles in degrees.",
+        "Classify an angle as acute, right, obtuse or straight."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.figures",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "degree",
+          "definition": "The unit of angle measure; a full turn is 360 degrees."
+        },
+        {
+          "term": "acute angle",
+          "definition": "An angle smaller than 90 degrees."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.angle_relationships",
+      "unit_id": "math.geometry",
+      "title": "Angle Relationships",
+      "summary": "Complementary, supplementary, vertical and adjacent angles.",
+      "objectives": [
+        "Find a missing angle using complementary and supplementary pairs.",
+        "Recognise vertical angles as equal."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.angles",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.one_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "complementary",
+          "definition": "Two angles that add to 90 degrees."
+        },
+        {
+          "term": "supplementary",
+          "definition": "Two angles that add to 180 degrees."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.parallel_lines",
+      "unit_id": "math.geometry",
+      "title": "Parallel Lines and Transversals",
+      "summary": "The equal and supplementary angles formed when a line crosses two parallel lines.",
+      "objectives": [
+        "Identify corresponding and alternate angles.",
+        "Find missing angles at a transversal."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.angle_relationships",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "transversal",
+          "definition": "A line that crosses two or more other lines."
+        },
+        {
+          "term": "parallel",
+          "definition": "Always the same distance apart and never meeting."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.triangles",
+      "unit_id": "math.geometry",
+      "title": "Triangles",
+      "summary": "Classifying triangles and using the angle sum.",
+      "objectives": [
+        "Classify triangles by their sides and angles.",
+        "Find a missing angle in a triangle."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.angles",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "isosceles",
+          "definition": "A triangle with two equal sides and two equal angles."
+        },
+        {
+          "term": "scalene",
+          "definition": "A triangle with all three sides different."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.quadrilaterals",
+      "unit_id": "math.geometry",
+      "title": "Quadrilaterals",
+      "summary": "Four-sided shapes and the properties that separate them.",
+      "objectives": [
+        "Name quadrilaterals from their properties.",
+        "Use the 360 degree angle sum of a quadrilateral."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.triangles",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "parallelogram",
+          "definition": "A quadrilateral with both pairs of opposite sides parallel."
+        },
+        {
+          "term": "trapezoid",
+          "definition": "A quadrilateral with exactly one pair of parallel sides."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.polygons",
+      "unit_id": "math.geometry",
+      "title": "Polygons and Their Angles",
+      "summary": "Naming polygons and finding their interior angle sums.",
+      "objectives": [
+        "Find the interior angle sum of a polygon.",
+        "Find each angle of a regular polygon."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.quadrilaterals",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "polygon",
+          "definition": "A closed shape made of straight sides."
+        },
+        {
+          "term": "regular polygon",
+          "definition": "A polygon with all sides and all angles equal."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.perimeter_area",
+      "unit_id": "math.geometry",
+      "title": "Perimeter and Area",
+      "summary": "Distance around a shape and the space it covers.",
+      "objectives": [
+        "Find the perimeter and area of rectangles and triangles.",
+        "Find the area of a parallelogram and a trapezoid."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.quadrilaterals",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.measurement.area",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "perimeter",
+          "definition": "The total distance around the edge of a shape."
+        },
+        {
+          "term": "area",
+          "definition": "The amount of surface a shape covers."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.circles",
+      "unit_id": "math.geometry",
+      "title": "Circles",
+      "summary": "Radius, diameter, circumference and area.",
+      "objectives": [
+        "Convert between radius and diameter.",
+        "Find the circumference and area of a circle."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.perimeter_area",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "radius",
+          "definition": "The distance from the centre of a circle to its edge."
+        },
+        {
+          "term": "circumference",
+          "definition": "The distance all the way round a circle."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.solids",
+      "unit_id": "math.geometry",
+      "title": "Volume and Surface Area",
+      "summary": "The space inside a solid and the area of its outside.",
+      "objectives": [
+        "Find the volume of a rectangular prism and a cylinder.",
+        "Find the surface area of a rectangular prism."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.circles",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.measurement.volume",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "prism",
+          "definition": "A solid with the same cross-section all the way through."
+        },
+        {
+          "term": "surface area",
+          "definition": "The total area of all the faces of a solid."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.pythagoras",
+      "unit_id": "math.geometry",
+      "title": "The Pythagorean Theorem",
+      "summary": "The relationship between the sides of a right triangle.",
+      "objectives": [
+        "Find a missing side of a right triangle.",
+        "Use the converse to test whether a triangle has a right angle."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.triangles",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "hypotenuse",
+          "definition": "The longest side of a right triangle, opposite the right angle."
+        }
+      ]
+    },
+    {
+      "skill_id": "math.geometry.similarity",
+      "unit_id": "math.geometry",
+      "title": "Similarity and Congruence",
+      "summary": "Shapes that match exactly, and shapes that match in proportion.",
+      "objectives": [
+        "Tell congruent figures from similar ones.",
+        "Use a scale factor to find a missing length."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.geometry.triangles",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.proportions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "congruent",
+          "definition": "Exactly the same shape and size."
+        },
+        {
+          "term": "similar",
+          "definition": "The same shape, with all lengths in the same ratio."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "math.geometry.figures.lesson",
+      "skill_id": "math.geometry.figures",
+      "title": "Points, Lines and Segments",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "A point marks a position. A line goes on forever in both directions. A ray starts at a point and goes on forever one way. A segment has two endpoints, so it has a length you can measure."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Segments are named by their endpoints, so the segment from A to B is AB and has the same length as BA."
+        },
+        {
+          "type": "worked_example",
+          "body": "A segment runs from 3 cm to 11 cm on a ruler. Its length is 11 - 3 = 8 cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A ray is not the same as a segment: only one end stops."
+        },
+        {
+          "type": "summary",
+          "body": "Point, line, ray, segment: the difference is how many ends stop."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.angles.lesson",
+      "skill_id": "math.geometry.angles",
+      "title": "Angles and Their Measure",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "An angle measures turn. Two rays from the same point open up by some amount, and that amount is the angle."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A full turn is 360 degrees, a half turn is 180 degrees, and a quarter turn is 90 degrees, which is called a right angle."
+        },
+        {
+          "type": "worked_example",
+          "body": "An angle of 40 degrees is less than 90, so it is acute. An angle of 130 degrees is more than 90 but less than 180, so it is obtuse."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The length of the drawn rays does not change the angle. Only the amount of turn matters."
+        },
+        {
+          "type": "summary",
+          "body": "Acute under 90, right at 90, obtuse between 90 and 180, straight at 180."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.angle_relationships.lesson",
+      "skill_id": "math.geometry.angle_relationships",
+      "title": "Angle Relationships",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Angles that sit together often add to a familiar total. Two angles making a right angle add to 90 degrees. Two angles making a straight line add to 180 degrees."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Angles adding to 90 degrees are complementary; angles adding to 180 degrees are supplementary. When two lines cross, the angles opposite each other are vertical angles and are equal."
+        },
+        {
+          "type": "worked_example",
+          "body": "If one of two complementary angles is 35 degrees, the other is 90 - 35 = 55 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Complementary and supplementary are easy to swap. Complementary makes a corner (90); supplementary makes a straight line (180)."
+        },
+        {
+          "type": "summary",
+          "body": "Corner pairs make 90, straight-line pairs make 180, and crossed lines give equal opposite angles."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.parallel_lines.lesson",
+      "skill_id": "math.geometry.parallel_lines",
+      "title": "Parallel Lines and Transversals",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "When one line crosses two parallel lines, the crossing looks identical at both. That is why so many of the angles repeat."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Corresponding angles sit in matching positions and are equal. Alternate angles sit on opposite sides of the transversal, between the parallels, and are equal. Co-interior angles are on the same side and add to 180 degrees."
+        },
+        {
+          "type": "worked_example",
+          "body": "If a corresponding angle is 70 degrees, its partner is also 70 degrees, and the angle next to it on the line is 180 - 70 = 110 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "These rules need the lines to be parallel. Without that, none of the equalities hold."
+        },
+        {
+          "type": "summary",
+          "body": "Matching positions are equal, alternate positions are equal, same-side interior angles add to 180."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.triangles.lesson",
+      "skill_id": "math.geometry.triangles",
+      "title": "Triangles",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Tear the three corners off any paper triangle and put them side by side: they always form a straight line. That is why the angles add to 180 degrees."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "By sides: equilateral (all equal), isosceles (two equal), scalene (all different). By angles: acute, right or obtuse."
+        },
+        {
+          "type": "worked_example",
+          "body": "A triangle has angles of 40 and 75 degrees. The third is 180 - 40 - 75 = 65 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "A triangle cannot have two right angles: that alone would use up all 180 degrees."
+        },
+        {
+          "type": "summary",
+          "body": "Three angles, always 180 degrees in total, and equal sides sit opposite equal angles."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.quadrilaterals.lesson",
+      "skill_id": "math.geometry.quadrilaterals",
+      "title": "Quadrilaterals",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Any quadrilateral splits into two triangles, so its angles add to 2 x 180 = 360 degrees."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A parallelogram has both pairs of opposite sides parallel and equal. A rectangle is a parallelogram with right angles. A rhombus is a parallelogram with four equal sides. A square is both."
+        },
+        {
+          "type": "worked_example",
+          "body": "Three angles of a quadrilateral are 100, 80 and 95 degrees. The fourth is 360 - 100 - 80 - 95 = 85 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Every square is a rectangle, but not every rectangle is a square."
+        },
+        {
+          "type": "summary",
+          "body": "Four sides, 360 degrees, and the names describe which sides and angles are equal."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.polygons.lesson",
+      "skill_id": "math.geometry.polygons",
+      "title": "Polygons and Their Angles",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Any polygon can be cut into triangles from one corner. A shape with n sides gives n - 2 triangles."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The interior angles of an n-sided polygon add to (n - 2) x 180 degrees. In a regular polygon every angle is that total divided by n."
+        },
+        {
+          "type": "worked_example",
+          "body": "A hexagon has 6 sides, so its angles add to (6 - 2) x 180 = 720 degrees. A regular hexagon has angles of 720 / 6 = 120 degrees."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Use n - 2, not n. A quadrilateral gives two triangles, not four."
+        },
+        {
+          "type": "summary",
+          "body": "(n - 2) x 180 for the total; divide by n for each angle when the polygon is regular."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.perimeter_area.lesson",
+      "skill_id": "math.geometry.perimeter_area",
+      "title": "Perimeter and Area",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Perimeter is how far you walk round the edge. Area is how many unit squares fit inside."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Rectangle: area = length x width. Triangle: area = half x base x height. Parallelogram: area = base x height. Trapezoid: area = half x (a + b) x height."
+        },
+        {
+          "type": "worked_example",
+          "body": "A rectangle 8 cm by 5 cm has perimeter 2 x (8 + 5) = 26 cm and area 8 x 5 = 40 square cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Adding the sides gives perimeter, not area. Area needs multiplication."
+        },
+        {
+          "type": "summary",
+          "body": "Perimeter adds the edges; area multiplies, and triangles take half."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.circles.lesson",
+      "skill_id": "math.geometry.circles",
+      "title": "Circles",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Every point on a circle is the same distance from the centre. That distance is the radius, and the diameter is twice it."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Circumference = 2 x pi x radius. Area = pi x radius x radius. Take pi as 3.14 unless told otherwise."
+        },
+        {
+          "type": "worked_example",
+          "body": "A circle of radius 5 cm has circumference 2 x 3.14 x 5 = 31.4 cm and area 3.14 x 25 = 78.5 square cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Squaring the diameter instead of the radius makes the area four times too big."
+        },
+        {
+          "type": "summary",
+          "body": "Diameter is twice the radius; circumference uses 2 pi r and area uses pi r squared."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.solids.lesson",
+      "skill_id": "math.geometry.solids",
+      "title": "Volume and Surface Area",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Volume counts the unit cubes that fill a solid. Surface area is the paper you would need to wrap it."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Rectangular prism: volume = length x width x height, surface area = 2(lw + lh + wh). Cylinder: volume = pi x radius x radius x height."
+        },
+        {
+          "type": "worked_example",
+          "body": "A box 4 by 3 by 2 cm has volume 24 cubic cm and surface area 2(12 + 8 + 6) = 52 square cm."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Volume is measured in cubic units and surface area in square units. Mixing them up is the usual slip."
+        },
+        {
+          "type": "summary",
+          "body": "Volume multiplies three lengths; surface area adds the areas of the faces."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.pythagoras.lesson",
+      "skill_id": "math.geometry.pythagoras",
+      "title": "The Pythagorean Theorem",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Draw a square on each side of a right triangle. The two smaller squares together have exactly the same area as the largest one."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "For a right triangle with legs a and b and hypotenuse c, a squared plus b squared equals c squared."
+        },
+        {
+          "type": "worked_example",
+          "body": "Legs of 3 and 4 give 9 + 16 = 25, so the hypotenuse is the square root of 25, which is 5."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "The theorem only works for right triangles, and c must be the side opposite the right angle."
+        },
+        {
+          "type": "summary",
+          "body": "a squared plus b squared equals c squared, with c the hypotenuse."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "math.geometry.similarity.lesson",
+      "skill_id": "math.geometry.similarity",
+      "title": "Similarity and Congruence",
+      "components": [
+        {
+          "type": "intuitive_explanation",
+          "body": "Congruent shapes are copies. Similar shapes are photographs of each other at different sizes: the angles match and every length is scaled by the same factor."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In similar figures, corresponding angles are equal and corresponding sides are in a constant ratio, the scale factor."
+        },
+        {
+          "type": "worked_example",
+          "body": "A triangle with sides 3, 4, 5 is similar to one with sides 6, 8, 10. The scale factor is 2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Similar shapes do not have equal sides, and congruent shapes are a special case of similar with scale factor 1."
+        },
+        {
+          "type": "summary",
+          "body": "Congruent means identical; similar means the same shape scaled by a constant factor."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "math.geometry.figures.q1",
+      "skill_id": "math.geometry.figures",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "A segment runs from the 4 cm mark to the 13 cm mark on a ruler. How long is it, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Length is the distance between the two endpoints."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the smaller mark from the larger one."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The segment covers 13 - 4 = 9 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.figures.q2",
+      "skill_id": "math.geometry.figures",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which figure has exactly two endpoints?",
+      "answer_spec": {
+        "correct_answer": "a segment"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count how many ends stop."
+        },
+        {
+          "level": 2,
+          "text": "A ray stops at one end only."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A segment has two endpoints; a ray has one and a line has none.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["a segment", "a ray", "a line", "a point"]
+      }
+    },
+    {
+      "question_id": "math.geometry.figures.q3",
+      "skill_id": "math.geometry.figures",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "Which figure goes on forever in both directions?",
+      "answer_spec": {
+        "correct_answer": "a line"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about which one never stops."
+        },
+        {
+          "level": 2,
+          "text": "A segment stops at both ends."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A line extends without end in both directions.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["a line", "a segment", "a ray", "an endpoint"]
+      }
+    },
+    {
+      "question_id": "math.geometry.figures.q4",
+      "skill_id": "math.geometry.figures",
+      "type": "decimal",
+      "difficulty": 2,
+      "prompt": "A segment from the 2 cm mark to the 15 cm mark is divided into two equal parts. How long is each part, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 6.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First find the whole length."
+        },
+        {
+          "level": 2,
+          "text": "Then share it equally between two parts."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The segment is 15 - 2 = 13 cm long, so each half is 13 / 2 = 6.5 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.figures.q5",
+      "skill_id": "math.geometry.figures",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Point B lies on segment AC. AB is 7 cm and BC is 5 cm. How long is AC, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "B is between A and C, so the two shorter pieces make the whole."
+        },
+        {
+          "level": 2,
+          "text": "Add the two pieces."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "AC = AB + BC = 7 + 5 = 12 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.figures.q6",
+      "skill_id": "math.geometry.figures",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Point M is the midpoint of segment PQ, which is 24 cm long. How long is PM, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 12.0
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A midpoint splits a segment into two equal pieces."
+        },
+        {
+          "level": 2,
+          "text": "Halve the total length."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The midpoint halves the segment, so PM = 24 / 2 = 12 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.figures.q7",
+      "skill_id": "math.geometry.figures",
+      "type": "multi_select",
+      "difficulty": 3,
+      "prompt": "Which statements are true? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["A segment has a measurable length.", "A ray has exactly one endpoint."]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check each statement against the definitions."
+        },
+        {
+          "level": 2,
+          "text": "Only figures with two stopping ends have a length."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A segment has two endpoints and a measurable length; a ray has one endpoint and no length.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A segment has a measurable length.",
+          "A ray has exactly one endpoint.",
+          "A line has a measurable length.",
+          "A point has a length of zero centimetres."
+        ]
+      }
+    },
+    {
+      "question_id": "math.geometry.figures.q8",
+      "skill_id": "math.geometry.figures",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A fence post sits every 3 m along a straight 21 m fence, including one at each end. How many posts are there?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out how many gaps of 3 m fit into 21 m."
+        },
+        {
+          "level": 2,
+          "text": "There is always one more post than there are gaps."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "There are 21 / 3 = 7 gaps, and one more post than gaps, so 8 posts.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.angles.q1",
+      "skill_id": "math.geometry.angles",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "How many degrees are there in a right angle?",
+      "answer_spec": {
+        "correct_answer": 90
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A right angle is a quarter of a full turn."
+        },
+        {
+          "level": 2,
+          "text": "A full turn is 360 degrees."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A right angle is a quarter turn, and 360 / 4 = 90 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angles.q2",
+      "skill_id": "math.geometry.angles",
+      "type": "numeric",
+      "difficulty": 1,
+      "prompt": "How many degrees are there in a straight angle?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A straight angle is a half turn."
+        },
+        {
+          "level": 2,
+          "text": "Half of 360 is what you need."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A straight angle is half a full turn, so it is 360 / 2 = 180 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angles.q3",
+      "skill_id": "math.geometry.angles",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "prompt": "An angle measures 35 degrees. What kind of angle is it?",
+      "answer_spec": {
+        "correct_answer": "acute"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare it with 90 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Angles below 90 degrees are acute."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "35 degrees is less than 90 degrees, so the angle is acute.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["acute", "right", "obtuse", "straight"]
+      }
+    },
+    {
+      "question_id": "math.geometry.angles.q4",
+      "skill_id": "math.geometry.angles",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "An angle measures 118 degrees. What kind of angle is it?",
+      "answer_spec": {
+        "correct_answer": "obtuse"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is bigger than a right angle."
+        },
+        {
+          "level": 2,
+          "text": "Obtuse angles lie between 90 and 180 degrees."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "118 degrees is more than 90 but less than 180, so the angle is obtuse.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["obtuse", "acute", "right", "straight"]
+      }
+    },
+    {
+      "question_id": "math.geometry.angles.q5",
+      "skill_id": "math.geometry.angles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A turn of one quarter is followed by another quarter turn in the same direction. How many degrees is the total turn?",
+      "answer_spec": {
+        "correct_answer": 180
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each quarter turn is 90 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Add the two turns together."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Two quarter turns are 90 + 90 = 180 degrees, a straight angle.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angles.q6",
+      "skill_id": "math.geometry.angles",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A clock's minute hand moves from 12 to 3. Through how many degrees has it turned?",
+      "answer_spec": {
+        "correct_answer": 90
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A full circuit of the clock face is 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "From 12 to 3 is a quarter of the way round."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "12 to 3 is a quarter of the face, so the hand turns 360 / 4 = 90 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.angles.q7",
+      "skill_id": "math.geometry.angles",
+      "type": "ordering",
+      "difficulty": 2,
+      "prompt": "Put these angles in order from smallest to largest.",
+      "answer_spec": {
+        "correct_answer": ["15 degrees", "88 degrees", "90 degrees", "140 degrees"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the numbers of degrees."
+        },
+        {
+          "level": 2,
+          "text": "Smallest first."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Ordered by size: 15, 88, 90, then 140 degrees.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["88 degrees", "140 degrees", "15 degrees", "90 degrees"]
+      }
+    },
+    {
+      "question_id": "math.geometry.angles.q8",
+      "skill_id": "math.geometry.angles",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A wheel turns through 720 degrees. How many complete turns is that?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One complete turn is 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Divide the total by 360."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "720 / 360 = 2 complete turns.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q1",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two complementary angles are shown. One measures 35 degrees. How many degrees is the other?",
+      "answer_spec": {
+        "correct_answer": 55
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Complementary angles add to 90 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 35 from 90."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Complementary angles add to 90, so the other angle is 90 - 35 = 55 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q2",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two complementary angles are shown. One measures 62 degrees. How many degrees is the other?",
+      "answer_spec": {
+        "correct_answer": 28
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Complementary angles add to 90 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 62 from 90."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Complementary angles add to 90, so the other angle is 90 - 62 = 28 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q3",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two supplementary angles are shown. One measures 110 degrees. How many degrees is the other?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Supplementary angles add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 110 from 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Supplementary angles add to 180, so the other angle is 180 - 110 = 70 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q4",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two supplementary angles are shown. One measures 75 degrees. How many degrees is the other?",
+      "answer_spec": {
+        "correct_answer": 105
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Supplementary angles add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 75 from 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Supplementary angles add to 180, so the other angle is 180 - 75 = 105 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q5",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two straight lines cross. One of the four angles measures 47 degrees. How many degrees is the angle vertically opposite it?",
+      "answer_spec": {
+        "correct_answer": 47
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Vertical angles are the ones directly opposite each other."
+        },
+        {
+          "level": 2,
+          "text": "Vertically opposite angles are always equal."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Vertical angles are equal, so the opposite angle is also 47 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q6",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Two straight lines cross. One angle measures 47 degrees. How many degrees is the angle next to it on the straight line?",
+      "answer_spec": {
+        "correct_answer": 133
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Angles on a straight line add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 47 from 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The two angles form a straight line, so the neighbour is 180 - 47 = 133 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q7",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three angles meet at a point on one side of a straight line. Two of them are 55 degrees and 68 degrees. How many degrees is the third?",
+      "answer_spec": {
+        "correct_answer": 57
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Angles along a straight line add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract both known angles from 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 55 - 68 = 57 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.angle_relationships.q8",
+      "skill_id": "math.geometry.angle_relationships",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An angle is twice the size of its complement. How many degrees is the larger angle?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Complementary angles add to 90 degrees."
+        },
+        {
+          "level": 2,
+          "text": "If the smaller is x, the larger is 2x, and x + 2x = 90."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "With x + 2x = 90, x = 30, so the larger angle is 2 x 30 = 60 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q1",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A transversal crosses two parallel lines. One angle measures 70 degrees. How many degrees is the corresponding angle?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Corresponding angles sit in matching positions at each crossing."
+        },
+        {
+          "level": 2,
+          "text": "Corresponding angles are equal."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Corresponding angles are equal, so the answer is 70 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q2",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A transversal crosses two parallel lines. An alternate interior angle to a 65 degree angle is shown. How many degrees is it?",
+      "answer_spec": {
+        "correct_answer": 65
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Alternate angles lie on opposite sides of the transversal."
+        },
+        {
+          "level": 2,
+          "text": "Alternate interior angles are equal."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Alternate interior angles are equal, so it is 65 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q3",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A transversal crosses two parallel lines. One co-interior angle is 110 degrees. How many degrees is the other?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Co-interior angles are on the same side of the transversal."
+        },
+        {
+          "level": 2,
+          "text": "They add to 180 degrees."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Co-interior angles add to 180, so the other is 180 - 110 = 70 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q4",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which pair of angles is always equal when a transversal crosses two parallel lines?",
+      "answer_spec": {
+        "correct_answer": "corresponding angles"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about which angles sit in matching positions."
+        },
+        {
+          "level": 2,
+          "text": "Co-interior angles add to 180 rather than being equal."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Corresponding angles occupy matching positions at each crossing and are equal.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "corresponding angles",
+          "co-interior angles",
+          "any two angles",
+          "adjacent angles on a line"
+        ]
+      }
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q5",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A transversal makes an angle of 42 degrees with the first of two parallel lines. How many degrees is the obtuse angle at the second line?",
+      "answer_spec": {
+        "correct_answer": 138
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The acute angle repeats at the second crossing."
+        },
+        {
+          "level": 2,
+          "text": "The obtuse angle completes a straight line with it."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The acute angle is 42 degrees at both crossings, so the obtuse angle is 180 - 42 = 138 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q6",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Two lines are crossed by a transversal. The corresponding angles measure 80 degrees and 85 degrees. What can you conclude?",
+      "answer_spec": {
+        "correct_answer": "The lines are not parallel."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Corresponding angles are equal only when the lines are parallel."
+        },
+        {
+          "level": 2,
+          "text": "Here they are not equal."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Corresponding angles are equal exactly when the lines are parallel, and 80 is not 85, so the lines are not parallel.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The lines are not parallel.",
+          "The lines are parallel.",
+          "The transversal is perpendicular.",
+          "Nothing can be concluded."
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q7",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Select every angle pair that is equal when a transversal crosses parallel lines.",
+      "answer_spec": {
+        "correct_answer": ["corresponding angles", "alternate interior angles", "vertical angles"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Three of these are equal pairs."
+        },
+        {
+          "level": 2,
+          "text": "Co-interior angles add to 180 instead."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Corresponding, alternate interior and vertical angles are all equal; co-interior angles are supplementary.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "corresponding angles",
+          "alternate interior angles",
+          "vertical angles",
+          "co-interior angles"
+        ]
+      }
+    },
+    {
+      "question_id": "math.geometry.parallel_lines.q8",
+      "skill_id": "math.geometry.parallel_lines",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A ladder leans against a wall, making a 65 degree angle with the level ground. The wall is vertical. How many degrees is the angle between the ladder and the wall?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The wall and the ground meet at a right angle."
+        },
+        {
+          "level": 2,
+          "text": "The three angles of the triangle add to 180."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "The ground-wall angle is 90 degrees, so the ladder-wall angle is 180 - 90 - 65 = 25 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.triangles.q1",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two angles of a triangle measure 40 degrees and 75 degrees. How many degrees is the third?",
+      "answer_spec": {
+        "correct_answer": 65
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The three angles of a triangle add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Work out 180 - 40 - 75."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 40 - 75 = 65 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.triangles.q2",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two angles of a triangle measure 90 degrees and 35 degrees. How many degrees is the third?",
+      "answer_spec": {
+        "correct_answer": 55
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The three angles of a triangle add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Work out 180 - 90 - 35."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 90 - 35 = 55 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.triangles.q3",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two angles of a triangle measure 60 degrees and 60 degrees. How many degrees is the third?",
+      "answer_spec": {
+        "correct_answer": 60
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The three angles of a triangle add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Work out 180 - 60 - 60."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 60 - 60 = 60 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.triangles.q4",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "Two angles of a triangle measure 25 degrees and 110 degrees. How many degrees is the third?",
+      "answer_spec": {
+        "correct_answer": 45
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The three angles of a triangle add to 180 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Work out 180 - 25 - 110."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "180 - 25 - 110 = 45 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.triangles.q5",
+      "skill_id": "math.geometry.triangles",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A triangle has three equal sides. What is it called?",
+      "answer_spec": {
+        "correct_answer": "equilateral"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what the sides tell you."
+        },
+        {
+          "level": 2,
+          "text": "All three sides equal has its own name."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A triangle with three equal sides is equilateral, and its angles are all 60 degrees.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["equilateral", "isosceles", "scalene", "right"]
+      }
+    },
+    {
+      "question_id": "math.geometry.triangles.q6",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An isosceles triangle has an apex angle of 40 degrees. How many degrees is each base angle?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The two base angles of an isosceles triangle are equal."
+        },
+        {
+          "level": 2,
+          "text": "Subtract 40 from 180, then halve what is left."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The base angles share 180 - 40 = 140 degrees equally, so each is 70 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.triangles.q7",
+      "skill_id": "math.geometry.triangles",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Can a triangle have two right angles?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add two right angles together."
+        },
+        {
+          "level": 2,
+          "text": "Compare that with the 180 degree total."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Two right angles already total 180 degrees, leaving nothing for the third angle, so it is impossible.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only if it is isosceles", "Only if it is equilateral"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.triangles.q8",
+      "skill_id": "math.geometry.triangles",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A triangular sail has angles in the ratio 1 : 2 : 3. How many degrees is the largest angle?",
+      "answer_spec": {
+        "correct_answer": 90
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The ratio parts add to 1 + 2 + 3 = 6."
+        },
+        {
+          "level": 2,
+          "text": "Share 180 degrees into 6 parts, then take 3 of them."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "Each part is 180 / 6 = 30 degrees, so the largest angle is 3 x 30 = 90 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q1",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many degrees do the four angles of a quadrilateral add to?",
+      "answer_spec": {
+        "correct_answer": 360
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Split the shape into two triangles."
+        },
+        {
+          "level": 2,
+          "text": "Each triangle contributes 180 degrees."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A quadrilateral splits into two triangles, so 2 x 180 = 360 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q2",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three angles of a quadrilateral measure 100, 80 and 95 degrees. How many degrees is the fourth?",
+      "answer_spec": {
+        "correct_answer": 85
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The four angles add to 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the three known angles from 360."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "360 - 100 - 80 - 95 = 85 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q3",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three angles of a quadrilateral measure 90, 90 and 60 degrees. How many degrees is the fourth?",
+      "answer_spec": {
+        "correct_answer": 120
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The four angles add to 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the three known angles from 360."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "360 - 90 - 90 - 60 = 120 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q4",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Three angles of a quadrilateral measure 120, 65 and 100 degrees. How many degrees is the fourth?",
+      "answer_spec": {
+        "correct_answer": 75
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The four angles add to 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract the three known angles from 360."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "360 - 120 - 65 - 100 = 75 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q5",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which shape always has four equal sides and four right angles?",
+      "answer_spec": {
+        "correct_answer": "square"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It needs both equal sides and right angles."
+        },
+        {
+          "level": 2,
+          "text": "A rhombus has equal sides but not always right angles."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A square has four equal sides and four right angles.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["square", "rhombus", "rectangle", "parallelogram"]
+      }
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q6",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Is every rectangle a square?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A square needs all four sides equal."
+        },
+        {
+          "level": 2,
+          "text": "A rectangle only needs opposite sides equal."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A rectangle needs right angles but not equal sides, so a 3 by 5 rectangle is not a square.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only if it is large", "Only if it is a parallelogram"]
+      }
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q7",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Select every shape that always has both pairs of opposite sides parallel.",
+      "answer_spec": {
+        "correct_answer": ["square", "rectangle", "rhombus"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check the definition of a parallelogram."
+        },
+        {
+          "level": 2,
+          "text": "A trapezoid has only one pair of parallel sides."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Squares, rectangles and rhombuses are all parallelograms; a trapezoid has just one parallel pair.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["square", "rectangle", "rhombus", "trapezoid"]
+      }
+    },
+    {
+      "question_id": "math.geometry.quadrilaterals.q8",
+      "skill_id": "math.geometry.quadrilaterals",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A kite-shaped garden bed has two angles of 95 degrees each and a third of 60 degrees. How many degrees is the fourth angle?",
+      "answer_spec": {
+        "correct_answer": 110
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The angles of any quadrilateral add to 360 degrees."
+        },
+        {
+          "level": 2,
+          "text": "Subtract all three known angles."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "360 - 95 - 95 - 60 = 110 degrees.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.polygons.q1",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many degrees do the interior angles of a pentagon (5 sides) add to?",
+      "answer_spec": {
+        "correct_answer": 540
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A polygon with n sides splits into n - 2 triangles."
+        },
+        {
+          "level": 2,
+          "text": "Work out (5 - 2) x 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(5 - 2) x 180 = 540 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.polygons.q2",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many degrees do the interior angles of a hexagon (6 sides) add to?",
+      "answer_spec": {
+        "correct_answer": 720
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A polygon with n sides splits into n - 2 triangles."
+        },
+        {
+          "level": 2,
+          "text": "Work out (6 - 2) x 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(6 - 2) x 180 = 720 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.polygons.q3",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many degrees do the interior angles of a octagon (8 sides) add to?",
+      "answer_spec": {
+        "correct_answer": 1080
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A polygon with n sides splits into n - 2 triangles."
+        },
+        {
+          "level": 2,
+          "text": "Work out (8 - 2) x 180."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "(8 - 2) x 180 = 1080 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.polygons.q4",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many degrees is each interior angle of a regular hexagon (6 sides)?",
+      "answer_spec": {
+        "correct_answer": 120
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First find the total: (6 - 2) x 180."
+        },
+        {
+          "level": 2,
+          "text": "Then share it equally between 6 angles."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The total is 720 degrees, so each angle is 720 / 6 = 120 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.polygons.q5",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many degrees is each interior angle of a regular pentagon (5 sides)?",
+      "answer_spec": {
+        "correct_answer": 108
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "First find the total: (5 - 2) x 180."
+        },
+        {
+          "level": 2,
+          "text": "Then share it equally between 5 angles."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The total is 540 degrees, so each angle is 540 / 5 = 108 degrees.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.polygons.q6",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A polygon's interior angles add to 900 degrees. How many sides does it have?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use (n - 2) x 180 = 900."
+        },
+        {
+          "level": 2,
+          "text": "Divide 900 by 180 first, then add 2."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "900 / 180 = 5, so n - 2 = 5 and n = 7 sides.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.polygons.q7",
+      "skill_id": "math.geometry.polygons",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is a polygon with all sides and all angles equal called?",
+      "answer_spec": {
+        "correct_answer": "regular"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The name describes evenness."
+        },
+        {
+          "level": 2,
+          "text": "It applies to both sides and angles."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A polygon with equal sides and equal angles is called regular.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["regular", "convex", "similar", "congruent"]
+      }
+    },
+    {
+      "question_id": "math.geometry.polygons.q8",
+      "skill_id": "math.geometry.polygons",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A floor is tiled with regular hexagons meeting at a point. How many degrees do the angles at that point add to?",
+      "answer_spec": {
+        "correct_answer": 360
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Tiles meeting at a point fill a complete turn."
+        },
+        {
+          "level": 2,
+          "text": "A complete turn is 360 degrees."
+        }
+      ],
+      "dimensions": ["transfer", "understanding"],
+      "explanation": "Angles round a point always total 360 degrees, which is why three 120 degree hexagon angles fit exactly.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q1",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle measures 8 cm by 5 cm. What is its perimeter, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 26
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Perimeter is the total distance round the edge."
+        },
+        {
+          "level": 2,
+          "text": "Add all four sides, or use 2 x (length + width)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 x (8 + 5) = 26 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q2",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A rectangle measures 8 cm by 5 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 40
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area counts the unit squares that fit inside."
+        },
+        {
+          "level": 2,
+          "text": "Multiply length by width."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "8 x 5 = 40 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q3",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A triangle has a base of 12 cm and a height of 7 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 42.0
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A triangle is half of a rectangle with the same base and height."
+        },
+        {
+          "level": 2,
+          "text": "Work out half of base x height."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Half of 12 x 7 = 84 gives an area of 42 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q4",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A parallelogram has a base of 9 cm and a height of 4 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 36
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the perpendicular height, not the slanted side."
+        },
+        {
+          "level": 2,
+          "text": "Area is base x height."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 x 4 = 36 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q5",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "A trapezoid has parallel sides of 6 cm and 10 cm and a height of 5 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 40.0
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Average the two parallel sides first."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply by the height."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Half of (6 + 10) is 8, and 8 x 5 = 40 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q6",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A square has a perimeter of 36 cm. What is its area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 81
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A square has four equal sides, so find one side first."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the side by itself."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "Each side is 36 / 4 = 9 cm, so the area is 9 x 9 = 81 square cm.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q7",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A rectangular room is 5 m long and 4 m wide. Carpet costs 12 pounds per square metre. What is the total cost, in pounds?",
+      "answer_spec": {
+        "correct_answer": 240
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the floor area first."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply the area by the price per square metre."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "The area is 5 x 4 = 20 square metres, so the cost is 20 x 12 = 240 pounds.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.perimeter_area.q8",
+      "skill_id": "math.geometry.perimeter_area",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Two rectangles both have an area of 24 square cm. Must they have the same perimeter?",
+      "answer_spec": {
+        "correct_answer": "No"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Try 4 by 6 and 2 by 12."
+        },
+        {
+          "level": 2,
+          "text": "Work out both perimeters and compare."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "A 4 by 6 rectangle has perimeter 20 cm and a 2 by 12 rectangle has perimeter 28 cm, so equal areas need not mean equal perimeters.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["No", "Yes", "Only if both are squares", "Only if the sides are whole numbers"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.circles.q1",
+      "skill_id": "math.geometry.circles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A circle has a radius of 7 cm. What is its diameter, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 14
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The diameter passes through the centre."
+        },
+        {
+          "level": 2,
+          "text": "It is twice the radius."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The diameter is 2 x 7 = 14 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.circles.q2",
+      "skill_id": "math.geometry.circles",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A circle has a diameter of 18 cm. What is its radius, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 9
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The radius is half the diameter."
+        },
+        {
+          "level": 2,
+          "text": "Halve 18."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The radius is 18 / 2 = 9 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.circles.q3",
+      "skill_id": "math.geometry.circles",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A circle has a radius of 5 cm. What is its circumference, in centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 31.4
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Circumference is 2 x pi x radius."
+        },
+        {
+          "level": 2,
+          "text": "Work out 2 x 3.14 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 x 3.14 x 5 = 31.4 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.circles.q4",
+      "skill_id": "math.geometry.circles",
+      "type": "decimal",
+      "difficulty": 3,
+      "prompt": "A circle has a radius of 5 cm. What is its area, in square centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 78.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area is pi x radius x radius."
+        },
+        {
+          "level": 2,
+          "text": "Square the radius first, then multiply by 3.14."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 5 = 25 and 3.14 x 25 = 78.5 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.circles.q5",
+      "skill_id": "math.geometry.circles",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "A circle has a diameter of 20 cm. What is its circumference, in centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 62.8
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Circumference is pi x diameter."
+        },
+        {
+          "level": 2,
+          "text": "Work out 3.14 x 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "3.14 x 20 = 62.8 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.circles.q6",
+      "skill_id": "math.geometry.circles",
+      "type": "decimal",
+      "difficulty": 5,
+      "prompt": "A circular tabletop has a radius of 60 cm. What is its area, in square centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 11304.0
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square the radius first."
+        },
+        {
+          "level": 2,
+          "text": "60 x 60 = 3600, then multiply by 3.14."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "3.14 x 3600 = 11304 square cm.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.circles.q7",
+      "skill_id": "math.geometry.circles",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "If the radius of a circle doubles, what happens to its area?",
+      "answer_spec": {
+        "correct_answer": "It becomes four times as large."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Area depends on the radius squared."
+        },
+        {
+          "level": 2,
+          "text": "Doubling and then squaring multiplies by 4."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Area uses the radius squared, so doubling the radius multiplies the area by 2 x 2 = 4.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It becomes four times as large.",
+          "It doubles.",
+          "It stays the same.",
+          "It becomes eight times as large."
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.circles.q8",
+      "skill_id": "math.geometry.circles",
+      "type": "decimal",
+      "difficulty": 5,
+      "prompt": "A bicycle wheel has a diameter of 70 cm. How far does it travel in one full turn, in centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 219.8
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One full turn covers the circumference."
+        },
+        {
+          "level": 2,
+          "text": "Circumference is pi x diameter."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "3.14 x 70 = 219.8 cm in one turn.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.solids.q1",
+      "skill_id": "math.geometry.solids",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A box measures 4 cm by 3 cm by 2 cm. What is its volume, in cubic centimetres?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Volume counts the unit cubes inside."
+        },
+        {
+          "level": 2,
+          "text": "Multiply all three dimensions."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4 x 3 x 2 = 24 cubic cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.solids.q2",
+      "skill_id": "math.geometry.solids",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A box measures 4 cm by 3 cm by 2 cm. What is its surface area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 52
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There are three different pairs of faces."
+        },
+        {
+          "level": 2,
+          "text": "Add the three face areas, then double."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 x (12 + 8 + 6) = 52 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.solids.q3",
+      "skill_id": "math.geometry.solids",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A cube has edges of 5 cm. What is its volume, in cubic centimetres?",
+      "answer_spec": {
+        "correct_answer": 125
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "All edges of a cube are equal."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the edge by itself three times."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "5 x 5 x 5 = 125 cubic cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.solids.q4",
+      "skill_id": "math.geometry.solids",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A cube has edges of 5 cm. What is its surface area, in square centimetres?",
+      "answer_spec": {
+        "correct_answer": 150
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A cube has six identical square faces."
+        },
+        {
+          "level": 2,
+          "text": "Find one face area, then multiply by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Each face is 5 x 5 = 25, so the surface area is 6 x 25 = 150 square cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.solids.q5",
+      "skill_id": "math.geometry.solids",
+      "type": "decimal",
+      "difficulty": 5,
+      "prompt": "A cylinder has a radius of 3 cm and a height of 10 cm. What is its volume, in cubic centimetres? Use pi = 3.14.",
+      "answer_spec": {
+        "correct_answer": 282.6
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the area of the circular base first."
+        },
+        {
+          "level": 2,
+          "text": "Then multiply by the height."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The base area is 3.14 x 9 = 28.26, and 28.26 x 10 = 282.6 cubic cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.solids.q6",
+      "skill_id": "math.geometry.solids",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which unit is correct for a volume?",
+      "answer_spec": {
+        "correct_answer": "cubic centimetres"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Volume fills space in three directions."
+        },
+        {
+          "level": 2,
+          "text": "Square units measure a flat surface."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Volume is measured in cubic units, because three lengths are multiplied together.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["cubic centimetres", "square centimetres", "centimetres", "degrees"]
+      }
+    },
+    {
+      "question_id": "math.geometry.solids.q7",
+      "skill_id": "math.geometry.solids",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A fish tank measures 60 cm by 30 cm by 40 cm. What is its volume, in cubic centimetres?",
+      "answer_spec": {
+        "correct_answer": 72000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the three dimensions."
+        },
+        {
+          "level": 2,
+          "text": "60 x 30 = 1800, then multiply by 40."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "60 x 30 x 40 = 72000 cubic cm.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.solids.q8",
+      "skill_id": "math.geometry.solids",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "If every edge of a cube is doubled, what happens to its volume?",
+      "answer_spec": {
+        "correct_answer": "It becomes eight times as large."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Volume multiplies three lengths."
+        },
+        {
+          "level": 2,
+          "text": "Doubling each of three dimensions multiplies by 2 x 2 x 2."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Each of the three dimensions doubles, so the volume is multiplied by 8.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It becomes eight times as large.",
+          "It doubles.",
+          "It becomes four times as large.",
+          "It becomes six times as large."
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q1",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A right triangle has legs of 3 cm and 4 cm. How long is the hypotenuse, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square both legs and add them."
+        },
+        {
+          "level": 2,
+          "text": "3 squared is 9 and 4 squared is 16; take the square root of the total."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "9 + 16 = 25, and the square root of 25 is 5 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q2",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A right triangle has legs of 6 cm and 8 cm. How long is the hypotenuse, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square both legs and add them."
+        },
+        {
+          "level": 2,
+          "text": "6 squared is 36 and 8 squared is 64; take the square root of the total."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "36 + 64 = 100, and the square root of 100 is 10 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q3",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A right triangle has legs of 5 cm and 12 cm. How long is the hypotenuse, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 13
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square both legs and add them."
+        },
+        {
+          "level": 2,
+          "text": "5 squared is 25 and 12 squared is 144; take the square root of the total."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "25 + 144 = 169, and the square root of 169 is 13 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q4",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A right triangle has a hypotenuse of 13 cm and one leg of 5 cm. How long is the other leg, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square the hypotenuse and the known leg."
+        },
+        {
+          "level": 2,
+          "text": "Subtract, then take the square root."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "169 - 25 = 144, and the square root of 144 is 12 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q5",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A right triangle has a hypotenuse of 10 cm and one leg of 6 cm. How long is the other leg, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square the hypotenuse and the known leg."
+        },
+        {
+          "level": 2,
+          "text": "Subtract, then take the square root."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "100 - 36 = 64, and the square root of 64 is 8 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q6",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A triangle has sides of 8, 15 and 17. Is it a right triangle?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Test the two shorter sides against the longest."
+        },
+        {
+          "level": 2,
+          "text": "Check whether 64 + 225 equals 289."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "8 squared plus 15 squared is 64 + 225 = 289, which is 17 squared, so it is a right triangle.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Yes", "No", "Only if it is isosceles", "There is not enough information"]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q7",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A ladder 13 m long leans against a wall with its foot 5 m from the base. How far up the wall does it reach, in metres?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The wall, ground and ladder form a right triangle."
+        },
+        {
+          "level": 2,
+          "text": "The ladder is the hypotenuse: 169 - 25 = 144."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "13 squared minus 5 squared is 169 - 25 = 144, and the square root of 144 is 12 m.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.pythagoras.q8",
+      "skill_id": "math.geometry.pythagoras",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "In a right triangle, which side is always the longest?",
+      "answer_spec": {
+        "correct_answer": "the hypotenuse"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It sits opposite the right angle."
+        },
+        {
+          "level": 2,
+          "text": "The largest angle faces the longest side."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The hypotenuse lies opposite the right angle, the largest angle, so it is always the longest side.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["the hypotenuse", "either leg", "the shortest leg", "they are all equal"]
+      }
+    },
+    {
+      "question_id": "math.geometry.similarity.q1",
+      "skill_id": "math.geometry.similarity",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Two triangles have exactly the same shape and size. What are they called?",
+      "answer_spec": {
+        "correct_answer": "congruent"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Same shape and same size."
+        },
+        {
+          "level": 2,
+          "text": "Similar allows a size change."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Figures that match exactly in both shape and size are congruent.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["congruent", "similar", "regular", "parallel"]
+      }
+    },
+    {
+      "question_id": "math.geometry.similarity.q2",
+      "skill_id": "math.geometry.similarity",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A triangle with sides 3, 4 and 5 is enlarged to one with sides 6, 8 and 10. What is the scale factor?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare a pair of matching sides."
+        },
+        {
+          "level": 2,
+          "text": "Divide a new length by the matching old one."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 / 3 = 2, and the same factor works for the other sides, so the scale factor is 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.similarity.q3",
+      "skill_id": "math.geometry.similarity",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Two similar rectangles have a scale factor of 3. The smaller is 4 cm wide. How wide is the larger, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Every length multiplies by the scale factor."
+        },
+        {
+          "level": 2,
+          "text": "Work out 4 x 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "4 x 3 = 12 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.similarity.q4",
+      "skill_id": "math.geometry.similarity",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Two similar triangles have corresponding sides of 5 cm and 15 cm. Another side of the smaller triangle is 7 cm. How long is the matching side of the larger, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 21
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the scale factor from the pair you know: 15 / 5."
+        },
+        {
+          "level": 2,
+          "text": "Apply that factor to the 7 cm side."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The scale factor is 15 / 5 = 3, so the matching side is 7 x 3 = 21 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.similarity.q5",
+      "skill_id": "math.geometry.similarity",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "In two similar figures, what is true of corresponding angles?",
+      "answer_spec": {
+        "correct_answer": "They are equal."
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Similar figures have the same shape."
+        },
+        {
+          "level": 2,
+          "text": "Only the lengths change under scaling."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Scaling changes lengths but never angles, so corresponding angles in similar figures are equal.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They are equal.",
+          "They are doubled.",
+          "They are in the same ratio as the sides.",
+          "They add to 180 degrees."
+        ]
+      }
+    },
+    {
+      "question_id": "math.geometry.similarity.q6",
+      "skill_id": "math.geometry.similarity",
+      "type": "decimal",
+      "difficulty": 5,
+      "prompt": "A photograph 10 cm wide and 15 cm tall is enlarged so that it is 25 cm wide. How tall is it, in centimetres?",
+      "answer_spec": {
+        "correct_answer": 37.5
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the scale factor: 25 / 10 = 2.5."
+        },
+        {
+          "level": 2,
+          "text": "Multiply the height by that factor."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The scale factor is 25 / 10 = 2.5, so the height becomes 15 x 2.5 = 37.5 cm.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "math.geometry.similarity.q7",
+      "skill_id": "math.geometry.similarity",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Are all squares similar to one another?",
+      "answer_spec": {
+        "correct_answer": "Yes"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Every square has four right angles and four equal sides."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether one can always be scaled to another."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Every square has the same angles and equal sides, so any square scales onto any other. All squares are similar.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Yes",
+          "No",
+          "Only if they are congruent",
+          "Only if the sides are whole numbers"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "math.geometry.similarity.q8",
+      "skill_id": "math.geometry.similarity",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A 2 m stick casts a 3 m shadow. At the same moment a tree casts a 24 m shadow. How tall is the tree, in metres?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The stick and the tree make similar triangles with their shadows."
+        },
+        {
+          "level": 2,
+          "text": "Height / shadow is the same for both: 2 / 3 = h / 24."
+        }
+      ],
+      "dimensions": ["transfer", "accuracy"],
+      "explanation": "The ratio of height to shadow is 2 / 3, so the tree is 24 x 2 / 3 = 16 m tall.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    }
+  ]
+}

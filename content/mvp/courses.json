@@ -7,17 +7,66 @@
     "version": "0.1.0",
     "status": "draft",
     "units": [
-      { "unit_id": "math.number_foundations", "title": "Number Foundations", "order": 1 },
-      { "unit_id": "math.add_sub", "title": "Addition and Subtraction", "order": 2 },
-      { "unit_id": "math.mult_div", "title": "Multiplication and Division", "order": 3 },
-      { "unit_id": "math.numerical_structure", "title": "Numerical Structure", "order": 4 },
-      { "unit_id": "math.integers", "title": "Integers", "order": 5 },
-      { "unit_id": "math.fractions", "title": "Fractions", "order": 6 },
-      { "unit_id": "math.decimals_percents", "title": "Decimals and Percentages", "order": 7 },
-      { "unit_id": "math.ratios", "title": "Ratios and Proportions", "order": 8 },
-      { "unit_id": "math.measurement", "title": "Measurement Foundations", "order": 9 },
-      { "unit_id": "math.algebra", "title": "Algebra Foundations", "order": 10 },
-      { "unit_id": "math.functions", "title": "Coordinate Plane and Graphs", "order": 11 }
+      {
+        "unit_id": "math.number_foundations",
+        "title": "Number Foundations",
+        "order": 1
+      },
+      {
+        "unit_id": "math.add_sub",
+        "title": "Addition and Subtraction",
+        "order": 2
+      },
+      {
+        "unit_id": "math.mult_div",
+        "title": "Multiplication and Division",
+        "order": 3
+      },
+      {
+        "unit_id": "math.numerical_structure",
+        "title": "Numerical Structure",
+        "order": 4
+      },
+      {
+        "unit_id": "math.integers",
+        "title": "Integers",
+        "order": 5
+      },
+      {
+        "unit_id": "math.fractions",
+        "title": "Fractions",
+        "order": 6
+      },
+      {
+        "unit_id": "math.decimals_percents",
+        "title": "Decimals and Percentages",
+        "order": 7
+      },
+      {
+        "unit_id": "math.ratios",
+        "title": "Ratios and Proportions",
+        "order": 8
+      },
+      {
+        "unit_id": "math.measurement",
+        "title": "Measurement Foundations",
+        "order": 9
+      },
+      {
+        "unit_id": "math.algebra",
+        "title": "Algebra Foundations",
+        "order": 10
+      },
+      {
+        "unit_id": "math.functions",
+        "title": "Coordinate Plane and Graphs",
+        "order": 11
+      },
+      {
+        "unit_id": "math.geometry",
+        "title": "Geometry",
+        "order": 12
+      }
     ]
   },
   {
@@ -28,10 +77,26 @@
     "version": "0.1.0",
     "status": "draft",
     "units": [
-      { "unit_id": "science.thinking", "title": "Scientific Thinking", "order": 1 },
-      { "unit_id": "science.experiments", "title": "Experiments", "order": 2 },
-      { "unit_id": "science.measurement", "title": "Measurement", "order": 3 },
-      { "unit_id": "science.data", "title": "Data", "order": 4 }
+      {
+        "unit_id": "science.thinking",
+        "title": "Scientific Thinking",
+        "order": 1
+      },
+      {
+        "unit_id": "science.experiments",
+        "title": "Experiments",
+        "order": 2
+      },
+      {
+        "unit_id": "science.measurement",
+        "title": "Measurement",
+        "order": 3
+      },
+      {
+        "unit_id": "science.data",
+        "title": "Data",
+        "order": 4
+      }
     ]
   }
 ]

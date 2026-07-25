@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "content_version": "1.0.0",
+  "content_version": "1.1.0",
   "courses": ["math.core", "science.core"],
   "generated_at": "2026-07-23T00:00:00Z",
-  "change_summary": "Completes the documented curriculum: adds the Experiments (7 skills) and Data (10 skills) science units and backfills Scientific Thinking (models, explanations) and Measurement (mass, time, temperature, volume, significant figures). With the mathematics course already complete through Coordinate Plane and Graphs, both courses now cover the scoped curriculum end to end."
+  "change_summary": "Adds the Geometry unit (12 skills, 96 questions): points and lines, angles and their relationships, parallel lines, triangles, quadrilaterals, polygons, perimeter and area, circles, volume and surface area, the Pythagorean theorem, and similarity. The first course content beyond the originally documented curriculum, and the prerequisite for trigonometry."
 }

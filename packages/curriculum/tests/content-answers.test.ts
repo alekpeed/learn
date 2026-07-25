@@ -19,6 +19,7 @@ const UNITS = [
   'measurement',
   'algebra',
   'functions',
+  'geometry',
   'science_thinking',
   'science_experiments',
   'science_measurement',

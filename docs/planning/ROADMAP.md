@@ -222,10 +222,17 @@ Direction". These are the courses that do NOT yet exist in the documentation and
 genuine arithmetic -> trigonometry path requires. Author them on top of the existing
 engine, reusing the Phase 14-15 graph/figure machinery. Sequence by demand.
 
-### Phase 21 - Geometry [content + engine]
+### Phase 21 - Geometry [content] - DONE
 
-Angles, shapes, perimeter/area/volume, the Pythagorean relationship. Adds a geometry-figure
-renderer (reuses the Phase 14 approach). Foundational for trigonometry.
+Shipped as unit 12 of `math.core` (12 skills, 96 questions): points and lines, angles and
+their relationships, parallel lines, triangles, quadrilaterals, polygons, perimeter and
+area, circles, volume and surface area, the Pythagorean theorem, similarity and congruence.
+Kept inside the existing course rather than made a separate one so the prerequisite graph
+stays connected to measurement, ratios and algebra. Curriculum now 142 skills, 1,217
+questions across 17 units. This is the prerequisite for trigonometry.
+
+Figures are posed textually, as in Phases 14-15; a rendered geometry-figure component
+remains a future enhancement rather than a blocker.
 
 ### Phase 22 - Algebra II [content]
 

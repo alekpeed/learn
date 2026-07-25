@@ -70,6 +70,17 @@ shipped on top of it. Everything is committed and pushed.
   duplicate record, or a record pointing at an unknown skill. One content bug fixed:
   `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
   answer, which could never fire; a loader test now guards against that class of bug.
+- **Phase 21 - Geometry (Track D):** `content/mvp/units/geometry.json` - **12 skills, 96
+  questions**, the first content beyond the originally documented curriculum. Points/lines,
+  angles, angle relationships, parallel lines and transversals, triangles, quadrilaterals,
+  polygons, perimeter and area, circles, volume and surface area, the Pythagorean theorem,
+  and similarity/congruence. Added as **unit 12 of the existing `math.core` course, not a
+  separate course**, so it sits in one prerequisite graph with the measurement, ratio and
+  algebra skills it genuinely depends on - which is what keeps gating and the diagnostic
+  working across it. Curriculum now stands at **142 skills, 1,217 questions, 17 units**.
+  Content-only; every answer is computed by the generator and graded through the real
+  validators (geometry was added to `content-answers.test.ts`). Note: the schema caps both
+  `difficulty` and `difficulty_band` at 5, so hard items clamp there.
 - **Phase 20 - optional sync & cross-device resume:** off by default; the app is complete
   without it. `packages/persistence/src/sync.ts` has a tiny `SyncBackend` (pull/push) plus
   `syncEvents`, an `InMemorySyncBackend`, and an `HttpSyncBackend`. **Merging is a set union
