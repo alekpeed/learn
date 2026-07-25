@@ -658,3 +658,54 @@ button {
 .sticking-count {
   color: var(--muted);
 }
+
+/* Course modules (Phase 18) */
+.module-errors {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+  font-weight: 400;
+}
+.module-errors li {
+  margin: 0.15rem 0;
+}
+.module-preview {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+}
+.module-preview h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+.module-counts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.4rem 1rem;
+  margin: 0.6rem 0;
+}
+.module-counts dt {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.module-counts dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.module-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.module-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
+}
+.module-name {
+  flex: 1 1 12rem;
+}

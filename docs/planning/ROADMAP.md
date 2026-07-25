@@ -18,8 +18,8 @@ skill graph in `content/mvp/`.
   documented topics authored - **130 skills, 1,121 questions, 16 of 16 units built**, every
   skill carrying at least 7 practice items. Grown from the original 41-skill,
   ~2-item-per-skill slice.
-- Version 1 features: 5 of ~10 shipped (BYOK providers, notes, extra question types,
-  study plans, richer dashboard, misconception remediation).
+- Version 1 features: 6 of ~10 shipped (BYOK providers, notes, extra question types,
+  study plans, richer dashboard, misconception remediation, downloadable course modules).
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
@@ -179,11 +179,14 @@ answers on the skill), remediation under wrong-answer feedback, a Sticking point
 Progress, and remediation skills outranking the frontier in session selection. The loader
 now rejects questions referencing a misconception with no catalog entry.
 
-### Phase 18 - Content administration & downloadable course modules [ui + engine]
+### Phase 18 - Content administration & downloadable course modules [ui + engine] - DONE
 
-In-app authoring/administration to create, validate (against existing JSON Schemas), and
-preview course packages, plus import/export of downloadable course modules (a course pack
-is already just data).
+Shipped. Versioned course-module envelope with parse/serialize/summarize in
+`@learn/curriculum`, validated through the same loader as bundled content. A `ModuleStore`
+in its own IndexedDB database holds installed modules (never the event log). A `/courses`
+screen exports the active course, validates and previews a module before installing,
+switches courses, and reverts to built-in. The bundled curriculum stays the synchronous
+fallback, so a broken installed course cannot brick the app.
 
 ### Phase 19 - AI-assisted practice drafts (author-gated) [ai-gateway + ui]
 

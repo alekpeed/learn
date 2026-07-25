@@ -7,6 +7,7 @@ import { ProgressProvider } from './state/ProgressContext.js';
 import { Welcome } from './screens/Welcome.js';
 import { Dashboard } from './screens/Dashboard.js';
 import { Settings } from './screens/Settings.js';
+import { Authoring } from './screens/Authoring.js';
 import { CurriculumMap } from './screens/CurriculumMap.js';
 import { LessonScreen } from './screens/LessonScreen.js';
 import { PracticeScreen } from './screens/PracticeScreen.js';
@@ -27,6 +28,7 @@ export function App(): JSX.Element {
               <Route element={<Layout />}>
                 <Route path="/" element={<Welcome />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/courses" element={<Authoring />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/map" element={<CurriculumMap />} />
                 <Route path="/lesson" element={<LessonScreen />} />

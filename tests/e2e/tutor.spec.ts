@@ -23,6 +23,10 @@ test.describe('AI tutor (Phase 8)', () => {
     await page.goto('/settings');
     // The checkbox is async-controlled; click once (check() would auto-retry).
     await page.getByLabel(/ai tutor/i).click();
+    // The provider picker only renders once the setting has been written to the
+    // event log and read back, so this is the signal that it is safe to navigate.
+    // Without it the next goto can outrun the write and the tutor stays off.
+    await expect(page.getByLabel(/provider/i)).toBeVisible();
 
     await page.goto('/lesson?skill=math.number_foundations.counting_and_quantity');
     await page.getByRole('button', { name: /explain differently/i }).click();

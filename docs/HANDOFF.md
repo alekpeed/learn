@@ -70,6 +70,21 @@ shipped on top of it. Everything is committed and pushed.
   duplicate record, or a record pointing at an unknown skill. One content bug fixed:
   `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
   answer, which could never fire; a loader test now guards against that class of bug.
+- **Phase 18 - course administration & downloadable modules:** a course is now a portable
+  file. `packages/curriculum/src/module.ts` defines a versioned envelope
+  (`MODULE_FORMAT`) plus `parseCourseModule` / `serializeCourseModule` / `summarizeModule`;
+  parsing runs the module through **the same loader the bundled curriculum uses**, so an
+  imported course cannot be less valid than the shipped one, and every loader error is shown
+  rather than one "invalid file". Installed modules live in **their own IndexedDB database**
+  (`learn-modules`) via `ModuleStore` - deliberately NOT in the event log (installing a
+  course is not learner state and must not replay into progress or bloat a progress export),
+  and deliberately not a new object store in `learn-events`, which would have meant a version
+  bump risking existing progress. New `/courses` screen exports the active course, validates
+  and previews a module before installing anything, switches between installed courses, and
+  reverts to built-in. **`CurriculumProvider` keeps the bundled package as its synchronous
+  initial value** and swaps an active module in afterwards, so there is no loading flash and
+  a broken installed course falls back to built-in with a warning instead of bricking every
+  screen - keep that property.
 - **Dark mode:** an `accessibility_settings.theme` of `system` (default) / `light` / `dark`,
   persisted in the event log like every other setting. Implemented purely as CSS custom
   properties - `LearnerContext` writes `data-theme` on `<html>` and `styles.css` resolves it,
