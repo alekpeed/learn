@@ -16,6 +16,7 @@ import { eventStore } from '../data/repository.js';
 import { DimensionRadar } from '../components/charts/DimensionRadar.js';
 import { UnitBars } from '../components/charts/UnitBars.js';
 import { ScreenState } from '../components/ScreenState.js';
+import { StickingPoints } from '../components/StickingPoints.js';
 
 const DIMENSION_LABEL: Record<MasteryDimension, string> = {
   understanding: 'Understanding',
@@ -28,7 +29,7 @@ const DIMENSION_LABEL: Record<MasteryDimension, string> = {
 /** Visual progress dashboard (doc 02 §10) — mastery by unit, strengths, and what's due. */
 export function Progress(): JSX.Element {
   const { package: pkg } = useCurriculum();
-  const { progress, loading } = useProgress();
+  const { progress, misconceptions, loading } = useProgress();
   const learner = useOptionalLearner()?.learner ?? null;
   const [events, setEvents] = useState<LearningEvent[]>([]);
   const [now] = useState(() => new Date().toISOString());
@@ -63,6 +64,12 @@ export function Progress(): JSX.Element {
         >
           <Link to="/map">Open the curriculum map</Link>
         </ScreenState>
+        {/*
+         * A learner whose attempts have all been wrong scores too low to count
+         * as "started", so this branch is exactly where sticking points are most
+         * useful. Showing them here keeps the one actionable thing on screen.
+         */}
+        <StickingPoints misconceptions={misconceptions} />
       </section>
     );
   }
@@ -118,6 +125,8 @@ export function Progress(): JSX.Element {
           <DimensionRadar scores={dims} />
         </section>
       </div>
+
+      <StickingPoints misconceptions={misconceptions} />
 
       <section className="dashboard-card" aria-labelledby="detail-h">
         <h2 id="detail-h">Skill detail</h2>

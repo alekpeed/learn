@@ -44,6 +44,8 @@ function loadMvp(): RawCoursePackage {
     skills: units.flatMap((u) => u.skills),
     lessons: units.flatMap((u) => u.lessons),
     questions: units.flatMap((u) => u.questions),
+    misconceptions: (readJson('misconceptions.json') as { misconceptions: unknown[] })
+      .misconceptions,
   };
 }
 
@@ -185,5 +187,68 @@ describe('loadCoursePackage — invalid packages produce clear errors', () => {
     const result = loadCoursePackage(raw);
     expect(result.ok).toBe(false);
     if (!result.ok) expect(result.errors.join(' ')).toMatch(/incompatible/);
+  });
+
+  it('rejects a misconception reference with no catalog entry', () => {
+    const raw = loadMvp();
+    raw.misconceptions = [];
+    const result = loadCoursePackage(raw);
+    // Every tagged wrong answer would be diagnosable but never remediable.
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.errors.join(' ')).toMatch(/unknown misconception mc\./);
+  });
+
+  it('rejects a misconception recommending a skill that does not exist', () => {
+    const raw = loadMvp();
+    (raw.misconceptions as Record<string, unknown>[])[0]!.recommended_prerequisite_check =
+      'math.number_foundations.ghost';
+    const result = loadCoursePackage(raw);
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.errors.join(' ')).toMatch(/recommends unknown skill/);
+  });
+});
+
+describe('misconception catalog (Phase 17)', () => {
+  it('gives every tagged wrong answer a corrective explanation', () => {
+    const result = loadCoursePackage(loadMvp());
+    expect(result.ok, result.ok ? '' : result.errors.join('\n')).toBe(true);
+    if (!result.ok) return;
+
+    const tagged = result.package.questions.flatMap((q) => q.common_wrong_answers ?? []);
+    expect(tagged.length).toBeGreaterThan(0);
+    for (const cwa of tagged) {
+      const record = result.package.misconceptionById.get(cwa.misconception_id);
+      expect(record, `no catalog record for ${cwa.misconception_id}`).toBeDefined();
+      expect(record?.corrective_explanation.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('carries no catalog record that no question references', () => {
+    const result = loadCoursePackage(loadMvp());
+    if (!result.ok) return;
+    const referenced = new Set(
+      result.package.questions.flatMap((q) =>
+        (q.common_wrong_answers ?? []).map((c) => c.misconception_id),
+      ),
+    );
+    const orphans = result.package.misconceptions
+      .map((m) => m.misconception_id)
+      .filter((id) => !referenced.has(id));
+    expect(orphans).toEqual([]);
+  });
+
+  it('never tags the correct answer as a common wrong answer', () => {
+    const result = loadCoursePackage(loadMvp());
+    if (!result.ok) return;
+    // A tag on the right answer can never fire, because diagnosis only runs on
+    // wrong ones - so it is a silent content bug rather than a harmless one.
+    const unreachable = result.package.questions
+      .filter((q) =>
+        (q.common_wrong_answers ?? []).some(
+          (c) => String(c.value) === String(q.answer_spec.correct_answer),
+        ),
+      )
+      .map((q) => q.question_id);
+    expect(unreachable).toEqual([]);
   });
 });

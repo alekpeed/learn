@@ -23,9 +23,12 @@ test.describe('practice and validation (Phase 3)', () => {
     // A hint is revealed (content-agnostic: the hints list appears).
     await expect(page.getByRole('region', { name: /hints/i })).toBeVisible();
 
-    // Answering "5" (the digit) instead of 50 is a place-value error.
+    // Answering "5" (the digit) instead of 50 is the face-value misconception,
+    // which the author tagged - so since Phase 17 the feedback names the actual
+    // mistake and how to fix it, rather than the generic place-value rule.
     await page.getByLabel(/your answer/i).fill('5');
     await page.getByRole('button', { name: /submit/i }).click();
-    await expect(page.getByRole('alert')).toContainText(/place value/i);
+    await expect(page.getByRole('alert')).toContainText(/common mistake/i);
+    await expect(page.getByRole('alert')).toContainText(/tens column/i);
   });
 });

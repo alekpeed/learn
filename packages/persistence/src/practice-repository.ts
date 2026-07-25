@@ -20,6 +20,9 @@ export interface AttemptInput {
   response_time_ms: number;
   dimensions: string[];
   is_transfer: boolean;
+  /** Deterministic diagnosis of a wrong answer; absent when correct (Phase 17). */
+  diagnosis_category?: string;
+  misconception_id?: string;
 }
 
 export interface AttemptRecord extends AttemptInput {

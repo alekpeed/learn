@@ -605,3 +605,56 @@ button {
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
+
+/* Remediation for a detected misconception (Phase 17) */
+.remediation {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 40%, transparent);
+}
+.remediation h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+}
+.remediation p {
+  margin: 0 0 0.3rem;
+  font-weight: 400;
+}
+.remediation[data-recurring='true'] h3 {
+  color: var(--error);
+}
+.remediation-prereq {
+  font-size: 0.92em;
+}
+
+/* Sticking points (recurring misconceptions) */
+.sticking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sticking-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
+}
+.sticking-item:last-child {
+  border-bottom: 0;
+}
+.sticking-item h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+}
+.sticking-what {
+  margin: 0 0 0.3rem;
+  font-weight: 600;
+}
+.sticking-fix {
+  margin: 0 0 0.4rem;
+}
+.sticking-actions {
+  margin: 0;
+  font-size: 0.9em;
+}
+.sticking-count {
+  color: var(--muted);
+}

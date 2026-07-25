@@ -14,13 +14,24 @@ import {
 } from 'react';
 import type { LearningEvent, SkillProgress, MasteryScores } from '@learn/domain';
 import { DEFAULT_MASTERY_THRESHOLDS } from '@learn/domain';
-import { projectProgress, type ThresholdLookup } from '@learn/learning-engine';
+import {
+  projectProgress,
+  projectMisconceptions,
+  type ThresholdLookup,
+  type MisconceptionOccurrence,
+} from '@learn/learning-engine';
 import { useLearner } from './LearnerContext.js';
 import { useCurriculum } from './CurriculumContext.js';
 import { eventStore } from '../data/repository.js';
 
 interface ProgressContextValue {
   progress: Map<string, SkillProgress>;
+  /**
+   * Misconceptions this learner has shown, projected from the same event log in
+   * the same pass (Phase 17). Kept here so the log is read once, and so the UI
+   * never has to derive remediation state of its own.
+   */
+  misconceptions: MisconceptionOccurrence[];
   loading: boolean;
   refresh: () => Promise<void>;
 }
@@ -43,6 +54,7 @@ export function ProgressProvider({
   const [progress, setProgress] = useState<Map<string, SkillProgress>>(
     progressOverride ?? new Map(),
   );
+  const [misconceptions, setMisconceptions] = useState<MisconceptionOccurrence[]>([]);
   const [loading, setLoading] = useState(progressOverride ? false : true);
 
   const thresholds = useMemo<ThresholdLookup>(() => {
@@ -59,11 +71,13 @@ export function ProgressProvider({
   const refresh = useCallback(async () => {
     if (!learner) {
       setProgress(new Map());
+      setMisconceptions([]);
       setLoading(false);
       return;
     }
     const events = await load(learner.learner_id);
     setProgress(projectProgress(events, thresholds));
+    setMisconceptions(projectMisconceptions(events));
     setLoading(false);
   }, [learner, load, thresholds]);
 
@@ -80,8 +94,8 @@ export function ProgressProvider({
   }, [refresh, progressOverride]);
 
   const value = useMemo<ProgressContextValue>(
-    () => ({ progress, loading, refresh }),
-    [progress, loading, refresh],
+    () => ({ progress, misconceptions, loading, refresh }),
+    [progress, misconceptions, loading, refresh],
   );
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;
@@ -91,4 +105,13 @@ export function useProgress(): ProgressContextValue {
   const ctx = useContext(ProgressContext);
   if (!ctx) throw new Error('useProgress must be used within a ProgressProvider');
   return ctx;
+}
+
+/**
+ * Like useProgress but returns null instead of throwing. For components that
+ * only use progress to enrich what they show - a question still renders and
+ * still grades without it.
+ */
+export function useOptionalProgress(): ProgressContextValue | null {
+  return useContext(ProgressContext);
 }

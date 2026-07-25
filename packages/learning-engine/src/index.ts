@@ -8,3 +8,4 @@ export * from './progress.js';
 export * from './activity.js';
 export * from './session.js';
 export * from './dashboard.js';
+export * from './misconceptions.js';

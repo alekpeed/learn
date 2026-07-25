@@ -7,6 +7,8 @@ import { useState, type FormEvent } from 'react';
 import type { Question } from '@learn/curriculum';
 import { usePractice } from '../practice/usePractice.js';
 import { TutorPanel } from './TutorPanel.js';
+import { RemediationNote } from './RemediationNote.js';
+import { useOptionalProgress } from '../state/ProgressContext.js';
 import { PracticeRepository } from '@learn/persistence';
 
 const CHOICE_TYPES = new Set(['multiple_choice', 'exact_choice', 'structured']);
@@ -24,7 +26,26 @@ export function QuestionView({
   onSolved?: (snapshot: { hintsUsed: number; attempts: number }) => void;
   nextLabel?: string;
 }): JSX.Element {
-  const practice = usePractice({ question, learnerId, repository });
+  // Optional: without a ProgressProvider the question still renders and grades,
+  // it just cannot know whether this slip has happened before.
+  const progressCtx = useOptionalProgress();
+  const misconceptions = progressCtx?.misconceptions ?? [];
+  const practice = usePractice({
+    question,
+    learnerId,
+    repository,
+    // Re-project after each attempt so recurrence counts the answer just given.
+    onAttemptRecorded: progressCtx?.refresh,
+  });
+
+  // Recurrence is projected from the event log, so it reflects every past
+  // session, not just this one.
+  const detected = practice.diagnosis?.misconception_id;
+  const recurring = detected
+    ? misconceptions.some(
+        (m) => m.misconception_id === detected && m.skill_id === question.skill_id && m.recurring,
+      )
+    : false;
 
   const options = Array.isArray((question.parameters as { options?: unknown })?.options)
     ? (question.parameters as { options: string[] }).options
@@ -177,9 +198,10 @@ export function QuestionView({
       )}
 
       {practice.outcome && !practice.solved && practice.diagnosis && (
-        <p className="feedback" role="alert" data-status="error">
-          {practice.diagnosis.message}
-        </p>
+        <div className="feedback" role="alert" data-status="error">
+          <p>{practice.diagnosis.message}</p>
+          <RemediationNote misconceptionId={detected} recurring={recurring} />
+        </div>
       )}
 
       {practice.solved && (

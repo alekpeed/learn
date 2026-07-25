@@ -51,6 +51,14 @@ export interface AnswerSubmittedPayload extends Record<string, unknown> {
   /** Mastery dimensions this item feeds (DEC-009) — needed to score from events alone. */
   dimensions: string[];
   is_transfer: boolean;
+  /**
+   * What the deterministic diagnoser made of a wrong answer. Optional because
+   * correct answers carry no diagnosis, and because attempts recorded before
+   * misconception tracking existed do not have it — projections must treat a
+   * missing value as "not diagnosed", never as an error.
+   */
+  diagnosis_category?: string;
+  misconception_id?: string;
 }
 
 export interface ReviewCompletedPayload extends Record<string, unknown> {

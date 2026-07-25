@@ -36,3 +36,12 @@ export function useCurriculum(): CurriculumContextValue {
   if (!ctx) throw new Error('useCurriculum must be used within a CurriculumProvider');
   return ctx;
 }
+
+/**
+ * Like useCurriculum but returns null instead of throwing. For components that
+ * only read content to enrich what they show, and must not take the screen down
+ * when they are rendered outside a provider.
+ */
+export function useOptionalCurriculum(): CurriculumContextValue | null {
+  return useContext(CurriculumContext);
+}

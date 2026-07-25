@@ -4,7 +4,15 @@
  * cycles. Fails explicitly with clear, aggregated errors (doc 14 §1, doc 11).
  */
 import { validateContent, isSchemaVersionCompatible, SCHEMA_VERSION } from '@learn/schemas';
-import type { RawCoursePackage, Skill, Lesson, Question, Course, Manifest } from './types.js';
+import type {
+  RawCoursePackage,
+  Skill,
+  Lesson,
+  Question,
+  Course,
+  Manifest,
+  Misconception,
+} from './types.js';
 import {
   buildGraph,
   findMissingReferences,
@@ -19,17 +27,19 @@ export interface CoursePackage {
   skills: Skill[];
   lessons: Lesson[];
   questions: Question[];
+  misconceptions: Misconception[];
   graph: SkillGraph;
   /** Topologically ordered skill IDs (prerequisites first). */
   order: string[];
   lessonBySkill: Map<string, Lesson>;
   questionsBySkill: Map<string, Question[]>;
+  misconceptionById: Map<string, Misconception>;
 }
 
 export type LoadResult = { ok: true; package: CoursePackage } | { ok: false; errors: string[] };
 
 function validateAll(
-  kind: 'skill' | 'lesson' | 'question' | 'course' | 'manifest',
+  kind: 'skill' | 'lesson' | 'question' | 'misconception' | 'course' | 'manifest',
   items: unknown[],
   errors: string[],
 ): void {
@@ -62,6 +72,7 @@ export function loadCoursePackage(raw: RawCoursePackage): LoadResult {
   validateAll('skill', raw.skills, errors);
   validateAll('lesson', raw.lessons, errors);
   validateAll('question', raw.questions, errors);
+  validateAll('misconception', raw.misconceptions ?? [], errors);
 
   // Stop before graph checks if any entity is structurally invalid.
   if (errors.length > 0) return { ok: false, errors };
@@ -69,6 +80,7 @@ export function loadCoursePackage(raw: RawCoursePackage): LoadResult {
   const skills = raw.skills as Skill[];
   const lessons = raw.lessons as Lesson[];
   const questions = raw.questions as Question[];
+  const misconceptions = (raw.misconceptions ?? []) as Misconception[];
 
   // 3. Graph integrity.
   const graph = buildGraph(skills);
@@ -92,6 +104,32 @@ export function loadCoursePackage(raw: RawCoursePackage): LoadResult {
   for (const question of questions) {
     if (!graph.skills.has(question.skill_id)) {
       errors.push(`question ${question.question_id} references unknown skill ${question.skill_id}`);
+    }
+  }
+
+  // 5. Misconception integrity. A question that names a misconception with no
+  // catalog entry can be diagnosed but never remediated, so treat it as a
+  // content error rather than letting it fail silently at practice time.
+  const misconceptionById = new Map<string, Misconception>();
+  for (const m of misconceptions) {
+    if (misconceptionById.has(m.misconception_id)) {
+      errors.push(`duplicate misconception ${m.misconception_id}`);
+    }
+    misconceptionById.set(m.misconception_id, m);
+  }
+  for (const m of misconceptions) {
+    const prereq = m.recommended_prerequisite_check;
+    if (prereq !== undefined && !graph.skills.has(prereq)) {
+      errors.push(`misconception ${m.misconception_id} recommends unknown skill ${prereq}`);
+    }
+  }
+  for (const question of questions) {
+    for (const cwa of question.common_wrong_answers ?? []) {
+      if (!misconceptionById.has(cwa.misconception_id)) {
+        errors.push(
+          `question ${question.question_id} references unknown misconception ${cwa.misconception_id}`,
+        );
+      }
     }
   }
 
@@ -120,10 +158,12 @@ export function loadCoursePackage(raw: RawCoursePackage): LoadResult {
       skills,
       lessons,
       questions,
+      misconceptions,
       graph,
       order,
       lessonBySkill,
       questionsBySkill,
+      misconceptionById,
     },
   };
 }

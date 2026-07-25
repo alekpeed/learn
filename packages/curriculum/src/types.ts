@@ -63,9 +63,35 @@ export interface Question {
   answer_spec: { correct_answer: unknown; accepted_equivalents?: unknown[]; unit?: string };
   validator: string;
   hints: { level: number; text: string }[];
+  /**
+   * Wrong answers the author expects, each naming the misconception it reveals.
+   * The deterministic diagnoser matches against these first (doc 04 §8).
+   */
+  common_wrong_answers?: { value: unknown; misconception_id: string }[];
   dimensions: string[];
   explanation: string;
   transfer_flag?: boolean;
+  content_version: string;
+}
+
+/**
+ * A named misconception and how to correct it (doc 06 §8). Questions point at
+ * these by ID; the catalog is what turns a detected slip into remediation the
+ * learner can act on, with no AI involved.
+ */
+export interface Misconception {
+  misconception_id: string;
+  description: string;
+  detection_rule: {
+    kind: 'equals_value' | 'matches_pattern' | 'sign_flip' | 'off_by_place_value' | 'custom';
+    value?: unknown;
+    pattern?: string;
+  };
+  example_wrong_answer?: unknown;
+  corrective_explanation: string;
+  /** A prerequisite worth re-checking when this misconception keeps recurring. */
+  recommended_prerequisite_check?: string;
+  follow_up_question_id?: string;
   content_version: string;
 }
 

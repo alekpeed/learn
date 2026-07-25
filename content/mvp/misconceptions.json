@@ -1,0 +1,589 @@
+{
+  "misconceptions": [
+    {
+      "misconception_id": "mc.math.add_sub.confuses_join_with_takeaway",
+      "description": "Treats taking away or sharing as addition, because the situation involves two numbers.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Addition joins groups to make a larger total. If the situation removes, compares, or shares out, it is not addition. Ask whether the amount ends up bigger or smaller.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Eating 2 of your 6 crackers"
+    },
+    {
+      "misconception_id": "mc.math.algebra.changed_one_side_only",
+      "description": "Operates on one side of an equation only, breaking the balance.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An equation is a balance. Whatever you do to one side you must do to the other, or the two sides stop being equal.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "multiply only the left side by 2"
+    },
+    {
+      "misconception_id": "mc.math.algebra.combined_unlike_terms",
+      "description": "Combines terms with different variable parts, treating 3x + 2y as 5xy or 5x.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Only like terms combine, meaning terms with exactly the same variable part. 3x and 2y count different things and have to stay separate.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes"
+    },
+    {
+      "misconception_id": "mc.math.algebra.distributed_first_term_only",
+      "description": "Multiplies the bracket's first term only, so 2(x + 3) becomes 2x + 3.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The multiplier applies to every term inside the bracket. 2(x + 3) is 2x + 6. Draw an arrow from the multiplier to each term so none is missed.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "2x + 3"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.added_successive_percents",
+      "description": "Adds successive percentage changes instead of applying them one after another.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Each change applies to the amount at the time, so percentages do not simply add. Apply the first change, then apply the second to the result.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 240,
+      "recommended_prerequisite_check": "math.decimals_percents.percent_of_number"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.align_right_ends",
+      "description": "Lines up decimals by their right-hand ends when adding or subtracting.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Line up the decimal points so that tenths sit under tenths and units under units. Pad with zeros if the numbers have different lengths.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "the last digits",
+      "recommended_prerequisite_check": "math.decimals_percents.decimal_place_value"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.change_vs_new_amount",
+      "description": "Reports the new amount, or the whole, where the question asks for the size of the change.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Percentage change compares the change with the starting amount, not with the finishing amount. Work out the difference first, then divide by the original value.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 40
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.copy_fraction_digits",
+      "description": "Turns a fraction into a decimal by copying its digits, so 1/4 becomes 0.4.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A fraction is a division. Work out 1 divided by 4, which is 0.25. Copying the digits ignores what the denominator does.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.4
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.decimal_places_not_counted",
+      "description": "Does not count the total decimal places when multiplying decimals.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Multiply as if the numbers were whole, then give the answer as many decimal places as the two factors had together. 0.2 x 0.3 has two decimal places in total, so the answer is 0.06.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.6
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.divided_upside_down",
+      "description": "Divides the whole by the part when finding what percentage one number is of another.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The part goes on top. Divide the part by the whole, then multiply by 100. Putting them the other way round gives a figure over 100% whenever the part is smaller.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "divide the whole by the part, then multiply by 100"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.longer_is_larger",
+      "description": "Assumes the decimal with more digits is larger, so 0.45 beats 0.5.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Compare place by place from the left, not by length. 0.5 has 5 tenths and 0.45 has only 4 tenths, so 0.5 is larger even though it is shorter.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "0.45",
+      "recommended_prerequisite_check": "math.decimals_percents.decimal_place_value"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.multiplied_instead_of_divided",
+      "description": "Multiplies by the percentage when the whole is the unknown.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "If you know the part and the percentage, divide the part by the percentage written as a decimal. Multiplying gives a whole smaller than the part, which cannot be right.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "multiply the part by the percent",
+      "recommended_prerequisite_check": "math.decimals_percents.percent_of_number"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.multiply_by_percent_number",
+      "description": "Multiplies by the percent number itself rather than by its decimal form.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Convert the percentage first. To find 30% of an amount, multiply by 0.3, not by 30, or you get an answer a hundred times too big.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "30",
+      "recommended_prerequisite_check": "math.decimals_percents.percent_meaning"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.percent_moved_one_place",
+      "description": "Converts a percentage to a decimal by moving the point one place instead of two.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Percent means out of one hundred, so dividing by 100 moves the point two places. 7% is 0.07, not 0.7.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.7
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.place_holder_ignored",
+      "description": "Ignores a zero placeholder after the decimal point, reading 0.06 as 0.6.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Each place after the point is ten times smaller than the one before. The zero in 0.06 holds the tenths place, so the 6 sits in hundredths and the number is much smaller than 0.6.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.6,
+      "recommended_prerequisite_check": "math.number_foundations.place_value"
+    },
+    {
+      "misconception_id": "mc.math.decimals_percents.rounded_from_far_right",
+      "description": "Rounds using the last digit of the number rather than the digit after the rounding place.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Look only at the digit immediately to the right of the place you are rounding to. Digits further along do not vote.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "the last digit of the number",
+      "recommended_prerequisite_check": "math.number_foundations.rounding"
+    },
+    {
+      "misconception_id": "mc.math.fractions.add_numerators_and_denominators",
+      "description": "Adds numerators and denominators separately, so 1/5 + 2/5 becomes 3/10.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The denominator names the size of the pieces, and adding does not change that size. With fifths, 1 fifth plus 2 fifths is 3 fifths: add the numerators and keep the denominator.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "3/10",
+      "recommended_prerequisite_check": "math.fractions.fraction_meaning"
+    },
+    {
+      "misconception_id": "mc.math.fractions.added_to_both_parts",
+      "description": "Adds the same number to numerator and denominator and expects an equivalent fraction.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Equivalent fractions come from multiplying or dividing both parts by the same number, which keeps the ratio. Adding changes the ratio: 1/2 and 2/3 are not equal.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "it does make an equivalent fraction"
+    },
+    {
+      "misconception_id": "mc.math.fractions.bigger_denominator_bigger_fraction",
+      "description": "Judges a fraction larger because its denominator is larger.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A bigger denominator means the whole is cut into more, and therefore smaller, pieces. One third is smaller than one half, because thirds are smaller pieces than halves.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "1/3",
+      "recommended_prerequisite_check": "math.fractions.fraction_meaning"
+    },
+    {
+      "misconception_id": "mc.math.fractions.changed_denominator_only",
+      "description": "Scales the denominator to a common one but leaves the numerator unchanged.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Whatever you multiply the denominator by, you must multiply the numerator by too, or you have changed the value. To turn 1/2 into eighths, multiply both parts by 4 to get 4/8.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "leave it as 1",
+      "recommended_prerequisite_check": "math.fractions.equivalent_fractions"
+    },
+    {
+      "misconception_id": "mc.math.fractions.unequal_parts_as_fraction",
+      "description": "Names a fraction from a shape split into unequal parts, counting pieces rather than equal shares.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A fraction names equal parts of a whole. If the pieces are different sizes, one of them is not a quarter just because there are four. Check that every part is the same size first.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, it is 1/4"
+    },
+    {
+      "misconception_id": "mc.math.functions.reversed_coordinates",
+      "description": "Reads an ordered pair as (y, x), moving up before across.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The first number is always the horizontal move and the second the vertical one. For (3, 5) go 3 right and then 5 up.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "5 right and 3 up"
+    },
+    {
+      "misconception_id": "mc.math.integers.absolute_value_can_be_negative",
+      "description": "Believes absolute value can come out negative.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Absolute value is a distance from zero, and a distance is never negative. Both -7 and 7 are 7 away from zero, so both have absolute value 7.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes"
+    },
+    {
+      "misconception_id": "mc.math.integers.larger_digits_means_larger",
+      "description": "Compares negative numbers by their digits, so -8 is judged larger than -2.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "On a number line, further left is smaller. Negative numbers with bigger digits are further left, so -8 is less than -2. Picture the line before you compare.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "-8",
+      "recommended_prerequisite_check": "math.integers.negative_numbers"
+    },
+    {
+      "misconception_id": "mc.math.integers.neg_div_neg_is_negative",
+      "description": "Assumes dividing a negative by a negative gives a negative.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Division follows the same sign rule as multiplication. Two like signs give a positive result, so -12 divided by -3 is 4.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "negative",
+      "recommended_prerequisite_check": "math.integers.multiplying_integers"
+    },
+    {
+      "misconception_id": "mc.math.integers.neg_times_neg_is_negative",
+      "description": "Assumes multiplying two negatives keeps the answer negative.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Multiplying by a negative reverses direction. Reversing twice returns to the original direction, so a negative times a negative is positive: -3 x -4 = 12.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "negative"
+    },
+    {
+      "misconception_id": "mc.math.measurement.added_sides_for_area",
+      "description": "Adds the side lengths where area calls for multiplying them.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Area counts the squares that cover a shape, which is length multiplied by width. Adding the sides gives the distance round the edge, which is perimeter.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 14
+    },
+    {
+      "misconception_id": "mc.math.measurement.wrong_conversion_direction",
+      "description": "Converts in the wrong direction, so the number moves the opposite way to the unit.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Going to a smaller unit needs more of them, so multiply; going to a larger unit needs fewer, so divide. Check the answer against that expectation before writing it down.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "divide"
+    },
+    {
+      "misconception_id": "mc.math.mult_div.added_rows_and_columns",
+      "description": "Adds the number of rows and columns in an array instead of multiplying them.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An array has rows of equal size, so the total is rows multiplied by the number in each row. A 3 by 4 array has 3 groups of 4, which is 12, not 3 + 4.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 7
+    },
+    {
+      "misconception_id": "mc.math.numerical_structure.judged_by_first_digit",
+      "description": "Decides even or odd from the leading digit instead of the last digit.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Only the ones digit decides. A number is even when it ends in 0, 2, 4, 6, or 8, whatever the other digits are. 34 is even because it ends in 4.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "odd"
+    },
+    {
+      "misconception_id": "mc.math.numerical_structure.one_is_prime",
+      "description": "Counts 1 as prime, because it appears to have no factors other than itself.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A prime has exactly two different factors, 1 and itself. The number 1 has only one factor, so it is neither prime nor composite. The smallest prime is 2.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "prime"
+    },
+    {
+      "misconception_id": "mc.math.numerical_structure.strict_left_to_right",
+      "description": "Evaluates strictly left to right, ignoring that multiplication and division bind before addition and subtraction.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Work through brackets first, then multiplication and division left to right, then addition and subtraction left to right. In 2 + 3 x 4 the multiplication happens first, giving 14, not 20.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "2 + 3"
+    },
+    {
+      "misconception_id": "mc.math.place_value.face_value",
+      "description": "Reads a digit at its face value instead of its place value, so the 5 in 57 is treated as 5 rather than 50.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A digit's value depends on the column it sits in. In 57 the 5 is in the tens column, so it is worth 5 tens, or 50. Say the column name aloud as you read each digit.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 5
+    },
+    {
+      "misconception_id": "mc.math.ratios.reversed_order",
+      "description": "Writes a ratio in the opposite order to the one the question names.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A ratio keeps the order of the things being compared. If it asks for red to blue, the red count comes first: 3 red and 2 blue is 3:2, not 2:3.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "2:3"
+    },
+    {
+      "misconception_id": "mc.math.rounding.always_round_up",
+      "description": "Rounds up regardless of the deciding digit, instead of comparing it with 5.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Rounding looks at the digit just to the right of the place you are rounding to. If it is 5 or more you round up; if it is 4 or less you round down. 64 rounds to 60 because the 4 is less than 5.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 70,
+      "recommended_prerequisite_check": "math.number_foundations.place_value"
+    },
+    {
+      "misconception_id": "mc.science.data.assumed_unit_gridline",
+      "description": "Assumes each gridline is one unit without reading the axis scale.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Check the scale before reading any value. If each square is 2 units, treating it as 1 halves every value you take off the graph.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "nothing changes"
+    },
+    {
+      "misconception_id": "mc.science.data.claimed_proof",
+      "description": "Claims an experiment proves a hypothesis.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Data can support or fail to support a hypothesis, but a single experiment cannot prove it. Confidence grows as independent results agree.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "proof requires more decimal places"
+    },
+    {
+      "misconception_id": "mc.science.data.correlation_implies_causation",
+      "description": "Concludes from a scatter plot that one variable causes the other.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A trend in a scatter plot shows association. Ice cream sales and sunburn rise together because both follow hot weather, not because one causes the other.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "ice cream causes sunburn"
+    },
+    {
+      "misconception_id": "mc.science.data.delete_outlier_silently",
+      "description": "Deletes an outlier without investigating it.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An outlier may be a recording mistake or a real and interesting result. Investigate the cause and repeat the measurement; removing points silently hides evidence.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "delete it immediately"
+    },
+    {
+      "misconception_id": "mc.science.data.fluctuation_as_trend",
+      "description": "Reads a single dip or spike as a change in the overall trend.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A trend is the direction of the data as a whole. One point moving against it is usually normal variation; look at the shape across the whole range.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "now decreasing"
+    },
+    {
+      "misconception_id": "mc.science.data.line_between_categories",
+      "description": "Joins the tops of bars with a line, implying values between separate categories.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Bar graphs compare separate categories, and there is nothing in between them to plot. Lines are for data that changes continuously, such as over time.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "the line is the wrong color"
+    },
+    {
+      "misconception_id": "mc.science.data.missing_units_in_table",
+      "description": "Accepts a data table whose columns carry no units.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A number without a unit is ambiguous: 5 could be seconds or minutes. Every measured column needs its unit in the heading.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "nothing is wrong"
+    },
+    {
+      "misconception_id": "mc.science.data.numeric_label_as_numerical",
+      "description": "Classifies a numeric label, such as a room number, as numerical data.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Numerical data measures a quantity you could sensibly average. A label that happens to be written as a number is categorical: averaging room numbers means nothing.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, because it is a number"
+    },
+    {
+      "misconception_id": "mc.science.data.straight_line_means_proportional",
+      "description": "Treats any straight-line graph as showing a proportional relationship.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A proportional relationship is a straight line through the origin, so that doubling one quantity doubles the other. A straight line with an intercept is linear but not proportional.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, because it is straight"
+    },
+    {
+      "misconception_id": "mc.science.experiments.averaging_fixes_systematic",
+      "description": "Expects averaging repeated trials to remove a systematic error.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Averaging cancels random scatter, but a systematic error pushes every reading the same way, so the average is off by the same amount. Find and fix the cause, for example by recalibrating.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "by repeating trials and averaging",
+      "recommended_prerequisite_check": "science.experiments.repeated_trials"
+    },
+    {
+      "misconception_id": "mc.science.experiments.multiple_independent_variables",
+      "description": "Changes more than one variable at a time and still expects a clear conclusion.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "If two things change together you cannot tell which caused the effect. Change one variable and hold the rest constant.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "there is no problem"
+    },
+    {
+      "misconception_id": "mc.science.experiments.no_control_group",
+      "description": "Draws a conclusion from a treated group with nothing to compare it against.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Without an untreated control you cannot know what would have happened anyway. The control is what makes the comparison meaningful.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "there is no flaw"
+    },
+    {
+      "misconception_id": "mc.science.experiments.single_trial_conclusion",
+      "description": "Concludes from a single trial.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "One trial can be unusual by chance. Repeating and comparing shows whether the result is reliable or a one-off.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "there is no problem"
+    },
+    {
+      "misconception_id": "mc.science.experiments.swapped_variables",
+      "description": "Swaps the independent and dependent variables.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The independent variable is the one you deliberately change; the dependent variable is what you measure in response. Ask which one you set before the experiment began.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "independent: leaf count; dependent: light level",
+      "recommended_prerequisite_check": "science.experiments.independent_variables"
+    },
+    {
+      "misconception_id": "mc.science.measurement.counted_leading_zeros",
+      "description": "Counts leading zeros as significant figures, so 0.0025 appears to have four.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Zeros before the first non-zero digit only locate the decimal point. In 0.0025 only the 2 and 5 are significant, so there are two significant figures.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 4
+    },
+    {
+      "misconception_id": "mc.science.measurement.heat_equals_temperature",
+      "description": "Uses heat and temperature interchangeably.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Temperature measures how hot something is; heat is energy moving from hotter to cooler. A large warm object can hold more heat than a small hot one.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "they are the same thing"
+    },
+    {
+      "misconception_id": "mc.science.measurement.mass_equals_weight",
+      "description": "Treats mass and weight as the same, so mass is expected to change with gravity.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Mass is the amount of matter and does not change with location. Weight is the pull of gravity on that mass, so weight changes on the Moon while mass stays the same.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "it decreases"
+    },
+    {
+      "misconception_id": "mc.science.measurement.read_top_of_meniscus",
+      "description": "Reads a liquid volume at the top of the curved surface.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Read at the bottom of the meniscus with your eye level with it. Reading from above or at the top of the curve gives a value that is consistently too high.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "at the top of the meniscus"
+    },
+    {
+      "misconception_id": "mc.science.measurement.wrong_conversion_direction",
+      "description": "Expects the number to grow when converting to a larger unit.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Larger units need fewer of them, so the number gets smaller. Converting 500 m to kilometres gives 0.5 km. Check that the size of the quantity has not changed.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "makes it smaller"
+    },
+    {
+      "misconception_id": "mc.science.thinking.correlation_implies_causation",
+      "description": "Reads a correlation as proof that one variable causes the other.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Two things can rise together because a third thing drives both, or by coincidence. Only a controlled experiment can support a claim about cause.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "one definitely causes the other"
+    },
+    {
+      "misconception_id": "mc.science.thinking.model_must_be_exact",
+      "description": "Judges a model wrong because it simplifies, expecting it to match reality exactly.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A model deliberately leaves things out so that the important relationship stands out. It is judged by whether it is useful and predicts well, not by whether it is complete.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "True"
+    },
+    {
+      "misconception_id": "mc.science.thinking.restated_observation",
+      "description": "Accepts a restatement of the observation as an explanation, so a genuinely causal explanation looks weak by comparison.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An explanation must give a cause beyond the observation itself. Saying ice melted because it stopped being frozen only repeats what happened; naming heat conduction explains it.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "The ice melted faster on metal because metal conducts heat well."
+    }
+  ]
+}

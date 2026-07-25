@@ -5,7 +5,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { LearningEvent } from '@learn/domain';
-import { answeredOn, currentStreak, selectTodaysSession } from '@learn/learning-engine';
+import {
+  answeredOn,
+  currentStreak,
+  projectMisconceptions,
+  selectTodaysSession,
+} from '@learn/learning-engine';
 import { useOptionalLearner } from '../state/LearnerContext.js';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { useProgress } from '../state/ProgressContext.js';
@@ -33,7 +38,15 @@ export function TodayPanel(): JSX.Element | null {
   const done = answeredOn(events, now);
   const streak = currentStreak(events, now);
   const pct = goal > 0 ? Math.min(100, Math.round((done / goal) * 100)) : 0;
-  const session = selectTodaysSession(progress, pkg.graph, pkg.order, now);
+  // Passing the misconception projection lets a skill the learner keeps getting
+  // wrong the same way outrank the frontier as the next thing to do (Phase 17).
+  const session = selectTodaysSession(
+    progress,
+    pkg.graph,
+    pkg.order,
+    now,
+    projectMisconceptions(events),
+  );
   const nextTitle = session.nextSkill
     ? (pkg.graph.skills.get(session.nextSkill)?.title ?? session.nextSkill)
     : null;

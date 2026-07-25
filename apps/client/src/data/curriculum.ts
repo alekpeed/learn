@@ -7,6 +7,7 @@ import { loadCoursePackage, type LoadResult } from '@learn/curriculum';
 
 import manifest from '../../../../content/mvp/manifest.json';
 import courses from '../../../../content/mvp/courses.json';
+import misconceptions from '../../../../content/mvp/misconceptions.json';
 import numberFoundations from '../../../../content/mvp/units/number_foundations.json';
 import addSub from '../../../../content/mvp/units/add_sub.json';
 import multDiv from '../../../../content/mvp/units/mult_div.json';
@@ -54,5 +55,6 @@ export function loadSampleCurriculum(): LoadResult {
     skills: units.flatMap((u) => u.skills),
     lessons: units.flatMap((u) => u.lessons),
     questions: units.flatMap((u) => u.questions),
+    misconceptions: misconceptions.misconceptions,
   });
 }

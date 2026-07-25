@@ -1071,7 +1071,7 @@
       },
       "common_wrong_answers": [
         {
-          "value": "The ice melted because it stopped being frozen.",
+          "value": "The ice melted faster on metal because metal conducts heat well.",
           "misconception_id": "mc.science.thinking.restated_observation"
         }
       ]

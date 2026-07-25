@@ -55,6 +55,21 @@ shipped on top of it. Everything is committed and pushed.
   off by default; can never write verified state (DEC-005/010); verified fallback.
 - Release: progress export/import, offline handling, accessibility audit (axe) across all
   screens, split cacheable bundle, deployment config, full acceptance checklist.
+- **Phase 17 - misconception diagnosis & remediation:** content tagged 66 questions with
+  `common_wrong_answers`, but **the practice controller never passed them to `diagnose()`**,
+  so the entire declared-misconception branch was dead in the running app. That is now
+  wired, and the diagnosis (`misconception_id`, `diagnosis_category`) is written onto the
+  `answer_submitted` payload - both optional, so pre-Phase-17 events project as "not
+  diagnosed" rather than erroring. New pieces: a **57-record misconception catalog**
+  (`content/mvp/misconceptions.json`) giving every tagged slip a corrective explanation and,
+  for 15 of them, a prerequisite worth re-checking; a `projectMisconceptions` projection
+  (pure fold, `RECURRENCE_THRESHOLD` 2, cleared by `CLEARING_STREAK` 2 correct answers on the
+  skill); a `RemediationNote` under wrong-answer feedback; a **Sticking points** card on
+  Progress; and remediation skills outranking the frontier in `selectTodaysSession`. The
+  loader now **rejects** a question naming a misconception with no catalog record, a
+  duplicate record, or a record pointing at an unknown skill. One content bug fixed:
+  `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
+  answer, which could never fire; a loader test now guards against that class of bug.
 - **Dark mode:** an `accessibility_settings.theme` of `system` (default) / `light` / `dark`,
   persisted in the event log like every other setting. Implemented purely as CSS custom
   properties - `LearnerContext` writes `data-theme` on `<html>` and `styles.css` resolves it,

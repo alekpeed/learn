@@ -28,6 +28,12 @@ export interface UsePracticeOptions {
   learnerId: string | null;
   repository?: PracticeRepository;
   now?: () => number;
+  /**
+   * Called after an attempt reaches the event log. Projections derived from the
+   * log (progress, misconceptions) are stale until they re-read it, so a caller
+   * that displays them passes its refresh here.
+   */
+  onAttemptRecorded?: () => void;
 }
 
 export interface UsePractice extends PracticeState {
@@ -41,6 +47,7 @@ export function usePractice({
   learnerId,
   repository = defaultRepo,
   now = () => Date.now(),
+  onAttemptRecorded,
 }: UsePracticeOptions): UsePractice {
   const [state, setState] = useState<PracticeState>({
     attemptNumber: 1,
@@ -65,6 +72,9 @@ export function usePractice({
             validator: question.validator as ValidatorType,
             submitted: value,
             answer_spec: question.answer_spec,
+            // Without these the diagnoser can never match an authored wrong
+            // answer, which is the only path that names a misconception.
+            common_wrong_answers: question.common_wrong_answers,
             reason: outcome.reason,
           });
 
@@ -81,7 +91,12 @@ export function usePractice({
           response_time_ms: Math.max(0, now() - startedAt.current),
           dimensions: question.dimensions,
           is_transfer: question.transfer_flag ?? false,
+          // Recorded so the misconception projection can see recurrence across
+          // sessions; the event log is the only source of truth (DEC-006).
+          ...(diagnosis ? { diagnosis_category: diagnosis.category } : {}),
+          ...(diagnosis?.misconception_id ? { misconception_id: diagnosis.misconception_id } : {}),
         });
+        onAttemptRecorded?.();
       }
 
       setState((prev) => ({
@@ -92,7 +107,16 @@ export function usePractice({
         attemptNumber: outcome.correct ? prev.attemptNumber : prev.attemptNumber + 1,
       }));
     },
-    [state.solved, state.attemptNumber, state.revealedHints, question, learnerId, repository, now],
+    [
+      state.solved,
+      state.attemptNumber,
+      state.revealedHints,
+      question,
+      learnerId,
+      repository,
+      now,
+      onAttemptRecorded,
+    ],
   );
 
   const revealHint = useCallback(async () => {

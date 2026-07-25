@@ -18,8 +18,8 @@ skill graph in `content/mvp/`.
   documented topics authored - **130 skills, 1,121 questions, 16 of 16 units built**, every
   skill carrying at least 7 practice items. Grown from the original 41-skill,
   ~2-item-per-skill slice.
-- Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
-  study plans, richer dashboard).
+- Version 1 features: 5 of ~10 shipped (BYOK providers, notes, extra question types,
+  study plans, richer dashboard, misconception remediation).
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
@@ -169,11 +169,15 @@ answers grade through the existing deterministic validators.
 `03_VERSION_AND_SCOPE_PLAN.md` defines Version 1 as MVP plus a feature set; four are
 shipped. These are the rest, ordered from least to most architectural risk.
 
-### Phase 17 - Deeper misconception diagnosis & remediation [engine + ui]
+### Phase 17 - Deeper misconception diagnosis & remediation [engine + ui] - DONE
 
-Content already tags `misconception_id` / `common_wrong_answers`. Build the diagnosis layer:
-detect recurring misconceptions from the event log, surface targeted remediation, feed them
-into review selection. Pure projection over existing events.
+Shipped. The tagged wrong answers were never reaching the diagnoser, so this began by
+wiring `common_wrong_answers` through and recording the diagnosis on the attempt event.
+Added a 57-record misconception catalog with corrective explanations, a
+`projectMisconceptions` fold over the event log (recurring at 2, cleared by 2 correct
+answers on the skill), remediation under wrong-answer feedback, a Sticking points card on
+Progress, and remediation skills outranking the frontier in session selection. The loader
+now rejects questions referencing a misconception with no catalog entry.
 
 ### Phase 18 - Content administration & downloadable course modules [ui + engine]
 
