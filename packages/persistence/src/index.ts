@@ -7,3 +7,4 @@ export * from './practice-repository.js';
 export * from './notes-repository.js';
 export * from './id.js';
 export * from './module-store.js';
+export * from './sync.js';

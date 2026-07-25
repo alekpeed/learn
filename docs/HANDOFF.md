@@ -70,6 +70,20 @@ shipped on top of it. Everything is committed and pushed.
   duplicate record, or a record pointing at an unknown skill. One content bug fixed:
   `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
   answer, which could never fire; a loader test now guards against that class of bug.
+- **Phase 20 - optional sync & cross-device resume:** off by default; the app is complete
+  without it. `packages/persistence/src/sync.ts` has a tiny `SyncBackend` (pull/push) plus
+  `syncEvents`, an `InMemorySyncBackend`, and an `HttpSyncBackend`. **Merging is a set union
+  over the append-only log** - every event already carries a stable `event_id`, so there is
+  no last-writer-wins, no vector clock, and no merge policy to get wrong. That is why this
+  phase is small, and it is worth protecting: making any event mutable turns this back into a
+  distributed-systems problem. A failed sync leaves local data untouched and says so; a
+  half-completed sync reports what actually landed. Endpoint and token live in
+  `localStorage` next to the BYOK keys (DEC-015) and are **never** in the event log, with a
+  test asserting an export contains neither. **Honest limitation: no server is deployed.**
+  `HttpSyncBackend` is tested against a stubbed `fetch` (auth header, non-ok pull, missing
+  events array, malformed events dropped, rejected push) but has never run against a live
+  server. `syncEvents` also pulls the full remote log each time rather than using a
+  watermark, which is fine at this scale and would need revisiting for very long histories.
 - **Phase 19 - AI-assisted practice drafts, author-gated:** the tutor may PROPOSE practice
   items; it may not create them. `@learn/ai-gateway` gained only prompt-building and parsing
   (`buildDraftPrompt`, `parseDraftCandidates`) because that package depends on

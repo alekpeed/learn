@@ -77,3 +77,22 @@ test.describe('BYOK provider selection (DEC-015)', () => {
     await expect(page.getByText(/key is saved on this device/i)).toBeVisible();
   });
 });
+
+test.describe('optional sync (Phase 20)', () => {
+  test('is off by default and reveals nothing until enabled', async ({ page }) => {
+    await page.goto('/');
+    await page.getByLabel(/your name/i).fill('Ada');
+    await page.getByRole('button', { name: /start learning/i }).click();
+    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+
+    await page.goto('/settings');
+    const toggle = page.getByRole('checkbox', { name: /sync progress between/i });
+    await expect(toggle).not.toBeChecked();
+    await expect(page.getByLabel(/sync endpoint/i)).toHaveCount(0);
+
+    await toggle.check();
+    await expect(page.getByLabel(/sync endpoint/i)).toBeVisible();
+    // Nothing can be sent until there is somewhere to send it.
+    await expect(page.getByRole('button', { name: /sync now/i })).toBeDisabled();
+  });
+});

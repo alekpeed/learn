@@ -18,9 +18,10 @@ skill graph in `content/mvp/`.
   documented topics authored - **130 skills, 1,121 questions, 16 of 16 units built**, every
   skill carrying at least 7 practice items. Grown from the original 41-skill,
   ~2-item-per-skill slice.
-- Version 1 features: 7 of ~10 shipped (BYOK providers, notes, extra question types,
-  study plans, richer dashboard, misconception remediation, downloadable course modules,
-  author-gated AI practice drafts).
+- **Track C complete:** Version 1 feature set shipped (BYOK providers, notes, extra
+  question types, study plans, richer dashboard, misconception remediation, downloadable
+  course modules, author-gated AI practice drafts, optional sync). The only remaining
+  Track C work is standing up a real sync server.
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
@@ -199,13 +200,18 @@ per-item, and publishing rebuilds the whole course through the Phase 18 loader s
 AI-proposed content passes the same gate as hand-authored content. Stays within
 DEC-005/010.
 
-### Phase 20 - Optional cloud account, sync & cross-device resume [engine + service]
+### Phase 20 - Optional cloud account, sync & cross-device resume [engine + service] - DONE
 
-The largest V1 item and the first optional server dependency (Supabase available). An
-opt-in sync layer over the append-only event log; app stays fully functional offline and
-local-first. Preserves DEC-006/013/015. Disabled by default.
+Shipped, with one honest gap. A provider-neutral `SyncBackend` (pull/push) plus
+`syncEvents`, an in-memory reference backend, and an HTTP backend. Merging is a set union
+on `event_id`, so two devices that both worked offline simply end up with both sets of
+events and no conflict to resolve. Off by default; a failed sync never touches local data;
+credentials stay in client storage, never the log (DEC-015). **No server is deployed** -
+the HTTP backend is tested against a stubbed `fetch`, not a live endpoint, and
+`syncEvents` pulls the whole remote log rather than using a watermark. Standing up a real
+endpoint (Supabase or otherwise) is the remaining work.
 
-**Track C milestone:** Version 1 feature set complete.
+**Track C milestone reached:** the Version 1 feature set is complete.
 
 ---
 

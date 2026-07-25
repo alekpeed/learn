@@ -5,6 +5,7 @@ import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
 import { DataSettings } from '../components/DataSettings.js';
 import { AiTutorSettings } from '../components/AiTutorSettings.js';
+import { SyncSettings } from '../components/SyncSettings.js';
 import { ScreenState } from '../components/ScreenState.js';
 
 const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large', 'x-large'];
@@ -141,6 +142,17 @@ export function Settings(): JSX.Element {
             onChange={(changes) => updateSettings({ preferences: changes })}
           />
         )}
+      </fieldset>
+
+      <fieldset>
+        <legend>Sync</legend>
+        <SyncSettings
+          learnerId={learner.learner_id}
+          onSynced={async () => {
+            await reload();
+            await refresh();
+          }}
+        />
       </fieldset>
 
       <fieldset>
