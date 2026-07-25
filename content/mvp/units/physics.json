@@ -1,0 +1,2419 @@
+{
+  "skills": [
+    {
+      "skill_id": "physics.motion.speed",
+      "unit_id": "physics.motion",
+      "title": "Speed, Distance and Time",
+      "summary": "How fast something moves, and the three ways to rearrange the relationship.",
+      "objectives": [
+        "Compute speed from distance and time.",
+        "Rearrange to find distance or time."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "math.ratios.rates",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.measurement.unit_conversion",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.one_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "speed",
+          "definition": "Distance travelled divided by the time taken."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.acceleration",
+      "unit_id": "physics.motion",
+      "title": "Velocity and Acceleration",
+      "summary": "Direction matters, and changing velocity is acceleration.",
+      "objectives": [
+        "Distinguish speed from velocity.",
+        "Compute acceleration from a change in velocity."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "physics.motion.speed",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.integers.subtracting_integers",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "velocity",
+          "definition": "Speed together with a direction."
+        },
+        {
+          "term": "acceleration",
+          "definition": "The rate at which velocity changes."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.mass_weight",
+      "unit_id": "physics.motion",
+      "title": "Mass, Weight and Gravity",
+      "summary": "Why an astronaut's mass is unchanged on the Moon but their weight is not.",
+      "objectives": [
+        "Distinguish mass from weight.",
+        "Compute weight from mass and gravitational field strength."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.mass",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.multiply_divide_decimals",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "mass",
+          "definition": "The amount of matter in an object, measured in kilograms."
+        },
+        {
+          "term": "weight",
+          "definition": "The force of gravity on an object, measured in newtons."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.forces",
+      "unit_id": "physics.motion",
+      "title": "Forces and Newton's Laws",
+      "summary": "Balanced and unbalanced forces, and what each of the three laws says.",
+      "objectives": [
+        "Find a resultant force.",
+        "Apply F = ma.",
+        "Identify a Newton's third law pair."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "physics.motion.mass_weight",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "physics.motion.acceleration",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.integers.adding_integers",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "resultant force",
+          "definition": "The single force equivalent to all the forces acting together."
+        },
+        {
+          "term": "newton",
+          "definition": "The force that accelerates 1 kg at 1 metre per second squared."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.density",
+      "unit_id": "physics.motion",
+      "title": "Density",
+      "summary": "How much mass is packed into a given volume.",
+      "objectives": ["Compute density from mass and volume.", "Predict whether an object floats."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.measurement.volume",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.measurement.mass",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.rates",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "density",
+          "definition": "Mass divided by volume."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.work_power",
+      "unit_id": "physics.motion",
+      "title": "Work and Power",
+      "summary": "Energy transferred by a force, and how quickly it is transferred.",
+      "objectives": [
+        "Compute work done from force and distance.",
+        "Compute power from work and time."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "physics.motion.forces",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.rates",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "work",
+          "definition": "Energy transferred when a force moves an object along its own direction."
+        },
+        {
+          "term": "power",
+          "definition": "The rate at which energy is transferred."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.energy",
+      "unit_id": "physics.motion",
+      "title": "Energy Stores and Conservation",
+      "summary": "Kinetic and gravitational stores, and the rule that energy is never lost.",
+      "objectives": [
+        "Compute kinetic and gravitational potential energy.",
+        "Apply conservation of energy."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "physics.motion.work_power",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra2.exponent_rules",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "kinetic energy",
+          "definition": "The energy an object has because it is moving."
+        },
+        {
+          "term": "conservation of energy",
+          "definition": "Energy is never created or destroyed, only transferred."
+        }
+      ]
+    },
+    {
+      "skill_id": "physics.motion.waves",
+      "unit_id": "physics.motion",
+      "title": "Waves",
+      "summary": "Frequency, wavelength and the wave equation.",
+      "objectives": [
+        "Use the wave equation to find speed, frequency or wavelength.",
+        "Describe what each quantity measures."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "physics.motion.speed",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.two_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "frequency",
+          "definition": "How many complete waves pass a point each second, measured in hertz."
+        },
+        {
+          "term": "wavelength",
+          "definition": "The distance from one point on a wave to the same point on the next."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "physics.motion.speed.lesson",
+      "skill_id": "physics.motion.speed",
+      "title": "Speed, Distance and Time",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Find any one of speed, distance or time from the other two."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need rates, unit conversion, and one-step equations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Speed is just a rate: how much ground you cover for each unit of time. If you travel 100 metres in 20 seconds you cover 5 metres every second, so your speed is 5 metres per second. The units tell you the operation - 'metres per second' literally means metres divided by seconds."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "speed = distance / time. Rearranged: distance = speed x time, and time = distance / speed. The SI unit is the metre per second, written m/s."
+        },
+        {
+          "type": "worked_example",
+          "body": "A runner covers 100 m in 20 s. speed = 100 / 20 = 5 m/s. Check by going back: 5 m/s x 20 s = 100 m."
+        },
+        {
+          "type": "worked_example",
+          "body": "A car travels at 25 m/s for 12 s. distance = 25 x 12 = 300 m. Check: 300 / 12 = 25 m/s."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Multiplying when the question asks for speed. Read the units: m/s is a division, so distance goes on top and time underneath."
+        },
+        {
+          "type": "summary",
+          "body": "speed = distance / time. Rearrange by treating it as any other one-step equation."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.acceleration.lesson",
+      "skill_id": "physics.motion.acceleration",
+      "title": "Velocity and Acceleration",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Tell velocity from speed and compute an acceleration."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need speed, and subtracting integers including negatives."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Speed says how fast; velocity says how fast and which way. That distinction matters because a car going round a roundabout at a steady 10 m/s is changing direction constantly, so its velocity is changing even though its speed is not - and a changing velocity means it is accelerating."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "acceleration = change in velocity / time taken, written a = (v - u) / t where u is the starting velocity and v the final one. The SI unit is metres per second squared, m/s^2. A negative acceleration means slowing down."
+        },
+        {
+          "type": "worked_example",
+          "body": "A car speeds up from 5 m/s to 25 m/s in 4 s. a = (25 - 5) / 4 = 5 m/s^2. Check: starting at 5 and gaining 5 m/s each second for 4 s gives 5 + 20 = 25 m/s."
+        },
+        {
+          "type": "worked_example",
+          "body": "A train slows from 30 m/s to 10 m/s in 10 s. a = (10 - 30) / 10 = -2 m/s^2. The minus sign says it is slowing."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Dividing the final velocity by the time instead of the change in velocity. Acceleration is about the change, so subtract the starting velocity first."
+        },
+        {
+          "type": "summary",
+          "body": "Velocity carries a direction. Acceleration is change in velocity over time, and it can be negative."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.mass_weight.lesson",
+      "skill_id": "physics.motion.mass_weight",
+      "title": "Mass, Weight and Gravity",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Compute weight from mass, and explain why only one of them changes with location."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need mass as a measured quantity and decimal multiplication."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Mass counts how much stuff there is. Weight is how hard gravity pulls on that stuff. Take a 60 kg person to the Moon and they still contain exactly as much matter, so their mass is still 60 kg - but the Moon pulls about six times more weakly, so they weigh about a sixth as much."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "weight = mass x gravitational field strength, W = mg. Mass is in kilograms, weight is a force in newtons, and g is about 10 N/kg on Earth and about 1.6 N/kg on the Moon."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 5 kg bag on Earth: W = 5 x 10 = 50 N. Check by rearranging: 50 / 10 = 5 kg."
+        },
+        {
+          "type": "worked_example",
+          "body": "The same bag on the Moon: W = 5 x 1.6 = 8 N. The mass is still 5 kg; only the weight changed."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Giving a weight in kilograms. Kilograms measure mass; weight is a force and is measured in newtons."
+        },
+        {
+          "type": "summary",
+          "body": "Mass is fixed and in kilograms. Weight is a force in newtons and depends on where you are."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.forces.lesson",
+      "skill_id": "physics.motion.forces",
+      "title": "Forces and Newton's Laws",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Combine forces, use F = ma, and recognise an action-reaction pair."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need weight, acceleration, and adding positive and negative numbers."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Forces add up, and only the leftover matters. If two people push a box in opposite directions with 30 N and 20 N, the box behaves exactly as if a single 10 N force acted in the stronger direction. When the leftover is zero, the motion does not change at all - which is why a car at a steady speed has zero resultant force even though the engine is working hard."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "First law: with no resultant force, an object stays at rest or keeps moving at constant velocity. Second law: F = ma. Third law: every force has an equal and opposite force on the other object."
+        },
+        {
+          "type": "worked_example",
+          "body": "Forces of 30 N right and 20 N left: resultant = 30 - 20 = 10 N right. On a 5 kg box, a = F / m = 10 / 5 = 2 m/s^2."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 2 kg ball accelerating at 3 m/s^2 needs F = ma = 2 x 3 = 6 N. Check: 6 / 2 = 3 m/s^2."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Assuming steady motion needs a resultant force. It does not - a constant velocity means the forces are balanced, and the engine force is exactly cancelled by friction and drag."
+        },
+        {
+          "type": "summary",
+          "body": "Add forces with their directions. F = ma. Every force comes in a pair acting on two different objects."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.density.lesson",
+      "skill_id": "physics.motion.density",
+      "title": "Density",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Compute density and use it to compare materials."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need volume, mass, and rates."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A kilogram of lead and a kilogram of feathers have the same mass, but the feathers fill a room and the lead fits in your hand. Density captures that difference: it is the mass packed into each unit of volume, so it describes the material rather than the lump."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "density = mass / volume. Common units are grams per cubic centimetre (g/cm^3) or kilograms per cubic metre. Water has a density of 1 g/cm^3, and an object less dense than water floats in it."
+        },
+        {
+          "type": "worked_example",
+          "body": "A block of mass 60 g and volume 20 cm^3 has density 60 / 20 = 3 g/cm^3. Check: 3 x 20 = 60 g."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 40 cm^3 sample of density 0.8 g/cm^3 has mass 0.8 x 40 = 32 g, and floats in water because 0.8 is less than 1."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Assuming a heavier object is denser. A large light object can outweigh a small dense one; only the mass per unit volume decides."
+        },
+        {
+          "type": "summary",
+          "body": "density = mass / volume. Less dense than water means it floats."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.work_power.lesson",
+      "skill_id": "physics.motion.work_power",
+      "title": "Work and Power",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Compute work done and power, and tell the two apart."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need forces and rates."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Work is how much energy a force transfers; power is how fast it does so. Carrying a load upstairs slowly and running it up does exactly the same work - but running takes less time, so it needs more power."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "work done = force x distance moved in the direction of the force, W = Fd, measured in joules. power = work done / time, P = W / t, measured in watts. One watt is one joule per second."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 20 N force moves a crate 5 m: W = 20 x 5 = 100 J. Check: 100 / 5 = 20 N."
+        },
+        {
+          "type": "worked_example",
+          "body": "If that took 4 s, the power is 100 / 4 = 25 W. Doing it in 2 s instead would need 50 W for exactly the same 100 J of work."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Confusing work with power. Work does not mention time at all; power is work per second."
+        },
+        {
+          "type": "summary",
+          "body": "W = Fd in joules. P = W / t in watts. Same work in less time means more power."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.energy.lesson",
+      "skill_id": "physics.motion.energy",
+      "title": "Energy Stores and Conservation",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Compute the two main energy stores and track energy through a transfer."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need work and power, and squaring numbers."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Energy moves between stores but the total never changes. A ball held above the ground has a gravitational store; let go, and that store empties into a kinetic one as it speeds up. At every instant the two add to the same total, which is what makes the idea so useful for prediction."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "kinetic energy = (1/2) x mass x velocity squared, KE = (1/2)mv^2. gravitational potential energy = mass x g x height, GPE = mgh. Both are measured in joules."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 4 kg object at 3 m/s has KE = 0.5 x 4 x 9 = 18 J. Note the velocity is squared, so doubling the speed quadruples the energy."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 2 kg ball 5 m up, with g = 10, has GPE = 2 x 10 x 5 = 100 J. Dropped, it arrives with 100 J of kinetic energy, so 0.5 x 2 x v^2 = 100 gives v^2 = 100 and v = 10 m/s."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Forgetting to square the velocity, or squaring the whole expression. Only v is squared, and the half applies afterwards."
+        },
+        {
+          "type": "summary",
+          "body": "KE = (1/2)mv^2, GPE = mgh, and the total is conserved through a transfer."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "physics.motion.waves.lesson",
+      "skill_id": "physics.motion.waves",
+      "title": "Waves",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Apply the wave equation in all three directions."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need speed and two-step equations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "If ten waves pass you each second and each is two metres long, then twenty metres of wave went past in that second - so the wave travels at 20 m/s. That reasoning is the whole wave equation: speed is how many per second times how long each one is."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "wave speed = frequency x wavelength, v = f x lambda. Frequency is in hertz (waves per second), wavelength in metres, speed in metres per second."
+        },
+        {
+          "type": "worked_example",
+          "body": "A wave of frequency 10 Hz and wavelength 2 m travels at 10 x 2 = 20 m/s. Check: 20 / 2 = 10 Hz."
+        },
+        {
+          "type": "worked_example",
+          "body": "A 340 m/s sound wave with frequency 170 Hz has wavelength 340 / 170 = 2 m."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Adding frequency and wavelength. The relationship is a product, which the units confirm: waves per second times metres per wave leaves metres per second."
+        },
+        {
+          "type": "summary",
+          "body": "v = f x lambda. Rearrange to find whichever quantity is missing."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "physics.motion.speed.q1",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A runner covers 100 m in 20 s. What is the runner's speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Speed is distance divided by time."
+        },
+        {
+          "level": 2,
+          "text": "Work out 100 divided by 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "speed = 100 / 20 = 5 m/s. Check by multiplying back: 5 x 20 = 100 m.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 0.2,
+          "misconception_id": "mc.physics.motion.divided_time_by_distance"
+        },
+        {
+          "value": 2000,
+          "misconception_id": "mc.physics.motion.multiplied_to_find_speed"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.speed.q2",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A car travels at a steady 25 m/s for 12 s. How far does it travel, in metres?",
+      "answer_spec": {
+        "correct_answer": 300
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to distance = speed x time."
+        },
+        {
+          "level": 2,
+          "text": "Work out 25 x 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "distance = 25 x 12 = 300 m. Check: 300 / 12 = 25 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.speed.q3",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A cyclist travels 240 m at a steady 8 m/s. How long does the journey take, in seconds?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to time = distance / speed."
+        },
+        {
+          "level": 2,
+          "text": "Work out 240 divided by 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "time = 240 / 8 = 30 s. Check: 8 x 30 = 240 m.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.speed.q4",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A walker covers 1500 m in 300 s. What is the average speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the distance by the time."
+        },
+        {
+          "level": 2,
+          "text": "1500 divided by 300."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "speed = 1500 / 300 = 5 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.speed.q5",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A car is travelling at 72 kilometres per hour. What is that speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One kilometre is 1000 m and one hour is 3600 s."
+        },
+        {
+          "level": 2,
+          "text": "Multiply by 1000, then divide by 3600."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "72 km/h = 72 x 1000 / 3600 = 20 m/s. Check by converting back: 20 x 3600 / 1000 = 72 km/h.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.speed.q6",
+      "skill_id": "physics.motion.speed",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A journey of 400 m takes 50 s. Which calculation gives the average speed?",
+      "answer_spec": {
+        "correct_answer": "400 divided by 50"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look at what the unit m/s is telling you."
+        },
+        {
+          "level": 2,
+          "text": "Per means divided by."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Speed in m/s is metres divided by seconds, so it is 400 / 50 = 8 m/s.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["400 divided by 50", "50 divided by 400", "400 multiplied by 50", "400 plus 50"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "50 divided by 400",
+          "misconception_id": "mc.physics.motion.divided_time_by_distance"
+        },
+        {
+          "value": "400 multiplied by 50",
+          "misconception_id": "mc.physics.motion.multiplied_to_find_speed"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.speed.q7",
+      "skill_id": "physics.motion.speed",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A runner covers 100 m in 10 s, then another 100 m in 40 s. What is the average speed for the whole 200 m, in metres per second?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Average speed uses the total distance and the total time."
+        },
+        {
+          "level": 2,
+          "text": "200 m in 50 s altogether."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Total distance 200 m in total time 50 s gives 200 / 50 = 4 m/s. Averaging the two speeds (10 and 2.5) would give 6.25 m/s, which is wrong because more time was spent going slowly.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 6.25,
+          "misconception_id": "mc.physics.motion.averaged_the_speeds"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.speed.q8",
+      "skill_id": "physics.motion.speed",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A car's speedometer reads 30 m/s at one instant. What does that tell you?",
+      "answer_spec": {
+        "correct_answer": "Its speed at that moment, not necessarily its average"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A speedometer updates continuously."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether it knows anything about the rest of the journey."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A speedometer shows instantaneous speed - the speed right now. Average speed for a journey needs the total distance and total time, which the speedometer cannot know.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Its speed at that moment, not necessarily its average",
+          "Its average speed for the whole journey",
+          "The distance it has travelled",
+          "How long the journey will take"
+        ]
+      }
+    },
+    {
+      "question_id": "physics.motion.acceleration.q1",
+      "skill_id": "physics.motion.acceleration",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A car speeds up from 5 m/s to 25 m/s in 4 s. What is its acceleration in metres per second squared?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the change in velocity first."
+        },
+        {
+          "level": 2,
+          "text": "(25 - 5) divided by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "a = (25 - 5) / 4 = 20 / 4 = 5 m/s^2. Check: gaining 5 m/s each second for 4 s takes 5 m/s up to 25 m/s.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 6.25,
+          "misconception_id": "mc.physics.motion.used_final_velocity_not_change"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.acceleration.q2",
+      "skill_id": "physics.motion.acceleration",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A train slows from 30 m/s to 10 m/s in 10 s. What is its acceleration in metres per second squared?",
+      "answer_spec": {
+        "correct_answer": -2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The velocity decreased, so the change is negative."
+        },
+        {
+          "level": 2,
+          "text": "(10 - 30) divided by 10."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "a = (10 - 30) / 10 = -20 / 10 = -2 m/s^2. The negative sign means it is slowing down.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 2,
+          "misconception_id": "mc.physics.motion.dropped_the_negative_sign"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.acceleration.q3",
+      "skill_id": "physics.motion.acceleration",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A cyclist starts from rest and reaches 18 m/s in 6 s. What is the acceleration in metres per second squared?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Starting from rest means the starting velocity is 0."
+        },
+        {
+          "level": 2,
+          "text": "(18 - 0) divided by 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "a = (18 - 0) / 6 = 3 m/s^2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.acceleration.q4",
+      "skill_id": "physics.motion.acceleration",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An object moving at 4 m/s accelerates at 3 m/s squared for 5 s. What is its final velocity in metres per second?",
+      "answer_spec": {
+        "correct_answer": 19
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to v = u + a x t."
+        },
+        {
+          "level": 2,
+          "text": "4 + 3 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "v = u + at = 4 + 3 x 5 = 19 m/s. Check: (19 - 4) / 5 = 3 m/s^2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.acceleration.q5",
+      "skill_id": "physics.motion.acceleration",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A car drives round a circular track at a steady 15 m/s. Is it accelerating?",
+      "answer_spec": {
+        "correct_answer": "Yes, because its direction is changing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Acceleration is a change in velocity, not just speed."
+        },
+        {
+          "level": 2,
+          "text": "Velocity includes direction."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Velocity includes direction, and going round a circle changes the direction continuously. So the velocity changes even though the speed does not, which means the car is accelerating.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Yes, because its direction is changing",
+          "No, because its speed is constant",
+          "No, because it returns to where it started",
+          "Only when it is on the straight part"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "No, because its speed is constant",
+          "misconception_id": "mc.physics.motion.acceleration_needs_speed_change"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.acceleration.q6",
+      "skill_id": "physics.motion.acceleration",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which quantity includes a direction as well as a size?",
+      "answer_spec": {
+        "correct_answer": "Velocity"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One of these is speed plus something extra."
+        },
+        {
+          "level": 2,
+          "text": "Which one would change if you turned around?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Velocity is speed together with a direction. Speed, distance and time are sizes only.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Velocity", "Speed", "Distance", "Time"]
+      }
+    },
+    {
+      "question_id": "physics.motion.acceleration.q7",
+      "skill_id": "physics.motion.acceleration",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A ball is thrown upwards at 20 m/s and slows at 10 m/s squared. How many seconds until it stops rising?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It stops rising when its velocity reaches 0."
+        },
+        {
+          "level": 2,
+          "text": "Solve 20 - 10t = 0."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "The velocity falls from 20 m/s at 10 m/s each second, so it reaches zero after 20 / 10 = 2 s. Check: 20 - 10 x 2 = 0 m/s.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.acceleration.q8",
+      "skill_id": "physics.motion.acceleration",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "An object has a negative acceleration but a positive velocity. What is it doing?",
+      "answer_spec": {
+        "correct_answer": "Moving forwards and slowing down"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The sign of the velocity says which way it moves."
+        },
+        {
+          "level": 2,
+          "text": "The sign of the acceleration says whether the velocity is growing or shrinking."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Positive velocity means it is moving forwards; negative acceleration means that velocity is decreasing. So it moves forwards while slowing down.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Moving forwards and slowing down",
+          "Moving backwards and speeding up",
+          "Moving backwards and slowing down",
+          "Stationary"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q1",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "On Earth the gravitational field strength is 10 N/kg. What is the weight of a 5 kg bag, in newtons?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use weight = mass x gravitational field strength."
+        },
+        {
+          "level": 2,
+          "text": "5 x 10."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "W = mg = 5 x 10 = 50 N. Check: 50 / 10 = 5 kg.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q2",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "On the Moon the gravitational field strength is 1.6 N/kg. What is the weight of the same 5 kg bag, in newtons?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use the same formula with the Moon's value of g."
+        },
+        {
+          "level": 2,
+          "text": "5 x 1.6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "W = 5 x 1.6 = 8 N. The mass is still 5 kg; only the weight fell.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q3",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An astronaut has a mass of 70 kg on Earth. What is their mass on the Moon, in kilograms?",
+      "answer_spec": {
+        "correct_answer": 70
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mass counts matter, not gravity."
+        },
+        {
+          "level": 2,
+          "text": "Nothing was added or taken away on the journey."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mass is unchanged at 70 kg. Only the weight is smaller on the Moon, because the Moon's gravity is weaker.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 11.2,
+          "misconception_id": "mc.physics.motion.mass_changes_with_gravity"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q4",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An object weighs 300 N on Earth, where g is 10 N/kg. What is its mass in kilograms?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange W = mg to m = W / g."
+        },
+        {
+          "level": 2,
+          "text": "300 divided by 10."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "m = W / g = 300 / 10 = 30 kg. Check: 30 x 10 = 300 N.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q5",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which unit is used for weight?",
+      "answer_spec": {
+        "correct_answer": "Newtons"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Weight is a force."
+        },
+        {
+          "level": 2,
+          "text": "Forces are measured in the same unit as a push or a pull."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Weight is the force of gravity, so it is measured in newtons. Kilograms measure mass.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Newtons", "Kilograms", "Metres", "Joules"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Kilograms",
+          "misconception_id": "mc.physics.motion.mass_changes_with_gravity"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q6",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "On a planet where g is 2.5 N/kg, what is the weight of a 2 kg object, in newtons?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use W = mg with the planet's own value of g."
+        },
+        {
+          "level": 2,
+          "text": "2 x 2.5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "W = 2 x 2.5 = 5 N.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q7",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A 6 kg rock weighs 90 N on an unfamiliar planet. What is the gravitational field strength there, in newtons per kilogram?",
+      "answer_spec": {
+        "correct_answer": 15
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange W = mg to g = W / m."
+        },
+        {
+          "level": 2,
+          "text": "90 divided by 6."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "g = W / m = 90 / 6 = 15 N/kg, half again as strong as Earth's. Check: 6 x 15 = 90 N.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.mass_weight.q8",
+      "skill_id": "physics.motion.mass_weight",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A balance that compares an object against known masses is taken to the Moon. Does it still read correctly?",
+      "answer_spec": {
+        "correct_answer": "Yes, because gravity affects both sides equally"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what a balance actually compares."
+        },
+        {
+          "level": 2,
+          "text": "Both pans are in the same gravity."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "A balance compares the object with known masses, and weaker gravity pulls both sides down proportionally less, so they still balance at the same point. A spring scale, which measures force, would read differently.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Yes, because gravity affects both sides equally",
+          "No, everything would read one sixth as much",
+          "No, it would read six times as much",
+          "Only if it is recalibrated for newtons"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.forces.q1",
+      "skill_id": "physics.motion.forces",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A box is pushed with 30 N to the right and 20 N to the left. What is the resultant force in newtons to the right?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Forces in opposite directions subtract."
+        },
+        {
+          "level": 2,
+          "text": "30 - 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The resultant is 30 - 20 = 10 N to the right.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 50,
+          "misconception_id": "mc.physics.motion.added_opposing_forces"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.forces.q2",
+      "skill_id": "physics.motion.forces",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What resultant force in newtons is needed to accelerate a 2 kg ball at 3 metres per second squared?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use F = ma."
+        },
+        {
+          "level": 2,
+          "text": "2 x 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "F = ma = 2 x 3 = 6 N. Check: 6 / 2 = 3 m/s^2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.forces.q3",
+      "skill_id": "physics.motion.forces",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A resultant force of 10 N acts on a 5 kg box. What is its acceleration in metres per second squared?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange F = ma to a = F / m."
+        },
+        {
+          "level": 2,
+          "text": "10 divided by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "a = F / m = 10 / 5 = 2 m/s^2. Check: 5 x 2 = 10 N.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.forces.q4",
+      "skill_id": "physics.motion.forces",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A 48 N resultant force gives an object an acceleration of 4 metres per second squared. What is its mass in kilograms?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange F = ma to m = F / a."
+        },
+        {
+          "level": 2,
+          "text": "48 divided by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "m = F / a = 48 / 4 = 12 kg. Check: 12 x 4 = 48 N.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.forces.q5",
+      "skill_id": "physics.motion.forces",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A car travels along a straight road at a constant 20 m/s. What is the resultant force on it?",
+      "answer_spec": {
+        "correct_answer": "Zero"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Constant velocity means the motion is not changing."
+        },
+        {
+          "level": 2,
+          "text": "A resultant force would change the motion."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Constant velocity means zero resultant force. The engine's driving force is exactly balanced by friction and air resistance, so nothing is left over.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Zero", "Forwards and large", "Backwards", "Equal to the car's weight"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Forwards and large",
+          "misconception_id": "mc.physics.motion.steady_motion_needs_force"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.forces.q6",
+      "skill_id": "physics.motion.forces",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A book rests on a table. The table pushes up on the book. What is the Newton's third law partner to that force?",
+      "answer_spec": {
+        "correct_answer": "The book pushes down on the table"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A third law pair acts on two different objects."
+        },
+        {
+          "level": 2,
+          "text": "Swap the two objects and reverse the direction."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The pair is the book pushing down on the table. The book's weight is not the partner, because that is a force from the Earth on the book, acting on the same object.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The book pushes down on the table",
+          "The weight of the book",
+          "The table's weight",
+          "Friction on the book"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The weight of the book",
+          "misconception_id": "mc.physics.motion.third_law_pair_on_same_object"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.forces.q7",
+      "skill_id": "physics.motion.forces",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A 5 kg trolley is pushed with 30 N while friction resists with 10 N. What is its acceleration in metres per second squared?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Find the resultant force first."
+        },
+        {
+          "level": 2,
+          "text": "30 - 10 = 20 N, then divide by the mass."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "The resultant is 30 - 10 = 20 N, so a = 20 / 5 = 4 m/s^2. Check: 5 x 4 = 20 N of resultant force.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.forces.q8",
+      "skill_id": "physics.motion.forces",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why does a passenger lurch forwards when a bus brakes suddenly?",
+      "answer_spec": {
+        "correct_answer": "No backward force acts on them yet, so they keep moving"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about the first law."
+        },
+        {
+          "level": 2,
+          "text": "Ask what force is acting on the passenger while the bus slows."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The bus slows because of a braking force, but nothing has yet pushed the passenger backwards, so by the first law they keep moving at their original velocity until the seat or a handrail acts on them.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No backward force acts on them yet, so they keep moving",
+          "A forward force pushes them",
+          "Gravity increases when braking",
+          "The bus pushes them forwards"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.density.q1",
+      "skill_id": "physics.motion.density",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A block has a mass of 60 g and a volume of 20 cubic centimetres. What is its density in grams per cubic centimetre?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Density is mass divided by volume."
+        },
+        {
+          "level": 2,
+          "text": "60 divided by 20."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "density = 60 / 20 = 3 g/cm^3. Check: 3 x 20 = 60 g.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.density.q2",
+      "skill_id": "physics.motion.density",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A sample has a volume of 40 cubic centimetres and a density of 0.8 grams per cubic centimetre. What is its mass in grams?",
+      "answer_spec": {
+        "correct_answer": 32
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to mass = density x volume."
+        },
+        {
+          "level": 2,
+          "text": "0.8 x 40."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "mass = 0.8 x 40 = 32 g. Check: 32 / 40 = 0.8 g/cm^3.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.density.q3",
+      "skill_id": "physics.motion.density",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "An object has a mass of 90 g and a density of 9 grams per cubic centimetre. What is its volume in cubic centimetres?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to volume = mass / density."
+        },
+        {
+          "level": 2,
+          "text": "90 divided by 9."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "volume = 90 / 9 = 10 cm^3. Check: 9 x 10 = 90 g.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.density.q4",
+      "skill_id": "physics.motion.density",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Water has a density of 1 gram per cubic centimetre. Will a block of density 0.6 grams per cubic centimetre float or sink in water?",
+      "answer_spec": {
+        "correct_answer": "Float"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare the two densities."
+        },
+        {
+          "level": 2,
+          "text": "Less dense than water means it rises."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "0.6 g/cm^3 is less than water's 1 g/cm^3, so the block floats.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Float", "Sink", "Stay wherever it is placed", "It depends on its mass"]
+      }
+    },
+    {
+      "question_id": "physics.motion.density.q5",
+      "skill_id": "physics.motion.density",
+      "type": "decimal",
+      "difficulty": 4,
+      "prompt": "A liquid of mass 200 g occupies 250 cubic centimetres. What is its density in grams per cubic centimetre?",
+      "answer_spec": {
+        "correct_answer": 0.8,
+        "tolerance": 0.001
+      },
+      "validator": "decimal",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the mass by the volume."
+        },
+        {
+          "level": 2,
+          "text": "200 divided by 250."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "density = 200 / 250 = 0.8 g/cm^3, so it is less dense than water and would float on it.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.density.q6",
+      "skill_id": "physics.motion.density",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Object A has mass 10 g and volume 2 cubic centimetres. Object B has mass 30 g and volume 15 cubic centimetres. Which is denser?",
+      "answer_spec": {
+        "correct_answer": "Object A"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out each density before comparing."
+        },
+        {
+          "level": 2,
+          "text": "A is 10/2 and B is 30/15."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A has density 10 / 2 = 5 g/cm^3 and B has 30 / 15 = 2 g/cm^3, so A is denser despite being lighter.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Object A",
+          "Object B",
+          "They are equally dense",
+          "Object B, because it is heavier"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Object B, because it is heavier",
+          "misconception_id": "mc.physics.motion.heavier_means_denser"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.density.q7",
+      "skill_id": "physics.motion.density",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A metal cuboid measures 2 cm by 3 cm by 5 cm and has a mass of 240 g. What is its density in grams per cubic centimetre?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the volume of the cuboid first."
+        },
+        {
+          "level": 2,
+          "text": "2 x 3 x 5 = 30 cubic centimetres."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "The volume is 2 x 3 x 5 = 30 cm^3, so the density is 240 / 30 = 8 g/cm^3.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.density.q8",
+      "skill_id": "physics.motion.density",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A steel ship floats even though steel is about eight times denser than water. Why?",
+      "answer_spec": {
+        "correct_answer": "The hull encloses air, so the ship's overall density is low"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Floating depends on the average density of the whole object."
+        },
+        {
+          "level": 2,
+          "text": "Think about what is inside the hull."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Floating depends on the average density of the whole ship, hull and enclosed air together. That average is below water's density, even though the steel itself is far above it.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The hull encloses air, so the ship's overall density is low",
+          "Steel becomes lighter in water",
+          "The ship's engines hold it up",
+          "Salt water is denser than steel"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.work_power.q1",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A force of 20 N moves a crate 5 m in the direction of the force. How much work is done, in joules?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use work = force x distance."
+        },
+        {
+          "level": 2,
+          "text": "20 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "W = Fd = 20 x 5 = 100 J. Check: 100 / 5 = 20 N.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.work_power.q2",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "100 J of work is done in 4 s. What is the power, in watts?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Power is work divided by time."
+        },
+        {
+          "level": 2,
+          "text": "100 divided by 4."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "P = W / t = 100 / 4 = 25 W. Check: 25 x 4 = 100 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.work_power.q3",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A 15 N force drags a box 8 m along the floor. How much work is done, in joules?",
+      "answer_spec": {
+        "correct_answer": 120
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply the force by the distance."
+        },
+        {
+          "level": 2,
+          "text": "15 x 8."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "W = 15 x 8 = 120 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.work_power.q4",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "600 J of work moves an object 12 m. What force was applied, in newtons?",
+      "answer_spec": {
+        "correct_answer": 50
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange W = Fd to F = W / d."
+        },
+        {
+          "level": 2,
+          "text": "600 divided by 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "F = W / d = 600 / 12 = 50 N. Check: 50 x 12 = 600 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.work_power.q5",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A motor transfers 900 J of energy in 30 s. What is its power output, in watts?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the energy by the time."
+        },
+        {
+          "level": 2,
+          "text": "900 divided by 30."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "P = 900 / 30 = 30 W.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.work_power.q6",
+      "skill_id": "physics.motion.work_power",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Two people carry identical boxes up the same staircase. One takes 10 s and the other takes 20 s. Which statement is true?",
+      "answer_spec": {
+        "correct_answer": "They do equal work, but the faster one uses more power"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work depends on force and distance only."
+        },
+        {
+          "level": 2,
+          "text": "Power brings the time in."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The force and the distance are the same, so the work is the same. Power is work per second, so the person who finished in half the time used twice the power.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They do equal work, but the faster one uses more power",
+          "The faster one does more work",
+          "The slower one does more work",
+          "Both work and power are equal"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The faster one does more work",
+          "misconception_id": "mc.physics.motion.work_confused_with_power"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.work_power.q7",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A 25 kg crate is lifted 3 m where g is 10 N/kg. How much work is done against gravity, in joules?",
+      "answer_spec": {
+        "correct_answer": 750
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Work out the weight that must be lifted first."
+        },
+        {
+          "level": 2,
+          "text": "Weight is 25 x 10 = 250 N, lifted 3 m."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "The weight is 25 x 10 = 250 N, so the work is 250 x 3 = 750 J.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.work_power.q8",
+      "skill_id": "physics.motion.work_power",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How long does a 40 W lamp take to transfer 1200 J of energy, in seconds?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange P = W / t to t = W / P."
+        },
+        {
+          "level": 2,
+          "text": "1200 divided by 40."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "t = W / P = 1200 / 40 = 30 s. Check: 40 x 30 = 1200 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.energy.q1",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "What is the kinetic energy of a 4 kg object moving at 3 m/s, in joules?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use KE = half x mass x velocity squared."
+        },
+        {
+          "level": 2,
+          "text": "0.5 x 4 x 3 x 3."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "KE = 0.5 x 4 x 3^2 = 0.5 x 4 x 9 = 18 J.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 6,
+          "misconception_id": "mc.physics.motion.velocity_not_squared"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.energy.q2",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A 2 kg ball is held 5 m above the ground where g is 10 N/kg. What is its gravitational potential energy, in joules?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Use GPE = mass x g x height."
+        },
+        {
+          "level": 2,
+          "text": "2 x 10 x 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "GPE = mgh = 2 x 10 x 5 = 100 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.energy.q3",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "The same 2 kg ball is dropped from 5 m. Ignoring air resistance, what is its speed just before it lands, in metres per second?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "All the gravitational energy becomes kinetic energy."
+        },
+        {
+          "level": 2,
+          "text": "Set 0.5 x 2 x v^2 equal to 100 and solve for v."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The 100 J of gravitational store becomes 100 J of kinetic energy, so 0.5 x 2 x v^2 = 100 gives v^2 = 100 and v = 10 m/s.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.energy.q4",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "What is the kinetic energy of a 1000 kg car travelling at 20 m/s, in joules?",
+      "answer_spec": {
+        "correct_answer": 200000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Square the speed first."
+        },
+        {
+          "level": 2,
+          "text": "0.5 x 1000 x 400."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "KE = 0.5 x 1000 x 20^2 = 0.5 x 1000 x 400 = 200000 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.energy.q5",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A car's speed doubles from 10 m/s to 20 m/s. By what factor does its kinetic energy increase?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Kinetic energy depends on the square of the speed."
+        },
+        {
+          "level": 2,
+          "text": "Doubling something and squaring it multiplies by 2 x 2."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Squaring turns a factor of 2 into a factor of 4, so the kinetic energy quadruples. That is why stopping distances grow so quickly with speed.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 2,
+          "misconception_id": "mc.physics.motion.velocity_not_squared"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "physics.motion.energy.q6",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A 5 kg box is lifted to a shelf 12 m high where g is 10 N/kg. What is its gravitational potential energy, in joules?",
+      "answer_spec": {
+        "correct_answer": 600
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply mass, g and height."
+        },
+        {
+          "level": 2,
+          "text": "5 x 10 x 12."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "GPE = 5 x 10 x 12 = 600 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.energy.q7",
+      "skill_id": "physics.motion.energy",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A swinging pendulum gradually slows and stops. What happened to its energy?",
+      "answer_spec": {
+        "correct_answer": "It was transferred to the surroundings, mostly as heat"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Energy cannot be destroyed."
+        },
+        {
+          "level": 2,
+          "text": "Think about friction at the pivot and against the air."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Energy is conserved, so it was not lost. Friction and air resistance transferred it to the surroundings as heat, where it is too spread out to be useful.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It was transferred to the surroundings, mostly as heat",
+          "It was destroyed by friction",
+          "It disappeared when the pendulum stopped",
+          "It turned into mass"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "It was destroyed by friction",
+          "misconception_id": "mc.physics.motion.energy_destroyed_by_friction"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.energy.q8",
+      "skill_id": "physics.motion.energy",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A 5 kg object has 300 J of gravitational potential energy where g is 10 N/kg. How high is it, in metres?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange GPE = mgh to h = GPE / (mg)."
+        },
+        {
+          "level": 2,
+          "text": "300 divided by (5 x 10)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "h = 300 / (5 x 10) = 300 / 50 = 6 m. Check: 5 x 10 x 6 = 300 J.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.waves.q1",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A wave has a frequency of 10 Hz and a wavelength of 2 m. What is its speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply frequency by wavelength."
+        },
+        {
+          "level": 2,
+          "text": "10 x 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "v = f x lambda = 10 x 2 = 20 m/s. Check: 20 / 2 = 10 Hz.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 12,
+          "misconception_id": "mc.physics.motion.added_frequency_and_wavelength"
+        }
+      ]
+    },
+    {
+      "question_id": "physics.motion.waves.q2",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A sound wave travels at 340 m/s with a frequency of 170 Hz. What is its wavelength in metres?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to wavelength = speed / frequency."
+        },
+        {
+          "level": 2,
+          "text": "340 divided by 170."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "lambda = v / f = 340 / 170 = 2 m. Check: 170 x 2 = 340 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.waves.q3",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A wave travels at 100 m/s with a wavelength of 5 m. What is its frequency in hertz?",
+      "answer_spec": {
+        "correct_answer": 20
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rearrange to frequency = speed / wavelength."
+        },
+        {
+          "level": 2,
+          "text": "100 divided by 5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "f = v / lambda = 100 / 5 = 20 Hz. Check: 20 x 5 = 100 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.waves.q4",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A wave has a frequency of 50 Hz and a wavelength of 0.6 m. What is its speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Multiply frequency by wavelength."
+        },
+        {
+          "level": 2,
+          "text": "50 x 0.6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "v = 50 x 0.6 = 30 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.waves.q5",
+      "skill_id": "physics.motion.waves",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does a frequency of 25 hertz mean?",
+      "answer_spec": {
+        "correct_answer": "25 complete waves pass a point each second"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Hertz counts events per second."
+        },
+        {
+          "level": 2,
+          "text": "For a wave, the event is one complete wave passing."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "One hertz is one complete wave passing a point per second, so 25 Hz means 25 waves per second.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "25 complete waves pass a point each second",
+          "The wave is 25 m long",
+          "The wave travels at 25 m/s",
+          "The wave lasts 25 seconds"
+        ]
+      }
+    },
+    {
+      "question_id": "physics.motion.waves.q6",
+      "skill_id": "physics.motion.waves",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Two waves travel at the same speed, but one has a longer wavelength. How do their frequencies compare?",
+      "answer_spec": {
+        "correct_answer": "The longer wavelength has the lower frequency"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The speed is fixed, so the product of frequency and wavelength is fixed."
+        },
+        {
+          "level": 2,
+          "text": "If one factor grows, the other must shrink."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "With v fixed, f and lambda multiply to a constant, so a longer wavelength forces a lower frequency.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The longer wavelength has the lower frequency",
+          "The longer wavelength has the higher frequency",
+          "Their frequencies are equal",
+          "Frequency does not depend on wavelength"
+        ]
+      }
+    },
+    {
+      "question_id": "physics.motion.waves.q7",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Water waves pass a post twice every second with a wavelength of 1.5 m. What is their speed in metres per second?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Twice per second is a frequency of 2 Hz."
+        },
+        {
+          "level": 2,
+          "text": "2 x 1.5."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "v = 2 x 1.5 = 3 m/s.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "physics.motion.waves.q8",
+      "skill_id": "physics.motion.waves",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "A shout echoes off a cliff after 2 s. Sound travels at 340 m/s. How far away is the cliff, in metres?",
+      "answer_spec": {
+        "correct_answer": 340
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The sound travelled to the cliff and back in that time."
+        },
+        {
+          "level": 2,
+          "text": "Total distance is 340 x 2, but that covers the trip twice."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "In 2 s the sound covers 340 x 2 = 680 m, but that is there and back, so the cliff is 680 / 2 = 340 m away.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 680,
+          "misconception_id": "mc.physics.motion.echo_distance_not_halved"
+        }
+      ],
+      "transfer_flag": true
+    }
+  ]
+}

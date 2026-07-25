@@ -27,6 +27,9 @@ const UNITS = [
   'science_experiments',
   'science_measurement',
   'science_data',
+  'physics',
+  'chemistry',
+  'biology',
 ];
 
 interface Question {

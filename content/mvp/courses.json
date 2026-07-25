@@ -113,5 +113,50 @@
         "order": 4
       }
     ]
+  },
+  {
+    "course_id": "physics.core",
+    "subject_id": "physics",
+    "title": "Introductory Physics",
+    "description": "Motion, forces and energy, built on measurement and algebra.",
+    "version": "0.1.0",
+    "status": "draft",
+    "units": [
+      {
+        "unit_id": "physics.motion",
+        "title": "Motion, Forces and Energy",
+        "order": 1
+      }
+    ]
+  },
+  {
+    "course_id": "chemistry.core",
+    "subject_id": "chemistry",
+    "title": "Introductory Chemistry",
+    "description": "Matter, atoms and chemical reactions, built on the particle model.",
+    "version": "0.1.0",
+    "status": "draft",
+    "units": [
+      {
+        "unit_id": "chemistry.matter",
+        "title": "Matter, Atoms and Reactions",
+        "order": 1
+      }
+    ]
+  },
+  {
+    "course_id": "biology.core",
+    "subject_id": "biology",
+    "title": "Introductory Biology",
+    "description": "Cells, genetics and ecosystems, built on scientific reasoning.",
+    "version": "0.1.0",
+    "status": "draft",
+    "units": [
+      {
+        "unit_id": "biology.life",
+        "title": "Cells, Genetics and Ecosystems",
+        "order": 1
+      }
+    ]
   }
 ]

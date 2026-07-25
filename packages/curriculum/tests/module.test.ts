@@ -38,6 +38,9 @@ const UNIT_FILES = [
   'units/science_experiments.json',
   'units/science_measurement.json',
   'units/science_data.json',
+  'units/physics.json',
+  'units/chemistry.json',
+  'units/biology.json',
 ];
 
 interface UnitFile {

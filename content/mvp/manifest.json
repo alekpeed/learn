@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "content_version": "1.3.0",
-  "courses": ["math.core", "science.core"],
+  "content_version": "1.4.0",
+  "courses": ["math.core", "science.core", "physics.core", "chemistry.core", "biology.core"],
   "generated_at": "2026-07-23T00:00:00Z",
-  "change_summary": "Adds the Precalculus unit (11 skills, 88 questions: domain and range, composition, inverse functions, polynomial behaviour, rational functions, exponentials, logarithms and their rules, exponential equations, sequences and series) and the Trigonometry unit (12 skills, 98 questions: right-triangle ratios, sine/cosine/tangent, finding sides and angles, applications, exact values from the special triangles, radians, the unit circle, reference angles, trig graphs and their transformations, and identities). Completes the arithmetic-to-trigonometry path. Introduces the exact_value question type for surds and multiples of pi."
+  "change_summary": "Phase 24: the first subject-matter science. Adds three new subjects, each with its own course and an introductory unit - Physics (motion, forces and energy: speed, acceleration, mass and weight, Newton's laws, density, work and power, energy stores, waves), Chemistry (matter, atoms and reactions: states of matter, atomic structure, elements and compounds, the periodic table, formulas, balancing equations, conservation of mass, acids and bases) and Biology (cells, genetics and ecosystems: life processes, cells, levels of organisation, photosynthesis and respiration, DNA and genes, inheritance, cell division, energy flow). 24 skills and 192 questions, all graded by the existing deterministic validators."
 }

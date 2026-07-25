@@ -298,10 +298,44 @@ figure/graph component remains a future enhancement rather than a blocker.
 Calculus would follow as a further course beyond this, and the remaining precalculus
 strands not needed for trigonometry (conics, vectors, polar coordinates) are unauthored.
 
-### Phase 24 - Sciences: Physics, Chemistry, Biology [content, later interactive]
+### Phase 24 - Sciences: Physics, Chemistry, Biology [content] - DONE
 
-Introductory units per subject using the existing pipeline. Interactive simulations are a
-separate, later capability.
+Shipped as **three new subjects, each with its own course and an introductory unit** - 24
+skills and 192 questions, taking the curriculum to **201 skills and 1,691 questions across
+22 unit files**. This is the first subject-matter science in the product; everything before
+it taught scientific method.
+
+Structured per the doc 05 hierarchy `Subject -> Course -> Unit -> Skill`, so physics,
+chemistry and biology are genuinely their own subjects rather than units bolted onto
+`science.core`. That differs from Phase 21's choice to keep Geometry inside `math.core`,
+and for a reason: geometry really is mathematics, whereas calling biology a unit of
+"Scientific Reasoning and Measurement" would have misnamed the course. Prerequisites still
+cross freely between courses, so the graph stays connected.
+
+- **`physics.core` / `physics.motion`** (8 skills, 64 questions): speed/distance/time,
+  velocity and acceleration, mass and weight, forces and Newton's laws, density, work and
+  power, energy stores and conservation, waves.
+- **`chemistry.core` / `chemistry.matter`** (8 skills, 64 questions): states of matter,
+  atomic structure, elements/compounds/mixtures, the periodic table, chemical formulas,
+  balancing equations, conservation of mass and relative formula mass, acids and bases.
+- **`biology.core` / `biology.life`** (8 skills, 64 questions): characteristics of living
+  things, cells, levels of organisation, photosynthesis and respiration, DNA and genes,
+  inheritance and Punnett squares, mitosis and meiosis, ecosystems and energy flow.
+
+**Content-only - no engine change.** Every item grades through the existing deterministic
+validators, so the new `exact_value` type from Phase 23 was the last one needed.
+
+Verification is by computation, not recall. The chemistry generator contains a formula
+parser that counts atoms itself, including bracketed groups, and every balanced equation is
+asserted to balance element by element on both sides; relative formula masses are summed
+from an atomic-mass table rather than typed. The biology generator enumerates all four
+gamete combinations to produce Punnett ratios, and computes chromosome counts from the
+division rules, asserting that meiosis halves and fertilisation restores. Physics quantities
+are each verified by rearranging the formula to recover an input. The generator refused to
+emit once during authoring, for a misconception record that no question cited - that check
+did its job.
+
+Interactive simulations remain a separate, later capability (Phase 25).
 
 ### Phase 25 - Platform & social tier [large, multi-project]
 

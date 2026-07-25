@@ -1,0 +1,2549 @@
+{
+  "skills": [
+    {
+      "skill_id": "biology.life.living_things",
+      "unit_id": "biology.life",
+      "title": "Characteristics of Living Things",
+      "summary": "What every living organism does, and why some lifelike things are not alive.",
+      "objectives": [
+        "List the life processes.",
+        "Decide whether something is living using evidence."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.observation",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.thinking.evidence",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "respiration",
+          "definition": "Releasing energy from food inside cells."
+        },
+        {
+          "term": "excretion",
+          "definition": "Removing the waste products made by the body's own reactions."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.cells",
+      "unit_id": "biology.life",
+      "title": "Cells and Their Parts",
+      "summary": "The basic unit of life, and what each structure does.",
+      "objectives": [
+        "Name cell structures and their functions.",
+        "Compare plant and animal cells."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.living_things",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.thinking.models",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "cell",
+          "definition": "The smallest unit that can carry out all the life processes."
+        },
+        {
+          "term": "organelle",
+          "definition": "A structure inside a cell with a particular job."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.organisation",
+      "unit_id": "biology.life",
+      "title": "Levels of Organisation",
+      "summary": "From a single cell up to a whole organism.",
+      "objectives": ["Put the levels of organisation in order.", "Give an example at each level."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.cells",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "tissue",
+          "definition": "A group of similar cells working together."
+        },
+        {
+          "term": "organ",
+          "definition": "Several tissues working together for one function."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.photosynthesis",
+      "unit_id": "biology.life",
+      "title": "Photosynthesis and Respiration",
+      "summary": "How plants make food, and how all living things release energy from it.",
+      "objectives": [
+        "State the inputs and outputs of photosynthesis.",
+        "Contrast photosynthesis with respiration."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.cells",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "chemistry.matter.balancing_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "photosynthesis",
+          "definition": "Making glucose from carbon dioxide and water using light energy."
+        },
+        {
+          "term": "chlorophyll",
+          "definition": "The green pigment in chloroplasts that absorbs light."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.dna_genes",
+      "unit_id": "biology.life",
+      "title": "DNA, Genes and Chromosomes",
+      "summary": "How instructions are stored and how they are nested.",
+      "objectives": ["Relate DNA, genes and chromosomes.", "State human chromosome numbers."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.cells",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "gene",
+          "definition": "A section of DNA coding for one characteristic."
+        },
+        {
+          "term": "chromosome",
+          "definition": "A long coiled molecule of DNA carrying many genes."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.inheritance",
+      "unit_id": "biology.life",
+      "title": "Inheritance and Punnett Squares",
+      "summary": "Predicting offspring from the parents' alleles.",
+      "objectives": ["Complete a monohybrid cross.", "Give the expected ratio of offspring."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.dna_genes",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.fractions.fraction_meaning",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.ratios.ratio_meaning",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "allele",
+          "definition": "One version of a gene."
+        },
+        {
+          "term": "dominant",
+          "definition": "An allele that shows in the offspring whenever it is present."
+        },
+        {
+          "term": "recessive",
+          "definition": "An allele that shows only when both copies are recessive."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.cell_division",
+      "unit_id": "biology.life",
+      "title": "Mitosis and Meiosis",
+      "summary": "Two kinds of cell division, and why the chromosome numbers differ.",
+      "objectives": [
+        "Compare mitosis and meiosis.",
+        "Compute chromosome numbers in daughter cells."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.dna_genes",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "biology.life.inheritance",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "mitosis",
+          "definition": "Division producing two identical cells with the full chromosome number."
+        },
+        {
+          "term": "meiosis",
+          "definition": "Division producing four gametes with half the chromosome number."
+        }
+      ]
+    },
+    {
+      "skill_id": "biology.life.ecosystems",
+      "unit_id": "biology.life",
+      "title": "Ecosystems and Energy Flow",
+      "summary": "Food chains, and why energy runs out as it passes along them.",
+      "objectives": ["Read a food chain.", "Compute energy transfer along trophic levels."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "biology.life.photosynthesis",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.decimals_percents.percent_of_number",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.data.drawing_conclusions",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "producer",
+          "definition": "An organism that makes its own food, usually by photosynthesis."
+        },
+        {
+          "term": "trophic level",
+          "definition": "A feeding level in a food chain."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "biology.life.living_things.lesson",
+      "skill_id": "biology.life.living_things",
+      "title": "Characteristics of Living Things",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use the life processes to decide whether something is alive."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need careful observation and the use of evidence."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Deciding what counts as alive turns out to need a checklist rather than intuition. A fire moves, grows, consumes fuel and gives off waste - yet it is not alive, because it does not respire, respond to stimuli, or reproduce in any biological sense. Every living thing does all of the processes, not just some."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "The seven life processes are movement, respiration, sensitivity, growth, reproduction, excretion and nutrition."
+        },
+        {
+          "type": "worked_example",
+          "body": "A plant does all seven: it grows towards light (movement and sensitivity), respires, reproduces by seed, excretes waste, and makes its own food."
+        },
+        {
+          "type": "worked_example",
+          "body": "A car moves and consumes fuel and even gives out exhaust, but it does not grow, reproduce, or respond to stimuli on its own, so it is not alive."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Treating movement as proof of life. Plenty of non-living things move, and some living things - a seed, a dormant tree - barely move at all."
+        },
+        {
+          "type": "summary",
+          "body": "Seven processes, all of them. Movement alone proves nothing."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.cells.lesson",
+      "skill_id": "biology.life.cells",
+      "title": "Cells and Their Parts",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Name the main cell structures and say what each does."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need the life processes and the idea of a model."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Every living thing is built from cells, and each cell is a small factory with departments. The nucleus holds the instructions, the mitochondria release energy, and the membrane controls what gets in and out. Plant cells add three parts animals lack, all connected with being rooted in one place and making their own food."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "In all cells: nucleus (holds DNA and controls the cell), cytoplasm (where reactions happen), cell membrane (controls entry and exit), mitochondria (release energy by respiration). Plant cells additionally have a cell wall, a permanent vacuole and chloroplasts."
+        },
+        {
+          "type": "worked_example",
+          "body": "A leaf cell has chloroplasts, so it can photosynthesise. A root cell has none, because there is no light underground - the plant transports sugar down to it instead."
+        },
+        {
+          "type": "worked_example",
+          "body": "Muscle cells contain many mitochondria, because contracting demands a lot of energy from respiration."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Assuming every plant cell contains chloroplasts. Only cells that receive light do, which is why roots are not green."
+        },
+        {
+          "type": "summary",
+          "body": "Nucleus controls, mitochondria release energy, membrane regulates. Plants add wall, vacuole and chloroplasts."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.organisation.lesson",
+      "skill_id": "biology.life.organisation",
+      "title": "Levels of Organisation",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Order the levels from cell to organism and place examples correctly."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to know what a cell is and what its parts do."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Bodies are built in layers, each made from the one below. Similar cells group into a tissue, several tissues make an organ, organs that share a job form a system, and the systems together make the organism."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "cell, then tissue, then organ, then organ system, then organism."
+        },
+        {
+          "type": "worked_example",
+          "body": "A muscle cell is a cell. Many together form muscle tissue. Muscle and other tissues form the heart, an organ. The heart with blood vessels forms the circulatory system. All the systems together make the organism."
+        },
+        {
+          "type": "worked_example",
+          "body": "In a plant: a palisade cell, then leaf tissue, then the leaf as an organ, then the shoot system, then the whole plant."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Calling the heart a tissue. It contains several different tissues working together, which makes it an organ."
+        },
+        {
+          "type": "summary",
+          "body": "cell to tissue to organ to organ system to organism, each built from the one before."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.photosynthesis.lesson",
+      "skill_id": "biology.life.photosynthesis",
+      "title": "Photosynthesis and Respiration",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Give the inputs and outputs of both processes and see how they relate."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need cell structure and balanced chemical equations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Photosynthesis and respiration are close to opposites. One uses light to build glucose out of carbon dioxide and water; the other breaks glucose down again to release that stored energy. Plants do both - they respire day and night, and photosynthesise only in the light."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Photosynthesis: carbon dioxide + water, using light, gives glucose + oxygen. Respiration: glucose + oxygen gives carbon dioxide + water + energy."
+        },
+        {
+          "type": "worked_example",
+          "body": "A plant in bright light photosynthesises faster than it respires, so overall it takes in carbon dioxide and releases oxygen."
+        },
+        {
+          "type": "worked_example",
+          "body": "The same plant in darkness cannot photosynthesise but still respires, so overall it takes in oxygen and releases carbon dioxide."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Believing plants respire only at night. They respire continuously; in daylight photosynthesis simply outpaces it, which hides the effect."
+        },
+        {
+          "type": "summary",
+          "body": "Photosynthesis stores energy as glucose; respiration releases it. Plants do both."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.dna_genes.lesson",
+      "skill_id": "biology.life.dna_genes",
+      "title": "DNA, Genes and Chromosomes",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Place DNA, genes and chromosomes in the right relationship."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need the nucleus and its role."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Think of a library. DNA is the writing, a gene is one instruction written in it, and a chromosome is a whole volume holding thousands of instructions. All of it sits in the nucleus, and every body cell carries the same complete set."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "DNA is the molecule carrying genetic information. A gene is a section of DNA coding for one characteristic. A chromosome is a long coiled DNA molecule carrying many genes. Human body cells have 46 chromosomes, in 23 pairs."
+        },
+        {
+          "type": "worked_example",
+          "body": "Humans have 46 chromosomes arranged as 23 pairs, one of each pair from each parent. 23 x 2 = 46."
+        },
+        {
+          "type": "worked_example",
+          "body": "A gamete - a sperm or egg cell - carries 23 chromosomes, half the body-cell number, so that fertilisation restores 46."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Ranking a gene as larger than a chromosome. A chromosome contains many genes, so the chromosome is the larger structure."
+        },
+        {
+          "type": "summary",
+          "body": "DNA holds the code, a gene is one instruction, a chromosome carries thousands. Humans: 46 in 23 pairs."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.inheritance.lesson",
+      "skill_id": "biology.life.inheritance",
+      "title": "Inheritance and Punnett Squares",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Predict offspring proportions from a cross."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need genes and chromosomes, fractions, and ratios."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Each parent has two copies of a gene and passes on one at random. A Punnett square just lists the four ways those copies can combine, so the proportions fall straight out of the grid rather than having to be remembered."
+        },
+        {
+          "type": "representation",
+          "body": "For a cross between Aa and Aa, put A and a along the top for one parent and down the side for the other. The four boxes are AA, Aa, Aa and aa."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A dominant allele is written with a capital letter and shows whenever present. A recessive allele is lower case and shows only when both copies are recessive."
+        },
+        {
+          "type": "worked_example",
+          "body": "Aa crossed with Aa gives AA, Aa, Aa, aa. Three of the four boxes contain at least one A, so 3 out of 4 show the dominant characteristic: a 3 to 1 ratio."
+        },
+        {
+          "type": "worked_example",
+          "body": "Aa crossed with aa gives Aa, Aa, aa, aa. Two of the four show the dominant characteristic, a 1 to 1 ratio."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Expecting exactly three dominant offspring in every litter of four. The square gives a probability, not a guarantee - real families vary around it."
+        },
+        {
+          "type": "summary",
+          "body": "Fill in the four boxes and count. Ratios are expectations, not promises."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.cell_division.lesson",
+      "skill_id": "biology.life.cell_division",
+      "title": "Mitosis and Meiosis",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Distinguish the two divisions and compute their outcomes."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need chromosomes and how alleles are inherited."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Mitosis is copying: two identical cells, each with the full set, used for growth and repair. Meiosis is halving: four cells each with half a set, used to make gametes. Meiosis must halve, because otherwise fertilisation would double the chromosome number in every generation."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Mitosis gives 2 genetically identical daughter cells with the full number. Meiosis gives 4 genetically varied gametes with half the number."
+        },
+        {
+          "type": "worked_example",
+          "body": "A human cell with 46 chromosomes divides by mitosis: 2 cells, each with 46."
+        },
+        {
+          "type": "worked_example",
+          "body": "The same cell divides by meiosis: 4 cells, each with 46 / 2 = 23. Fertilisation then restores 23 + 23 = 46."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Expecting meiosis to give two cells like mitosis. It gives four, because the halving takes two rounds of division."
+        },
+        {
+          "type": "summary",
+          "body": "Mitosis: 2 cells, full number, identical. Meiosis: 4 cells, half number, varied."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "biology.life.ecosystems.lesson",
+      "skill_id": "biology.life.ecosystems",
+      "title": "Ecosystems and Energy Flow",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Trace energy through a food chain and explain why chains are short."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need photosynthesis, percentages, and drawing conclusions from data."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Energy enters an ecosystem through producers capturing sunlight, then passes along the chain as things get eaten. Only about a tenth carries over at each step - the rest is used for movement and respiration or lost as heat. That steep loss is why food chains rarely run beyond four or five links."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Producers make their own food. Primary consumers eat producers, secondary consumers eat primary consumers, and so on. Roughly 10 per cent of the energy passes to the next trophic level."
+        },
+        {
+          "type": "worked_example",
+          "body": "10000 kJ in the producers gives about 1000 kJ in the primary consumers and 100 kJ in the secondary consumers."
+        },
+        {
+          "type": "worked_example",
+          "body": "In the chain grass to rabbit to fox, grass is the producer, the rabbit is the primary consumer and the fox is the secondary consumer."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Reading the arrows in a food chain backwards. An arrow points in the direction the energy travels, so grass to rabbit means the rabbit eats the grass."
+        },
+        {
+          "type": "summary",
+          "body": "Arrows follow the energy. About 10 per cent transfers per level, which keeps chains short."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "biology.life.living_things.q1",
+      "skill_id": "biology.life.living_things",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many life processes are used to define a living organism?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They are usually listed as a set."
+        },
+        {
+          "level": 2,
+          "text": "Movement, respiration, sensitivity, growth, reproduction, excretion, nutrition."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "There are seven: movement, respiration, sensitivity, growth, reproduction, excretion and nutrition.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.living_things.q2",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is respiration?",
+      "answer_spec": {
+        "correct_answer": "Releasing energy from food inside cells"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is not the same as breathing."
+        },
+        {
+          "level": 2,
+          "text": "It happens inside every living cell."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Respiration is the release of energy from food within cells. Breathing merely moves air; respiration is the chemistry that uses it.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Releasing energy from food inside cells",
+          "Breathing air in and out",
+          "Removing waste from the body",
+          "Growing larger over time"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Breathing air in and out",
+          "misconception_id": "mc.biology.life.respiration_confused_with_breathing"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.living_things.q3",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A fire moves, spreads, uses fuel and gives off smoke. Why is it not alive?",
+      "answer_spec": {
+        "correct_answer": "It does not respire, respond to stimuli or reproduce biologically"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Check the full list of processes, not just a few."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether it does all seven."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A fire mimics a few life processes but fails the rest: there is no cellular respiration, no sensitivity, and no biological reproduction. All seven are needed.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It does not respire, respond to stimuli or reproduce biologically",
+          "It moves too quickly",
+          "It has no water in it",
+          "It is too hot to be alive"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "It moves too quickly",
+          "misconception_id": "mc.biology.life.movement_means_alive"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.living_things.q4",
+      "skill_id": "biology.life.living_things",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which of these are life processes? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["Excretion", "Sensitivity"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Look for the two that belong to the standard seven."
+        },
+        {
+          "level": 2,
+          "text": "One means removing waste; one means responding to surroundings."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Excretion and sensitivity are both life processes. Combustion is a chemical reaction, and erosion is a physical process - neither is a characteristic of living things.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Excretion", "Sensitivity", "Combustion", "Erosion"]
+      }
+    },
+    {
+      "question_id": "biology.life.living_things.q5",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does sensitivity mean as a life process?",
+      "answer_spec": {
+        "correct_answer": "Responding to changes in the surroundings"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is about detecting and reacting."
+        },
+        {
+          "level": 2,
+          "text": "A plant turning towards light is an example."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Sensitivity is detecting and responding to the surroundings - a plant growing towards light, or an animal pulling away from heat.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Responding to changes in the surroundings",
+          "Being easily damaged",
+          "Feeling emotions",
+          "Having a soft body"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.living_things.q6",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A seed sits in a packet for a year without moving or growing. Is it alive?",
+      "answer_spec": {
+        "correct_answer": "Yes, it is dormant and can carry out all the processes when conditions allow"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Dormancy is not death."
+        },
+        {
+          "level": 2,
+          "text": "Ask what happens when it is planted and watered."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The seed is dormant, not dead. Given warmth, water and air it germinates and carries out every life process, which shows it was alive throughout.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Yes, it is dormant and can carry out all the processes when conditions allow",
+          "No, because it is not moving",
+          "No, because it is not growing",
+          "Only if it is green"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "No, because it is not moving",
+          "misconception_id": "mc.biology.life.movement_means_alive"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.living_things.q7",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is excretion?",
+      "answer_spec": {
+        "correct_answer": "Removing waste produced by the body's own reactions"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is about the body's own chemical waste."
+        },
+        {
+          "level": 2,
+          "text": "It is not the same as removing undigested food."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Excretion removes the waste products of the body's own chemistry, such as carbon dioxide and urea. Passing undigested food is egestion, which is different.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Removing waste produced by the body's own reactions",
+          "Eating food",
+          "Growing new cells",
+          "Breathing in oxygen"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.living_things.q8",
+      "skill_id": "biology.life.living_things",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A scientist finds an unfamiliar object on another planet. What single piece of evidence would most strongly suggest it is alive?",
+      "answer_spec": {
+        "correct_answer": "It takes in substances, grows, and produces offspring like itself"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One process alone is weak evidence."
+        },
+        {
+          "level": 2,
+          "text": "Look for the answer covering several processes at once."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Nutrition, growth and reproduction together are far harder to explain without life than any single observation. Movement or warmth alone have plenty of non-living explanations.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It takes in substances, grows, and produces offspring like itself",
+          "It moves across the ground",
+          "It is warm to the touch",
+          "It is green in colour"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "It moves across the ground",
+          "misconception_id": "mc.biology.life.movement_means_alive"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.cells.q1",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which part of a cell contains the DNA and controls the cell's activities?",
+      "answer_spec": {
+        "correct_answer": "The nucleus"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the cell's control centre."
+        },
+        {
+          "level": 2,
+          "text": "It holds the genetic instructions."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The nucleus holds the DNA and controls the cell's activities.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["The nucleus", "The cytoplasm", "The cell membrane", "The vacuole"]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q2",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Where in the cell is energy released by respiration?",
+      "answer_spec": {
+        "correct_answer": "The mitochondria"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This structure is often called the powerhouse."
+        },
+        {
+          "level": 2,
+          "text": "Cells needing much energy have many of them."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mitochondria release energy from food by respiration, which is why active cells such as muscle cells contain so many.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["The mitochondria", "The nucleus", "The cell wall", "The chloroplasts"]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q3",
+      "skill_id": "biology.life.cells",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which structures are found in plant cells but not in animal cells? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["Cell wall", "Chloroplasts"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what a plant needs that an animal does not."
+        },
+        {
+          "level": 2,
+          "text": "One gives support; one captures light."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "The cell wall gives rigid support and chloroplasts capture light for photosynthesis. Both plant and animal cells have a nucleus and mitochondria.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Cell wall", "Chloroplasts", "Nucleus", "Mitochondria"]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q4",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the function of the cell membrane?",
+      "answer_spec": {
+        "correct_answer": "It controls what enters and leaves the cell"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It forms the boundary of the cell."
+        },
+        {
+          "level": 2,
+          "text": "Not everything is allowed through."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The cell membrane surrounds the cell and controls which substances pass in and out.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It controls what enters and leaves the cell",
+          "It stores the genetic material",
+          "It releases energy",
+          "It makes the cell green"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q5",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Do root cells contain chloroplasts?",
+      "answer_spec": {
+        "correct_answer": "No, because there is no light underground"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Chloroplasts capture light."
+        },
+        {
+          "level": 2,
+          "text": "Ask how much light reaches a root."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Roots receive no light, so chloroplasts would be useless there. The plant photosynthesises in its leaves and transports sugar down to the roots.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, because there is no light underground",
+          "Yes, all plant cells have them",
+          "Yes, but only at night",
+          "No, because roots are not part of the plant"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, all plant cells have them",
+          "misconception_id": "mc.biology.life.all_plant_cells_have_chloroplasts"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.cells.q6",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Muscle cells contain unusually large numbers of mitochondria. What does this suggest?",
+      "answer_spec": {
+        "correct_answer": "They need a lot of energy"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mitochondria release energy."
+        },
+        {
+          "level": 2,
+          "text": "More of them means more of what?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mitochondria release energy by respiration, so a cell packed with them must have high energy demands - which contracting muscle certainly does.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They need a lot of energy",
+          "They store a lot of DNA",
+          "They photosynthesise",
+          "They are the largest cells"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q7",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Where in the cell do most chemical reactions take place?",
+      "answer_spec": {
+        "correct_answer": "The cytoplasm"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the jelly-like substance filling the cell."
+        },
+        {
+          "level": 2,
+          "text": "It is not the nucleus and not the membrane."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The cytoplasm is the jelly-like material where most of the cell's chemical reactions occur.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["The cytoplasm", "The nucleus", "The cell wall", "The membrane"]
+      }
+    },
+    {
+      "question_id": "biology.life.cells.q8",
+      "skill_id": "biology.life.cells",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A cell is examined and found to have a cell wall and a nucleus but no chloroplasts. What could it be?",
+      "answer_spec": {
+        "correct_answer": "A plant root cell"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The cell wall points away from animals."
+        },
+        {
+          "level": 2,
+          "text": "The missing chloroplasts point away from leaves."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The cell wall means it is not an animal cell, and the absence of chloroplasts means it does not photosynthesise - a root cell fits both.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A plant root cell", "An animal muscle cell", "A leaf cell", "It cannot exist"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "It cannot exist",
+          "misconception_id": "mc.biology.life.all_plant_cells_have_chloroplasts"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.organisation.q1",
+      "skill_id": "biology.life.organisation",
+      "type": "ordering",
+      "difficulty": 3,
+      "prompt": "Put these levels of organisation in order from smallest to largest.",
+      "answer_spec": {
+        "correct_answer": ["Cell", "Tissue", "Organ", "Organ system", "Organism"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Start with the smallest unit that is alive."
+        },
+        {
+          "level": 2,
+          "text": "Each level is built from many of the previous one."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Cells group into tissues, tissues into organs, organs into organ systems, and those together make the organism.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Organ", "Cell", "Organism", "Tissue", "Organ system"]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q2",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is a tissue?",
+      "answer_spec": {
+        "correct_answer": "A group of similar cells working together"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the level just above a cell."
+        },
+        {
+          "level": 2,
+          "text": "The cells in it are alike."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A tissue is a group of similar cells that work together on the same job.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A group of similar cells working together",
+          "A single cell",
+          "Several organs together",
+          "A whole organism"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q3",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "The heart is made of muscle tissue, nerve tissue and blood vessels. What level of organisation is it?",
+      "answer_spec": {
+        "correct_answer": "An organ"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It contains more than one kind of tissue."
+        },
+        {
+          "level": 2,
+          "text": "Several tissues with one shared function make what?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Several different tissues working together for one function make an organ, so the heart is an organ.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["An organ", "A tissue", "A cell", "An organ system"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "A tissue",
+          "misconception_id": "mc.biology.life.organ_called_tissue"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.organisation.q4",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "The heart, arteries and veins together form what?",
+      "answer_spec": {
+        "correct_answer": "An organ system"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Several organs sharing one overall job."
+        },
+        {
+          "level": 2,
+          "text": "This one moves blood around the body."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Organs working together for one overall function form an organ system - here, the circulatory system.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["An organ system", "An organ", "A tissue", "An organism"]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q5",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the smallest level that can carry out all the life processes?",
+      "answer_spec": {
+        "correct_answer": "The cell"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about single-celled organisms."
+        },
+        {
+          "level": 2,
+          "text": "They manage everything with just one of these."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A cell is the smallest unit that carries out all the life processes, which is why single-celled organisms can live independently.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["The cell", "The tissue", "The organ", "The organ system"]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q6",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A leaf contains several tissue types and has one main function. What level is it?",
+      "answer_spec": {
+        "correct_answer": "An organ"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Apply the same rule used for the heart."
+        },
+        {
+          "level": 2,
+          "text": "Several tissues, one function."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Several tissues working together for one function makes the leaf a plant organ.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["An organ", "A tissue", "A cell", "An organism"]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q7",
+      "skill_id": "biology.life.organisation",
+      "type": "ordering",
+      "difficulty": 4,
+      "prompt": "Put these plant examples in order from smallest to largest level of organisation.",
+      "answer_spec": {
+        "correct_answer": ["Palisade cell", "Leaf tissue", "Leaf", "Shoot system", "Whole plant"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Match each example to its level first."
+        },
+        {
+          "level": 2,
+          "text": "The leaf is an organ; the shoot is a system."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A palisade cell is a cell, leaf tissue is a tissue, the leaf is an organ, the shoot is an organ system, and the whole plant is the organism.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Leaf", "Palisade cell", "Whole plant", "Leaf tissue", "Shoot system"]
+      }
+    },
+    {
+      "question_id": "biology.life.organisation.q8",
+      "skill_id": "biology.life.organisation",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why does a large organism need organ systems, while a single-celled organism does not?",
+      "answer_spec": {
+        "correct_answer": "Its cells are too far from the surface to exchange substances directly"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about how substances reach the middle of a large body."
+        },
+        {
+          "level": 2,
+          "text": "A single cell touches its surroundings everywhere."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "A single cell exchanges substances directly across its surface. In a large organism most cells are far from any surface, so systems are needed to transport materials to and from them.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Its cells are too far from the surface to exchange substances directly",
+          "Its cells are larger",
+          "It has more DNA",
+          "Single cells are not alive"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q1",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What gas do plants take in for photosynthesis?",
+      "answer_spec": {
+        "correct_answer": "Carbon dioxide"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is one of the two raw materials."
+        },
+        {
+          "level": 2,
+          "text": "The other raw material is water."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Photosynthesis takes in carbon dioxide and water, and uses light energy to build glucose.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q2",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What gas is released by photosynthesis?",
+      "answer_spec": {
+        "correct_answer": "Oxygen"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is one of the two products."
+        },
+        {
+          "level": 2,
+          "text": "The other product is glucose."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Photosynthesis produces glucose and releases oxygen.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q3",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which of these are needed for photosynthesis? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["Carbon dioxide", "Water"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There are two raw materials."
+        },
+        {
+          "level": 2,
+          "text": "Light and chlorophyll are needed too, but they are not raw materials."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Carbon dioxide and water are the raw materials. Light supplies the energy and chlorophyll absorbs it, but oxygen and glucose are products rather than inputs.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Carbon dioxide", "Water", "Oxygen", "Glucose"]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q4",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is the word equation for respiration?",
+      "answer_spec": {
+        "correct_answer": "Glucose + oxygen gives carbon dioxide + water + energy"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Respiration releases energy rather than storing it."
+        },
+        {
+          "level": 2,
+          "text": "It is close to the reverse of photosynthesis."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Respiration breaks glucose down using oxygen, releasing carbon dioxide, water and energy.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Glucose + oxygen gives carbon dioxide + water + energy",
+          "Carbon dioxide + water gives glucose + oxygen",
+          "Oxygen + water gives glucose + energy",
+          "Glucose gives oxygen + light"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q5",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "When do plants respire?",
+      "answer_spec": {
+        "correct_answer": "All the time, day and night"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Every living cell needs energy continuously."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether a plant's cells stop needing energy in daylight."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Plants respire continuously because their cells always need energy. In daylight photosynthesis runs faster, which masks respiration but does not stop it.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "All the time, day and night",
+          "Only at night",
+          "Only in daylight",
+          "Only when they are growing"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Only at night",
+          "misconception_id": "mc.biology.life.plants_respire_only_at_night"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q6",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is chlorophyll's role?",
+      "answer_spec": {
+        "correct_answer": "It absorbs light energy for photosynthesis"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the green pigment."
+        },
+        {
+          "level": 2,
+          "text": "Green plants need it to capture something."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Chlorophyll is the green pigment in chloroplasts that absorbs the light energy photosynthesis needs.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It absorbs light energy for photosynthesis",
+          "It releases energy from glucose",
+          "It transports water",
+          "It stores glucose"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q7",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A sealed jar contains a healthy plant in bright light. What happens to the oxygen level overall?",
+      "answer_spec": {
+        "correct_answer": "It rises, because photosynthesis outpaces respiration"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Both processes are running."
+        },
+        {
+          "level": 2,
+          "text": "Ask which is faster in bright light."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Both processes run, but in bright light photosynthesis is faster, so oxygen is produced more quickly than it is used and the level rises.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It rises, because photosynthesis outpaces respiration",
+          "It falls, because the plant respires",
+          "It stays exactly the same",
+          "It falls to zero"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.photosynthesis.q8",
+      "skill_id": "biology.life.photosynthesis",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "The same sealed jar is left in complete darkness. What happens to the oxygen level, and why?",
+      "answer_spec": {
+        "correct_answer": "It falls, because respiration continues while photosynthesis stops"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Darkness stops one process but not the other."
+        },
+        {
+          "level": 2,
+          "text": "Respiration uses oxygen."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Without light, photosynthesis stops, but respiration continues and keeps consuming oxygen, so the level falls. This is the clearest evidence that plants respire in the dark.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It falls, because respiration continues while photosynthesis stops",
+          "It stays the same, because plants only respire at night",
+          "It rises, because the plant photosynthesises harder",
+          "Nothing happens, because plants are inactive in the dark"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "It stays the same, because plants only respire at night",
+          "misconception_id": "mc.biology.life.plants_respire_only_at_night"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.dna_genes.q1",
+      "skill_id": "biology.life.dna_genes",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many chromosomes are in a human body cell?",
+      "answer_spec": {
+        "correct_answer": 46
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "They come in pairs."
+        },
+        {
+          "level": 2,
+          "text": "There are 23 pairs."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Human body cells contain 46 chromosomes, arranged as 23 pairs.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.dna_genes.q2",
+      "skill_id": "biology.life.dna_genes",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Human chromosomes come in pairs. How many pairs are there?",
+      "answer_spec": {
+        "correct_answer": 23
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Divide the total by 2."
+        },
+        {
+          "level": 2,
+          "text": "46 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "46 chromosomes form 23 pairs. Check: 23 x 2 = 46.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.dna_genes.q3",
+      "skill_id": "biology.life.dna_genes",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What is a gene?",
+      "answer_spec": {
+        "correct_answer": "A section of DNA that codes for one characteristic"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is smaller than a chromosome."
+        },
+        {
+          "level": 2,
+          "text": "It carries one instruction."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A gene is a section of DNA coding for a single characteristic. Many genes lie along each chromosome.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A section of DNA that codes for one characteristic",
+          "A structure containing many chromosomes",
+          "The nucleus of a cell",
+          "A type of protein"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "A structure containing many chromosomes",
+          "misconception_id": "mc.biology.life.gene_larger_than_chromosome"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.dna_genes.q4",
+      "skill_id": "biology.life.dna_genes",
+      "type": "ordering",
+      "difficulty": 4,
+      "prompt": "Put these in order from smallest to largest.",
+      "answer_spec": {
+        "correct_answer": ["Gene", "Chromosome", "Nucleus", "Cell"]
+      },
+      "validator": "ordering",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A gene is part of a chromosome."
+        },
+        {
+          "level": 2,
+          "text": "Chromosomes are found inside the nucleus."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "A gene is a section of a chromosome, chromosomes sit inside the nucleus, and the nucleus is inside the cell.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Chromosome", "Cell", "Gene", "Nucleus"]
+      }
+    },
+    {
+      "question_id": "biology.life.dna_genes.q5",
+      "skill_id": "biology.life.dna_genes",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many chromosomes does a human sperm cell contain?",
+      "answer_spec": {
+        "correct_answer": 23
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A gamete carries half the body-cell number."
+        },
+        {
+          "level": 2,
+          "text": "46 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "A gamete carries 23 chromosomes, half of 46, so that fertilisation restores the full 46.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 46,
+          "misconception_id": "mc.biology.life.gametes_have_full_chromosome_number"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.dna_genes.q6",
+      "skill_id": "biology.life.dna_genes",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A sperm with 23 chromosomes fertilises an egg with 23. How many chromosomes does the fertilised egg have?",
+      "answer_spec": {
+        "correct_answer": 46
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The two sets combine."
+        },
+        {
+          "level": 2,
+          "text": "23 + 23."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "23 + 23 = 46, restoring the normal body-cell number.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.dna_genes.q7",
+      "skill_id": "biology.life.dna_genes",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Where in the cell are chromosomes found?",
+      "answer_spec": {
+        "correct_answer": "In the nucleus"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is the structure that controls the cell."
+        },
+        {
+          "level": 2,
+          "text": "It holds the genetic material."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Chromosomes are in the nucleus, which is why the nucleus controls the cell's activities.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "In the nucleus",
+          "In the mitochondria",
+          "In the cell membrane",
+          "In the cytoplasm only"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.dna_genes.q8",
+      "skill_id": "biology.life.dna_genes",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Every body cell in an organism has the same DNA. Why then is a muscle cell different from a nerve cell?",
+      "answer_spec": {
+        "correct_answer": "Different genes are switched on in each cell type"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The instructions are the same, but not all are used."
+        },
+        {
+          "level": 2,
+          "text": "Think about which parts of a manual you actually read."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "All the instructions are present in every cell, but each cell type uses only some of them. Which genes are active decides what the cell becomes.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Different genes are switched on in each cell type",
+          "They have different DNA",
+          "Muscle cells have more chromosomes",
+          "Nerve cells have no nucleus"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.inheritance.q1",
+      "skill_id": "biology.life.inheritance",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "Two parents with genotype Aa are crossed, where A is dominant. What fraction of the offspring is expected to show the dominant characteristic? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "3/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write out all four combinations."
+        },
+        {
+          "level": 2,
+          "text": "AA, Aa, Aa and aa - count how many contain an A."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The four boxes are AA, Aa, Aa and aa. Three contain at least one A, so 3/4 show the dominant characteristic.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.inheritance.q2",
+      "skill_id": "biology.life.inheritance",
+      "type": "fraction",
+      "difficulty": 4,
+      "prompt": "In the same Aa by Aa cross, what fraction of offspring is expected to show the recessive characteristic? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "1/4"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The recessive shows only when both alleles are recessive."
+        },
+        {
+          "level": 2,
+          "text": "Count the aa boxes out of four."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Only the single aa box shows the recessive characteristic, so 1/4.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.inheritance.q3",
+      "skill_id": "biology.life.inheritance",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many boxes does a Punnett square for two parents each with two alleles contain?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each parent contributes one of two alleles."
+        },
+        {
+          "level": 2,
+          "text": "2 x 2."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Two choices from each parent give 2 x 2 = 4 combinations.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.inheritance.q4",
+      "skill_id": "biology.life.inheritance",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "An AA parent is crossed with an aa parent. What are all the offspring?",
+      "answer_spec": {
+        "correct_answer": "All Aa"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Each parent can only give one kind of allele."
+        },
+        {
+          "level": 2,
+          "text": "One always gives A, the other always gives a."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "The AA parent can only pass on A and the aa parent only a, so every offspring is Aa and all show the dominant characteristic.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["All Aa", "All AA", "Half AA and half aa", "Three Aa and one aa"]
+      }
+    },
+    {
+      "question_id": "biology.life.inheritance.q5",
+      "skill_id": "biology.life.inheritance",
+      "type": "fraction",
+      "difficulty": 5,
+      "prompt": "An Aa parent is crossed with an aa parent. What fraction of offspring is expected to show the dominant characteristic? Give a fraction.",
+      "answer_spec": {
+        "correct_answer": "1/2"
+      },
+      "validator": "fraction",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Write out the four boxes."
+        },
+        {
+          "level": 2,
+          "text": "Aa, Aa, aa, aa - count those containing an A."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The boxes are Aa, Aa, aa and aa. Two of four contain an A, so 1/2 show the dominant characteristic.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.inheritance.q6",
+      "skill_id": "biology.life.inheritance",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "What does it mean for an allele to be recessive?",
+      "answer_spec": {
+        "correct_answer": "It only shows when both copies are recessive"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It is masked when a dominant allele is present."
+        },
+        {
+          "level": 2,
+          "text": "Two copies are needed."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A recessive allele is hidden whenever a dominant one is present, so it shows only when both copies are recessive.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It only shows when both copies are recessive",
+          "It always shows",
+          "It is a weaker version of the gene",
+          "It cannot be inherited"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.inheritance.q7",
+      "skill_id": "biology.life.inheritance",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Two Aa parents have 100 offspring. Roughly how many are expected to show the recessive characteristic?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The expected fraction is 1/4."
+        },
+        {
+          "level": 2,
+          "text": "A quarter of 100."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "A quarter of the offspring are expected to be aa, so about 100 / 4 = 25. The real number will vary around this.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.inheritance.q8",
+      "skill_id": "biology.life.inheritance",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Two Aa parents have exactly four offspring. Must exactly three show the dominant characteristic?",
+      "answer_spec": {
+        "correct_answer": "No, the ratio is a probability, not a guarantee"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare it with tossing a coin four times."
+        },
+        {
+          "level": 2,
+          "text": "Does two heads and two tails always happen?"
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The 3 to 1 ratio is the expected proportion over many offspring. Any particular four can come out in any combination, just as four coin tosses need not split evenly.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, the ratio is a probability, not a guarantee",
+          "Yes, always exactly three",
+          "Yes, because the square has four boxes",
+          "No, it must be exactly two"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, always exactly three",
+          "misconception_id": "mc.biology.life.punnett_ratio_treated_as_certainty"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.cell_division.q1",
+      "skill_id": "biology.life.cell_division",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A human cell with 46 chromosomes divides by mitosis. How many chromosomes does each daughter cell have?",
+      "answer_spec": {
+        "correct_answer": 46
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mitosis makes identical copies."
+        },
+        {
+          "level": 2,
+          "text": "The full number is kept."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Mitosis produces cells with the full chromosome number, so each daughter cell has 46.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.cell_division.q2",
+      "skill_id": "biology.life.cell_division",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many daughter cells does mitosis produce?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There is a single division."
+        },
+        {
+          "level": 2,
+          "text": "One cell becomes how many?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mitosis is one division, producing 2 daughter cells.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.cell_division.q3",
+      "skill_id": "biology.life.cell_division",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many daughter cells does meiosis produce?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meiosis involves two rounds of division."
+        },
+        {
+          "level": 2,
+          "text": "Two divisions turn one cell into how many?"
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Meiosis has two divisions, so one cell becomes 4 gametes.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 2,
+          "misconception_id": "mc.biology.life.meiosis_gives_two_cells"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.cell_division.q4",
+      "skill_id": "biology.life.cell_division",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A human cell with 46 chromosomes divides by meiosis. How many chromosomes does each gamete have?",
+      "answer_spec": {
+        "correct_answer": 23
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meiosis halves the chromosome number."
+        },
+        {
+          "level": 2,
+          "text": "46 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Each gamete gets 23 chromosomes, half of 46, so that fertilisation restores the full number.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.cell_division.q5",
+      "skill_id": "biology.life.cell_division",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "What is mitosis used for in the body?",
+      "answer_spec": {
+        "correct_answer": "Growth and repair"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It makes identical copies."
+        },
+        {
+          "level": 2,
+          "text": "Think about healing a cut."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mitosis produces identical cells, which is what growth and repairing damaged tissue need.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Growth and repair", "Making gametes", "Digesting food", "Releasing energy"]
+      }
+    },
+    {
+      "question_id": "biology.life.cell_division.q6",
+      "skill_id": "biology.life.cell_division",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "A fruit fly cell has 8 chromosomes. How many chromosomes does each of its gametes have?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meiosis halves the number."
+        },
+        {
+          "level": 2,
+          "text": "8 divided by 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Each gamete has 8 / 2 = 4 chromosomes. Check: 4 + 4 = 8 at fertilisation.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.cell_division.q7",
+      "skill_id": "biology.life.cell_division",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Are the cells produced by mitosis genetically identical to the parent cell?",
+      "answer_spec": {
+        "correct_answer": "Yes, mitosis produces identical copies"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mitosis is a copying process."
+        },
+        {
+          "level": 2,
+          "text": "Meiosis is the one that introduces variation."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Mitosis produces genetically identical cells. Meiosis is the division that shuffles alleles and creates variation.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Yes, mitosis produces identical copies",
+          "No, they are all different",
+          "Only half of them are",
+          "Only in plants"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.cell_division.q8",
+      "skill_id": "biology.life.cell_division",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why must meiosis halve the chromosome number?",
+      "answer_spec": {
+        "correct_answer": "So fertilisation restores the normal number instead of doubling it"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what happens when two gametes join."
+        },
+        {
+          "level": 2,
+          "text": "Follow the number forward a generation or two."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Two gametes combine at fertilisation. If each carried the full number, every generation would double it - 46 to 92 to 184. Halving first keeps the count stable.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "So fertilisation restores the normal number instead of doubling it",
+          "To make the cells smaller",
+          "To speed up cell division",
+          "To remove damaged chromosomes"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "biology.life.ecosystems.q1",
+      "skill_id": "biology.life.ecosystems",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "In the food chain grass to rabbit to fox, what is the grass?",
+      "answer_spec": {
+        "correct_answer": "The producer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It makes its own food."
+        },
+        {
+          "level": 2,
+          "text": "It is the start of the chain."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Grass photosynthesises to make its own food, so it is the producer and the entry point for energy.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The producer",
+          "The primary consumer",
+          "The secondary consumer",
+          "A decomposer"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.ecosystems.q2",
+      "skill_id": "biology.life.ecosystems",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In the food chain grass to rabbit to fox, what does the arrow between grass and rabbit mean?",
+      "answer_spec": {
+        "correct_answer": "Energy passes from the grass to the rabbit"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The arrow follows the energy."
+        },
+        {
+          "level": 2,
+          "text": "Ask which one is eaten."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The arrow points the way energy travels, so the rabbit eats the grass and gains its energy.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Energy passes from the grass to the rabbit",
+          "The grass eats the rabbit",
+          "They compete with each other",
+          "They live in the same place"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The grass eats the rabbit",
+          "misconception_id": "mc.biology.life.food_chain_arrow_reversed"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.ecosystems.q3",
+      "skill_id": "biology.life.ecosystems",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "About what percentage of energy passes from one trophic level to the next?",
+      "answer_spec": {
+        "correct_answer": 10
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Most energy is lost at each step."
+        },
+        {
+          "level": 2,
+          "text": "Only about a tenth carries over."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Roughly 10 per cent transfers; the rest is used in respiration and movement or lost as heat.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.ecosystems.q4",
+      "skill_id": "biology.life.ecosystems",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Producers contain 10000 kJ of energy. About how many kilojoules reach the primary consumers?",
+      "answer_spec": {
+        "correct_answer": 1000
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Take about 10 per cent."
+        },
+        {
+          "level": 2,
+          "text": "10000 divided by 10."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "About 10 per cent transfers, so roughly 10000 / 10 = 1000 kJ.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "biology.life.ecosystems.q5",
+      "skill_id": "biology.life.ecosystems",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Producers contain 10000 kJ. About how many kilojoules reach the secondary consumers?",
+      "answer_spec": {
+        "correct_answer": 100
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The energy passes through two transfers."
+        },
+        {
+          "level": 2,
+          "text": "Take a tenth, then a tenth again."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Two transfers at about 10 per cent each: 10000 to 1000 to 100 kJ.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 1000,
+          "misconception_id": "mc.biology.life.single_transfer_counted"
+        }
+      ]
+    },
+    {
+      "question_id": "biology.life.ecosystems.q6",
+      "skill_id": "biology.life.ecosystems",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Where does the energy lost between trophic levels go?",
+      "answer_spec": {
+        "correct_answer": "It is used in respiration and movement, and lost as heat"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Energy is never destroyed."
+        },
+        {
+          "level": 2,
+          "text": "Think about what an animal does with its food."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Most of the energy is used for the organism's own life processes and ends up as heat in the surroundings. It is transferred, not destroyed.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It is used in respiration and movement, and lost as heat",
+          "It is destroyed",
+          "It goes back to the producers",
+          "It is stored in the soil forever"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.ecosystems.q7",
+      "skill_id": "biology.life.ecosystems",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "In the chain grass to rabbit to fox, what is the fox?",
+      "answer_spec": {
+        "correct_answer": "The secondary consumer"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the feeding levels from the producer."
+        },
+        {
+          "level": 2,
+          "text": "The rabbit is the primary consumer."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The fox eats the primary consumer, so it is the secondary consumer - the third trophic level.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The secondary consumer",
+          "The primary consumer",
+          "The producer",
+          "A decomposer"
+        ]
+      }
+    },
+    {
+      "question_id": "biology.life.ecosystems.q8",
+      "skill_id": "biology.life.ecosystems",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Why do food chains rarely have more than four or five links?",
+      "answer_spec": {
+        "correct_answer": "Too little energy remains to support another level"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Follow the 10 per cent rule along several steps."
+        },
+        {
+          "level": 2,
+          "text": "By the fifth level almost nothing is left."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Only about a tenth of the energy passes at each step, so after four or five links there is too little left to support another population.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Too little energy remains to support another level",
+          "There are not enough species",
+          "Large animals cannot digest small ones",
+          "Predators refuse to eat other predators"
+        ]
+      },
+      "transfer_flag": true
+    }
+  ]
+}

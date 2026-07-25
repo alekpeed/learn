@@ -1,0 +1,2444 @@
+{
+  "skills": [
+    {
+      "skill_id": "chemistry.matter.states_of_matter",
+      "unit_id": "chemistry.matter",
+      "title": "States of Matter",
+      "summary": "Solids, liquids and gases explained by how their particles are arranged.",
+      "objectives": [
+        "Describe particle arrangement in each state.",
+        "Name the changes between states."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "science.thinking.models",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.measurement.volume",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 2,
+      "vocabulary": [
+        {
+          "term": "particle model",
+          "definition": "The idea that matter is made of tiny particles in constant motion."
+        },
+        {
+          "term": "sublimation",
+          "definition": "A change directly from solid to gas without melting."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.atomic_structure",
+      "unit_id": "chemistry.matter",
+      "title": "Atomic Structure",
+      "summary": "Protons, neutrons and electrons, and the numbers that count them.",
+      "objectives": [
+        "Find protons, neutrons and electrons from atomic and mass number.",
+        "Explain what makes an element."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.states_of_matter",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.integers.subtracting_integers",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "atomic number",
+          "definition": "The number of protons in an atom, which identifies the element."
+        },
+        {
+          "term": "mass number",
+          "definition": "The total number of protons and neutrons."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.elements_compounds",
+      "unit_id": "chemistry.matter",
+      "title": "Elements, Compounds and Mixtures",
+      "summary": "Telling apart a pure element, a chemical compound and a physical mixture.",
+      "objectives": [
+        "Classify a substance as element, compound or mixture.",
+        "Explain why a compound differs from a mixture."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.atomic_structure",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "element",
+          "definition": "A substance made of only one kind of atom."
+        },
+        {
+          "term": "compound",
+          "definition": "Two or more elements chemically bonded in a fixed ratio."
+        },
+        {
+          "term": "mixture",
+          "definition": "Substances together but not chemically bonded."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.periodic_table",
+      "unit_id": "chemistry.matter",
+      "title": "The Periodic Table",
+      "summary": "How elements are ordered, and what a group and a period tell you.",
+      "objectives": [
+        "Read an element's position from the table.",
+        "Predict behaviour from the group."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.atomic_structure",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 3,
+      "vocabulary": [
+        {
+          "term": "group",
+          "definition": "A vertical column of the periodic table; its members behave similarly."
+        },
+        {
+          "term": "period",
+          "definition": "A horizontal row of the periodic table."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "unit_id": "chemistry.matter",
+      "title": "Chemical Formulas",
+      "summary": "Reading a formula to count the atoms it contains.",
+      "objectives": [
+        "Count atoms in a formula, including bracketed groups.",
+        "Read subscripts and multipliers correctly."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.elements_compounds",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.numerical_structure.order_of_operations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4
+    },
+    {
+      "skill_id": "chemistry.matter.balancing_equations",
+      "unit_id": "chemistry.matter",
+      "title": "Balancing Chemical Equations",
+      "summary": "Making the atom counts match on both sides of a reaction.",
+      "objectives": ["Find a missing coefficient.", "Explain why equations must balance."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.chemical_formulas",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.one_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "coefficient",
+          "definition": "The number in front of a formula, counting how many units take part."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.conservation_mass",
+      "unit_id": "chemistry.matter",
+      "title": "Conservation of Mass and Relative Mass",
+      "summary": "Total mass is unchanged by a reaction, and how to compute a formula mass.",
+      "objectives": [
+        "Apply conservation of mass to a reaction.",
+        "Compute a relative formula mass."
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.balancing_equations",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "math.algebra.one_step_equations",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 5,
+      "vocabulary": [
+        {
+          "term": "relative formula mass",
+          "definition": "The sum of the relative atomic masses of every atom in a formula."
+        }
+      ]
+    },
+    {
+      "skill_id": "chemistry.matter.acids_bases",
+      "unit_id": "chemistry.matter",
+      "title": "Acids, Bases and pH",
+      "summary": "The pH scale and what neutralisation does.",
+      "objectives": ["Read the pH scale.", "Predict the product of a neutralisation."],
+      "prerequisites": [
+        {
+          "prerequisite_skill_id": "chemistry.matter.elements_compounds",
+          "relationship_type": "required"
+        },
+        {
+          "prerequisite_skill_id": "science.data.reading_axes",
+          "relationship_type": "required"
+        }
+      ],
+      "mastery_thresholds": {
+        "understanding": 80,
+        "accuracy": 85,
+        "independence": 80,
+        "retention": 75,
+        "transfer": 70
+      },
+      "content_version": "1.0.0",
+      "difficulty_band": 4,
+      "vocabulary": [
+        {
+          "term": "pH",
+          "definition": "A scale from 0 to 14 measuring how acidic or alkaline a solution is."
+        },
+        {
+          "term": "neutralisation",
+          "definition": "The reaction of an acid with a base to give a salt and water."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "chemistry.matter.states_of_matter.lesson",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "title": "States of Matter",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Explain each state and each change of state using the particle model."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need the idea of a scientific model, and volume."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "The difference between ice, water and steam is not what the particles are - they are identical - but how tightly they are held and how much they move. Heating gives particles energy to break away from each other, which is the whole story of melting and boiling."
+        },
+        {
+          "type": "representation",
+          "body": "In a solid, particles sit in a fixed regular pattern and only vibrate. In a liquid they touch but slide past one another. In a gas they are far apart and move freely in all directions."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Melting is solid to liquid, freezing is liquid to solid, evaporating or boiling is liquid to gas, condensing is gas to liquid, and sublimation is solid straight to gas."
+        },
+        {
+          "type": "worked_example",
+          "body": "Ice melting: the particles gain enough energy to break free of their fixed positions but still touch, so the substance keeps its volume but loses its shape."
+        },
+        {
+          "type": "worked_example",
+          "body": "Steam condensing on a cold window: the particles lose energy, slow down, and are pulled close enough together to form a liquid again."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Thinking the particles themselves change size or shape when a substance melts. They do not - only their arrangement and energy change."
+        },
+        {
+          "type": "summary",
+          "body": "Same particles, different arrangement and energy. Heating loosens; cooling tightens."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.atomic_structure.lesson",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "title": "Atomic Structure",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Work out the particle counts in an atom from its two numbers."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need subtraction with the particle model in mind."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "An atom has a tiny dense nucleus of protons and neutrons, with electrons around it. Only the proton count decides which element it is - change that and it becomes a different element entirely. Change the neutron count and it is the same element, just a heavier version."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Atomic number = number of protons. Mass number = protons + neutrons. In a neutral atom, electrons = protons. So neutrons = mass number - atomic number."
+        },
+        {
+          "type": "worked_example",
+          "body": "Carbon has atomic number 6 and mass number 12. Protons = 6, neutrons = 12 - 6 = 6, and a neutral atom has 6 electrons. Check: 6 + 6 = 12."
+        },
+        {
+          "type": "worked_example",
+          "body": "Sodium has atomic number 11 and mass number 23. Neutrons = 23 - 11 = 12. Check: 11 + 12 = 23."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Using the mass number as the neutron count. The mass number counts protons and neutrons together, so the protons must be subtracted first."
+        },
+        {
+          "type": "summary",
+          "body": "Protons name the element. Neutrons = mass number - atomic number. Neutral atoms have equal protons and electrons."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.elements_compounds.lesson",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "title": "Elements, Compounds and Mixtures",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Classify substances and explain what bonding changes."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need atomic structure and what an element is."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Mixing iron filings and sulfur powder gives you a grey-yellow mixture you could separate with a magnet. Heat them and they bond into iron sulfide - a single new substance with its own properties, no longer magnetic, and no longer separable by any physical means. That is the difference bonding makes."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "An element contains one kind of atom. A compound contains different elements chemically bonded in a fixed ratio, and has its own properties. A mixture contains substances not bonded together, in any ratio, keeping their own properties."
+        },
+        {
+          "type": "worked_example",
+          "body": "Water, H2O, is a compound: always two hydrogen atoms to one oxygen, and nothing like either gas it is made from."
+        },
+        {
+          "type": "worked_example",
+          "body": "Air is a mixture: mostly nitrogen and oxygen, in a ratio that varies, each keeping its own properties and separable by physical means."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Calling any substance with two elements in it a compound. If they are not bonded, it is a mixture - and it can be separated without a chemical reaction."
+        },
+        {
+          "type": "summary",
+          "body": "One kind of atom is an element. Bonded and fixed is a compound. Unbonded and variable is a mixture."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.periodic_table.lesson",
+      "skill_id": "chemistry.matter.periodic_table",
+      "title": "The Periodic Table",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use position in the table to predict how an element behaves."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need atomic number and electrons."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "The table is ordered by atomic number, but its power is that elements with similar behaviour line up in columns. That is not a coincidence - members of a column have the same number of outer electrons, and outer electrons are what drive reactions."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Columns are groups; rows are periods. Group 1 are the alkali metals, group 7 the halogens, group 0 the noble gases. Elements in a group share their outer-electron count and so react similarly."
+        },
+        {
+          "type": "worked_example",
+          "body": "Sodium is in group 1, so it has one outer electron, reacts vigorously with water, and behaves like lithium and potassium above and below it."
+        },
+        {
+          "type": "worked_example",
+          "body": "Neon is in group 0. Its outer shell is full, so it has no tendency to react - which is why the noble gases are described as inert."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Reading rows as the families. It is the columns that share behaviour; a row runs across very different elements."
+        },
+        {
+          "type": "summary",
+          "body": "Columns are groups and share behaviour. Rows are periods. Outer electrons explain both."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.chemical_formulas.lesson",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "title": "Chemical Formulas",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Count every atom in a formula, brackets included."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need compounds, and order of operations for the bracket rule."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A formula is a precise inventory. The symbol names the element and the small number after it says how many. A bracket groups atoms together so a single number can multiply all of them at once - exactly like a bracket in algebra."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A subscript applies only to the symbol immediately before it. A number after a closing bracket multiplies everything inside the bracket. No number means one."
+        },
+        {
+          "type": "worked_example",
+          "body": "H2SO4 has 2 hydrogen, 1 sulfur and 4 oxygen atoms: 7 atoms in total."
+        },
+        {
+          "type": "worked_example",
+          "body": "Ca(OH)2 has 1 calcium, and the bracket's contents doubled: 2 oxygen and 2 hydrogen. That is 5 atoms in total, not 3."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Ignoring the number outside a bracket. In Ca(OH)2 the 2 doubles both the O and the H, so there are two of each."
+        },
+        {
+          "type": "summary",
+          "body": "Subscript applies to the symbol before it; a number after a bracket multiplies everything inside."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.balancing_equations.lesson",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "title": "Balancing Chemical Equations",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Balance a simple equation and justify why it must balance."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need to count atoms in a formula and solve a one-step equation."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "A reaction rearranges atoms; it never creates or destroys them. So every atom on the left must appear on the right. Balancing is the bookkeeping that makes that visible - and you may only add numbers in front, because changing a subscript would change what the substance is."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "A coefficient multiplies every atom in the formula that follows it. An equation is balanced when each element has the same total count on both sides."
+        },
+        {
+          "type": "worked_example",
+          "body": "2 H2 + O2 gives 2 H2O. Left: 4 hydrogen, 2 oxygen. Right: 4 hydrogen, 2 oxygen. Balanced."
+        },
+        {
+          "type": "worked_example",
+          "body": "CH4 + 2 O2 gives CO2 + 2 H2O. Left: 1 carbon, 4 hydrogen, 4 oxygen. Right: 1 carbon, 4 hydrogen, and 2 + 2 = 4 oxygen. Balanced."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Changing a subscript to make the numbers work. Turning O2 into O3 balances nothing - it replaces oxygen with ozone, a different substance."
+        },
+        {
+          "type": "summary",
+          "body": "Only coefficients may change. Count each element on both sides and make the totals match."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.conservation_mass.lesson",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "title": "Conservation of Mass and Relative Mass",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Use conservation of mass, and total a formula mass from atomic masses."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need balanced equations and one-step equations."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "Since a reaction only rearranges atoms, the total mass cannot change. When a candle appears to lose mass, the missing mass left as gases; when steel wool gains mass on burning, it took oxygen in from the air. Weigh a sealed container and the reading never moves."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "Total mass of reactants = total mass of products. The relative formula mass is the sum of the relative atomic masses of all atoms in the formula. Use H = 1, C = 12, N = 14, O = 16, Na = 23, S = 32, Cl = 35.5, Ca = 40."
+        },
+        {
+          "type": "worked_example",
+          "body": "H2O: 2 hydrogen at 1 plus 1 oxygen at 16 gives 2 + 16 = 18."
+        },
+        {
+          "type": "worked_example",
+          "body": "If 10 g of A reacts completely with 15 g of B, the products must total 10 + 15 = 25 g."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Concluding that mass was destroyed when a product is a gas that escaped. Seal the container and the total is unchanged."
+        },
+        {
+          "type": "summary",
+          "body": "Mass in equals mass out. Formula mass is the sum over every atom present."
+        }
+      ],
+      "content_version": "1.0.0"
+    },
+    {
+      "lesson_id": "chemistry.matter.acids_bases.lesson",
+      "skill_id": "chemistry.matter.acids_bases",
+      "title": "Acids, Bases and pH",
+      "components": [
+        {
+          "type": "learning_objective",
+          "body": "Interpret a pH value and describe neutralisation."
+        },
+        {
+          "type": "prerequisite_reminder",
+          "body": "You need compounds, and reading a scale."
+        },
+        {
+          "type": "intuitive_explanation",
+          "body": "pH puts acidity on a single number line from 0 to 14, with 7 exactly in the middle for neutral. Below 7 is acidic and above is alkaline, and the further from 7 the stronger it is. Mixing an acid with a base moves both towards the middle - that is neutralisation."
+        },
+        {
+          "type": "formal_terminology",
+          "body": "pH below 7 is acidic, exactly 7 is neutral, above 7 is alkaline. acid + base gives salt + water. Universal indicator shows pH by colour: red for strongly acidic through green at neutral to purple for strongly alkaline."
+        },
+        {
+          "type": "worked_example",
+          "body": "Lemon juice has pH 2, so it is strongly acidic. Pure water is pH 7, neutral. Oven cleaner at pH 13 is strongly alkaline."
+        },
+        {
+          "type": "worked_example",
+          "body": "Hydrochloric acid plus sodium hydroxide gives sodium chloride plus water: an acid and a base producing a salt and water, with the mixture ending near pH 7."
+        },
+        {
+          "type": "common_mistakes",
+          "body": "Reading a higher pH as more acidic. The scale runs the other way: the lower the number, the more acidic."
+        },
+        {
+          "type": "summary",
+          "body": "7 is neutral, below is acidic, above is alkaline. Acid + base gives salt + water."
+        }
+      ],
+      "content_version": "1.0.0"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "chemistry.matter.states_of_matter.q1",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "Which state of matter has particles in a fixed regular arrangement that can only vibrate?",
+      "answer_spec": {
+        "correct_answer": "Solid"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about which state holds its own shape."
+        },
+        {
+          "level": 2,
+          "text": "Fixed positions mean a fixed shape."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "In a solid the particles are locked into a regular pattern and can only vibrate on the spot, which is why a solid keeps its shape.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Solid", "Liquid", "Gas", "All three equally"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q2",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is the name of the change from liquid to gas?",
+      "answer_spec": {
+        "correct_answer": "Evaporating"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about a puddle drying in the sun."
+        },
+        {
+          "level": 2,
+          "text": "The liquid becomes a gas."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Liquid to gas is evaporating (or boiling, when it happens throughout the liquid at its boiling point).",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Evaporating", "Condensing", "Melting", "Freezing"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q3",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Water vapour forms droplets on a cold window. What is this change called?",
+      "answer_spec": {
+        "correct_answer": "Condensing"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The substance goes from gas to liquid."
+        },
+        {
+          "level": 2,
+          "text": "It is the reverse of evaporating."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Gas to liquid is condensing. The particles lose energy at the cold surface, slow down, and are drawn together into a liquid.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Condensing", "Evaporating", "Sublimation", "Melting"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q4",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which state can be compressed most easily?",
+      "answer_spec": {
+        "correct_answer": "Gas"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compression needs empty space between particles."
+        },
+        {
+          "level": 2,
+          "text": "Which state has the particles furthest apart?"
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "In a gas the particles are far apart with large gaps, so a gas can be squeezed into a much smaller volume. Solids and liquids have particles already touching.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Gas", "Solid", "Liquid", "They compress equally"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q5",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "When ice melts, what happens to the water particles themselves?",
+      "answer_spec": {
+        "correct_answer": "They stay the same but gain energy and move more"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Melting is a change of arrangement."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether anything is added or removed."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The particles are unchanged. They gain energy, vibrate more, and break out of their fixed positions, but each particle is exactly what it was before.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They stay the same but gain energy and move more",
+          "The particles get bigger",
+          "The particles turn into different particles",
+          "The particles disappear"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The particles get bigger",
+          "misconception_id": "mc.chemistry.matter.particles_change_when_state_changes"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q6",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which of these are changes of state? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["Melting", "Condensing"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A change of state moves between solid, liquid and gas."
+        },
+        {
+          "level": 2,
+          "text": "Burning makes new substances, so it is not one."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Melting and condensing move a substance between states without making anything new. Burning and rusting produce different substances, so they are chemical changes.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Melting", "Condensing", "Burning", "Rusting"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q7",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Solid carbon dioxide turns straight into a gas without melting. What is this called?",
+      "answer_spec": {
+        "correct_answer": "Sublimation"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It skips the liquid state entirely."
+        },
+        {
+          "level": 2,
+          "text": "There is a special name for solid straight to gas."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Solid to gas without passing through liquid is sublimation. Solid carbon dioxide does this at ordinary pressure, which is why it is called dry ice.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Sublimation", "Melting", "Evaporating", "Condensing"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.states_of_matter.q8",
+      "skill_id": "chemistry.matter.states_of_matter",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A sealed syringe of gas is squeezed to half its volume. What has happened to the particles?",
+      "answer_spec": {
+        "correct_answer": "The same particles now occupy a smaller space, so they are closer together"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The syringe is sealed, so nothing escaped."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether the number of particles changed."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Nothing left the syringe, so the same number of particles is now packed into half the space. The particles did not shrink; the gaps between them did.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The same particles now occupy a smaller space, so they are closer together",
+          "The particles shrank to half their size",
+          "Half the particles were destroyed",
+          "The particles turned into a liquid"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "The particles shrank to half their size",
+          "misconception_id": "mc.chemistry.matter.particles_change_when_state_changes"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q1",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A carbon atom has atomic number 6 and mass number 12. How many protons does it have?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The atomic number counts one kind of particle directly."
+        },
+        {
+          "level": 2,
+          "text": "It is the proton count."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The atomic number is the number of protons, so carbon has 6.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q2",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A carbon atom has atomic number 6 and mass number 12. How many neutrons does it have?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Neutrons = mass number - atomic number."
+        },
+        {
+          "level": 2,
+          "text": "12 - 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "neutrons = 12 - 6 = 6. Check: 6 protons + 6 neutrons = mass number 12.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 12,
+          "misconception_id": "mc.chemistry.matter.mass_number_used_as_neutrons"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q3",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "A sodium atom has atomic number 11 and mass number 23. How many neutrons does it have?",
+      "answer_spec": {
+        "correct_answer": 12
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Subtract the atomic number from the mass number."
+        },
+        {
+          "level": 2,
+          "text": "23 - 11."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "neutrons = 23 - 11 = 12. Check: 11 + 12 = 23.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 23,
+          "misconception_id": "mc.chemistry.matter.mass_number_used_as_neutrons"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q4",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "A neutral atom has 17 protons. How many electrons does it have?",
+      "answer_spec": {
+        "correct_answer": 17
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Neutral means no overall charge."
+        },
+        {
+          "level": 2,
+          "text": "Positive protons must be balanced by negative electrons."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A neutral atom has equal numbers of protons and electrons, so it has 17 electrons.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q5",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An iron atom has atomic number 26 and mass number 56. How many neutrons does it have?",
+      "answer_spec": {
+        "correct_answer": 30
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Neutrons = mass number - atomic number."
+        },
+        {
+          "level": 2,
+          "text": "56 - 26."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "neutrons = 56 - 26 = 30. Check: 26 + 30 = 56.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q6",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which particle count decides which element an atom is?",
+      "answer_spec": {
+        "correct_answer": "The number of protons"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Changing one of these makes it a different element."
+        },
+        {
+          "level": 2,
+          "text": "It is the one the atomic number counts."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The proton count defines the element. Change it and you have a different element; change the neutron count and you have the same element with a different mass.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The number of protons",
+          "The number of neutrons",
+          "The number of electrons",
+          "The total of all three"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q7",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Carbon-14 has mass number 14 and the same atomic number as ordinary carbon, 6. How many neutrons does it have?",
+      "answer_spec": {
+        "correct_answer": 8
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The atomic number has not changed, so it is still carbon."
+        },
+        {
+          "level": 2,
+          "text": "14 - 6."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "neutrons = 14 - 6 = 8, two more than ordinary carbon-12. Same element, heavier atom - that is what an isotope is.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.atomic_structure.q8",
+      "skill_id": "chemistry.matter.atomic_structure",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Two atoms have the same atomic number but different mass numbers. What must be true?",
+      "answer_spec": {
+        "correct_answer": "They are the same element with different numbers of neutrons"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The atomic number fixes the element."
+        },
+        {
+          "level": 2,
+          "text": "So the difference must lie elsewhere in the nucleus."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Equal atomic numbers mean equal protons, so both are the same element. The differing mass numbers must come from different neutron counts - they are isotopes.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They are the same element with different numbers of neutrons",
+          "They are different elements",
+          "One of them is charged",
+          "They have different numbers of protons"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q1",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "A substance is made of only one kind of atom. What is it?",
+      "answer_spec": {
+        "correct_answer": "An element"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One kind of atom only."
+        },
+        {
+          "level": 2,
+          "text": "That is the definition of one of these three."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A substance made of a single kind of atom is an element.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["An element", "A compound", "A mixture", "A solution"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q2",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Water has the formula H2O. Is it an element, a compound or a mixture?",
+      "answer_spec": {
+        "correct_answer": "A compound"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "It contains more than one element."
+        },
+        {
+          "level": 2,
+          "text": "Ask whether they are chemically bonded in a fixed ratio."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Water is a compound: hydrogen and oxygen chemically bonded in the fixed ratio of two to one, with properties quite unlike either gas.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A compound", "An element", "A mixture", "A solution of two elements"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q3",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Air contains nitrogen, oxygen and other gases in proportions that vary from place to place. What is it?",
+      "answer_spec": {
+        "correct_answer": "A mixture"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The proportions vary."
+        },
+        {
+          "level": 2,
+          "text": "A compound has a fixed ratio."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Air is a mixture. Its components are not chemically bonded, the proportions vary, and each gas keeps its own properties.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A mixture", "A compound", "An element", "A single substance"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "A compound",
+          "misconception_id": "mc.chemistry.matter.mixture_called_compound"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q4",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multi_select",
+      "difficulty": 4,
+      "prompt": "Which of these are elements? Select all that apply.",
+      "answer_spec": {
+        "correct_answer": ["Oxygen", "Copper"]
+      },
+      "validator": "multi_select",
+      "hints": [
+        {
+          "level": 1,
+          "text": "An element has only one kind of atom."
+        },
+        {
+          "level": 2,
+          "text": "Check each formula for more than one element symbol."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Oxygen and copper are each a single kind of atom. Water and carbon dioxide each contain two different elements bonded together, so they are compounds.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Oxygen", "Copper", "Water", "Carbon dioxide"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q5",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Iron filings and sulfur powder are stirred together. The mixture is still attracted to a magnet. What does that show?",
+      "answer_spec": {
+        "correct_answer": "The iron is unchanged, so no compound has formed"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask whether the iron kept its own properties."
+        },
+        {
+          "level": 2,
+          "text": "A compound would have new properties of its own."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The iron kept its magnetism, which means it is still iron and has not bonded. In the compound iron sulfide, the magnetism is gone because the iron is no longer free.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The iron is unchanged, so no compound has formed",
+          "A compound has formed",
+          "The sulfur is magnetic",
+          "The mixture is an element"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "A compound has formed",
+          "misconception_id": "mc.chemistry.matter.mixture_called_compound"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q6",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which method could separate salt from sand, and what does that tell you?",
+      "answer_spec": {
+        "correct_answer": "Dissolving and filtering, because it is a mixture"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ask whether a chemical reaction is needed."
+        },
+        {
+          "level": 2,
+          "text": "Physical separation means no bonds are being broken."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Salt and sand form a mixture, so physical methods work: dissolve the salt, filter out the sand, then evaporate. A compound would need a chemical reaction to split.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Dissolving and filtering, because it is a mixture",
+          "A chemical reaction, because it is a compound",
+          "It cannot be separated",
+          "Heating alone, because it is an element"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q7",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "In the compound H2O, how many hydrogen atoms are bonded to each oxygen atom?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Read the subscript after the H."
+        },
+        {
+          "level": 2,
+          "text": "H2 means two hydrogen atoms."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The 2 after H means two hydrogen atoms for every one oxygen atom - a fixed ratio, which is what makes it a compound.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.elements_compounds.q8",
+      "skill_id": "chemistry.matter.elements_compounds",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Hydrogen burns, oxygen supports burning, but water puts fires out. What does this illustrate?",
+      "answer_spec": {
+        "correct_answer": "A compound has its own properties, not those of its elements"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare water's behaviour with that of its two elements."
+        },
+        {
+          "level": 2,
+          "text": "Bonding creates a genuinely new substance."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Bonding produces a new substance whose properties are its own. Water behaves nothing like hydrogen or oxygen, which is exactly what separates a compound from a mixture.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "A compound has its own properties, not those of its elements",
+          "Water is a mixture of hydrogen and oxygen",
+          "The elements were destroyed",
+          "Water contains no hydrogen"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q1",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is a vertical column of the periodic table called?",
+      "answer_spec": {
+        "correct_answer": "A group"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Columns run up and down."
+        },
+        {
+          "level": 2,
+          "text": "Members of a column behave alike."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A vertical column is a group, and its members share their outer-electron count and behave similarly.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A group", "A period", "A shell", "A series"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q2",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "prompt": "What is a horizontal row of the periodic table called?",
+      "answer_spec": {
+        "correct_answer": "A period"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Rows run left to right."
+        },
+        {
+          "level": 2,
+          "text": "It is the other of the two names."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A horizontal row is a period.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A period", "A group", "A family", "A shell"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q3",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Elements in group 1 have how many electrons in their outer shell?",
+      "answer_spec": {
+        "correct_answer": 1
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The group number gives the outer-electron count for groups 1 to 7."
+        },
+        {
+          "level": 2,
+          "text": "Group 1 means one."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Group 1 elements have one outer electron, which is why they all react in the same vigorous way.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q4",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Why are the noble gases in group 0 so unreactive?",
+      "answer_spec": {
+        "correct_answer": "Their outer electron shell is already full"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reactions involve gaining, losing or sharing outer electrons."
+        },
+        {
+          "level": 2,
+          "text": "Ask what happens when there is nothing to gain."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A full outer shell leaves nothing to gain or lose, so the noble gases have no tendency to react.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Their outer electron shell is already full",
+          "They have no electrons",
+          "They are too heavy to react",
+          "They are all liquids"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q5",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Sodium and potassium are both in group 1. What does that predict?",
+      "answer_spec": {
+        "correct_answer": "They react in similar ways"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Members of a group share their outer-electron count."
+        },
+        {
+          "level": 2,
+          "text": "Outer electrons drive reactions."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Sharing a group means sharing the outer-electron count, so they react similarly - both vigorously with water, for instance.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "They react in similar ways",
+          "They have the same mass",
+          "They have the same number of protons",
+          "They are the same element"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "They have the same number of protons",
+          "misconception_id": "mc.chemistry.matter.group_means_same_protons"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q6",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "In what order are the elements arranged across the periodic table?",
+      "answer_spec": {
+        "correct_answer": "Increasing atomic number"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The ordering uses a count of one particle."
+        },
+        {
+          "level": 2,
+          "text": "It is the count that defines the element."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Elements are placed in order of increasing atomic number, which is the proton count.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Increasing atomic number",
+          "Alphabetical order",
+          "Decreasing mass",
+          "Date of discovery"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q7",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An element is in group 7. How many electrons does it have in its outer shell?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "For groups 1 to 7 the group number is the outer-electron count."
+        },
+        {
+          "level": 2,
+          "text": "Group 7 means seven."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Group 7 elements, the halogens, have seven outer electrons - one short of a full shell, which is why they react so readily.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.periodic_table.q8",
+      "skill_id": "chemistry.matter.periodic_table",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A newly discovered element is found to have seven outer electrons. What can be predicted about it?",
+      "answer_spec": {
+        "correct_answer": "It will behave like the other group 7 elements"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Outer electrons determine chemical behaviour."
+        },
+        {
+          "level": 2,
+          "text": "Seven outer electrons places it in a known group."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "Seven outer electrons puts it in group 7, so it should behave like the other halogens. This predictive power is the reason the table is arranged as it is.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It will behave like the other group 7 elements",
+          "It will be unreactive",
+          "It will be a metal in group 1",
+          "Nothing can be predicted"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q1",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many atoms in total are in one molecule of H2SO4?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count each element in turn."
+        },
+        {
+          "level": 2,
+          "text": "2 hydrogen + 1 sulfur + 4 oxygen."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "H2SO4 has 2 hydrogen, 1 sulfur and 4 oxygen atoms, giving 2 + 1 + 4 = 7 atoms.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q2",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "How many oxygen atoms are in one molecule of CO2?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Read the subscript after the O."
+        },
+        {
+          "level": 2,
+          "text": "The 2 applies to the oxygen."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The 2 after O means two oxygen atoms.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q3",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many oxygen atoms are in one unit of Ca(OH)2?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The 2 sits outside the bracket."
+        },
+        {
+          "level": 2,
+          "text": "It multiplies everything inside, including the O."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The 2 outside the bracket doubles the contents, so there are 2 oxygen atoms as well as 2 hydrogen atoms.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 1,
+          "misconception_id": "mc.chemistry.matter.bracket_multiplier_ignored"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q4",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "How many atoms in total are in one unit of Ca(OH)2?",
+      "answer_spec": {
+        "correct_answer": 5
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the calcium, then double the bracket's contents."
+        },
+        {
+          "level": 2,
+          "text": "1 + (1 oxygen + 1 hydrogen) x 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "One calcium plus the doubled bracket gives 1 + 2 + 2 = 5 atoms.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 3,
+          "misconception_id": "mc.chemistry.matter.bracket_multiplier_ignored"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q5",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "How many oxygen atoms are in one unit of Mg(NO3)2?",
+      "answer_spec": {
+        "correct_answer": 6
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "There are 3 oxygen atoms inside the bracket."
+        },
+        {
+          "level": 2,
+          "text": "The 2 outside doubles them."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "Three oxygen atoms inside the bracket, doubled by the 2 outside, gives 6 oxygen atoms.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 3,
+          "misconception_id": "mc.chemistry.matter.bracket_multiplier_ignored"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q6",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "How many atoms in total are in one unit of NaCl?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No subscripts means one of each."
+        },
+        {
+          "level": 2,
+          "text": "Na is one element and Cl is another."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "NaCl has one sodium atom and one chlorine atom, so 2 atoms in total. Note that Cl is a single element symbol, not C followed by l.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q7",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Glucose has the formula C6H12O6. How many atoms does one molecule contain in total?",
+      "answer_spec": {
+        "correct_answer": 24
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the three subscripts."
+        },
+        {
+          "level": 2,
+          "text": "6 + 12 + 6."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "6 carbon + 12 hydrogen + 6 oxygen = 24 atoms.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.chemical_formulas.q8",
+      "skill_id": "chemistry.matter.chemical_formulas",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "What is the difference between 2 H2O and H4O2?",
+      "answer_spec": {
+        "correct_answer": "2 H2O is two separate water molecules; H4O2 is not a real substance"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A number in front counts whole molecules."
+        },
+        {
+          "level": 2,
+          "text": "A subscript changes what the molecule is."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "A number in front counts complete molecules, so 2 H2O is two water molecules. Changing the subscripts would describe a different substance entirely, and H4O2 is not one that exists.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "2 H2O is two separate water molecules; H4O2 is not a real substance",
+          "They are the same thing",
+          "H4O2 is two water molecules joined",
+          "2 H2O means half a water molecule"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q1",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Balance the equation _ H2 + O2 gives 2 H2O. What coefficient goes in front of H2?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the hydrogen atoms on the right first."
+        },
+        {
+          "level": 2,
+          "text": "2 H2O has 4 hydrogen atoms, so the left needs 4 too."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 H2O contains 4 hydrogen atoms, and each H2 supplies 2, so 2 units of H2 are needed. Check the oxygen: 1 O2 gives 2, and 2 H2O needs 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q2",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Balance the equation CH4 + _ O2 gives CO2 + 2 H2O. What coefficient goes in front of O2?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the oxygen atoms on the right."
+        },
+        {
+          "level": 2,
+          "text": "CO2 has 2 and 2 H2O has 2, making 4 in total."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The right has 2 + 2 = 4 oxygen atoms, and each O2 supplies 2, so 2 units are needed. Carbon and hydrogen already match.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q3",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Balance the equation _ Na + Cl2 gives 2 NaCl. What coefficient goes in front of Na?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the sodium atoms on the right."
+        },
+        {
+          "level": 2,
+          "text": "2 NaCl contains 2 sodium atoms."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 NaCl needs 2 sodium atoms, so 2 Na are required. The chlorine already matches: Cl2 gives 2, and 2 NaCl needs 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q4",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Balance the equation N2 + _ H2 gives 2 NH3. What coefficient goes in front of H2?",
+      "answer_spec": {
+        "correct_answer": 3
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the hydrogen atoms on the right."
+        },
+        {
+          "level": 2,
+          "text": "2 NH3 has 6 hydrogen atoms, and each H2 supplies 2."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 NH3 contains 6 hydrogen atoms, and each H2 supplies 2, so 3 units are needed. Nitrogen matches: N2 gives 2 and 2 NH3 needs 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q5",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Balance the equation 2 Mg + O2 gives _ MgO. What coefficient goes in front of MgO?",
+      "answer_spec": {
+        "correct_answer": 2
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Count the magnesium atoms on the left."
+        },
+        {
+          "level": 2,
+          "text": "There are 2, so 2 MgO units are needed."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 Mg supplies 2 magnesium atoms, so 2 MgO are formed. Check the oxygen: O2 gives 2, and 2 MgO needs 2.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q6",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Why must a chemical equation balance?",
+      "answer_spec": {
+        "correct_answer": "Atoms are rearranged in a reaction, never created or destroyed"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Think about what actually happens to the atoms."
+        },
+        {
+          "level": 2,
+          "text": "Nothing new appears from nowhere."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A reaction only rearranges the atoms already present, so every atom on the left must still be there on the right. Balancing makes that bookkeeping explicit.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "Atoms are rearranged in a reaction, never created or destroyed",
+          "Because chemists prefer tidy numbers",
+          "So that the mass doubles",
+          "To make the formulas shorter"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q7",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "A student balances an equation by changing O2 into O3. What is wrong with this?",
+      "answer_spec": {
+        "correct_answer": "It changes the substance, not just the amount"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "A subscript is part of the substance's identity."
+        },
+        {
+          "level": 2,
+          "text": "O2 and O3 are different substances."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "O2 is oxygen and O3 is ozone - different substances with different properties. Only the coefficient in front may be changed, because that counts units without altering what they are.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It changes the substance, not just the amount",
+          "Nothing, it is a valid method",
+          "O3 does not exist",
+          "It only works for gases"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Nothing, it is a valid method",
+          "misconception_id": "mc.chemistry.matter.changed_subscript_to_balance"
+        }
+      ],
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.balancing_equations.q8",
+      "skill_id": "chemistry.matter.balancing_equations",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "In the balanced equation CH4 + 2 O2 gives CO2 + 2 H2O, how many oxygen atoms are on the left-hand side?",
+      "answer_spec": {
+        "correct_answer": 4
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The coefficient multiplies every atom in the formula after it."
+        },
+        {
+          "level": 2,
+          "text": "2 O2 means 2 x 2 oxygen atoms."
+        }
+      ],
+      "dimensions": ["accuracy", "transfer"],
+      "explanation": "2 O2 supplies 2 x 2 = 4 oxygen atoms, matching the 2 + 2 = 4 on the right.",
+      "content_version": "1.0.0",
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q1",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Using H = 1 and O = 16, what is the relative formula mass of H2O?",
+      "answer_spec": {
+        "correct_answer": 18
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Add the mass of every atom present."
+        },
+        {
+          "level": 2,
+          "text": "Two hydrogens at 1 each, plus one oxygen at 16."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "2 x 1 + 16 = 18.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q2",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "Using C = 12 and O = 16, what is the relative formula mass of CO2?",
+      "answer_spec": {
+        "correct_answer": 44
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One carbon and two oxygens."
+        },
+        {
+          "level": 2,
+          "text": "12 + 2 x 16."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 + 32 = 44.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 28,
+          "misconception_id": "mc.chemistry.matter.subscript_ignored_in_formula_mass"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q3",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "Using C = 12 and H = 1, what is the relative formula mass of CH4?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "One carbon and four hydrogens."
+        },
+        {
+          "level": 2,
+          "text": "12 + 4 x 1."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "12 + 4 = 16.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q4",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 5,
+      "prompt": "Using Ca = 40, O = 16 and H = 1, what is the relative formula mass of Ca(OH)2?",
+      "answer_spec": {
+        "correct_answer": 74
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The bracket contents are doubled."
+        },
+        {
+          "level": 2,
+          "text": "40 + 2 x (16 + 1)."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "40 + 2 x 17 = 40 + 34 = 74.",
+      "content_version": "1.0.0",
+      "common_wrong_answers": [
+        {
+          "value": 57,
+          "misconception_id": "mc.chemistry.matter.bracket_multiplier_ignored"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q5",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 3,
+      "prompt": "10 g of one substance reacts completely with 15 g of another. What is the total mass of the products, in grams?",
+      "answer_spec": {
+        "correct_answer": 25
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "No atoms are created or destroyed."
+        },
+        {
+          "level": 2,
+          "text": "The products must total the same as the reactants."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Mass is conserved, so the products total 10 + 15 = 25 g.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q6",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "40 g of reactants produce 24 g of solid product and one gas. What is the mass of the gas, in grams?",
+      "answer_spec": {
+        "correct_answer": 16
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The totals must match."
+        },
+        {
+          "level": 2,
+          "text": "40 - 24."
+        }
+      ],
+      "dimensions": ["accuracy"],
+      "explanation": "The products must total 40 g, so the gas accounts for 40 - 24 = 16 g.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q7",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "A candle burns in an open dish and the dish gets lighter. Has mass been destroyed?",
+      "answer_spec": {
+        "correct_answer": "No, the products left as gases"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The dish is open."
+        },
+        {
+          "level": 2,
+          "text": "Ask where carbon dioxide and water vapour went."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "The carbon dioxide and water vapour escaped into the room. Burn the candle in a sealed container and the total mass is unchanged.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "No, the products left as gases",
+          "Yes, burning destroys mass",
+          "Yes, the mass turned into light",
+          "No, the candle gained mass"
+        ]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "Yes, burning destroys mass",
+          "misconception_id": "mc.chemistry.matter.escaping_gas_read_as_lost_mass"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.conservation_mass.q8",
+      "skill_id": "chemistry.matter.conservation_mass",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Steel wool is burned on a balance and gets heavier. Why?",
+      "answer_spec": {
+        "correct_answer": "It combined with oxygen from the air"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Mass is conserved, so extra mass must have come from somewhere."
+        },
+        {
+          "level": 2,
+          "text": "The burning happened in air."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The iron combined with oxygen from the air, and that oxygen's mass is now part of the solid. Nothing was created - mass simply moved from the air onto the balance.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It combined with oxygen from the air",
+          "Burning creates mass",
+          "Heat has mass",
+          "The balance was faulty"
+        ]
+      },
+      "transfer_flag": true
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q1",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "numeric",
+      "difficulty": 2,
+      "prompt": "What is the pH of a neutral solution such as pure water?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Neutral sits in the middle of the 0 to 14 scale."
+        },
+        {
+          "level": 2,
+          "text": "Halfway between 0 and 14."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "A neutral solution has pH 7, exactly halfway along the scale.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q2",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "A solution has pH 3. What is it?",
+      "answer_spec": {
+        "correct_answer": "Acidic"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Compare it with the neutral value."
+        },
+        {
+          "level": 2,
+          "text": "Below 7 means one thing, above means the other."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "pH 3 is below 7, so the solution is acidic.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["Acidic", "Alkaline", "Neutral", "It cannot be determined"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q3",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 3,
+      "prompt": "Which of these is the most acidic?",
+      "answer_spec": {
+        "correct_answer": "pH 1"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "The lower the pH, the more acidic."
+        },
+        {
+          "level": 2,
+          "text": "Look for the smallest number."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "pH 1 is the lowest of these, so it is the most acidic. The scale runs from most acidic at 0 to most alkaline at 14.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["pH 1", "pH 6", "pH 7", "pH 12"]
+      },
+      "common_wrong_answers": [
+        {
+          "value": "pH 12",
+          "misconception_id": "mc.chemistry.matter.ph_scale_read_backwards"
+        }
+      ]
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q4",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "What are the products when an acid reacts with a base?",
+      "answer_spec": {
+        "correct_answer": "A salt and water"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "This reaction has a standard pair of products."
+        },
+        {
+          "level": 2,
+          "text": "One of them is always water."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Acid plus base gives a salt plus water. That is the general pattern of neutralisation.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["A salt and water", "A gas and heat", "An acid and a base", "Only water"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q5",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "numeric",
+      "difficulty": 4,
+      "prompt": "An acid at pH 2 is neutralised exactly. What is the pH of the resulting solution?",
+      "answer_spec": {
+        "correct_answer": 7
+      },
+      "validator": "numeric",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Exact neutralisation means neither acid nor alkali is left over."
+        },
+        {
+          "level": 2,
+          "text": "That is the neutral value."
+        }
+      ],
+      "dimensions": ["understanding", "accuracy"],
+      "explanation": "Exact neutralisation leaves a neutral solution, so the pH is 7.",
+      "content_version": "1.0.0"
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q6",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Universal indicator turns green in a solution. What does that show?",
+      "answer_spec": {
+        "correct_answer": "The solution is neutral"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Green sits in the middle of the indicator's colour range."
+        },
+        {
+          "level": 2,
+          "text": "The middle of the pH scale is 7."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "Green is the middle colour, corresponding to pH 7, so the solution is neutral.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "The solution is neutral",
+          "The solution is strongly acidic",
+          "The solution is strongly alkaline",
+          "The solution is a salt"
+        ]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q7",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 4,
+      "prompt": "Which of these would be alkaline?",
+      "answer_spec": {
+        "correct_answer": "pH 11"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Alkaline means above 7."
+        },
+        {
+          "level": 2,
+          "text": "Find the value greater than 7."
+        }
+      ],
+      "dimensions": ["understanding"],
+      "explanation": "pH 11 is above 7, so it is alkaline. The others are at or below neutral.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": ["pH 11", "pH 7", "pH 4", "pH 1"]
+      }
+    },
+    {
+      "question_id": "chemistry.matter.acids_bases.q8",
+      "skill_id": "chemistry.matter.acids_bases",
+      "type": "multiple_choice",
+      "difficulty": 5,
+      "prompt": "Indigestion is treated with a tablet containing a base. Why does that help?",
+      "answer_spec": {
+        "correct_answer": "It neutralises excess stomach acid, raising the pH towards 7"
+      },
+      "validator": "exact_choice",
+      "hints": [
+        {
+          "level": 1,
+          "text": "Stomach contents are acidic."
+        },
+        {
+          "level": 2,
+          "text": "A base reacts with an acid."
+        }
+      ],
+      "dimensions": ["understanding", "transfer"],
+      "explanation": "The stomach contains acid, and a base neutralises it, moving the pH up towards neutral and relieving the discomfort.",
+      "content_version": "1.0.0",
+      "parameters": {
+        "options": [
+          "It neutralises excess stomach acid, raising the pH towards 7",
+          "It makes the stomach more acidic",
+          "It coats the stomach without reacting",
+          "It removes all the water"
+        ]
+      },
+      "transfer_flag": true
+    }
+  ]
+}

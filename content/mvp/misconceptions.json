@@ -1,6 +1,206 @@
 {
   "misconceptions": [
     {
+      "misconception_id": "mc.biology.life.all_plant_cells_have_chloroplasts",
+      "description": "Assumes every cell in a plant contains chloroplasts.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Only cells that receive light have chloroplasts. Root cells have none, which is why roots are not green; the plant makes sugar in the leaves and transports it down.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Yes, all of them"
+    },
+    {
+      "misconception_id": "mc.biology.life.food_chain_arrow_reversed",
+      "description": "Reads a food chain arrow as pointing from the eater to what it eats.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The arrow shows which way the energy moves, so it points from the food to the feeder. In grass to rabbit to fox, the rabbit eats the grass and the fox eats the rabbit.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "The grass eats the rabbit"
+    },
+    {
+      "misconception_id": "mc.biology.life.gametes_have_full_chromosome_number",
+      "description": "Gives a gamete the same chromosome number as a body cell.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "If gametes carried the full number, fertilisation would double it every generation. Gametes carry half, so that sperm and egg together restore the normal count.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 46
+    },
+    {
+      "misconception_id": "mc.biology.life.gene_larger_than_chromosome",
+      "description": "Orders a gene as larger than a chromosome.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A chromosome is a long DNA molecule carrying many genes, so the chromosome is much larger. The nesting runs: DNA makes up genes, and genes sit along chromosomes.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "A chromosome is part of a gene"
+    },
+    {
+      "misconception_id": "mc.biology.life.meiosis_gives_two_cells",
+      "description": "Says meiosis produces two daughter cells, copying the mitosis outcome.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Meiosis involves two rounds of division, so one cell becomes four. Mitosis has a single division and gives two. Counting the divisions is the reliable way to remember which is which.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 2
+    },
+    {
+      "misconception_id": "mc.biology.life.movement_means_alive",
+      "description": "Treats movement as sufficient evidence that something is alive.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Movement is only one of seven life processes, and non-living things move too - rivers, fires and machines all do. Something is alive only if it does all seven, including respiration and reproduction.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "It moves"
+    },
+    {
+      "misconception_id": "mc.biology.life.organ_called_tissue",
+      "description": "Calls a structure made of several tissue types a tissue.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A tissue is one kind of cell working together. As soon as several different tissues combine for a shared function, it is an organ. The heart contains muscle, nerve and blood tissue, so it is an organ.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "A tissue"
+    },
+    {
+      "misconception_id": "mc.biology.life.plants_respire_only_at_night",
+      "description": "Believes plants respire only in darkness, when photosynthesis stops.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Plants respire all the time, day and night, because every living cell needs energy continuously. In daylight photosynthesis runs faster than respiration, so the net exchange looks reversed - but respiration never stopped.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Only at night"
+    },
+    {
+      "misconception_id": "mc.biology.life.punnett_ratio_treated_as_certainty",
+      "description": "Reads a Punnett ratio as a guarantee about a small number of offspring.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A Punnett square gives the probability for each offspring independently. Over many offspring the proportions approach the ratio, but any particular set of four can come out in any combination, just as four coin tosses need not be two heads and two tails.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Exactly 3"
+    },
+    {
+      "misconception_id": "mc.biology.life.respiration_confused_with_breathing",
+      "description": "Uses respiration and breathing interchangeably.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Breathing moves air into and out of the lungs. Respiration is the chemical release of energy from food inside cells, and it happens in every living cell - including in organisms with no lungs at all.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Breathing air in and out"
+    },
+    {
+      "misconception_id": "mc.biology.life.single_transfer_counted",
+      "description": "Applies the energy loss once when the food chain requires it twice.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Count the arrows. Reaching a secondary consumer means two transfers from the producer, so the ten per cent applies twice - a hundredth overall, not a tenth.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 1000
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.bracket_multiplier_ignored",
+      "description": "Ignores the number after a closing bracket, so grouped atoms are counted only once.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A number after a closing bracket multiplies everything inside it, just as in algebra. In Ca(OH)2 the 2 applies to both the O and the H, giving two of each rather than one.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 3
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.changed_subscript_to_balance",
+      "description": "Balances an equation by altering a subscript rather than a coefficient.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A subscript is part of the substance's identity - changing O2 to O3 turns oxygen into ozone. Only the coefficient in front may be changed, because that just counts how many units react.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Change O2 to O3"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.escaping_gas_read_as_lost_mass",
+      "description": "Concludes mass was destroyed when a gaseous product escapes the container.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The mass left as a gas; it was not destroyed. Repeat the reaction in a sealed container and the balance reading does not change at all, which is the standard demonstration of conservation of mass.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Mass was destroyed"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.group_means_same_protons",
+      "description": "Thinks elements in the same group have the same number of protons.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The proton count is what makes elements different, so no two elements share it. A group shares the number of OUTER electrons, which is what governs reactions.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "They have the same number of protons"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.mass_number_used_as_neutrons",
+      "description": "Reads the mass number as the number of neutrons, without subtracting the protons.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The mass number counts protons and neutrons together, because both sit in the nucleus and both have about the same mass. Subtract the atomic number to leave the neutrons alone.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 12
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.mixture_called_compound",
+      "description": "Calls any substance containing more than one element a compound, whether or not it is bonded.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A compound needs a chemical bond and a fixed ratio, and it has properties of its own. If the substances are merely together, keep their own properties, and can be separated physically, it is a mixture.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Compound"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.particles_change_when_state_changes",
+      "description": "Believes the particles themselves expand, shrink or change when a substance changes state.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A change of state rearranges particles; it does not alter them. The water particles in ice, liquid water and steam are identical - what differs is how much energy they have and how tightly they are held together.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "The particles get bigger"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.ph_scale_read_backwards",
+      "description": "Reads a higher pH as more acidic, inverting the scale.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The pH scale runs the other way: 0 is strongly acidic, 7 is neutral, and 14 is strongly alkaline. A lower number means more acidic, so pH 2 is far more acidic than pH 6.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "pH 12"
+    },
+    {
+      "misconception_id": "mc.chemistry.matter.subscript_ignored_in_formula_mass",
+      "description": "Adds one of each atomic mass, ignoring the subscripts, when totalling a formula mass.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Each atom contributes its own mass, so a subscript multiplies that element's contribution. CO2 has two oxygens, so oxygen contributes 2 x 16 = 32, not 16.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 28
+    },
+    {
       "misconception_id": "mc.math.add_sub.confuses_join_with_takeaway",
       "description": "Treats taking away or sharing as addition, because the situation involves two numbers.",
       "detection_rule": {
@@ -666,6 +866,166 @@
       "corrective_explanation": "Sine is a function, not a multiplier, so it cannot be pulled apart that way. Test it: sin 60 is about 0.866 but 2 sin 30 is 1. The correct expansion is sin 2A = 2 sin A cos A.",
       "content_version": "1.0.0",
       "example_wrong_answer": "Yes, always"
+    },
+    {
+      "misconception_id": "mc.physics.motion.acceleration_needs_speed_change",
+      "description": "Believes acceleration requires a change in speed, so circular motion at constant speed looks unaccelerated.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Acceleration is the rate of change of velocity, and velocity includes direction. Turning changes the direction, so it changes the velocity, so it is an acceleration even when the speedometer never moves.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "No, because its speed is constant"
+    },
+    {
+      "misconception_id": "mc.physics.motion.added_frequency_and_wavelength",
+      "description": "Adds frequency and wavelength instead of multiplying them.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Check the units. Waves per second multiplied by metres per wave gives metres per second, which is a speed. Adding hertz to metres gives nothing meaningful.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 12
+    },
+    {
+      "misconception_id": "mc.physics.motion.added_opposing_forces",
+      "description": "Adds forces that act in opposite directions instead of subtracting.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Direction matters when combining forces. Forces the same way add; forces in opposite directions partly cancel, so subtract the smaller from the larger and keep the direction of the larger.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 50
+    },
+    {
+      "misconception_id": "mc.physics.motion.averaged_the_speeds",
+      "description": "Takes the mean of two speeds instead of dividing total distance by total time.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Average speed is always total distance divided by total time. Averaging the speeds treats both legs as lasting equally long, which is only true when they do. Here the slow leg took four times as long, so it should count four times as much.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 6.25
+    },
+    {
+      "misconception_id": "mc.physics.motion.divided_time_by_distance",
+      "description": "Divides time by distance instead of distance by time when finding a speed.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "The unit tells you the order. Metres per second means metres divided by seconds, so distance goes on top. Dividing the other way gives seconds per metre, which answers a different question.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 0.2
+    },
+    {
+      "misconception_id": "mc.physics.motion.dropped_the_negative_sign",
+      "description": "Reports a slowing object's acceleration as positive, dropping the sign.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Subtract in the order final minus starting. If the object slowed, that difference is negative and the acceleration is negative too. The sign is what tells you it is slowing rather than speeding up.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 2
+    },
+    {
+      "misconception_id": "mc.physics.motion.echo_distance_not_halved",
+      "description": "Reports the full round-trip distance as the distance to the reflecting surface.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "An echo travels out and back, so the sound covers twice the distance to the surface. Halve the total to get the one-way distance.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 680
+    },
+    {
+      "misconception_id": "mc.physics.motion.energy_destroyed_by_friction",
+      "description": "Believes friction destroys energy rather than transferring it.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Energy is never destroyed. Friction transfers it to the surroundings as heat, spreading it out so thinly that it can no longer do useful work - which feels like loss but is not.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "It was destroyed by friction"
+    },
+    {
+      "misconception_id": "mc.physics.motion.heavier_means_denser",
+      "description": "Judges density by mass alone, ignoring volume.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Density is mass per unit volume, so a heavier object spread over a much larger volume can be less dense. Always divide before comparing.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "Object B, because it is heavier"
+    },
+    {
+      "misconception_id": "mc.physics.motion.mass_changes_with_gravity",
+      "description": "Believes mass changes with location because weight does.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Mass is the amount of matter, and moving somewhere else does not add or remove matter, so mass never changes. Weight is the pull of gravity on that mass, so only weight changes when gravity does.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 10
+    },
+    {
+      "misconception_id": "mc.physics.motion.multiplied_to_find_speed",
+      "description": "Multiplies distance by time when asked for speed.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Speed is a rate, so it is a division. Multiplying distance by time gives a quantity with no physical meaning here. Check your answer against the units: m/s needs metres divided by seconds.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 2000
+    },
+    {
+      "misconception_id": "mc.physics.motion.steady_motion_needs_force",
+      "description": "Believes constant velocity requires a resultant force.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A resultant force changes motion; it is not needed to maintain it. At a steady speed the driving force is exactly cancelled by friction and drag, so the resultant is zero even though individual forces are large.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "There is a forward resultant force"
+    },
+    {
+      "misconception_id": "mc.physics.motion.third_law_pair_on_same_object",
+      "description": "Pairs the normal force with the object's weight, though both act on the same object.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "A third law pair always acts on two different objects and is the same type of force. The table pushing the book pairs with the book pushing the table. The book's weight is the Earth pulling the book, and its partner is the book pulling the Earth.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "The weight of the book"
+    },
+    {
+      "misconception_id": "mc.physics.motion.used_final_velocity_not_change",
+      "description": "Divides the final velocity by the time instead of the change in velocity.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Acceleration measures how much the velocity changed, so subtract the starting velocity first. Using the final velocity alone assumes the object started from rest, which is only sometimes true.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 6.25
+    },
+    {
+      "misconception_id": "mc.physics.motion.velocity_not_squared",
+      "description": "Uses velocity instead of velocity squared in the kinetic energy formula.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Kinetic energy depends on the square of the speed, so KE = (1/2)mv^2. That is why doubling a car's speed quadruples its kinetic energy, and why stopping distances grow so sharply.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": 6
+    },
+    {
+      "misconception_id": "mc.physics.motion.work_confused_with_power",
+      "description": "Treats doing something faster as doing more work.",
+      "detection_rule": {
+        "kind": "equals_value"
+      },
+      "corrective_explanation": "Work is force times distance and says nothing about time. Doing the same job faster is more power, not more work.",
+      "content_version": "1.0.0",
+      "example_wrong_answer": "The faster one does more work"
     },
     {
       "misconception_id": "mc.science.data.assumed_unit_gridline",
