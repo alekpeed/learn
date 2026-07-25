@@ -7,6 +7,10 @@ on:
   workflow_dispatch:
   push:
     tags: ['v*']
+    # The development branch builds installers on demand too, so a Windows build
+    # can be produced before this reaches the default branch (workflow_dispatch
+    # is only offered for workflows that already live on the default branch).
+    branches: [claude/learning-app-next-phase-pgs09j]
 
 jobs:
   windows-installer:
