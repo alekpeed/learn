@@ -9,3 +9,4 @@ export * from './activity.js';
 export * from './session.js';
 export * from './dashboard.js';
 export * from './misconceptions.js';
+export * from './achievements.js';

@@ -42,10 +42,48 @@ export class LearnerRepository {
     return projectLearner(await this.store.getByLearner(learnerId));
   }
 
-  /** Load the single local learner, if any exists (MVP is single-profile). */
-  async loadCurrent(): Promise<Learner | null> {
+  /**
+   * Every profile on this device, oldest first (Phase 25 multi-learner).
+   *
+   * Each learner is projected from their own events only, so one profile can
+   * never pick up another's settings. Grouping by `learner_id` is enough
+   * because every event has carried it since Phase 1 - the storage layer was
+   * multi-learner from the start, and only the UI assumed a single profile.
+   */
+  async listLearners(): Promise<Learner[]> {
     const all = await this.store.getAll();
-    return projectLearner(all);
+    const byLearner = new Map<string, LearningEvent[]>();
+    for (const event of all) {
+      const list = byLearner.get(event.learner_id) ?? [];
+      list.push(event);
+      byLearner.set(event.learner_id, list);
+    }
+    const learners: Learner[] = [];
+    for (const events of byLearner.values()) {
+      const learner = projectLearner(events);
+      if (learner) learners.push(learner);
+    }
+    learners.sort((a, b) =>
+      a.created_at === b.created_at
+        ? a.learner_id.localeCompare(b.learner_id)
+        : a.created_at.localeCompare(b.created_at),
+    );
+    return learners;
+  }
+
+  /**
+   * Load the active profile. `preferredId` names the profile the device last
+   * selected; if it is missing or no longer exists, the most recently created
+   * profile is used, which is what a single-profile device has always done.
+   */
+  async loadCurrent(preferredId?: string | null): Promise<Learner | null> {
+    const learners = await this.listLearners();
+    if (learners.length === 0) return null;
+    if (preferredId) {
+      const match = learners.find((l) => l.learner_id === preferredId);
+      if (match) return match;
+    }
+    return learners[learners.length - 1] ?? null;
   }
 
   async createProfile(displayName: string): Promise<Learner> {
@@ -75,5 +113,13 @@ export class LearnerRepository {
   /** Reset all local data. Callers MUST confirm with the user first (FND-003). */
   async resetAll(): Promise<void> {
     await this.store.clear();
+  }
+
+  /**
+   * Delete one profile and everything it recorded, leaving other profiles
+   * untouched. Callers MUST confirm with the user first.
+   */
+  async deleteLearner(learnerId: string): Promise<void> {
+    await this.store.deleteLearner(learnerId);
   }
 }

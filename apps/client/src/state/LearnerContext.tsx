@@ -9,18 +9,25 @@ import type { Learner, LearnerPreferences, AccessibilitySettings } from '@learn/
 import { toAppError, type AppError } from '@learn/domain';
 import { LearnerRepository } from '@learn/persistence';
 import { learnerRepository as defaultRepo } from '../data/repository.js';
+import { getActiveLearnerId, setActiveLearnerId } from '../data/activeLearner.js';
 
 export type LoadStatus = 'loading' | 'ready' | 'error';
 
 interface LearnerContextValue {
   status: LoadStatus;
   learner: Learner | null;
+  /** Every profile on this device, oldest first (Phase 25). */
+  learners: Learner[];
   error: AppError | null;
   createProfile: (displayName: string) => Promise<void>;
   updateSettings: (changes: {
     preferences?: Partial<LearnerPreferences>;
     accessibility_settings?: Partial<AccessibilitySettings>;
   }) => Promise<void>;
+  /** Switch the device to another profile. */
+  switchTo: (learnerId: string) => Promise<void>;
+  /** Delete one profile and everything it recorded. Confirm before calling. */
+  deleteLearner: (learnerId: string) => Promise<void>;
   resetAll: () => Promise<void>;
   /** Re-read the learner from storage (e.g. after importing progress). */
   reload: () => Promise<void>;
@@ -48,15 +55,16 @@ export function LearnerProvider({
 }): JSX.Element {
   const [status, setStatus] = useState<LoadStatus>('loading');
   const [learner, setLearner] = useState<Learner | null>(null);
+  const [learners, setLearners] = useState<Learner[]>([]);
   const [error, setError] = useState<AppError | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-    repository
-      .loadCurrent()
-      .then((l) => {
+    Promise.all([repository.loadCurrent(getActiveLearnerId()), repository.listLearners()])
+      .then(([l, all]) => {
         if (cancelled) return;
         setLearner(l);
+        setLearners(all);
         applyAccessibility(l?.accessibility_settings);
         setStatus('ready');
       })
@@ -74,31 +82,63 @@ export function LearnerProvider({
     () => ({
       status,
       learner,
+      learners,
       error,
       async createProfile(displayName) {
         const l = await repository.createProfile(displayName);
+        // A new profile becomes the active one, so creating it from the
+        // Learners screen switches to it rather than silently adding it.
+        setActiveLearnerId(l.learner_id);
         setLearner(l);
+        setLearners(await repository.listLearners());
         applyAccessibility(l.accessibility_settings);
       },
       async updateSettings(changes) {
         if (!learner) return;
         const l = await repository.updateSettings(learner.learner_id, changes);
         setLearner(l);
+        setLearners(await repository.listLearners());
         applyAccessibility(l.accessibility_settings);
+      },
+      async switchTo(learnerId) {
+        const l = await repository.load(learnerId);
+        if (!l) return;
+        setActiveLearnerId(learnerId);
+        setLearner(l);
+        // Each profile carries its own accessibility settings, so switching
+        // must re-apply them or the previous learner's theme would persist.
+        applyAccessibility(l.accessibility_settings);
+      },
+      async deleteLearner(learnerId) {
+        await repository.deleteLearner(learnerId);
+        const remaining = await repository.listLearners();
+        setLearners(remaining);
+        if (learner?.learner_id === learnerId) {
+          const next = remaining[remaining.length - 1] ?? null;
+          setActiveLearnerId(next?.learner_id ?? null);
+          setLearner(next);
+          applyAccessibility(next?.accessibility_settings);
+        }
       },
       async resetAll() {
         await repository.resetAll();
+        setActiveLearnerId(null);
         setLearner(null);
+        setLearners([]);
         applyAccessibility(undefined);
       },
       async reload() {
-        const l = await repository.loadCurrent();
+        const [l, all] = await Promise.all([
+          repository.loadCurrent(getActiveLearnerId()),
+          repository.listLearners(),
+        ]);
         setLearner(l);
+        setLearners(all);
         applyAccessibility(l?.accessibility_settings);
         setStatus('ready');
       },
     }),
-    [status, learner, error, repository],
+    [status, learner, learners, error, repository],
   );
 
   return <LearnerContext.Provider value={value}>{children}</LearnerContext.Provider>;

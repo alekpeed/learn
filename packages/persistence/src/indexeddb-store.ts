@@ -76,4 +76,13 @@ export class IndexedDbEventStore implements EventStore {
     const store = await this.tx('readwrite');
     await promisify(store.clear());
   }
+
+  async deleteLearner(learnerId: string): Promise<void> {
+    const doomed = await this.getByLearner(learnerId);
+    if (doomed.length === 0) return;
+    const store = await this.tx('readwrite');
+    for (const event of doomed) {
+      await promisify(store.delete(event.event_id));
+    }
+  }
 }

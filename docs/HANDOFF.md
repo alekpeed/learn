@@ -1,6 +1,6 @@
 # Session Handoff - Ground-Up Learning App
 
-_Last updated: 2026-07-25 - branch `claude/learning-app-next-phase-pgs09j` - Phase 23 complete_
+_Last updated: 2026-07-25 - branch `claude/learning-app-next-phase-pgs09j` - Phase 24 complete, Phase 25 local half complete_
 
 > **`CLAUDE.md` at the repository root states the governing rule and is loaded into every
 > session automatically. Read it first. This handoff is subordinate to it, and both are
@@ -72,16 +72,17 @@ disagree, the file wins - and fix this table.**
 | 21    | Geometry                                                                                                                                                          | DONE                      |
 | 22    | Algebra II                                                                                                                                                        | DONE                      |
 | 23    | Precalculus & Trigonometry - **the arithmetic-to-trigonometry path**                                                                                              | DONE                      |
+| 24    | Sciences: Physics, Chemistry, Biology - the first subject-matter science                                                                                          | DONE                      |
+| 25    | Platform tier: multi-learner, local progress overview, achievements                                                                                               | PARTIAL (local half)      |
 
 ### Not done - this is what is left
 
-| Phase | What                                      | Notes                                                                                                                                                                                                                                                                      |
-| ----- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -     | **Sync server**                           | The only unfinished Version 1 item. Engine, HTTP backend and UI exist and are tested against a stub; no live endpoint.                                                                                                                                                     |
-| 24    | **Sciences: Physics, Chemistry, Biology** | Introductory units per subject through the existing pipeline. Interactive simulations are a separate, later capability.                                                                                                                                                    |
-| 25    | **Platform & social tier**                | Multi-user, teacher dashboards, classrooms, social, gamification, voice tutoring, handwriting recognition, simulations, marketplace. Gated on demand and multi-user infrastructure.                                                                                        |
-| -     | **Statistics & probability**              | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime. |
-| -     | **Calculus**                              | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                     |
+| Phase | What                            | Notes                                                                                                                                                                                                                                                                      |
+| ----- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -     | **Sync server**                 | The only unfinished Version 1 item, and now the gate on most of what is left: teacher dashboards, classrooms, social features and a hosted marketplace all need the same multi-user infrastructure. Engine, HTTP backend and UI exist and are tested against a stub.       |
+| 25    | **Phase 25, server-gated half** | Teacher dashboards, classrooms, social features, hosted marketplace, voice tutoring, handwriting recognition, interactive simulations. Each needs a server, accounts, or capabilities the app does not have. Simulations would also make curriculum code rather than data. |
+| -     | **Statistics & probability**    | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime. |
+| -     | **Calculus**                    | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                     |
 
 ### The distinction that keeps being missed
 
@@ -98,13 +99,16 @@ describe the current science course as covering "science" without that qualifier
 
 ### Curriculum
 
-|                                     | Skills  | Questions |
-| ----------------------------------- | ------- | --------- |
-| Mathematics (`math.core`, 15 units) | 143     | 1,226     |
-| Science (`science.core`, 4 units)   | 34      | 273       |
-| **Total (19 unit files)**           | **177** | **1,499** |
+|                                       | Skills  | Questions |
+| ------------------------------------- | ------- | --------- |
+| Mathematics (`math.core`, 15 units)   | 143     | 1,226     |
+| Scientific method (`science.core`, 4) | 34      | 273       |
+| Physics (`physics.core`, 1 unit)      | 8       | 64        |
+| Chemistry (`chemistry.core`, 1 unit)  | 8       | 64        |
+| Biology (`biology.core`, 1 unit)      | 8       | 64        |
+| **Total (22 unit files, 5 courses)**  | **201** | **1,691** |
 
-Plus an 87-record misconception catalog (`content/mvp/misconceptions.json`). Every skill has
+Plus a 123-record misconception catalog (`content/mvp/misconceptions.json`). Every skill has
 a lesson and at least 7 practice items.
 
 **The arithmetic-to-trigonometry path is complete** as of Phase 23. Note that trigonometry
@@ -121,11 +125,11 @@ Partly inherent - reasoning questions resist deterministic grading - but `multi_
 
 ```
 pnpm validate:content   # 35 tests
-pnpm test               # 292 tests
+pnpm test               # 314 tests
 pnpm typecheck
 pnpm lint
 pnpm build
-pnpm test:e2e           # 39 tests, includes axe in BOTH light and dark
+pnpm test:e2e           # 43 tests, includes axe in BOTH light and dark
 ```
 
 ### Architecture landmarks
@@ -143,6 +147,25 @@ pnpm test:e2e           # 39 tests, includes axe in BOTH light and dark
   way.
 - **`CurriculumProvider` keeps the bundled package as its synchronous initial value**, so a
   broken installed course module falls back rather than bricking the app.
+
+### Phase 25 (partial): what the platform tier does and does not do
+
+Multi-learner, a local progress overview and achievements shipped. Teacher dashboards,
+classrooms, social features, a hosted marketplace, voice tutoring, handwriting recognition
+and interactive simulations did not, and cannot without a server or capabilities this app
+does not have. Do not describe Phase 25 as done.
+
+- **Multi-learner needed almost no storage work**: every event has carried a `learner_id`
+  since Phase 1, so the log was always multi-learner and only the UI assumed one profile.
+- **The active profile lives in `localStorage`**, never the event log. It is a fact about
+  the device; in the log it would sync one device's choice onto another and travel
+  meaninglessly in an export. Same reasoning as DEC-015, applied to a non-credential.
+- **Achievements are a projection, not stored state** (`packages/learning-engine/src/achievements.ts`).
+  Recomputed by folding the log every render, so nothing goes stale and nothing migrates.
+  There is a test asserting a replayed log gives identical badges. If you are tempted to
+  cache them, do not - that would be the first mutable derived state in the codebase.
+- **`deleteLearner` is a whole-profile purge**, in the same category as "reset local data".
+  No individual event is ever edited, so DEC-006 holds.
 
 ### Honest gaps
 

@@ -753,3 +753,65 @@ button {
   max-width: 22rem;
   width: 100%;
 }
+
+/* Achievements + learners (Phase 25) */
+.achievement-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.achievement {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.6rem;
+  align-items: start;
+  padding: 0.5rem 0.6rem;
+  border-left: 4px solid var(--muted);
+}
+.achievement[data-earned='true'] {
+  border-left-color: var(--success);
+}
+.achievement-mark {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+.achievement-title {
+  margin: 0;
+  font-weight: 700;
+}
+.achievement-state {
+  font-weight: 400;
+  color: var(--muted);
+}
+.achievement-desc,
+.achievement-progress {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.95em;
+}
+.achievement-progress progress {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.learner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+}
+.learner-table th,
+.learner-table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--muted);
+}
+.learner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.badge-active {
+  color: var(--success);
+  font-weight: 400;
+}

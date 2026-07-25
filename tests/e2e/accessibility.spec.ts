@@ -39,6 +39,7 @@ const CORE_SCREENS = [
   '/review',
   '/diagnostic',
   '/courses',
+  '/learners',
   '/settings',
 ];
 

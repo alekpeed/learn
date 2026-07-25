@@ -7,6 +7,7 @@ import {
   masteryByUnit,
   dimensionAverages,
   currentStreak,
+  projectAchievements,
   type UnitMeta,
 } from '@learn/learning-engine';
 import { useCurriculum } from '../state/CurriculumContext.js';
@@ -17,6 +18,7 @@ import { DimensionRadar } from '../components/charts/DimensionRadar.js';
 import { UnitBars } from '../components/charts/UnitBars.js';
 import { ScreenState } from '../components/ScreenState.js';
 import { StickingPoints } from '../components/StickingPoints.js';
+import { Achievements } from '../components/Achievements.js';
 
 const DIMENSION_LABEL: Record<MasteryDimension, string> = {
   understanding: 'Understanding',
@@ -54,6 +56,21 @@ export function Progress(): JSX.Element {
 
   const summary = summarizeProgress(progress, pkg.graph, now);
 
+  // Recomputed from the log on every render - achievements are a projection,
+  // never stored state (DEC-006). Computed before the empty-state branch
+  // because a learner who has not yet scored high enough to count as "started"
+  // may still have earned their first badge, and that is exactly when seeing it
+  // is worth most.
+  const unitBySkill = new Map(
+    [...pkg.graph.skills.values()].map((s) => [s.skill_id, s.unit_id] as const),
+  );
+  const achievements = projectAchievements({
+    events,
+    progress: [...progress.values()],
+    nowIso: now,
+    unitBySkill,
+  });
+
   if (summary.started === 0) {
     return (
       <section>
@@ -70,6 +87,7 @@ export function Progress(): JSX.Element {
          * useful. Showing them here keeps the one actionable thing on screen.
          */}
         <StickingPoints misconceptions={misconceptions} />
+        <Achievements achievements={achievements} />
       </section>
     );
   }
@@ -127,6 +145,8 @@ export function Progress(): JSX.Element {
       </div>
 
       <StickingPoints misconceptions={misconceptions} />
+
+      <Achievements achievements={achievements} />
 
       <section className="dashboard-card" aria-labelledby="detail-h">
         <h2 id="detail-h">Skill detail</h2>

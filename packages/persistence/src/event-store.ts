@@ -21,6 +21,15 @@ export interface EventStore {
   nextSeq(learnerId: string): Promise<number>;
   /** Remove all events (used by "reset local data", requires confirmation upstream). */
   clear(): Promise<void>;
+  /**
+   * Remove every event belonging to one learner (Phase 25 multi-learner).
+   *
+   * This is a whole-learner purge, in the same category as `clear`, not an edit
+   * to any event - individual events remain immutable (DEC-006). Deleting one
+   * profile leaves every other learner's log untouched. Requires confirmation
+   * upstream.
+   */
+  deleteLearner(learnerId: string): Promise<void>;
 }
 
 function orderBySeq(a: LearningEvent, b: LearningEvent): number {
@@ -56,6 +65,13 @@ export class InMemoryEventStore implements EventStore {
 
   clear(): Promise<void> {
     this.byId.clear();
+    return Promise.resolve();
+  }
+
+  deleteLearner(learnerId: string): Promise<void> {
+    for (const [id, event] of this.byId) {
+      if (event.learner_id === learnerId) this.byId.delete(id);
+    }
     return Promise.resolve();
   }
 }

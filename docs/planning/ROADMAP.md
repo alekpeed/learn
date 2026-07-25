@@ -25,17 +25,19 @@ skill graph in `content/mvp/`.
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
-**Tracks A, B, C, E and F are complete**, and Track D is complete through Phase 23. The
-documented curriculum was fully authored at mastery-grade depth (130 skills, 1,121
-questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri desktop shell
-wrapped it for Windows, and Phases 21-23 then added Geometry, Algebra II, Precalculus and
-Trigonometry on top. The curriculum now stands at **177 skills and 1,499 questions across
-19 unit files** (15 math units, 4 science units).
+**Tracks A, B, C, E and F are complete**, Track D is complete through Phase 24, and Phase 25
+is partially done. The documented curriculum was fully authored at mastery-grade depth (130
+skills, 1,121 questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri
+desktop shell wrapped it for Windows, and Phases 21-24 then added Geometry, Algebra II,
+Precalculus, Trigonometry, Physics, Chemistry and Biology on top. The curriculum now stands
+at **201 skills and 1,691 questions across 22 unit files**, in five courses: 15 math units,
+4 scientific-method units, and one introductory unit each for physics, chemistry and biology.
 
-The remaining work is: standing up a real sync server (the only unfinished Version 1
-item), **Phase 24** (Physics, Chemistry, Biology), **Phase 25** (platform and social
-tier), and the two subjects this file has never assigned a phase number - statistics and
-probability, and calculus. Each is described in its own section below.
+The remaining work is: standing up a real sync server (the only unfinished Version 1 item),
+the **server-gated half of Phase 25** (teacher dashboards, classrooms, social features, a
+hosted marketplace, voice tutoring, handwriting recognition, interactive simulations), and
+the two subjects this file has never assigned a phase number - statistics and probability,
+and calculus. Each is described in its own section below.
 
 ## Guiding constraints (carried through every phase)
 
@@ -337,12 +339,57 @@ did its job.
 
 Interactive simulations remain a separate, later capability (Phase 25).
 
-### Phase 25 - Platform & social tier [large, multi-project]
+### Phase 25 - Platform & social tier [engine + ui] - PARTIALLY DONE
 
-Multi-user support, teacher dashboards, classrooms, social features, gamification, voice
-tutoring, handwriting recognition, interactive simulations, community/course marketplace.
-Each is a standalone initiative gated on real demand and on multi-user infrastructure from
-Phase 20. Several were explicitly excluded from the MVP.
+This phase was never one deliverable. It lists nine standalone initiatives, and they do not
+share a gate: some need only local application code, and the rest need infrastructure this
+product does not have and has decided not to have. Shipping the first group and being
+explicit about the second is more useful than reporting the phase as blocked.
+
+**Shipped.**
+
+- **Multi-learner support.** Several people share one device, each with their own profile
+  and progress. This needed almost no new storage: every event has carried a `learner_id`
+  since Phase 1, so the log was multi-learner from the start and only the UI assumed a
+  single profile. Added `listLearners`, `loadCurrent(preferredId)` and `deleteLearner` to
+  the repository, and a `/learners` screen to add, switch between and delete profiles. Which
+  profile is open lives in `localStorage`, not the event log - it is a fact about the device,
+  and putting it in the log would sync one device's choice to another and travel
+  meaninglessly in an export (the DEC-015 reasoning, applied to a non-credential).
+  `deleteLearner` is a whole-profile purge in the same category as "reset local data"; no
+  individual event is ever edited, so DEC-006 holds.
+- **A local progress overview.** The `/learners` table shows each profile's started and
+  mastered counts side by side - the single-device subset of a teacher dashboard. Each row
+  is projected through the same `projectProgress` and `summarizeProgress` calls that drive
+  that learner's own Progress screen, so there is no second definition of "mastered" to
+  drift out of step.
+- **Gamification.** Eleven achievements, in `packages/learning-engine/src/achievements.ts`.
+  Deliberately a **projection, not a new kind of state**: every badge is recomputed by
+  folding the existing event log, so nothing is stored, nothing can go stale, no migration
+  is needed, and a progress export carries achievements implicitly by carrying the events
+  that earned them (DEC-006). Replaying a log yields identical badges with identical
+  earned-at timestamps, and there is a test for that. Nothing compares one learner with
+  another - doc 03 excludes competitive leaderboards, and on a local-first app there would
+  be nobody to compare against.
+
+**Still gated, and honestly so.** These need a server, an account system, or capabilities
+the app does not have, and none can be faked locally without lying to the user about what
+it does:
+
+- **Teacher dashboards and classrooms** need real accounts and a server. What shipped covers
+  one adult and the children on one device, which is not a classroom.
+- **Social features and a community/course marketplace** need multi-user infrastructure and
+  moderation. Note that Phase 18 already ships course modules as files, so course _sharing_
+  works today by sending someone a file; what is missing is the hosted marketplace.
+- **Voice tutoring and handwriting recognition** need speech and ink models plus microphone
+  and stylus handling. BYOK covers text only.
+- **Interactive simulations** are the biggest single piece and would change how content is
+  authored, since every simulation is code rather than data - which cuts against the
+  standing constraint that curriculum stays data.
+
+All of these remain gated on real demand and on multi-user infrastructure, exactly as this
+phase originally said. The difference is that the local half is now built rather than
+waiting behind the remote half.
 
 ### Unsequenced - in scope, but never given a phase number
 
@@ -394,12 +441,18 @@ Curriculum: 10 (Decimals/Percents) -> 11 (Integers/Structure) -> 12 (Ratios/Meas
 curriculum done] -> 16 (Depth pass). Then features: 17 (Misconceptions) -> 18
 (Authoring/modules) -> 19 (AI drafts) -> 20 (Cloud sync) [Version 1 done]. Then reach for
 trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) [arithmetic-to-trig path done]
--> 24 (Sciences) -> 25 (Platform). Phase F (desktop wrap) is done.
+-> 24 (Sciences) -> 25 (Platform, local half). Phase F (desktop wrap) is done.
 
-Everything through Phase 23 is now shipped. What is left, in this file's own terms: the
-sync server (the only unfinished Version 1 item), Phase 24, Phase 25, and the two
-unsequenced subjects above - statistics and probability, and calculus.
+Everything through Phase 24 is now shipped, and Phase 25's local half with it. What is left,
+in this file's own terms: the sync server (the only unfinished Version 1 item), the
+server-gated half of Phase 25, and the two unsequenced subjects above - statistics and
+probability, and calculus.
+
+Note that the sync server is now the gate on more than itself. Teacher dashboards,
+classrooms, social features and a hosted marketplace all need the same multi-user
+infrastructure, so standing up a real endpoint is the single piece of work that unblocks the
+largest amount of what remains.
 
 Track A is content-only through Phase 13. Phase 14 is the first point requiring new
-application code, and Phase 23 the second. Confirm direction before starting any new phase,
-per the standing approval rule.
+application code, Phase 23 the second, and Phase 25 the third. Confirm direction before
+starting any new phase, per the standing approval rule.

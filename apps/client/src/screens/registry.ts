@@ -23,5 +23,6 @@ export const SCREENS: ScreenDef[] = [
   { path: '/review', label: 'Review', title: 'Review Queue', nav: true },
   { path: '/progress', label: 'Progress', title: 'Progress', nav: true },
   { path: '/courses', label: 'Courses', title: 'Courses', nav: true },
+  { path: '/learners', label: 'Learners', title: 'Learners', nav: true },
   { path: '/settings', label: 'Settings', title: 'Settings', nav: true },
 ];
