@@ -33,6 +33,7 @@ packages/
   ai-gateway/         Isolated tutor gateway + providers: stub + BYOK OpenAI/Claude/Gemini
 apps/
   client/        Vite + React app: shell, lessons, practice, progress, review queue
+  desktop/       Tauri v2 shell: native window hosting the built client (DEC-016/017)
 content/mvp/     Curriculum content ONLY (data): manifest, courses, one file per unit
 tests/e2e/       Playwright smoke + accessibility (axe-core) + curriculum flow
 docs/            Specification and planning
@@ -51,9 +52,17 @@ pnpm validate:content   # content-schema validation (CUR-001)
 pnpm build              # production build of the client
 pnpm test:e2e           # Playwright end-to-end + accessibility smoke
 pnpm lint               # Prettier format check
+
+pnpm desktop:dev        # Tauri desktop window, live-reloading against Vite
+pnpm desktop:build      # native binary + installers for the host platform
 ```
 
-CI (`.github/workflows/ci.yml`) runs lint → typecheck → tests → content validation → build → e2e.
+The desktop shell needs a Rust toolchain (plus `libwebkit2gtk-4.1-dev librsvg2-dev
+libgtk-3-dev` on Linux). **Windows `.msi`/NSIS installers are built by CI** —
+`.github/workflows/desktop.yml`, on manual dispatch or a `v*` tag — because that
+bundle has to be compiled on Windows.
+
+CI (`.github/workflows/ci.yml`) runs lint → typecheck → tests → content validation → build → e2e. A separate `desktop.yml` workflow produces the Windows installers.
 
 ## Non-negotiable principles
 

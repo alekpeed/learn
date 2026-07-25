@@ -1,0 +1,14 @@
+{
+  "name": "@learn/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tauri desktop shell for the Ground-Up Learning client (DEC-016). Adds a native window around the existing static SPA; no application code changes.",
+  "scripts": {
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.1"
+  }
+}

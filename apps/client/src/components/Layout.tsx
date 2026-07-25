@@ -24,7 +24,7 @@ export function Layout(): JSX.Element {
 
   // Keep the tutor's provider selection in sync with the learner's settings.
   useEffect(() => {
-    setAiSelection({ provider: prefs?.ai_provider ?? 'stub', model: prefs?.ai_model });
+    setAiSelection({ provider: prefs?.ai_provider ?? 'openai', model: prefs?.ai_model });
   }, [prefs?.ai_provider, prefs?.ai_model]);
 
   return (

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Ground-Up Learning",
+  "version": "0.1.0",
+  "identifier": "app.groundup.learning",
+  "build": {
+    "frontendDist": "../../client/dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "pnpm --filter @learn/client dev",
+    "beforeBuildCommand": "pnpm --filter @learn/client build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Ground-Up Learning",
+        "width": 1200,
+        "height": 820,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' ipc: http://ipc.localhost https://api.openai.com https://api.anthropic.com https://generativelanguage.googleapis.com ws://localhost:5173 http://localhost:5173"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.ico"],
+    "copyright": "Ground-Up Learning App",
+    "category": "Education",
+    "shortDescription": "Mastery-based math and science tutor",
+    "longDescription": "A local-first, mastery-based learning app for mathematics and scientific reasoning. Curriculum, grading, and progress all run offline on this device."
+  }
+}

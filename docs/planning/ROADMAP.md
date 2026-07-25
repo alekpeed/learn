@@ -21,10 +21,10 @@ skill graph in `content/mvp/`.
 - Version 1 features: 4 of ~10 shipped (BYOK providers, notes, extra question types,
   study plans, richer dashboard).
 
-**Tracks A and B are both complete**: the curriculum is fully authored (130 skills, 1,121
-questions, 16 of 16 units) and every skill is at mastery-grade depth. The next work is
-**Track C - the remaining Version 1 features** - or Track D if new subjects (Geometry,
-Algebra II, Precalculus/Trigonometry) are wanted.
+**Tracks A, B and E are complete**: the curriculum is fully authored (130 skills, 1,121
+questions, 16 of 16 units) at mastery-grade depth, and the Tauri desktop shell (Phase F)
+now wraps it for Windows. The next work is **Track C - the remaining Version 1 features** -
+or Track D if new subjects (Geometry, Algebra II, Precalculus/Trigonometry) are wanted.
 
 ## Guiding constraints (carried through every phase)
 
@@ -236,12 +236,25 @@ Phase 20. Several were explicitly excluded from the MVP.
 
 ## Track E - Final packaging (the literal end)
 
-### Phase F - Desktop wrap (Tauri/Windows) [packaging]
+### Phase F - Desktop wrap (Tauri/Windows) [packaging] - DONE
 
-Per DEC-016, deferred until the final build and kept a drop-in: the app is a static
-local-first SPA, so a Tauri (or Electron) wrap adds a native window and installer without
-changing application logic. The user's standing note: "all I want is for it to be possible
-on final build." Done once the desired curriculum and features are in place.
+Realized DEC-016 exactly as it anticipated: **no application-code changes**. Added
+`apps/desktop/src-tauri` (Tauri v2) - a Rust shell that opens a native window and hosts the
+unchanged static client from `apps/client/dist` over Tauri's internal protocol, so the app
+runs with no dev server and no HTTP origin.
+
+- **Config** (`tauri.conf.json`): 1200x820 window, bundle targets `all`, and a CSP whose
+  `connect-src` allowlists only the three BYOK tutor endpoints (OpenAI plus Anthropic and
+  Gemini) and the Vite dev origin.
+- **Icons**: generated as PNG (32/128/256/512) plus a 6-size BMP-format `icon.ico`.
+- **Scripts**: `pnpm desktop:dev` (live-reload against Vite) and `pnpm desktop:build`.
+- **CI** (`.github/workflows/desktop.yml`): a `windows-latest` job producing `.msi` and NSIS
+  `.exe` installers as downloadable artifacts, on manual dispatch or a `v*` tag.
+
+Verified as far as a Linux container allows: the Cargo manifest resolves, `cargo check`
+passes, the Tauri CLI parses the config, and a release binary links. Producing the Windows
+installer itself is the CI job, and macOS bundling would additionally need an `.icns` icon.
+Recorded as DEC-017.
 
 ---
 
@@ -252,7 +265,7 @@ Curriculum: 10 (Decimals/Percents) -> 11 (Integers/Structure) -> 12 (Ratios/Meas
 curriculum done] -> 16 (Depth pass). Then features: 17 (Misconceptions) -> 18
 (Authoring/modules) -> 19 (AI drafts) -> 20 (Cloud sync) [Version 1 done]. Then reach for
 trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) -> 24 (Sciences) -> 25
-(Platform). Finally: Phase F (desktop wrap).
+(Platform). Phase F (desktop wrap) is done.
 
 Track A is content-only through Phase 13. Phase 14 is the first point requiring new
 application code. A true arithmetic-to-trigonometry experience is not reached until

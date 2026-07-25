@@ -20,7 +20,12 @@ interface Selection {
   model?: string;
 }
 
-let selection: Selection = { provider: 'stub' };
+/**
+ * OpenAI is the default choice, so a learner who enables the tutor only has to
+ * paste a key. Until a key is saved we serve the built-in stub rather than
+ * reporting the tutor unavailable, so the app is useful out of the box.
+ */
+let selection: Selection = { provider: 'openai' };
 let online = true;
 
 /** Set which provider/model the tutor should use (from learner preferences). */
@@ -35,20 +40,28 @@ export function setAiOnline(value: boolean): void {
 
 const stub = new StubTutorProvider();
 
+/** A BYOK provider can only be used once the learner has saved a key for it. */
+function byokKey(): string {
+  return selection.provider === 'stub' ? '' : getApiKey(selection.provider);
+}
+
 class DelegatingTutorProvider implements TutorProvider {
   readonly name = 'client';
 
   isAvailable(): boolean {
-    if (!online) return false;
-    if (selection.provider === 'stub') return true;
-    return getApiKey(selection.provider).length > 0;
+    // The stub needs no key, so the tutor is available whenever we are online:
+    // a BYOK provider without a key simply falls back to it.
+    return online;
   }
 
   generate(request: TutorRequest): Promise<ProviderResponse> {
-    if (selection.provider === 'stub') return stub.generate(request);
+    const apiKey = byokKey();
+    if (selection.provider === 'stub' || apiKey.length === 0) {
+      return stub.generate(request);
+    }
     const provider = createHttpProvider({
       provider: selection.provider,
-      apiKey: getApiKey(selection.provider),
+      apiKey,
       model: selection.model,
     });
     return provider.generate(request);

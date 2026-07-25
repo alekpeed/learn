@@ -1,6 +1,6 @@
 # Session Handoff — Ground-Up Learning App
 
-_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase 16 shipped - Tracks A and B complete)_
+_Last updated: 2026-07-23 · branch `claude/learning-app-next-phase-pgs09j` (Phase F shipped - desktop wrap; Tracks A, B, E complete)_
 
 This document is the single source of truth for picking up work in a new session.
 Read it top to bottom, then read `docs/spec/00_README.md` for the product vision.
@@ -39,6 +39,14 @@ shipped on top of it. Everything is committed and pushed.
 - Content: **130 skills and 1,121 questions** across 15 unit files (12 math units + 4
   science units). **The documented curriculum is complete and at uniform depth** - all 16
   units built, every skill carrying at least 7 practice items (mean ~8.6).
+- **Desktop shell (Phase F, DEC-017):** `apps/desktop/src-tauri` wraps the unchanged client
+  in a Tauri v2 native window. No application-code changes; egress is limited by a CSP
+  `connect-src` allowlist naming only the BYOK tutor endpoints. Windows `.msi`/NSIS
+  installers come from the `windows-latest` CI job.
+- **AI tutor default (Phase F):** the default provider is now **OpenAI** (`gpt-4o-mini`), so
+  enabling the tutor only requires pasting a key. Until a key is saved the built-in offline
+  stub is used, so the tutor still works out of the box. The master `ai_tutor_enabled` switch
+  is still **off by default** (DEC-010).
 - **New engine capability (Phase 14):** a deterministic **`point` validator** for
   ordered-pair/coordinate answers (validation-engine), added to the question-type and
   validator schema enums, with a client point input. This is the app's first content-driven
@@ -144,7 +152,17 @@ pnpm test:e2e         # Playwright e2e + accessibility (builds first)
 pnpm typecheck        # tsc --noEmit over the whole workspace
 pnpm lint             # prettier --check .
 pnpm build            # production client bundle
+
+# Desktop shell (Tauri v2, DEC-016/017)
+pnpm desktop:dev      # native window with live reload against Vite
+pnpm desktop:build    # native binary + installers for the host platform
 ```
+
+> The desktop shell needs a Rust toolchain. On Linux it also needs the webview
+> dev packages (`libwebkit2gtk-4.1-dev librsvg2-dev libgtk-3-dev`); on Windows it
+> needs nothing extra beyond Rust. **Windows installers are produced by CI**
+> (`.github/workflows/desktop.yml`, manual dispatch or a `v*` tag), because an
+> `.msi`/NSIS build must run on Windows.
 
 > First install may need `pnpm rebuild esbuild` — pnpm 10 blocks the esbuild build
 > script unless it's in `pnpm.onlyBuiltDependencies` (already configured in the root

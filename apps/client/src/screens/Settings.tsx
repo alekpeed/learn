@@ -116,7 +116,7 @@ export function Settings(): JSX.Element {
         </label>
         {prefs.ai_tutor_enabled && (
           <AiTutorSettings
-            provider={prefs.ai_provider}
+            provider={prefs.ai_provider ?? 'openai'}
             model={prefs.ai_model}
             onChange={(changes) => updateSettings({ preferences: changes })}
           />

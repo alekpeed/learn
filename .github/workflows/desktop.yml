@@ -1,0 +1,57 @@
+name: Desktop (Windows installer)
+
+# Produces the Windows installers for the Tauri desktop shell (DEC-016).
+# Kept separate from CI because it needs a Windows runner and a Rust toolchain,
+# and because the app itself is verified by the ubuntu CI job.
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+jobs:
+  windows-installer:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install Rust (stable)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry and build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            apps/desktop/src-tauri/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('apps/desktop/src-tauri/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # tauri build runs the client build itself via beforeBuildCommand, but doing
+      # it explicitly keeps the failure obvious if the web build is what breaks.
+      - name: Build the web client
+        run: pnpm build
+
+      - name: Build the Windows installers
+        run: pnpm desktop:build
+
+      - name: Upload installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: ground-up-learning-windows
+          if-no-files-found: error
+          path: |
+            apps/desktop/src-tauri/target/release/bundle/msi/*.msi
+            apps/desktop/src-tauri/target/release/bundle/nsis/*.exe

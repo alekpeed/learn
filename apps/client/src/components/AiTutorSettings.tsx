@@ -9,13 +9,13 @@ import { DEFAULT_MODELS } from '@learn/ai-gateway';
 import { getApiKey, setApiKey, clearApiKey, hasApiKey } from '../data/aiCredentials.js';
 
 const PROVIDER_LABELS: Record<AiProvider, string> = {
-  stub: 'Built-in (offline, no key)',
-  openai: 'OpenAI',
+  openai: 'OpenAI (default)',
   anthropic: 'Claude (Anthropic)',
   gemini: 'Gemini (Google)',
+  stub: 'Built-in (offline, no key)',
 };
 
-const PROVIDER_ORDER: AiProvider[] = ['stub', 'openai', 'anthropic', 'gemini'];
+const PROVIDER_ORDER: AiProvider[] = ['openai', 'anthropic', 'gemini', 'stub'];
 
 export function AiTutorSettings({
   provider,
@@ -91,11 +91,11 @@ export function AiTutorSettings({
           <p className="progress-note" role="status">
             {keySaved
               ? `A ${PROVIDER_LABELS[provider]} key is saved on this device.`
-              : `Add your ${PROVIDER_LABELS[provider]} key to use it.`}
+              : `No key saved yet, so the built-in offline tutor is used. Add your ${PROVIDER_LABELS[provider]} key to switch to it.`}
           </p>
           <p className="progress-note">
-            Your key is stored only in this browser and is sent directly to the provider when you
-            ask the tutor. Don’t use this on a shared device. It is never included in a progress
+            Your key is stored only on this device and is sent directly to the provider when you ask
+            the tutor. Do not use this on a shared device. It is never included in a progress
             export.
           </p>
         </>

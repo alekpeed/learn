@@ -137,4 +137,20 @@ Reasons: The wrapper needs exactly what the app already is; deferring avoids bui
 
 Consequences: Keep the app free of browser-only assumptions that a desktop webview would break; avoid hard dependencies on a hosted origin. When desktop is scheduled, add `apps/desktop` (Tauri) + a `windows-latest` CI build — no changes to the existing packages.
 
-Related: 03 (native apps listed as Later); DEC-004 (local-first), DEC-013 (IndexedDB).
+Related: 03 (native apps listed as Later); DEC-004 (local-first), DEC-013 (IndexedDB). **Realized by DEC-017.**
+
+## DEC-017: Desktop shell implemented with Tauri v2
+
+Status: Accepted (2026-07-23) — realizes DEC-016
+
+Context: With the curriculum complete, the deferred Windows desktop build was scheduled. DEC-016 committed to keeping the client wrappable; this decision records how the wrap was actually done.
+
+Decision: Add `apps/desktop/src-tauri` (Tauri v2) as a **shell only**. The Rust binary opens a native window and hosts the unchanged static client from `apps/client/dist` over Tauri's internal protocol — no dev server, no HTTP origin, no application-code changes. Network egress is restricted by a CSP `connect-src` allowlist naming only the three BYOK tutor endpoints. Windows installers (`.msi` and NSIS `.exe`) are produced by a `windows-latest` CI job (`.github/workflows/desktop.yml`), triggered manually or by a `v*` tag.
+
+Reasons: Tauri uses the OS webview (WebView2 on Windows) rather than bundling Chromium, so the installer is a few megabytes instead of ~150 MB. Keeping the shell free of Tauri plugins avoids coupling application code to the desktop runtime, so the same bundle still runs as a plain web app.
+
+Alternatives: Electron (rejected — far larger installer for no benefit here); routing tutor calls through Tauri's Rust HTTP plugin (deferred — OpenAI, the default provider, permits browser-origin calls, so the CSP allowlist is sufficient; the plugin remains the hardening path because `http-providers.ts` already takes an injectable `fetchImpl`).
+
+Consequences: The desktop app keeps its own webview profile, so IndexedDB progress does not carry over from a browser session — progress export/import is the migration path. Unsigned installers trigger a Windows SmartScreen warning until a signing certificate is added. macOS bundling would additionally need an `.icns` icon, which is not generated yet.
+
+Related: DEC-004 (local-first), DEC-013 (IndexedDB), DEC-015 (BYOK keys client-only), DEC-016 (the deferral this realizes).

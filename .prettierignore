@@ -3,3 +3,7 @@ dist
 build
 pnpm-lock.yaml
 docs/spec
+
+# Rust build output and Tauri-generated schemas
+target
+apps/desktop/src-tauri/gen
