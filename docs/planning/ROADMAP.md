@@ -18,8 +18,9 @@ skill graph in `content/mvp/`.
   documented topics authored - **130 skills, 1,121 questions, 16 of 16 units built**, every
   skill carrying at least 7 practice items. Grown from the original 41-skill,
   ~2-item-per-skill slice.
-- Version 1 features: 6 of ~10 shipped (BYOK providers, notes, extra question types,
-  study plans, richer dashboard, misconception remediation, downloadable course modules).
+- Version 1 features: 7 of ~10 shipped (BYOK providers, notes, extra question types,
+  study plans, richer dashboard, misconception remediation, downloadable course modules,
+  author-gated AI practice drafts).
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
@@ -188,12 +189,15 @@ screen exports the active course, validates and previews a module before install
 switches courses, and reverts to built-in. The bundled curriculum stays the synchronous
 fallback, so a broken installed course cannot brick the app.
 
-### Phase 19 - AI-assisted practice drafts (author-gated) [ai-gateway + ui]
+### Phase 19 - AI-assisted practice drafts (author-gated) [ai-gateway + ui] - DONE
 
-Let the isolated tutor propose draft practice questions that must pass deterministic schema
-
-- answer validation and explicit human approval before entering the pool. Stays within
-  DEC-005/010.
+Shipped. The gateway only builds the prompt and parses candidates; every judgement is a
+deterministic screen in the client (schema, derived IDs, answer must grade through its
+validator, options must contain the answer, no answer leakage into prompt or hints,
+invented misconception tags stripped, duplicates dropped). Approval is explicit and
+per-item, and publishing rebuilds the whole course through the Phase 18 loader so
+AI-proposed content passes the same gate as hand-authored content. Stays within
+DEC-005/010.
 
 ### Phase 20 - Optional cloud account, sync & cross-device resume [engine + service]
 

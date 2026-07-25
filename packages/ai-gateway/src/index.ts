@@ -5,3 +5,4 @@ export * from './stub-provider.js';
 export * from './gateway.js';
 export * from './prompt.js';
 export * from './http-providers.js';
+export * from './authoring.js';

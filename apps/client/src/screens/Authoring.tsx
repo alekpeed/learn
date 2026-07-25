@@ -21,6 +21,8 @@ import { newId, type InstalledModule, type ModuleStore } from '@learn/persistenc
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { moduleStore as defaultStore } from '../data/repository.js';
 import { ScreenState } from '../components/ScreenState.js';
+import { DraftReview } from '../components/DraftReview.js';
+import { tutorGateway } from '../data/tutor.js';
 
 function readFileText(file: File): Promise<string> {
   if (typeof file.text === 'function') return file.text();
@@ -278,6 +280,11 @@ export function Authoring({ store = defaultStore }: { store?: ModuleStore }): JS
             Use the built-in course
           </button>
         )}
+      </fieldset>
+
+      <fieldset>
+        <legend>Write questions with the tutor</legend>
+        <DraftReview gateway={tutorGateway} store={store} />
       </fieldset>
     </section>
   );

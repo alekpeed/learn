@@ -74,6 +74,9 @@ importers:
       '@learn/persistence':
         specifier: workspace:*
         version: link:../../packages/persistence
+      '@learn/schemas':
+        specifier: workspace:*
+        version: link:../../packages/schemas
       '@learn/validation-engine':
         specifier: workspace:*
         version: link:../../packages/validation-engine

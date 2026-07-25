@@ -70,6 +70,20 @@ shipped on top of it. Everything is committed and pushed.
   duplicate record, or a record pointing at an unknown skill. One content bug fixed:
   `science.thinking.explanations.q4` tagged its own _correct_ answer as a common wrong
   answer, which could never fire; a loader test now guards against that class of bug.
+- **Phase 19 - AI-assisted practice drafts, author-gated:** the tutor may PROPOSE practice
+  items; it may not create them. `@learn/ai-gateway` gained only prompt-building and parsing
+  (`buildDraftPrompt`, `parseDraftCandidates`) because that package depends on
+  `@learn/domain` alone and must stay isolated from schemas, validators, and curriculum. All
+  judgement lives in `apps/client/src/authoring/screenDraft.ts`: schema validation, **IDs are
+  always derived and never taken from the model** (so it cannot overwrite existing content by
+  naming it), the stated answer must grade through its declared validator, choice answers
+  must be among the options with no duplicates, the answer must not appear in the prompt or
+  any hint, model-invented `misconception_id` tags are stripped, and duplicates of existing
+  or sibling questions are dropped. Screening **cannot verify arithmetic** - there is no CAS
+  - which is exactly why the human gate is not optional. Approved drafts do not get spliced
+    into the running curriculum: `publishDrafts.ts` rebuilds the entire course and pushes it
+    back through the Phase 18 module pipeline, so AI-proposed content faces the identical
+    loader gate as hand-authored content, and if the combined course fails, nothing installs.
 - **Phase 18 - course administration & downloadable modules:** a course is now a portable
   file. `packages/curriculum/src/module.ts` defines a versioned envelope
   (`MODULE_FORMAT`) plus `parseCourseModule` / `serializeCourseModule` / `summarizeModule`;

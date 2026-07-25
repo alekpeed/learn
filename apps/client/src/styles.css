@@ -709,3 +709,35 @@ button {
 .module-name {
   flex: 1 1 12rem;
 }
+
+/* AI-proposed practice drafts (Phase 19) */
+.draft-outcome {
+  margin-top: 1rem;
+}
+.draft-list {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.draft-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
+}
+.draft-prompt {
+  margin: 0.3rem 0;
+  font-weight: 600;
+}
+.draft-answer {
+  margin: 0.2rem 0;
+}
+.draft-notes {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.draft-rejected {
+  margin: 0.5rem 0;
+  color: var(--muted);
+  font-size: 0.92em;
+}

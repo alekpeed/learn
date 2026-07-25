@@ -38,6 +38,7 @@ const CORE_SCREENS = [
   '/progress',
   '/review',
   '/diagnostic',
+  '/courses',
   '/settings',
 ];
 

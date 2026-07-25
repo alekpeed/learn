@@ -15,6 +15,7 @@
     "@learn/domain": "workspace:*",
     "@learn/learning-engine": "workspace:*",
     "@learn/persistence": "workspace:*",
+    "@learn/schemas": "workspace:*",
     "@learn/validation-engine": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
