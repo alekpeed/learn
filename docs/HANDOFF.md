@@ -39,14 +39,14 @@ grep -rn -i "<topic>" docs/spec/ docs/planning/
 
 ### Required reading order
 
-| Order | File                                              | Why                                                       |
-| ----- | ------------------------------------------------- | --------------------------------------------------------- |
-| 1     | `docs/spec/00_README.md`                          | Index of the 17-document package.                         |
-| 2     | `docs/planning/PROJECT_SCOPE.md`                  | The four scope tiers, beginning to end.                   |
-| 3     | `docs/planning/ROADMAP.md`                        | **The real phase sequence. Quote it, do not paraphrase.** |
-| 4     | `docs/spec/16_DECISION_LOG.md`                    | DEC-001..017. Binding decisions.                          |
-| 5     | `docs/spec/06_CONTENT_AUTHORING_STANDARD.md`      | Before authoring any content.                             |
-| 6     | `docs/spec/14_REPOSITORY_AND_CODING_STANDARDS.md` | Before writing any code.                                  |
+| Order | File                                              | Why                                                                                                                                |
+| ----- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | `docs/spec/00_README.md`                          | Index of the 17-document package.                                                                                                  |
+| 2     | `docs/planning/PROJECT_SCOPE.md`                  | The four scope tiers, beginning to end.                                                                                            |
+| 3     | `docs/planning/ROADMAP.md`                        | **The real phase sequence. Quote it, do not paraphrase.**                                                                          |
+| 4     | `docs/decisions/DECISION_LOG.md`                  | **DEC-001..018, the binding ones.** Note the spec's own `16_DECISION_LOG.md` holds only DEC-000..005; everything since lives here. |
+| 5     | `docs/spec/06_CONTENT_AUTHORING_STANDARD.md`      | Before authoring any content.                                                                                                      |
+| 6     | `docs/spec/14_REPOSITORY_AND_CODING_STANDARDS.md` | Before writing any code.                                                                                                           |
 
 The full package is `docs/spec/00_README.md` through `16_DECISION_LOG.md` (17 files),
 plus `docs/planning/` and `docs/reviews/00_SPEC_REVIEW.md`.
@@ -79,8 +79,9 @@ disagree, the file wins - and fix this table.**
 
 | Phase | What                            | Notes                                                                                                                                                                                                                                                                      |
 | ----- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -     | **Sync server**                 | The only unfinished Version 1 item, and now the gate on most of what is left: teacher dashboards, classrooms, social features and a hosted marketplace all need the same multi-user infrastructure. Engine, HTTP backend and UI exist and are tested against a stub.       |
-| 25    | **Phase 25, server-gated half** | Teacher dashboards, classrooms, social features, hosted marketplace, voice tutoring, handwriting recognition, interactive simulations. Each needs a server, accounts, or capabilities the app does not have. Simulations would also make curriculum code rather than data. |
+| -     | **Sync server**                 | The last Version 1 item. **DEC-018 removed most of its leverage**: it was justified largely as the multi-user foundation for dashboards and classrooms, which are now dropped. It buys cross-device resume for one person and nothing else. Tested against a stub.         |
+| 25    | **Phase 25, capability-gated**  | Voice tutoring, handwriting recognition, interactive simulations. Need speech/ink models or a pipeline that admits code as content. Teacher dashboards, classrooms, social and the marketplace are **dropped** - see DEC-018.                                              |
+| -     | **Rendered figures and graphs** | The oldest carried gap, dating to Phase 14. Geometry, Algebra II and trigonometry all pose figures in words. Client-side work, no server needed.                                                                                                                           |
 | -     | **Statistics & probability**    | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime. |
 | -     | **Calculus**                    | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                     |
 
@@ -148,12 +149,22 @@ pnpm test:e2e           # 43 tests, includes axe in BOTH light and dark
 - **`CurriculumProvider` keeps the bundled package as its synchronous initial value**, so a
   broken installed course module falls back rather than bricking the app.
 
+### DEC-018: this is a single-user product
+
+**Teacher dashboards, classrooms, social features and the marketplace are dropped.** Not
+deferred, not awaiting demand - dead. `docs/spec/` still names them because those documents
+predate the decision; DEC-018 in `docs/decisions/DECISION_LOG.md` supersedes them, and
+`ROADMAP.md` is the operative list. Do not reintroduce them from the spec. The one thing
+that would reopen it is the product ceasing to be single-user.
+
+Knock-on effect worth internalising: **the sync server is no longer the high-leverage item.**
+It looked like the biggest unlock only because those four features needed its infrastructure.
+
 ### Phase 25 (partial): what the platform tier does and does not do
 
-Multi-learner, a local progress overview and achievements shipped. Teacher dashboards,
-classrooms, social features, a hosted marketplace, voice tutoring, handwriting recognition
-and interactive simulations did not, and cannot without a server or capabilities this app
-does not have. Do not describe Phase 25 as done.
+Multi-learner, a local progress overview and achievements shipped. Voice tutoring,
+handwriting recognition and interactive simulations did not, and remain gated on capability.
+Do not describe Phase 25 as done.
 
 - **Multi-learner needed almost no storage work**: every event has carried a `learner_id`
   since Phase 1, so the log was always multi-learner and only the UI assumed one profile.

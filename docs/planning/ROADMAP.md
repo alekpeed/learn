@@ -33,11 +33,14 @@ Precalculus, Trigonometry, Physics, Chemistry and Biology on top. The curriculum
 at **201 skills and 1,691 questions across 22 unit files**, in five courses: 15 math units,
 4 scientific-method units, and one introductory unit each for physics, chemistry and biology.
 
-The remaining work is: standing up a real sync server (the only unfinished Version 1 item),
-the **server-gated half of Phase 25** (teacher dashboards, classrooms, social features, a
-hosted marketplace, voice tutoring, handwriting recognition, interactive simulations), and
-the two subjects this file has never assigned a phase number - statistics and probability,
-and calculus. Each is described in its own section below.
+The remaining work is: **statistics and probability** and **calculus** (both named in the
+spec, neither ever given a phase number), a **rendered figure and graph component** (geometry,
+Algebra II and trigonometry all pose figures textually), the **sync server** (the last
+Version 1 item, now worth less than it looked - see DEC-018), and the capability-gated
+remainder of Phase 25 (voice tutoring, handwriting recognition, interactive simulations).
+
+**Dropped entirely (DEC-018):** teacher dashboards, classrooms, social features and the
+marketplace. This is a single-user product; they are dead, not deferred.
 
 ## Guiding constraints (carried through every phase)
 
@@ -372,24 +375,27 @@ explicit about the second is more useful than reporting the phase as blocked.
   another - doc 03 excludes competitive leaderboards, and on a local-first app there would
   be nobody to compare against.
 
-**Still gated, and honestly so.** These need a server, an account system, or capabilities
-the app does not have, and none can be faked locally without lying to the user about what
-it does:
+**Dropped - see DEC-018.** Teacher dashboards, classrooms, social features and the
+marketplace / community-authored course tier are **out of scope**. The product is for a
+single user, so none of them earn the accounts, hosting, authorization and - for the social
+and marketplace tiers - open-ended moderation they would require. Treat them as dead: do not
+plan around them and do not list them as remaining work. `docs/spec/` still names them,
+because those documents predate the decision; DEC-018 supersedes them and this file is the
+operative list. The only thing that would reopen it is the product ceasing to be single-user.
 
-- **Teacher dashboards and classrooms** need real accounts and a server. What shipped covers
-  one adult and the children on one device, which is not a classroom.
-- **Social features and a community/course marketplace** need multi-user infrastructure and
-  moderation. Note that Phase 18 already ships course modules as files, so course _sharing_
-  works today by sending someone a file; what is missing is the hosted marketplace.
+Note the knock-on effect, recorded in DEC-018: **the sync server's justification shrinks**.
+It was the highest-leverage remaining item mainly because those four all needed the same
+multi-user foundation. With them gone it delivers exactly one thing - cross-device resume
+for one person moving between their own machines - which is real but unblocks nothing else.
+
+**Still gated on capability, and genuinely single-user.** These are not affected by DEC-018;
+they need models or a pipeline change the app does not have:
+
 - **Voice tutoring and handwriting recognition** need speech and ink models plus microphone
   and stylus handling. BYOK covers text only.
 - **Interactive simulations** are the biggest single piece and would change how content is
   authored, since every simulation is code rather than data - which cuts against the
   standing constraint that curriculum stays data.
-
-All of these remain gated on real demand and on multi-user infrastructure, exactly as this
-phase originally said. The difference is that the local half is now built rather than
-waiting behind the remote half.
 
 ### Unsequenced - in scope, but never given a phase number
 
@@ -444,14 +450,20 @@ trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) [arithmetic-to-trig 
 -> 24 (Sciences) -> 25 (Platform, local half). Phase F (desktop wrap) is done.
 
 Everything through Phase 24 is now shipped, and Phase 25's local half with it. What is left,
-in this file's own terms: the sync server (the only unfinished Version 1 item), the
-server-gated half of Phase 25, and the two unsequenced subjects above - statistics and
-probability, and calculus.
+in this file's own terms, in the order worth doing it:
 
-Note that the sync server is now the gate on more than itself. Teacher dashboards,
-classrooms, social features and a hosted marketplace all need the same multi-user
-infrastructure, so standing up a real endpoint is the single piece of work that unblocks the
-largest amount of what remains.
+1. **Statistics and probability** - unsequenced, but every prerequisite is authored, it needs
+   no new validator and no infrastructure. The most buildable thing remaining.
+2. **A rendered figure and graph component** - the oldest carried gap, dating to Phase 14.
+   Geometry, Algebra II and trigonometry all pose figures in words; a trigonometry course in
+   which no sine wave is ever drawn is a real limitation of the learning experience.
+3. **Calculus** - furthest out, and it needs precalculus strands Phase 23 did not author.
+4. **The sync server** - the last Version 1 item. DEC-018 removed most of its leverage; it
+   now buys cross-device resume for one person and nothing more.
+5. **Voice, handwriting, simulations** - gated on capability, not on demand.
+
+Teacher dashboards, classrooms, social features and the marketplace are **dropped** (DEC-018)
+and are deliberately absent from that list.
 
 Track A is content-only through Phase 13. Phase 14 is the first point requiring new
 application code, Phase 23 the second, and Phase 25 the third. Confirm direction before

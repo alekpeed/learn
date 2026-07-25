@@ -154,3 +154,29 @@ Alternatives: Electron (rejected — far larger installer for no benefit here); 
 Consequences: The CSP must include `'unsafe-eval'` in `script-src`. Ajv compiles JSON Schemas into JavaScript functions at runtime, so the curriculum loader cannot start without it; the first packaged build opened to a blank window for exactly this reason, because the browser build applies no CSP and nothing caught the difference. The exposure is limited (`default-src 'self'` still bars remote script, frame, and object sources, and the app never evaluates learner input, notes, or tutor output as code), but the proper fix is to precompile the schemas with Ajv's standalone code generation, which would remove the eval requirement and drop the ~140 KB validation chunk from the bundle. `tests/e2e/desktop-csp.spec.ts` now replays the packaged policy over the built bundle so a future tightening fails in CI instead of in a downloaded installer. The desktop app also keeps its own webview profile, so IndexedDB progress does not carry over from a browser session — progress export/import is the migration path. Unsigned installers trigger a Windows SmartScreen warning until a signing certificate is added. macOS bundling would additionally need an `.icns` icon, which is not generated yet.
 
 Related: DEC-004 (local-first), DEC-013 (IndexedDB), DEC-015 (BYOK keys client-only), DEC-016 (the deferral this realizes).
+
+---
+
+## DEC-018: Multi-user features dropped from scope; this is a single-user product
+
+Status: Accepted (2026-07-25) — product-owner decision, narrows DEC-001's long-term direction
+
+Context: `03_VERSION_AND_SCOPE_PLAN.md` lists teacher dashboards, classrooms, social features and a marketplace or community-authored courses under Later Features, and `01_PRODUCT_VISION.md` carries the same ambitions. Phase 25 shipped the local half of that tier (multi-learner profiles, a local progress overview, achievements) and recorded the rest as gated on multi-user infrastructure. The owner has since confirmed the product is for their own use only.
+
+Decision: **Teacher dashboards, classrooms, social features, and the marketplace / community-authored course tier are dropped.** Treat them as dead: do not plan around them, do not list them as remaining work, do not build toward them. The spec documents that name them are historical on this point; this decision supersedes them, and `ROADMAP.md` is the operative list.
+
+This is a scope decision for the product as it stands, not a judgement that the features are bad. The one condition that would reopen it is the product ceasing to be single-user. Absent that, do not revive them — and in particular, do not reintroduce them because `docs/spec/` still mentions them. That is exactly the failure this entry exists to prevent.
+
+Reasons: A single-user product gains nothing from any of them. Each also carries costs entirely disproportionate to the benefit here: accounts, authentication, authorization, hosting, and — for social features and a marketplace — moderation and abuse handling, which are open-ended obligations rather than one-time build work. Keeping them nominally in scope was distorting priorities: the sync server was justified largely as the thing that unblocked them, which made it look like the highest-leverage work remaining when it is not.
+
+Alternatives: Leave them listed as "gated on demand" (rejected — indefinitely deferred items still consume attention in every planning pass and misrepresent what the product is). Build a stripped local imitation such as a read-only "guardian view" (rejected — Phase 25 already ships the honest version of that as the `/learners` overview; anything further would imply capabilities that do not exist).
+
+Consequences: **The sync server's justification shrinks considerably.** It was previously the highest-leverage remaining item because teacher dashboards, classrooms, social features and the marketplace all needed the same multi-user foundation. With those gone it delivers exactly one thing — cross-device resume for one person moving between their own machines — which is genuine but no longer unblocks anything else. It should be re-prioritized accordingly, below the content and rendering work.
+
+The multi-learner support built in Phase 25 is **kept**. It is built, tested and harmless, it costs nothing to retain, and it still serves the case of one person sharing a device with family. It is no longer a foundation for anything further.
+
+Voice tutoring, handwriting recognition and interactive simulations are **not** covered by this decision. All three are single-user features, and they remain gated on capability (speech and ink models, and a content pipeline that admits code as well as data) rather than on multi-user infrastructure.
+
+Course modules are unaffected: Phase 18 already ships courses as portable files, so sharing a course by sending someone a file continues to work. What is dropped is the hosted marketplace around it.
+
+Related: DEC-001 (initial curriculum scope), DEC-004 (local-first), DEC-016 (static local-first SPA); `03_VERSION_AND_SCOPE_PLAN.md` Later Features; `docs/planning/ROADMAP.md` Phase 25.
