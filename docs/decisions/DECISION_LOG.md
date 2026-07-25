@@ -180,3 +180,27 @@ Voice tutoring, handwriting recognition and interactive simulations are **not** 
 Course modules are unaffected: Phase 18 already ships courses as portable files, so sharing a course by sending someone a file continues to work. What is dropped is the hosted marketplace around it.
 
 Related: DEC-001 (initial curriculum scope), DEC-004 (local-first), DEC-016 (static local-first SPA); `03_VERSION_AND_SCOPE_PLAN.md` Later Features; `docs/planning/ROADMAP.md` Phase 25.
+
+---
+
+## DEC-019: Handwriting and voice dictation dropped; simulations folded into a figure widget registry
+
+Status: Accepted (2026-07-25) — resolves the remainder of the Phase 25 gated list
+
+Context: DEC-018 dropped the multi-user tier, leaving three capability-gated items from `03_VERSION_AND_SCOPE_PLAN.md`: voice tutoring, handwriting recognition, and fully interactive scientific simulations. Each appears in the spec as a single bullet (lines 98-100) with no requirements or acceptance criteria attached, so there was nothing to build to and the shape of each was still an open question.
+
+Decision, in three parts:
+
+**Handwriting recognition is dropped.** For a single user at a keyboard the value is near zero, and it needs either a cloud API - which would break local-first, since the app has never transmitted learner content anywhere except the opt-in BYOK tutor - or a bundled ink model costing megabytes. The genuine friction it would have addressed is that typing notation such as `sqrt(3)/2` is awkward; a small input palette of buttons is the proportionate fix, and needs no model at all.
+
+**Voice dictation is dropped; read-aloud is not adopted either, but stays cheap to add.** "Voice tutoring" is two features. Speech _in_ would use the browser's `SpeechRecognition`, which in Chrome uploads audio to a vendor's servers - an unacceptable trade against local-first, for a use case (dictating mathematical notation) that speech recognition handles badly. Speech _out_ via `speechSynthesis` needs no server, key or network, and would be genuinely useful on a long lesson. It is explicitly **not** an accessibility requirement: `02_PRODUCT_REQUIREMENTS.md` section 12 lists keyboard navigation, screen-reader labels, text size, contrast, themes, reduced motion, colour-independent status, text alternatives, focus states and plain language, all of which are already met. Read-aloud is therefore recorded as an optional addition on its merits, not an obligation, and is not scheduled.
+
+**Interactive simulations are not a separate project.** They are folded into the figure and graph renderer as a **widget registry**: the application owns a small fixed set of renderers, and content names one and supplies parameters. This is the pattern the validators already use - content says `"validator": "exact_value"` and the code implements it - so curriculum stays data, is still validated by JSON Schema at load, and an installed course module still cannot smuggle executable content past the Phase 18 loader. Interactivity becomes an increment on that registry rather than a new architecture. A general-purpose physics sandbox remains dropped.
+
+Reasons: The objection recorded against simulations was that "every simulation is code rather than data, which cuts against the standing constraint that curriculum stays data". That holds for arbitrary simulations but not for a fixed registry, where the only thing content contributes is a name and numbers. Recognising this collapses the largest remaining item into work already needed for a different reason: geometry, Algebra II and trigonometry have posed figures textually since Phase 14, and a trigonometry course in which no sine wave is ever drawn is a real limitation rather than a cosmetic one.
+
+Alternatives: Allow content to supply drawing instructions or expressions to evaluate (rejected - that is a code channel wearing a data costume, and it would put arbitrary content on the far side of the schema gate). Ship figures as static images (rejected - they would not adapt to theme, text size or high contrast, and would need an author toolchain outside the repository).
+
+Consequences: `figure` becomes an optional field on a question, carrying a `kind`, a parameter object, and a **required** `alt` string. Requiring `alt` in the schema means no figure can ever ship without a text equivalent, which is a stronger guarantee than review discipline. The existing content already describes its figures in words, so a rendered figure augments the prompt rather than replacing information - nothing is lost when it is not displayed. Adding a widget kind is an application change, deliberately: it keeps the set small and reviewed. A course module naming an unknown kind must degrade to its alt text rather than failing to load.
+
+Related: DEC-002 (curriculum as data), DEC-016 (static local-first SPA), DEC-018 (single-user scope); `03_VERSION_AND_SCOPE_PLAN.md` Later Features lines 98-100.

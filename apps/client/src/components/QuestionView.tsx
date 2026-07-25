@@ -10,6 +10,7 @@ import { TutorPanel } from './TutorPanel.js';
 import { RemediationNote } from './RemediationNote.js';
 import { useOptionalProgress } from '../state/ProgressContext.js';
 import { PracticeRepository } from '@learn/persistence';
+import { Figure, type FigureSpec } from './figures/Figure.js';
 
 const CHOICE_TYPES = new Set(['multiple_choice', 'exact_choice', 'structured']);
 
@@ -98,6 +99,13 @@ export function QuestionView({
   return (
     <div className="question" aria-label={`Question ${question.question_id}`}>
       <p className="question-prompt">{question.prompt}</p>
+
+      {/*
+       * The figure follows the prompt, never replaces it. Questions have always
+       * described their figures in words, so the drawing augments an already
+       * complete question (DEC-019).
+       */}
+      <Figure figure={(question as { figure?: FigureSpec }).figure} />
 
       <form onSubmit={onSubmit}>
         {isChoice && (

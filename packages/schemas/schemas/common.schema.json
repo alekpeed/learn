@@ -60,6 +60,30 @@
       "type": "string",
       "minLength": 1,
       "description": "Text alternative for any notation/media (doc 06 §9)"
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "alt"],
+      "description": "A diagram drawn by the application (DEC-019). Content names a widget kind and supplies parameters; it never supplies drawing instructions, so curriculum stays data. `alt` is REQUIRED so no figure can ship without a text equivalent (doc 02 §12, doc 06 §9).",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "right_triangle",
+            "trig_graph",
+            "unit_circle",
+            "number_line",
+            "coordinate_plane"
+          ],
+          "description": "Which renderer draws this. Adding a kind is an application change, deliberately, so the set stays small and reviewed."
+        },
+        "alt": { "$ref": "#/$defs/accessibleText" },
+        "params": {
+          "type": "object",
+          "description": "Numbers for the chosen renderer. Shape is per-kind and checked by the renderer, which falls back to the alt text rather than failing. A renderer may hide a value the question is asking for - see `unknown` on right_triangle - so a figure never answers its own question."
+        }
+      }
     }
   }
 }

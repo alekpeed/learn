@@ -2823,7 +2823,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "9 + 16 = 25, and the square root of 25 is 5 cm.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle with legs of 3 and 4. The sloping side opposite the right angle is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "unknown": "c"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q2",
@@ -2847,7 +2857,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "36 + 64 = 100, and the square root of 100 is 10 cm.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle with legs of 6 and 8. The sloping side opposite the right angle is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 6,
+          "b": 8,
+          "c": 10,
+          "unknown": "c"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q3",
@@ -2871,7 +2891,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "25 + 144 = 169, and the square root of 169 is 13 cm.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle with legs of 5 and 12. The sloping side opposite the right angle is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "unknown": "c"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q4",
@@ -2895,7 +2925,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "169 - 25 = 144, and the square root of 144 is 12 cm.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle with a sloping side of 13 and one other side of 5. The remaining side is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "unknown": "b"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q5",
@@ -2919,7 +2959,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "100 - 36 = 64, and the square root of 64 is 8 cm.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle with a sloping side of 10 and one other side of 6. The remaining side is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 6,
+          "b": 8,
+          "c": 10,
+          "unknown": "b"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q6",
@@ -2972,7 +3022,17 @@
       "dimensions": ["transfer", "accuracy"],
       "explanation": "13 squared minus 5 squared is 169 - 25 = 144, and the square root of 144 is 12 m.",
       "content_version": "1.0.0",
-      "transfer_flag": true
+      "transfer_flag": true,
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A ladder leaning against a wall forms a right triangle. The ladder is 13 and its foot is 5 from the wall. The height reached up the wall is not labelled - it is what the question asks for.",
+        "params": {
+          "a": 12,
+          "b": 5,
+          "c": 13,
+          "unknown": "a"
+        }
+      }
     },
     {
       "question_id": "math.geometry.pythagoras.q8",

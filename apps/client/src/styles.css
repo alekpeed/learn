@@ -815,3 +815,64 @@ button {
   color: var(--success);
   font-weight: 400;
 }
+
+/* Figures (DEC-019). Every colour is a token, so both themes and high contrast
+   work without a per-theme rule in the renderers. */
+.figure-wrap {
+  margin: 0.75rem 0;
+}
+.figure {
+  width: 100%;
+  max-width: 26rem;
+  height: auto;
+}
+.figure-fallback {
+  margin: 0.75rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--muted);
+  color: var(--muted);
+  font-style: italic;
+}
+.fig-shape {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.fig-line {
+  fill: none;
+  stroke: var(--fg);
+  stroke-width: 1.5;
+}
+.fig-axis {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+.fig-grid {
+  stroke: var(--muted);
+  stroke-width: 0.5;
+  opacity: 0.45;
+}
+.fig-guide {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+.fig-curve {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.fig-radius {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.fig-point {
+  fill: var(--accent);
+}
+.fig-label {
+  fill: var(--fg);
+  font-size: 13px;
+  font-family: inherit;
+}

@@ -118,6 +118,7 @@
     "estimated_time_seconds": { "type": "integer", "minimum": 1 },
     "transfer_flag": { "type": "boolean", "default": false },
     "accessible_text": { "$ref": "common.schema.json#/$defs/accessibleText" },
+    "figure": { "$ref": "common.schema.json#/$defs/figure" },
     "content_version": { "$ref": "common.schema.json#/$defs/semver" }
   }
 }

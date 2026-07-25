@@ -388,14 +388,19 @@ It was the highest-leverage remaining item mainly because those four all needed 
 multi-user foundation. With them gone it delivers exactly one thing - cross-device resume
 for one person moving between their own machines - which is real but unblocks nothing else.
 
-**Still gated on capability, and genuinely single-user.** These are not affected by DEC-018;
-they need models or a pipeline change the app does not have:
+**Also dropped - see DEC-019.** Handwriting recognition and voice dictation are out of scope.
+Handwriting needs a cloud API (breaking local-first) or a bundled ink model, for near-zero
+value at a keyboard; the real friction it would address - typing notation like `sqrt(3)/2` -
+is better met by an input palette. Voice dictation would upload audio to a vendor. Read-aloud
+via `speechSynthesis` is cheap and would work offline, but it is **not** an accessibility
+requirement (doc 02 section 12 is already fully met), so it is recorded as optional and is
+not scheduled.
 
-- **Voice tutoring and handwriting recognition** need speech and ink models plus microphone
-  and stylus handling. BYOK covers text only.
-- **Interactive simulations** are the biggest single piece and would change how content is
-  authored, since every simulation is code rather than data - which cuts against the
-  standing constraint that curriculum stays data.
+**Interactive simulations were folded into the figure renderer (DEC-019), not dropped.** The
+objection was that a simulation is code rather than data. That holds for arbitrary
+simulations but not for a **widget registry**, where content names a `kind` and supplies
+numbers and the drawing lives in the application - exactly how validators already work.
+Static figures shipped first; interactivity is an increment on the same registry.
 
 ### Unsequenced - in scope, but never given a phase number
 
@@ -454,13 +459,15 @@ in this file's own terms, in the order worth doing it:
 
 1. **Statistics and probability** - unsequenced, but every prerequisite is authored, it needs
    no new validator and no infrastructure. The most buildable thing remaining.
-2. **A rendered figure and graph component** - the oldest carried gap, dating to Phase 14.
-   Geometry, Algebra II and trigonometry all pose figures in words; a trigonometry course in
-   which no sine wave is ever drawn is a real limitation of the learning experience.
+2. **More figures** - the renderer now exists (DEC-019) with five widget kinds, and 35
+   figures are attached across trigonometry and Pythagoras, so a sine wave is finally drawn.
+   The rest of geometry, the coordinate-plane unit and the science data unit still pose their
+   figures in words. That is content work against existing renderers, not new code.
 3. **Calculus** - furthest out, and it needs precalculus strands Phase 23 did not author.
 4. **The sync server** - the last Version 1 item. DEC-018 removed most of its leverage; it
    now buys cross-device resume for one person and nothing more.
-5. **Voice, handwriting, simulations** - gated on capability, not on demand.
+5. **Interactive figures** - DEC-019 made this an increment on the widget registry rather
+   than a separate project. Voice dictation and handwriting are dropped.
 
 Teacher dashboards, classrooms, social features and the marketplace are **dropped** (DEC-018)
 and are deliberately absent from that list.

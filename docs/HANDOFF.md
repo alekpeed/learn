@@ -77,13 +77,13 @@ disagree, the file wins - and fix this table.**
 
 ### Not done - this is what is left
 
-| Phase | What                            | Notes                                                                                                                                                                                                                                                                      |
-| ----- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -     | **Sync server**                 | The last Version 1 item. **DEC-018 removed most of its leverage**: it was justified largely as the multi-user foundation for dashboards and classrooms, which are now dropped. It buys cross-device resume for one person and nothing else. Tested against a stub.         |
-| 25    | **Phase 25, capability-gated**  | Voice tutoring, handwriting recognition, interactive simulations. Need speech/ink models or a pipeline that admits code as content. Teacher dashboards, classrooms, social and the marketplace are **dropped** - see DEC-018.                                              |
-| -     | **Rendered figures and graphs** | The oldest carried gap, dating to Phase 14. Geometry, Algebra II and trigonometry all pose figures in words. Client-side work, no server needed.                                                                                                                           |
-| -     | **Statistics & probability**    | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime. |
-| -     | **Calculus**                    | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                     |
+| Phase | What                            | Notes                                                                                                                                                                                                                                                                                                             |
+| ----- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -     | **Sync server**                 | The last Version 1 item. **DEC-018 removed most of its leverage**: it was justified largely as the multi-user foundation for dashboards and classrooms, which are now dropped. It buys cross-device resume for one person and nothing else. Tested against a stub.                                                |
+| 25    | **Interactive figures**         | DEC-019 folded "interactive simulations" into the figure registry, so this is now an increment on existing machinery rather than a new architecture. Handwriting recognition and voice dictation are **dropped** (DEC-019); teacher dashboards, classrooms, social and the marketplace are **dropped** (DEC-018). |
+| -     | **Rendered figures and graphs** | The oldest carried gap, dating to Phase 14. Geometry, Algebra II and trigonometry all pose figures in words. Client-side work, no server needed.                                                                                                                                                                  |
+| -     | **Statistics & probability**    | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime.                                        |
+| -     | **Calculus**                    | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                                                            |
 
 ### The distinction that keeps being missed
 
@@ -149,6 +149,25 @@ pnpm test:e2e           # 43 tests, includes axe in BOTH light and dark
 - **`CurriculumProvider` keeps the bundled package as its synchronous initial value**, so a
   broken installed course module falls back rather than bricking the app.
 
+### DEC-019: figures are a widget registry, not free-form drawing
+
+Content names a `kind` and supplies numbers; the drawing lives in the app. Same arrangement
+as validators - content says `"validator": "exact_value"` and code implements it - so
+**curriculum stays data** and an installed course module cannot smuggle in executable
+content. Adding a widget kind is an application change on purpose, to keep the set reviewed.
+
+Two rules that are enforced, not just documented:
+
+- **`alt` is required by the schema**, so no figure can ship without a text equivalent. A
+  content test also rejects alt text under 20 characters.
+- **A figure must never answer its own question.** `right_triangle` takes an `unknown` field
+  naming the side being asked for, which renders as "?". A content test checks that any
+  right-triangle figure whose numeric answer equals a drawn side has that side marked
+  unknown - it was verified to fail against deliberately sabotaged content before shipping.
+
+Unknown kinds and bad parameters fall back to the alt text rather than throwing, so a course
+module built against a newer widget set degrades instead of breaking.
+
 ### DEC-018: this is a single-user product
 
 **Teacher dashboards, classrooms, social features and the marketplace are dropped.** Not
@@ -183,9 +202,12 @@ Do not describe Phase 25 as done.
 - **No sync server is deployed.** `HttpSyncBackend` is tested against a stubbed `fetch`,
   never a live endpoint. `syncEvents` pulls the whole remote log rather than using a
   watermark.
-- **Geometry, Algebra II and Trigonometry pose figures textually.** No rendered figure or
-  graph component. Trig graph questions ask for period, amplitude, midline, maximum and
-  minimum in words rather than showing a wave.
+- **Figures are drawn for trigonometry and Pythagoras only.** DEC-019 added a figure widget
+  registry (`apps/client/src/components/figures/Figure.tsx`) and attached 35 figures to
+  existing questions, but most of geometry (angles, polygons, circles, solids), the
+  coordinate-plane unit and the science data unit still pose their figures in words. The
+  `number_line` and `coordinate_plane` renderers exist and are unused - attaching them is
+  content work, not code work.
 - **The schema caps `difficulty` and `difficulty_band` at 5.** Hard items clamp there.
 - **`exact_value` does not handle sums of unlike terms** such as `1 + sqrt(2)`, nested
   radicals, or non-integer radicands. No authored item needs one; a question that did would

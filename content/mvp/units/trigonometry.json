@@ -990,7 +990,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "Opposite is 3 and the hypotenuse is 5, so the ratio is 3/5.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 3, the horizontal side is 4, and the sloping side opposite the right angle is 5. The angle A is at the corner between the sides of length 4 and 5.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.right_triangle_ratios.q3",
@@ -1020,7 +1030,17 @@
           "value": "3/5",
           "misconception_id": "mc.math.trigonometry.sine_used_for_cosine"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 3, the horizontal side is 4, and the sloping side opposite the right angle is 5. The angle A is at the corner between the sides of length 4 and 5.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.right_triangle_ratios.q4",
@@ -1044,7 +1064,17 @@
       ],
       "dimensions": ["understanding", "accuracy"],
       "explanation": "6/10 reduces to 3/5 - exactly the ratio the 3-4-5 triangle gave, because the 6-8-10 triangle is a scaled copy with the same angles.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 6, the horizontal side is 8, and the sloping side opposite the right angle is 10. The angle A is at the corner between the sides of length 8 and 10.",
+        "params": {
+          "a": 6,
+          "b": 8,
+          "c": 10,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.right_triangle_ratios.q5",
@@ -1100,7 +1130,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "Opposite is 5 and the hypotenuse is 13, so the ratio is 5/13. The triangle checks out: 25 + 144 = 169.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 5, the horizontal side is 12, and the sloping side opposite the right angle is 13. The angle A is at the corner between the sides of length 12 and 13.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.right_triangle_ratios.q7",
@@ -1130,7 +1170,17 @@
           "value": "12/5",
           "misconception_id": "mc.math.trigonometry.swapped_opposite_adjacent"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 5, the horizontal side is 12, and the sloping side opposite the right angle is 13. The angle A is at the corner between the sides of length 12 and 13.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.right_triangle_ratios.q8",
@@ -1187,7 +1237,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "sin A = opposite/hypotenuse = 3/5.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 3, the horizontal side is 4, and the sloping side opposite the right angle is 5. The angle A is at the corner between the sides of length 4 and 5.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q2",
@@ -1217,7 +1277,17 @@
           "value": "3/5",
           "misconception_id": "mc.math.trigonometry.sine_used_for_cosine"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 3, the horizontal side is 4, and the sloping side opposite the right angle is 5. The angle A is at the corner between the sides of length 4 and 5.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q3",
@@ -1247,7 +1317,17 @@
           "value": "4/3",
           "misconception_id": "mc.math.trigonometry.swapped_opposite_adjacent"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 3, the horizontal side is 4, and the sloping side opposite the right angle is 5. The angle A is at the corner between the sides of length 4 and 5.",
+        "params": {
+          "a": 3,
+          "b": 4,
+          "c": 5,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q4",
@@ -1271,7 +1351,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "sin A = 5/13.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 5, the horizontal side is 12, and the sloping side opposite the right angle is 13. The angle A is at the corner between the sides of length 12 and 13.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q5",
@@ -1301,7 +1391,17 @@
           "value": "5/13",
           "misconception_id": "mc.math.trigonometry.sine_used_for_cosine"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 5, the horizontal side is 12, and the sloping side opposite the right angle is 13. The angle A is at the corner between the sides of length 12 and 13.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q6",
@@ -1325,7 +1425,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "tan A = 5/12. Checking against sin/cos: (5/13)/(12/13) = 5/12.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "right_triangle",
+        "alt": "A right triangle. The vertical side is 5, the horizontal side is 12, and the sloping side opposite the right angle is 13. The angle A is at the corner between the sides of length 12 and 13.",
+        "params": {
+          "a": 5,
+          "b": 12,
+          "c": 13,
+          "angle_label": "A"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.sine_cosine_tangent.q7",
@@ -2559,7 +2669,15 @@
           "value": "sqrt(3)/2",
           "misconception_id": "mc.math.trigonometry.sine_read_as_first_coordinate"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 60 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 60,
+          "point_label": "60 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q2",
@@ -2583,7 +2701,15 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "The point is (cos 60, sin 60), so the y-coordinate is sin 60 = sqrt(3)/2. Check: 1/4 + 3/4 = 1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 60 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 60,
+          "point_label": "60 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q3",
@@ -2607,7 +2733,15 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "At 180 degrees the point is (-1, 0), so cos 180 = -1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 180 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 180,
+          "point_label": "180 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q4",
@@ -2631,7 +2765,15 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "At 180 degrees the point is (-1, 0), so sin 180 = 0.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 180 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 180,
+          "point_label": "180 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q5",
@@ -2656,7 +2798,15 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "At 45 degrees the point is (sqrt(2)/2, sqrt(2)/2). Check: 1/2 + 1/2 = 1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 45 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 45,
+          "point_label": "45 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q6",
@@ -2680,7 +2830,15 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "At 90 degrees the point is (0, 1), so sin 90 = 1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "unit_circle",
+        "alt": "The unit circle, a circle of radius 1 centred on the origin, with a radius drawn to the point at 90 degrees measured anticlockwise from the positive horizontal axis.",
+        "params": {
+          "angle": 90,
+          "point_label": "90 deg"
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.unit_circle.q7",
@@ -2986,7 +3144,17 @@
       ],
       "dimensions": ["understanding"],
       "explanation": "One full turn round the unit circle returns to the same point, so the sine graph repeats every 360 degrees.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 1 and falls to -1, its midline is at 0, and one complete cycle takes 360 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 1,
+          "period": 360,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.trig_graphs.q2",
@@ -3016,7 +3184,17 @@
           "value": 6,
           "misconception_id": "mc.math.trigonometry.amplitude_read_as_full_range"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -3, its midline is at 0, and one complete cycle takes 360 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 3,
+          "period": 360,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.trig_graphs.q3",
@@ -3040,7 +3218,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "sin x is at most 1, so 3 sin x is at most 3.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -3, its midline is at 0, and one complete cycle takes 360 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 3,
+          "period": 360,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.trig_graphs.q4",
@@ -3064,7 +3252,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "sin x is at least -1, so 3 sin x is at least -3.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -3, its midline is at 0, and one complete cycle takes 360 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 3,
+          "period": 360,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.trig_graphs.q5",
@@ -3094,7 +3292,17 @@
           "value": 360,
           "misconception_id": "mc.math.trigonometry.period_ignores_coefficient"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 1 and falls to -1, its midline is at 0, and one complete cycle takes 180 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 1,
+          "period": 180,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.trig_graphs.q6",
@@ -3202,7 +3410,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "The coefficient in front of the sine is 2, so the amplitude is 2.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -1, its midline is at 1, and one complete cycle takes 120 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 2,
+          "period": 120,
+          "midline": 1
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q2",
@@ -3232,7 +3450,17 @@
           "value": 360,
           "misconception_id": "mc.math.trigonometry.period_ignores_coefficient"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -1, its midline is at 1, and one complete cycle takes 120 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 2,
+          "period": 120,
+          "midline": 1
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q3",
@@ -3256,7 +3484,17 @@
       ],
       "dimensions": ["understanding"],
       "explanation": "The graph is lifted by 1, so the midline is y = 1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -1, its midline is at 1, and one complete cycle takes 120 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 2,
+          "period": 120,
+          "midline": 1
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q4",
@@ -3280,7 +3518,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "The midline is 1 and the amplitude is 2, so the maximum is 1 + 2 = 3.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -1, its midline is at 1, and one complete cycle takes 120 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 2,
+          "period": 120,
+          "midline": 1
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q5",
@@ -3304,7 +3552,17 @@
       ],
       "dimensions": ["accuracy"],
       "explanation": "The midline is 1 and the amplitude is 2, so the minimum is 1 - 2 = -1.",
-      "content_version": "1.0.0"
+      "content_version": "1.0.0",
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A sine wave drawn over two full cycles. It rises to 3 and falls to -1, its midline is at 1, and one complete cycle takes 120 degrees.",
+        "params": {
+          "fn": "sin",
+          "amplitude": 2,
+          "period": 120,
+          "midline": 1
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q6",
@@ -3334,7 +3592,17 @@
           "value": -4,
           "misconception_id": "mc.math.trigonometry.amplitude_given_as_negative"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A cosine wave drawn over two full cycles. It rises to 4 and falls to -4, its midline is at 0, and one complete cycle takes 360 degrees.",
+        "params": {
+          "fn": "cos",
+          "amplitude": -4,
+          "period": 360,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q7",
@@ -3364,7 +3632,17 @@
           "value": 360,
           "misconception_id": "mc.math.trigonometry.period_ignores_coefficient"
         }
-      ]
+      ],
+      "figure": {
+        "kind": "trig_graph",
+        "alt": "A cosine wave drawn over two full cycles. It rises to 1 and falls to -1, its midline is at 0, and one complete cycle takes 90 degrees.",
+        "params": {
+          "fn": "cos",
+          "amplitude": 1,
+          "period": 90,
+          "midline": 0
+        }
+      }
     },
     {
       "question_id": "math.trigonometry.graph_transformations.q8",
