@@ -6,19 +6,36 @@ import { createProfile } from './helpers.js';
  * in one flat rotation - so it offered items from locked skills and from
  * subjects the learner had not chosen. Doc 02 requires the system to prevent
  * advancement past unstable prerequisites, so that fallback was a defect, not a
- * preference. These pin the replacement.
+ * preference. It is now a sectioned index. These pin the replacement.
  */
 test.describe('practice entry point', () => {
-  test('sends a new learner to a single unlocked skill, not the whole curriculum', async ({
+  test('lands on sections, not on a flat run of every question', async ({ page }) => {
+    await createProfile(page);
+    await page.goto('/practice');
+
+    // No question is served until a skill is named.
+    await expect(page.locator('.question-prompt')).toHaveCount(0);
+    await expect(page.getByText(/question \d+ of \d+/i)).toHaveCount(0);
+
+    // Units are the sections, and there are many of them.
+    const sections = page.locator('.unit-section');
+    expect(await sections.count()).toBeGreaterThan(5);
+    await expect(sections.first()).toContainText(/\d+ skills, \d+ questions/);
+  });
+
+  test('offers the next skill in one click, and practising it stays in that skill', async ({
     page,
   }) => {
     await createProfile(page);
     await page.goto('/practice');
 
-    // Redirected to a named skill, so a reload and a bookmark behave the same.
+    await page
+      .getByRole('link', { name: /^practise /i })
+      .first()
+      .click();
     await expect(page).toHaveURL(/\/practice\?skill=/);
 
-    // The counter is a single skill's pool, not the ~1,900-question curriculum.
+    // A single skill's pool, not the ~1,900-question curriculum.
     const counter = page.getByText(/question \d+ of \d+/i);
     await expect(counter).toBeVisible();
     const total = Number(/of (\d+)/.exec((await counter.textContent()) ?? '')?.[1] ?? '0');
@@ -26,26 +43,25 @@ test.describe('practice entry point', () => {
     expect(total).toBeLessThan(40);
   });
 
-  test('opens at the very first skill, not somewhere in the middle', async ({ page }) => {
+  test('opens the section the learner is actually in', async ({ page }) => {
     await createProfile(page);
     await page.goto('/practice');
-    // Nothing has been learned yet, so the frontier is the start of the course.
-    await expect(page).toHaveURL(/skill=math\.number_foundations\./);
+    // Nothing learned yet, so the frontier is the start of the course and that
+    // section is the one expanded.
+    const open = page.locator('.unit-section[open]');
+    await expect(open).toHaveCount(1);
+    await expect(open).toContainText(/number foundations/i);
   });
 
-  test('never serves a question from a locked skill', async ({ page }) => {
+  test('lists locked skills but does not let them be practised', async ({ page }) => {
     await createProfile(page);
     await page.goto('/practice');
-    await expect(page).toHaveURL(/\/practice\?skill=/);
 
-    const skill = new URL(page.url()).searchParams.get('skill') ?? '';
-    // The map is the authority on lock state; the skill we landed on must not
-    // be shown as locked there.
-    await page.goto('/map');
-    const node = page.locator(`.skill-node`).filter({ hasText: skill.split('.').pop() ?? '' });
-    if (await node.count()) {
-      await expect(node.first()).toHaveAttribute('data-locked', 'false');
-    }
+    const locked = page.locator('.skill-node[data-locked="true"]').first();
+    await expect(locked).toBeVisible();
+    // Named, with its prerequisites shown, but not a link.
+    await expect(locked).toContainText(/unlock by mastering:/i);
+    await expect(locked.locator('a')).toHaveCount(0);
   });
 
   async function chooseSubject(page: import('@playwright/test').Page, label: string) {
@@ -57,21 +73,30 @@ test.describe('practice entry point', () => {
     await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
   }
 
-  test('the chosen subject decides which skill practice opens on', async ({ page }) => {
+  test('the chosen subject decides which sections are listed', async ({ page }) => {
     await chooseSubject(page, 'Scientific Reasoning and Measurement');
     await page.goto('/practice');
-    await expect(page).toHaveURL(/skill=science\./);
+
+    await expect(page.locator('.unit-section')).toContainText([/scientific thinking/i]);
+    await expect(page.getByText(/trigonometry/i)).toHaveCount(0);
+    await expect(page.getByRole('link', { name: /^practise /i }).first()).toBeVisible();
   });
 
   /*
    * Gating outranks the subject. Every biology skill sits behind scientific
    * observation and evidence, so at a standing start nothing in that subject is
-   * open - and the learner is sent to the frontier of the curriculum rather
-   * than to a locked skill or a dead end.
+   * open - the sections still show biology, because seeing what is there and
+   * what it waits on is the point, but the one-click offer points at the
+   * curriculum frontier rather than at a locked skill.
    */
   test('falls back past the subject rather than dead-ending on locked skills', async ({ page }) => {
     await chooseSubject(page, 'Introductory Biology');
     await page.goto('/practice');
+
+    await expect(page.locator('.unit-section')).toContainText([/cells, genetics and ecosystems/i]);
+    const offer = page.getByRole('link', { name: /^practise /i }).first();
+    await expect(offer).toBeVisible();
+    await offer.click();
     await expect(page).toHaveURL(/\/practice\?skill=/);
     await expect(page).not.toHaveURL(/skill=biology\./);
   });

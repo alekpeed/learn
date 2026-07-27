@@ -202,12 +202,21 @@ ignored. It contradicted `02_PRODUCT_REQUIREMENTS.md:43` - "the system must prev
 advancement when critical prerequisites are not sufficiently stable" - so it was a defect,
 not a preference.
 
-Bare `/practice` now resolves the same skill the dashboard's "Continue" points at, through
-`selectTodaysSession`: a due review first (time-sensitive), then the frontier skill inside
-the chosen subject. It **redirects** to `/practice?skill=<id>` rather than practising in
-place, so there is one code path and a reload, a bookmark and a deep link all behave the
-same. When nothing is in progress it renders a picker of unlocked skills grouped by unit,
-rather than guessing.
+Bare `/practice` is now a **sectioned index of the curriculum**. Units are the sections -
+the curriculum is already shaped course, then unit, then skill, and this screen shows that
+shape instead of hiding it. Each section carries its skill count, question count and how
+many are mastered, and the section the learner is currently in opens by default. Sections
+are `<details>`, so they open, close and announce their state with no JavaScript.
+
+The skill `selectTodaysSession` resolves - a due review first, since those are
+time-sensitive, then the frontier skill inside the chosen subject - is offered at the top as
+one click, so the common case stays fast. It was briefly an automatic redirect; that made
+the sections effectively unreachable, since the picker only appeared when nothing was in
+progress.
+
+**Locked skills are listed, not hidden.** Seeing that Trigonometry exists and what it waits
+on is the point. The entry is plain text rather than a link, so the doc 02 prerequisite rule
+still holds - there is a test asserting a locked node contains no anchor.
 
 Gating outranks the subject, and there is a test for it: every biology skill sits behind
 scientific observation and evidence, so choosing Introductory Biology at a standing start

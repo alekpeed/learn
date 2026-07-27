@@ -324,6 +324,26 @@ button {
   padding-left: 1.5rem;
 }
 
+/*
+ * Practice index, by section. <details> is used rather than a scripted
+ * accordion so the sections open and close, and announce their state, with no
+ * JavaScript and nothing to get wrong for a screen reader.
+ */
+.unit-section {
+  border-bottom: 1px solid var(--muted);
+  padding: 0.5rem 0;
+}
+.unit-section > summary {
+  cursor: pointer;
+  padding: 0.25rem 0;
+}
+.unit-section .unit-title {
+  font-weight: 600;
+}
+.unit-section .skill-list {
+  margin: 0.5rem 0 0.25rem;
+}
+
 /* Progress + scores */
 .skill-state-label {
   color: var(--muted);
