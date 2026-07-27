@@ -32,7 +32,7 @@ The documented curriculum was fully authored at mastery-grade depth (130
 skills, 1,121 questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri
 desktop shell wrapped it for Windows, and Phases 21-24 then added Geometry, Algebra II,
 Precalculus, Trigonometry, Physics, Chemistry and Biology on top. The curriculum now stands
-at **201 skills and 1,691 questions across 22 unit files**, in five courses: 15 math units,
+at **201 skills and 1,946 questions across 22 unit files**, in five courses: 15 math units,
 4 scientific-method units, and one introductory unit each for physics, chemistry and biology.
 
 The remaining work is: **statistics and probability** and **calculus** (both named in the
@@ -313,9 +313,10 @@ strands not needed for trigonometry (conics, vectors, polar coordinates) are una
 ### Phase 24 - Sciences: Physics, Chemistry, Biology [content] - DONE
 
 Shipped as **three new subjects, each with its own course and an introductory unit** - 24
-skills and 192 questions, taking the curriculum to **201 skills and 1,691 questions across
-22 unit files**. This is the first subject-matter science in the product; everything before
-it taught scientific method.
+skills and 192 questions, taking the curriculum to **201 skills and, at the time, 1,691
+questions across 22 unit files** (the depth pass has since raised the question count; the
+skill count is unchanged). This is the first subject-matter science in the product;
+everything before it taught scientific method.
 
 Structured per the doc 05 hierarchy `Subject -> Course -> Unit -> Skill`, so physics,
 chemistry and biology are genuinely their own subjects rather than units bolted onto

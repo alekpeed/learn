@@ -2,7 +2,7 @@
  * Today's study plan (Version 1). Shows the daily-goal progress, the current
  * streak, and what to do next: due reviews and the next skill to work on.
  */
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { LearningEvent } from '@learn/domain';
 import {
@@ -14,6 +14,7 @@ import {
 import { useOptionalLearner } from '../state/LearnerContext.js';
 import { useCurriculum } from '../state/CurriculumContext.js';
 import { useProgress } from '../state/ProgressContext.js';
+import { useSubjectSkills } from '../state/useSubjectSkills.js';
 import { eventStore } from '../data/repository.js';
 
 export function TodayPanel(): JSX.Element | null {
@@ -22,6 +23,9 @@ export function TodayPanel(): JSX.Element | null {
   const { progress } = useProgress();
   const [events, setEvents] = useState<LearningEvent[]>([]);
   const [now] = useState(() => new Date().toISOString());
+  // Shared with the practice screen so the two cannot disagree about what the
+  // chosen subject covers.
+  const focusSkills = useSubjectSkills();
 
   useEffect(() => {
     if (!learner) return;
@@ -31,21 +35,6 @@ export function TodayPanel(): JSX.Element | null {
       active = false;
     };
   }, [learner, progress]);
-
-  // Hooks run before the early return, so the subject filter is computed
-  // unconditionally and simply comes back empty when there is nothing to filter.
-  const courseId = learner?.current_course_id;
-  const focusSkills = useMemo(() => {
-    if (!pkg || !courseId) return undefined;
-    const course = pkg.courses.find((c) => c.course_id === courseId);
-    if (!course) return undefined;
-    const units = new Set(course.units.map((u) => u.unit_id));
-    const ids = new Set<string>();
-    for (const [skillId, skill] of pkg.graph.skills) {
-      if (units.has(skill.unit_id)) ids.add(skillId);
-    }
-    return ids;
-  }, [pkg, courseId]);
 
   if (!learner || !pkg) return null;
 

@@ -103,15 +103,22 @@ describe the current science course as covering "science" without that qualifier
 
 |                                       | Skills  | Questions |
 | ------------------------------------- | ------- | --------- |
-| Mathematics (`math.core`, 15 units)   | 143     | 1,226     |
+| Mathematics (`math.core`, 15 units)   | 143     | 1,481     |
 | Scientific method (`science.core`, 4) | 34      | 273       |
 | Physics (`physics.core`, 1 unit)      | 8       | 64        |
 | Chemistry (`chemistry.core`, 1 unit)  | 8       | 64        |
 | Biology (`biology.core`, 1 unit)      | 8       | 64        |
-| **Total (22 unit files, 5 courses)**  | **201** | **1,691** |
+| **Total (22 unit files, 5 courses)**  | **201** | **1,946** |
 
 Plus a 123-record misconception catalog (`content/mvp/misconceptions.json`). Every skill has
-a lesson and at least 7 practice items.
+a lesson and at least 7 practice items (mean 9.7).
+
+**These counts are generated, not remembered.** Regenerate them before quoting them - the
+1,691 figure survived three commits after the depth pass had already moved it:
+
+```
+python3 -c "import json,glob;q=sum(len(json.load(open(f)).get('questions',[])) for f in glob.glob('content/mvp/units/*.json'));s=sum(len(json.load(open(f)).get('skills',[])) for f in glob.glob('content/mvp/units/*.json'));print(s,'skills',q,'questions')"
+```
 
 **The arithmetic-to-trigonometry path is complete** as of Phase 23. Note that trigonometry
 is a strand _inside_ precalculus, not a course after it - the two units are ordered
@@ -185,6 +192,27 @@ stub, whatever `ROADMAP.md` said at Phase 15b (that line has been corrected).
 - **e2e sign-in is now `tests/e2e/helpers.ts`.** The flow gained a screen, so the fourteen
   copies of the welcome-to-dashboard block became one `createProfile(page, name?)` helper
   that takes the skip. Use it rather than reintroducing a local copy.
+
+### Bare /practice resolves a skill - it never serves the whole curriculum
+
+`PracticeScreen` used to fall back to `pkg.questions` when the URL carried no `?skill=`,
+which is what the nav link does. That put all ~1,946 questions into one flat rotation:
+trigonometry next to place value, locked skills served freely, and the chosen subject
+ignored. It contradicted `02_PRODUCT_REQUIREMENTS.md:43` - "the system must prevent
+advancement when critical prerequisites are not sufficiently stable" - so it was a defect,
+not a preference.
+
+Bare `/practice` now resolves the same skill the dashboard's "Continue" points at, through
+`selectTodaysSession`: a due review first (time-sensitive), then the frontier skill inside
+the chosen subject. It **redirects** to `/practice?skill=<id>` rather than practising in
+place, so there is one code path and a reload, a bookmark and a deep link all behave the
+same. When nothing is in progress it renders a picker of unlocked skills grouped by unit,
+rather than guessing.
+
+Gating outranks the subject, and there is a test for it: every biology skill sits behind
+scientific observation and evidence, so choosing Introductory Biology at a standing start
+sends the learner to the curriculum frontier instead of a locked skill. `useSubjectSkills`
+is shared with `TodayPanel` so the two cannot disagree about what a subject covers.
 
 ### Question rotation - read this before touching PracticeScreen or ReviewQueue
 
