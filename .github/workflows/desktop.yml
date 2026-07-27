@@ -7,10 +7,13 @@ on:
   workflow_dispatch:
   push:
     tags: ['v*']
-    # The development branch builds installers on demand too, so a Windows build
+    # Development branches build installers on demand too, so a Windows build
     # can be produced before this reaches the default branch (workflow_dispatch
     # is only offered for workflows that already live on the default branch).
-    branches: [claude/learning-app-next-phase-pgs09j]
+    #
+    # A pattern rather than one branch name: this was pinned to a single branch
+    # and silently stopped building the moment work moved to the next one.
+    branches: ['claude/**']
 
 jobs:
   windows-installer:
