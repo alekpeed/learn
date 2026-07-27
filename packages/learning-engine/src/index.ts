@@ -11,3 +11,4 @@ export * from './dashboard.js';
 export * from './misconceptions.js';
 export * from './achievements.js';
 export * from './rotation.js';
+export * from './mastery-check.js';

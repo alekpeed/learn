@@ -102,6 +102,8 @@ export class LearnerRepository {
     changes: {
       preferences?: Partial<LearnerPreferences>;
       accessibility_settings?: Partial<AccessibilitySettings>;
+      /** Subject chosen at Goal Selection (doc 07). */
+      current_course_id?: string;
     },
   ): Promise<Learner> {
     await this.record(learnerId, 'settings_changed', changes);

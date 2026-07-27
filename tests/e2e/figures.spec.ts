@@ -1,6 +1,7 @@
 // Practice rotates questions, so these pin the exact item they assert
 // on with the ?q= deep link.
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 /**
  * A figure augments a prompt that already stands on its own (DEC-019), so these
@@ -9,10 +10,7 @@ import { test, expect } from '@playwright/test';
  */
 test.describe('rendered figures (DEC-019)', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
   });
 
   test('a right triangle is drawn alongside the question, not instead of it', async ({ page }) => {

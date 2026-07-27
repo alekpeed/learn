@@ -1,18 +1,7 @@
 // Practice rotates questions, so these pin the exact item they assert
 // on with the ?q= deep link.
 import { test, expect, type Page } from '@playwright/test';
-
-/**
- * Create the device's first profile and wait for it to land. The wait matters:
- * the profile is an IndexedDB write, and navigating away before it completes
- * loses it.
- */
-async function firstProfile(page: Page, name: string): Promise<void> {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill(name);
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
-}
+import { createProfile } from './helpers.js';
 
 async function addProfile(page: Page, name: string): Promise<void> {
   await page.goto('/learners');
@@ -29,7 +18,7 @@ function earnedBadges(page: Page) {
 
 test.describe('multiple learners on one device (Phase 25)', () => {
   test('each profile keeps its own progress', async ({ page }) => {
-    await firstProfile(page, 'Ada');
+    await createProfile(page, 'Ada');
 
     // Ada earns a badge that Grace must not inherit.
     await page.goto(
@@ -58,7 +47,7 @@ test.describe('multiple learners on one device (Phase 25)', () => {
   });
 
   test('the active profile survives a reload', async ({ page }) => {
-    await firstProfile(page, 'Ada');
+    await createProfile(page, 'Ada');
     await addProfile(page, 'Grace');
 
     await page.reload();
@@ -67,7 +56,7 @@ test.describe('multiple learners on one device (Phase 25)', () => {
   });
 
   test('deleting a profile asks first and leaves the other intact', async ({ page }) => {
-    await firstProfile(page, 'Ada');
+    await createProfile(page, 'Ada');
     await addProfile(page, 'Grace');
     await expect(page.getByRole('rowheader', { name: /Ada/ })).toBeVisible();
 
@@ -84,7 +73,7 @@ test.describe('multiple learners on one device (Phase 25)', () => {
 
 test.describe('achievements (Phase 25)', () => {
   test('a badge is earned by practising and survives a reload', async ({ page }) => {
-    await firstProfile(page, 'Ada');
+    await createProfile(page, 'Ada');
 
     await page.goto(
       '/practice?skill=math.number_foundations.place_value&q=math.number_foundations.place_value.q1',

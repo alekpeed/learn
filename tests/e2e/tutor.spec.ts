@@ -1,10 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 test.describe('AI tutor (Phase 8)', () => {
   test('is off by default and the app works without it', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
+    await createProfile(page);
 
     await page.goto('/lesson?skill=math.number_foundations.counting_and_quantity');
     await expect(page.getByRole('complementary', { name: /ai tutor/i })).toContainText(
@@ -15,10 +14,7 @@ test.describe('AI tutor (Phase 8)', () => {
   });
 
   test('can be enabled in settings and then gives grounded help', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Grace');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page, 'Grace');
 
     await page.goto('/settings');
     // The checkbox is async-controlled; click once (check() would auto-retry).
@@ -52,10 +48,7 @@ test.describe('offline + data (Phase 9)', () => {
   });
 
   test('settings exposes progress export and import', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
     await page.goto('/settings');
     await expect(page.getByRole('button', { name: /export progress/i })).toBeVisible();
     await expect(page.getByLabel(/import progress from a file/i)).toBeVisible();
@@ -64,10 +57,7 @@ test.describe('offline + data (Phase 9)', () => {
 
 test.describe('BYOK provider selection (DEC-015)', () => {
   test('lets the learner choose a provider and save a key', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
 
     await page.goto('/settings');
     await page.getByLabel(/ai tutor/i).click();
@@ -80,10 +70,7 @@ test.describe('BYOK provider selection (DEC-015)', () => {
 
 test.describe('optional sync (Phase 20)', () => {
   test('is off by default and reveals nothing until enabled', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
 
     await page.goto('/settings');
     const toggle = page.getByRole('checkbox', { name: /sync progress between/i });

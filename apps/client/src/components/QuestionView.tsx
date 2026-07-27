@@ -26,13 +26,24 @@ export function QuestionView({
   repository,
   onSolved,
   nextLabel,
+  mode = 'practice',
+  onAnswered,
 }: {
   question: Question;
   learnerId: string | null;
   repository?: PracticeRepository;
   onSolved?: (snapshot: { hintsUsed: number; attempts: number }) => void;
   nextLabel?: string;
+  /**
+   * 'check' is a mastery check (doc 07): no ordinary hints, and no feedback
+   * until the whole check is finished. The answer is still graded and recorded
+   * exactly as in practice - only what the learner is shown differs.
+   */
+  mode?: 'practice' | 'check';
+  /** Called after any graded attempt in check mode, correct or not. */
+  onAnswered?: (result: { correct: boolean; misconceptionId?: string }) => void;
 }): JSX.Element {
+  const isCheck = mode === 'check';
   // Optional: without a ProgressProvider the question still renders and grades,
   // it just cannot know whether this slip has happened before.
   const progressCtx = useOptionalProgress();
@@ -62,6 +73,9 @@ export function QuestionView({
   const isOrder = question.type === 'ordering' && options !== null;
 
   const [value, setValue] = useState('');
+  // In check mode a question is answered once; there is no second attempt and
+  // no reveal, so the form locks as soon as the answer is recorded.
+  const [submitted, setSubmitted] = useState(false);
   const [selected, setSelected] = useState<string[]>([]);
   const [order, setOrder] = useState<string[]>(() => (isOrder ? [...(options as string[])] : []));
 
@@ -92,8 +106,15 @@ export function QuestionView({
 
   async function onSubmit(e: FormEvent): Promise<void> {
     e.preventDefault();
-    if (!canSubmit || practice.solved) return;
-    await practice.submit(answer);
+    if (!canSubmit || practice.solved || submitted) return;
+    const result = await practice.submit(answer);
+    if (isCheck) {
+      setSubmitted(true);
+      onAnswered?.({
+        correct: result?.correct ?? false,
+        ...(result?.misconceptionId ? { misconceptionId: result.misconceptionId } : {}),
+      });
+    }
   }
 
   return (
@@ -119,7 +140,7 @@ export function QuestionView({
                   value={opt}
                   checked={value === opt}
                   onChange={(e) => setValue(e.target.value)}
-                  disabled={practice.solved}
+                  disabled={practice.solved || submitted}
                 />
                 {opt}
               </label>
@@ -138,7 +159,7 @@ export function QuestionView({
                   value={opt}
                   checked={selected.includes(opt)}
                   onChange={() => toggle(opt)}
-                  disabled={practice.solved}
+                  disabled={practice.solved || submitted}
                 />
                 {opt}
               </label>
@@ -183,7 +204,7 @@ export function QuestionView({
               name="answer"
               value={value}
               onChange={(e) => setValue(e.target.value)}
-              disabled={practice.solved}
+              disabled={practice.solved || submitted}
               autoComplete="off"
               inputMode={question.type === 'numeric' ? 'decimal' : 'text'}
               placeholder={PLACEHOLDERS[question.type]}
@@ -202,13 +223,19 @@ export function QuestionView({
           <button type="submit" disabled={!canSubmit || practice.solved}>
             Submit
           </button>
-          <button type="button" onClick={() => practice.revealHint()} disabled={!practice.canHint}>
-            Show a hint
-          </button>
+          {!isCheck && (
+            <button
+              type="button"
+              onClick={() => practice.revealHint()}
+              disabled={!practice.canHint}
+            >
+              Show a hint
+            </button>
+          )}
         </div>
       </form>
 
-      {practice.revealedHints > 0 && (
+      {!isCheck && practice.revealedHints > 0 && (
         <section aria-label="Hints" className="hints">
           <ol>
             {question.hints.slice(0, practice.revealedHints).map((h) => (
@@ -218,14 +245,14 @@ export function QuestionView({
         </section>
       )}
 
-      {practice.outcome && !practice.solved && practice.diagnosis && (
+      {!isCheck && practice.outcome && !practice.solved && practice.diagnosis && (
         <div className="feedback" role="alert" data-status="error">
           <p>{practice.diagnosis.message}</p>
           <RemediationNote misconceptionId={detected} recurring={recurring} />
         </div>
       )}
 
-      {practice.solved && (
+      {!isCheck && practice.solved && (
         <div className="feedback" role="status" data-status="success">
           <p>Correct!</p>
           <p className="explanation">{question.explanation}</p>
@@ -242,23 +269,31 @@ export function QuestionView({
         </div>
       )}
 
-      <TutorPanel
-        context={{
-          skill_id: question.skill_id,
-          skill_title: question.skill_id,
-          problem_prompt: question.prompt,
-          correct_answer: String(question.answer_spec.correct_answer),
-          lesson_excerpt: question.explanation,
-          detected_misconception: practice.diagnosis?.message,
-        }}
-        modes={
-          practice.solved
-            ? ['explain', 'extend']
-            : practice.diagnosis
-              ? ['guide', 'diagnose']
-              : ['guide']
-        }
-      />
+      {isCheck && submitted && (
+        <p className="progress-note" role="status">
+          Answer recorded. Your result comes at the end of the check.
+        </p>
+      )}
+
+      {!isCheck && (
+        <TutorPanel
+          context={{
+            skill_id: question.skill_id,
+            skill_title: question.skill_id,
+            problem_prompt: question.prompt,
+            correct_answer: String(question.answer_spec.correct_answer),
+            lesson_excerpt: question.explanation,
+            detected_misconception: practice.diagnosis?.message,
+          }}
+          modes={
+            practice.solved
+              ? ['explain', 'extend']
+              : practice.diagnosis
+                ? ['guide', 'diagnose']
+                : ['guide']
+          }
+        />
+      )}
     </div>
   );
 }

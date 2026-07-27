@@ -86,4 +86,51 @@ describe("today's session", () => {
     expect(session.dueSkills).toContain('a'); // review overdue
     expect(session.nextSkill).toBe('b'); // unlocked (a mastered) and in progress
   });
+
+  // Subject chosen at Goal Selection (doc 07).
+  describe('subject focus', () => {
+    const wide = buildGraph([skill('a'), skill('b'), skill('c')]);
+    const wideOrder = ['a', 'b', 'c'];
+    const progress = new Map<string, SkillProgress>();
+
+    it('takes the next skill from the chosen subject, not the global frontier', () => {
+      const session = selectTodaysSession(
+        progress,
+        wide,
+        wideOrder,
+        '2026-07-23T00:00:00Z',
+        [],
+        new Set(['c']),
+      );
+      expect(session.nextSkill).toBe('c');
+    });
+
+    it('falls back to the whole curriculum rather than dead-ending', () => {
+      const done = new Map<string, SkillProgress>([['c', progressAt('c', 'mastered')]]);
+      const session = selectTodaysSession(
+        done,
+        wide,
+        wideOrder,
+        '2026-07-23T00:00:00Z',
+        [],
+        new Set(['c']),
+      );
+      expect(session.nextSkill).toBe('a');
+    });
+
+    it('never hides a due review that sits outside the chosen subject', () => {
+      const due = new Map<string, SkillProgress>([
+        ['a', progressAt('a', 'mastered', { next_review_at: '2026-07-20T00:00:00Z' })],
+      ]);
+      const session = selectTodaysSession(
+        due,
+        wide,
+        wideOrder,
+        '2026-07-23T00:00:00Z',
+        [],
+        new Set(['c']),
+      );
+      expect(session.dueSkills).toEqual(['a']);
+    });
+  });
 });

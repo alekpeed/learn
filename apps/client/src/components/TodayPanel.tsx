@@ -2,7 +2,7 @@
  * Today's study plan (Version 1). Shows the daily-goal progress, the current
  * streak, and what to do next: due reviews and the next skill to work on.
  */
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { LearningEvent } from '@learn/domain';
 import {
@@ -32,6 +32,21 @@ export function TodayPanel(): JSX.Element | null {
     };
   }, [learner, progress]);
 
+  // Hooks run before the early return, so the subject filter is computed
+  // unconditionally and simply comes back empty when there is nothing to filter.
+  const courseId = learner?.current_course_id;
+  const focusSkills = useMemo(() => {
+    if (!pkg || !courseId) return undefined;
+    const course = pkg.courses.find((c) => c.course_id === courseId);
+    if (!course) return undefined;
+    const units = new Set(course.units.map((u) => u.unit_id));
+    const ids = new Set<string>();
+    for (const [skillId, skill] of pkg.graph.skills) {
+      if (units.has(skill.unit_id)) ids.add(skillId);
+    }
+    return ids;
+  }, [pkg, courseId]);
+
   if (!learner || !pkg) return null;
 
   const goal = learner.preferences.daily_goal_questions;
@@ -46,6 +61,7 @@ export function TodayPanel(): JSX.Element | null {
     pkg.order,
     now,
     projectMisconceptions(events),
+    focusSkills,
   );
   const nextTitle = session.nextSkill
     ? (pkg.graph.skills.get(session.nextSkill)?.title ?? session.nextSkill)

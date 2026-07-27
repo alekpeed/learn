@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 // Practice rotates questions, so these pin the exact item they assert on
 // with the ?q= deep link. Without it the test would depend on which
@@ -6,10 +7,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('study plans & daily goals (Version 1)', () => {
   test('the Today panel tracks the daily goal and streak after practice', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
 
     // Before practice: goal shows 0 of 10.
     await expect(page.getByRole('region', { name: /today's plan/i })).toContainText(
@@ -32,10 +30,7 @@ test.describe('study plans & daily goals (Version 1)', () => {
   });
 
   test('the daily goal can be changed in settings', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Grace');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page, 'Grace');
 
     await page.goto('/settings');
     await page.getByLabel(/daily goal/i).fill('5');

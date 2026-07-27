@@ -23,6 +23,8 @@ interface LearnerContextValue {
   updateSettings: (changes: {
     preferences?: Partial<LearnerPreferences>;
     accessibility_settings?: Partial<AccessibilitySettings>;
+    /** Subject chosen at Goal Selection (doc 07). */
+    current_course_id?: string;
   }) => Promise<void>;
   /** Switch the device to another profile. */
   switchTo: (learnerId: string) => Promise<void>;

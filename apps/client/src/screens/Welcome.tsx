@@ -18,7 +18,9 @@ export function Welcome(): JSX.Element {
     setBusy(true);
     try {
       await createProfile(name.trim());
-      navigate('/dashboard');
+      // Doc 07 §1: Welcome -> Profile -> Goal Selection -> Diagnostic or start
+      // from the beginning. Goal Selection can be skipped from there.
+      navigate('/goal');
     } finally {
       setBusy(false);
     }

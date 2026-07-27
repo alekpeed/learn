@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { createRequire } from 'node:module';
+import { createProfile } from './helpers.js';
 
 const require = createRequire(import.meta.url);
 const axePath = require.resolve('axe-core/axe.min.js');
@@ -33,8 +34,10 @@ async function auditNoSeriousViolations(
 
 const CORE_SCREENS = [
   '/dashboard',
+  '/goal',
   '/map',
   '/practice',
+  '/mastery-check?skill=math.number_foundations.place_value',
   '/progress',
   '/review',
   '/diagnostic',
@@ -51,10 +54,7 @@ test('welcome screen has no serious/critical violations', async ({ page }) => {
 // Accessibility audit (REL-003) across every core screen, with a profile so the
 // full controls render.
 test('all core screens pass the accessibility audit', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+  await createProfile(page);
 
   for (const path of CORE_SCREENS) {
     await page.goto(path);
@@ -65,10 +65,7 @@ test('all core screens pass the accessibility audit', async ({ page }) => {
 // A second palette is a second chance to fail contrast, so dark mode gets the
 // same audit rather than being trusted because light mode passed.
 test('all core screens pass the accessibility audit in dark mode', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+  await createProfile(page);
 
   await page.goto('/settings');
   await page.getByLabel(/theme/i).selectOption('dark');

@@ -30,6 +30,17 @@ export function selectTodaysSession(
   nowIso: string,
   /** Misconception projection; omit to keep the pre-Phase-17 behaviour. */
   misconceptions: MisconceptionOccurrence[] = [],
+  /**
+   * Skills belonging to the subject chosen at Goal Selection (doc 07). When
+   * given, the next skill is taken from inside it if anything there is still
+   * available, and from the whole curriculum otherwise - so choosing a subject
+   * steers what comes next without ever dead-ending the learner.
+   *
+   * Due reviews are deliberately NOT filtered: retention decays on its own
+   * schedule, and hiding a due review because it sits in another subject is how
+   * a learner silently loses a skill they had already earned.
+   */
+  focusSkills?: ReadonlySet<string>,
 ): TodaysSession {
   const dueSkills = order.filter((id) => {
     const p = progress.get(id);
@@ -47,13 +58,16 @@ export function selectTodaysSession(
   // A skill the learner keeps getting wrong the same way is a better use of the
   // next session than moving on, so it wins over the frontier - but never over a
   // review that is already due, which is time-sensitive.
-  const nextSkill =
-    remediationSkills.find((id) => unlockStatus(id, graph, progress).unlocked) ??
-    order.find((id) => {
+  const pick = (ids: readonly string[]): string | null =>
+    ids.find((id) => remediation.has(id) && unlockStatus(id, graph, progress).unlocked) ??
+    ids.find((id) => {
       const state = progress.get(id)?.state ?? 'unknown';
       return IN_PROGRESS.has(state) && unlockStatus(id, graph, progress).unlocked;
     }) ??
     null;
+
+  const nextSkill =
+    (focusSkills ? pick(order.filter((id) => focusSkills.has(id))) : null) ?? pick(order);
 
   return { dueSkills, nextSkill, remediationSkills };
 }

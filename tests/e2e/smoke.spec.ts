@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 test.describe('app smoke (Phase 1 exit: app opens, navigates, profile persists)', () => {
   test('opens on the welcome screen', async ({ page }) => {
@@ -7,18 +8,12 @@ test.describe('app smoke (Phase 1 exit: app opens, navigates, profile persists)'
   });
 
   test('creates a local profile and reaches the dashboard', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
     await expect(page.getByText(/hello, ada/i)).toBeVisible();
   });
 
   test('profile persists across reload (local-first)', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Grace');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page, 'Grace');
 
     await page.goto('/');
     await expect(page.getByRole('heading', { name: /welcome back/i })).toBeVisible();

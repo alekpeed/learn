@@ -4,6 +4,7 @@
  * the rest of the app teaches - and survives a restart.
  */
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 /** A complete, valid one-skill course as a module file. */
 const TINY_COURSE = JSON.stringify({
@@ -69,13 +70,6 @@ const TINY_COURSE = JSON.stringify({
   ],
   misconceptions: [],
 });
-
-async function createProfile(page: import('@playwright/test').Page): Promise<void> {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
-}
 
 async function installTinyCourse(page: import('@playwright/test').Page): Promise<void> {
   await page.goto('/courses');

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import type { TextSize, Contrast, Theme } from '@learn/domain';
 import { useLearner } from '../state/LearnerContext.js';
 import { useProgress } from '../state/ProgressContext.js';
@@ -104,6 +104,17 @@ export function Settings(): JSX.Element {
 
       <fieldset>
         <legend>Learning</legend>
+        {/*
+         * Subject, starting preference, session length, study frequency and the
+         * written goal all live on one screen already (doc 07 Goal Selection),
+         * so Settings links to it rather than growing a second copy of the same
+         * five controls that could drift out of step with it.
+         */}
+        <p>
+          <Link to="/goal">Change your subject, session length, or goal</Link>
+        </p>
+        {prefs.learning_goal && <p className="progress-note">Your goal: {prefs.learning_goal}</p>}
+
         <label htmlFor="daily-goal">Daily goal (questions per day)</label>
         <input
           id="daily-goal"

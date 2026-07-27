@@ -8,17 +8,11 @@
  * written to the event log.
  */
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 // Practice rotates questions, so these pin the exact item they assert on
 // with the ?q= deep link. Without it the test would depend on which
 // question rotation happened to serve first.
-
-async function createProfile(page: import('@playwright/test').Page): Promise<void> {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
-}
 
 const SKILL = 'math.fractions.add_like_denominators';
 /** The classic slip: add numerators and denominators, so 1/5 + 2/5 -> 3/10. */

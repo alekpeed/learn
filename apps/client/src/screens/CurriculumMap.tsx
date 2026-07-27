@@ -102,6 +102,9 @@ export function CurriculumMap(): JSX.Element {
                       <p className="skill-actions">
                         <Link to={`/practice?skill=${encodeURIComponent(skillId)}`}>
                           Practice {skill.title}
+                        </Link>{' '}
+                        <Link to={`/mastery-check?skill=${encodeURIComponent(skillId)}`}>
+                          Mastery check
                         </Link>
                       </p>
                     )}

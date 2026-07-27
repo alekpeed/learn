@@ -298,6 +298,32 @@ button {
   font-size: 0.95em;
 }
 
+/*
+ * Mastery check. The panel marks the deliberate start and finish the spec asks
+ * for (doc 07), so it is bounded rather than flowing into the page. The outcome
+ * is carried by the heading text as well as the border colour, never by colour
+ * alone.
+ */
+.check-panel {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--muted);
+  border-left-width: 4px;
+}
+.check-panel h2 {
+  margin-top: 0;
+}
+.check-panel[data-outcome='passed'] {
+  border-left-color: var(--success);
+}
+.check-panel[data-outcome='not_yet'] {
+  border-left-color: var(--error);
+}
+.check-panel ul {
+  margin: 0.4rem 0;
+  padding-left: 1.5rem;
+}
+
 /* Progress + scores */
 .skill-state-label {
   color: var(--muted);

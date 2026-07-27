@@ -38,7 +38,11 @@ export function projectLearner(events: LearningEvent[]): Learner | null {
       const p = event.payload as {
         preferences?: Partial<LearnerPreferences>;
         accessibility_settings?: Partial<AccessibilitySettings>;
+        current_course_id?: string;
       };
+      if (p.current_course_id !== undefined) {
+        learner.current_course_id = p.current_course_id;
+      }
       if (p.preferences) {
         learner.preferences = { ...learner.preferences, ...p.preferences };
       }

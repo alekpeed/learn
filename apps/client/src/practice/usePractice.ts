@@ -36,8 +36,19 @@ export interface UsePracticeOptions {
   onAttemptRecorded?: () => void;
 }
 
+/** What an attempt turned out to be, for callers that act on it immediately. */
+export interface AttemptResult {
+  correct: boolean;
+  misconceptionId?: string;
+}
+
 export interface UsePractice extends PracticeState {
-  submit: (value: string) => Promise<void>;
+  /**
+   * Grade, record and return the outcome. The return value exists for the
+   * mastery check, which withholds feedback from the learner but still has to
+   * tally the result (doc 07).
+   */
+  submit: (value: string) => Promise<AttemptResult | undefined>;
   revealHint: () => Promise<void>;
   canHint: boolean;
 }
@@ -106,6 +117,11 @@ export function usePractice({
         solved: outcome.correct,
         attemptNumber: outcome.correct ? prev.attemptNumber : prev.attemptNumber + 1,
       }));
+
+      return {
+        correct: outcome.correct,
+        ...(diagnosis?.misconception_id ? { misconceptionId: diagnosis.misconception_id } : {}),
+      };
     },
     [
       state.solved,

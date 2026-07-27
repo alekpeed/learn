@@ -1,4 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 /**
  * Practice used to walk a skill's questions in authored order from index 0 on
@@ -7,13 +8,6 @@ import { test, expect, type Page } from '@playwright/test';
  * learner actually meets different questions.
  */
 const SKILL = 'math.number_foundations.place_value';
-
-async function signIn(page: Page): Promise<void> {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
-}
 
 async function openPractice(page: Page): Promise<string> {
   await page.goto(`/practice?skill=${SKILL}`);
@@ -40,14 +34,14 @@ async function answerAnything(page: Page): Promise<void> {
 
 test.describe('question rotation', () => {
   test('a second visit to a skill does not reopen on the same question', async ({ page }) => {
-    await signIn(page);
+    await createProfile(page);
     const first = await openPractice(page);
     await answerAnything(page);
     expect(await openPractice(page)).not.toBe(first);
   });
 
   test('the order is stable within a single visit', async ({ page }) => {
-    await signIn(page);
+    await createProfile(page);
     await openPractice(page);
     const shown = page.locator('.question-prompt');
     const before = await shown.textContent();
@@ -57,7 +51,7 @@ test.describe('question rotation', () => {
   });
 
   test('an answered question is not re-served while unseen ones remain', async ({ page }) => {
-    await signIn(page);
+    await createProfile(page);
     const seen: string[] = [];
     for (let i = 0; i < 4; i += 1) {
       const prompt = await openPractice(page);

@@ -1,6 +1,6 @@
 # Session Handoff - Ground-Up Learning App
 
-_Last updated: 2026-07-25 - branch `claude/learning-app-next-phase-pgs09j` - Phase 24 complete, Phase 25 local half complete_
+_Last updated: 2026-07-27 - branch `claude/ground-up-learning-app-flgmrr` - Phase 26 complete: the last two placeholder screens are real, so the spec's Completion Rule is met in full_
 
 > **`CLAUDE.md` at the repository root states the governing rule and is loaded into every
 > session automatically. Read it first. This handoff is subordinate to it, and both are
@@ -74,6 +74,7 @@ disagree, the file wins - and fix this table.**
 | 23    | Precalculus & Trigonometry - **the arithmetic-to-trigonometry path**                                                                                              | DONE                      |
 | 24    | Sciences: Physics, Chemistry, Biology - the first subject-matter science                                                                                          | DONE                      |
 | 25    | Platform tier: multi-learner, local progress overview, achievements                                                                                               | PARTIAL (local half)      |
+| 26    | Goal Selection and Mastery Check - the last two placeholder routes                                                                                                | DONE                      |
 
 ### Not done - this is what is left
 
@@ -148,6 +149,42 @@ pnpm test:e2e           # 43 tests, includes axe in BOTH light and dark
   way.
 - **`CurriculumProvider` keeps the bundled package as its synchronous initial value**, so a
   broken installed course module falls back rather than bricking the app.
+
+### Mastery checks and goal selection (Phase 26)
+
+Two routes were `<Placeholder />` from Phase 1 until this phase: `/goal` and
+`/mastery-check`. Both are in the specified flow (`07_UX_AND_SCREEN_FLOW.md` section 1), and
+the mastery check is stage 9 of the ten-stage learning cycle and one of the five stages the
+Completion Rule names - so the app did not satisfy its own completion rule while it was a
+stub, whatever `ROADMAP.md` said at Phase 15b (that line has been corrected).
+`Placeholder.tsx` is deleted; every route in `screens/registry.ts` is now a real screen.
+
+- **A mastery check writes no privileged state.** It records ordinary `answer_submitted`
+  events and reads the verdict back out of the normal projection (DEC-006). There is no
+  "mastery check score". What makes a check different is the conditions - hints unavailable,
+  feedback withheld - which the existing scorer already rewards, because an unaided
+  first-attempt answer scores higher than a hinted one.
+- **Passing needs both halves.** Every item right _and_ the projection clearing the skill's
+  thresholds. A lucky six is not mastery; thresholds met long ago do not survive a fresh
+  check gone wrong. An **absent** projection is explicitly a fail: no `SkillProgress` yields
+  no shortfalls, so testing shortfalls alone would read "no evidence" as "everything is
+  fine". `gradeMasteryCheck` guards for it - do not remove that guard.
+- **`QuestionView` has a `mode="check"`.** It hides the hint button and tutor panel,
+  suppresses feedback, and locks the input after one attempt. The screen shows an explicit
+  Next: auto-advancing on submit is indistinguishable from a misfire when no feedback is
+  shown.
+- **Goal Selection is a form over ordinary preferences.** Subject writes
+  `current_course_id`; the rest are `LearnerPreferences` fields, all through
+  `settings_changed`. The form is a **child component** so its `useState` initialisers read
+  an already-loaded learner - seeding them in the parent captures the pre-load defaults and
+  initialisers do not re-run, which showed 15 minutes to someone who had saved 30.
+- **The chosen subject steers, it never hides.** It biases `selectTodaysSession`'s next-skill
+  pick and falls back to the whole curriculum rather than dead-ending. **Due reviews are
+  never filtered by subject** - retention decays on its own schedule, and hiding a due review
+  is how an earned skill is silently lost.
+- **e2e sign-in is now `tests/e2e/helpers.ts`.** The flow gained a screen, so the fourteen
+  copies of the welcome-to-dashboard block became one `createProfile(page, name?)` helper
+  that takes the skip. Use it rather than reintroducing a local copy.
 
 ### Question rotation - read this before touching PracticeScreen or ReviewQueue
 
@@ -247,7 +284,7 @@ Do not describe Phase 25 as done.
 
 ## 3. Working agreements
 
-- Develop on `claude/learning-app-next-phase-pgs09j`. Commit with descriptive messages,
+- Develop on `claude/ground-up-learning-app-flgmrr`. Commit with descriptive messages,
   push with `git push -u origin <branch>` (retry with backoff on network failure).
 - **Do not open a PR unless asked.** PR #1 is already open against the default branch.
 - ASCII-only source.

@@ -7,6 +7,7 @@
  * that stops being wired up fails here even though the attribute still flips.
  */
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 /** Perceived lightness of a computed `rgb(...)` colour, 0 (black) to 1 (white). */
 async function rootLightness(page: import('@playwright/test').Page): Promise<number> {
@@ -17,13 +18,6 @@ async function rootLightness(page: import('@playwright/test').Page): Promise<num
     .split(',')
     .map((part) => Number(part.trim()) / 255);
   return 0.2126 * (r as number) + 0.7152 * (g as number) + 0.0722 * (b as number);
-}
-
-async function createProfile(page: import('@playwright/test').Page): Promise<void> {
-  await page.goto('/');
-  await page.getByLabel(/your name/i).fill('Ada');
-  await page.getByRole('button', { name: /start learning/i }).click();
-  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
 }
 
 test('a chosen dark theme darkens the app and survives a reload', async ({ page }) => {

@@ -9,6 +9,7 @@ import { Dashboard } from './screens/Dashboard.js';
 import { Settings } from './screens/Settings.js';
 import { Authoring } from './screens/Authoring.js';
 import { Learners } from './screens/Learners.js';
+import { MasteryCheckScreen } from './screens/MasteryCheckScreen.js';
 import { CurriculumMap } from './screens/CurriculumMap.js';
 import { LessonScreen } from './screens/LessonScreen.js';
 import { PracticeScreen } from './screens/PracticeScreen.js';
@@ -16,7 +17,7 @@ import { ReviewQueue } from './screens/ReviewQueue.js';
 import { Progress } from './screens/Progress.js';
 import { DiagnosticScreen } from './screens/DiagnosticScreen.js';
 import { DiagnosticResults } from './screens/DiagnosticResults.js';
-import { Placeholder } from './screens/Placeholder.js';
+import { GoalSelection } from './screens/GoalSelection.js';
 import { NotFound } from './screens/NotFound.js';
 
 export function App(): JSX.Element {
@@ -39,8 +40,8 @@ export function App(): JSX.Element {
                 <Route path="/progress" element={<Progress />} />
                 <Route path="/diagnostic" element={<DiagnosticScreen />} />
                 <Route path="/diagnostic/results" element={<DiagnosticResults />} />
-                <Route path="/goal" element={<Placeholder title="Goal Selection" />} />
-                <Route path="/mastery-check" element={<Placeholder title="Mastery Check" />} />
+                <Route path="/goal" element={<GoalSelection />} />
+                <Route path="/mastery-check" element={<MasteryCheckScreen />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

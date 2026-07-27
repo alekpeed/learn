@@ -25,8 +25,10 @@ skill graph in `content/mvp/`.
 - UI polish: dark mode (system / light / dark), token-driven, audited by axe in both
   palettes.
 
-**Tracks A, B, C, E and F are complete**, Track D is complete through Phase 24, and Phase 25
-is partially done. The documented curriculum was fully authored at mastery-grade depth (130
+**Tracks A, B, C, E and F are complete**, Track D is complete through Phase 24, Phase 25
+is partially done, and Phase 26 closed the last two placeholder screens (Goal Selection and
+the Mastery Check), which is the point at which the spec's Completion Rule is actually met.
+The documented curriculum was fully authored at mastery-grade depth (130
 skills, 1,121 questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri
 desktop shell wrapped it for Windows, and Phases 21-24 then added Geometry, Algebra II,
 Precalculus, Trigonometry, Physics, Chemistry and Biology on top. The curriculum now stands
@@ -150,9 +152,14 @@ problems (including successive percent changes, a classic misconception). The
 `math.decimals_percents` unit is now 13 skills.
 
 **TRACK A COMPLETE.** All 16 documented units are built - **130 skills, 843 questions,
-~138 of ~138 documented topics**. Dev-roadmap Phases 6 and 7 are closed, and the spec's
-Completion Rule is satisfied: the entire scoped curriculum is traversable through
-prerequisites, lessons, practice, mastery, and review.
+~138 of ~138 documented topics**. Dev-roadmap Phases 6 and 7 are closed.
+
+The spec's Completion Rule (doc 03) reads "prerequisites, lessons, practice, **mastery
+checks**, and review". This line previously paraphrased it as "mastery", which quietly
+dropped the one stage that had no screen: mastery checks were a placeholder route from
+Phase 1 until Phase 26, so the rule was **not** satisfied at this point, whatever the
+paraphrase said. Content coverage was complete here; the traversal was not. Both are
+complete as of Phase 26.
 
 ---
 
@@ -402,6 +409,45 @@ simulations but not for a **widget registry**, where content names a `kind` and 
 numbers and the drawing lives in the application - exactly how validators already work.
 Static figures shipped first; interactivity is an increment on the same registry.
 
+### Phase 26 - The two placeholder screens [ui + engine] - DONE
+
+An audit of every route found two that had been `<Placeholder />` since Phase 1: `/goal` and
+`/mastery-check`. Both are named in the specified flow (`07_UX_AND_SCREEN_FLOW.md` section 1),
+and the mastery check is stage 9 of the ten-stage learning cycle (`04_LEARNING_SYSTEM_SPEC.md`
+section 4) and one of the five stages the Completion Rule names. The app could not satisfy its
+own completion rule while one of them was a stub.
+
+**Mastery Check** (`/mastery-check?skill=<id>`). Doc 07 lists five requirements and each maps to
+something visible:
+
+- _No ordinary hints_ - `QuestionView` gained a `mode="check"` that removes the hint button and
+  the tutor panel, and locks the input after one attempt.
+- _Clear start and finish_ - an explicit start panel, and a result panel at the end.
+- _Mixed item forms_ - `selectMasteryCheckItems` round-robins across question **types** first
+  and difficulty second, preferring items met least often so a retake is not a rerun.
+- _Immediate result_ - the verdict appears on the last answer, with no navigation in between.
+- _Specific recommendation_ - `gradeMasteryCheck` names the misconception, the missed items, or
+  the dimension that fell short.
+
+A check writes **no privileged state**: it records ordinary `answer_submitted` events, and the
+verdict is read back out of the normal projection (DEC-006). Passing needs both a clean run
+here _and_ the projection clearing the skill's thresholds - a lucky six is not mastery, and
+thresholds met long ago do not survive getting a fresh check wrong. An absent projection is
+explicitly a fail, because no evidence must not read as "nothing is wrong". Reachable from the
+curriculum map, the end of a practice set, and the primary nav.
+
+**Goal Selection** (`/goal`). Collects exactly the five things doc 07 lists - subject, starting
+preference, session duration, study frequency, and an optional written goal - through the
+ordinary `settings_changed` event, so it is projected like every other preference and can be
+revisited from Settings. New profiles now go Welcome -> Goal Selection -> Dashboard as the spec
+flow requires; the screen is skippable, so nobody is held at a form. The chosen subject steers
+`selectTodaysSession`'s next-skill pick and falls back to the whole curriculum rather than
+dead-ending; **due reviews are never filtered by subject**, because retention decays on its own
+schedule and hiding a due review is how an earned skill is silently lost.
+
+With these two shipped, every route in `registry.ts` is a real screen - `Placeholder.tsx` is
+deleted - and the Completion Rule is satisfied in full for the first time.
+
 ### Unsequenced - in scope, but never given a phase number
 
 Recording these here so they stop being invisible. Both are in the specification; this file
@@ -454,8 +500,9 @@ curriculum done] -> 16 (Depth pass). Then features: 17 (Misconceptions) -> 18
 trig: 21 (Geometry) -> 22 (Algebra II) -> 23 (Precalc/Trig) [arithmetic-to-trig path done]
 -> 24 (Sciences) -> 25 (Platform, local half). Phase F (desktop wrap) is done.
 
-Everything through Phase 24 is now shipped, and Phase 25's local half with it. What is left,
-in this file's own terms, in the order worth doing it:
+Everything through Phase 24 is now shipped, Phase 25's local half with it, and Phase 26 has
+closed the last two placeholder screens. What is left, in this file's own terms, in the order
+worth doing it:
 
 1. **Statistics and probability** - unsequenced, but every prerequisite is authored, it needs
    no new validator and no infrastructure. The most buildable thing remaining.

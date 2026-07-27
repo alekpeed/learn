@@ -99,6 +99,13 @@ export function PracticeScreen(): JSX.Element {
         nextLabel={hasNext ? 'Next question' : 'Finish'}
       />
       {!hasNext && <p className="progress-note">That is the last question in this set.</p>}
+      {skillId && (
+        <p className="skill-actions">
+          <Link to={`/mastery-check?skill=${encodeURIComponent(skillId)}`}>
+            Take the mastery check for this skill
+          </Link>
+        </p>
+      )}
     </section>
   );
 }

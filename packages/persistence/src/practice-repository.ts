@@ -30,6 +30,20 @@ export interface AttemptRecord extends AttemptInput {
   created_at: string;
 }
 
+/** Recorded when a mastery check begins (doc 07: clear start and finish). */
+export interface MasteryCheckStartInput {
+  skill_id: string;
+  question_ids: string[];
+}
+
+/** Recorded when a mastery check finishes, with its verdict. */
+export interface MasteryCheckCompleteInput {
+  skill_id: string;
+  outcome: 'passed' | 'not_yet';
+  correct: number;
+  total: number;
+}
+
 export interface ReviewInput {
   skill_id: string;
   success: boolean;
@@ -83,6 +97,26 @@ export class PracticeRepository {
 
   submitReview(learnerId: string, review: ReviewInput): Promise<LearningEvent> {
     return this.record(learnerId, 'review_completed', { ...review });
+  }
+
+  /**
+   * Mastery-check bookends. The individual answers are recorded as ordinary
+   * `answer_submitted` events, so these two carry no score of their own - they
+   * mark the boundaries of a check and its verdict, which is what makes a check
+   * distinguishable from ordinary practice when reading the log back.
+   *
+   * Both event types have existed in the domain since Phase 1 and had no writer
+   * until the screen was built.
+   */
+  startMasteryCheck(learnerId: string, input: MasteryCheckStartInput): Promise<LearningEvent> {
+    return this.record(learnerId, 'mastery_check_started', { ...input });
+  }
+
+  completeMasteryCheck(
+    learnerId: string,
+    input: MasteryCheckCompleteInput,
+  ): Promise<LearningEvent> {
+    return this.record(learnerId, 'mastery_check_completed', { ...input });
   }
 
   /** Project all recorded attempts for a learner (optionally one question), in order. */

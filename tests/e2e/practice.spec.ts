@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { createProfile } from './helpers.js';
 
 // Practice rotates questions, so these pin the exact item they assert on
 // with the ?q= deep link. Without it the test would depend on which
@@ -7,10 +8,7 @@ import { test, expect } from '@playwright/test';
 test.describe('practice and validation (Phase 3)', () => {
   test('grades an equivalent answer as correct and persists the attempt', async ({ page }) => {
     // A local profile is needed so attempts are recorded.
-    await page.goto('/');
-    await page.getByLabel(/your name/i).fill('Ada');
-    await page.getByRole('button', { name: /start learning/i }).click();
-    await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+    await createProfile(page);
 
     await page.goto(
       '/practice?skill=math.number_foundations.place_value&q=math.number_foundations.place_value.q1',
