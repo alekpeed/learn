@@ -470,7 +470,7 @@ drop them.
 
 ## Track E - Final packaging (the literal end)
 
-### Phase F - Desktop wrap (Tauri/Windows) [packaging] - DONE
+### Phase F - Desktop wrap (Tauri: Windows and Linux) [packaging] - DONE
 
 Realized DEC-016 exactly as it anticipated: **no application-code changes**. Added
 `apps/desktop/src-tauri` (Tauri v2) - a Rust shell that opens a native window and hosts the
@@ -483,12 +483,29 @@ runs with no dev server and no HTTP origin.
 - **Icons**: generated as PNG (32/128/256/512) plus a 6-size BMP-format `icon.ico`.
 - **Scripts**: `pnpm desktop:dev` (live-reload against Vite) and `pnpm desktop:build`.
 - **CI** (`.github/workflows/desktop.yml`): a `windows-latest` job producing `.msi` and NSIS
-  `.exe` installers as downloadable artifacts, on manual dispatch or a `v*` tag.
+  `.exe`, and an `ubuntu-22.04` job producing `.deb`, `.rpm` and an AppImage, as downloadable
+  artifacts, on manual dispatch, a `v*` tag, or a push to a `claude/**` branch.
 
-Verified as far as a Linux container allows: the Cargo manifest resolves, `cargo check`
-passes, the Tauri CLI parses the config, and a release binary links. Producing the Windows
-installer itself is the CI job, and macOS bundling would additionally need an `.icns` icon.
-Recorded as DEC-017.
+The Windows side was verified by CI producing and a human downloading the installers. The
+Linux side was verified directly: the packages were built in-container and the binary was
+launched on a virtual display and screenshotted, showing the Welcome screen and full
+navigation rendered. WebKitGTK is the webview there, so the CSP was worth checking rather
+than assuming; it behaves as it does under WebView2.
+
+**The Linux job pins `ubuntu-22.04`, and that is load-bearing.** A Tauri binary links the
+build host's glibc, and glibc is not forward compatible: a 24.04 build requires `GLIBC_2.39`
+and will not start at all on Linux Mint 21, whose base is 22.04. Building on the older
+runner produces something that runs on both. The job also smoke-tests the binary under
+`xvfb` and fails if it exits within 20 seconds - a package that builds can still open a
+blank window, which is exactly what the packaged CSP did on the first Windows build.
+
+**No updater, deliberately.** The `tauri-plugin-updater` is absent and no signing keypair
+exists, so a downloaded build never checks for a new version. An updater would mean hosting
+a manifest and having the app make a network request on every launch, which is at odds with
+local-first. New versions are a manual download.
+
+macOS bundling would additionally need an `.icns` icon and a machine to build on. Recorded
+as DEC-017.
 
 ---
 

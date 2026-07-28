@@ -64,7 +64,7 @@ disagree, the file wins - and fix this table.**
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | 0-9   | Engine: event-sourced core, curriculum platform, deterministic grading, mastery scoring, spaced review, adaptive diagnostic, isolated AI tutor, release hardening | DONE                      |
 | 10-16 | Track A + B: the full documented curriculum, at uniform depth                                                                                                     | DONE                      |
-| E/F   | Tauri desktop shell; Windows `.msi` + NSIS installers from CI                                                                                                     | DONE                      |
+| E/F   | Tauri desktop shell; Windows `.msi` + NSIS and Linux `.deb`/`.rpm`/AppImage from CI                                                                               | DONE                      |
 | 17    | Deeper misconception diagnosis and remediation                                                                                                                    | DONE                      |
 | 18    | Content administration and downloadable course modules                                                                                                            | DONE                      |
 | 19    | AI-assisted practice drafts, author-gated                                                                                                                         | DONE                      |
@@ -192,6 +192,32 @@ stub, whatever `ROADMAP.md` said at Phase 15b (that line has been corrected).
 - **e2e sign-in is now `tests/e2e/helpers.ts`.** The flow gained a screen, so the fourteen
   copies of the welcome-to-dashboard block became one `createProfile(page, name?)` helper
   that takes the skip. Use it rather than reintroducing a local copy.
+
+### Desktop packaging - Windows and Linux
+
+`.github/workflows/desktop.yml` builds both: a `windows-latest` job for `.msi` and NSIS
+`.exe`, and an `ubuntu-22.04` job for `.deb`, `.rpm` and an AppImage. Triggers are manual
+dispatch, a `v*` tag, or a push to any `claude/**` branch (it was pinned to one literal
+branch name and silently stopped building when work moved on).
+
+**The `ubuntu-22.04` pin is load-bearing - do not "modernise" it to `ubuntu-latest`.** A
+Tauri binary links the build host's glibc and glibc is not forward compatible: a 24.04 build
+requires `GLIBC_2.39` and will not start on Linux Mint 21 or any 22.04-based system.
+Building on the older runner produces something that runs on both.
+
+The Linux job smoke-tests the binary under `xvfb` and fails if it exits within 20 seconds.
+A package that builds can still open a blank window - that is exactly what the packaged CSP
+did on the first Windows build, and WebKitGTK is a different webview from WebView2, so it
+is worth checking rather than assuming.
+
+Linux build dependencies, if building by hand: `libwebkit2gtk-4.1-dev` (4.1, not 4.0 -
+Tauri v2 dropped 4.0), `libgtk-3-dev`, `libayatana-appindicator3-dev`, `librsvg2-dev`,
+`patchelf`. The resulting `.deb` declares only `libwebkit2gtk-4.1-0` and `libgtk-3-0`.
+
+**There is no updater and none is planned.** `tauri-plugin-updater` is absent and no signing
+keypair exists, so a downloaded build never checks for a new version. An updater would mean
+a hosted manifest and a network request on every launch, which is at odds with local-first.
+New versions are a manual download.
 
 ### Bare /practice resolves a skill - it never serves the whole curriculum
 
