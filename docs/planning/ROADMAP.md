@@ -30,16 +30,20 @@ is partially done, and Phase 26 closed the last two placeholder screens (Goal Se
 the Mastery Check), which is the point at which the spec's Completion Rule is actually met.
 The documented curriculum was fully authored at mastery-grade depth (130
 skills, 1,121 questions, 16 of 16 units), the Version 1 feature set shipped, the Tauri
-desktop shell wrapped it for Windows, and Phases 21-24 then added Geometry, Algebra II,
-Precalculus, Trigonometry, Physics, Chemistry and Biology on top. The curriculum now stands
-at **201 skills and 1,946 questions across 22 unit files**, in five courses: 15 math units,
-4 scientific-method units, and one introductory unit each for physics, chemistry and biology.
+desktop shell wrapped it for **Windows and Linux** (`.msi`/NSIS and `.deb`/`.rpm`/AppImage),
+and Phases 21-24 then added Geometry, Algebra II, Precalculus, Trigonometry, Physics,
+Chemistry and Biology on top. The curriculum now stands at **201 skills and 1,946 questions
+across 22 unit files**, in five courses: 15 math units, 4 scientific-method units, and one
+introductory unit each for physics, chemistry and biology. A figure widget registry
+(DEC-019) also shipped since this summary was last written straight through: six kinds, 69
+figures, across trigonometry, Pythagoras, angles, the coordinate plane and the number line.
 
 The remaining work is: **statistics and probability** and **calculus** (both named in the
-spec, neither ever given a phase number), a **rendered figure and graph component** (geometry,
-Algebra II and trigonometry all pose figures textually), the **sync server** (the last
-Version 1 item, now worth less than it looked - see DEC-018), and the capability-gated
-remainder of Phase 25 (voice tutoring, handwriting recognition, interactive simulations).
+spec, neither ever given a phase number), **more figures** for the units the registry has
+not reached yet (polygons, circles, solids, most of precalculus, the science data unit) plus
+the science item-depth gap, the **sync server** (the last Version 1 item, now worth less
+than it looked - see DEC-018), and the capability-gated remainder of Phase 25 (voice
+tutoring, handwriting recognition, interactive simulations).
 
 **Dropped entirely (DEC-018):** teacher dashboards, classrooms, social features and the
 marketplace. This is a single-user product; they are dead, not deferred.

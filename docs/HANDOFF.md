@@ -1,6 +1,6 @@
 # Session Handoff - Ground-Up Learning App
 
-_Last updated: 2026-07-27 - branch `claude/ground-up-learning-app-flgmrr` - Phase 26 complete: the last two placeholder screens are real, so the spec's Completion Rule is met in full_
+_Last updated: 2026-07-28 - branch `claude/ground-up-learning-app-flgmrr` - Phase 26 complete (Completion Rule met in full); bare /practice is now a sectioned curriculum index; desktop packaging covers Windows and Linux_
 
 > **`CLAUDE.md` at the repository root states the governing rule and is loaded into every
 > session automatically. Read it first. This handoff is subordinate to it, and both are
@@ -78,13 +78,13 @@ disagree, the file wins - and fix this table.**
 
 ### Not done - this is what is left
 
-| Phase | What                            | Notes                                                                                                                                                                                                                                                                                                             |
-| ----- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -     | **Sync server**                 | The last Version 1 item. **DEC-018 removed most of its leverage**: it was justified largely as the multi-user foundation for dashboards and classrooms, which are now dropped. It buys cross-device resume for one person and nothing else. Tested against a stub.                                                |
-| 25    | **Interactive figures**         | DEC-019 folded "interactive simulations" into the figure registry, so this is now an increment on existing machinery rather than a new architecture. Handwriting recognition and voice dictation are **dropped** (DEC-019); teacher dashboards, classrooms, social and the marketplace are **dropped** (DEC-018). |
-| -     | **Rendered figures and graphs** | The oldest carried gap, dating to Phase 14. Geometry, Algebra II and trigonometry all pose figures in words. Client-side work, no server needed.                                                                                                                                                                  |
-| -     | **Statistics & probability**    | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime.                                        |
-| -     | **Calculus**                    | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                                                            |
+| Phase | What                         | Notes                                                                                                                                                                                                                                                                                                             |
+| ----- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -     | **Sync server**              | The last Version 1 item. **DEC-018 removed most of its leverage**: it was justified largely as the multi-user foundation for dashboards and classrooms, which are now dropped. It buys cross-device resume for one person and nothing else. Tested against a stub.                                                |
+| 25    | **Interactive figures**      | DEC-019 folded "interactive simulations" into the figure registry, so this is now an increment on existing machinery rather than a new architecture. Handwriting recognition and voice dictation are **dropped** (DEC-019); teacher dashboards, classrooms, social and the marketplace are **dropped** (DEC-018). |
+| -     | **More figures**             | The static half of DEC-019 has shipped: six widget kinds, 69 figures, across trigonometry, Pythagoras, angles, the coordinate plane and the number line. Still textual: polygons, circles, solids, most of precalculus, the science data unit. Content work against existing renderers, not code.                 |
+| -     | **Statistics & probability** | Listed as a Later Feature in `03_VERSION_AND_SCOPE_PLAN.md` and in the vision. `ROADMAP.md` never gave it a phase number; Phase 23 added an "Unsequenced" section recording the gap, but it still has no number. Prerequisites are authored, so it could be built anytime.                                        |
+| -     | **Calculus**                 | `ROADMAP.md` notes it "would follow" Phase 23 rather than giving it a phase. Furthest out. Needs the precalculus strands Phase 23 did not author (conics, vectors, polar coordinates).                                                                                                                            |
 
 ### The distinction that keeps being missed
 
@@ -219,7 +219,7 @@ keypair exists, so a downloaded build never checks for a new version. An updater
 a hosted manifest and a network request on every launch, which is at odds with local-first.
 New versions are a manual download.
 
-### Bare /practice resolves a skill - it never serves the whole curriculum
+### Bare /practice is a sectioned curriculum index, not a flat rotation
 
 `PracticeScreen` used to fall back to `pkg.questions` when the URL carried no `?skill=`,
 which is what the nav link does. That put all ~1,946 questions into one flat rotation:
