@@ -1,6 +1,6 @@
 # Session Handoff - Ground-Up Learning App
 
-_Last updated: 2026-07-28 - branch `claude/ground-up-learning-app-flgmrr` - Phase 26 complete (Completion Rule met in full); bare /practice is now a sectioned curriculum index; desktop packaging covers Windows and Linux_
+_Last updated: 2026-08-15 - branch `claude/ground-up-learning-app-flgmrr` - Phase 26 complete (Completion Rule met in full); bare /practice is now a sectioned curriculum index; desktop packaging covers Windows and Linux; a second, parallel native-Rust track has started under `native/`_
 
 > **`CLAUDE.md` at the repository root states the governing rule and is loaded into every
 > session automatically. Read it first. This handoff is subordinate to it, and both are
@@ -8,6 +8,16 @@ _Last updated: 2026-07-28 - branch `claude/ground-up-learning-app-flgmrr` - Phas
 
 This document is the entry point for a new session. Read it top to bottom, then follow the
 reading order in section 0 before writing any code or content.
+
+> **There are now two implementations of this product in this repository.** Everything
+> below this notice describes the TypeScript/React/Tauri app under `apps/` and `packages/` -
+> the one that ships today. A second, independent implementation is being built in parallel
+> under `native/`: a Rust + GTK4 rewrite with no browser engine at all, replacing Tauri's
+> WebKitGTK-hosted UI on principle (DEC-020), not because of anything the current app does
+> wrong. **If asked about the native/Rust/GTK4 track, read `native/PLAN.md` first - it is
+> to that track what this file and `ROADMAP.md` are to the TypeScript app, and it is not
+> summarized here.** The TypeScript app is not deprecated by this and keeps receiving
+> `ROADMAP.md`'s remaining work until the native rewrite reaches parity.
 
 ---
 

@@ -1,0 +1,63 @@
+name: Native (Rust workspace)
+
+# Builds and tests the native Rust/GTK4 rewrite under native/ (see
+# /root/.claude/plans/mutable-jingling-pine.md for the phased plan this
+# implements). Separate from the TypeScript CI job because it's a different
+# toolchain entirely and, once packaging (Phase 10) lands, will build the
+# same class of platform-native binary as desktop.yml.
+#
+# ubuntu-22.04, not ubuntu-latest: the eventual packaged binary links the
+# build host's glibc, and glibc is not forward-compatible - a 24.04 build
+# needs GLIBC_2.39 and will not start on Linux Mint 21 or any other
+# 22.04-base system. Pinning the whole job (build AND test) to 22.04 from
+# the start means the toolchain and any native deps (rusqlite's SQLite,
+# later GTK4) are always exercised against the same base the eventual
+# package targets - see desktop.yml for the identical reasoning applied to
+# the Tauri build.
+on:
+  push:
+    branches: ['claude/**']
+    paths:
+      - 'native/**'
+      - '.github/workflows/native.yml'
+  pull_request:
+    paths:
+      - 'native/**'
+      - '.github/workflows/native.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: native
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust (stable)
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache cargo registry and build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            native/target
+          key: ${{ runner.os }}-22.04-cargo-${{ hashFiles('native/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-22.04-cargo-
+
+      - name: Format check
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Build workspace
+        run: cargo build --workspace
+
+      - name: Test workspace
+        run: cargo test --workspace
